@@ -34,3 +34,8 @@ v61g66+"0"%+55:+g67*2-"0"g/g61 g66%g61g66<
 
 "}"8*            => 1000
 66g16g%66g16g/   => get [x,y]
+
+
+---------------------------------------
+
+Here I implemented a long multiplication algorithm. Then I took the value `1` and doubled it 1000 times. The calculation of the digit sum was then easy

@@ -3,3 +3,8 @@ v>v>ppp 0>>$ 10g20g:10p+:v
 0::0^+ g00<v**"}P  ":<
 :1>^@$.g00<>*` #v_^
 >^        ^     <
+
+
+---------------------------------------
+
+Also the problem here was not the algorithm, but writing and compressing it in Befunge. The code calculates the Fibonacci sequence one after each other and remembers the sum while iterating.

@@ -116,3 +116,8 @@ v          p02"e"p010$<
 [1,0] PosX
 [2,0] PosY
 [3,0] Carry
+
+
+---------------------------------------
+
+Here I do simply do a column addition. After the sum is calculated, we take the first 10 digits and print them

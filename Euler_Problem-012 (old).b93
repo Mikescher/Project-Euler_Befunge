@@ -11,3 +11,10 @@ v##v_v#   `\*"}("g02< vp021 <
 [2,0] Divisor Count
 
 "}("* => 5000
+
+
+---------------------------------------
+
+I simply brute-force the triangle numbers until I find one with >500 divisors.  
+I use the fact that every triangle number is the previous one + the current index to speed it up.  
+But this is one of the longest running programs

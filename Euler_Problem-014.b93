@@ -12,10 +12,6 @@ g     ^_^#!`  **"}}@":                   <        <
 "}}@" => 1 000 000
 
 
+---------------------------------------
 
-// Get Collatz-sequence count (of 13):
-
-v
-1            >3*1+v
->67+     >:2%|    >\1+\:1- #v_$
-         ^  $># 2/^#1       <
+Again a simple problem, we get the length of every sequence (= until they reach `1`) and print the highest

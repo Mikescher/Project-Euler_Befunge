@@ -218,3 +218,8 @@ v                                                  <             _^#`g03g00 <^  
 >:01p31p111p0>::10g%\10g/3+g::*01g`#v_121p>:31g\%         !#v_11g21g*11p31g1-|
                             v        <    ^p13/\g13:p12+1g12<                
                             <*2g11$$<^g11$$                                  <
+
+
+---------------------------------------
+
+Here I was desperately in need of an efficient algorithm. So I copied [this](http://www.mathblog.dk/triangle-number-with-more-than-500-divisors/) one from mathblog.dk and translated it into befunge. And I have to say it's amazingly fast.

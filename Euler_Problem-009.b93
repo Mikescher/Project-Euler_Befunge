@@ -5,3 +5,8 @@ v                      <
 >20g:*10g:*+:30p0>::*30g-#v_:30p20g10g++ 00g-#v_20g:." ",10g:." ",30g:."=",**.@
                  |-g00 :+1<                   
                  >$$                    ^    $<
+
+
+---------------------------------------
+
+The brute-force approach is here taking quite a long time - but I think it's good enough - perhaps I will make an optimized version later

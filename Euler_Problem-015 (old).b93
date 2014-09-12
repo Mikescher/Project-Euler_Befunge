@@ -23,4 +23,13 @@ vp13+1g13p15+1g15p0g130<
 {0} => Down
 {1} => Right
 
-A B `   =>  A > B
+
+---------------------------------------
+
+This one was a little more complex, especially because we can't simply do recursion  
+In the top row we log our current path, a `0` means here "go down" and a `1` "go right".
+We also remember our current position, once either X or Y has reached 20 the path is complete and we increment our counter.
+Then we back trace the path until we reach a `0`, then we change it to a `1` and go on with `0` until the path is again full.
+This way we iterate through all possible paths and can later output the count.
+
+By the way, this program can work with every field size, just change the `292*+` value (an perhaps the program width so that the log fits)
