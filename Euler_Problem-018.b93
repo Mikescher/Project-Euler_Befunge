@@ -22,7 +22,10 @@ $$>53* 00p00g1-20p010p>10g3*:20g1+g"0"-55+*\1+20g1+g"0"-+10g20g1+p10g1+:10p20g-1
 [2,0] Position Y (--)
 
 
-// MAX
+---------------------------------------
 
-A  :  B    -:0`>#v_-> @ 
-                 > $^
+Step 1: Convert the numbers so that 1 field  = 1 number
+
+Step 2: Set every field to `value` + max(`value-left`, `value-right`)
+
+Step 3: The solution is the value of the top-most field
