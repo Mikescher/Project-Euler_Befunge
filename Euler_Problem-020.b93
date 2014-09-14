@@ -1,0 +1,18 @@
+v0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+v0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+>"d">1-:!#v_:03p013p"~I"+23p>23g"d"%1+23g"d"/g"0"-03g*13g+:55+%68 v
+    ^     $#               _^#!p32:-1g32p31/+55p/"d"g32+1%"d"g32+*<
+          >"~I"+33p0>33g"d"%1+33g"d"/g"0"-+  33g:1-33p v
+                 @._^#!                                <
+
+
+[0,3] current multiplicand
+[1,3] carry
+[2,3] multiplication index
+[3,3] sum index
+
+
+---------------------------------------
+
+The approach is similar to problem 16 - the main task was implementing a long multiplication algorithm in Befunge. 
+Then, after 100! is calculated we only need to sum the individual digits.
