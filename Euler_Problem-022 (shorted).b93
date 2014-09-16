@@ -1,0 +1,53 @@
+>               v            // Calc ordered index    >   v
+ MARY           >"4"      :20p00p>010p0 >:00gg"@"-:0`#^_$0>10g74**+10pv
+ PATRICIA                      > ^      ^          _v#         -+66:+1<
+ LINDA                    v   _^#!p00:-1g00pg000g01$<          >v          // Bubblesort it
+ BARBARA                  >20g30p>       040p> 040g1+g 040g2+g`|>40g:1+>60p70p66+:80p>:60g1+g\70g1+g80g60g1+v
+ ELIZABETH                                   |`\-1g03 p04:+1g04<                   $<|\p08:-1:g08p+1g07g08p <
+ JENNIFER                        |-2p03-1:g03<       // Sum the values              ^<
+ MARIA               v           <v+1p09+g09*g05-"@"<
+ SUSAN               >090p20g50p>1>:50gg:" "       -|
+ MARGARET                       |p05:-1g05       $$$<
+ DOROTHY                   @.g09<                   
+ LISA                      
+ NANCY          
+ KAREN       
+ BETTY          
+ HELEN          
+ SANDRA         
+ DONNA        
+ CAROL                   
+ RUTH                        
+ SHARON                 
+ MICHELLE            
+ LAURA                  
+ SARAH          [0,0] => Current Word Index
+ KIMBERLY       [1,0] => (CalcWeight) CurrWeight
+ DEBORAH        [2,0] => Word Count
+ JESSICA        
+ SHIRLEY        
+ CYNTHIA        [6,0] => (Swap) Idx_A
+ ANGELA         [7,0] => (Swap) Idx_B
+ MELISSA        [8,0] => (Swap) Tmp
+ BRENDA         
+ AMY            
+ ANNA           [3,0] => (Bubblesort) n
+ REBECCA        [4,0] => (Bubblesort) i
+ VIRGINIA       
+ KATHLEEN       
+ PAMELA         [5,0] => (Sum) current index //unshifted
+ MARTHA         [9,0] => (Sum) curr sum
+ DEBRA
+ AMANDA         
+ STEPHANIE      
+ CAROLYN        // Max Word Len: 11
+ CHRISTINE      // Wordcount: 5163
+ MARIE          
+ JANET          // "~IE"*+   =>   5163
+ CATHERINE      // "5"       =>   53
+ FRANCES        
+ ANN            //-> Swap two names (Idx_A && Idx_B on stack)
+ JOYCE          
+ DIANE          >60p70p66+:80p>:60g1+g\70g1+g80g60g1+v
+ ALICE                        |\p08:-1:g08p+1g07g08p <
+ JULIE                      @$<
