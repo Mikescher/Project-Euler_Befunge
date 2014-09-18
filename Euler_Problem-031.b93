@@ -1,0 +1,65 @@
+v#########
+ ###
+
+>00000000010p20p30p40p50p60p70p80p90p  "d"2*  11p921p031p 0v
+v                                                         $<
+             vp0p12:+1g120<  >g25**+70g5*+80g2*+90g+v       
+>21g0g1+21g0p>21g9-       |>10g5"d"**20g2"d"**+"d"3v>:11g\`|
+p                         >^ ^6+**45g05+*"2"g04+*g0<v<     
+^12-1<                              v<      v       <|-g11 <
+     |                           -1:<|g0:g12<p13+1g13<
+     >$31g.@                         >1-21p ^
+
+
+
+
+
+[1,0] 500p
+[2,0] 200p
+[3,0] 100p
+[4,0]  50p
+[5,0]  20p
+[6,0]  10p
+[7,0]   5p
+[8,0]   2p
+[9,0]   1p
+
+[1,1] searched number (=200)
+[2,1] in number position
+[3,1] sum
+
+In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:
+    1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
+It is possible to make £2 in the following way:
+    1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
+How many different ways can £2 be made using any number of coins?
+
+AB`     A > B
+
+
+// GetValue
+
+10g5"d"**20g2"d"**+30g"d"*+40g"2"*+50g54**+60g25**+70g5*+80g2*+90g+
+
+//#
+
+    >g25**+70g5*+80g2*+90g+v
+>  10g5"d"**20g2"d"**+"d"3v>
+    ^6+**45g05+*"2"g04+*g0<
+
+// Output
+
+" "::::::::10g.,20g.,30g.,40g.,50g.,60g.,70g.,80g.,90g.,55+,
+
+
+-------------
+
+The algorithm here enumerates through every possible combination using an approach similiar to counting binary:
+
+- Increment the last digit until our total sum is greater 200 (test for every combination if total sum == 200)
+- Then set every field from back to front to zero until you find a non-zero field
+- Set this field also to zero
+- Increment the field before ... repeat
+- Abort the loop when you have used every field
+
+That is probably not the most efficient way, but I optimized this brute-force variant enough that it becomes viable.
