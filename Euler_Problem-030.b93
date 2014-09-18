@@ -1,0 +1,53 @@
+v                   >55+/ v v    $$_v#!:-1               <<
+>01>::9::*:***0\>:#<|#\+1\<>9::*:***>:::55+%::*:**\55+/v>|:
+                    >$ -#v_^>$>+\:#<_vv/+55\**:*::%+55:<->^
+   ^                   +1<           $>:55+%::*:**\55+/v+
+                                     .v/+55\**:*::%+55:<+
+                                     @>:55+%::*:**\55+/v+
+                                      v/+55\**:*::%+55:<+
+                                      >55+%::*:**\55+$++^
+
+
+v
+
+
+// Get DigitCount
+
+          >55+/ v
+"x" 0\>:#<|#\+1\<
+          >$@
+
+
+//   stack ^5
+
+::*:**
+
+// Get Upper Bound (-> stack)
+
+                  >55+/ v
+1>::9::*:***0\>:#<|#\+1\<>9::*:***
+                  >$ -#v_^
+ ^                   +1<
+
+
+// Test numbers (stack -> stack) (0 == isP5 )
+
+     ::55+%::*:**\55+/v>
+     v/+55\**:*::%+55:<-
+     >:55+%::*:**\55+/v+
+     v/+55\**:*::%+55:<+
+     >:55+%::*:**\55+/v+
+     v/+55\**:*::%+55:<+
+     >55+%::*:**\55+/++^
+
+
+---------------------------------------
+
+**Yes**. This is in fact the first program without *put* or *get* instructions. It operates completely on the stack. And that makes it **really** fast.
+
+But *- to be fair -* the algorithm is pretty simple:
+
+First get the upper bound for our later search, we search for a number where `digitcount(9^5 * n) <= n`
+
+After our algorithm calculated that number (I resisted the urge to hard code `354294`) we test every number from 0 to limit and sum the fitting ones (there are only 6).  
+`4150`, `4151`, `54748`, `92727`, `93084`, `194979`
