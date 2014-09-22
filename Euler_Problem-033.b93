@@ -1,0 +1,69 @@
+v
+>110p120p"cc" v
+vp09p08       <     >80g55+/90g55+/-#v_v                           
+>90g80g`!#v_>80g55+/|                  >80g90g55+/*90g80g55+/*-#v_v
+            v       <                <                          <
+                    >80g55+/90g55+%-#v_v
+            >80g55+/|                  >80g90g55+/*90g80g55+%*-#v_v
+ @v\p05:<   v       <                <                          <  
+ .>50g%:|: <        >80g55+%90g55+/-#v_v
+ ^/\g02$<  g>80g55+%|                  >80g90g55+%*90g80g55+/*-#v_v
+           0v       <                <                          <
+           2        >80g55+%90g55+%-#v_v
+           g>80g55+%|                  >80g90g55+%*90g80g55+%*-#v_v
+           0v       <                <                          <
+           1>                                v
+           ^ $_v#!-9p08:-1g08<_v#!-9p09:-1g09<p02*g09g02p01*g08g01<
+^       p0 9"c"<
+^         >#                 ^#<
+
+
+
+[1,0] numerator
+[2,0] denominator
+
+[5,0] euclid (temp)
+
+[8,0] A
+[9,0] B
+
+
+// Iterate through every possible fraction
+
+          v         >#                                    #< v#     p09"c"<
+                          
+"cc"80p90p>90g80g`!#^_     80g."/",90g.55+,    90g1-:90p9-#^_>80g1-:80p9-#^_$  @
+
+
+// isDCF
+
+        >80g55+/90g55+/-#v_v
+>80g55+/|                  >80g90g55+/*90g80g55+/*-#v_>  @ true
+v       <                <                          <  > @ false
+        >80g55+/90g55+%-#v_v
+>80g55+/|                  >80g90g55+/*90g80g55+%*-#v_^
+v       <                <                          <
+        >80g55+%90g55+/-#v_v
+>80g55+%|                  >80g90g55+%*90g80g55+/*-#v_^
+v       <                <                          <
+        >80g55+%90g55+%-#v_v
+>80g55+%|                  >80g90g55+%*90g80g55+%*-#v_^
+v       <                <                          <
+>                                                      ^
+
+
+// GCD (stack,stack -> stack) # uses 50 as temp
+
+   >:50p\v
+> :|:%g05<
+   >$    @
+
+
+---------------------------------------
+
+This one was relaxing. You can simple iterate through all 8100 cases and test each one in short time.  
+Three notable things:
+
+- You can test two fraction `a/b` and `c/d` simple of equality with the formula `a*d == b*c`.
+- This is my compact [GCD algorithm](http://en.wikipedia.org/wiki/Euclidean_algorithm) in befunge (stack -> stack)
+- This is one of the few *real* Befunge-93 programs in this series. (It doesn't violate the [80x25](https://github.com/catseye/Befunge-93/blob/master/doc/Befunge-93.markdown) size rule)
