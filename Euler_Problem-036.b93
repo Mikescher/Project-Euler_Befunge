@@ -1,0 +1,57 @@
+v      
+0             v                      \<     v            *2\<     >:.55+,\   v
+>093194*+**>::>55+*10p:55+%10g+\55+/:#^_$::0>10p:2%10g+\2/:#^_$-!#^_$        v
+           |:-1                                                              <
+v          <     v                      \<     v            *2\<     >:.55+,\v
+>93194*+**>::55+/>55+*10p:55+%10g+\55+/:#^_$::0>10p:2%10g+\2/:#^_$-!#^_$     v
+          |:-1                                                               <
+          >"= ",,>+\:#<_+.@
+       
+       
+
+[10] temp
+
+
+
+
+93194*+** => 999
+       
+// Test number for binary palindrome (stack -> inversed stack )
+
+  v            *2\<
+:0>10p:2%10g+\2/:#^_$-  @
+
+// enumerate Palindromes
+
+
+
+             v                      \<
+>93194*+**>::>55+*10p:55+%10g+\55+/:#^_$                v
+          |-1                                           <
+v         <      v                      \<
+>93194*+**>::55+/>55+*10p:55+%10g+\55+/:#^_$            v
+          |-1                                           <
+
+
+
+
+// generate palindrome not-odd
+
+ v                      \<
+:>55+*10p:55+%10g+\55+/:#^_$
+
+
+// generate palindrome odd
+
+     v                      \<
+:55+/>55+*10p:55+%10g+\55+/:#^_$
+
+
+---------------------------------------
+
+The *trick* here is that we only need to test 1998 numbers. Because there are only so much base10 palindromes:
+
+- The numbers from `1` to `999` mirrored result into to palindromes `11` to `999999`
+- The numbers from `1` to `999` mirrored at the last digit result into to palindromes `1` to `99999`
+
+Then we only need to test these numbers whether they are also binary palindromes. 
