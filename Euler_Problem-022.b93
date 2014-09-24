@@ -51,21 +51,21 @@
  DIANE          >60p70p66+:80p>:60g1+g\70g1+g80g60g1+v
  ALICE                        |\p08:-1:g08p+1g07g08p <
  JULIE                      @$<
- HEATHER
- TERESA
- DORIS
- GLORIA
- EVELYN
- JEAN
- CHERYL
- MILDRED
- KATHERINE
- JOAN
- ASHLEY
- JUDITH
- ROSE
- JANICE
- KELLY
+ HEATHER         
+ TERESA          
+ DORIS           ----------------------
+ GLORIA          
+ EVELYN          The main thing here was sorting the list. I used [bubble sort](http://en.wikipedia.org/wiki/Bubble_sort), which is not the fastest algorithm but was pretty easy to implement in befunge.
+ JEAN            The rest is just calculating the single scores.
+ CHERYL          
+ MILDRED         
+ KATHERINE       
+ JOAN            
+ ASHLEY          
+ JUDITH          
+ ROSE            
+ JANICE          
+ KELLY           
  NICOLE
  JUDY
  CHRISTINA
