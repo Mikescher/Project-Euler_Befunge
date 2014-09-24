@@ -1,0 +1,59 @@
+v
+>01:55+*:55+*:55+*:55+*:55+*:55+*130p v
+         v                                           <
+>110p120p>:10g920g**`!#v_10g920g**-10g1+10p20g55+*20p^>v          <
+  >30g.@               >1-:10g/20g+\      10g%10g\-1-:|>\55+/\1-:#^_v
+  $                                   $               >           :^
+^_^#:                                 <#                p03*g03%+55$<
+
+
+
+// getDigit (value, digit_idx -> digit)  // digit of a single number at position x
+
+ >v          <
+:|>\55+/\1-:#^_$55+%
+ >           :^
+
+
+
+// digitAt (pos -> digit)                // digit of fraction at position x
+
+        v                                           <
+110p120p>:10g920g**`!#v_10g920g**-10g1+10p20g55+*20p^>v          <
+                      >1-:   10g/20g+ \ 10g%10g\-1- :|>\55+/\1-:#^_$55+%
+                                                     >           :^
+
+
+
+[1,0] digitcount
+[2,0] digitvalue
+[3,0] result
+
+---------------------------------------
+
+This one is really great - I came up with an O(log n) algorithm (crazy fast) for determining the n-th digit.  
+First I tested it in LinqPad, so here the C# code for the algorithm:
+
+```csharp
+public int digitAt(int pos) {
+    int digitcount = 1;
+    int digitvalue = 1;
+    
+    // Get DigitCount of current number
+    while(pos > digitvalue * 9 * digitcount) {
+        pos -= digitvalue * 9 * digitcount;
+        digitcount++;
+        digitvalue *= 10;
+    }
+    
+    // current number and digit-position in number
+    int value = digitvalue + (pos - 1)/digitcount;
+    int digit = digitcount - (pos - 1)%digitcount - 1;
+    
+    return getInternalDigit(value, digit);
+}
+
+public int getInternalDigit(int value, int digit) {
+    return (value / (int)Math.Pow(10, digit)) % 10;
+}
+```
