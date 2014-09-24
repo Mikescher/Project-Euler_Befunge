@@ -1,0 +1,38 @@
+v#########
+v#########    v                                                                                                                                              <#     p145<
+ #########         v          +1<           v            <  v               <                 vp2\0:<         >v    >v          >$v   v\g2:<
+>"ec"*31p>241p>01-1>:31g*\:41g-#^_$>\10p01-\>:55+%\55+/:#^_$>10g55+*+10p:1+#^_$10g\:1+#v_$:55+>  1-:|  >:55+%:|>:2g!|>1\2p55+/:!| >55+> 1-:|>#v_$41g1-:41p1-#^_31g1-:31p|
+                                   ^                                                  \<           $>$:^      $#    $#          <v++++++++$<
+                                                                                                            $$>     >          $0>9-!\$     ^ >.     @     ,,,,, "RORRE"<
+  v            <
+02>:31g*\:41g-#^_31g*
+
+
+
+
+
+[0-9, 2] pan-digital array
+[1,1] temp
+
+[3,1] (loop) i
+[4,1] (loop) d
+
+
+// Merge (null-terminated-stack-array  ->  stack)
+
+       v            <  v             <
+>\10p0\>:55+%\55+/:#^_$>10g55+*+10p:#^_$10g\:#v_$
+^                                            \<
+
+// IsPandigital (stack -> stack)
+
+   vp2\0:<         >v    >v          >$v   v\g2:<
+55+>  1-:|  >:55+%:|>:2g!|>1\2p55+/:!| >55+> 1-:|
+        $>$:^      $#    $#          <v++++++++$<
+                 $$>     >          $0>9-!\$         @
+
+
+---------------------------------------
+
+Not much to say here. I needed to implement a way of merging numbers and a way of testing for pandigitals (we already did that in problem 32).
+Then we start from `9999` downward, because bigger numbers will always lead to 10 digits or more.
