@@ -1,0 +1,48 @@
+v
+>010p020p630p"d"55+*90p050p30g3/70p         v
+ vp07/3g03p050                                                    p03+2<
+v                     >#        v# p07-1<           >10p30g20pv
+>30g::270g*-*\70g-2*%#^_50g1+50p>70g:2-#^_$50g:10g`#^_$       >30g:90g-|
+ >                             $^$          <                    @.g02$<
+
+
+[1,0] max
+[2,0] maxNum
+
+[3,0] p
+
+[5,0] count
+
+[7,0] a
+
+[9,0] 1000
+
+################################################################################
+
+int max = -1;
+int maxNum = 0;
+
+for(int p = 2; p <= 1000; p+=2)
+{
+    int count = 0;
+
+    for(int a = 2; a < p/3; a++)
+        if (p*(p-2*a) % (2*(p-a)) == 0 && a < p*(p-2*a) / (2*(p-a)))
+            count++;
+    
+    if (max < count)
+    {
+        max = count;
+        maxNum = p;
+    }
+}
+
+maxNum.Dump();
+
+################################################################################
+
+
+---------------------------------------
+
+We have the two formulas `a^2 + b^2 = c^2` and `a + b + c = p`. We can insert the second in the first and get `b = p*(p-2a) / 2*(p-a)` and `c = p-(b+a)`.  
+The we just go through all possible values for a and p and test if b is an integer. Then we search for the value of p with the most possible values of a.
