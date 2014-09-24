@@ -518,9 +518,9 @@ v                                           <
 
 
 
-[0,0] Sieve Size (150 000)
-[1,0] Sieve Width (1000) => 2000
-[2,0] Sieve Height (150) => 500
+[0,0] Sieve Size (1 000 000)
+[1,0] Sieve Width (2000)
+[2,0] Sieve Height (500)
 [3,0] Loop Index (2++)
 
 [5,0] (CCP) count
