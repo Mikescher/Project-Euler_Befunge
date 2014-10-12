@@ -1,0 +1,38 @@
+                              v ################################################################################
+                                ################################################################################
+A                               ################################################################################
+ABILITY                         ################################################################################
+ABLE                            ################################################################################
+ABOUT                          v                                       <
+ABOVE                         > 49*1+  00p>"P":10p 5:20p *30p 050p 260p^      // INIT
+ABSENCE                        
+ABSOLUTELY                     >50g1+:50p :1+*2/  "0"\ :10g%" "+\10g/p v      // TRIANGLE GRID
+ACADEMIC                       |`\g03                      /2*+1: +1g05<
+ACCEPT                          
+ACCESS                         >070p0>70g60gg:" "-!#v_"@"-+v                  // WORD VALUES
+ACCIDENT                             ^p07+1g07      $#     <
+ACCOMPANY                      |-g00p06+1:g06pg06*39<
+ACCORDING                      
+ACCOUNT                        >260p 0 >93*60gg:10g%" "+\10g/g"0"-!v          // SUM OF VALUES
+ACHIEVE                                |-g00 p06+1:g06            +<
+ACHIEVEMENT                          @.<
+ACID                           
+ACQUIRE                        
+ACROSS                         
+SKY                           [00] list size + offset   (37) => 49*1+
+ACTION                        [10] triangle grid width  (80)
+ACTIVE                        [20] triangle grid height (5)
+ACTIVITY                      [30] triangle grid size   (400)
+ACTUAL                        
+ACTUALLY                      [50] current triangle index
+ADD                           
+ADDITION                      [60] Current word idx
+ADDITIONAL                    [70] Current letter
+ADDRESS                       
+ADMINISTRATION                
+ADMIT                         
+ADOPT                         // IsTriangle (stack -> stack)
+ADULT                         
+ADVANCE                       :10g%" "+\10g/g"0"-!
+ADVANTAGE                     
+ADVICE                        
