@@ -1,0 +1,66 @@
+vXXXXXX
+vXXXXXX
+$
+>7  12p 0>:0\1p::"1"+v     
+         |-g21:+1p0\ <
+v   p231$<
+              >32g1gv
+        >32g2%| vp24<>2g1g1+32gv 
+>32g:1g`|     >0    ^^3p0g23p0<1
+^       >032g1pv>42g0g32g0g42g^p
+^p23+1g23      <          vp230<
+     v6:-1g26*+ 55<0p26g21<          @.<
+     >2p0g"0"-+62g|                    $
+               #  >:>302pv >:02g2-:*` !|
+               $    >!\2% +|%p20+1:g20:<
+                    ^`2::< $  
+               ^           <
+
+
+
+[?0] a array (=> permutations, reversed)
+[?1] p array (=> iteration control)
+
+[02] divisor (isPrime)
+[12] length (7)
+
+[32] i (QuickPerm) (=> position 1)
+[42] j (QuickPerm) (=> position 2)
+
+[62] pos (aToInt)
+
+
+// Is Prime ( stack -> {0|1} )  // Numbers > 1
+
+>    >302pv >:02g2-:*` #v_$1
+     >!\2% +|%p20+1:g20:<
+     ^`2::< >$0             
+
+
+// a-array to number ( {} => stack )
+
+12g62p0>55+* 62g1-:6v
+       |g26+-"0"g0p2<
+       @
+
+// reverse
+
+v6:-1g26 *+55<0p26g21
+>2p0g"0"-+62g|
+             @
+
+// swap a[i] <-> a[j]
+
+42g0g32g0g 42g0p32g0p
+
+
+---------------------------------------
+
+Perhaps you remember from elementary school that numbers with a digit sum divisible by three is also divisible by three (an so not a prime).  
+So our number can't be 9 digits long (digit sum = `45`) nor 8 (digit sum = `36`). Our next best try is a 7-digit palindrome.
+
+With the [QuickPerm algorithm](http://www.quickperm.org/) we generate all the permutations and test them for their primality.
+This time we don't use a prime sieve, the numbers are just too big and it's faster with a simple naive prime test.
+
+The rest is just implementation.
+But the resulting code looks imho pretty nice because it really uses the four directions of befunge and often intersects with itself, even though I think that doesn't make it more readable.
