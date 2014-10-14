@@ -18,5 +18,5 @@
 Notes
 -----
 
- - For some of the longer programs (err ... like ... all of them) use [BefunExec](https://github.com/Mikescher/BefunGen) or a similar fast interpreter.
+ - For some of the longer programs (err ... like ... all of them) use [BefunExec](https://github.com/Mikescher/BefunGen) or a similar fast interpreter. *(And your interpreter should also support int64 numbers for some programs)*
  - I restricted myself to the Befunge-93 instruction set, but some programs doesn't fit in the 80x25 size restriction - so I think they are *technically* Befunge-98 programs
