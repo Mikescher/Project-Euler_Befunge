@@ -1,0 +1,26 @@
+v                 >v
+>8::**::**8*:*20pv0v>vv p03+g03*2:p01-\g01+g03:<
+v           +"l#"<3pp2# v/4    <   >:30g+10g`! |
+>1+::2*1-*64**v   010>0g>:10g`#^_>:|:/4p03/2g03<
+^        <  $<>1+:^>^ >30g2/30p4/^ >$30g:*-v
+@.*-1*2:_^#!_^#!                    -5%6g03<
+
+
+
+143                 "#l"+
+p * (2*p - 1)       :2*1-*
+
+[10] (isquare)op
+[20] 2^60 const
+[30] (isquare)res
+
+-------------------------------------------------------------------------------
+
+This problem is very similar to the previous one. We iterate through all Pentagonal numbers (starting at P_144) and test the numbers if they are hexagonal.
+
+The test for hexagonal numbers is the same as in Problem-44, but we have to expand the iSquare function for int64 numbers ([20] is now 2^60 instead of 2^30).
+
+The major trick is that we only need to test for the hexagonal property. Because all hexagonal numbers are also Triangle numbers. 
+Think about it, a Hexagon has six edges and a Triangle three, so every Hexagonal contains two triangles.
+
+`H_{n} == T_{2*n}`
