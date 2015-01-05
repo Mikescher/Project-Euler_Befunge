@@ -2,7 +2,12 @@
 !Euler_Problem-???.b93
 !Euler_Problem-??? (*).b93
 !.*
+!*/
 !README.md
 
 
 !processed/
+!compiled/*
+!compiled/C/*.c
+!compiled/CSharp/*.cs
+!compiled/Python/*.py
