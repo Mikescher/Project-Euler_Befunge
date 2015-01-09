@@ -1,0 +1,47 @@
+v?>:55+%2+\55+/:5v>"Z%"v>+\55+/:55v>v v           0`*"ce":+*"Z%"$<
+" :v55:/+55\+2%+5<\  v<*2v+55\+2%+<:v>$:.48*,"Z%"*+:.48*,"Z%"*+. @
+( :>+%2+\55+/2+***^  01+%/>* -#v_-!|:|<                          #
+%   v5:/+55\+2%+55::g<:1+2*    v   <">::2%!#v_v >10g\%!#v_:10g2/`|
+"   >5+%2+\55+/:55v   p05+*    $   ve#< v%3:>#<#^ #<    >    v   :
+* +v***+2/+55\+2%+<   ^<5>^    $    c`  > !#^_10p7:^:+6_^#%\g01-2<
+7 1>\"Z%"*+:55+%2+\55+/:^      v   <"*^                   $$$<
+>+^                            <    >^
+
+
+        
+
+[10] used by prime test
+[20] used by palindromic test
+
+
+
+digit Mult of a single number:
+
+:55+%2+\55+/:5v>
+v55:/+55\+2%+5<
+>+%2+\55+/2+***^
+
+
+is Palindromic (x, x+3330, x+6660)
+
+::55+%2+\55+/:5v>"Z%"v>+\55+/:55v
+ v55:/+55\+2%+5<\  v<*2v+55\+2%+<>
+ >+%2+\55+/2+***^  02+%/>* -#v_-!|
+ <v5:/+55\+2%+55::g<:2+2*    >$ $>
+  >5+%2+\55+/:55v   p05+*         
+ v***+2/+55\+2%+<   ^<5>^         
+ >\"Z%"*+:55+%2+\55+/:^           
+
+
+---------------------------------------
+
+This could be the first problem with prime numbers but without a prime sieve.  
+We iterate through the numbers from `1488` to `3340` and search for palindromes. 
+To speed up the palindrome calculation we calculate the product of each digit plus two and compare the product of our three numbers.
+This is only an approximation, but a rather good one. In tested the numbers from `0` to `100 000` and there were **zero** failures.
+
+So now we've got the numbers where `digit_product(p) == digit_product(p+3330) == digit_product(p+6660)` (in fact there are only 40 of these).
+We then use a simple primality test to check if all three numbers are prime.  
+The primality test is basically a port of the [wikipedia](http://en.wikipedia.org/wiki/Primality_test) version to befunge. Wit it we only have to do `n/6` divisions to test a number `n` for primality.
+
+All in all tis leads to a fast, small and not very grid-intensive program (Only one field is used, *and only as a temporary storage to swap three values*).
