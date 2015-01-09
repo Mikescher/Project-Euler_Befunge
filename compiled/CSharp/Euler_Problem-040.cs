@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0 (c) 2015 */
+/* compiled with BefunCompile v1.0.1 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -43,14 +43,14 @@ static void Main(string[] args)
         goto _7;
     _7:
         sa(sr());
-        sa(((x1)*(((9)*(x2)))));
+        sa((x1)*((9)*(x2)));
         {long v0=sp();sa((sp()>v0)?1:0);}
         sa((sp()!=0)?0:1);
         goto _1;
     _8:
-        sa(((x1)*(((9)*(x2)))));
-        x1=((x1)+(1));
-        x2=((x2)*(10));
+        sa((x1)*((9)*(x2)));
+        x1=(x1)+(1);
+        x2=(x2)*(10);
         {long v0=sp();sa(sp()-v0);}
         goto _7;
     _9:

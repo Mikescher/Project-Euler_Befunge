@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0 (c) 2015 */
+/* compiled with BefunCompile v1.0.1 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -19,13 +19,13 @@ static void Main(string[] args)
         long x5=32;
         goto _4;
     _0:
-        if((((x2)-(2)))!=0)goto _12;else goto _6;
+        if(((x2)-(2))!=0)goto _12;else goto _6;
     _1:
-        if(((((x5)>(x0))?1:0))!=0)goto _7;else goto _11;
+        if(((x5)>(x0)?1:0)!=0)goto _7;else goto _11;
     _2:
-        if((((x3)-(x4)))!=0)goto _10;else goto _9;
+        if(((x3)-(x4))!=0)goto _10;else goto _9;
     _3:
-        if((tm(((x3)*(((x3)-(((2)*(x2)))))),((((x3)-(x2)))*(2))))!=0)goto _5;else goto _13;
+        if((tm((x3)*((x3)-((2)*(x2))),((x3)-(x2))*(2)))!=0)goto _5;else goto _13;
     _4:
         x0=0;
         x1=0;
@@ -68,6 +68,6 @@ static void Main(string[] args)
         x2=sp();
         goto _3;
     _13:
-        x5=((x5)+(1));
+        x5=(x5)+(1);
         goto _5;
 }}

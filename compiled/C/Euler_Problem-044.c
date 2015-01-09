@@ -1,9 +1,9 @@
-/* compiled with BefunCompile v1.0 (c) 2015 */
+/* compiled with BefunCompile v1.0.1 (c) 2015 */
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
-int random(){return rand()%2==0;}
+int rd(){return rand()%2==0;}
 int64 td(int64 a,int64 b){ return (b==0)?0:(a/b); }
 int64 tm(int64 a,int64 b){ return (b==0)?0:(a%b); }
 int64*s;int q=16384;int y=0;
@@ -56,8 +56,8 @@ _13:
     sa(5);
     goto _14;
 _14:
-    sa(((x1)-(1)));
-    sa(((x1)-(1)));
+    sa((x1)-(1));
+    sa((x1)-(1));
     goto _0;
 _15:
     sp();
@@ -100,7 +100,7 @@ _16:
     sa(sr());
     x4=sp();
     sa(x0);
-    sa((((x0)>(x4))?1:0));
+    sa((x0)>(x4)?1:0);
     goto _1;
 _17:
     sa(sr());
@@ -121,7 +121,7 @@ _19:
     goto _4;
 _20:
     sp();
-    sa(((x6)*(x6)));
+    sa((x6)*(x6));
     {int64 v0=sp();sa(sp()-v0);}
     sa(x6);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
@@ -135,16 +135,16 @@ _21:
     goto _6;
 _22:
     sa(x5);
-    sa(((x2)-(1)));
-    sa(((x2)-(1)));
+    sa((x2)-(1));
+    sa((x2)-(1));
     goto _0;
 _23:
-    sa(((((((x3)+(x5)))*(24)))+(1)));
-    sa(((((((x3)+(x5)))*(24)))+(1)));
+    sa((((x3)+(x5))*(24))+(1));
+    sa((((x3)+(x5))*(24))+(1));
     x6=0;
     x4=sp();
     sa(x0);
-    sa((((x0)>(x4))?1:0));
+    sa((x0)>(x4)?1:0);
     goto _7;
 _24:
     sa(sr());
@@ -165,7 +165,7 @@ _26:
     goto _10;
 _27:
     sp();
-    sa(((x6)*(x6)));
+    sa((x6)*(x6));
     {int64 v0=sp();sa(sp()-v0);}
     sa(x6);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
@@ -181,7 +181,7 @@ _29:
     goto _12;
 _30:
     sp();
-    printf("%lld", (int64)(((x5)-(x3))));
+    printf("%lld", (int64)((x5)-(x3)));
     goto __;
 _31:
     sa(sr());

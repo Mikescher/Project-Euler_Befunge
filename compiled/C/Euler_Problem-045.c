@@ -1,9 +1,9 @@
-/* compiled with BefunCompile v1.0 (c) 2015 */
+/* compiled with BefunCompile v1.0.1 (c) 2015 */
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
-int random(){return rand()%2==0;}
+int rd(){return rand()%2==0;}
 int64 td(int64 a,int64 b){ return (b==0)?0:(a/b); }
 int64 tm(int64 a,int64 b){ return (b==0)?0:(a%b); }
 int64*s;int q=16384;int y=0;
@@ -39,7 +39,7 @@ _6:
     goto _7;
 _7:
     sa(x0);
-    sa((((x0)>(x1))?1:0));
+    sa((x0)>(x1)?1:0);
     goto _0;
 _8:
     sa(sr());
@@ -60,9 +60,9 @@ _10:
     goto _3;
 _11:
     sp();
-    sa(((x2)*(x2)));
+    sa((x2)*(x2));
     {int64 v0=sp();sa(sp()-v0);}
-    sa(((((tm(x2,6))-(5)))!=0)?0:1);
+    sa((((tm(x2,6))-(5))!=0)?0:1);
     goto _4;
 _12:
     x2=0;

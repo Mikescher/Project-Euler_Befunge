@@ -6,7 +6,7 @@ These are the Befunge programs from the /processed folder compiled with **[Befun
 [BefunCompile](https://github.com/Mikescher/BefunCompile) is my own non-general Befunge to C / C# / Python compiler.  
 These files are not always up to date - if you want to be sure better compile them again yourself:
 
-Here is the commadn used to creare these files:
+Here is the command used to create these files:
 ~~~
 "PATH\TO\BefunCompile.exe" ^
     --file="processed\*.b93" ^

@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0 (c) 2015 */
+/* compiled with BefunCompile v1.0.1 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -48,7 +48,7 @@ static void Main(string[] args)
     _14:
         if(sp()!=0)goto _28; else goto _26;
     _15:
-        if(((((((x3)>(x2))?1:0))!=0)?0:1)!=0)goto _18;else goto _23;
+        if(((((x3)>(x2)?1:0)!=0)?0:1)!=0)goto _18;else goto _23;
     _16:
         if((x1)!=0)goto _21;else goto _22;
     _17:
@@ -58,8 +58,8 @@ static void Main(string[] args)
         x3=99;
         goto _15;
     _18:
-        sa(((x2)-(1)));
-        x2=((x2)-(1));
+        sa((x2)-(1));
+        x2=(x2)-(1);
         sa(9);
         {long v0=sp();sa(sp()-v0);}
         sa((sp()!=0)?0:1);
@@ -91,18 +91,18 @@ static void Main(string[] args)
         sa(td(x2,10));
         goto _2;
     _24:
-        sa(((td(x2,10))-(td(x3,10))));
+        sa((td(x2,10))-(td(x3,10)));
         goto _3;
     _25:
-        sa(((((x2)*(td(x3,10))))-(((x3)*(td(x2,10))))));
+        sa(((x2)*(td(x3,10)))-((x3)*(td(x2,10))));
         goto _14;
     _26:
-        x0=((x0)*(x2));
-        x1=((x1)*(x3));
+        x0=(x0)*(x2);
+        x1=(x1)*(x3);
         goto _27;
     _27:
-        sa(((x3)-(1)));
-        x3=((x3)-(1));
+        sa((x3)-(1));
+        x3=(x3)-(1);
         sa(9);
         {long v0=sp();sa(sp()-v0);}
         sa((sp()!=0)?0:1);
@@ -111,27 +111,27 @@ static void Main(string[] args)
         sa(td(x2,10));
         goto _4;
     _29:
-        sa(((td(x2,10))-(tm(x3,10))));
+        sa((td(x2,10))-(tm(x3,10)));
         goto _5;
     _30:
-        sa(((((x2)*(td(x3,10))))-(((x3)*(tm(x2,10))))));
+        sa(((x2)*(td(x3,10)))-((x3)*(tm(x2,10))));
         goto _13;
     _31:
         sa(tm(x2,10));
         goto _6;
     _32:
-        sa(((tm(x2,10))-(td(x3,10))));
+        sa((tm(x2,10))-(td(x3,10)));
         goto _7;
     _33:
-        sa(((((x2)*(tm(x3,10))))-(((x3)*(td(x2,10))))));
+        sa(((x2)*(tm(x3,10)))-((x3)*(td(x2,10))));
         goto _12;
     _34:
         sa(tm(x2,10));
         goto _8;
     _35:
-        sa(((tm(x2,10))-(tm(x3,10))));
+        sa((tm(x2,10))-(tm(x3,10)));
         goto _9;
     _36:
-        sa(((((x2)*(tm(x3,10))))-(((x3)*(tm(x2,10))))));
+        sa(((x2)*(tm(x3,10)))-((x3)*(tm(x2,10))));
         goto _11;
 }}
