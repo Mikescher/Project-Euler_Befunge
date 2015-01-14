@@ -224,7 +224,7 @@ static void Main(string[] args)
     _37:
         sa(3);
         {long v0=sp();sa(sp()-v0);}
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         sp();
         return;
     _38:
@@ -272,7 +272,7 @@ static void Main(string[] args)
     _45:
         sa(3);
         {long v0=sp();sa(sp()-v0);}
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         sp();
         return;
     _46:

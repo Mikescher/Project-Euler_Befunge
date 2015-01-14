@@ -107,6 +107,6 @@ static void Main(string[] args)
         {long v0=sp();sa(sp()-v0);}
         goto _4;
     _14:
-        System.Console.Out.WriteLine((long)(gr(3,0)));
+        System.Console.Out.Write((long)(gr(3,0)));
         return;
 }}

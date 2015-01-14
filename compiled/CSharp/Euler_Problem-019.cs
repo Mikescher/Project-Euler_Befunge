@@ -56,7 +56,7 @@ static void Main(string[] args)
         sa((gr(3,2))-(2001));
         goto _3;
     _12:
-        System.Console.Out.WriteLine((long)(gr(9,2)));
+        System.Console.Out.Write((long)(gr(9,2)));
         return;
     _13:
         gw(9,2,((((tm(gr(0,2),7))+((gr(1,2))-(1)))!=0)?0:1)+(gr(9,2)));

@@ -118,7 +118,7 @@ static void Main(string[] args)
         sa((((3)-(gr(5,0)))!=0)?0:1);
         goto _4;
     _20:
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _21:
         sa(sr());

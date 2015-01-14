@@ -74,7 +74,7 @@ static void Main(string[] args)
         goto _9;
     _11:
         sp();
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _12:
         sa(sr());

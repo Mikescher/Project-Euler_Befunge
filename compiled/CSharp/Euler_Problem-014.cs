@@ -68,12 +68,12 @@ static void Main(string[] args)
         sa((sp()!=0)?0:1);
         goto _3;
     _11:
-        System.Console.Out.WriteLine((long)(x1));
+        System.Console.Out.Write((long)(x1));
         sa(x0);
         sa(58);
-        System.Console.Out.WriteLine((char)(32));
-        System.Console.Out.WriteLine((char)(sp()));
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((char)(32));
+        System.Console.Out.Write((char)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _12:
         sa(1);

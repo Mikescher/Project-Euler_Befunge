@@ -94,6 +94,6 @@ static void Main(string[] args)
         goto _3;
     _13:
         sp();
-        System.Console.Out.WriteLine((long)(x0));
+        System.Console.Out.Write((long)(x0));
         return;
 }}

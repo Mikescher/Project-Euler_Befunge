@@ -78,14 +78,14 @@ static void Main(string[] args)
         gw(7,0,9);
         goto _14;
     _14:
-        System.Console.Out.WriteLine((long)(gr(gr(7,0),0)));
+        System.Console.Out.Write((long)(gr(gr(7,0),0)));
         goto _4;
     _15:
         gw(7,0,(gr(7,0))+(1));
         goto _14;
     _16:
-        System.Console.Out.WriteLine((char)(61));
-        System.Console.Out.WriteLine((long)(gr(8,0)));
+        System.Console.Out.Write((char)(61));
+        System.Console.Out.Write((long)(gr(8,0)));
         return;
     _17:
         sp();

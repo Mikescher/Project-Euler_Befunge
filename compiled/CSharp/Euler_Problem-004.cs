@@ -98,6 +98,6 @@ static void Main(string[] args)
     _17:
         sp();
         sp();
-        System.Console.Out.WriteLine((long)(gr(0,3)));
+        System.Console.Out.Write((long)(gr(0,3)));
         return;
 }}

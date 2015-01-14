@@ -69,14 +69,14 @@ static void Main(string[] args)
         sa((((gr(2,0))>(gr(4,0))?1:0)!=0)?0:1);
         goto _4;
     _13:
-        System.Console.Out.WriteLine((long)(gr(2,0)));
+        System.Console.Out.Write((long)(gr(2,0)));
         sa(32);
         sa(45);
-        System.Console.Out.WriteLine((char)(32));
-        System.Console.Out.WriteLine((char)(sp()));
-        System.Console.Out.WriteLine((char)(sp()));
-        System.Console.Out.WriteLine((long)(gr(4,0)));
-        System.Console.Out.WriteLine((char)(10));
+        System.Console.Out.Write((char)(32));
+        System.Console.Out.Write((char)(sp()));
+        System.Console.Out.Write((char)(sp()));
+        System.Console.Out.Write((long)(gr(4,0)));
+        System.Console.Out.Write((char)(10));
         gw(9,0,(gr(9,0))+((gr(2,0))+(gr(4,0))));
         goto _14;
     _14:
@@ -84,7 +84,7 @@ static void Main(string[] args)
         gw(2,0,(gr(2,0))-(1));
         goto _3;
     _15:
-        System.Console.Out.WriteLine((long)(gr(9,0)));
+        System.Console.Out.Write((long)(gr(9,0)));
         return;
     _16:
         gw(4,0,gr(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1)));

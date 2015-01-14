@@ -85,7 +85,7 @@ static void Main(string[] args)
         sa(x1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         {long v0=sp();sa((v0==0)?0:(sp()/v0));}
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _23:
         sa(td(x2,10));

@@ -70,8 +70,8 @@ static void Main(string[] args)
         goto _2;
     _14:
         sa(sr());
-        System.Console.Out.WriteLine((long)(sp()));
-        System.Console.Out.WriteLine((char)(10));
+        System.Console.Out.Write((long)(sp()));
+        System.Console.Out.Write((char)(10));
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         goto _15;
     _15:
@@ -116,8 +116,8 @@ static void Main(string[] args)
         goto _6;
     _21:
         sa(sr());
-        System.Console.Out.WriteLine((long)(sp()));
-        System.Console.Out.WriteLine((char)(10));
+        System.Console.Out.Write((long)(sp()));
+        System.Console.Out.Write((char)(10));
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         goto _22;
     _22:
@@ -145,8 +145,8 @@ static void Main(string[] args)
         goto _4;
     _24:
         sa(61);
-        System.Console.Out.WriteLine((char)(32));
-        System.Console.Out.WriteLine((char)(sp()));
+        System.Console.Out.Write((char)(32));
+        System.Console.Out.Write((char)(sp()));
         goto _25;
     _25:
         sa(sp()+sp());
@@ -159,7 +159,7 @@ static void Main(string[] args)
         goto _25;
     _27:
         sa(sp()+sp());
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _28:
         sp();

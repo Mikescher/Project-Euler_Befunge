@@ -127,7 +127,7 @@ static void Main(string[] args)
         gw(5,0,(gr(5,0))-(1));
         goto _8;
     _26:
-        System.Console.Out.WriteLine((long)(gr(9,0)));
+        System.Console.Out.Write((long)(gr(9,0)));
         return;
     _27:
         sa(64);

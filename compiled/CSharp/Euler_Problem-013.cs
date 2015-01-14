@@ -74,7 +74,7 @@ static void Main(string[] args)
         sa((sp()!=0)?0:1);
         goto _3;
     _16:
-        System.Console.Out.WriteLine((char)(gr(((9)-(gr(0,0)))+(gr(1,0)),gr(2,0))));
+        System.Console.Out.Write((char)(gr(((9)-(gr(0,0)))+(gr(1,0)),gr(2,0))));
         goto _15;
     _17:
         return;

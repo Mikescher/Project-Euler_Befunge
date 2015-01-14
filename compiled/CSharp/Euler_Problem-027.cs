@@ -140,7 +140,7 @@ static void Main(string[] args)
         sa((((gr(6,0))>(gr(4,0))?1:0)!=0)?0:1);
         goto _8;
     _24:
-        System.Console.Out.WriteLine((long)((gr(1,1))*(gr(2,1))));
+        System.Console.Out.Write((long)((gr(1,1))*(gr(2,1))));
         return;
     _25:
         sp();

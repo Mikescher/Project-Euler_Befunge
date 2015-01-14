@@ -98,7 +98,7 @@ static void Main(string[] args)
         goto _16;
     _23:
         sp();
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _24:
         sp();

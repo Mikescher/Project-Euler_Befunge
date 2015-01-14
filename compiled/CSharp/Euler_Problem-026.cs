@@ -73,6 +73,6 @@ static void Main(string[] args)
         gw(8,0,gr(3,0));
         goto _5;
     _13:
-        System.Console.Out.WriteLine((long)(gr(8,0)));
+        System.Console.Out.Write((long)(gr(8,0)));
         return;
 }}

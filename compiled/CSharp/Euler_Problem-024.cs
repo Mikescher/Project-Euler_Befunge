@@ -113,7 +113,7 @@ static void Main(string[] args)
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         gw(1,1,(gr(1,1))-((gr(3,1))*((gr(4,1))-(1))));
         gw(2,1,(gr(2,1))-(1));
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         goto _9;
     _24:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}

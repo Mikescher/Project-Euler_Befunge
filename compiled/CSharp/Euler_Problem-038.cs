@@ -153,7 +153,7 @@ static void Main(string[] args)
         sp();
         goto _9;
     _29:
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _30:
         sp();
@@ -174,11 +174,11 @@ static void Main(string[] args)
         sa(82);
         sa(82);
         sa(79);
-        System.Console.Out.WriteLine((char)(82));
-        System.Console.Out.WriteLine((char)(sp()));
-        System.Console.Out.WriteLine((char)(sp()));
-        System.Console.Out.WriteLine((char)(sp()));
-        System.Console.Out.WriteLine((char)(sp()));
+        System.Console.Out.Write((char)(82));
+        System.Console.Out.Write((char)(sp()));
+        System.Console.Out.Write((char)(sp()));
+        System.Console.Out.Write((char)(sp()));
+        System.Console.Out.Write((char)(sp()));
         return;
     _34:
         sa(sr());

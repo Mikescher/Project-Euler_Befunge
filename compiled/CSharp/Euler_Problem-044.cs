@@ -178,7 +178,7 @@ static void Main(string[] args)
         goto _12;
     _30:
         sp();
-        System.Console.Out.WriteLine((long)((x5)-(x3)));
+        System.Console.Out.Write((long)((x5)-(x3)));
         return;
     _31:
         sa(sr());

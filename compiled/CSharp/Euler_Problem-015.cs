@@ -36,7 +36,7 @@ static void Main(string[] args)
         sa(((((gr(1,0))+(gr(0,0)))>(42)?1:0)!=0)?0:1);
         goto _1;
     _7:
-        System.Console.Out.WriteLine((long)(gr(21,21)));
+        System.Console.Out.Write((long)(gr(21,21)));
         return;
     _8:
         sa(((gr(0,0))-(1))*((gr(1,0))-(1)));

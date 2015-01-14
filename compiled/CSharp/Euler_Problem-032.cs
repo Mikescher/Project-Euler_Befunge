@@ -419,7 +419,7 @@ static void Main(string[] args)
         goto _90;
     _92:
         sa(sp()+sp());
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _93:
         sa(sr());

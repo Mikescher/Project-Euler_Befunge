@@ -27,7 +27,7 @@ static void Main(string[] args)
         goto _0;
     _3:
         sp();
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _4:
         sa(sr());

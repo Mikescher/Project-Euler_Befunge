@@ -72,7 +72,7 @@ static void Main(string[] args)
         gw(1,0,sp());
         goto _3;
     _13:
-        System.Console.Out.WriteLine((long)(gr(0,1)));
+        System.Console.Out.Write((long)(gr(0,1)));
         return;
     _14:
         sp();

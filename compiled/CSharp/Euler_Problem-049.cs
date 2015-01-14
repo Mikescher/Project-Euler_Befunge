@@ -92,16 +92,16 @@ static void Main(string[] args)
     _13:
         sp();
         sa(sr());
-        System.Console.Out.WriteLine((long)(sp()));
-        System.Console.Out.WriteLine((char)(32));
+        System.Console.Out.Write((long)(sp()));
+        System.Console.Out.Write((char)(32));
         sa(3330);
         sa(sp()+sp());
         sa(sr());
-        System.Console.Out.WriteLine((long)(sp()));
-        System.Console.Out.WriteLine((char)(32));
+        System.Console.Out.Write((long)(sp()));
+        System.Console.Out.Write((char)(32));
         sa(3330);
         sa(sp()+sp());
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _14:
         sa(sr());

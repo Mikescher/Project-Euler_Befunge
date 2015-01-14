@@ -108,7 +108,7 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();sa(sp()-v0);}
         sa(sp()*sp());
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _16:
         sa(sr());

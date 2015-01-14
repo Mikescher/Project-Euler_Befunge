@@ -40,7 +40,7 @@ static void Main(string[] args)
         sa(sp()+sp());
         goto _5;
     _7:
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _8:
         sa(sr());

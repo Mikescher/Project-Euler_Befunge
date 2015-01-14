@@ -81,17 +81,17 @@ static void Main(string[] args)
         goto _4;
     _15:
         sa(x2);
-        System.Console.Out.WriteLine((long)(x2));
-        System.Console.Out.WriteLine((char)(32));
+        System.Console.Out.Write((long)(x2));
+        System.Console.Out.Write((char)(32));
         sa(x1);
-        System.Console.Out.WriteLine((long)(x1));
-        System.Console.Out.WriteLine((char)(32));
+        System.Console.Out.Write((long)(x1));
+        System.Console.Out.Write((char)(32));
         sa(x3);
-        System.Console.Out.WriteLine((long)(x3));
-        System.Console.Out.WriteLine((char)(61));
+        System.Console.Out.Write((long)(x3));
+        System.Console.Out.Write((char)(61));
         sa(sp()*sp());
         sa(sp()*sp());
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _16:
         sp();

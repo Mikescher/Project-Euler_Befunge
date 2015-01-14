@@ -85,7 +85,7 @@ static void Main(string[] args)
     _12:
         sa(sr());
         sp();
-        System.Console.Out.WriteLine((long)((gr(1,1))-(3)));
+        System.Console.Out.Write((long)((gr(1,1))-(3)));
         sp();
         return;
     _13:

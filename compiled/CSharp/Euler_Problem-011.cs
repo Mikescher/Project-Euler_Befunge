@@ -98,7 +98,7 @@ static void Main(string[] args)
         gw(0,0,(gr(0,0))-(1));
         goto _5;
     _16:
-        System.Console.Out.WriteLine((long)(gr(1,0)));
+        System.Console.Out.Write((long)(gr(1,0)));
         return;
     _17:
         sa(1);

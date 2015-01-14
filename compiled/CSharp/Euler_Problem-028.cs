@@ -55,6 +55,6 @@ static void Main(string[] args)
         goto _4;
     _6:
         sp();
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
 }}

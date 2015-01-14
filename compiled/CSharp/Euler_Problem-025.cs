@@ -52,7 +52,7 @@ static void Main(string[] args)
         sa(((gr(0,0))-(gr(7,0)))-(1000));
         goto _0;
     _8:
-        System.Console.Out.WriteLine((long)(gr(3,0)));
+        System.Console.Out.Write((long)(gr(3,0)));
         return;
     _9:
         gw(7,0,(gr(7,0))+(1));

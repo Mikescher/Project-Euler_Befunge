@@ -144,7 +144,7 @@ static void Main(string[] args)
         goto _16;
     _30:
         sp();
-        System.Console.Out.WriteLine((long)(gr(10,0)));
+        System.Console.Out.Write((long)(gr(10,0)));
         return;
     _31:
         gw(8,0,sp());

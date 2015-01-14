@@ -88,6 +88,6 @@ static void Main(string[] args)
         sa(sp()+sp());
         goto _11;
     _13:
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
 }}

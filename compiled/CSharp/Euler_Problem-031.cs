@@ -69,7 +69,7 @@ static void Main(string[] args)
         goto _1;
     _13:
         sp();
-        System.Console.Out.WriteLine((long)(gr(3,1)));
+        System.Console.Out.Write((long)(gr(3,1)));
         return;
     _14:
         sa(1);

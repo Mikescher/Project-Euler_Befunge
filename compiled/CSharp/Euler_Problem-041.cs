@@ -107,7 +107,7 @@ static void Main(string[] args)
         goto _9;
     _20:
         sp();
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _21:
         gw(3,2,(gr(3,2))+(1));

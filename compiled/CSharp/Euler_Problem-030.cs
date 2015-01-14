@@ -159,7 +159,7 @@ static void Main(string[] args)
         goto _4;
     _14:
         sp();
-        System.Console.Out.WriteLine((long)(sp()));
+        System.Console.Out.Write((long)(sp()));
         return;
     _15:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}

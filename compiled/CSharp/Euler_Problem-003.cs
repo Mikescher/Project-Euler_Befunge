@@ -46,6 +46,6 @@ static void Main(string[] args)
         {long v0=sp();sa(sp()-v0);}
         goto _1;
     _7:
-        System.Console.Out.WriteLine((long)(x3));
+        System.Console.Out.Write((long)(x3));
         return;
 }}

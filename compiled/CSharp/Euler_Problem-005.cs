@@ -63,6 +63,6 @@ static void Main(string[] args)
         x1=td(x1,x3);
         goto _3;
     _12:
-        System.Console.Out.WriteLine((long)(x1));
+        System.Console.Out.Write((long)(x1));
         return;
 }}

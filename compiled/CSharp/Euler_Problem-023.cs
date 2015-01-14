@@ -100,7 +100,7 @@ static void Main(string[] args)
         sa(gr(2,0));
         goto _6;
     _24:
-        System.Console.Out.WriteLine((long)(gr(8,0)));
+        System.Console.Out.Write((long)(gr(8,0)));
         return;
     _25:
         gw(8,0,(gr(8,0))+(gr(2,0)));

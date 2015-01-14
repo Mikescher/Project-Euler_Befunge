@@ -36,7 +36,7 @@ static void Main(string[] args)
         {long v0=sp();sa((sp()>v0)?1:0);}
         goto _0;
     _4:
-        System.Console.Out.WriteLine((long)(x2));
+        System.Console.Out.Write((long)(x2));
         sp();
         return;
     _5:

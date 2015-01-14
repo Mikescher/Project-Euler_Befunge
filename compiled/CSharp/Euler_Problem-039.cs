@@ -50,7 +50,7 @@ static void Main(string[] args)
         goto _2;
     _9:
         sp();
-        System.Console.Out.WriteLine((long)(x1));
+        System.Console.Out.Write((long)(x1));
         return;
     _10:
         sa(2);
