@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.2 (c) 2015
+# compiled with BefunCompile v1.0.3 (c) 2015
 # execute with at least Python3
 from random import randint
 def rd():

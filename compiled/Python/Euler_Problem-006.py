@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.2 (c) 2015
+# compiled with BefunCompile v1.0.3 (c) 2015
 # execute with at least Python3
 from random import randint
 import gzip, base64
@@ -6,6 +6,7 @@ _g="AR+LCAAAAAAABADtUbsOgzAM/JXwWhpRnAEGy4r6IVFBaqWsTJn4+NpFPAW0Hdh6g2X5nPPFjp+x
 g = base64.b64decode(_g)[1:]
 for i in range(base64.b64decode(_g)[0]):
     g = gzip.decompress(g)
+g=list(g)
 def gr(x,y):
     if(x>=0 and y>=0 and x<72 and y<16):
         return g[y*72 + x];

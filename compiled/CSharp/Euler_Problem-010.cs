@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.2 (c) 2015 */
+/* compiled with BefunCompile v1.0.3 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "Ah+LCAAAAAAABADNewdUU926LQoKigYBadKkK72ItAhKr4JA6L2I9F6CFJUmRTpBigGkB5EO0psgRYiAQYp0MAaEQOj97eD57/3P/d85455z7xvjOYau7LnmnN/8Vvbe"+
@@ -136,7 +136,7 @@ private static readonly string _g = "Ah+LCAAAAAAABADNewdUU926LQoKigYBadKkK72ItAh
                                     "49Usmebj/p0s6eMjzCdmoPngg2PX4L3d4GPmln39deTpxRMMUHRr5uRAU+YEJ3OCjBslJAjAmAcdj2gGn/bHyRyvYoMOmWVOV+s+nuwLfDul+XVCxUAA3zg9l/2Mi0uw"+
                                     "kYng/wD3lAJTtz0AAA==";
 private static readonly long[]  g = System.Array.ConvertAll(zd(System.Convert.FromBase64String(_g)),b=>(long)b);
-private static byte[]zd(byte[]o){byte[]d=o.Skip(1).ToArray();for(int i=0;i<o[0];i++)d=zs(d);return d;}
+private static byte[]zd(byte[]o){byte[]d=System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Skip(o, 1));for(int i=0;i<o[0];i++)d=zs(d);return d;}
 private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
                                  using(var z=new System.IO.Compression.GZipStream(c,System.IO.Compression.CompressionMode.Decompress))
                                  using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
