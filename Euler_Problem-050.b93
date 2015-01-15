@@ -580,5 +580,3 @@ There are two nice things about this algorithm:
 
  - We don't need to calculate an extreme amount of prime sums. The step from the sum of one chain to the next is literally only an addition and an subtraction
  - Because we start with the longest chain and reduce its length in every step, the first prime we find is directly our optimal result.
-
-Also note that this is an project Euler problem ... with primes ... **but without an prime sieve !**
