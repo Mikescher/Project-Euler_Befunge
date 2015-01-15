@@ -1,9 +1,15 @@
-/* compiled with BefunCompile v1.0.1 (c) 2015 */
+/* compiled with BefunCompile v1.0.2 (c) 2015 */
 public static class Program 
 {
-private static readonly long[,] g = {{118,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32},{62,49,58,48,48,112,49,42,58,49,48,112,50,42,58,50,48,112,51,42,58,51,48,112,52,42,58,52,48,112,53,42,58,118,32,32,32,32,32,32,32,32,32,32,32},{118,112,49,49,48,36,112,48,57,58,42,57,112,48,56,58,42,56,112,48,55,58,42,55,112,48,54,58,42,54,112,48,53,60,32,32,32,32,32,32,32,32,32,32,32},{32,32,32,32,32,32,118,95,118,35,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,58,45,49,60,112,49,49,32,60},{62,57,48,103,55,42,62,58,58,48,92,62,58,53,53,43,37,48,103,92,53,53,43,47,58,35,118,95,62,43,35,60,92,58,35,60,95,43,45,124,32,32,32,32,43},{32,32,32,32,62,51,45,46,36,64,32,124,58,47,43,53,53,92,103,48,37,43,53,53,58,32,60,32,32,32,32,32,32,32,32,32,32,32,32,62,58,49,49,103,94},{32,32,32,32,94,103,49,49,60,32,32,62,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,94,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32}};
-private static long gr(long x,long y){return(x>=0&&y>=0&&x<45&&y<7)?g[y, x]:0;}
-private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<45&&y<7)g[y, x]=v;}
+private static readonly string _g = "AR+LCAAAAAAABACVjr0OgzAMhF8lUsriiGID4ecURX2QCMasnjLx8A2dWqoO9XLW2b7PxfxRUcCsQhDWntCzDoSBdSSMrJ5Q3paLivBNeQWtygtoUZ5Bs/IEmpR9+Mov"+
+                                    "e7G/6Wgl1EwT4sp5pghwivDeNZxTlQ627NHZkGDD7trjPHKvv4f2fnuYA53zPmVuqsB88CNE8nZ2Wxapo3jFb1fjCcDxR0M7AQAA";
+private static readonly long[]  g = System.Array.ConvertAll(zd(System.Convert.FromBase64String(_g)),b=>(long)b);
+private static byte[]zd(byte[]o){byte[]d=o.Skip(1).ToArray();for(int i=0;i<o[0];i++)d=zs(d);return d;}
+private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
+                                 using(var z=new System.IO.Compression.GZipStream(c,System.IO.Compression.CompressionMode.Decompress))
+                                 using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
+private static long gr(long x,long y){return(x>=0&&y>=0&&x<45&&y<7)?g[y*45+x]:0;}
+private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<45&&y<7)g[y*45+x]=v;}
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }

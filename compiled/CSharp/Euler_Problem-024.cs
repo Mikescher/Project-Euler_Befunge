@@ -1,9 +1,16 @@
-/* compiled with BefunCompile v1.0.1 (c) 2015 */
+/* compiled with BefunCompile v1.0.2 (c) 2015 */
 public static class Program 
 {
-private static readonly long[,] g = {{118,48,49,50,51,52,53,54,55,56,57,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32},{62,34,100,100,100,34,42,42,49,118,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32},{118,112,49,50,57,112,49,49,45,60,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32},{32,32,32,32,32,32,32,62,118,62,118,32,32,32,32,32,118,32,32,32,32,32,60,32,32,118,32,32,32,32,60,32,32,32,62,32,32,118,32,32,32,62,92,49,45,92,118,118,32,32,32,32,112,49,52,43,49,103,49,52,60},{62,50,49,103,58,49,43,124,62,124,62,50,49,103,48,92,62,58,49,45,58,35,94,95,36,62,42,92,58,35,94,95,36,58,124,32,32,62,51,49,112,32,49,52,49,112,32,62,51,49,103,52,49,103,42,49,49,103,96,33,124},{32,32,32,32,32,32,32,36,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,62,36,49,94,32,32,32,124,45,34,120,34,32,103,48,58,92,60,92,49,60,103,49,52,32,32,60},{32,32,32,32,32,32,32,64,32,62,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,118,62,32,32,32,32,62,49,43,92,58,124,32,32,49,32,32,32,32,32,32},{94,112,49,50,45,49,103,49,50,112,49,49,45,42,45,49,103,49,52,103,49,51,103,49,49,46,112,48,92,34,120,34,92,45,34,48,34,103,48,58,62,35,45,32,35,49,32,35,36,32,35,60,32,32,94,32,32,32,32,32,32}};
-private static long gr(long x,long y){return(x>=0&&y>=0&&x<61&&y<8)?g[y, x]:0;}
-private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<61&&y<8)g[y, x]=v;}
+private static readonly string _g = "AR+LCAAAAAAABACdUDGOAyEM/AqBrVgRMbtc7oKQdQ+xNlesREuFUvD4mCVpI+WmsEdG4xlcPZY1fF2+f67qY5De911bi/q5VtWC5VoAl/4hfgWoNKxHTU/SN9LgxHBc"+
+                                    "j2lBmJEREi3IEXOj1plninDRbLeJLB89NhGuKApBirAckC2Q/07t6Ty9CTVhk9acvmuVfeTESOI7cnX89nTvUI93wsw9CsZwk4M5+cDSj2Y7CxlrBs7Fs3ix016LHxmn"+
+                                    "DJSZlBHDbYgfFCr43OgBAAA=";
+private static readonly long[]  g = System.Array.ConvertAll(zd(System.Convert.FromBase64String(_g)),b=>(long)b);
+private static byte[]zd(byte[]o){byte[]d=o.Skip(1).ToArray();for(int i=0;i<o[0];i++)d=zs(d);return d;}
+private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
+                                 using(var z=new System.IO.Compression.GZipStream(c,System.IO.Compression.CompressionMode.Decompress))
+                                 using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
+private static long gr(long x,long y){return(x>=0&&y>=0&&x<61&&y<8)?g[y*61+x]:0;}
+private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<61&&y<8)g[y*61+x]=v;}
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
