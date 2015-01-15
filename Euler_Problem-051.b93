@@ -1,0 +1,96 @@
+"c"02p                v >02g1+::02p 2%!#v_5%!#v_312p>12g1+:12p27*-!#v_022pv> v
+##############        >#|v#-*8"}"g20<   $           ^                < >1#0|
+OOO OO OOO   #        ^ @# >#       ^#  <     <                     <^_^#<1>v
+##############                                              >22g1+:22p3-!^2#
+110001#??????#         >                                    ^               <
+101001#??????#           > ^v24 pg21+7\+"0"%+55g24:>#<:      !#v_ v       g+
+100101#??????#              >g55+/42p>             ^ |-"0"gg21: -1<p24g206   <
+100011#??????#                       ^pg21+7\+"0"g22:<      #>#$>1-:7+12gvgg
+011001#??????#   >82g8-|    @                                ^6<|:\-"0"g <"2
+010101#??????#   $     >72g.^            >$                 ^>$#<55+*+55+v02
+010011#??????# vp29g22p281  $_v# `/2g25:_^#%\g25< v_v# %2:  <v*+55+*+55+*<"-
+001101#??????#   $            :         >^   ># ^#>#<:3%v    >+55+*+v     >^
+001011#??????#   $            >2-52g\%!#^_6+:^:7p25_^#  <   ^   p27:<
+000111#??????# >92g1+92pv       v_v#        :>#<:42g55+%"0"+\7+92g4+p42 v
+############## |-9g29<  >602g42p>1 -:12gg"0"-| ^               <p24/+55g<
+               > ^   ^    $<   v6$<          >:92g"0"+\7+92g4+p^
+v_v# `/2g25:_v# %\g25< v_v# %2<>>1-:7+92g4v>v
+8            v    ># ^#>#<:3%v: |:\-"0"g+ <+5
+2 >:2-52g\%!#v_6+:^:7p25_^#  <+ >$55+*+55+*^5
+>g1+82p      >$            ^  ^ *+55+*+55+*+<
+
+
+
+[0, 2] value    (100++)
+[1, 2] pattern  (4 - 13)
+[2, 2] d        [0 | 1 | 2]
+
+[4, 2] temp (VALUE GENERATION)
+[5, 2] temp (PRIMALITY TEST)
+
+[7, 2] Current Gen   ( g(value, pattern, d) ) 
+[8, 2] FamilyCounter (1++)
+[9, 2] FamilyDigit   (d++)
+
+[[4-14],[0- 6]] Patterns
+[[4-14],[7-13]] Gen boards
+
+
+
+Populate Pattern_1
+
+6>1-::7+\4 v                     v 4\+7::-1<6
+ |:p4\-"0"g<                     >g"0"-\4p:|
+
+
+Generate Pattern_1
+
+         $                                                                                      $
+       v_^#       :>#<:42g55+%"0"+\7+12gp 42v                v24 pg21+7\+"0"%+55g24:>#<:      !#^_v
+602g42p>1-:12gg"0"-| ^             <p24/+55g<                >g55+/42p>             ^ |-"0"gg21:-1>p24g206
+                   >:22g"0"+\7+12gp^                                  ^pg21+7\+"0"g22:<
+
+
+Number from Board_1
+
+  6>1-:7+12gv
+   |:\-"0"g <
+>$#<55+*+55+v
+v*+55+*+55+*<
+>+55+*+
+
+
+Prime test
+
+:2%!#v_v >52g\%!#v_:52g2/`!#v_$         >   PRIME   <            $_v# `/2g25:_v# %\g25< v_v# %2:
+ v%3:>#<#^ #<    >            $         > COMPOSITE <            $            <    ># ^#>#<:3%v
+ > !#^_52p7:^:+6_^#%\g25-2: <                                      >:2-52g\%!#^_6+:^:7p25_^#  <
+
+
+Generate Pattern (Family)
+
+         $
+       v_^#       :>#<:42g55+%"0"+\7+92g4+p42 v
+602g42p>1-:12gg"0"-| ^               <p24/+55g<
+                   >:92g"0"+\7+92g4+p^
+
+
+Number from Board (Family)
+
+6>1-:7+92g4v>v
+ |:\-"0"g+ <+5
+ >$55+*+55+*^5
++*+55+*+55+*+<
+
+
+---------------------------------------
+
+This is effectively an optimized implementation of [this algorithm](http://www.mathblog.dk/project-euler-51-eight-prime-family/).  
+You can see the ten patterns on the left side and beside them the area were we build our numbers.
+
+So what we do is iterate through the numbers from `100` to `1 000`, through the ten patterns and through the digits `0`, `1` and `2`.
+In each iteration we generate the number (from value, pattern and digit) and test for it primeness (with a simple [primality test](http://en.wikipedia.org/wiki/Primality_test) - no prime sieve).
+If we found a prime we count the number of primes in it's family and if this count is eight we print the generated number and exit.
+
+This program is not the fastest, because I check all the primes "manually" and not with an prime sieve each iteration takes quite a time.
+But I wanted this to fit into the befunge-93 size restrictions, and even without a sieve the execution time is OK - for a befunge program.
