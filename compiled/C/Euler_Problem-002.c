@@ -1,9 +1,7 @@
-/* compiled with BefunCompile v1.0.3 (c) 2015 */
-#include <time.h>
+/* compiled with BefunCompile v1.0.4 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
-int rd(){return rand()%2==0;}
 int64 td(int64 a,int64 b){ return (b==0)?0:(a/b); }
 int64 tm(int64 a,int64 b){ return (b==0)?0:(a%b); }
 int64*s;int q=16384;int y=0;
@@ -15,19 +13,25 @@ int main(void)
     int64 x0=62;
     int64 x1=118;
     int64 x2=118;
-    srand(time(NULL));
     s=(int64*)calloc(q,sizeof(int64));
-    goto _2;
+    goto _0;
 _0:
-    if(sp()!=0)goto _4; else goto _5;
-_1:
-    if(sp()!=0)goto _7; else goto _6;
-_2:
     x1=2;
     x0=1;
     x2=2;
-    goto _3;
+    goto _4;
+_1:
+    printf("%lld", (int64)(x2));
+    sp();
+    return 0;
+_2:
+    sa(sp()+(x2));
+    x2=sp();
+    goto _4;
 _3:
+    sp();
+    goto _4;
+_4:
     sa(x0);
     sa(x1);
     x0=x1;
@@ -35,30 +39,13 @@ _3:
     sa(sr());
     x1=sp();
     sa(sr());
-    sa(10240000);
-    {int64 v0=sp();sa((sp()>v0)?1:0);}
-    goto _0;
-_4:
-    printf("%lld", (int64)(x2));
-    sp();
-    goto __;
+    {int64 v0=10240000;sa((sp()>v0)?1:0);}
+    if(sp()!=0)goto _1; else goto _5;
 _5:
     sa(sr());
     sa(sr());
-    sa(2);
-    {int64 v0=sp();sa((v0==0)?0:(sp()/v0));}
-    sa(2);
-    sa(sp()*sp());
+    {int64 v0=2;sa((v0==0)?0:(sp()/v0));}
+    sa(sp()*(2));
     {int64 v0=sp();sa(sp()-v0);}
-    goto _1;
-_6:
-    sa(x2);
-    sa(sp()+sp());
-    x2=sp();
-    goto _3;
-_7:
-    sp();
-    goto _3;
-__:
-    return 0;
+    if(sp()!=0)goto _3; else goto _2;
 }

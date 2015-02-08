@@ -1,12 +1,10 @@
-/* compiled with BefunCompile v1.0.3 (c) 2015 */
+/* compiled with BefunCompile v1.0.4 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static readonly System.Random r = new System.Random();
-private static bool rd(){ return r.Next(2)!=0; }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
@@ -17,52 +15,45 @@ static void Main(string[] args)
         long x3=48;
         long x4=48;
         long x5=112;
-        goto _5;
+        goto _2;
     _0:
-        if(sp()!=0)goto _7; else goto _12;
+        if((tm(x1,x3))!=0)goto _8;else goto _4;
     _1:
-        if(sp()!=0)goto _6; else goto _3;
+        if((((tm(x4,x5))!=0)?0:1)!=0)goto _9;else goto _8;
     _2:
-        if(sp()!=0)goto _4; else goto _11;
-    _3:
-        if((tm(x1,x3))!=0)goto _8;else goto _9;
-    _4:
-        if((((tm(x4,x5))!=0)?0:1)!=0)goto _10;else goto _8;
-    _5:
         x0=20;
         x1=1;
         x2=1;
-        goto _6;
+        goto _7;
+    _3:
+        x3=1;
+        goto _8;
+    _4:
+        x4=td(x1,x3);
+        x5=1;
+        goto _9;
+    _5:
+        x1=td(x1,x3);
+        goto _0;
     _6:
+        System.Console.Out.Write((long)(x1));
+        return;
+    _7:
         x1=(x1)*(x2);
         sa(x0);
         sa((x2)+(1));
         x2=(x2)+(1);
         {long v0=sp();sa((sp()>v0)?1:0);}
-        goto _0;
-    _7:
-        x3=1;
-        goto _8;
+        if(sp()!=0)goto _3; else goto _6;
     _8:
         sa(x3);
         x3=(x3)+(1);
-        sa(x0);
-        {long v0=sp();sa((sp()>v0)?1:0);}
-        goto _1;
+        {long v0=x0;sa((sp()>v0)?1:0);}
+        if(sp()!=0)goto _7; else goto _0;
     _9:
-        x4=td(x1,x3);
-        x5=1;
-        goto _10;
-    _10:
         sa(x2);
         sa((x5)+(1));
         x5=(x5)+(1);
         {long v0=sp();sa((sp()>v0)?1:0);}
-        goto _2;
-    _11:
-        x1=td(x1,x3);
-        goto _3;
-    _12:
-        System.Console.Out.Write((long)(x1));
-        return;
+        if(sp()!=0)goto _1; else goto _5;
 }}

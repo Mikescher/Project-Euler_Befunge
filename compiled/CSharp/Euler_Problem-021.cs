@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.3 (c) 2015 */
+/* compiled with BefunCompile v1.0.4 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADt2r1qwzAQwPFXcf2xWP44OdIQEUQfJDQdClo1acrD54JLoLSQ0jY0tP/fcqeTrEFGN6lUuCcNAAAAAAAAAAAAAAAAAAB/wLX3cuU1xsvKcs52t3qf"+
@@ -15,55 +15,34 @@ private static System.Collections.Generic.Stack<long> s=new System.Collections.G
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static readonly System.Random r = new System.Random();
-private static bool rd(){ return r.Next(2)!=0; }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        goto _6;
+        goto _2;
     _0:
-        if(sp()!=0)goto _9; else goto _18;
+        if(sp()!=0)goto _11; else goto _12;
     _1:
-        if(sp()!=0)goto _8; else goto _10;
+        if(((gr(2,0))-(gr(5,0)))!=0)goto _13;else goto _14;
     _2:
-        if(sp()!=0)goto _17; else goto _11;
-    _3:
-        if(sp()!=0)goto _16; else goto _15;
-    _4:
-        if(sp()!=0)goto _14; else goto _13;
-    _5:
-        if(((gr(2,0))-(gr(5,0)))!=0)goto _14;else goto _12;
-    _6:
         gw(1,0,400);
         gw(0,0,10000);
         sa((gr(0,0))-(1));
         sa((gr(0,0))-(1));
         gw(2,0,(gr(0,0))-(1));
-        goto _7;
-    _7:
+        goto _3;
+    _3:
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(2);
         {long v0=sp();sa((v0==0)?0:(sp()/v0));}
-        goto _8;
-    _8:
-        sa(sr());
-        sa(gr(2,0));
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        goto _0;
-    _9:
+        goto _11;
+    _4:
         sa(1);
         {long v0=sp();sa(sp()-v0);}
         sa(sr());
-        goto _1;
-    _10:
-        sp();
-        gw(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1),sp());
-        sa(sr());
-        goto _2;
-    _11:
+        goto _0;
+    _5:
         gw(0,1,0);
         gw(2,0,(gr(0,0))-(1));
         gw(9,0,0);
@@ -71,11 +50,8 @@ static void Main(string[] args)
         gw(5,0,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(1)));
         sp();
         sp();
-        goto _5;
-    _12:
-        sa((((gr(2,0))>(gr(4,0))?1:0)!=0)?0:1);
-        goto _4;
-    _13:
+        goto _1;
+    _6:
         System.Console.Out.Write((long)(gr(2,0)));
         sa(32);
         sa(45);
@@ -85,30 +61,44 @@ static void Main(string[] args)
         System.Console.Out.Write((long)(gr(4,0)));
         System.Console.Out.Write((char)(10));
         gw(9,0,(gr(9,0))+((gr(2,0))+(gr(4,0))));
-        goto _14;
-    _14:
-        sa(gr(2,0));
-        gw(2,0,(gr(2,0))-(1));
-        goto _3;
-    _15:
+        goto _13;
+    _7:
         System.Console.Out.Write((long)(gr(9,0)));
         return;
-    _16:
+    _8:
         gw(4,0,gr(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1)));
         gw(5,0,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(1)));
-        goto _5;
-    _17:
+        goto _1;
+    _9:
         sa(1);
         {long v0=sp();sa(sp()-v0);}
         sa(sr());
         sa(sr());
         gw(2,0,sp());
-        goto _7;
-    _18:
+        goto _3;
+    _10:
         sa(sr());
         gw(3,0,sp());
         sa(sp()+sp());
         sa((gr(3,0))-(1));
         sa((gr(3,0))-(1));
-        goto _1;
+        goto _0;
+    _11:
+        sa(sr());
+        sa(gr(2,0));
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
+        if(sp()!=0)goto _4; else goto _10;
+    _12:
+        sp();
+        gw(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1),sp());
+        sa(sr());
+        if(sp()!=0)goto _9; else goto _5;
+    _13:
+        sa(gr(2,0));
+        gw(2,0,(gr(2,0))-(1));
+        if(sp()!=0)goto _8; else goto _7;
+    _14:
+        sa((((gr(2,0))>(gr(4,0))?1:0)!=0)?0:1);
+        if(sp()!=0)goto _13; else goto _6;
 }}

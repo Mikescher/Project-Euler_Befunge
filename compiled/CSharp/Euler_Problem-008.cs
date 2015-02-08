@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.3 (c) 2015 */
+/* compiled with BefunCompile v1.0.4 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADtl81uG0cQhF+FYOyLGDv9O90txEIeJFBy45UnPX++kS0gAYw49vKYAYYL7nC3pqurasDzy1nklvHwqFzSHh4eTW4PLrfOS8hNkrmYxWy5nRgvp2Pj"+
@@ -21,24 +21,14 @@ private static System.Collections.Generic.Stack<long> s=new System.Collections.G
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static readonly System.Random r = new System.Random();
-private static bool rd(){ return r.Next(2)!=0; }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        goto _5;
+        goto _1;
     _0:
-        if(sp()!=0)goto _8; else goto _9;
+        if(sp()!=0)goto _5; else goto _13;
     _1:
-        if(sp()!=0)goto _10; else goto _17;
-    _2:
-        if(sp()!=0)goto _11; else goto _12;
-    _3:
-        if(sp()!=0)goto _6; else goto _13;
-    _4:
-        if((((gr(7,0))-(8))-(gr(4,0)))!=0)goto _15;else goto _16;
-    _5:
         gw(0,0,118);
         gw(1,0,20);
         gw(2,0,50);
@@ -48,59 +38,59 @@ static void Main(string[] args)
         gw(6,0,0);
         gw(7,0,0);
         gw(8,0,0);
-        goto _6;
-    _6:
+        goto _2;
+    _2:
         gw(6,0,gr(5,0));
         sa((1)*((gr(tm(gr(6,0),gr(2,0)),(td(gr(6,0),gr(2,0)))+(9)))-(48)));
-        goto _7;
+        goto _10;
+    _3:
+        sa((gr(tm(gr(6,0),gr(2,0)),(td(gr(6,0),gr(2,0)))+(9)))-(48));
+        sa(sp()*sp());
+        goto _10;
+    _4:
+        gw(8,0,sp());
+        gw(6,0,0);
+        goto _5;
+    _5:
+        gw((gr(6,0))+(9),0,(gr(tm((gr(6,0))+(gr(5,0)),gr(2,0)),(td((gr(6,0))+(gr(5,0)),gr(2,0)))+(9)))-(48));
+        sa((gr(6,0))+(1));
+        gw(6,0,(gr(6,0))+(1));
+        sa(gr(4,0));
+        {long v0=sp();sa(sp()-v0);}
+        goto _0;
+    _6:
+        gw(7,0,9);
+        goto _11;
     _7:
+        gw(7,0,(gr(7,0))+(1));
+        goto _11;
+    _8:
+        System.Console.Out.Write((char)(61));
+        System.Console.Out.Write((long)(gr(8,0)));
+        return;
+    _9:
+        sp();
+        goto _13;
+    _10:
         sa((gr(6,0))+(1));
         gw(6,0,(gr(6,0))+(1));
         sa(gr(5,0));
         {long v0=sp();sa(sp()-v0);}
         sa(gr(4,0));
         {long v0=sp();sa(sp()-v0);}
-        goto _0;
-    _8:
-        sa((gr(tm(gr(6,0),gr(2,0)),(td(gr(6,0),gr(2,0)))+(9)))-(48));
-        sa(sp()*sp());
-        goto _7;
-    _9:
+        if(sp()!=0)goto _3; else goto _12;
+    _11:
+        System.Console.Out.Write((long)(gr(gr(7,0),0)));
+        if((((gr(7,0))-(8))-(gr(4,0)))!=0)goto _7;else goto _8;
+    _12:
         sa(sr());
         sa(gr(8,0));
         {long v0=sp();sa((sp()>v0)?1:0);}
-        goto _1;
-    _10:
-        gw(8,0,sp());
-        gw(6,0,0);
-        goto _11;
-    _11:
-        gw((gr(6,0))+(9),0,(gr(tm((gr(6,0))+(gr(5,0)),gr(2,0)),(td((gr(6,0))+(gr(5,0)),gr(2,0)))+(9)))-(48));
-        sa((gr(6,0))+(1));
-        gw(6,0,(gr(6,0))+(1));
-        sa(gr(4,0));
-        {long v0=sp();sa(sp()-v0);}
-        goto _2;
-    _12:
+        if(sp()!=0)goto _4; else goto _9;
+    _13:
         sa((gr(5,0))+(1));
         gw(5,0,(gr(5,0))+(1));
         sa(gr(3,0));
         {long v0=sp();sa(sp()-v0);}
-        goto _3;
-    _13:
-        gw(7,0,9);
-        goto _14;
-    _14:
-        System.Console.Out.Write((long)(gr(gr(7,0),0)));
-        goto _4;
-    _15:
-        gw(7,0,(gr(7,0))+(1));
-        goto _14;
-    _16:
-        System.Console.Out.Write((char)(61));
-        System.Console.Out.Write((long)(gr(8,0)));
-        return;
-    _17:
-        sp();
-        goto _12;
+        if(sp()!=0)goto _2; else goto _6;
 }}

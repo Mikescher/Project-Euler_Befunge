@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.3 (c) 2015 */
+/* compiled with BefunCompile v1.0.4 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABAC9jz0KAjEQha+SnZhmh5hMhogECbZeYrcR0qZK6dkddxVEEGOzrxjmD977mt9AbQMPynCFTDYNus3Jc/XEFW4XwMA1By5yNoRr4wp4sJ7LSFwwxYjm"+
@@ -14,47 +14,38 @@ private static System.Collections.Generic.Stack<long> s=new System.Collections.G
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static readonly System.Random r = new System.Random();
-private static bool rd(){ return r.Next(2)!=0; }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        goto _3;
+        goto _2;
     _0:
-        if(sp()!=0)goto _4; else goto _8;
+        if(sp()!=0)goto _3; else goto _6;
     _1:
-        if(sp()!=0)goto _7; else goto _6;
+        if(sp()!=0)goto _8; else goto _7;
     _2:
-        if(sp()!=0)goto _10; else goto _9;
-    _3:
         sa(99);
         sa(0);
         goto _0;
-    _4:
+    _3:
         gw(3,3,199);
         sp();
         sa((0)+((gr((tm(gr(3,3),100))+(1),td(gr(3,3),100)))-(48)));
-        goto _5;
-    _5:
-        sa(gr(3,3));
-        gw(3,3,(gr(3,3))-(1));
-        sa((sp()!=0)?0:1);
-        goto _1;
-    _6:
+        goto _9;
+    _4:
         sa((gr((tm(gr(3,3),100))+(1),td(gr(3,3),100)))-(48));
         sa(sp()+sp());
-        goto _5;
-    _7:
+        goto _9;
+    _5:
         System.Console.Out.Write((long)(sp()));
         return;
-    _8:
+    _6:
         sa(sr());
         gw(0,3,sp());
         gw(1,3,0);
         gw(2,3,199);
-        goto _9;
-    _9:
+        goto _7;
+    _7:
         sa((((gr((tm(gr(2,3),100))+(1),td(gr(2,3),100)))-(48))*(gr(0,3)))+(gr(1,3)));
         gw((tm(gr(2,3),100))+(1),td(gr(2,3),100),(tm((((gr((tm(gr(2,3),100))+(1),td(gr(2,3),100)))-(48))*(gr(0,3)))+(gr(1,3)),10))+(48));
         sa(10);
@@ -63,11 +54,16 @@ static void Main(string[] args)
         sa((gr(2,3))-(1));
         gw(2,3,(gr(2,3))-(1));
         sa((sp()!=0)?0:1);
-        goto _2;
-    _10:
+        goto _1;
+    _8:
         sa(1);
         {long v0=sp();sa(sp()-v0);}
         sa(sr());
         sa((sp()!=0)?0:1);
         goto _0;
+    _9:
+        sa(gr(3,3));
+        gw(3,3,(gr(3,3))-(1));
+        sa((sp()!=0)?0:1);
+        if(sp()!=0)goto _5; else goto _4;
 }}

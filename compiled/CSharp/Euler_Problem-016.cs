@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.3 (c) 2015 */
+/* compiled with BefunCompile v1.0.4 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADtj70OwjAMhF/FBLo0CnVKc6CoqlhZmJhhzOqpE7w7ThH/CCFYuSGRfbY+X8/fq//vfipPP6gjwyZmMQt74Vp4JtwIB6GeqKpotV5tXu6qLWjKhTkY"+
@@ -15,20 +15,16 @@ private static System.Collections.Generic.Stack<long> s=new System.Collections.G
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static readonly System.Random r = new System.Random();
-private static bool rd(){ return r.Next(2)!=0; }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        goto _3;
+        goto _2;
     _0:
-        if((((gr(4,6))!=0)?0:1)!=0)goto _5;else goto _8;
+        if((((gr(6,6))!=0)?0:1)!=0)goto _8;else goto _7;
     _1:
-        if((((gr(6,6))!=0)?0:1)!=0)goto _4;else goto _9;
+        if((gr(6,6))!=0)goto _4;else goto _5;
     _2:
-        if((gr(6,6))!=0)goto _6;else goto _7;
-    _3:
         gw(0,0,48);
         gw(0,1,48);
         gw(0,2,48);
@@ -39,36 +35,36 @@ static void Main(string[] args)
         gw(2,6,6);
         gw(0,6,360);
         gw(4,6,1000);
-        goto _4;
-    _4:
-        sa(gr(4,6));
-        goto _0;
-    _5:
+        goto _8;
+    _3:
         gw(6,6,(gr(0,6))-(1));
         sp();
         sa((0)+((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6))))-(48)));
-        goto _2;
-    _6:
+        goto _1;
+    _4:
         gw(6,6,(gr(6,6))-(1));
         sa((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6))))-(48));
         sa(sp()+sp());
-        goto _2;
-    _7:
+        goto _1;
+    _5:
         System.Console.Out.Write((long)(sp()));
         return;
-    _8:
+    _6:
         sa(1);
         {long v0=sp();sa(sp()-v0);}
         gw(4,6,sp());
         gw(6,6,(gr(0,6))-(1));
         gw(7,6,0);
-        goto _1;
-    _9:
+        goto _0;
+    _7:
         sa((((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6))))-(48))*(2))+(gr(7,6)));
         gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),(tm((((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6))))-(48))*(2))+(gr(7,6)),10))+(48));
         sa(10);
         {long v0=sp();sa((v0==0)?0:(sp()/v0));}
         gw(7,6,sp());
         gw(6,6,(gr(6,6))-(1));
-        goto _1;
+        goto _0;
+    _8:
+        sa(gr(4,6));
+        if((((gr(4,6))!=0)?0:1)!=0)goto _3;else goto _6;
 }}
