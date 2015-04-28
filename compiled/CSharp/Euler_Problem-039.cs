@@ -23,39 +23,37 @@ static void Main(string[] args)
         x4=1000;
         x5=0;
         x2=td(x3,3);
-        goto _6;
     _1:
-        x5=(x5)+(1);
-        goto _6;
+        sa(x2);
+        if(((x2)-(2))!=0)goto _2;else goto _4;
     _2:
-        x0=sp();
-        x1=x3;
-        goto _8;
+        sa(sp()-(1));
+        x2=sp();
+        if((tm((x3)*((x3)-((2)*(x2))),((x3)-(x2))*(2)))!=0)goto _1;else goto _3;
     _3:
+        x5=(x5)+(1);
+        goto _1;
+    _4:
+        sp();
+        sa(x5);
+        if(((x5)>(x0)?1:0)!=0)goto _9;else goto _5;
+    _5:
+        sp();
+    _6:
+        sa(x3);
+        if(((x3)-(x4))!=0)goto _8;else goto _7;
+    _7:
+        sp();
+        System.Console.Out.Write((long)(x1));
+        return;
+    _8:
         sa(sp()+(2));
         x3=sp();
         x5=0;
         x2=td(x3,3);
-        goto _6;
-    _4:
-        sp();
-        System.Console.Out.Write((long)(x1));
-        return;
-    _5:
-        sp();
-        goto _8;
-    _6:
-        sa(x2);
-        if(((x2)-(2))!=0)goto _9;else goto _7;
-    _7:
-        sp();
-        sa(x5);
-        if(((x5)>(x0)?1:0)!=0)goto _2;else goto _5;
-    _8:
-        sa(x3);
-        if(((x3)-(x4))!=0)goto _3;else goto _4;
+        goto _1;
     _9:
-        sa(sp()-(1));
-        x2=sp();
-        if((tm((x3)*((x3)-((2)*(x2))),((x3)-(x2))*(2)))!=0)goto _6;else goto _1;
+        x0=sp();
+        x1=x3;
+        goto _6;
 }}

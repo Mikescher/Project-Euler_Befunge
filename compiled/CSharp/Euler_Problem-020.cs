@@ -18,34 +18,18 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        goto _2;
+        goto _0;
     _0:
-        if(sp()!=0)goto _3; else goto _6;
-    _1:
-        if(sp()!=0)goto _8; else goto _7;
-    _2:
         sa(99);
         sa(0);
-        goto _0;
-    _3:
-        gw(3,3,199);
-        sp();
-        sa((0)+((gr((tm(gr(3,3),100))+(1),td(gr(3,3),100)))-(48)));
-        goto _9;
-    _4:
-        sa((gr((tm(gr(3,3),100))+(1),td(gr(3,3),100)))-(48));
-        sa(sp()+sp());
-        goto _9;
-    _5:
-        System.Console.Out.Write((long)(sp()));
-        return;
-    _6:
+    _1:
+        if(sp()!=0)goto _6; else goto _2;
+    _2:
         sa(sr());
         gw(0,3,sp());
         gw(1,3,0);
         gw(2,3,199);
-        goto _7;
-    _7:
+    _3:
         sa((((gr((tm(gr(2,3),100))+(1),td(gr(2,3),100)))-(48))*(gr(0,3)))+(gr(1,3)));
         gw((tm(gr(2,3),100))+(1),td(gr(2,3),100),(tm((((gr((tm(gr(2,3),100))+(1),td(gr(2,3),100)))-(48))*(gr(0,3)))+(gr(1,3)),10))+(48));
         sa(10);
@@ -54,16 +38,28 @@ static void Main(string[] args)
         sa((gr(2,3))-(1));
         gw(2,3,(gr(2,3))-(1));
         sa((sp()!=0)?0:1);
-        goto _1;
-    _8:
+    _4:
+        if(sp()!=0)goto _5; else goto _3;
+    _5:
         sa(1);
         {long v0=sp();sa(sp()-v0);}
         sa(sr());
         sa((sp()!=0)?0:1);
-        goto _0;
-    _9:
+        goto _1;
+    _6:
+        gw(3,3,199);
+        sp();
+        sa((0)+((gr((tm(gr(3,3),100))+(1),td(gr(3,3),100)))-(48)));
+    _7:
         sa(gr(3,3));
         gw(3,3,(gr(3,3))-(1));
         sa((sp()!=0)?0:1);
-        if(sp()!=0)goto _5; else goto _4;
+        if(sp()!=0)goto _8; else goto _9;
+    _8:
+        System.Console.Out.Write((long)(sp()));
+        return;
+    _9:
+        sa((gr((tm(gr(3,3),100))+(1),td(gr(3,3),100)))-(48));
+        sa(sp()+sp());
+        goto _7;
 }}

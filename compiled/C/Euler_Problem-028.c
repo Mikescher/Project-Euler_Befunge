@@ -12,10 +12,8 @@ int main(void)
 {
     int64 x0=88;
     s=(int64*)calloc(q,sizeof(int64));
-    goto _1;
+    goto _0;
 _0:
-    if(sp()!=0)goto _2; else goto _5;
-_1:
     x0=1000;
     sa(1002001);
     sa((1002001)-(x0));
@@ -23,8 +21,22 @@ _1:
     sa((((1002001)-(x0))-(x0))-(x0));
     sa(((((1002001)-(x0))-(x0))-(x0))-(x0));
     sa((((((1002001)-(x0))-(x0))-(x0))-(x0))-(1));
-    goto _0;
+_1:
+    if(sp()!=0)goto _5; else goto _2;
 _2:
+    sa(sp()+sp());
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(sr());
+    if(sp()!=0)goto _4; else goto _3;
+_3:
+    sp();
+    printf("%lld", (int64)(sp()));
+    return 0;
+_4:
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(sp()+sp());
+    goto _2;
+_5:
     x0=(x0)-(2);
     sa(sr());
     sa(sp()-(x0));
@@ -36,18 +48,5 @@ _2:
     sa(sp()-(x0));
     sa(sr());
     sa(sp()-(1));
-    goto _0;
-_3:
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sp()+sp());
-    goto _5;
-_4:
-    sp();
-    printf("%lld", (int64)(sp()));
-    return 0;
-_5:
-    sa(sp()+sp());
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sr());
-    if(sp()!=0)goto _3; else goto _4;
+    goto _1;
 }

@@ -20,23 +20,24 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    goto _2;
+    goto _0;
 _0:
-    if(sp()!=0)goto _4; else goto _5;
-_1:
-    if((((gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+(1)))!=0)?0:1)!=0)goto _6;else goto _11;
-_2:
     gw(0,0,100);
     gw(6,0,1000);
     gw(8,0,0);
     gw(9,0,0);
-    goto _10;
+_1:
+    sa((gr(6,0))-(1));
+    gw(6,0,(gr(6,0))-(1));
+    if(sp()!=0)goto _3; else goto _2;
+_2:
+    printf("%lld", (int64)(gr(8,0)));
+    return 0;
 _3:
     sa(gr(6,0));
     gw(3,0,gr(6,0));
     sa(sr());
     gw(1,0,sp());
-    goto _4;
 _4:
     sa(0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
@@ -47,34 +48,29 @@ _4:
     sa((gr(1,0))-(1));
     sa((gr(1,0))-(1));
     gw(1,0,(gr(1,0))-(1));
-    goto _0;
 _5:
+    if(sp()!=0)goto _4; else goto _6;
+_6:
     gw(4,0,1);
     gw(5,0,0);
     gw(4,0,tm((gr(4,0))*(10),gr(3,0)));
     gw(5,0,(gr(5,0))+(1));
     sp();
+_7:
+    if((((gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+(1)))!=0)?0:1)!=0)goto _11;else goto _8;
+_8:
+    sa((gr(5,0))-(gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+(1))));
+    if((((gr(5,0))-(gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+(1))))>(gr(9,0))?1:0)!=0)goto _9;else goto _10;
+_9:
+    gw(9,0,sp());
+    gw(8,0,gr(3,0));
     goto _1;
-_6:
+_10:
+    sp();
+    goto _1;
+_11:
     gw(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+(1),gr(5,0));
     gw(4,0,tm((gr(4,0))*(10),gr(3,0)));
     gw(5,0,(gr(5,0))+(1));
-    goto _1;
-_7:
-    sp();
-    goto _10;
-_8:
-    gw(9,0,sp());
-    gw(8,0,gr(3,0));
-    goto _10;
-_9:
-    printf("%lld", (int64)(gr(8,0)));
-    return 0;
-_10:
-    sa((gr(6,0))-(1));
-    gw(6,0,(gr(6,0))-(1));
-    if(sp()!=0)goto _3; else goto _9;
-_11:
-    sa((gr(5,0))-(gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+(1))));
-    if((((gr(5,0))-(gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+(1))))>(gr(9,0))?1:0)!=0)goto _8;else goto _7;
+    goto _7;
 }

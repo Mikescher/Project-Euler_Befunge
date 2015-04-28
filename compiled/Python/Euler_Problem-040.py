@@ -24,10 +24,6 @@ x0=32
 x1=32
 x2=32
 def _0():
-    return (3)if(sp()!=0)else(7)
-def _1():
-    return (5)if(sp()!=0)else(4)
-def _2():
     global x0
     x0=1
     sa(0)
@@ -39,55 +35,26 @@ def _2():
     sa(100000)
     sa(1000000)
     sa(1000000)
-    return 0
+    return 1
+def _1():
+    return (3)if(sp()!=0)else(2)
+def _2():
+    global x0
+    sp()
+    print(x0,end="",flush=True)
+    return 11
 def _3():
     global x1
     global x2
     x1=1
     x2=1
-    return 8
+    return 4
 def _4():
-    global x0
-    global x0
-    sp()
-    sa(tm(sp(),10))
-    sa(sp()*(x0));
-    x0=sp()
-    sa(sr())
-    return 0
-def _5():
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),10))
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()-(1));
-    sa(sr())
-    return 1
-def _6():
-    global x1
-    global x2
-    sa((x1)*((9)*(x2)))
-    x1=(x1)+(1)
-    x2=(x2)*(10)
-    v0=sp()
-    sa(sp()-v0)
-    return 8
-def _7():
-    global x0
-    sp()
-    print(x0,end="",flush=True)
-    return 11
-def _8():
     sa(sr())
     sa((1)if(sp()>((x1)*((9)*(x2))))else(0))
     sa((0)if(sp()!=0)else(1))
-    return (9)if(sp()!=0)else(6)
-def _9():
+    return (5)if(sp()!=0)else(10)
+def _5():
     global x1
     global x2
     global x1
@@ -110,11 +77,44 @@ def _9():
     sa(sp()-v0)
     sa(sp()-(1));
     sa(sr())
-    return (5)if(sp()!=0)else(10)
-def _10():
+    return (7)if(sp()!=0)else(6)
+def _6():
     sa(sr())
-    return (5)if(sp()!=0)else(4)
+    return (7)if(sp()!=0)else(9)
+def _7():
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(td(sp(),10))
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()-(1));
+    sa(sr())
+    return 8
+def _8():
+    return (7)if(sp()!=0)else(9)
+def _9():
+    global x0
+    global x0
+    sp()
+    sa(tm(sp(),10))
+    sa(sp()*(x0));
+    x0=sp()
+    sa(sr())
+    return 1
+def _10():
+    global x1
+    global x2
+    sa((x1)*((9)*(x2)))
+    x1=(x1)+(1)
+    x2=(x2)*(10)
+    v0=sp()
+    sa(sp()-v0)
+    return 4
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10]
-c=2
+c=0
 while c<11:
     c=m[c]()

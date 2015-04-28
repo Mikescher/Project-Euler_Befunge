@@ -20,95 +20,89 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        goto _3;
+        goto _0;
     _0:
-        if(sp()!=0)goto _14; else goto _16;
-    _1:
-        if((tm(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(1)),2))!=0)goto _7;else goto _17;
-    _2:
-        if((tm(gr(tm(gr(5,0),gr(1,0)),(td(gr(5,0),gr(1,0)))+(1)),2))!=0)goto _20;else goto _19;
-    _3:
         gw(1,0,400);
         gw(0,0,30000);
         sa((gr(0,0))-(1));
         sa((gr(0,0))-(1));
         gw(2,0,(gr(0,0))-(1));
-        goto _4;
-    _4:
+    _1:
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(2);
         {long v0=sp();sa((v0==0)?0:(sp()/v0));}
-        goto _14;
-    _5:
-        sa(1);
-        {long v0=sp();sa(sp()-v0);}
+    _2:
         sa(sr());
-        goto _0;
-    _6:
-        gw(0,1,0);
-        gw(4,0,gr(0,0));
-        sp();
-        sp();
-        goto _17;
-    _7:
-        gw(5,0,(gr(4,0))+(1));
-        goto _19;
-    _8:
-        gw(tm((gr(4,0))+(gr(5,0)),gr(1,0)),(td((gr(4,0))+(gr(5,0)),gr(1,0)))+(1),(tm(gr(tm((gr(4,0))+(gr(5,0)),gr(1,0)),(td((gr(4,0))+(gr(5,0)),gr(1,0)))+(1)),2))+(2));
-        goto _19;
-    _9:
-        gw(8,0,0);
-        gw(2,0,gr(0,0));
-        goto _15;
-    _10:
-        System.Console.Out.Write((long)(gr(8,0)));
-        return;
-    _11:
-        gw(8,0,(gr(8,0))+(gr(2,0)));
-        goto _18;
-    _12:
-        sa(1);
-        {long v0=sp();sa(sp()-v0);}
-        sa(sr());
-        sa(sr());
-        gw(2,0,sp());
-        goto _4;
-    _13:
+        sa(gr(2,0));
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
+        if(sp()!=0)goto _20; else goto _3;
+    _3:
         sa(sr());
         gw(3,0,sp());
         sa(sp()+sp());
         sa((gr(3,0))-(1));
         sa((gr(3,0))-(1));
-        goto _0;
-    _14:
-        sa(sr());
-        sa(gr(2,0));
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        if(sp()!=0)goto _5; else goto _13;
-    _15:
-        gw(2,0,(gr(2,0))-(1));
-        if((td(gr(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1)),2))!=0)goto _18;else goto _11;
-    _16:
+    _4:
+        if(sp()!=0)goto _2; else goto _5;
+    _5:
         sp();
         sa(gr(2,0));
         {long v0=sp();sa((sp()>v0)?1:0);}
         gw(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1),sp());
         sa(sr());
-        if(sp()!=0)goto _12; else goto _6;
-    _17:
+        if(sp()!=0)goto _6; else goto _7;
+    _6:
+        sa(1);
+        {long v0=sp();sa(sp()-v0);}
+        sa(sr());
+        sa(sr());
+        gw(2,0,sp());
+        goto _1;
+    _7:
+        gw(0,1,0);
+        gw(4,0,gr(0,0));
+        sp();
+        sp();
+    _8:
         sa((gr(4,0))-(1));
         gw(4,0,(gr(4,0))-(1));
-        if(sp()!=0)goto _1; else goto _9;
-    _18:
+        if(sp()!=0)goto _14; else goto _9;
+    _9:
+        gw(8,0,0);
+        gw(2,0,gr(0,0));
+    _10:
+        gw(2,0,(gr(2,0))-(1));
+        if((td(gr(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1)),2))!=0)goto _11;else goto _13;
+    _11:
         sa(gr(2,0));
-        if(sp()!=0)goto _15; else goto _10;
-    _19:
+        if(sp()!=0)goto _10; else goto _12;
+    _12:
+        System.Console.Out.Write((long)(gr(8,0)));
+        return;
+    _13:
+        gw(8,0,(gr(8,0))+(gr(2,0)));
+        goto _11;
+    _14:
+        if((tm(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(1)),2))!=0)goto _15;else goto _8;
+    _15:
+        gw(5,0,(gr(4,0))+(1));
+    _16:
         sa((gr(5,0))-(1));
         gw(5,0,(gr(5,0))-(1));
-        if(sp()!=0)goto _2; else goto _17;
-    _20:
+        if(sp()!=0)goto _17; else goto _8;
+    _17:
+        if((tm(gr(tm(gr(5,0),gr(1,0)),(td(gr(5,0),gr(1,0)))+(1)),2))!=0)goto _18;else goto _16;
+    _18:
         sa(((gr(4,0))+(gr(5,0)))>(gr(0,0))?1:0);
-        if(sp()!=0)goto _19; else goto _8;
+        if(sp()!=0)goto _16; else goto _19;
+    _19:
+        gw(tm((gr(4,0))+(gr(5,0)),gr(1,0)),(td((gr(4,0))+(gr(5,0)),gr(1,0)))+(1),(tm(gr(tm((gr(4,0))+(gr(5,0)),gr(1,0)),(td((gr(4,0))+(gr(5,0)),gr(1,0)))+(1)),2))+(2));
+        goto _16;
+    _20:
+        sa(1);
+        {long v0=sp();sa(sp()-v0);}
+        sa(sr());
+        goto _4;
 }}

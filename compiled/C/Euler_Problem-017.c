@@ -21,50 +21,119 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    goto _3;
+    goto _0;
 _0:
-    if(sp()!=0)goto _16; else goto _4;
-_1:
-    if(sp()!=0)goto _15; else goto _5;
-_2:
-    if(sp()!=0)goto _21; else goto _17;
-_3:
     gw(20,1,(gr(20,1))-(48));
     sa(20);
     sa(20);
-    goto _0;
-_4:
+_1:
+    if(sp()!=0)goto _2; else goto _3;
+_2:
+    sa(1);
+    {int64 v0=sp();sa(sp()-v0);}
+    sa(sr());
+    sa(sr());
+    sa(sr());
+    sa(1);
+    {int64 v0=sp();sa(gr(sp(),v0));}
+    sa(48);
+    {int64 v0=sp();sa(sp()-v0);}
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(1);
+    {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
+    goto _1;
+_3:
     gw(20,2,(gr(20,2))-(48));
     sa(20);
     sa(20);
-    goto _1;
+_4:
+    if(sp()!=0)goto _5; else goto _6;
 _5:
-    sp();
-    sp();
-    sa(0);
-    sa(1000);
-    sa(0);
-    sa(1000);
-    sa(0);
-    goto _2;
-_6:
+    sa(1);
+    {int64 v0=sp();sa(sp()-v0);}
+    sa(sr());
+    sa(sr());
+    sa(sr());
+    sa(2);
+    {int64 v0=sp();sa(gr(sp(),v0));}
+    sa(48);
+    {int64 v0=sp();sa(sp()-v0);}
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    goto _21;
+    sa(2);
+    {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
+    goto _4;
+_6:
+    sp();
+    sp();
+    sa(0);
+    sa(1000);
+    sa(0);
+    sa(1000);
+    sa(0);
 _7:
+    if(sp()!=0)goto _8; else goto _15;
+_8:
+    sa(sp()+sp());
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(sr());
+    if(sp()!=0)goto _14; else goto _9;
+_9:
+    sa(sp()+sp());
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(1);
+    {int64 v0=sp();sa(sp()-v0);}
+    sa(sr());
+    if(sp()!=0)goto _13; else goto _10;
+_10:
+    sa(sp()+sp());
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(sr());
+    sa((sp()!=0)?0:1);
+    if(sp()!=0)goto _11; else goto _12;
+_11:
+    sa(sp()+sp());
+    printf("%lld", (int64)(sp()));
+    return 0;
+_12:
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    goto _10;
+_13:
     sa(sr());
     sa(0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
     sa((sp()!=0)?0:1);
-    goto _2;
-_8:
+    goto _7;
+_14:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    goto _23;
-_9:
-    sa(sp()+sp());
-    printf("%lld", (int64)(sp()));
-    return 0;
-_10:
+    goto _8;
+_15:
+    sa(sr());
+    sa(100);
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    {int64 v0=sp();sa((sp()>v0)?1:0);}
+    if(sp()!=0)goto _21; else goto _16;
+_16:
+    sa(sr());
+    sa(1000);
+    {int64 v0=sp();sa(sp()-v0);}
+    if(sp()!=0)goto _17; else goto _20;
+_17:
+    sa(sr());
+    sa(100);
+    {int64 v0=sp();sa((v0==0)?0:(sp()%v0));}
+    sa((sp()!=0)?0:1);
+    if(sp()!=0)goto _18; else goto _19;
+_18:
+    sa(100);
+    {int64 v0=sp();sa((v0==0)?0:(sp()/v0));}
+    sa(1);
+    {int64 v0=sp();sa(gr(sp(),v0));}
+    sa(7);
+    sa(0);
+    sa(1);
+    goto _7;
+_19:
     sa(sr());
     sa(100);
     {int64 v0=sp();sa((v0==0)?0:(sp()/v0));}
@@ -79,30 +148,20 @@ _10:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
     sa((sp()!=0)?0:1);
-    goto _2;
-_11:
-    sa(100);
-    {int64 v0=sp();sa((v0==0)?0:(sp()/v0));}
-    sa(1);
-    {int64 v0=sp();sa(gr(sp(),v0));}
-    sa(7);
-    sa(0);
-    sa(1);
-    goto _2;
-_12:
+    goto _7;
+_20:
     sp();
     sa(3);
     sa(8);
     sa(0);
     sa(1);
-    goto _2;
-_13:
-    sa(1);
-    {int64 v0=sp();sa(gr(sp(),v0));}
-    sa(0);
-    sa(1);
-    goto _2;
-_14:
+    goto _7;
+_21:
+    sa(sr());
+    sa(20);
+    {int64 v0=sp();sa((sp()>v0)?1:0);}
+    if(sp()!=0)goto _22; else goto _23;
+_22:
     sa(sr());
     sa(10);
     {int64 v0=sp();sa((v0==0)?0:(sp()/v0));}
@@ -113,73 +172,11 @@ _14:
     {int64 v0=sp();sa((v0==0)?0:(sp()%v0));}
     sa(sr());
     sa((sp()!=0)?0:1);
-    goto _2;
-_15:
-    sa(1);
-    {int64 v0=sp();sa(sp()-v0);}
-    sa(sr());
-    sa(sr());
-    sa(sr());
-    sa(2);
-    {int64 v0=sp();sa(gr(sp(),v0));}
-    sa(48);
-    {int64 v0=sp();sa(sp()-v0);}
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(2);
-    {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
-    goto _1;
-_16:
-    sa(1);
-    {int64 v0=sp();sa(sp()-v0);}
-    sa(sr());
-    sa(sr());
-    sa(sr());
-    sa(1);
-    {int64 v0=sp();sa(gr(sp(),v0));}
-    sa(48);
-    {int64 v0=sp();sa(sp()-v0);}
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(1);
-    {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
-    goto _0;
-_17:
-    sa(sr());
-    sa(100);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    {int64 v0=sp();sa((sp()>v0)?1:0);}
-    if(sp()!=0)goto _18; else goto _19;
-_18:
-    sa(sr());
-    sa(20);
-    {int64 v0=sp();sa((sp()>v0)?1:0);}
-    if(sp()!=0)goto _14; else goto _13;
-_19:
-    sa(sr());
-    sa(1000);
-    {int64 v0=sp();sa(sp()-v0);}
-    if(sp()!=0)goto _20; else goto _12;
-_20:
-    sa(sr());
-    sa(100);
-    {int64 v0=sp();sa((v0==0)?0:(sp()%v0));}
-    sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _11; else goto _10;
-_21:
-    sa(sp()+sp());
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sr());
-    if(sp()!=0)goto _6; else goto _22;
-_22:
-    sa(sp()+sp());
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(1);
-    {int64 v0=sp();sa(sp()-v0);}
-    sa(sr());
-    if(sp()!=0)goto _7; else goto _23;
+    goto _7;
 _23:
-    sa(sp()+sp());
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sr());
-    sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _9; else goto _8;
+    sa(1);
+    {int64 v0=sp();sa(gr(sp(),v0));}
+    sa(0);
+    sa(1);
+    goto _7;
 }

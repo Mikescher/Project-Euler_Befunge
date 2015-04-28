@@ -15,35 +15,55 @@ int main(void)
     int64 x2=34;
     int64 x3=53;
     s=(int64*)calloc(q,sizeof(int64));
-    goto _1;
+    goto _0;
 _0:
-    if(sp()!=0)goto _12; else goto _9;
-_1:
     x0=1000;
     x1=2;
-    goto _2;
-_2:
+_1:
     x2=1;
-    goto _3;
-_3:
+_2:
     sa(((x2)*(x2))+((x1)*(x1)));
     x3=((x2)*(x2))+((x1)*(x1));
     sa(0);
     sa((0)-(x3));
-    goto _0;
+_3:
+    if(sp()!=0)goto _4; else goto _10;
 _4:
+    sa(sp()+(1));
+    sa(sr());
+    sa(sp()-(x0));
+    if(sp()!=0)goto _9; else goto _5;
+_5:
+    sp();
+    sp();
+_6:
+    sa((x2)+(1));
+    x2=(x2)+(1);
+    sa(sp()-(x1));
+    if(sp()!=0)goto _2; else goto _7;
+_7:
+    sa((x1)+(1));
+    x1=(x1)+(1);
+    sa(sp()-(x0));
+    if(sp()!=0)goto _1; else goto _8;
+_8:
+    return 0;
+_9:
     sa(sr());
     sa(sr());
     sa(sp()*sp());
     sa(sp()-(x3));
-    goto _0;
-_5:
+    goto _3;
+_10:
+    sa(sr());
+    x3=sp();
+    sa(sp()+((x2)+(x1)));
+    sa(sp()-(x0));
+    if(sp()!=0)goto _11; else goto _12;
+_11:
     sp();
-    sp();
-    goto _10;
-_6:
-    return 0;
-_7:
+    goto _6;
+_12:
     sa(x2);
     printf("%lld", (int64)(x2));
     printf("%c", (char)(32));
@@ -57,28 +77,4 @@ _7:
     sa(sp()*sp());
     printf("%lld", (int64)(sp()));
     return 0;
-_8:
-    sp();
-    goto _10;
-_9:
-    sa(sr());
-    x3=sp();
-    sa(sp()+((x2)+(x1)));
-    sa(sp()-(x0));
-    if(sp()!=0)goto _8; else goto _7;
-_10:
-    sa((x2)+(1));
-    x2=(x2)+(1);
-    sa(sp()-(x1));
-    if(sp()!=0)goto _3; else goto _11;
-_11:
-    sa((x1)+(1));
-    x1=(x1)+(1);
-    sa(sp()-(x0));
-    if(sp()!=0)goto _2; else goto _6;
-_12:
-    sa(sp()+(1));
-    sa(sr());
-    sa(sp()-(x0));
-    if(sp()!=0)goto _4; else goto _5;
 }

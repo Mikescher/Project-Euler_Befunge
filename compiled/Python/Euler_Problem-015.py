@@ -35,36 +35,36 @@ def sr():
         return 0
     return s[-1]
 def _0():
-    return (6)if((gr(0,0))*((22)-(gr(1,0))))else(5)
-def _1():
     gw(0,0,1)
     gw(1,0,1)
-    return 0
+    return 1
+def _1():
+    return (2)if((gr(0,0))*((22)-(gr(1,0))))else(8)
 def _2():
-    print(gr(21,21),end="",flush=True)
-    return 9
-def _3():
-    gw(gr(0,0),gr(1,0),(gr((gr(0,0))-(1),gr(1,0)))+(gr(gr(0,0),(gr(1,0))-(1))))
-    return 8
-def _4():
-    gw(gr(0,0),gr(1,0),1)
-    return 8
-def _5():
-    gw(0,0,(gr(0,0))+(gr(1,0)))
-    gw(1,0,1)
-    return 0
-def _6():
     sa((1)if((gr(0,0))>(21))else(0))
-    return (8)if(sp()!=0)else(7)
-def _7():
-    sa(((gr(0,0))-(1))*((gr(1,0))-(1)))
-    return (3)if(sp()!=0)else(4)
-def _8():
+    return (3)if(sp()!=0)else(5)
+def _3():
     gw(0,0,(gr(0,0))-(1))
     gw(1,0,(gr(1,0))+(1))
     sa((0)if(((1)if(((gr(1,0))+(gr(0,0)))>(42))else(0))!=0)else(1))
-    return (0)if(sp()!=0)else(2)
+    return (1)if(sp()!=0)else(4)
+def _4():
+    print(gr(21,21),end="",flush=True)
+    return 9
+def _5():
+    sa(((gr(0,0))-(1))*((gr(1,0))-(1)))
+    return (7)if(sp()!=0)else(6)
+def _6():
+    gw(gr(0,0),gr(1,0),1)
+    return 3
+def _7():
+    gw(gr(0,0),gr(1,0),(gr((gr(0,0))-(1),gr(1,0)))+(gr(gr(0,0),(gr(1,0))-(1))))
+    return 3
+def _8():
+    gw(0,0,(gr(0,0))+(gr(1,0)))
+    gw(1,0,1)
+    return 1
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8]
-c=1
+c=0
 while c<9:
     c=m[c]()

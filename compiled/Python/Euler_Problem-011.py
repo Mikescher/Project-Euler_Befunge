@@ -44,20 +44,16 @@ def sr():
         return 0
     return s[-1]
 def _0():
-    return (4)if(sp()!=0)else(5)
-def _1():
-    return (6)if(sp()!=0)else(7)
-def _2():
-    return (8)if(sp()!=0)else(14)
-def _3():
     gw(0,0,675)
-    return 4
-def _4():
+    return 1
+def _1():
     gw((tm(gr(0,0),26))+(63),(td(gr(0,0),26))+(1),0)
     sa(gr(0,0))
     gw(0,0,(gr(0,0))-(1))
-    return 0
-def _5():
+    return 2
+def _2():
+    return (1)if(sp()!=0)else(3)
+def _3():
     gw(1,0,0)
     gw(9,0,0)
     gw(9,1,-1)
@@ -66,34 +62,21 @@ def _5():
     gw(11,0,1)
     gw(11,1,0)
     gw(0,0,399)
-    return 6
-def _6():
+    return 4
+def _4():
     gw((tm(gr(0,0),20))+(66),(td(gr(0,0),20))+(4),(((gr(((tm(gr(0,0),20))*(3))+(1),(td(gr(0,0),20))+(4)))-(48))*(10))+((gr(((tm(gr(0,0),20))*(3))+(2),(td(gr(0,0),20))+(4)))-(48)))
     sa(gr(0,0))
     gw(0,0,(gr(0,0))-(1))
-    return 1
-def _7():
+    return 5
+def _5():
+    return (4)if(sp()!=0)else(6)
+def _6():
     gw(0,0,399)
+    return 7
+def _7():
+    gw(2,0,2)
     return 8
 def _8():
-    gw(2,0,2)
-    return 14
-def _9():
-    gw(1,0,sp())
-    return 15
-def _10():
-    print(gr(1,0),end="",flush=True)
-    return 17
-def _11():
-    sa(1)
-    return 2
-def _12():
-    sa(0)
-    return 2
-def _13():
-    sp()
-    return 15
-def _14():
     sa((gr(2,0))+(9))
     gw(3,0,gr((gr(2,0))+(9),0))
     sa(1)
@@ -125,16 +108,33 @@ def _14():
     sa(gr(1,0))
     v0=sp()
     sa((1)if(sp()>v0)else(0))
-    return (9)if(sp()!=0)else(13)
-def _15():
+    return (16)if(sp()!=0)else(9)
+def _9():
+    sp()
+    return 10
+def _10():
     sa(gr(2,0))
     gw(2,0,(gr(2,0))-(1))
-    return (12)if(sp()!=0)else(16)
-def _16():
+    return (15)if(sp()!=0)else(11)
+def _11():
     sa(gr(0,0))
     gw(0,0,(gr(0,0))-(1))
-    return (11)if(sp()!=0)else(10)
+    return (12)if(sp()!=0)else(14)
+def _12():
+    sa(1)
+    return 13
+def _13():
+    return (7)if(sp()!=0)else(8)
+def _14():
+    print(gr(1,0),end="",flush=True)
+    return 17
+def _15():
+    sa(0)
+    return 13
+def _16():
+    gw(1,0,sp())
+    return 10
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16]
-c=3
+c=0
 while c<17:
     c=m[c]()

@@ -22,10 +22,6 @@ def sr():
     return s[-1]
 x0=32
 def _0():
-    return (18)if(sp()!=0)else(3)
-def _1():
-    return (15)if(sp()!=0)else(7)
-def _2():
     global x0
     x0=9990
     sa(0)
@@ -34,57 +30,181 @@ def _2():
     sa((9)+(x0))
     sa(99)
     sa(99)
-    return 0
+    return 1
+def _1():
+    return (2)if(sp()!=0)else(3)
+def _2():
+    global x0
+    global x0
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()*(10));
+    x0=sp()
+    sa(sr())
+    sa(tm(sp(),10))
+    sa(sp()+(x0));
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(td(sp(),10))
+    sa(sr())
+    return 1
 def _3():
     global x0
     x0=0
     sp()
     sa(sr())
     sa(sr())
-    return 19
+    return 4
 def _4():
     global x0
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()*(2));
-    x0=sp()
-    return 19
-def _5():
     sa(sr())
-    print(sp(),end="",flush=True)
-    print(chr(10),end="",flush=True)
+    sa(tm(sp(),2))
+    sa(sp()+(x0));
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    return 21
+    sa(td(sp(),2))
+    sa(sr())
+    return (25)if(sp()!=0)else(5)
+def _5():
+    sp()
+    v0=sp()
+    sa(sp()-v0)
+    sa((0)if(sp()!=0)else(1))
+    return (24)if(sp()!=0)else(6)
 def _6():
+    sp()
+    return 7
+def _7():
+    sa(sp()-(1));
+    sa(sr())
+    return (8)if(sp()!=0)else(9)
+def _8():
+    global x0
+    global x0
+    sa(sr())
+    sa(sr())
+    sa(sp()*(10));
+    x0=sp()
+    sa(sr())
+    sa(tm(sp(),10))
+    sa(sp()+(x0));
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(td(sp(),10))
+    sa(sr())
+    return 1
+def _9():
     global x0
     x0=990
     sa(999)
     sa((9)+(x0))
     sa(99)
     sa(99)
-    return 1
-def _7():
+    return 10
+def _10():
+    return (11)if(sp()!=0)else(12)
+def _11():
     global x0
-    x0=0
-    sp()
-    sa(sr())
-    sa(sr())
-    return 22
-def _8():
     global x0
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sp()*(2));
+    sa(sp()*(10));
     x0=sp()
-    return 22
-def _9():
+    sa(sr())
+    sa(tm(sp(),10))
+    sa(sp()+(x0));
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(td(sp(),10))
+    sa(sr())
+    return 10
+def _12():
+    global x0
+    x0=0
+    sp()
+    sa(sr())
+    sa(sr())
+    return 13
+def _13():
+    global x0
+    sa(sr())
+    sa(tm(sp(),2))
+    sa(sp()+(x0));
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(td(sp(),2))
+    sa(sr())
+    return (23)if(sp()!=0)else(14)
+def _14():
+    sp()
+    v0=sp()
+    sa(sp()-v0)
+    sa((0)if(sp()!=0)else(1))
+    return (22)if(sp()!=0)else(15)
+def _15():
+    sp()
+    return 16
+def _16():
+    sa(sp()-(1));
+    sa(sr())
+    return (21)if(sp()!=0)else(17)
+def _17():
+    sa(61)
+    print(chr(32),end="",flush=True)
+    print(chr(sp()),end="",flush=True)
+    return 18
+def _18():
+    sa(sp()+sp());
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sr())
+    return (20)if(sp()!=0)else(19)
+def _19():
+    sa(sp()+sp());
+    print(sp(),end="",flush=True)
+    return 26
+def _20():
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()+sp());
+    return 18
+def _21():
+    global x0
+    global x0
+    sa(sr())
+    sa(sr())
+    sa(td(sp(),10))
+    sa(sp()*(10));
+    x0=sp()
+    sa(sr())
+    sa(tm(sp(),10))
+    sa(sp()+(x0));
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(td(sp(),10))
+    sa(sr())
+    return 10
+def _22():
     sa(sr())
     print(sp(),end="",flush=True)
     print(chr(10),end="",flush=True)
@@ -92,155 +212,35 @@ def _9():
     v1=sp()
     sa(v0)
     sa(v1)
-    return 24
-def _10():
-    global x0
-    global x0
-    sa(sr())
-    sa(sr())
-    sa(td(sp(),10))
-    sa(sp()*(10));
-    x0=sp()
-    sa(sr())
-    sa(tm(sp(),10))
-    sa(sp()+(x0));
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),10))
-    sa(sr())
-    return 1
-def _11():
-    sa(61)
-    print(chr(32),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
-    return 25
-def _12():
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()+sp());
-    return 25
-def _13():
-    sa(sp()+sp());
-    print(sp(),end="",flush=True)
-    return 26
-def _14():
-    sp()
-    return 24
-def _15():
-    global x0
-    global x0
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()*(10));
-    x0=sp()
-    sa(sr())
-    sa(tm(sp(),10))
-    sa(sp()+(x0));
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),10))
-    sa(sr())
-    return 1
-def _16():
-    global x0
-    global x0
-    sa(sr())
-    sa(sr())
-    sa(sp()*(10));
-    x0=sp()
-    sa(sr())
-    sa(tm(sp(),10))
-    sa(sp()+(x0));
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),10))
-    sa(sr())
-    return 0
-def _17():
-    sp()
-    return 21
-def _18():
-    global x0
-    global x0
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()*(10));
-    x0=sp()
-    sa(sr())
-    sa(tm(sp(),10))
-    sa(sp()+(x0));
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),10))
-    sa(sr())
-    return 0
-def _19():
-    global x0
-    sa(sr())
-    sa(tm(sp(),2))
-    sa(sp()+(x0));
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),2))
-    sa(sr())
-    return (4)if(sp()!=0)else(20)
-def _20():
-    sp()
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (5)if(sp()!=0)else(17)
-def _21():
-    sa(sp()-(1));
-    sa(sr())
-    return (16)if(sp()!=0)else(6)
-def _22():
-    global x0
-    sa(sr())
-    sa(tm(sp(),2))
-    sa(sp()+(x0));
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),2))
-    sa(sr())
-    return (8)if(sp()!=0)else(23)
+    return 16
 def _23():
-    sp()
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (9)if(sp()!=0)else(14)
-def _24():
-    sa(sp()-(1));
-    sa(sr())
-    return (10)if(sp()!=0)else(11)
-def _25():
-    sa(sp()+sp());
+    global x0
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
+    sa(sp()*(2));
+    x0=sp()
+    return 13
+def _24():
     sa(sr())
-    return (12)if(sp()!=0)else(13)
+    print(sp(),end="",flush=True)
+    print(chr(10),end="",flush=True)
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    return 7
+def _25():
+    global x0
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()*(2));
+    x0=sp()
+    return 4
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25]
-c=2
+c=0
 while c<26:
     c=m[c]()

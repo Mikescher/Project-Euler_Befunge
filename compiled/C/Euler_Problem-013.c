@@ -65,55 +65,38 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    goto _4;
+    goto _0;
 _0:
-    if(sp()!=0)goto _6; else goto _14;
-_1:
-    if(sp()!=0)goto _8; else goto _9;
-_2:
-    if(sp()!=0)goto _12; else goto _13;
-_3:
-    if(((((gr(gr(1,0),gr(2,0)))-(32))!=0)?0:1)!=0)goto _7;else goto _12;
-_4:
     gw(1,0,5);
     gw(2,0,100);
-    goto _14;
-_5:
+_1:
+    gw(gr(1,0),gr(2,0),48);
+    sa((gr(1,0))-(1));
+    gw(1,0,(gr(1,0))-(1));
+    if(sp()!=0)goto _4; else goto _2;
+_2:
+    gw(1,0,5);
+    sa((gr(2,0))-(1));
+    gw(2,0,(gr(2,0))-(1));
+    if(sp()!=0)goto _4; else goto _3;
+_3:
     sa(1);
-    goto _0;
-_6:
+_4:
+    if(sp()!=0)goto _5; else goto _1;
+_5:
     gw(1,0,55);
     gw(2,0,1);
     gw(3,0,0);
     gw(0,0,0);
-    goto _3;
+_6:
+    if(((((gr(gr(1,0),gr(2,0)))-(32))!=0)?0:1)!=0)goto _10;else goto _7;
 _7:
-    gw(1,0,0);
-    gw(2,0,101);
-    goto _8;
-_8:
-    sa((gr(1,0))+(1));
-    gw(1,0,(gr(1,0))+(1));
-    sa(gr(2,0));
-    {int64 v0=sp();sa(gr(sp(),v0));}
-    sa(48);
-    {int64 v0=sp();sa(sp()-v0);}
-    sa((sp()!=0)?0:1);
-    goto _1;
-_9:
-    gw(0,0,10);
-    goto _16;
-_10:
-    printf("%c", (char)(gr(((9)-(gr(0,0)))+(gr(1,0)),gr(2,0))));
-    goto _16;
-_11:
-    return 0;
-_12:
     gw(0,0,((gr(gr(1,0),gr(2,0)))-(48))+(gr(0,0)));
     gw(2,0,(gr(2,0))+(1));
     sa((gr(gr(1,0),gr(2,0)))-(32));
-    goto _2;
-_13:
+_8:
+    if(sp()!=0)goto _7; else goto _9;
+_9:
     sa(gr(0,0));
     gw(gr(1,0),gr(2,0),(tm(gr(0,0),10))+(48));
     gw(2,0,1);
@@ -121,20 +104,30 @@ _13:
     sa(10);
     {int64 v0=sp();sa((v0==0)?0:(sp()/v0));}
     gw(0,0,sp());
-    goto _3;
+    goto _6;
+_10:
+    gw(1,0,0);
+    gw(2,0,101);
+_11:
+    sa((gr(1,0))+(1));
+    gw(1,0,(gr(1,0))+(1));
+    sa(gr(2,0));
+    {int64 v0=sp();sa(gr(sp(),v0));}
+    sa(48);
+    {int64 v0=sp();sa(sp()-v0);}
+    sa((sp()!=0)?0:1);
+_12:
+    if(sp()!=0)goto _11; else goto _13;
+_13:
+    gw(0,0,10);
 _14:
-    gw(gr(1,0),gr(2,0),48);
-    sa((gr(1,0))-(1));
-    gw(1,0,(gr(1,0))-(1));
-    if(sp()!=0)goto _0; else goto _15;
-_15:
-    gw(1,0,5);
-    sa((gr(2,0))-(1));
-    gw(2,0,(gr(2,0))-(1));
-    if(sp()!=0)goto _0; else goto _5;
-_16:
     sa(gr(0,0));
     gw(0,0,(gr(0,0))-(1));
     sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _11; else goto _10;
+    if(sp()!=0)goto _15; else goto _16;
+_15:
+    return 0;
+_16:
+    printf("%c", (char)(gr(((9)-(gr(0,0)))+(gr(1,0)),gr(2,0))));
+    goto _14;
 }

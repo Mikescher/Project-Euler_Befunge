@@ -13,39 +13,39 @@ int main(void)
     int64 x0=118;
     int64 x1=32;
     s=(int64*)calloc(q,sizeof(int64));
-    goto _1;
+    goto _0;
 _0:
-    if(sp()!=0)goto _2; else goto _8;
-_1:
     x0=0;
     sa(4);
     sa(1);
     sa(4);
     sa(0);
-    goto _0;
+_1:
+    if(sp()!=0)goto _11; else goto _2;
 _2:
-    sa(sp()*(3));
-    sa(sp()+(1));
-    goto _9;
+    {int64 v0=2;sa((v0==0)?0:(sp()/v0));}
 _3:
-    {int64 v0=1;sa((v0==0)?0:(sp()/v0));}
-    sa(sr());
-    {int64 v0=2;sa((v0==0)?0:(sp()%v0));}
-    goto _0;
-_4:
-    x0=sp();
-    sa(sr());
-    x1=sp();
-    goto _11;
-_5:
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()+(1));
-    sa(sr());
-    sa(1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
-    {int64 v0=2;sa((v0==0)?0:(sp()%v0));}
-    goto _0;
+    sa(sp()-(1));
+    if(sp()!=0)goto _10; else goto _4;
+_4:
+    sp();
+    sa(sr());
+    sa(x0);
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    {int64 v0=sp();sa((sp()>v0)?1:0);}
+    if(sp()!=0)goto _5; else goto _9;
+_5:
+    sp();
 _6:
+    sa(sr());
+    {int64 v0=1000000;sa((sp()>v0)?1:0);}
+    sa((sp()!=0)?0:1);
+    if(sp()!=0)goto _8; else goto _7;
+_7:
     printf("%lld", (int64)(x1));
     sa(x0);
     sa(58);
@@ -53,29 +53,26 @@ _6:
     printf("%c", (char)(sp()));
     printf("%lld", (int64)(sp()));
     return 0;
-_7:
-    sp();
-    goto _11;
 _8:
-    {int64 v0=2;sa((v0==0)?0:(sp()/v0));}
-    goto _9;
-_9:
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()+(1));
+    sa(sr());
+    sa(1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
-    sa(sp()-(1));
-    if(sp()!=0)goto _3; else goto _10;
+    {int64 v0=2;sa((v0==0)?0:(sp()%v0));}
+    goto _1;
+_9:
+    x0=sp();
+    sa(sr());
+    x1=sp();
+    goto _6;
 _10:
-    sp();
+    {int64 v0=1;sa((v0==0)?0:(sp()/v0));}
     sa(sr());
-    sa(x0);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    {int64 v0=sp();sa((sp()>v0)?1:0);}
-    if(sp()!=0)goto _7; else goto _4;
+    {int64 v0=2;sa((v0==0)?0:(sp()%v0));}
+    goto _1;
 _11:
-    sa(sr());
-    {int64 v0=1000000;sa((sp()>v0)?1:0);}
-    sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _5; else goto _6;
+    sa(sp()*(3));
+    sa(sp()+(1));
+    goto _3;
 }

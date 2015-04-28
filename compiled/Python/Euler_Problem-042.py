@@ -119,16 +119,14 @@ def sr():
         return 0
     return s[-1]
 def _0():
-    return (2)if((1)if((gr(3,0))>(td(((gr(5,0))+(1))*(((gr(5,0))+(1))+(1)),2)))else(0))else(3)
-def _1():
     gw(0,0,1787)
     gw(1,0,80)
     gw(2,0,5)
     gw(3,0,400)
     gw(5,0,0)
     gw(6,0,2)
-    return 2
-def _2():
+    return 1
+def _1():
     sa((gr(5,0))+(1))
     gw(5,0,(gr(5,0))+(1))
     sa(sr())
@@ -159,30 +157,17 @@ def _2():
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
-    return 0
+    return 2
+def _2():
+    return (1)if((1)if((gr(3,0))>(td(((gr(5,0))+(1))*(((gr(5,0))+(1))+(1)),2)))else(0))else(3)
 def _3():
     gw(7,0,0)
     sa(0)
-    return 9
+    return 4
 def _4():
-    gw(7,0,(gr(7,0))+(1))
-    sa(64)
-    v0=sp()
-    sa(sp()-v0)
-    sa(sp()+sp());
-    return 9
+    sa(gr(gr(7,0),gr(6,0)))
+    return (5)if((0)if(((gr(gr(7,0),gr(6,0)))-(32))!=0)else(1))else(10)
 def _5():
-    gw(6,0,2)
-    sa((0)+((0)if(((gr((tm(gr(27,gr(6,0)),gr(1,0)))+(32),td(gr(27,gr(6,0)),gr(1,0))))-(48))!=0)else(1)))
-    return 10
-def _6():
-    sa((0)if(((gr((tm(gr(27,gr(6,0)),gr(1,0)))+(32),td(gr(27,gr(6,0)),gr(1,0))))-(48))!=0)else(1))
-    sa(sp()+sp());
-    return 10
-def _7():
-    print(sp(),end="",flush=True)
-    return 11
-def _8():
     sp()
     gw(27,gr(6,0),sp())
     sa(gr(6,0))
@@ -190,18 +175,33 @@ def _8():
     sa(gr(0,0))
     v0=sp()
     sa(sp()-v0)
-    return (3)if(sp()!=0)else(5)
-def _9():
-    sa(gr(gr(7,0),gr(6,0)))
-    return (8)if((0)if(((gr(gr(7,0),gr(6,0)))-(32))!=0)else(1))else(4)
-def _10():
+    return (3)if(sp()!=0)else(6)
+def _6():
+    gw(6,0,2)
+    sa((0)+((0)if(((gr((tm(gr(27,gr(6,0)),gr(1,0)))+(32),td(gr(27,gr(6,0)),gr(1,0))))-(48))!=0)else(1)))
+    return 7
+def _7():
     sa(gr(6,0))
     gw(6,0,(gr(6,0))+(1))
     sa(gr(0,0))
     v0=sp()
     sa(sp()-v0)
-    return (6)if(sp()!=0)else(7)
+    return (9)if(sp()!=0)else(8)
+def _8():
+    print(sp(),end="",flush=True)
+    return 11
+def _9():
+    sa((0)if(((gr((tm(gr(27,gr(6,0)),gr(1,0)))+(32),td(gr(27,gr(6,0)),gr(1,0))))-(48))!=0)else(1))
+    sa(sp()+sp());
+    return 7
+def _10():
+    gw(7,0,(gr(7,0))+(1))
+    sa(64)
+    v0=sp()
+    sa(sp()-v0)
+    sa(sp()+sp());
+    return 4
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10]
-c=1
+c=0
 while c<11:
     c=m[c]()

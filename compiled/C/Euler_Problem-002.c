@@ -19,19 +19,7 @@ _0:
     x1=2;
     x0=1;
     x2=2;
-    goto _4;
 _1:
-    printf("%lld", (int64)(x2));
-    sp();
-    return 0;
-_2:
-    sa(sp()+(x2));
-    x2=sp();
-    goto _4;
-_3:
-    sp();
-    goto _4;
-_4:
     sa(x0);
     sa(x1);
     x0=x1;
@@ -40,12 +28,23 @@ _4:
     x1=sp();
     sa(sr());
     {int64 v0=10240000;sa((sp()>v0)?1:0);}
-    if(sp()!=0)goto _1; else goto _5;
-_5:
+    if(sp()!=0)goto _5; else goto _2;
+_2:
     sa(sr());
     sa(sr());
     {int64 v0=2;sa((v0==0)?0:(sp()/v0));}
     sa(sp()*(2));
     {int64 v0=sp();sa(sp()-v0);}
-    if(sp()!=0)goto _3; else goto _2;
+    if(sp()!=0)goto _3; else goto _4;
+_3:
+    sp();
+    goto _1;
+_4:
+    sa(sp()+(x2));
+    x2=sp();
+    goto _1;
+_5:
+    printf("%lld", (int64)(x2));
+    sp();
+    return 0;
 }

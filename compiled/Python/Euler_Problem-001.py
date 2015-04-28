@@ -21,14 +21,53 @@ def sr():
         return 0
     return s[-1]
 def _0():
-    return (6)if(sp()!=0)else(9)
-def _1():
     sa(1)
     sa(2)
     sa(2)
     sa(0)
-    return 0
+    return 1
+def _1():
+    return (9)if(sp()!=0)else(2)
 def _2():
+    sa(sr())
+    sa(sr())
+    sa(td(sp(),5))
+    sa(sp()*(5));
+    v0=sp()
+    sa(sp()-v0)
+    sa((0)if(sp()!=0)else(1))
+    return (9)if(sp()!=0)else(3)
+def _3():
+    sa(sr())
+    sa(sp()-(1000));
+    sa((0)if(sp()!=0)else(1))
+    return (4)if(sp()!=0)else(8)
+def _4():
+    sp()
+    sp()
+    sp()
+    return 5
+def _5():
+    sa(sp()+sp());
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sr())
+    sa(sp()-(1));
+    sa((0)if(sp()!=0)else(1))
+    return (6)if(sp()!=0)else(7)
+def _6():
+    sp()
+    print(sp(),end="",flush=True)
+    return 10
+def _7():
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    return 5
+def _8():
     sp()
     sa(sp()+(1));
     sa(sr())
@@ -39,50 +78,11 @@ def _2():
     v0=sp()
     sa(sp()-v0)
     sa((0)if(sp()!=0)else(1))
-    return 0
-def _3():
-    sp()
-    sp()
-    sp()
-    return 8
-def _4():
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    return 8
-def _5():
-    sp()
-    print(sp(),end="",flush=True)
-    return 10
-def _6():
-    sa(sr())
-    return 7
-def _7():
-    sa(sr())
-    sa(sp()-(1000));
-    sa((0)if(sp()!=0)else(1))
-    return (3)if(sp()!=0)else(2)
-def _8():
-    sa(sp()+sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sr())
-    sa(sp()-(1));
-    sa((0)if(sp()!=0)else(1))
-    return (5)if(sp()!=0)else(4)
+    return 1
 def _9():
     sa(sr())
-    sa(sr())
-    sa(td(sp(),5))
-    sa(sp()*(5));
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (6)if(sp()!=0)else(7)
+    return 3
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9]
-c=1
+c=0
 while c<10:
     c=m[c]()

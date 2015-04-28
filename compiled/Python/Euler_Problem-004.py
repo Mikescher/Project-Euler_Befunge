@@ -36,50 +36,11 @@ def sr():
         return 0
     return s[-1]
 def _0():
-    return (4)if(sp()!=0)else(5)
-def _1():
-    return (8)if((gr(gr(0,2),1))-(gr((gr(0,1))-(gr(0,2)),1)))else(12)
-def _2():
     gw(0,0,1)
     gw(1,0,1)
     gw(0,4,1000)
-    return 10
-def _3():
-    gw(0,1,1)
-    sa(sp()*sp());
-    sa(sr())
-    return 4
-def _4():
-    sa(sr())
-    sa(10)
-    v0=sp()
-    sa(tm(sp(),v0))
-    gw(gr(0,1),1,sp())
-    gw(0,1,(gr(0,1))+(1))
-    sa(10)
-    v0=sp()
-    sa(td(sp(),v0))
-    sa(sr())
-    return 0
-def _5():
-    gw(0,2,1)
-    sp()
     return 1
-def _6():
-    gw(0,3,sp())
-    return 10
-def _7():
-    sp()
-    return 10
-def _8():
-    sp()
-    return 10
-def _9():
-    sp()
-    sp()
-    print(gr(0,3),end="",flush=True)
-    return 14
-def _10():
+def _1():
     sa((gr(1,0))+(1))
     sa((gr(1,0))+(1))
     gw(1,0,(gr(1,0))+(1))
@@ -91,8 +52,8 @@ def _10():
     v1=sp()
     sa(v0)
     sa(v1)
-    return (3)if(sp()!=0)else(11)
-def _11():
+    return (4)if(sp()!=0)else(2)
+def _2():
     sa(1)
     sa(sp()+sp());
     sa(sr())
@@ -112,15 +73,45 @@ def _11():
     sa(gr(0,4))
     v0=sp()
     sa(sp()-v0)
-    return (3)if(sp()!=0)else(9)
-def _12():
+    return (4)if(sp()!=0)else(3)
+def _3():
+    sp()
+    sp()
+    print(gr(0,3),end="",flush=True)
+    return 14
+def _4():
+    gw(0,1,1)
+    sa(sp()*sp());
+    sa(sr())
+    return 5
+def _5():
+    sa(sr())
+    sa(10)
+    v0=sp()
+    sa(tm(sp(),v0))
+    gw(gr(0,1),1,sp())
+    gw(0,1,(gr(0,1))+(1))
+    sa(10)
+    v0=sp()
+    sa(td(sp(),v0))
+    sa(sr())
+    return 6
+def _6():
+    return (5)if(sp()!=0)else(7)
+def _7():
+    gw(0,2,1)
+    sp()
+    return 8
+def _8():
+    return (13)if((gr(gr(0,2),1))-(gr((gr(0,1))-(gr(0,2)),1)))else(9)
+def _9():
     sa((gr(0,2))+(1))
     gw(0,2,(gr(0,2))+(1))
     sa(gr(0,1))
     v0=sp()
     sa(sp()-v0)
-    return (1)if(sp()!=0)else(13)
-def _13():
+    return (8)if(sp()!=0)else(10)
+def _10():
     sa(sr())
     sa(gr(0,3))
     v0=sp()
@@ -129,8 +120,17 @@ def _13():
     sa(v1)
     v0=sp()
     sa((1)if(sp()>v0)else(0))
-    return (7)if(sp()!=0)else(6)
+    return (11)if(sp()!=0)else(12)
+def _11():
+    sp()
+    return 1
+def _12():
+    gw(0,3,sp())
+    return 1
+def _13():
+    sp()
+    return 1
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13]
-c=2
+c=0
 while c<14:
     c=m[c]()

@@ -27,36 +27,14 @@ x3=48
 x4=48
 x5=112
 def _0():
-    return (8)if(tm(x1,x3))else(4)
-def _1():
-    return (9)if((0)if((tm(x4,x5))!=0)else(1))else(8)
-def _2():
     global x0
     global x1
     global x2
     x0=20
     x1=1
     x2=1
-    return 7
-def _3():
-    global x3
-    x3=1
-    return 8
-def _4():
-    global x4
-    global x5
-    x4=td(x1,x3)
-    x5=1
-    return 9
-def _5():
-    global x1
-    x1=td(x1,x3)
-    return 0
-def _6():
-    global x1
-    print(x1,end="",flush=True)
-    return 10
-def _7():
+    return 1
+def _1():
     global x1
     global x0
     global x2
@@ -66,16 +44,32 @@ def _7():
     x2=(x2)+(1)
     v0=sp()
     sa((1)if(sp()>v0)else(0))
-    return (3)if(sp()!=0)else(6)
-def _8():
+    return (3)if(sp()!=0)else(2)
+def _2():
+    global x1
+    print(x1,end="",flush=True)
+    return 10
+def _3():
+    global x3
+    x3=1
+    return 4
+def _4():
     global x3
     global x3
     global x0
     sa(x3)
     x3=(x3)+(1)
     sa((1)if(sp()>(x0))else(0))
-    return (7)if(sp()!=0)else(0)
-def _9():
+    return (1)if(sp()!=0)else(5)
+def _5():
+    return (4)if(tm(x1,x3))else(6)
+def _6():
+    global x4
+    global x5
+    x4=td(x1,x3)
+    x5=1
+    return 7
+def _7():
     global x2
     global x5
     sa(x2)
@@ -83,8 +77,14 @@ def _9():
     x5=(x5)+(1)
     v0=sp()
     sa((1)if(sp()>v0)else(0))
-    return (1)if(sp()!=0)else(5)
+    return (9)if(sp()!=0)else(8)
+def _8():
+    global x1
+    x1=td(x1,x3)
+    return 5
+def _9():
+    return (7)if((0)if((tm(x4,x5))!=0)else(1))else(4)
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9]
-c=2
+c=0
 while c<10:
     c=m[c]()
