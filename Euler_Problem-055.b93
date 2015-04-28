@@ -1,0 +1,52 @@
+v                           v-1\+g02<
+0          v/+55\+g01\p01%+<        $  v/+55\+g01\p01%+<
+>"}P"*>::0\>:!#v_\55+*\:55 ^>:!#v_\::0\>:!#v_\55+*\:55 ^
+    >$ .@      >$+38*   #v  ^#   <  |-p02:$<            
+    ^_^#!:-1             <\+1\$$<^$$<                   
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[10] GetReversed() - temp
+[20] IsLychrel     - reversed number
+
+
+
+47*7*      =>    196
+"2"        =>     50
+"}P"*      => 10 000
+
+
+
+// GetNumberReversed()  stack->stack
+
+  v/+55\+g01\p01%+<
+0\>:!#v_\55+*\:55 ^
+      >$
+
+
+
+// IsLychrel() stack->exitnode
+
+                            v-1\                     +g02<
+    v/+55\+g01\p01%+<                   v/+55\+g01\p01%+<
+ :0\>:!#v_\55+*\:55 ^>  "2" >:!#v_\:: 0\>:!#v_\55+*\:55 ^
+        >$          +^                      >$:20p-      |
+                                >$$  TRUE  @  FALSE    $$<
+
+
+---------------------------------------
+
+Not much to say about this one. I reuse the isPalindrome code from P-36 and bruteforce through all the numbers.  
+I think it would be really useful to cache the intermediate results - but our befunge space is too small for such data structures :/
