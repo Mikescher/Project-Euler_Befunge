@@ -1,0 +1,62 @@
+vXXX ######################################################################
+ XXX ######################################################################
+     ######################################################################
+
+>        "c"v  _v#   `*95:<
+v+"I~"<\"c":<       >:55+%|
+>1-:0\:"F"%v    >1-:|:-1  <
+|:p/"F"\+5 <@.g1$#2$<
+>$188*2p020p10p>030p"~J"+>1-:::"F"%5+\"F"/g10g*20g+:55+/v
+     >21p > 1-:|^$<      |:p/"F"\+5%"F":\p03+g03:%+55p02<
+     ^g03_^#`g1># ^#2g03$<
+                            
+
+
+
+
+
+[5..75, 0..3] multiplication-array
+[10] digitsum  -> a
+[20] digitsum  -> mod
+[30] digitsum  -> sum
+[21] max dsum
+
+
+"~I"+   => 199
+55*3*   => 200
+"c"     => 99
+"}0"*   => 6000
+
+
+// index to array coords   I->[XY]
+
+:"F"%5+\"F"/
+
+
+
+// zero array out
+
+"~J"+>1-:0\:"F"%v
+     |:p/"F"\+5 <
+     $
+
+
+// digitsum      stack -> stack     [b;a] -> [d]
+
+>"~I"+>1-:0\:"F"%v
+      |:p/"F"\+5 <
+      >$188*2p020p10p>"~J"+>1-:::"F"%5+\"F"/g10g*20g+:v
+>%5+>\"F"/g+\:#v_  $v|:-1$<|:p/"F"\+5%"F":\%+55p02/+55<
+^"F":g03\p03:-1<*8*55<    ^<
+                 @ $<
+
+
+---------------------------------------
+
+Here we iterate through the values of a (1..99) and do (manually) the long multiplication.  
+Because we have to implement the multiplication manually we get every result from a^1 to a^99 an can easily get the digitsum for these.
+Then we remember the maximum digitsum and vòila, problem solved.
+
+A few optimizations:
+ - We ignore values where `a%10 == 0`, because these result in numbers consisting mostly of zeroes, and those will never have a high digitsum
+ - We also ignore values for a<45, because the numbers are just to short to be really significant.
