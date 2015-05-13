@@ -1,0 +1,89 @@
+v####
+v##
+v#
+v###     >             >             >      >$0v  
+                >             >              $1v  
+  >::2\`#^_:2-!#^_:2%!#^_:9\`#^_:3%!#^_:5%!#^_1 :v
+2>^<v\                      p21:+1g21:_v#-3 <p2 1<
+1  p>:11p1-0\>:2% !#v_v    v ++!!+1-g< #    ^ < >v
+3  3         ^\+1\/2< \    >3-#v_$$  1>12g\  !|>|
+p 31 vp01p03p04 g11p12<        >:*11v1 >$1   #$^
+1 p+ >120pv        v%g04*<v-1\    %g<^ \!!-1:<$0
+2 32 vg030<  v-1\  < >10g^   >\:::*11  g%1-!\^>^
+3 3g     >$1\> :#v_ $ 21g >:#^_$1-!!  ^
+p 03 >:!#^_\1+\2v\ ^_^#!%2/\g03p<  v    p33+1g33 <
+> ^1 ^p02*2g02/ <>:*40g%20g2/:20^
+ ^_^#%4g32+g31_v#`\*+55g33p32:+1g32<            < 
+ @.+3*2/4-2g32$<
+
+
+
+
+
+
+
+
+
+[1, 0] modExp :: a
+[2, 0] modExp :: bi
+[3, 0] modExp :: b
+[4, 0] modExp :: n
+
+[1, 1] witness :: n
+[2, 1] witness :: t
+
+[1, 2] isMRPrime :: a
+
+[1, 3] diff
+[2, 3] all
+[3, 3] primes
+
+
+
+
+// ModularExp     [a, b, n] -> result
+
+
+>>>    40p30p10pv      v%g04*<
+        v030p021<v-1\  < >10g^  
+        g    >$1\> :#v_ $                    >>>
+        >>:!#^_\1+\2v\ ^_^#!%2/\g03p<
+         ^p02*2g02/ <>:*40g%20g2/:20^
+
+
+
+// Witness       [a, n] -> result
+
+>>>    :11p1-0\>:2% !#v_vv1-g11\!-1:\!-< 
+               ^\+1\/2< \>+!++3-#v_$$  1>     >>>
+       vp01p03p04 g11p12<        >:*11v% 
+       >120pv        v%g04*<v-1\    %g<g 
+       vg030<  v-1\  < >10g^   >\:::*11^ 
+           >$1\> :#v_ $ 21g >:#^_$1-!!  ^
+       >:!#^_\1+\2v\ ^_^#!%2/\g03p<
+       ^p02*2g02/ <>:*40g%20g2/:20^
+
+
+
+// Miller-Rabin primality test (for n < 1373653)
+
+             >             >             >      >$0v  
+                    >             >              $1v  
+>>>     :2\`#^_:2-!#^_:2%!#^_:9\`#^_:3%!#^_:5%!#^_1 :v
+        v\                      p13:+1g13:_v#-3 <p1 3<
+        >:11p1-0\>:2% !#v_v    v ++!!+1-g< #    ^ <   
+                 ^\+1\/2< \    >3-#v_$$  1>31g\  !|>      >>>
+         vp01p03p04 g11p12<        >:*11v1 >$1   #$^  
+         >120pv        v%g04*<v-1\    %g<^ \!!-1:<$0 
+         vg030<  v-1\  < >10g^   >\:::*11  g%1-!\^>^ 
+             >$1\> :#v_ $ 21g >:#^_$1-!!  ^
+         >:!#^_\1+\2v\ ^_^#!%2/\g03p<
+         ^p02*2g02/ <>:*40g%20g2/:20^
+
+
+---------------------------------------
+
+It's obvious that the bottleneck of this program is the primality test.
+The numbers become here too big to create a sieve and "normal" prime testing takes too long.
+So we use the [Miller-Rabin primality test](http://en.wikipedia.org/wiki/Miller-Rabin_primality_test) that I implemented a while ago (thank [mathblog.dk](http://http://www.mathblog.dk)).  
+The rest is just enumerating all the diagonals until `primes*10<all`
