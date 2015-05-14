@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.4 (c) 2015 */
+/* compiled with BefunCompile v1.0.5 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -21,14 +21,12 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    goto _0;
-_0:
-    gw(12,0,((gr(12,0))-(48))+(28));
-    gw(12,1,((gr(12,1))-(48))+(28));
+    gw(12,0,(gr(12,0)-48)+28);
+    gw(12,1,(gr(12,1)-48)+28);
     sa(11);
     sa(11);
 _1:
-    if(sp()!=0)goto _2; else goto _3;
+    if(sp()!=0)goto _2;else goto _3;
 _2:
     sa(sr());
     sa(sr());
@@ -62,30 +60,30 @@ _3:
     gw(2,2,1);
     gw(3,2,1901);
     gw(9,2,0);
-    gw(9,2,((((tm(gr(0,2),7))+((gr(1,2))-(1)))!=0)?0:1)+(gr(9,2)));
-    gw(0,2,(gr(0,2))+(1));
-    gw(1,2,(gr(1,2))+(1));
+    gw(9,2,(((tm(gr(0,2),7))+(gr(1,2)-1)!=0)?0:1)+gr(9,2));
+    gw(0,2,gr(0,2)+1);
+    gw(1,2,gr(1,2)+1);
     sp();
 _4:
     sa(tm(gr(3,2),4));
-    if(sp()!=0)goto _16; else goto _5;
+    if(sp()!=0)goto _16;else goto _5;
 _5:
     sa(tm(gr(3,2),100));
-    if(sp()!=0)goto _15; else goto _6;
+    if(sp()!=0)goto _15;else goto _6;
 _6:
     sa(tm(gr(3,2),400));
-    if(sp()!=0)goto _14; else goto _7;
+    if(sp()!=0)goto _14;else goto _7;
 _7:
-    sa((gr(gr(2,2),1))-((gr(1,2))-(1)));
+    sa(gr(gr(2,2),1)-(gr(1,2)-1));
 _8:
-    if(sp()!=0)goto _9; else goto _12;
+    if(sp()!=0)goto _9;else goto _12;
 _9:
-    sa((gr(3,2))-(2001));
-    if(sp()!=0)goto _10; else goto _11;
+    sa(gr(3,2)-2001);
+    if(sp()!=0)goto _10;else goto _11;
 _10:
-    gw(9,2,((((tm(gr(0,2),7))+((gr(1,2))-(1)))!=0)?0:1)+(gr(9,2)));
-    gw(0,2,(gr(0,2))+(1));
-    gw(1,2,(gr(1,2))+(1));
+    gw(9,2,(((tm(gr(0,2),7))+(gr(1,2)-1)!=0)?0:1)+gr(9,2));
+    gw(0,2,gr(0,2)+1);
+    gw(1,2,gr(1,2)+1);
     goto _4;
 _11:
     printf("%lld", (int64)(gr(9,2)));
@@ -93,21 +91,21 @@ _11:
 _12:
     gw(1,2,1);
     sa(gr(2,2));
-    gw(2,2,(gr(2,2))+(1));
+    gw(2,2,gr(2,2)+1);
     sa(12);
     {int64 v0=sp();sa(sp()-v0);}
-    if(sp()!=0)goto _9; else goto _13;
+    if(sp()!=0)goto _9;else goto _13;
 _13:
     gw(2,2,1);
-    gw(3,2,(gr(3,2))+(1));
+    gw(3,2,gr(3,2)+1);
     goto _9;
 _14:
-    sa((gr(gr(2,2),0))-((gr(1,2))-(1)));
+    sa(gr(gr(2,2),0)-(gr(1,2)-1));
     goto _8;
 _15:
-    sa((gr(gr(2,2),1))-((gr(1,2))-(1)));
+    sa(gr(gr(2,2),1)-(gr(1,2)-1));
     goto _8;
 _16:
-    sa((gr(gr(2,2),0))-((gr(1,2))-(1)));
+    sa(gr(gr(2,2),0)-(gr(1,2)-1));
     goto _8;
 }

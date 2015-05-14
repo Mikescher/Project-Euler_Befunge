@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("AR+LCAAAAAAABACVjr0OgzAMhF8lUsriiGID4ecURX2QCMasnjLx8A2dWqoO9XLW2b7PxfxRUcCsQhDWntCzDoSBdSSMrJ5Q3paLivBNeQWtygtoUZ5Bs/IEmpR9+Mov"
@@ -46,12 +46,12 @@ def _0():
     gw(8,0,40320)
     gw(9,0,362880)
     gw(1,1,0)
-    sa((gr(9,0))*(7))
-    sa((gr(9,0))*(7))
+    sa(gr(9,0)*7)
+    sa(gr(9,0)*7)
     sa(0)
-    sa(gr(tm((gr(9,0))*(7),10),0))
-    sa(td((gr(9,0))*(7),10))
-    sa(td((gr(9,0))*(7),10))
+    sa(gr(tm(gr(9,0)*7,10),0))
+    sa(td(gr(9,0)*7,10))
+    sa(td(gr(9,0)*7,10))
     return 1
 def _1():
     return (9)if(sp()!=0)else(2)
@@ -77,7 +77,7 @@ def _4():
 def _5():
     sa(sr())
     sp()
-    print((gr(1,1))-(3),end="",flush=True)
+    print(gr(1,1)-3,end="",flush=True)
     sp()
     return 11
 def _6():

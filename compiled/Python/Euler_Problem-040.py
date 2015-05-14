@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 def td(a,b):
     return bool(random.getrandbits(1))
@@ -20,12 +20,10 @@ def sr():
     if (len(s) == 0):
         return 0
     return s[-1]
-x0=32
+x0=1
 x1=32
 x2=32
 def _0():
-    global x0
-    x0=1
     sa(0)
     sa(1)
     sa(10)
@@ -51,7 +49,7 @@ def _3():
     return 4
 def _4():
     sa(sr())
-    sa((1)if(sp()>((x1)*((9)*(x2))))else(0))
+    sa((1)if(sp()>(x1*9*x2))else(0))
     sa((0)if(sp()!=0)else(1))
     return (5)if(sp()!=0)else(10)
 def _5():
@@ -108,9 +106,9 @@ def _9():
 def _10():
     global x1
     global x2
-    sa((x1)*((9)*(x2)))
-    x1=(x1)+(1)
-    x2=(x2)*(10)
+    sa(x1*9*x2)
+    x1=x1+1
+    x2=x2*10
     v0=sp()
     sa(sp()-v0)
     return 4

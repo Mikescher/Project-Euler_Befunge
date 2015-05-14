@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 def td(a,b):
     return bool(random.getrandbits(1))
@@ -20,26 +20,20 @@ def sr():
     if (len(s) == 0):
         return 0
     return s[-1]
-x0=37
-x1=37
+x0=1073741824
+x1=2
 x2=37
 x3=37
 x4=37
-x5=37
+x5=5
 x6=37
 def _0():
-    global x0
-    global x1
-    global x5
-    x0=1073741824
-    x1=2
-    x5=5
     sa(2)
     sa(5)
     return 1
 def _1():
-    sa((x1)-(1))
-    sa((x1)-(1))
+    sa(x1-1)
+    sa(x1-1)
     return 2
 def _2():
     return (3)if(sp()!=0)else(25)
@@ -90,7 +84,7 @@ def _7():
 def _8():
     global x6
     sp()
-    sa(sp()-((x6)*(x6)));
+    sa(sp()-(x6*x6));
     sa(x6)
     v0=sp()
     v1=sp()
@@ -106,8 +100,8 @@ def _10():
     global x6
     global x4
     global x0
-    sa((((x3)+(x5))*(24))+(1))
-    sa((((x3)+(x5))*(24))+(1))
+    sa(((x3+x5)*24)+1)
+    sa(((x3+x5)*24)+1)
     x6=0
     x4=sp()
     sa(x0)
@@ -135,7 +129,7 @@ def _14():
 def _15():
     global x6
     sp()
-    sa(sp()-((x6)*(x6)));
+    sa(sp()-(x6*x6));
     sa(x6)
     v0=sp()
     v1=sp()
@@ -148,13 +142,13 @@ def _16():
     return (18)if(sp()!=0)else(17)
 def _17():
     sp()
-    print((x5)-(x3),end="",flush=True)
+    print(x5-x3,end="",flush=True)
     return 26
 def _18():
     global x5
     sa(x5)
-    sa((x2)-(1))
-    sa((x2)-(1))
+    sa(x2-1)
+    sa(x2-1)
     return 2
 def _19():
     sp()

@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.4 (c) 2015 */
+/* compiled with BefunCompile v1.0.5 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADtj70OwjAMhF/FBLo0CnVKc6CoqlhZmJhhzOqpE7w7ThH/CCFYuSGRfbY+X8/fq//vfipPP6gjwyZmMQt74Vp4JtwIB6GeqKpotV5tXu6qLWjKhTkY"+
@@ -19,8 +19,6 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        goto _0;
-    _0:
         gw(0,0,48);
         gw(0,1,48);
         gw(0,2,48);
@@ -38,30 +36,30 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();sa(sp()-v0);}
         gw(4,6,sp());
-        gw(6,6,(gr(0,6))-(1));
+        gw(6,6,gr(0,6)-1);
         gw(7,6,0);
     _3:
         if((((gr(6,6))!=0)?0:1)!=0)goto _1;else goto _4;
     _4:
-        sa((((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6))))-(48))*(2))+(gr(7,6)));
-        gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),(tm((((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6))))-(48))*(2))+(gr(7,6)),10))+(48));
+        sa(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6));
+        gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),(tm(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6),10))+48);
         sa(10);
         {long v0=sp();sa((v0==0)?0:(sp()/v0));}
         gw(7,6,sp());
-        gw(6,6,(gr(6,6))-(1));
+        gw(6,6,gr(6,6)-1);
         goto _3;
     _5:
-        gw(6,6,(gr(0,6))-(1));
+        gw(6,6,gr(0,6)-1);
         sp();
-        sa((0)+((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6))))-(48)));
+        sa(0+(gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48));
     _6:
         if((gr(6,6))!=0)goto _8;else goto _7;
     _7:
         System.Console.Out.Write((long)(sp()));
         return;
     _8:
-        gw(6,6,(gr(6,6))-(1));
-        sa((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6))))-(48));
+        gw(6,6,gr(6,6)-1);
+        sa(gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48);
         sa(sp()+sp());
         goto _6;
 }}

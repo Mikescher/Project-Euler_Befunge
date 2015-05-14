@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhrc3HLNvG4gwPNj/aOnLpce6Y6x9BQ++2fS7z7rFLEe77aJh8LZ5nx6rt+v5ZlxeumHSpRr5Iye+FSct+a5ivf3mqYwptbt+/vz76vX6"
@@ -47,9 +47,9 @@ def _0():
     gw(1,3,32)
     return 1
 def _1():
-    gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+(3),88)
-    sa((gr(3,0))+(gr(3,0)))
-    sa((1)if((gr(0,0))>((gr(3,0))+(gr(3,0))))else(0))
+    gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3,88)
+    sa(gr(3,0)+gr(3,0))
+    sa((1)if((gr(0,0))>(gr(3,0)+gr(3,0)))else(0))
     return 2
 def _2():
     return (34)if(sp()!=0)else(3)
@@ -57,8 +57,8 @@ def _3():
     sp()
     return 4
 def _4():
-    sa((gr(3,0))+(1))
-    gw(3,0,(gr(3,0))+(1))
+    sa(gr(3,0)+1)
+    gw(3,0,gr(3,0)+1)
     sa(sr())
     sa(gr(1,0))
     v0=sp()
@@ -88,8 +88,8 @@ def _7():
     gw(3,0,0)
     return 8
 def _8():
-    sa((gr(3,0))+(1))
-    gw(3,0,(gr(3,0))+(1))
+    sa(gr(3,0)+1)
+    gw(3,0,gr(3,0)+1)
     sa(sr())
     sa(gr(1,0))
     v0=sp()
@@ -114,7 +114,7 @@ def _9():
 def _10():
     sa(gr(3,0))
     sa(gr(4,0))
-    gw(4,0,(gr(4,0))+(1))
+    gw(4,0,gr(4,0)+1)
     sa(sr())
     sa(gr(1,0))
     v0=sp()
@@ -134,19 +134,19 @@ def _10():
     sa((1)if((gr(0,0))>(gr(3,0)))else(0))
     return (8)if(sp()!=0)else(11)
 def _11():
-    gw(tm((gr(4,0))-(1),gr(1,0)),(td((gr(4,0))-(1),gr(1,0)))+(3),0)
+    gw(tm(gr(4,0)-1,gr(1,0)),(td(gr(4,0)-1,gr(1,0)))+3,0)
     gw(4,0,0)
     gw(5,0,0)
     sa(1)
     sa(1)
-    sa(tm(1,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(3))))
+    sa(tm(1,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3)))
     return 12
 def _12():
     return (13)if(sp()!=0)else(33)
 def _13():
     sa(sr())
-    sa((gr(4,0))+(1))
-    gw(4,0,(gr(4,0))+(1))
+    sa(gr(4,0)+1)
+    gw(4,0,gr(4,0)+1)
     sa(sr())
     sa(gr(1,0))
     v0=sp()
@@ -172,7 +172,7 @@ def _13():
     return (32)if(sp()!=0)else(14)
 def _14():
     sp()
-    sa((gr(5,0))-(4))
+    sa(gr(5,0)-4)
     return (31)if(sp()!=0)else(15)
 def _15():
     gw(8,0,0)
@@ -194,8 +194,8 @@ def _16():
     sa(sp()-v0)
     return (22)if(sp()!=0)else(17)
 def _17():
-    sa((gr(8,0))+(1))
-    gw(8,0,(gr(8,0))+(1))
+    sa(gr(8,0)+1)
+    gw(8,0,gr(8,0)+1)
     sa(4)
     v0=sp()
     sa(sp()-v0)
@@ -218,7 +218,7 @@ def _20():
     sa(sp()+sp());
     sa(sr())
     sa(sr())
-    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(3)))
+    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3))
     v0=sp()
     sa(tm(sp(),v0))
     return 12
@@ -236,14 +236,14 @@ def _22():
     return 23
 def _23():
     sa(sr())
-    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(3)))
+    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3))
     v0=sp()
     sa(tm(sp(),v0))
     return (24)if(sp()!=0)else(30)
 def _24():
     sa(sr())
-    sa((gr(4,0))+(1))
-    gw(4,0,(gr(4,0))+(1))
+    sa(gr(4,0)+1)
+    gw(4,0,gr(4,0)+1)
     sa(sr())
     sa(gr(1,0))
     v0=sp()
@@ -269,7 +269,7 @@ def _24():
     return (23)if(sp()!=0)else(25)
 def _25():
     sp()
-    sa((gr(5,0))-(4))
+    sa(gr(5,0)-4)
     return (26)if(sp()!=0)else(29)
 def _26():
     gw(8,0,0)
@@ -283,7 +283,7 @@ def _26():
     sa((1)if(sp()>v0)else(0))
     return (27)if(sp()!=0)else(19)
 def _27():
-    sa((gr(8,0))-(4))
+    sa(gr(8,0)-4)
     return (18)if(sp()!=0)else(28)
 def _28():
     sa(3)
@@ -293,11 +293,11 @@ def _28():
     sp()
     return 35
 def _29():
-    gw(8,0,(gr(8,0))+(1))
+    gw(8,0,gr(8,0)+1)
     return 27
 def _30():
-    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(3)))
-    gw(5,0,(gr(5,0))+(1))
+    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3))
+    gw(5,0,gr(5,0)+1)
     v0=sp()
     sa(td(sp(),v0))
     return 24
@@ -307,13 +307,13 @@ def _31():
     return 20
 def _32():
     sa(sr())
-    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(3)))
+    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3))
     v0=sp()
     sa(tm(sp(),v0))
     return 12
 def _33():
-    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(3)))
-    gw(5,0,(gr(5,0))+(1))
+    sa(gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3))
+    gw(5,0,gr(5,0)+1)
     v0=sp()
     sa(td(sp(),v0))
     return 13

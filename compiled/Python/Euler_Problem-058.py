@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 def td(a,b):
     return bool(random.getrandbits(1))
@@ -20,9 +20,9 @@ def sr():
     if (len(s) == 0):
         return 0
     return s[-1]
-x0=35
-x1=35
-x2=35
+x0=2
+x1=1
+x2=0
 x3=35
 x4=35
 x5=35
@@ -31,12 +31,6 @@ x7=35
 x8=35
 x9=35
 def _0():
-    global x0
-    global x1
-    global x2
-    x0=2
-    x1=1
-    x2=0
     sa(3)
     sa(3)
     sa(0)
@@ -84,8 +78,8 @@ def _9():
     global x4
     global x3
     sa(sr())
-    sa((x4)+(1))
-    x4=(x4)+(1)
+    sa(x4+1)
+    x4=x4+1
     v0=sp()
     v1=sp()
     sa(v0)
@@ -123,7 +117,7 @@ def _11():
     x9=1
     sa(0)
     sa(x6)
-    sa((0)if((x6)!=0)else(1))
+    sa((0)if(x6!=0)else(1))
     return 12
 def _12():
     return (13)if(sp()!=0)else(34)
@@ -235,9 +229,9 @@ def _24():
     return (30)if(sp()!=0)else(25)
 def _25():
     global x1
-    sa((x1)+(1))
-    x1=(x1)+(1)
-    sa((x2)*(10))
+    sa(x1+1)
+    x1=x1+1
+    sa(x2*10)
     v0=sp()
     v1=sp()
     sa(v0)
@@ -263,7 +257,7 @@ def _27():
     return 1
 def _28():
     global x0
-    x0=(x0)+(2)
+    x0=x0+2
     sa(sr())
     sa(sr())
     sa(2)
@@ -276,11 +270,11 @@ def _28():
     return 1
 def _29():
     sp()
-    print(((td((x1)-(2),4))*(2))+(3),end="",flush=True)
+    print(((td(x1-2,4))*2)+3,end="",flush=True)
     return 39
 def _30():
     global x2
-    x2=(x2)+(1)
+    x2=x2+1
     return 25
 def _31():
     sa(sp()-(3));
@@ -312,7 +306,7 @@ def _33():
     return 22
 def _34():
     global x9
-    x9=(x9)*(2)
+    x9=x9*2
     v0=sp()
     v1=sp()
     sa(v0)

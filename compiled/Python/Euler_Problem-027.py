@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhrc3HLsvO4gwPNg/ybdMn3Pr5JTbtzaw6N+zrdLIDTzdsEZC7O1J+fchYbp5u7vWeJTv57eacOaM9tJ+c/2badaPC7+9evb499nb/jdP"
@@ -46,9 +46,9 @@ def _0():
     gw(3,1,0)
     return 1
 def _1():
-    gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+(3),88)
-    sa((gr(3,0))+(gr(3,0)))
-    sa((1)if((gr(9,0))>((gr(3,0))+(gr(3,0))))else(0))
+    gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3,88)
+    sa(gr(3,0)+gr(3,0))
+    sa((1)if((gr(9,0))>(gr(3,0)+gr(3,0)))else(0))
     return 2
 def _2():
     return (22)if(sp()!=0)else(3)
@@ -56,8 +56,8 @@ def _3():
     sp()
     return 4
 def _4():
-    sa((gr(3,0))+(1))
-    gw(3,0,(gr(3,0))+(1))
+    sa(gr(3,0)+1)
+    gw(3,0,gr(3,0)+1)
     sa(sr())
     sa(gr(1,0))
     v0=sp()
@@ -85,13 +85,13 @@ def _6():
 def _7():
     gw(0,3,32)
     gw(1,3,32)
-    gw(5,0,((0)-(gr(4,0)))+(1))
+    gw(5,0,(0-gr(4,0))+1)
     gw(6,0,2)
     return 8
 def _8():
     gw(7,0,0)
-    sa((0)+(((gr(5,0))*(gr(7,0)))+(gr(6,0))))
-    sa((1)if(((0)+(((gr(5,0))*(gr(7,0)))+(gr(6,0))))>(1))else(0))
+    sa(0+(gr(5,0)*gr(7,0))+gr(6,0))
+    sa((1)if((0+(gr(5,0)*gr(7,0))+gr(6,0))>(1))else(0))
     return 9
 def _9():
     return (10)if(sp()!=0)else(21)
@@ -123,19 +123,19 @@ def _12():
     sp()
     return 13
 def _13():
-    sa((gr(5,0))+(2))
-    gw(5,0,(gr(5,0))+(2))
+    sa(gr(5,0)+2)
+    gw(5,0,gr(5,0)+2)
     sa(gr(4,0))
     v0=sp()
     sa((1)if(sp()>v0)else(0))
     sa((0)if(sp()!=0)else(1))
     return (8)if(sp()!=0)else(14)
 def _14():
-    gw(5,0,((0)-(gr(4,0)))+(1))
+    gw(5,0,(0-gr(4,0))+1)
     return 15
 def _15():
-    sa((gr(6,0))+(1))
-    gw(6,0,(gr(6,0))+(1))
+    sa(gr(6,0)+1)
+    gw(6,0,gr(6,0)+1)
     sa(sr())
     sa(gr(1,0))
     v0=sp()
@@ -162,7 +162,7 @@ def _17():
     sa((0)if(((1)if((gr(6,0))>(gr(4,0)))else(0))!=0)else(1))
     return (8)if(sp()!=0)else(18)
 def _18():
-    print((gr(1,1))*(gr(2,1)),end="",flush=True)
+    print(gr(1,1)*gr(2,1),end="",flush=True)
     return 23
 def _19():
     gw(3,1,sp())
@@ -170,11 +170,11 @@ def _19():
     gw(2,1,gr(6,0))
     return 13
 def _20():
-    sa((gr(7,0))+(1))
-    gw(7,0,(gr(7,0))+(1))
+    sa(gr(7,0)+1)
+    gw(7,0,gr(7,0)+1)
     sa(sr())
     sa(sp()*sp());
-    sa(((gr(5,0))*(gr(7,0)))+(gr(6,0)))
+    sa((gr(5,0)*gr(7,0))+gr(6,0))
     sa(sp()+sp());
     sa(sr())
     sa(1)

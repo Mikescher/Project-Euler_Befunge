@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("AR+LCAAAAAAABAClUUFqxDAQ+4pJ9zQmRRpvdjfBmD6khB4Kc52TT3l8nW4CbSGFbnWwPTPIkuX6tCP8HY+x/o2CHYQrPMHP8AF+gV/hN/gID6F771RCIH1UOhI9oNaH"
@@ -48,13 +48,13 @@ def _0():
     gw(1,1,200)
     gw(2,1,9)
     gw(3,1,0)
-    gw(gr(2,1),0,(gr(gr(2,1),0))+(1))
+    gw(gr(2,1),0,gr(gr(2,1),0)+1)
     return 1
 def _1():
-    return (11)if((gr(2,1))-(9))else(2)
+    return (11)if(gr(2,1)-9)else(2)
 def _2():
-    sa((((((((((gr(1,0))*(500))+((gr(2,0))*(200)))+((100)*(gr(3,0))))+((gr(4,0))*(50)))+((gr(5,0))*(20)))+((gr(6,0))*(10)))+((gr(7,0))*(5)))+((gr(8,0))*(2)))+(gr(9,0)))
-    return (10)if((1)if((gr(1,1))>((((((((((gr(1,0))*(500))+((gr(2,0))*(200)))+((100)*(gr(3,0))))+((gr(4,0))*(50)))+((gr(5,0))*(20)))+((gr(6,0))*(10)))+((gr(7,0))*(5)))+((gr(8,0))*(2)))+(gr(9,0))))else(0))else(3)
+    sa((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0))
+    return (10)if((1)if((gr(1,1))>((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0)))else(0))else(3)
 def _3():
     sa(gr(1,1))
     v0=sp()
@@ -74,7 +74,7 @@ def _6():
     v0=sp()
     sa(sp()-v0)
     gw(2,1,sp())
-    gw(gr(2,1),0,(gr(gr(2,1),0))+(1))
+    gw(gr(2,1),0,gr(gr(2,1),0)+1)
     return 1
 def _7():
     sp()
@@ -87,16 +87,16 @@ def _8():
     gw(2,1,sp())
     return 4
 def _9():
-    gw(3,1,(gr(3,1))+(1))
+    gw(3,1,gr(3,1)+1)
     return 4
 def _10():
-    gw(gr(2,1),0,(gr(gr(2,1),0))+(1))
+    gw(gr(2,1),0,gr(gr(2,1),0)+1)
     sp()
     return 1
 def _11():
     sa(0)
-    sa((gr(2,1))+(1))
-    gw(2,1,(gr(2,1))+(1))
+    sa(gr(2,1)+1)
+    gw(2,1,gr(2,1)+1)
     sa(0)
     v0=sp()
     v1=sp()

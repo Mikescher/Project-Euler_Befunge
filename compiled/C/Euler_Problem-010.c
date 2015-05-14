@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.4 (c) 2015 */
+/* compiled with BefunCompile v1.0.5 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -441,13 +441,11 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    goto _0;
-_0:
     gw(1999,1000,35);
     sa(1999999);
     sa(1999999);
 _1:
-    if(sp()!=0)goto _2; else goto _3;
+    if(sp()!=0)goto _2;else goto _3;
 _2:
     sa(1);
     {int64 v0=sp();sa(sp()-v0);}
@@ -472,18 +470,18 @@ _3:
     gw(3,0,2);
     gw(0,1,32);
     gw(1,1,32);
-    gw(5,0,((gr(1,0))*(10))+(1));
+    gw(5,0,(gr(1,0)*10)+1);
 _4:
-    gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+(1),88);
-    sa((gr(3,0))+(gr(3,0)));
-    sa((gr(0,0))>((gr(3,0))+(gr(3,0)))?1:0);
+    gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+1,88);
+    sa(gr(3,0)+gr(3,0));
+    sa((gr(0,0))>(gr(3,0)+gr(3,0))?1:0);
 _5:
-    if(sp()!=0)goto _15; else goto _6;
+    if(sp()!=0)goto _15;else goto _6;
 _6:
     sp();
 _7:
-    sa((gr(3,0))+(1));
-    gw(3,0,(gr(3,0))+(1));
+    sa(gr(3,0)+1);
+    gw(3,0,gr(3,0)+1);
     sa(sr());
     sa(gr(1,0));
     {int64 v0=sp();sa((v0==0)?0:(sp()%v0));}
@@ -495,17 +493,16 @@ _7:
     {int64 v0=sp();sa(gr(sp(),v0));}
     sa(32);
     {int64 v0=sp();sa(sp()-v0);}
-_8:
-    if(sp()!=0)goto _9; else goto _7;
+    if(sp()!=0)goto _9;else goto _7;
 _9:
     sa((gr(0,0))>(gr(3,0))?1:0);
-    if(sp()!=0)goto _4; else goto _10;
+    if(sp()!=0)goto _4;else goto _10;
 _10:
     gw(3,0,0);
     gw(4,0,0);
 _11:
-    sa((gr(3,0))+(1));
-    gw(3,0,(gr(3,0))+(1));
+    sa(gr(3,0)+1);
+    gw(3,0,gr(3,0)+1);
     sa(sr());
     sa(gr(1,0));
     {int64 v0=sp();sa((v0==0)?0:(sp()%v0));}
@@ -517,15 +514,15 @@ _11:
     {int64 v0=sp();sa(gr(sp(),v0));}
     sa(88);
     {int64 v0=sp();sa(sp()-v0);}
-    if(sp()!=0)goto _12; else goto _14;
+    if(sp()!=0)goto _12;else goto _14;
 _12:
-    sa((gr(0,0))-(gr(3,0)));
-    if(sp()!=0)goto _11; else goto _13;
+    sa(gr(0,0)-gr(3,0));
+    if(sp()!=0)goto _11;else goto _13;
 _13:
     printf("%lld", (int64)(gr(4,0)));
     return 0;
 _14:
-    gw(4,0,(gr(3,0))+(gr(4,0)));
+    gw(4,0,gr(3,0)+gr(4,0));
     goto _12;
 _15:
     sa(sr());

@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 def td(a,b):
     return bool(random.getrandbits(1))
@@ -20,16 +20,14 @@ def sr():
     if (len(s) == 0):
         return 0
     return s[-1]
-x0=63
+x0=4818
 def _0():
-    global x0
-    x0=4818
     sa(1488)
     sa(1800)
     sa(1800)
     return 1
 def _1():
-    return (14)if((((tm(x0,10))+(2))*(((tm(td(x0,10),10))+(2))*(((tm(td(td(x0,10),10),10))+(2))*((td(td(td(x0,10),10),10))+(2)))))-(((tm((x0)+(3330),10))+(2))*(((tm(td((x0)+(3330),10),10))+(2))*(((tm(td(td((x0)+(3330),10),10),10))+(2))*((td(td(td((x0)+(3330),10),10),10))+(2))))))else(2)
+    return (14)if((((tm(x0,10))+2)*((tm(td(x0,10),10))+2)*((tm(td(td(x0,10),10),10))+2)*((td(td(td(x0,10),10),10))+2))-(((tm(x0+3330,10))+2)*((tm(td(x0+3330,10),10))+2)*((tm(td(td(x0+3330,10),10),10))+2)*((td(td(td(x0+3330,10),10),10))+2)))else(2)
 def _2():
     v0=sp()
     sa(sp()-v0)
@@ -55,7 +53,7 @@ def _6():
     global x0
     x0=sp()
     sa(7)
-    sa((0)if((tm(x0,7))!=0)else(1))
+    sa((0)if(tm(x0,7)!=0)else(1))
     return 7
 def _7():
     return (13)if(sp()!=0)else(8)

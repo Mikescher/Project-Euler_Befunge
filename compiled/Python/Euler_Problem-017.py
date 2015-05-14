@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("AR+LCAAAAAAABACVkEFuwyAQRa8yBmcDcgOGAYoQ6kGQ3UUlb7Ni5dy92E5lEiVWMxvg8/7MhwzvlVAKtVaIWhnjnLWfzplD3hhEtOYIqqp9M8/C505WSoBHKVS3ETWL"
@@ -36,7 +36,7 @@ def sr():
         return 0
     return s[-1]
 def _0():
-    gw(20,1,(gr(20,1))-(48))
+    gw(20,1,gr(20,1)-48)
     sa(20)
     sa(20)
     return 1
@@ -65,7 +65,7 @@ def _2():
     gw(v1,v0,sp())
     return 1
 def _3():
-    gw(20,2,(gr(20,2))-(48))
+    gw(20,2,gr(20,2)-48)
     sa(20)
     sa(20)
     return 4

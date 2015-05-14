@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("AR+LCAAAAAAABADt2r1qwzAQwPFXcf2xWP44OdIQEUQfJDQdClo1acrD54JLoLSQ0jY0tP/fcqeTrEFGN6lUuCcNAAAAAAAAAAAAAAAAAAB/wLX3cuU1xsvKcs52t3qf"
@@ -38,9 +38,9 @@ def sr():
 def _0():
     gw(1,0,400)
     gw(0,0,10000)
-    sa((gr(0,0))-(1))
-    sa((gr(0,0))-(1))
-    gw(2,0,(gr(0,0))-(1))
+    sa(gr(0,0)-1)
+    sa(gr(0,0)-1)
+    gw(2,0,gr(0,0)-1)
     return 1
 def _1():
     sa(0)
@@ -66,14 +66,14 @@ def _3():
     sa(sr())
     gw(3,0,sp())
     sa(sp()+sp());
-    sa((gr(3,0))-(1))
-    sa((gr(3,0))-(1))
+    sa(gr(3,0)-1)
+    sa(gr(3,0)-1)
     return 4
 def _4():
     return (2)if(sp()!=0)else(5)
 def _5():
     sp()
-    gw(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1),sp())
+    gw(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+1,sp())
     sa(sr())
     return (6)if(sp()!=0)else(7)
 def _6():
@@ -86,25 +86,25 @@ def _6():
     return 1
 def _7():
     gw(0,1,0)
-    gw(2,0,(gr(0,0))-(1))
+    gw(2,0,gr(0,0)-1)
     gw(9,0,0)
-    gw(4,0,gr(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1)))
-    gw(5,0,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(1)))
+    gw(4,0,gr(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+1))
+    gw(5,0,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+1))
     sp()
     sp()
     return 8
 def _8():
-    return (10)if((gr(2,0))-(gr(5,0)))else(9)
+    return (10)if(gr(2,0)-gr(5,0))else(9)
 def _9():
     sa((0)if(((1)if((gr(2,0))>(gr(4,0)))else(0))!=0)else(1))
     return (10)if(sp()!=0)else(13)
 def _10():
     sa(gr(2,0))
-    gw(2,0,(gr(2,0))-(1))
+    gw(2,0,gr(2,0)-1)
     return (11)if(sp()!=0)else(12)
 def _11():
-    gw(4,0,gr(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+(1)))
-    gw(5,0,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+(1)))
+    gw(4,0,gr(tm(gr(2,0),gr(1,0)),(td(gr(2,0),gr(1,0)))+1))
+    gw(5,0,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+1))
     return 8
 def _12():
     print(gr(9,0),end="",flush=True)
@@ -118,7 +118,7 @@ def _13():
     print(chr(sp()),end="",flush=True)
     print(gr(4,0),end="",flush=True)
     print(chr(10),end="",flush=True)
-    gw(9,0,(gr(9,0))+((gr(2,0))+(gr(4,0))))
+    gw(9,0,gr(9,0)+gr(2,0)+gr(4,0))
     return 10
 def _14():
     sa(1)

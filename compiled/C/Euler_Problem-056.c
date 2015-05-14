@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.4 (c) 2015 */
+/* compiled with BefunCompile v1.0.5 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -20,8 +20,6 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    goto _0;
-_0:
     gw(63,2,0);
     sa(99);
     sa(99);
@@ -30,7 +28,7 @@ _1:
     sa(198);
     sa(198);
 _2:
-    if(sp()!=0)goto _3; else goto _4;
+    if(sp()!=0)goto _3;else goto _4;
 _3:
     sa(1);
     {int64 v0=sp();sa(sp()-v0);}
@@ -57,8 +55,8 @@ _5:
     gw(3,0,0);
     sa(199);
     sa(199);
-    sa(((gr(64,2))*(gr(1,0)))+(gr(2,0)));
-    gw(2,0,td(((gr(64,2))*(gr(1,0)))+(gr(2,0)),10));
+    sa((gr(64,2)*gr(1,0))+gr(2,0));
+    gw(2,0,td((gr(64,2)*gr(1,0))+gr(2,0),10));
 _6:
     sa(10);
     {int64 v0=sp();sa((v0==0)?0:(sp()%v0));}
@@ -77,33 +75,33 @@ _6:
     {int64 v0=sp();sa((v0==0)?0:(sp()/v0));}
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
-    if(sp()!=0)goto _17; else goto _7;
+    if(sp()!=0)goto _17;else goto _7;
 _7:
     sp();
     sa((gr(3,0))>(gr(2,1))?1:0);
-    if(sp()!=0)goto _16; else goto _8;
+    if(sp()!=0)goto _16;else goto _8;
 _8:
     sa(1);
     {int64 v0=sp();sa(sp()-v0);}
     sa(sr());
-    if(sp()!=0)goto _5; else goto _9;
+    if(sp()!=0)goto _5;else goto _9;
 _9:
     sp();
 _10:
     sa(1);
     {int64 v0=sp();sa(sp()-v0);}
     sa(sr());
-    if(sp()!=0)goto _11; else goto _13;
+    if(sp()!=0)goto _11;else goto _13;
 _11:
     sa(sr());
     sa(10);
     {int64 v0=sp();sa((v0==0)?0:(sp()%v0));}
-    if(sp()!=0)goto _14; else goto _12;
+    if(sp()!=0)goto _14;else goto _12;
 _12:
     sa(1);
     {int64 v0=sp();sa(sp()-v0);}
     sa(sr());
-    if(sp()!=0)goto _11; else goto _13;
+    if(sp()!=0)goto _11;else goto _13;
 _13:
     sp();
     printf("%lld", (int64)(gr(2,1)));
@@ -112,7 +110,7 @@ _14:
     sa(sr());
     sa(45);
     {int64 v0=sp();sa((sp()>v0)?1:0);}
-    if(sp()!=0)goto _15; else goto _10;
+    if(sp()!=0)goto _15;else goto _10;
 _15:
     gw(63,2,0);
     sa(sr());

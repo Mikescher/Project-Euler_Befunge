@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.4 (c) 2015 */
+/* compiled with BefunCompile v1.0.5 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -13,8 +13,6 @@ int main(void)
     int64 x0=32;
     int64 x1=32;
     s=(int64*)calloc(q,sizeof(int64));
-    goto _0;
-_0:
     sa(0);
     sa(10000);
     sa(10000);
@@ -22,7 +20,7 @@ _0:
     sa(10000);
     sa(0);
 _1:
-    if(sp()!=0)goto _3; else goto _2;
+    if(sp()!=0)goto _3;else goto _2;
 _2:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()*(10));
@@ -43,7 +41,7 @@ _3:
     sa(24);
     sa(0);
 _4:
-    if(sp()!=0)goto _14; else goto _5;
+    if(sp()!=0)goto _14;else goto _5;
 _5:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
@@ -53,13 +51,13 @@ _5:
 _6:
     sa(sr());
     sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _7; else goto _13;
+    if(sp()!=0)goto _7;else goto _13;
 _7:
     sp();
     sa(sr());
     x0=sp();
     {int64 v0=sp();sa(sp()-v0);}
-    if(sp()!=0)goto _8; else goto _9;
+    if(sp()!=0)goto _8;else goto _9;
 _8:
     sa(sr());
     sp();
@@ -76,7 +74,7 @@ _10:
     sa(sp()-(1));
     sa(sr());
     sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _11; else goto _12;
+    if(sp()!=0)goto _11;else goto _12;
 _11:
     sp();
     printf("%lld", (int64)(sp()));

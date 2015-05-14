@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("AR+LCAAAAAAABACtkcFqxCAQhl8lNU0pimXmNyREgvRBQnopzNWTpzx8xyULuwS2bNoRRceZz3/GEihAx2VpzlsJ/C+c4Q+5t5ZgU4wkhozvR+sWyjGWU6gtes68ODv2"
@@ -36,8 +36,8 @@ def sr():
         return 0
     return s[-1]
 def _0():
-    gw(12,0,((gr(12,0))-(48))+(28))
-    gw(12,1,((gr(12,1))-(48))+(28))
+    gw(12,0,(gr(12,0)-48)+28)
+    gw(12,1,(gr(12,1)-48)+28)
     sa(11)
     sa(11)
     return 1
@@ -91,9 +91,9 @@ def _3():
     gw(2,2,1)
     gw(3,2,1901)
     gw(9,2,0)
-    gw(9,2,((0)if(((tm(gr(0,2),7))+((gr(1,2))-(1)))!=0)else(1))+(gr(9,2)))
-    gw(0,2,(gr(0,2))+(1))
-    gw(1,2,(gr(1,2))+(1))
+    gw(9,2,((0)if((tm(gr(0,2),7))+(gr(1,2)-1)!=0)else(1))+gr(9,2))
+    gw(0,2,gr(0,2)+1)
+    gw(1,2,gr(1,2)+1)
     sp()
     return 4
 def _4():
@@ -106,17 +106,17 @@ def _6():
     sa(tm(gr(3,2),400))
     return (14)if(sp()!=0)else(7)
 def _7():
-    sa((gr(gr(2,2),1))-((gr(1,2))-(1)))
+    sa(gr(gr(2,2),1)-(gr(1,2)-1))
     return 8
 def _8():
     return (9)if(sp()!=0)else(12)
 def _9():
-    sa((gr(3,2))-(2001))
+    sa(gr(3,2)-2001)
     return (10)if(sp()!=0)else(11)
 def _10():
-    gw(9,2,((0)if(((tm(gr(0,2),7))+((gr(1,2))-(1)))!=0)else(1))+(gr(9,2)))
-    gw(0,2,(gr(0,2))+(1))
-    gw(1,2,(gr(1,2))+(1))
+    gw(9,2,((0)if((tm(gr(0,2),7))+(gr(1,2)-1)!=0)else(1))+gr(9,2))
+    gw(0,2,gr(0,2)+1)
+    gw(1,2,gr(1,2)+1)
     return 4
 def _11():
     print(gr(9,2),end="",flush=True)
@@ -124,23 +124,23 @@ def _11():
 def _12():
     gw(1,2,1)
     sa(gr(2,2))
-    gw(2,2,(gr(2,2))+(1))
+    gw(2,2,gr(2,2)+1)
     sa(12)
     v0=sp()
     sa(sp()-v0)
     return (9)if(sp()!=0)else(13)
 def _13():
     gw(2,2,1)
-    gw(3,2,(gr(3,2))+(1))
+    gw(3,2,gr(3,2)+1)
     return 9
 def _14():
-    sa((gr(gr(2,2),0))-((gr(1,2))-(1)))
+    sa(gr(gr(2,2),0)-(gr(1,2)-1))
     return 8
 def _15():
-    sa((gr(gr(2,2),1))-((gr(1,2))-(1)))
+    sa(gr(gr(2,2),1)-(gr(1,2)-1))
     return 8
 def _16():
-    sa((gr(gr(2,2),0))-((gr(1,2))-(1)))
+    sa(gr(gr(2,2),0)-(gr(1,2)-1))
     return 8
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16]
 c=0

@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("AR+LCAAAAAAABADtkc8KgzAMxl9FCl4Mzq9qVxCRPYmnQa49efLhF5ljRdmYjv055Lsk/dL0l7ZD8jths/a0KFrRila0ohWtaEUr+iNou6flz9Q5d/RZlgHBlMYiJGWF"
@@ -45,36 +45,36 @@ def _1():
     gw(5,0,0)
     return 2
 def _2():
-    gw(4,0,(gr(4,0))-(1))
-    sa((gr((tm(gr(4,0),gr(1,0)))+(52),(td(gr(4,0),gr(1,0)))+(1)))-(48))
-    sa(((gr((tm(gr(4,0),gr(1,0)))+(52),(td(gr(4,0),gr(1,0)))+(1)))-(48))+(((gr((tm(gr(4,0),gr(1,0)))+(1),(td(gr(4,0),gr(1,0)))+(1)))-(48))+(gr(5,0))))
-    gw(5,0,td(((gr((tm(gr(4,0),gr(1,0)))+(52),(td(gr(4,0),gr(1,0)))+(1)))-(48))+(((gr((tm(gr(4,0),gr(1,0)))+(1),(td(gr(4,0),gr(1,0)))+(1)))-(48))+(gr(5,0))),10))
+    gw(4,0,gr(4,0)-1)
+    sa(gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)
+    sa((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0))
+    gw(5,0,td((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0),10))
     sa(10)
     v0=sp()
     sa(tm(sp(),v0))
     sa(48)
     sa(sp()+sp());
-    gw((tm(gr(4,0),gr(1,0)))+(52),(td(gr(4,0),gr(1,0)))+(1),sp())
+    gw((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1,sp())
     sa(48)
     sa(sp()+sp());
-    gw((tm(gr(4,0),gr(1,0)))+(1),(td(gr(4,0),gr(1,0)))+(1),sp())
+    gw((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1,sp())
     return 3
 def _3():
     return (2)if(gr(4,0))else(4)
 def _4():
-    gw(3,0,(gr(3,0))+(1))
+    gw(3,0,gr(3,0)+1)
     gw(7,0,0)
     return 5
 def _5():
-    return (6)if((gr((tm(gr(7,0),gr(1,0)))+(52),(td(gr(7,0),gr(1,0)))+(1)))-(48))else(8)
+    return (6)if(gr((tm(gr(7,0),gr(1,0)))+52,(td(gr(7,0),gr(1,0)))+1)-48)else(8)
 def _6():
-    sa(((gr(0,0))-(gr(7,0)))-(1000))
+    sa(gr(0,0)-gr(7,0)-1000)
     return (1)if(sp()!=0)else(7)
 def _7():
     print(gr(3,0),end="",flush=True)
     return 9
 def _8():
-    gw(7,0,(gr(7,0))+(1))
+    gw(7,0,gr(7,0)+1)
     return 5
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8]
 c=0

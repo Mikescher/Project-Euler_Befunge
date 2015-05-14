@@ -1,4 +1,4 @@
-# compiled with BefunCompile v1.0.4 (c) 2015
+# compiled with BefunCompile v1.0.5 (c) 2015
 # execute with at least Python3
 import gzip, base64
 _g = ("AR+LCAAAAAAABADlmM1uIzcQhF+lIWcvGjjmP4eCoAR5DsPOba466bQPv1+1tJtdIM5KCJhLiLFEzlBgTXV1NemLfd8u9kg7PjT7oXbalV16OezjcwhnO1kIYTuY37RP"
@@ -47,9 +47,9 @@ def _0():
     gw(0,0,675)
     return 1
 def _1():
-    gw((tm(gr(0,0),26))+(63),(td(gr(0,0),26))+(1),0)
+    gw((tm(gr(0,0),26))+63,(td(gr(0,0),26))+1,0)
     sa(gr(0,0))
-    gw(0,0,(gr(0,0))-(1))
+    gw(0,0,gr(0,0)-1)
     return 2
 def _2():
     return (1)if(sp()!=0)else(3)
@@ -64,9 +64,9 @@ def _3():
     gw(0,0,399)
     return 4
 def _4():
-    gw((tm(gr(0,0),20))+(66),(td(gr(0,0),20))+(4),(((gr(((tm(gr(0,0),20))*(3))+(1),(td(gr(0,0),20))+(4)))-(48))*(10))+((gr(((tm(gr(0,0),20))*(3))+(2),(td(gr(0,0),20))+(4)))-(48)))
+    gw((tm(gr(0,0),20))+66,(td(gr(0,0),20))+4,((gr(((tm(gr(0,0),20))*3)+1,(td(gr(0,0),20))+4)-48)*10)+(gr(((tm(gr(0,0),20))*3)+2,(td(gr(0,0),20))+4)-48))
     sa(gr(0,0))
-    gw(0,0,(gr(0,0))-(1))
+    gw(0,0,gr(0,0)-1)
     return 5
 def _5():
     return (4)if(sp()!=0)else(6)
@@ -77,8 +77,8 @@ def _7():
     gw(2,0,2)
     return 8
 def _8():
-    sa((gr(2,0))+(9))
-    gw(3,0,gr((gr(2,0))+(9),0))
+    sa(gr(2,0)+9)
+    gw(3,0,gr(gr(2,0)+9,0))
     sa(1)
     v0=sp()
     sa(gr(sp(),v0))
@@ -89,18 +89,18 @@ def _8():
     v0=sp()
     sa(td(sp(),v0))
     gw(6,0,sp())
-    sa(gr((gr(5,0))+(66),(gr(6,0))+(4)))
-    gw(5,0,(gr(5,0))+(gr(3,0)))
-    gw(6,0,(gr(6,0))+(gr(4,0)))
-    sa(gr((gr(5,0))+(66),(gr(6,0))+(4)))
-    gw(5,0,(gr(5,0))+(gr(3,0)))
-    gw(6,0,(gr(6,0))+(gr(4,0)))
-    sa(gr((gr(5,0))+(66),(gr(6,0))+(4)))
-    gw(5,0,(gr(5,0))+(gr(3,0)))
-    gw(6,0,(gr(6,0))+(gr(4,0)))
-    sa(gr((gr(5,0))+(66),(gr(6,0))+(4)))
-    gw(5,0,(gr(5,0))+(gr(3,0)))
-    gw(6,0,(gr(6,0))+(gr(4,0)))
+    sa(gr(gr(5,0)+66,gr(6,0)+4))
+    gw(5,0,gr(5,0)+gr(3,0))
+    gw(6,0,gr(6,0)+gr(4,0))
+    sa(gr(gr(5,0)+66,gr(6,0)+4))
+    gw(5,0,gr(5,0)+gr(3,0))
+    gw(6,0,gr(6,0)+gr(4,0))
+    sa(gr(gr(5,0)+66,gr(6,0)+4))
+    gw(5,0,gr(5,0)+gr(3,0))
+    gw(6,0,gr(6,0)+gr(4,0))
+    sa(gr(gr(5,0)+66,gr(6,0)+4))
+    gw(5,0,gr(5,0)+gr(3,0))
+    gw(6,0,gr(6,0)+gr(4,0))
     sa(sp()*sp());
     sa(sp()*sp());
     sa(sp()*sp());
@@ -114,11 +114,11 @@ def _9():
     return 10
 def _10():
     sa(gr(2,0))
-    gw(2,0,(gr(2,0))-(1))
+    gw(2,0,gr(2,0)-1)
     return (15)if(sp()!=0)else(11)
 def _11():
     sa(gr(0,0))
-    gw(0,0,(gr(0,0))-(1))
+    gw(0,0,gr(0,0)-1)
     return (12)if(sp()!=0)else(14)
 def _12():
     sa(1)
