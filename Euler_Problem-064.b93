@@ -1,0 +1,34 @@
+v###
+ #####
+0
+">>1-:0\951p11p021p131v      v12g14    p150 p13/g<
+I       vp01g03_v#-g01:_v#- <>g+31g/ :31g*21g-21v1
+i   @   >:30p:20 g\/+2/: 30g^^12p14:<>11g21g:*-3 ^
+ *  .           >    #$ >$30g::*11g-||+g15-1g13p<
+"+  $   ^p02:p010g11p1<       v\+1\<>>0>\#+ #1:#$_v
+>^^_^#-2:                     <   _^#          %2$<
+
+
+
+ [10] (isqrt) pxk
+ [20] (isqrt) n
+ [30] (isqrt) xk
+
+ [11] (frac) sqrt
+ [21] (frac) add
+ [31] (frac) div
+ [41] (frac) isqrt(sqrt)
+ [51] (frac) first (9 when first loop)
+
+
+---------------------------------------
+
+For this I had to re-use my old [integer-squareroot](https://en.wikipedia.org/wiki/Integer_square_root) implementation 
+and I ported an [algorithm](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/cfINTRO.html#section7) for calculating the continued fraction to befunge.
+
+The rest is just iterating through all the values and trying to optimize for speed.
+
+Here two useful snippets I made while solving this puzzle:
+
+ - Calculating the **sum** of an zero-terminated array on the stack:   `>\# :#+_+`
+ - Calculating the **count** of an zero-terminated array on the stack: `0>\#+ #1:#$_$`
