@@ -1,0 +1,74 @@
+v$$  ### ---------------------------------------------------------------- ###
+ $$  ### ---------------------------------------------------------------- ###
+ $   ### ---------------------------------------------------------------- ###
+ $   ### ---------------------------------------------------------------- ###
+ $   ### ---------------------------------------------------------------- ###
+     ### ---------------------------------------------------------------- ###
+     ### ---------------------------------------------------------------- ###
+     ### ---------------------------------------------------------------- ###
+     ### ---------------------------------------------------------------- ###
+     ### ---------------------------------------------------------------- ###
+     ### ---------------------------------------------------------------- ###
+     ### ---------------------------------------------------------------- ###
+           v_v#!          _v#                       <1      g02$$<
+  #####    1 v  p02g01_v#! #  g02$_v#!:p\+9%*88g02 <0
+> # 6 # 10p   288** 20p>20g1-20p10g>1-:0\2*20g88*/+^^ $<0p03+1g03 p+*2g02/*88g<
+  #####    0 >20g1-20p030p0>1+::::*\-2/20g1+*+:"}"8*\`#^_:"ec"*`#^_30g88*%9+30^
+           >g>1-:0\5\p:0\6\p:0\7\p:#v_$  01-60p011p v
+v<         $_^#!:                   <0              <     <       <$$<
+>611gg1+611gp611gg12p511gg13p12g10g-!#v_13g"_ "+`#v_712gg#^_13g88* %9+13g88*/12v
+^<pg115+1gg115pg116-10                <v88g-1g115+9%*88g-1g115g11_^#g41p41g+*2g<
+^<pgg11670p11-1g11                     *#        $<v05+9%*8        8g05%"d"g41<
+                                       >/611g1-g2*+g"d"%14g"d"/-*#^_10g1-11g`!|
+^<pg1150pg116-10p11+1g11pg2171                                                <
+>2*+g:.+55+,21g1+:21p10g-#v_" =  ",,,,.@           >88*/60g2*+g"d"/-#^_v
+^gg126/*88gg125+9%*88gg125<0p120                                       <
+
+
+12g "d" %
+
+[1,0]    SIDES_COUNT    [CONST]  ==> 6
+[2,0]    (clear) pos
+         (fill)  sides
+[3,0]    (fill)  index
+
+[1,1]    (chaining) chainpos
+[1,2]    (chaining) curr_poly   :=  used_sides[chainpos]
+[1,3]    (chaining) curr_idx    :=  chain[chainpos]
+[1,4]    (chaining) curr_number :=  cache[curr_poly, curr_idx]
+
+[2,1]    (output) chainpos
+
+[9,0] - [9+64, SIDES_COUNT*2]    Array :: cache
+[5,0] - [5, SIDES_COUNT]         Array :: chain
+[6,0] - [6, SIDES_COUNT]         Array :: used_sides
+[7,0] - [7, SIDES_COUNT]         Array :: used_polys
+
+
+611g                [g|p]     =>    used_sides[chainpos]
+511g                [g|p]     =>    chain[chainpos]
+
+max_idx = "_ "+
+
+idx 88*%9+   idx 88*/ poly 2* +  [g]   => cache[poly][idx]
+
+
+128     =>    288**
+127     =>    "_ "+
+64      =>    88*
+
+
+---------------------------------------
+
+Pretty cool problem, I have to say.
+
+It's one of these problem that you can easily make dynamic. In the middle-left of this program you see the number `6` surrounded with `#`.
+This is the "amount of resulting numbers" parameter of our program. For this Euler-problem you need to set this to `6`.
+But for debugging purposes I mostly tested it with `3`. And if you want you can try it out with bigger numbers `7` or `8`.
+*(But then you need to move the code down a bit - otherwise the cache-part will intersect with the code-part)*.
+
+With this number we first generate all the [polygon-numbers](https://en.wikipedia.org/wiki/Polygonal_number) from `3` to `SIDES_COUNT + 2` with the formula `(n-2) * (n^2 - n)/2 + n`.
+Then we go recursively through all these numbers. First we test triangle[1] with square[1], then with square[2] and so on. *(The recursion is - as always - just a stack and a stack pointer)*.
+
+A last note: This was *(until now)* probably the hardest program to fit in the befunge 80x25 size restriction.
+I *barely* managed to get it (and now its exactly 80x25) and I had to use quite some trickery.
