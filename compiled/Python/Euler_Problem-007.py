@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhrfXHLOvOEg0PNxvdObW6ba3dTfvKrRsqvj47uLhTbqvjAK0ZLveZdbvEd4b4bo6IKr1uSKPj5HnDOeKYp/JT4327ty9127P/ylx9fss"
   + "7yw9alJfXvxjRpzaA3tzZoZBBh54LjleUpNx8OjifXw/jG//UeR3Npf/veL1nlOfC0VL5QLDX6+wfGr469Z25VMGZZ/3SS/698E0P3jLUk2zwO2vNWrNt2VWx1je3pp4"
@@ -48,7 +48,7 @@ def _0():
 def _1():
     gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+1,88)
     sa(gr(3,0)+gr(3,0))
-    sa((1)if((gr(0,0))>(gr(3,0)+gr(3,0)))else(0))
+    sa((1)if((gr(3,0)+gr(3,0))<gr(0,0))else(0))
     return 2
 def _2():
     return (12)if(sp()!=0)else(3)
@@ -58,30 +58,21 @@ def _3():
 def _4():
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
-    sa(sr())
-    sa(gr(1,0))
-    v0=sp()
-    sa(tm(sp(),v0))
+    sa(tm(sr(),gr(1,0)))
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(gr(1,0))
-    v0=sp()
-    sa(td(sp(),v0))
-    sa(1)
-    sa(sp()+sp());
+    sa(td(sp(),gr(1,0)))
+    sa(sp()+1);
     v0=sp()
     sa(gr(sp(),v0))
-    sa(32)
-    v0=sp()
-    sa(sp()-v0)
+    sa(sp()-32);
     return 5
 def _5():
     return (6)if(sp()!=0)else(4)
 def _6():
-    sa((1)if((gr(0,0))>(gr(3,0)))else(0))
-    return (1)if(sp()!=0)else(7)
+    return (1)if(gr(0,0)>gr(3,0))else(7)
 def _7():
     gw(3,0,0)
     gw(4,0,0)
@@ -89,24 +80,16 @@ def _7():
 def _8():
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
-    sa(sr())
-    sa(gr(1,0))
-    v0=sp()
-    sa(tm(sp(),v0))
+    sa(tm(sr(),gr(1,0)))
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(gr(1,0))
-    v0=sp()
-    sa(td(sp(),v0))
-    sa(1)
-    sa(sp()+sp());
+    sa(td(sp(),gr(1,0)))
+    sa(sp()+1);
     v0=sp()
     sa(gr(sp(),v0))
-    sa(88)
-    v0=sp()
-    sa(sp()-v0)
+    sa(sp()-88);
     return 9
 def _9():
     return (8)if(sp()!=0)else(10)
@@ -128,32 +111,18 @@ def _12():
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sr())
-    sa(gr(1,0))
-    v0=sp()
-    sa(tm(sp(),v0))
+    sa(tm(sr(),gr(1,0)))
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(gr(1,0))
-    v0=sp()
-    sa(td(sp(),v0))
-    sa(1)
-    sa(sp()+sp());
+    sa(td(sp(),gr(1,0)))
+    sa(sp()+1);
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
-    sa(gr(3,0))
-    sa(sp()+sp());
-    sa(sr())
-    sa(gr(0,0))
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    v0=sp()
-    sa((1)if(sp()>v0)else(0))
+    sa(sp()+gr(3,0));
+    sa((1)if(sr()<gr(0,0))else(0))
     return 2
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12]
 c=0

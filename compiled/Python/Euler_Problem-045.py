@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -30,82 +30,64 @@ def _0():
 def _1():
     global x0
     sa(x0)
-    sa((1)if((x0)>(x1))else(0))
+    sa((1)if(x0>x1)else(0))
     return 2
 def _2():
     return (12)if(sp()!=0)else(3)
 def _3():
     sa(sr())
-    return (4)if(sp()!=0)else(6)
+    return (9)if(sp()!=0)else(4)
 def _4():
+    sp()
+    sa(sp()-(x2*x2));
+    return (5)if((tm(x2,6))-5==0)else(8)
+def _5():
+    sa((0)if(sp()!=0)else(1))
+    return (7)if(sp()!=0)else(6)
+def _6():
     global x2
     global x1
+    x2=0
+    sa(sp()+1);
     sa(sr())
-    sa(sp()+(x2));
-    sa((1)if(sp()>(x1))else(0))
-    sa((0)if(sp()!=0)else(1))
-    return (11)if(sp()!=0)else(5)
-def _5():
+    sa((sr()*2)-1)
+    sa(sp()*sp());
+    sa(sp()*24);
+    sa(sp()+1);
+    x1=sr()
+    return 1
+def _7():
+    sa((sr()*2)-1)
+    sa(sp()*sp());
+    print(sp(),end="",flush=True)
+    return 13
+def _8():
+    global x2
+    global x1
+    x2=0
+    sp()
+    sa(sp()+1);
+    sa(sr())
+    sa((sr()*2)-1)
+    sa(sp()*sp());
+    sa(sp()*24);
+    sa(sp()+1);
+    x1=sr()
+    return 1
+def _9():
+    return (11)if((sr()+x2)<=x1)else(10)
+def _10():
     global x2
     x2=td(x2,2)
     sa(td(sp(),4))
     sa(sr())
-    return (4)if(sp()!=0)else(6)
-def _6():
-    sp()
-    sa(sp()-(x2*x2));
-    sa((0)if((tm(x2,6))-5!=0)else(1))
-    return (7)if(sp()!=0)else(10)
-def _7():
-    sa((0)if(sp()!=0)else(1))
-    return (8)if(sp()!=0)else(9)
-def _8():
-    sa(sr())
-    sa(sp()*(2));
-    sa(sp()-(1));
-    sa(sp()*sp());
-    print(sp(),end="",flush=True)
-    return 13
-def _9():
-    global x2
-    global x1
-    x2=0
-    sa(sp()+(1));
-    sa(sr())
-    sa(sr())
-    sa(sp()*(2));
-    sa(sp()-(1));
-    sa(sp()*sp());
-    sa(sp()*(24));
-    sa(sp()+(1));
-    sa(sr())
-    x1=sp()
-    return 1
-def _10():
-    global x2
-    global x1
-    x2=0
-    sp()
-    sa(sp()+(1));
-    sa(sr())
-    sa(sr())
-    sa(sp()*(2));
-    sa(sp()-(1));
-    sa(sp()*sp());
-    sa(sp()*(24));
-    sa(sp()+(1));
-    sa(sr())
-    x1=sp()
-    return 1
+    return (9)if(sp()!=0)else(4)
 def _11():
-    global x2
     global x1
     global x1
     global x2
     global x2
-    global x2
-    sa(sr())
-    sa(sp()+(x2));
+    sa(sr()+x2)
     sa(x1)
     v0=sp()
     v1=sp()
@@ -114,18 +96,14 @@ def _11():
     v0=sp()
     sa(sp()-v0)
     x1=sp()
-    sa(sr())
-    sa(sp()*(2));
-    sa(sp()+(x2));
+    sa((sr()*2)+x2)
     x2=sp()
     x2=td(x2,2)
     sa(td(sp(),4))
     return 3
 def _12():
-    global x1
     sa(td(sp(),4))
-    sa(sr())
-    sa((1)if(sp()>(x1))else(0))
+    sa((1)if(sr()>x1)else(0))
     return 2
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12]
 c=0

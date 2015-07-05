@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -13,63 +13,50 @@ int main(void)
     int64 x0=0;
     int64 x1=32;
     s=(int64*)calloc(q,sizeof(int64));
-    sa(4);
-    sa(1);
-    sa(4);
-    sa(0);
+    sa(4LL);
+    sa(1LL);
+    sa(2LL);
 _1:
-    if(sp()!=0)goto _11;else goto _2;
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(sp()+1LL);
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    if(sr()!=1LL)goto _11;else goto _2;
 _2:
-    {int64 v0=2;sa((v0==0)?0:(sp()/v0));}
+    sp();
+    if(sr()<x0)goto _3;else goto _10;
 _3:
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sp()+(1));
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sr());
-    sa(sp()-(1));
-    if(sp()!=0)goto _10;else goto _4;
+    sp();
 _4:
-    sp();
-    sa(sr());
-    sa(x0);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    {int64 v0=sp();sa((sp()>v0)?1:0);}
-    if(sp()!=0)goto _5;else goto _9;
+    if(sr()<=1000000L)goto _6;else goto _5;
 _5:
-    sp();
-_6:
-    sa(sr());
-    {int64 v0=1000000;sa((sp()>v0)?1:0);}
-    sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _8;else goto _7;
-_7:
     printf("%lld", (int64)(x1));
     sa(x0);
-    sa(58);
+    sa(58LL);
     printf(" ");
     printf("%c", (char)(sp()));
     printf("%lld", (int64)(sp()));
     return 0;
-_8:
-    sa(sp()+(1));
+_6:
+    sa(sp()+1LL);
     sa(sr());
-    sa(1);
+    sa(1LL);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sr());
-    {int64 v0=2;sa((v0==0)?0:(sp()%v0));}
+    sa(tm(sr(),2LL));
+_7:
+    if(sp()!=0)goto _9;else goto _8;
+_8:
+    sa(td(sp(),2L));
     goto _1;
 _9:
-    x0=sp();
-    sa(sr());
-    x1=sp();
-    goto _6;
-_10:
-    {int64 v0=1;sa((v0==0)?0:(sp()/v0));}
-    sa(sr());
-    {int64 v0=2;sa((v0==0)?0:(sp()%v0));}
+    sa(sp()*3LL);
+    sa(sp()+1LL);
     goto _1;
+_10:
+    x0=sp();
+    x1=sr();
+    goto _4;
 _11:
-    sa(sp()*(3));
-    sa(sp()+(1));
-    goto _3;
+    sa(td(sp(),1L));
+    sa(tm(sr(),2LL));
+    goto _7;
 }

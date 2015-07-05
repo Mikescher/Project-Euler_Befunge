@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -24,65 +24,52 @@ def _0():
     sa(1)
     sa(2)
     sa(2)
-    sa(0)
     return 1
 def _1():
-    return (9)if(sp()!=0)else(2)
-def _2():
     sa(sr())
-    sa(sr())
-    sa(td(sp(),5))
-    sa(sp()*(5));
+    sa((td(sr(),5))*5)
     v0=sp()
     sa(sp()-v0)
     sa((0)if(sp()!=0)else(1))
-    return (9)if(sp()!=0)else(3)
-def _3():
+    return (2)if(sp()!=0)else(3)
+def _2():
     sa(sr())
-    sa(sp()-(1000));
-    sa((0)if(sp()!=0)else(1))
-    return (4)if(sp()!=0)else(8)
+    return 3
+def _3():
+    return (5)if(sr()-1000==0)else(4)
 def _4():
     sp()
-    sp()
-    sp()
-    return 5
+    sa(sp()+1);
+    sa(sr())
+    sa(sr())
+    sa((td(sr(),3))*3)
+    v0=sp()
+    sa(sp()-v0)
+    sa((0)if(sp()!=0)else(1))
+    return (2)if(sp()!=0)else(1)
 def _5():
+    sp()
+    sp()
+    sp()
+    return 6
+def _6():
     sa(sp()+sp());
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sr())
-    sa(sp()-(1));
-    sa((0)if(sp()!=0)else(1))
-    return (6)if(sp()!=0)else(7)
-def _6():
+    return (7)if(sr()-1==0)else(8)
+def _7():
     sp()
     print(sp(),end="",flush=True)
-    return 10
-def _7():
+    return 9
+def _8():
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    return 5
-def _8():
-    sp()
-    sa(sp()+(1));
-    sa(sr())
-    sa(sr())
-    sa(sr())
-    sa(td(sp(),3))
-    sa(sp()*(3));
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return 1
-def _9():
-    sa(sr())
-    return 3
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9]
+    return 6
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8]
 c=0
-while c<10:
+while c<9:
     c=m[c]()

@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADFmMtuZUkRRX/FbcPIWJWvyEepsJgw5wtcElCyhBphtcAjPp610l0+SVE8Zljtct9zT2bGY8eOHfl648+HDze/++kvf/ryh7/e/PZvP3756ebBz7//"
   + "8cufb3K9+Y8/deQ0yhxR60olpzLWHGusNUtJs47gaeuRU64xWiqR3pe2Xkdf/I7RVkppjVx6m7m0ufoaKY2ZIrU8Up6lp6jzfelotbQ1e14rShstp1j8KbXWtCLXFGxT"
@@ -73,73 +73,65 @@ def _1():
     gw(gr(1,0),gr(2,0),48)
     sa(gr(1,0)-1)
     gw(1,0,gr(1,0)-1)
-    return (4)if(sp()!=0)else(2)
+    return (15)if(sp()!=0)else(2)
 def _2():
     gw(1,0,5)
     sa(gr(2,0)-1)
     gw(2,0,gr(2,0)-1)
-    return (4)if(sp()!=0)else(3)
+    return (15)if(sp()!=0)else(3)
 def _3():
-    sa(1)
-    return 4
-def _4():
-    return (5)if(sp()!=0)else(1)
-def _5():
     gw(1,0,55)
     gw(2,0,1)
     gw(3,0,0)
     gw(0,0,0)
-    return 6
-def _6():
-    return (10)if((0)if(gr(gr(1,0),gr(2,0))-32!=0)else(1))else(7)
-def _7():
+    return 4
+def _4():
+    return (8)if(gr(gr(1,0),gr(2,0))-32==0)else(5)
+def _5():
     gw(0,0,(gr(gr(1,0),gr(2,0))-48)+gr(0,0))
     gw(2,0,gr(2,0)+1)
-    sa(gr(gr(1,0),gr(2,0))-32)
-    return 8
-def _8():
-    return (7)if(sp()!=0)else(9)
-def _9():
+    return 6
+def _6():
+    return (5)if(gr(gr(1,0),gr(2,0))!=32)else(7)
+def _7():
     sa(gr(0,0))
     gw(gr(1,0),gr(2,0),(tm(gr(0,0),10))+48)
     gw(2,0,1)
     gw(1,0,gr(1,0)-1)
-    sa(10)
-    v0=sp()
-    sa(td(sp(),v0))
+    sa(td(sp(),10))
     gw(0,0,sp())
-    return 6
-def _10():
+    return 4
+def _8():
     gw(1,0,0)
     gw(2,0,101)
-    return 11
-def _11():
+    return 9
+def _9():
     sa(gr(1,0)+1)
     gw(1,0,gr(1,0)+1)
     sa(gr(2,0))
     v0=sp()
     sa(gr(sp(),v0))
-    sa(48)
-    v0=sp()
-    sa(sp()-v0)
+    sa(sp()-48);
     sa((0)if(sp()!=0)else(1))
+    return 10
+def _10():
+    return (9)if(sp()!=0)else(11)
+def _11():
+    gw(0,0,10)
     return 12
 def _12():
-    return (11)if(sp()!=0)else(13)
-def _13():
-    gw(0,0,10)
-    return 14
-def _14():
     sa(gr(0,0))
     gw(0,0,gr(0,0)-1)
     sa((0)if(sp()!=0)else(1))
-    return (15)if(sp()!=0)else(16)
-def _15():
-    return 17
-def _16():
+    return (13)if(sp()!=0)else(14)
+def _13():
+    return 16
+def _14():
     print(chr(gr((9-gr(0,0))+gr(1,0),gr(2,0))),end="",flush=True)
-    return 14
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16]
+    return 12
+def _15():
+    return (3)if(sp()!=0)else(1)
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15]
 c=0
-while c<17:
+while c<16:
     c=m[c]()

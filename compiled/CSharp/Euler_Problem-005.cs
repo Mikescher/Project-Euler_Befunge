@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -18,34 +18,34 @@ static void Main(string[] args)
     _1:
         x1=x1*x2;
         sa(x0);
-        sa(x2+1);
-        x2=x2+1;
+        sa(x2+1L);
+        x2=x2+1L;
         {long v0=sp();sa((sp()>v0)?1:0);}
         if(sp()!=0)goto _3;else goto _2;
     _2:
         System.Console.Out.Write((long)(x1));
         return;
     _3:
-        x3=1;
+        x3=1L;
     _4:
         sa(x3);
-        x3=x3+1;
-        {long v0=x0;sa((sp()>v0)?1:0);}
+        x3=x3+1L;
+        sa((sp()>x0)?1:0);
         if(sp()!=0)goto _1;else goto _5;
     _5:
-        if((tm(x1,x3))!=0)goto _4;else goto _6;
+        if(tm(x1,x3)!=0)goto _4;else goto _6;
     _6:
         x4=td(x1,x3);
-        x5=1;
+        x5=1L;
     _7:
         sa(x2);
-        sa(x5+1);
-        x5=x5+1;
+        sa(x5+1L);
+        x5=x5+1L;
         {long v0=sp();sa((sp()>v0)?1:0);}
         if(sp()!=0)goto _9;else goto _8;
     _8:
         x1=td(x1,x3);
         goto _5;
     _9:
-        if(((tm(x4,x5)!=0)?0:1)!=0)goto _7;else goto _4;
+        if(tm(x4,x5)==0)goto _7;else goto _4;
 }}

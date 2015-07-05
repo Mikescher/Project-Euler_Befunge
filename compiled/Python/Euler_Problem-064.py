@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.5 (c) 2015
+# compiled with BefunCompile v1.0.6 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):

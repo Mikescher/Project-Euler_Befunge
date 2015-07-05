@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADlncuu3sixpV9lS1UHDUio0xLvFApCE+QgQY6I5LBQ9mxPzkAjjQrn2Q//+Fb8kssFtwe1bKA74ItcspSbZGZkXFas9fnDPHx5+99vp3cf33/ovswf"
   + "hi8f2uHLy8eP93+8vHx9+X/Ifvhb+3f/OFb78d+16r9h4R9/vP/14+M//8Wr/n9j0/py1ZdjfZnLS1dfxu2lqS/99tLWl2W1rdqvL8v2WOZeY15fxvWlLy/T9nJtL0e1"
@@ -185,86 +185,57 @@ def _0():
     return 1
 def _1():
     sa(gr(gr(3,6),gr(0,6)))
-    return (41)if(tm(gr(3,6),3))else(2)
+    return (41)if(tm(gr(3,6),3)!=0)else(2)
 def _2():
-    sa(48)
-    v0=sp()
-    sa(sp()-v0)
+    sa(sp()-48);
     sa(10)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sr())
-    sa(17)
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (40)if(sp()!=0)else(3)
+    return (3)if(sr()-17==0)else(32)
 def _3():
-    sa(sr())
-    sa(27)
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (38)if(sp()!=0)else(4)
-def _4():
-    sa(sr())
-    sa(33)
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (36)if(sp()!=0)else(5)
-def _5():
-    sa(sr())
-    sa(26)
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (34)if(sp()!=0)else(6)
-def _6():
-    sa(sr())
-    sa(36)
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (32)if(sp()!=0)else(7)
-def _7():
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
     sp()
+    sa(sp()+1);
+    return 4
+def _4():
+    sa(sp()+1);
+    return 5
+def _5():
+    sa(sp()+1);
+    return 6
+def _6():
+    sa(sp()+1);
+    return 7
+def _7():
+    sa(sp()+1);
     return 8
 def _8():
     gw(gr(3,6)-(td(gr(3,6),3)),gr(0,6),sp())
-    return (31)if(gr(3,6)-30)else(9)
+    return (31)if(gr(3,6)!=30)else(9)
 def _9():
     gw(gr(3,6)-(td(gr(3,6),3)),gr(0,6),32)
     gw(3,6,0)
     gw(0,6,gr(0,6)+1)
     return 10
 def _10():
-    return (1)if(gr(0,6)-gr(0,4))else(11)
+    return (1)if(gr(0,6)!=gr(0,4))else(11)
 def _11():
     gw(0,6,8)
     sa((0)if((gr(1,6))!=0)else(1))
     gw(1,6,(0)if((gr(1,6))!=0)else(1))
-    return (25)if(sp()!=0)else(12)
+    return (26)if(sp()!=0)else(12)
 def _12():
     gw(0,6,gr(0,6)+1)
-    return (13)if(gr(0,6)-gr(0,4))else(30)
+    return (13)if(gr(0,6)!=gr(0,4))else(30)
 def _13():
-    gw(9,6,((1)if((gr(0,7))>(gr(1,7)))else(0))+gr(9,6))
+    gw(9,6,((1)if(gr(0,7)>gr(1,7))else(0))+gr(9,6))
     gw(16,2,0)
     return 14
 def _14():
     sa(15)
-    sa(0)
     return 15
 def _15():
-    return (17)if(sp()!=0)else(16)
-def _16():
     sa(sr())
     sa(0)
     v0=sp()
@@ -275,16 +246,15 @@ def _16():
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
-    sa(sr())
-    sa(1)
-    v0=sp()
-    sa(sp()-v0)
+    sa(sr()-1)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa((0)if(sp()!=0)else(1))
-    return 15
+    return 16
+def _16():
+    return (17)if(sp()!=0)else(15)
 def _17():
     gw(3,6,gr(1,6)*10)
     gw(4,6,0)
@@ -296,56 +266,34 @@ def _17():
     sp()
     return 18
 def _18():
-    sa((1)if((gr(0,5))>(gr(6,6)))else(0))
-    return (29)if(sp()!=0)else(19)
+    return (19)if(gr(0,5)>gr(6,6))else(20)
 def _19():
-    sa((0)if((gr(gr(0,5),2))!=0)else(1))
-    return (21)if(sp()!=0)else(20)
+    gw(6,6,gr(0,5))
+    return 20
 def _20():
-    sa((1)if((gr(0,5))>(gr(7,6)))else(0))
-    return (28)if(sp()!=0)else(21)
+    return (21)if((gr(gr(0,5),2))==0)else(28)
 def _21():
     gw(gr(0,5),2,gr(gr(0,5),2)+1)
     sa(gr(3,6)+2)
     gw(3,6,gr(3,6)+2)
-    sa(10)
-    v0=sp()
-    sa(tm(sp(),v0))
+    sa(tm(sp(),10))
     sa((0)if(sp()!=0)else(1))
     return (22)if(sp()!=0)else(27)
 def _22():
     gw(3,5,0)
     gw(4,6,(gr(15,2)*(gr(15,2)-1)*256)+gr(4,6))
-    gw(3,5,((0)if(((0)if(gr(15,2)*gr(16,2)!=0)else(1))!=0)else(1))+gr(3,5))
+    gw(3,5,((1)if(gr(15,2)*gr(16,2)!=0)else(0))+gr(3,5))
     sa(14)
-    sa(0)
     return 23
 def _23():
-    return (24)if(sp()!=0)else(26)
-def _24():
-    gw(4,6,gr(4,6)+gr(6,6)+(gr(7,6)*15)+(((0)if(gr(3,5)-4!=0)else(1))*2540)+(((0)if(((0)if(((0)if(16807-gr(5,6)!=0)else(1))+((0)if(32-gr(5,6)!=0)else(1))+((0)if(243-gr(5,6)!=0)else(1))+((0)if(1889568-gr(5,6)!=0)else(1))!=0)else(1))!=0)else(1))*2550))
-    gw(gr(1,6),7,gr(4,6))
-    sp()
-    sa((0)if((gr(1,6))!=0)else(1))
-    gw(1,6,(0)if((gr(1,6))!=0)else(1))
-    return (25)if(sp()!=0)else(12)
-def _25():
-    gw(16,2,0)
-    return 14
-def _26():
     sa(sr())
     sa(2)
     v0=sp()
     sa(gr(sp(),v0))
-    sa(sr())
-    sa(1)
-    v0=sp()
-    sa(sp()-v0)
+    sa(sr()-1)
     sa(sp()*sp());
-    sa(256)
-    sa(sp()*sp());
-    sa(gr(4,6))
-    sa(sp()+sp());
+    sa(sp()*256);
+    sa(sp()+gr(4,6));
     gw(4,6,sp())
     sa(sr())
     sa(sr())
@@ -356,82 +304,80 @@ def _26():
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(1)
-    sa(sp()+sp());
+    sa(sp()+1);
     sa(2)
     v0=sp()
     sa(gr(sp(),v0))
     sa(sp()*sp());
     sa((0)if(sp()!=0)else(1))
     sa((0)if(sp()!=0)else(1))
-    sa(gr(3,5))
-    sa(sp()+sp());
+    sa(sp()+gr(3,5));
     gw(3,5,sp())
-    sa(sr())
-    sa(1)
-    v0=sp()
-    sa(sp()-v0)
+    sa(sr()-1)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa((0)if(sp()!=0)else(1))
-    return 23
+    return 24
+def _24():
+    return (25)if(sp()!=0)else(23)
+def _25():
+    gw(4,6,gr(4,6)+gr(6,6)+(gr(7,6)*15)+(((0)if(gr(3,5)-4!=0)else(1))*2540)+(((1)if(((0)if(16807-gr(5,6)!=0)else(1))+((0)if(32-gr(5,6)!=0)else(1))+((0)if(243-gr(5,6)!=0)else(1))+((0)if(1889568-gr(5,6)!=0)else(1))!=0)else(0))*2550))
+    gw(gr(1,6),7,gr(4,6))
+    sp()
+    sa((0)if((gr(1,6))!=0)else(1))
+    gw(1,6,(0)if((gr(1,6))!=0)else(1))
+    return (26)if(sp()!=0)else(12)
+def _26():
+    gw(16,2,0)
+    return 14
 def _27():
     gw(0,5,gr(gr(3,6),gr(0,6)))
     gw(5,6,gr(gr(3,6)+1,gr(0,6))*gr(5,6))
     return 18
 def _28():
+    return (29)if(gr(0,5)>gr(7,6))else(21)
+def _29():
     gw(7,6,gr(0,5))
     return 21
-def _29():
-    gw(6,6,gr(0,5))
-    return 19
 def _30():
-    sa(((1)if((gr(0,7))>(gr(1,7)))else(0))+gr(9,6))
-    gw(9,6,((1)if((gr(0,7))>(gr(1,7)))else(0))+gr(9,6))
+    sa(((1)if(gr(0,7)>gr(1,7))else(0))+gr(9,6))
+    gw(9,6,((1)if(gr(0,7)>gr(1,7))else(0))+gr(9,6))
     print(sp(),end="",flush=True)
     return 42
 def _31():
     gw(3,6,gr(3,6)+1)
     return 10
 def _32():
-    sp()
-    return 33
+    return (33)if(sr()-27==0)else(34)
 def _33():
-    sa(1)
-    sa(sp()+sp());
-    return 8
+    sp()
+    return 4
 def _34():
-    sp()
-    return 35
+    return (35)if(sr()-33==0)else(36)
 def _35():
-    sa(1)
-    sa(sp()+sp());
-    return 33
+    sp()
+    return 5
 def _36():
-    sp()
-    return 37
+    return (37)if(sr()-26==0)else(38)
 def _37():
-    sa(1)
-    sa(sp()+sp());
-    return 35
-def _38():
     sp()
-    return 39
+    return 6
+def _38():
+    return (40)if(sr()-36==0)else(39)
 def _39():
-    sa(1)
-    sa(sp()+sp());
-    return 37
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sp()
+    return 8
 def _40():
     sp()
-    sa(1)
-    sa(sp()+sp());
-    return 39
+    return 7
 def _41():
-    sa(65)
-    v0=sp()
-    sa(sp()-v0)
+    sa(sp()-65);
     return 8
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25,_26,_27,_28,_29,_30,_31,_32,_33,_34,_35,_36,_37,_38,_39,_40,_41]
 c=0

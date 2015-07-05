@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -20,34 +20,34 @@ int main(void)
 _1:
     x1=x1*x2;
     sa(x0);
-    sa(x2+1);
-    x2=x2+1;
+    sa(x2+1LL);
+    x2=x2+1LL;
     {int64 v0=sp();sa((sp()>v0)?1:0);}
     if(sp()!=0)goto _3;else goto _2;
 _2:
     printf("%lld", (int64)(x1));
     return 0;
 _3:
-    x3=1;
+    x3=1LL;
 _4:
     sa(x3);
-    x3=x3+1;
-    {int64 v0=x0;sa((sp()>v0)?1:0);}
+    x3=x3+1LL;
+    sa((sp()>x0)?1:0);
     if(sp()!=0)goto _1;else goto _5;
 _5:
-    if((tm(x1,x3))!=0)goto _4;else goto _6;
+    if(tm(x1,x3)!=0)goto _4;else goto _6;
 _6:
     x4=td(x1,x3);
-    x5=1;
+    x5=1LL;
 _7:
     sa(x2);
-    sa(x5+1);
-    x5=x5+1;
+    sa(x5+1LL);
+    x5=x5+1LL;
     {int64 v0=sp();sa((sp()>v0)?1:0);}
     if(sp()!=0)goto _9;else goto _8;
 _8:
     x1=td(x1,x3);
     goto _5;
 _9:
-    if(((tm(x4,x5)!=0)?0:1)!=0)goto _7;else goto _4;
+    if(tm(x4,x5)==0)goto _7;else goto _4;
 }

@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABACtUE0PwiAM/St0nRcIWhgHtxDiL2EeTLhy4qT/3fqBmy7zYHxJQ9PXPl5bBCIKBv4A8QV/0gump2x6k8ny21EuyxZHqVcdJbuBxPm+5qoUSLCxiTrV"
   + "J3JHKX1gbmhOjQYso1EDK9qdo3yr86yVQZ9XdwrD9FVuLpdDE+OMRd8K9JbS9vDp7+XJyhkTQ3sXNPrJwnK7h0R1J3RcaZkwFoQa/o2pZseIkMkN2vBVfJ4uRHxmpQyA"
@@ -43,19 +43,16 @@ def _0():
     return 1
 def _1():
     sa(gr(3,0))
-    return (2)if((0)if(gr(3,0)-100!=0)else(1))else(3)
+    return (2)if(gr(3,0)-100==0)else(3)
 def _2():
     sp()
     print(gr(2,0),end="",flush=True)
     return 17
 def _3():
-    sa(1)
-    sa(sp()+sp());
+    sa(sp()+1);
     sa(sr())
     gw(3,0,sp())
-    sa(2)
-    v0=sp()
-    sa(td(sp(),v0))
+    sa(td(sp(),2))
     gw(4,0,sp())
     sa(gr(3,0)-(gr(4,0)*2))
     return 4
@@ -66,12 +63,9 @@ def _5():
     gw(gr(4,0)+9,tm(gr(3,0),2),gr(gr(4,0)+8,(0)if(tm(gr(3,0),2)!=0)else(1))*2)
     return 6
 def _6():
-    sa(1000000)
-    v0=sp()
-    sa((1)if(sp()>v0)else(0))
+    sa((1)if(sp()>1000000)else(0))
     sa((0)if((gr(gr(4,0)+9,(0)if(tm(gr(3,0),2)!=0)else(1)))!=0)else(1))
-    sa((0)if(((0)if((gr((gr(4,0)+9)-1,(0)if(tm(gr(3,0),2)!=0)else(1)))!=0)else(1))!=0)else(1))
-    return (7)if(sp()!=0)else(15)
+    return (7)if(((1)if((gr(gr(4,0)+8,(0)if(tm(gr(3,0),2)!=0)else(1)))!=0)else(0))!=0)else(15)
 def _7():
     sa((0)if(sp()!=0)else(1))
     return (8)if(sp()!=0)else(13)
@@ -84,26 +78,24 @@ def _9():
     sa((0)if(sp()!=0)else(1))
     return (1)if(sp()!=0)else(10)
 def _10():
-    sa(gr(3,0)-(gr(4,0)*2))
-    v0=sp()
-    sa(sp()-v0)
+    sa(sp()-(gr(3,0)-(gr(4,0)*2)));
     return 4
 def _11():
-    gw(2,0,gr(2,0)+((0)if(((0)if(gr(3,0)-(gr(4,0)*2)!=0)else(1))!=0)else(1))+1)
+    gw(2,0,gr(2,0)+((1)if(gr(3,0)-(gr(4,0)*2)!=0)else(0))+1)
     gw(gr(4,0)+9,tm(gr(3,0),2),0)
     return 12
 def _12():
     sp()
     return 9
 def _13():
-    gw(2,0,gr(2,0)+((0)if(((0)if(gr(3,0)-(gr(4,0)*2)!=0)else(1))!=0)else(1))+1)
+    gw(2,0,gr(2,0)+((1)if(gr(3,0)-(gr(4,0)*2)!=0)else(0))+1)
     gw(gr(4,0)+9,tm(gr(3,0),2),0)
     return 14
 def _14():
     sp()
     return 12
 def _15():
-    gw(2,0,gr(2,0)+((0)if(((0)if(gr(3,0)-(gr(4,0)*2)!=0)else(1))!=0)else(1))+1)
+    gw(2,0,gr(2,0)+((1)if(gr(3,0)-(gr(4,0)*2)!=0)else(0))+1)
     gw(gr(4,0)+9,tm(gr(3,0),2),0)
     sp()
     return 14

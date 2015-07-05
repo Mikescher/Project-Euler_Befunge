@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -20,47 +20,44 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    gw(0,0,48);
-    gw(0,1,48);
-    gw(0,2,48);
-    gw(0,3,48);
-    gw(0,4,48);
-    gw(0,5,48);
-    gw(1,6,60);
-    gw(2,6,6);
-    gw(0,6,360);
-    gw(4,6,1000);
+    gw(0LL,0LL,48LL);
+    gw(0LL,1LL,48LL);
+    gw(0LL,2LL,48LL);
+    gw(0LL,3LL,48LL);
+    gw(0LL,4LL,48LL);
+    gw(0LL,5LL,48LL);
+    gw(1LL,6LL,60LL);
+    gw(2LL,6LL,6LL);
+    gw(0LL,6LL,360LL);
+    gw(4LL,6LL,1000LL);
 _1:
-    sa(gr(4,6));
-    if((((gr(4,6))!=0)?0:1)!=0)goto _5;else goto _2;
+    sa(gr(4LL,6LL));
+    if((gr(4L,6L))==0)goto _2;else goto _6;
 _2:
-    sa(1);
-    {int64 v0=sp();sa(sp()-v0);}
-    gw(4,6,sp());
-    gw(6,6,gr(0,6)-1);
-    gw(7,6,0);
-_3:
-    if((((gr(6,6))!=0)?0:1)!=0)goto _1;else goto _4;
-_4:
-    sa(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6));
-    gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),(tm(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6),10))+48);
-    sa(10);
-    {int64 v0=sp();sa((v0==0)?0:(sp()/v0));}
-    gw(7,6,sp());
-    gw(6,6,gr(6,6)-1);
-    goto _3;
-_5:
-    gw(6,6,gr(0,6)-1);
+    gw(6LL,6LL,gr(0LL,6LL)-1LL);
     sp();
-    sa(0+(gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48));
-_6:
-    if((gr(6,6))!=0)goto _8;else goto _7;
-_7:
+    sa(gr(tm(gr(6LL,6LL),gr(1LL,6LL)),td(gr(6LL,6LL),gr(1LL,6LL)))-48LL);
+_3:
+    if((gr(6LL,6LL))!=0)goto _5;else goto _4;
+_4:
     printf("%lld", (int64)(sp()));
     return 0;
+_5:
+    gw(6LL,6LL,gr(6LL,6LL)-1LL);
+    sa(sp()+(gr(tm(gr(6LL,6LL),gr(1LL,6LL)),td(gr(6LL,6LL),gr(1LL,6LL)))-48LL));
+    goto _3;
+_6:
+    sa(sp()-1LL);
+    gw(4LL,6LL,sp());
+    gw(6LL,6LL,gr(0LL,6LL)-1LL);
+    gw(7LL,6LL,0LL);
+_7:
+    if((gr(6L,6L))==0)goto _1;else goto _8;
 _8:
-    gw(6,6,gr(6,6)-1);
-    sa(gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48);
-    sa(sp()+sp());
-    goto _6;
+    sa(((gr(tm(gr(6LL,6LL),gr(1LL,6LL)),td(gr(6LL,6LL),gr(1LL,6LL)))-48LL)*2LL)+gr(7LL,6LL));
+    gw(tm(gr(6LL,6LL),gr(1LL,6LL)),td(gr(6LL,6LL),gr(1LL,6LL)),(tm(((gr(tm(gr(6LL,6LL),gr(1LL,6LL)),td(gr(6LL,6LL),gr(1LL,6LL)))-48LL)*2LL)+gr(7LL,6LL),10LL))+48LL);
+    sa(td(sp(),10L));
+    gw(7LL,6LL,sp());
+    gw(6LL,6LL,gr(6LL,6LL)-1LL);
+    goto _7;
 }

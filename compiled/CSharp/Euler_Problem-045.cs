@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -12,86 +12,69 @@ static void Main(string[] args)
         long x0=1152921504606846976;
         long x1=991873;
         long x2=0;
-        sa(144);
-        sa(991873);
+        sa(144L);
+        sa(991873L);
     _1:
         sa(x0);
-        sa((x0)>(x1)?1:0);
+        sa(x0>x1?1:0);
     _2:
         if(sp()!=0)goto _12;else goto _3;
     _3:
         sa(sr());
-        if(sp()!=0)goto _4;else goto _6;
+        if(sp()!=0)goto _9;else goto _4;
     _4:
-        sa(sr());
-        sa(sp()+x2);
-        {long v0=x1;sa((sp()>v0)?1:0);}
-        sa((sp()!=0)?0:1);
-        if(sp()!=0)goto _11;else goto _5;
-    _5:
-        x2=td(x2,2);
-        {long v0=4;sa((v0==0)?0:(sp()/v0));}
-        sa(sr());
-        if(sp()!=0)goto _4;else goto _6;
-    _6:
         sp();
         sa(sp()-(x2*x2));
-        sa(((tm(x2,6))-5!=0)?0:1);
-        if(sp()!=0)goto _7;else goto _10;
-    _7:
+        if((tm(x2,6L))-5L==0)goto _5;else goto _8;
+    _5:
         sa((sp()!=0)?0:1);
-        if(sp()!=0)goto _8;else goto _9;
-    _8:
+        if(sp()!=0)goto _7;else goto _6;
+    _6:
+        x2=0L;
+        sa(sp()+1L);
         sa(sr());
-        sa(sp()*2);
-        sa(sp()-1);
+        sa((sr()*2L)-1L);
+        sa(sp()*sp());
+        sa(sp()*24L);
+        sa(sp()+1L);
+        x1=sr();
+        goto _1;
+    _7:
+        sa((sr()*2L)-1L);
         sa(sp()*sp());
         System.Console.Out.Write((long)(sp()));
         return;
-    _9:
-        x2=0;
-        sa(sp()+1);
-        sa(sr());
-        sa(sr());
-        sa(sp()*2);
-        sa(sp()-1);
-        sa(sp()*sp());
-        sa(sp()*24);
-        sa(sp()+1);
-        sa(sr());
-        x1=sp();
-        goto _1;
-    _10:
-        x2=0;
+    _8:
+        x2=0L;
         sp();
-        sa(sp()+1);
+        sa(sp()+1L);
         sa(sr());
-        sa(sr());
-        sa(sp()*2);
-        sa(sp()-1);
+        sa((sr()*2L)-1L);
         sa(sp()*sp());
-        sa(sp()*24);
-        sa(sp()+1);
-        sa(sr());
-        x1=sp();
+        sa(sp()*24L);
+        sa(sp()+1L);
+        x1=sr();
         goto _1;
-    _11:
+    _9:
+        if((sr()+x2)<=x1)goto _11;else goto _10;
+    _10:
+        x2=td(x2,2L);
+        sa(td(sp(),4L));
         sa(sr());
-        sa(sp()+x2);
+        if(sp()!=0)goto _9;else goto _4;
+    _11:
+        sa(sr()+x2);
         sa(x1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         {long v0=sp();sa(sp()-v0);}
         x1=sp();
-        sa(sr());
-        sa(sp()*2);
-        sa(sp()+x2);
+        sa((sr()*2L)+x2);
         x2=sp();
-        x2=td(x2,2);
-        {long v0=4;sa((v0==0)?0:(sp()/v0));}
+        x2=td(x2,2L);
+        sa(td(sp(),4L));
         goto _3;
     _12:
-        {long v0=4;sa((v0==0)?0:(sp()/v0));}
-        sa(sr());
-        {long v0=x1;sa((sp()>v0)?1:0);}
+        sa(td(sp(),4L));
+        sa(sr()>x1?1:0);
         goto _2;
 }}

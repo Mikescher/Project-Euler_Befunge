@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -36,52 +36,46 @@ def _1():
     sa(x1-1)
     return 2
 def _2():
-    return (3)if(sp()!=0)else(25)
+    return (4)if(sp()!=0)else(3)
 def _3():
+    global x1
+    global x5
+    sp()
+    sp()
+    sa(sp()+1);
+    sa(sr())
+    x1=sr()
+    sa((sr()*3)-1)
+    sa(sp()*sp());
+    sa(td(sp(),2))
+    x5=sr()
+    return 1
+def _4():
     global x2
     global x3
     global x6
     global x4
     global x0
-    sa(sr())
-    x2=sp()
-    sa(sr())
-    sa(sp()*(3));
-    sa(sp()-(1));
+    x2=sr()
+    sa((sr()*3)-1)
     sa(sp()*sp());
     sa(td(sp(),2))
-    sa(sr())
-    x3=sp()
+    x3=sr()
     x6=0
     v0=sp()
     sa(sp()-v0)
-    sa(sp()*(24));
-    sa(sp()+(1));
-    sa(sr())
-    x4=sp()
+    sa(sp()*24);
+    sa(sp()+1);
+    x4=sr()
     sa(x0)
-    sa((1)if((x0)>(x4))else(0))
-    return 4
-def _4():
-    return (24)if(sp()!=0)else(5)
+    sa((1)if(x0>x4)else(0))
+    return 5
 def _5():
-    sa(sr())
-    return (6)if(sp()!=0)else(8)
+    return (25)if(sp()!=0)else(6)
 def _6():
-    global x6
-    global x4
     sa(sr())
-    sa(sp()+(x6));
-    sa((1)if(sp()>(x4))else(0))
-    sa((0)if(sp()!=0)else(1))
-    return (23)if(sp()!=0)else(7)
+    return (22)if(sp()!=0)else(7)
 def _7():
-    global x6
-    x6=td(x6,2)
-    sa(td(sp(),4))
-    sa(sr())
-    return (6)if(sp()!=0)else(8)
-def _8():
     global x6
     sp()
     sa(sp()-(x6*x6));
@@ -90,13 +84,13 @@ def _8():
     v1=sp()
     sa(v0)
     sa(v1)
-    return (22)if(sp()!=0)else(9)
-def _9():
+    return (21)if(sp()!=0)else(8)
+def _8():
     sa(tm(sp(),6))
-    sa(sp()-(5));
+    sa(sp()-5);
     sa((0)if(sp()!=0)else(1))
-    return (10)if(sp()!=0)else(18)
-def _10():
+    return (9)if(sp()!=0)else(15)
+def _9():
     global x6
     global x4
     global x0
@@ -105,28 +99,14 @@ def _10():
     x6=0
     x4=sp()
     sa(x0)
-    sa((1)if((x0)>(x4))else(0))
-    return 11
+    sa((1)if(x0>x4)else(0))
+    return 10
+def _10():
+    return (20)if(sp()!=0)else(11)
 def _11():
-    return (21)if(sp()!=0)else(12)
+    sa(sr())
+    return (17)if(sp()!=0)else(12)
 def _12():
-    sa(sr())
-    return (13)if(sp()!=0)else(15)
-def _13():
-    global x6
-    global x4
-    sa(sr())
-    sa(sp()+(x6));
-    sa((1)if(sp()>(x4))else(0))
-    sa((0)if(sp()!=0)else(1))
-    return (20)if(sp()!=0)else(14)
-def _14():
-    global x6
-    x6=td(x6,2)
-    sa(td(sp(),4))
-    sa(sr())
-    return (13)if(sp()!=0)else(15)
-def _15():
     global x6
     sp()
     sa(sp()-(x6*x6));
@@ -135,33 +115,38 @@ def _15():
     v1=sp()
     sa(v0)
     sa(v1)
-    return (19)if(sp()!=0)else(16)
-def _16():
+    return (16)if(sp()!=0)else(13)
+def _13():
     sa(tm(sp(),6))
-    sa(sp()-(5));
-    return (18)if(sp()!=0)else(17)
-def _17():
+    sa(sp()-5);
+    return (15)if(sp()!=0)else(14)
+def _14():
     sp()
     print(x5-x3,end="",flush=True)
     return 26
-def _18():
+def _15():
     global x5
     sa(x5)
     sa(x2-1)
     sa(x2-1)
     return 2
-def _19():
+def _16():
     sp()
-    return 18
-def _20():
+    return 15
+def _17():
+    return (19)if((sr()+x6)<=x4)else(18)
+def _18():
     global x6
-    global x4
-    global x4
-    global x6
-    global x6
-    global x6
+    x6=td(x6,2)
+    sa(td(sp(),4))
     sa(sr())
-    sa(sp()+(x6));
+    return (17)if(sp()!=0)else(12)
+def _19():
+    global x4
+    global x4
+    global x6
+    global x6
+    sa(sr()+x6)
     sa(x4)
     v0=sp()
     v1=sp()
@@ -170,31 +155,32 @@ def _20():
     v0=sp()
     sa(sp()-v0)
     x4=sp()
-    sa(sr())
-    sa(sp()*(2));
-    sa(sp()+(x6));
+    sa((sr()*2)+x6)
     x6=sp()
     x6=td(x6,2)
     sa(td(sp(),4))
-    return 12
-def _21():
-    global x4
-    sa(td(sp(),4))
-    sa(sr())
-    sa((1)if(sp()>(x4))else(0))
     return 11
-def _22():
+def _20():
+    sa(td(sp(),4))
+    sa((1)if(sr()>x4)else(0))
+    return 10
+def _21():
     sp()
-    return 18
+    return 15
+def _22():
+    return (24)if((sr()+x6)<=x4)else(23)
 def _23():
     global x6
-    global x4
-    global x4
-    global x6
-    global x6
-    global x6
+    x6=td(x6,2)
+    sa(td(sp(),4))
     sa(sr())
-    sa(sp()+(x6));
+    return (22)if(sp()!=0)else(7)
+def _24():
+    global x4
+    global x4
+    global x6
+    global x6
+    sa(sr()+x6)
     sa(x4)
     v0=sp()
     v1=sp()
@@ -203,36 +189,15 @@ def _23():
     v0=sp()
     sa(sp()-v0)
     x4=sp()
-    sa(sr())
-    sa(sp()*(2));
-    sa(sp()+(x6));
+    sa((sr()*2)+x6)
     x6=sp()
     x6=td(x6,2)
     sa(td(sp(),4))
-    return 5
-def _24():
-    global x4
-    sa(td(sp(),4))
-    sa(sr())
-    sa((1)if(sp()>(x4))else(0))
-    return 4
+    return 6
 def _25():
-    global x1
-    global x5
-    sp()
-    sp()
-    sa(sp()+(1));
-    sa(sr())
-    sa(sr())
-    x1=sp()
-    sa(sr())
-    sa(sp()*(3));
-    sa(sp()-(1));
-    sa(sp()*sp());
-    sa(td(sp(),2))
-    sa(sr())
-    x5=sp()
-    return 1
+    sa(td(sp(),4))
+    sa((1)if(sr()>x4)else(0))
+    return 5
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25]
 c=0
 while c<26:

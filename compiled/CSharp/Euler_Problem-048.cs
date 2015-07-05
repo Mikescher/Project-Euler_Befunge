@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -12,38 +12,31 @@ static void Main(string[] args)
         long x0=10000000000;
         long x1=32;
         long x2=32;
-        sa(0);
-        sa(1000);
-        sa(1000);
+        sa(0L);
+        sa(1000L);
     _1:
-        if(sp()!=0)goto _2;else goto _6;
+        x2=sr();
+        sa(sr());
+        x1=sr();
     _2:
-        sa(sr());
-        x2=sp();
-        sa(sr());
-        sa(sr());
-    _3:
-        x1=sp();
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()-1);
+        sa(sp()-1L);
         sa(sr());
-        if(sp()!=0)goto _5;else goto _4;
-    _4:
+        if(sp()!=0)goto _5;else goto _3;
+    _3:
         sp();
         sp();
         sa(sp()+x1);
-        {long v0=x0;sa((v0==0)?0:(sp()%v0));}
-        sa(x2-1);
-        sa(x2-1);
-        goto _1;
-    _5:
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sr());
-        sa(sp()*x1);
-        {long v0=x0;sa((v0==0)?0:(sp()%v0));}
-        goto _3;
-    _6:
+        sa(tm(sp(),x0));
+        sa(x2-1L);
+        if(x2!=1L)goto _1;else goto _4;
+    _4:
         sp();
         System.Console.Out.Write((long)(sp()));
         return;
+    _5:
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        sa(tm(sr()*x1,x0));
+        x1=sp();
+        goto _2;
 }}

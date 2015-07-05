@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADtj70OwjAMhF/FBLo0CnVKc6CoqlhZmJhhzOqpE7w7ThH/CCFYuSGRfbY+X8/fq//vfipPP6gjwyZmMQt74Vp4JtwIB6GeqKpotV5tXu6qLWjKhTkY"
   + "AZeCOkLgo2kNUdurCecT8LjX3uAZyTtA7ga4I2gfqTh9VdIjnc3N/YmbNRm/C9Y+t6YZ2CDF0Xi7I+8axV74PNdn4A7uGXLWMnOR01i9pbAhRJswL2unpR4IT+oVaRh5"
@@ -49,41 +49,36 @@ def _0():
     return 1
 def _1():
     sa(gr(4,6))
-    return (5)if((0)if((gr(4,6))!=0)else(1))else(2)
+    return (2)if((gr(4,6))==0)else(6)
 def _2():
-    sa(1)
-    v0=sp()
-    sa(sp()-v0)
+    gw(6,6,gr(0,6)-1)
+    sp()
+    sa(gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)
+    return 3
+def _3():
+    return (5)if((gr(6,6))!=0)else(4)
+def _4():
+    print(sp(),end="",flush=True)
+    return 9
+def _5():
+    gw(6,6,gr(6,6)-1)
+    sa(sp()+(gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48));
+    return 3
+def _6():
+    sa(sp()-1);
     gw(4,6,sp())
     gw(6,6,gr(0,6)-1)
     gw(7,6,0)
-    return 3
-def _3():
-    return (1)if((0)if((gr(6,6))!=0)else(1))else(4)
-def _4():
+    return 7
+def _7():
+    return (1)if((gr(6,6))==0)else(8)
+def _8():
     sa(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6))
     gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),(tm(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6),10))+48)
-    sa(10)
-    v0=sp()
-    sa(td(sp(),v0))
+    sa(td(sp(),10))
     gw(7,6,sp())
     gw(6,6,gr(6,6)-1)
-    return 3
-def _5():
-    gw(6,6,gr(0,6)-1)
-    sp()
-    sa(0+(gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48))
-    return 6
-def _6():
-    return (8)if(gr(6,6))else(7)
-def _7():
-    print(sp(),end="",flush=True)
-    return 9
-def _8():
-    gw(6,6,gr(6,6)-1)
-    sa(gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)
-    sa(sp()+sp());
-    return 6
+    return 7
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8]
 c=0
 while c<9:

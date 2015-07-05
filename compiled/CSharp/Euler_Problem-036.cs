@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -10,36 +10,30 @@ private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
         long x0=9990;
-        sa(0);
-        sa(0);
-        sa(999);
-        sa(9+x0);
-        sa(99);
-        sa(99);
+        sa(0L);
+        sa(0L);
+        sa(999L);
+        sa(9L+x0);
+        sa(99L);
     _1:
-        if(sp()!=0)goto _2;else goto _3;
-    _2:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()*10);
+        sa(sp()*10L);
         x0=sp();
-        sa(sr());
-        {long v0=10;sa((v0==0)?0:(sp()%v0));}
-        sa(sp()+x0);
+        sa((tm(sr(),10L))+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=10;sa((v0==0)?0:(sp()/v0));}
+        sa(td(sp(),10L));
         sa(sr());
-        goto _1;
+    _2:
+        if(sp()!=0)goto _1;else goto _3;
     _3:
-        x0=0;
+        x0=0L;
         sp();
         sa(sr());
         sa(sr());
     _4:
-        sa(sr());
-        {long v0=2;sa((v0==0)?0:(sp()%v0));}
-        sa(sp()+x0);
+        sa((tm(sr(),2L))+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=2;sa((v0==0)?0:(sp()/v0));}
+        sa(td(sp(),2L));
         sa(sr());
         if(sp()!=0)goto _25;else goto _5;
     _5:
@@ -50,51 +44,42 @@ static void Main(string[] args)
     _6:
         sp();
     _7:
-        sa(sp()-1);
+        sa(sp()-1L);
         sa(sr());
         if(sp()!=0)goto _8;else goto _9;
     _8:
         sa(sr());
-        sa(sr());
-        sa(sp()*10);
+        sa(sr()*10L);
         x0=sp();
-        sa(sr());
-        {long v0=10;sa((v0==0)?0:(sp()%v0));}
-        sa(sp()+x0);
+        sa((tm(sr(),10L))+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=10;sa((v0==0)?0:(sp()/v0));}
+        sa(td(sp(),10L));
         sa(sr());
-        goto _1;
+        goto _2;
     _9:
-        x0=990;
-        sa(999);
-        sa(9+x0);
-        sa(99);
-        sa(99);
+        x0=990L;
+        sa(999L);
+        sa(9L+x0);
+        sa(99L);
     _10:
-        if(sp()!=0)goto _11;else goto _12;
-    _11:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()*10);
+        sa(sp()*10L);
         x0=sp();
-        sa(sr());
-        {long v0=10;sa((v0==0)?0:(sp()%v0));}
-        sa(sp()+x0);
+        sa((tm(sr(),10L))+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=10;sa((v0==0)?0:(sp()/v0));}
+        sa(td(sp(),10L));
         sa(sr());
-        goto _10;
+    _11:
+        if(sp()!=0)goto _10;else goto _12;
     _12:
-        x0=0;
+        x0=0L;
         sp();
         sa(sr());
         sa(sr());
     _13:
-        sa(sr());
-        {long v0=2;sa((v0==0)?0:(sp()%v0));}
-        sa(sp()+x0);
+        sa((tm(sr(),2L))+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=2;sa((v0==0)?0:(sp()/v0));}
+        sa(td(sp(),2L));
         sa(sr());
         if(sp()!=0)goto _23;else goto _14;
     _14:
@@ -105,11 +90,11 @@ static void Main(string[] args)
     _15:
         sp();
     _16:
-        sa(sp()-1);
+        sa(sp()-1L);
         sa(sr());
         if(sp()!=0)goto _21;else goto _17;
     _17:
-        sa(61);
+        sa(61L);
         System.Console.Out.Write(' ');
         System.Console.Out.Write((char)(sp()));
     _18:
@@ -127,17 +112,13 @@ static void Main(string[] args)
         goto _18;
     _21:
         sa(sr());
-        sa(sr());
-        {long v0=10;sa((v0==0)?0:(sp()/v0));}
-        sa(sp()*10);
+        sa((td(sr(),10L))*10L);
         x0=sp();
-        sa(sr());
-        {long v0=10;sa((v0==0)?0:(sp()%v0));}
-        sa(sp()+x0);
+        sa((tm(sr(),10L))+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=10;sa((v0==0)?0:(sp()/v0));}
+        sa(td(sp(),10L));
         sa(sr());
-        goto _10;
+        goto _11;
     _22:
         sa(sr());
         System.Console.Out.Write((long)(sp()));
@@ -146,7 +127,7 @@ static void Main(string[] args)
         goto _16;
     _23:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()*2);
+        sa(sp()*2L);
         x0=sp();
         goto _13;
     _24:
@@ -157,7 +138,7 @@ static void Main(string[] args)
         goto _7;
     _25:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()*2);
+        sa(sp()*2L);
         x0=sp();
         goto _4;
 }}

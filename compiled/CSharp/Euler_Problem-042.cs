@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "Ah+LCAAAAAAABAAVmHk4lN8bxpM0lhhly/ZSQowtu7xCKlpkRJbC2IpkJ96xjSEpYbJlKbtK38SQLBnbVGMpZlrIOkyDUbZZLNl/fu+/573Oda5z38/z3J8j95h33/+/"+
@@ -102,67 +102,55 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        gw(0,0,1787);
-        gw(1,0,80);
-        gw(2,0,5);
-        gw(3,0,400);
-        gw(5,0,0);
-        gw(6,0,2);
+        gw(0L,0L,1787L);
+        gw(1L,0L,80L);
+        gw(2L,0L,5L);
+        gw(3L,0L,400L);
+        gw(5L,0L,0L);
+        gw(6L,0L,2L);
     _1:
-        sa(gr(5,0)+1);
-        gw(5,0,gr(5,0)+1);
-        sa(sr());
-        sa(1);
-        sa(sp()+sp());
+        sa(gr(5L,0L)+1L);
+        gw(5L,0L,gr(5L,0L)+1L);
+        sa(sr()+1L);
         sa(sp()*sp());
-        sa(2);
-        {long v0=sp();sa((v0==0)?0:(sp()/v0));}
-        sa(48);
+        sa(td(sp(),2L));
+        sa(48L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sr());
-        sa(gr(1,0));
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        sa(32);
-        sa(sp()+sp());
+        sa((tm(sr(),gr(1L,0L)))+32L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(gr(1,0));
-        {long v0=sp();sa((v0==0)?0:(sp()/v0));}
+        sa(td(sp(),gr(1L,0L)));
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-        if(((gr(3,0))>(td((gr(5,0)+1)*(gr(5,0)+1+1),2))?1:0)!=0)goto _1;else goto _3;
+        if((td((gr(5L,0L)+1L)*(gr(5L,0L)+2L),2L))<gr(3L,0L))goto _1;else goto _3;
     _3:
-        gw(7,0,0);
-        sa(0);
+        gw(7L,0L,0L);
+        sa(0L);
     _4:
-        sa(gr(gr(7,0),gr(6,0)));
-        if(((gr(gr(7,0),gr(6,0))-32!=0)?0:1)!=0)goto _5;else goto _10;
+        sa(gr(gr(7L,0L),gr(6L,0L)));
+        if(gr(gr(7L,0L),gr(6L,0L))-32L==0)goto _5;else goto _10;
     _5:
         sp();
-        gw(27,gr(6,0),sp());
-        sa(gr(6,0));
-        gw(6,0,gr(6,0)+1);
-        sa(gr(0,0));
-        {long v0=sp();sa(sp()-v0);}
+        gw(27L,gr(6L,0L),sp());
+        sa(gr(6L,0L));
+        gw(6L,0L,gr(6L,0L)+1L);
+        sa(sp()-gr(0L,0L));
         if(sp()!=0)goto _3;else goto _6;
     _6:
-        gw(6,0,2);
-        sa(0+((gr((tm(gr(27,gr(6,0)),gr(1,0)))+32,td(gr(27,gr(6,0)),gr(1,0)))-48!=0)?0:1));
+        gw(6L,0L,2L);
+        sa((gr((tm(gr(27L,gr(6L,0L)),gr(1L,0L)))+32L,td(gr(27L,gr(6L,0L)),gr(1L,0L)))-48L!=0)?0:1);
     _7:
-        sa(gr(6,0));
-        gw(6,0,gr(6,0)+1);
-        sa(gr(0,0));
-        {long v0=sp();sa(sp()-v0);}
+        sa(gr(6L,0L));
+        gw(6L,0L,gr(6L,0L)+1L);
+        sa(sp()-gr(0L,0L));
         if(sp()!=0)goto _9;else goto _8;
     _8:
         System.Console.Out.Write((long)(sp()));
         return;
     _9:
-        sa((gr((tm(gr(27,gr(6,0)),gr(1,0)))+32,td(gr(27,gr(6,0)),gr(1,0)))-48!=0)?0:1);
-        sa(sp()+sp());
+        sa(sp()+((gr((tm(gr(27L,gr(6L,0L)),gr(1L,0L)))+32L,td(gr(27L,gr(6L,0L)),gr(1L,0L)))-48L!=0)?0:1));
         goto _7;
     _10:
-        gw(7,0,gr(7,0)+1);
-        sa(64);
-        {long v0=sp();sa(sp()-v0);}
+        gw(7L,0L,gr(7L,0L)+1L);
+        sa(sp()-64L);
         sa(sp()+sp());
         goto _4;
 }}

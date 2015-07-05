@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -52,21 +52,12 @@ def _4():
     return 2
 def _5():
     global x0
-    global x0
-    global x0
-    global x0
-    global x0
     x0=x0-2
-    sa(sr())
-    sa(sp()-(x0));
-    sa(sr())
-    sa(sp()-(x0));
-    sa(sr())
-    sa(sp()-(x0));
-    sa(sr())
-    sa(sp()-(x0));
-    sa(sr())
-    sa(sp()-(1));
+    sa(sr()-x0)
+    sa(sr()-x0)
+    sa(sr()-x0)
+    sa(sr()-x0)
+    sa(sr()-1)
     return 1
 m=[_0,_1,_2,_3,_4,_5]
 c=0

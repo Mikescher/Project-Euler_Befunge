@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -11,97 +11,89 @@ static void Main(string[] args)
 {
         long x0=32;
         long x1=32;
-        sa(0);
-        sa(10000);
-        sa(10000);
-        sa(0);
-        sa(10000);
-        sa(0);
+        sa(0L);
+        sa(10000L);
+        sa(10000L);
+        sa(0L);
+        sa(10000L);
     _1:
-        if(sp()!=0)goto _3;else goto _2;
-    _2:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()*10);
+        sa(sp()*10L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sr());
-        {long v0=10;sa((v0==0)?0:(sp()%v0));}
+        sa(tm(sr(),10L));
         x1=sp();
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+x1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=10;sa((v0==0)?0:(sp()/v0));}
+        sa(td(sp(),10L));
         sa(sr());
         sa((sp()!=0)?0:1);
-        goto _1;
+    _2:
+        if(sp()!=0)goto _3;else goto _1;
     _3:
         sp();
         sa(sp()+sp());
-        sa(24);
-        sa(0);
+        sa(24L);
     _4:
-        if(sp()!=0)goto _14;else goto _5;
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        sa(sr());
+        sa(sr());
+        sa(0L);
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     _5:
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sr());
-        sa(sr());
-        sa(0);
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    _6:
         sa(sr());
         sa((sp()!=0)?0:1);
-        if(sp()!=0)goto _7;else goto _13;
-    _7:
+        if(sp()!=0)goto _6;else goto _13;
+    _6:
         sp();
-        sa(sr());
-        x0=sp();
+        x0=sr();
         {long v0=sp();sa(sp()-v0);}
-        if(sp()!=0)goto _8;else goto _9;
-    _8:
+        if(sp()!=0)goto _7;else goto _12;
+    _7:
         sa(sr());
         sp();
         sa(sp()+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()-1);
+        sa(sp()-1L);
         sa(sr());
         sa((sp()!=0)?0:1);
-        goto _4;
+        if(sp()!=0)goto _8;else goto _4;
+    _8:
+        sp();
+        sp();
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        sa(sp()+1L);
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     _9:
-        sp();
-        sp();
-    _10:
-        sa(sp()-1);
+        sa(sp()-1L);
         sa(sr());
         sa((sp()!=0)?0:1);
-        if(sp()!=0)goto _11;else goto _12;
-    _11:
+        if(sp()!=0)goto _10;else goto _11;
+    _10:
         sp();
         System.Console.Out.Write((long)(sp()));
         return;
-    _12:
+    _11:
         sa(sr());
         sa(sr());
-        sa(0);
+        sa(0L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sr());
         sa((sp()!=0)?0:1);
-        goto _1;
+        goto _2;
+    _12:
+        sp();
+        sp();
+        goto _9;
     _13:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()*10);
+        sa(sp()*10L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sr());
-        {long v0=10;sa((v0==0)?0:(sp()%v0));}
+        sa(tm(sr(),10L));
         x1=sp();
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+x1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=10;sa((v0==0)?0:(sp()/v0));}
-        goto _6;
-    _14:
-        sp();
-        sp();
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()+1);
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        goto _10;
+        sa(td(sp(),10L));
+        goto _5;
 }}

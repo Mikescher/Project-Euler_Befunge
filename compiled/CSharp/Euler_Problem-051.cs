@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABACNVMuO6yAM/RUmJJsibsHNqwh55g/6A1E60l2wzYpV7r9fmzTNoxl1rKhKiX045hyT/c0MDGIXUaCBYJVz/BGKDxnvVfq9WBjQpm/0Bs1J86oBGCKK"+
@@ -22,287 +22,229 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        gw(0,2,99);
+        gw(0L,2L,99L);
     _1:
-        if((gr(0,2)-1000)!=0)goto _2;else goto _48;
+        if(gr(0L,2L)!=1000L)goto _2;else goto _48;
     _2:
-        sa(gr(0,2)+1);
-        sa(gr(0,2)+1);
-        gw(0,2,gr(0,2)+1);
-        sa(2);
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
+        sa(gr(0L,2L)+1L);
+        sa(gr(0L,2L)+1L);
+        gw(0L,2L,gr(0L,2L)+1L);
+        sa(tm(sp(),2L));
         sa((sp()!=0)?0:1);
         if(sp()!=0)goto _47;else goto _3;
     _3:
-        sa(5);
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
+        sa(tm(sp(),5L));
         sa((sp()!=0)?0:1);
         if(sp()!=0)goto _1;else goto _4;
     _4:
-        gw(1,2,3);
+        gw(1L,2L,3L);
     _5:
-        sa(gr(1,2)+1);
-        gw(1,2,gr(1,2)+1);
-        sa(14);
-        {long v0=sp();sa(sp()-v0);}
+        sa(gr(1L,2L)+1L);
+        gw(1L,2L,gr(1L,2L)+1L);
+        sa(sp()-14L);
         sa((sp()!=0)?0:1);
         if(sp()!=0)goto _1;else goto _6;
     _6:
-        gw(2,2,0);
-        if(((gr(0,gr(1,2))-48)+gr(2,2))!=0)goto _8;else goto _7;
+        gw(2L,2L,0L);
+        if(((gr(0L,gr(1L,2L))-48L)+gr(2L,2L))!=0)goto _8;else goto _7;
     _7:
-        sa(gr(2,2)+1);
-        gw(2,2,gr(2,2)+1);
-        sa(3);
-        {long v0=sp();sa(sp()-v0);}
+        sa(gr(2L,2L)+1L);
+        gw(2L,2L,gr(2L,2L)+1L);
+        sa(sp()-3L);
         sa((sp()!=0)?0:1);
         if(sp()!=0)goto _5;else goto _8;
     _8:
-        gw(4,2,gr(0,2));
-        sa(5);
-        sa(gr(5,gr(1,2))-48);
+        gw(4L,2L,gr(0L,2L));
+        sa(5L);
+        sa(gr(5L,gr(1L,2L))-48L);
     _9:
         if(sp()!=0)goto _10;else goto _46;
     _10:
         sa(sr());
-        sa((tm(gr(4,2),10))+48);
+        sa((tm(gr(4L,2L),10L))+48L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(7);
-        sa(sp()+sp());
-        sa(gr(1,2));
+        sa(sp()+7L);
+        sa(gr(1L,2L));
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-        gw(4,2,td(gr(4,2),10));
+        gw(4L,2L,td(gr(4L,2L),10L));
     _11:
         sa(sr());
         sa((sp()!=0)?0:1);
         if(sp()!=0)goto _12;else goto _45;
     _12:
         sp();
-        sa(gr(12,gr(1,2))-48);
-        sa(5);
-        sa(5);
+        sa(gr(12L,gr(1L,2L))-48L);
+        sa(4L);
     _13:
+        sa(sr()+7L);
+        sa(gr(1L,2L));
+        {long v0=sp();sa(gr(sp(),v0));}
+        sa(sp()-48L);
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        sa(sr());
         if(sp()!=0)goto _44;else goto _14;
     _14:
         sp();
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
         sa(sr());
-        gw(7,2,sp());
-        sa(sr());
-        sa(2);
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        if(sp()!=0)goto _15;else goto _21;
+        gw(7L,2L,sp());
+        if(tm(sr(),2L)!=0)goto _16;else goto _15;
     _15:
-        sa(sr());
-        sa(3);
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        if(sp()!=0)goto _16;else goto _21;
-    _16:
-        gw(5,2,sp());
-        sa(7);
-        sa(tm(gr(5,2),7));
-    _17:
-        if(sp()!=0)goto _18;else goto _21;
-    _18:
-        sa(sr());
-        sa(td(gr(5,2),2));
-        {long v0=sp();sa((sp()>v0)?1:0);}
-        if(sp()!=0)goto _22;else goto _19;
-    _19:
-        sa(sr());
-        sa(2);
-        {long v0=sp();sa(sp()-v0);}
-        sa(gr(5,2));
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        sa((sp()!=0)?0:1);
-        if(sp()!=0)goto _21;else goto _20;
-    _20:
-        sa(6);
-        sa(sp()+sp());
-        sa(sr());
-        sa(gr(5,2));
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        goto _17;
-    _21:
         sp();
         goto _7;
+    _16:
+        if(tm(sr(),3L)!=0)goto _17;else goto _15;
+    _17:
+        gw(5L,2L,sp());
+        sa(7L);
+        sa(tm(gr(5L,2L),7L));
+    _18:
+        if(sp()!=0)goto _19;else goto _15;
+    _19:
+        if(sr()>td(gr(5L,2L),2L))goto _22;else goto _20;
+    _20:
+        sa(sr()-2L);
+        sa(gr(5L,2L));
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        {long v0=sp();sa(tm(sp(),v0));}
+        sa((sp()!=0)?0:1);
+        if(sp()!=0)goto _15;else goto _21;
+    _21:
+        sa(sp()+6L);
+        sa(sr());
+        sa(gr(5L,2L));
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        {long v0=sp();sa(tm(sp(),v0));}
+        goto _18;
     _22:
-        gw(8,2,1);
-        gw(9,2,gr(2,2));
-        gw(9,2,gr(9,2)+1);
-        gw(4,2,gr(0,2));
+        gw(8L,2L,1L);
+        gw(9L,2L,gr(2L,2L));
+        gw(9L,2L,gr(9L,2L)+1L);
+        gw(4L,2L,gr(0L,2L));
         sp();
     _23:
-        sa(5);
-        sa(gr(5,gr(1,2))-48);
+        sa(5L);
+        sa(gr(5L,gr(1L,2L))-48L);
     _24:
         if(sp()!=0)goto _25;else goto _43;
     _25:
         sa(sr());
-        sa((tm(gr(4,2),10))+48);
+        sa((tm(gr(4L,2L),10L))+48L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(7);
-        sa(sp()+sp());
-        sa(gr(9,2)+4);
+        sa(sp()+7L);
+        sa(gr(9L,2L)+4L);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-        gw(4,2,td(gr(4,2),10));
+        gw(4L,2L,td(gr(4L,2L),10L));
     _26:
         sa(sr());
         if(sp()!=0)goto _42;else goto _27;
     _27:
         sp();
-        sa(gr(12,gr(9,2)+4)-48);
-        sa(5);
-        sa(5);
+        sa(gr(12L,gr(9L,2L)+4L)-48L);
+        sa(4L);
     _28:
+        sa(sr()+7L);
+        sa(gr(9L,2L)+4L);
+        {long v0=sp();sa(gr(sp(),v0));}
+        sa(sp()-48L);
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        sa(sr());
         if(sp()!=0)goto _41;else goto _29;
     _29:
         sp();
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(10);
-        sa(sp()*sp());
+        sa(sp()*10L);
         sa(sp()+sp());
-        sa(sr());
-        sa(2);
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        if(sp()!=0)goto _34;else goto _30;
+        if(tm(sr(),2L)!=0)goto _34;else goto _30;
     _30:
         sp();
-        sa(gr(9,2)-9);
-        if(sp()!=0)goto _33;else goto _31;
+        if(gr(9L,2L)!=9L)goto _31;else goto _32;
     _31:
-        sa(gr(8,2)-8);
-        if(sp()!=0)goto _7;else goto _32;
-    _32:
-        System.Console.Out.Write((long)(gr(7,2)));
-        return;
-    _33:
-        gw(9,2,gr(9,2)+1);
-        gw(4,2,gr(0,2));
+        gw(9L,2L,gr(9L,2L)+1L);
+        gw(4L,2L,gr(0L,2L));
         goto _23;
+    _32:
+        if(gr(8L,2L)!=8L)goto _7;else goto _33;
+    _33:
+        System.Console.Out.Write((long)(gr(7L,2L)));
+        return;
     _34:
-        sa(sr());
-        sa(3);
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
-        if(sp()!=0)goto _35;else goto _30;
+        if(tm(sr(),3L)!=0)goto _35;else goto _30;
     _35:
-        gw(5,2,sp());
-        sa(7);
-        sa(tm(gr(5,2),7));
+        gw(5L,2L,sp());
+        sa(7L);
+        sa(tm(gr(5L,2L),7L));
     _36:
         if(sp()!=0)goto _37;else goto _30;
     _37:
-        sa(sr());
-        sa(td(gr(5,2),2));
-        {long v0=sp();sa((sp()>v0)?1:0);}
-        if(sp()!=0)goto _40;else goto _38;
+        if(sr()>td(gr(5L,2L),2L))goto _40;else goto _38;
     _38:
-        sa(sr());
-        sa(2);
-        {long v0=sp();sa(sp()-v0);}
-        sa(gr(5,2));
+        sa(sr()-2L);
+        sa(gr(5L,2L));
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
+        {long v0=sp();sa(tm(sp(),v0));}
         sa((sp()!=0)?0:1);
         if(sp()!=0)goto _30;else goto _39;
     _39:
-        sa(6);
-        sa(sp()+sp());
+        sa(sp()+6L);
         sa(sr());
-        sa(gr(5,2));
+        sa(gr(5L,2L));
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        {long v0=sp();sa((v0==0)?0:(sp()%v0));}
+        {long v0=sp();sa(tm(sp(),v0));}
         goto _36;
     _40:
-        gw(8,2,gr(8,2)+1);
+        gw(8L,2L,gr(8L,2L)+1L);
         goto _30;
     _41:
-        sa(1);
-        {long v0=sp();sa(sp()-v0);}
-        sa(sr());
-        sa(7);
-        sa(sp()+sp());
-        sa(gr(9,2)+4);
-        {long v0=sp();sa(gr(sp(),v0));}
-        sa(48);
-        {long v0=sp();sa(sp()-v0);}
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sr());
+        sa(sp()-1L);
         goto _28;
     _42:
-        sa(1);
-        {long v0=sp();sa(sp()-v0);}
+        sa(sp()-1L);
         sa(sr());
-        sa(gr(1,2));
+        sa(gr(1L,2L));
         {long v0=sp();sa(gr(sp(),v0));}
-        sa(48);
-        {long v0=sp();sa(sp()-v0);}
+        sa(sp()-48L);
         goto _24;
     _43:
         sa(sr());
-        sa(gr(9,2)+48);
+        sa(gr(9L,2L)+48L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(7);
-        sa(sp()+sp());
-        sa(gr(9,2)+4);
+        sa(sp()+7L);
+        sa(gr(9L,2L)+4L);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _26;
     _44:
-        sa(1);
-        {long v0=sp();sa(sp()-v0);}
-        sa(sr());
-        sa(7);
-        sa(sp()+sp());
-        sa(gr(1,2));
-        {long v0=sp();sa(gr(sp(),v0));}
-        sa(48);
-        {long v0=sp();sa(sp()-v0);}
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sr());
+        sa(sp()-1L);
         goto _13;
     _45:
-        sa(1);
-        {long v0=sp();sa(sp()-v0);}
+        sa(sp()-1L);
         sa(sr());
-        sa(gr(1,2));
+        sa(gr(1L,2L));
         {long v0=sp();sa(gr(sp(),v0));}
-        sa(48);
-        {long v0=sp();sa(sp()-v0);}
+        sa(sp()-48L);
         goto _9;
     _46:
         sa(sr());
-        sa(gr(2,2)+48);
+        sa(gr(2L,2L)+48L);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(7);
-        sa(sp()+sp());
-        sa(gr(1,2));
+        sa(sp()+7L);
+        sa(gr(1L,2L));
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _11;
     _47:

@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -26,53 +26,45 @@ x2=32
 def _0():
     sa(0)
     sa(1000)
-    sa(1000)
     return 1
 def _1():
-    return (2)if(sp()!=0)else(6)
-def _2():
     global x2
+    global x1
+    x2=sr()
     sa(sr())
-    x2=sp()
+    x1=sr()
+    return 2
+def _2():
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()-1);
     sa(sr())
-    sa(sr())
-    return 3
+    return (5)if(sp()!=0)else(3)
 def _3():
     global x1
-    x1=sp()
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()-(1));
-    sa(sr())
-    return (5)if(sp()!=0)else(4)
+    global x0
+    sp()
+    sp()
+    sa(sp()+x1);
+    sa(tm(sp(),x0))
+    sa(x2-1)
+    return (1)if(x2!=1)else(4)
 def _4():
-    global x1
-    global x0
-    sp()
-    sp()
-    sa(sp()+(x1));
-    sa(tm(sp(),x0))
-    sa(x2-1)
-    sa(x2-1)
-    return 1
-def _5():
-    global x1
-    global x0
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sr())
-    sa(sp()*(x1));
-    sa(tm(sp(),x0))
-    return 3
-def _6():
     sp()
     print(sp(),end="",flush=True)
-    return 7
-m=[_0,_1,_2,_3,_4,_5,_6]
+    return 6
+def _5():
+    global x1
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(tm(sr()*x1,x0))
+    x1=sp()
+    return 2
+m=[_0,_1,_2,_3,_4,_5]
 c=0
-while c<7:
+while c<6:
     c=m[c]()

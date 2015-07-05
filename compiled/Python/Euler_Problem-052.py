@@ -1,5 +1,5 @@
-# compiled with BefunCompile v1.0.5 (c) 2015
-# execute with at least Python3
+#!/usr/bin/env python3
+# compiled with BefunCompile v1.0.6 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -30,21 +30,16 @@ def _0():
     sa(1)
     sa(1)
     sa(1)
-    sa(1)
     return 1
 def _1():
-    return (2)if(sp()!=0)else(3)
-def _2():
     global x1
-    global x1
-    sa(sr())
-    sa(tm(sp(),10))
-    sa(sp()+(2));
-    sa(sp()*(x1));
+    sa(((tm(sr(),10))+2)*x1)
     x1=sp()
     sa(td(sp(),10))
     sa(sr())
-    return 1
+    return 2
+def _2():
+    return (1)if(sp()!=0)else(3)
 def _3():
     global x2
     global x2
@@ -57,7 +52,7 @@ def _4():
     global x4
     x4=1
     sa(sp()*sp());
-    sa(sp()*(10));
+    sa(sp()*10);
     return 5
 def _5():
     sa(td(sp(),10))
@@ -66,73 +61,52 @@ def _5():
     return (6)if(sp()!=0)else(13)
 def _6():
     sp()
-    return (10)if(x4-x1)else(7)
+    return (7)if(x4!=x1)else(10)
 def _7():
-    global x2
-    sa(x2+1)
-    x2=x2+1
-    sa(sp()-(7));
-    return (8)if(sp()!=0)else(9)
+    sp()
+    sa(sp()+1);
+    return (8)if(sr()>=x3)else(9)
 def _8():
-    global x2
-    sa(sr())
-    sa(x2)
-    return 4
-def _9():
-    print(sp(),end="",flush=True)
-    sp()
-    sp()
-    return 14
-def _10():
-    global x3
-    sp()
-    sa(sp()+(1));
-    sa(sr())
-    sa(x3)
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    v0=sp()
-    sa((1)if(sp()>v0)else(0))
-    sa((0)if(sp()!=0)else(1))
-    return (11)if(sp()!=0)else(12)
-def _11():
     global x0
     global x3
     global x1
     sp()
-    sa(sp()*(10));
-    sa(sr())
-    x0=sp()
-    sa(sr())
-    sa(td(sp(),6))
+    sa(sp()*10);
+    x0=sr()
+    sa(td(sr(),6))
     x3=sp()
     x1=1
+    sa(td(sr(),10))
     sa(sr())
-    sa(td(sp(),10))
+    sa(td(sr()*10,10))
     sa(sr())
-    sa(sr())
-    sa(sp()*(10));
-    sa(td(sp(),10))
-    sa(sr())
-    return 1
-def _12():
+    return 2
+def _9():
     global x1
     x1=1
     sa(sr())
+    sa(td(sr()*10,10))
     sa(sr())
-    sa(sp()*(10));
-    sa(td(sp(),10))
+    return 2
+def _10():
+    global x2
+    sa(x2+1)
+    x2=x2+1
+    sa(sp()-7);
+    return (11)if(sp()!=0)else(12)
+def _11():
+    global x2
     sa(sr())
-    return 1
+    sa(x2)
+    return 4
+def _12():
+    print(sp(),end="",flush=True)
+    sp()
+    sp()
+    return 14
 def _13():
     global x4
-    global x4
-    sa(sr())
-    sa(tm(sp(),10))
-    sa(sp()+(2));
-    sa(sp()*(x4));
+    sa(((tm(sr(),10))+2)*x4)
     x4=sp()
     return 5
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13]

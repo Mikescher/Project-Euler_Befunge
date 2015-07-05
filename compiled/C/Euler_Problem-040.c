@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.5 (c) 2015 */
+/* compiled with BefunCompile v1.0.6 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -14,63 +14,55 @@ int main(void)
     int64 x1=32;
     int64 x2=32;
     s=(int64*)calloc(q,sizeof(int64));
-    sa(0);
-    sa(1);
-    sa(10);
-    sa(100);
-    sa(1000);
-    sa(10000);
-    sa(100000);
-    sa(1000000);
-    sa(1000000);
+    sa(0LL);
+    sa(1LL);
+    sa(10LL);
+    sa(100LL);
+    sa(1000LL);
+    sa(10000LL);
+    sa(100000LL);
+    sa(1000000LL);
 _1:
-    if(sp()!=0)goto _3;else goto _2;
+    x1=1LL;
+    x2=1LL;
 _2:
-    sp();
-    printf("%lld", (int64)(x0));
-    return 0;
+    if(sr()<=x1*9L*x2)goto _3;else goto _9;
 _3:
-    x1=1;
-    x2=1;
-_4:
-    sa(sr());
-    {int64 v0=x1*9*x2;sa((sp()>v0)?1:0);}
-    sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _5;else goto _10;
-_5:
-    sa(sp()-(1));
-    sa(sr());
-    {int64 v0=x1;sa((v0==0)?0:(sp()/v0));}
-    sa(sp()+(x2));
+    sa(sp()-1LL);
+    sa((td(sr(),x1))+x2);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    {int64 v0=x1;sa((v0==0)?0:(sp()%v0));}
+    sa(tm(sp(),x1));
     sa(x1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     {int64 v0=sp();sa(sp()-v0);}
-    sa(sp()-(1));
+    sa(sp()-1LL);
     sa(sr());
-    if(sp()!=0)goto _7;else goto _6;
-_6:
+    if(sp()!=0)goto _7;else goto _4;
+_4:
     sa(sr());
-    if(sp()!=0)goto _7;else goto _9;
-_7:
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    {int64 v0=10;sa((v0==0)?0:(sp()/v0));}
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sp()-(1));
-    sa(sr());
-    if(sp()!=0)goto _7;else goto _9;
-_9:
+    if(sp()!=0)goto _7;else goto _5;
+_5:
     sp();
-    {int64 v0=10;sa((v0==0)?0:(sp()%v0));}
-    sa(sp()*(x0));
+    sa(tm(sp(),10L));
+    sa(sp()*x0);
     x0=sp();
     sa(sr());
-    goto _1;
-_10:
-    sa(x1*9*x2);
-    x1=x1+1;
-    x2=x2*10;
+    if(sp()!=0)goto _1;else goto _6;
+_6:
+    sp();
+    printf("%lld", (int64)(x0));
+    return 0;
+_7:
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(td(sp(),10L));
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(sp()-1LL);
+    sa(sr());
+    if(sp()!=0)goto _7;else goto _5;
+_9:
+    sa(x1*9LL*x2);
+    x1=x1+1LL;
+    x2=x2*10LL;
     {int64 v0=sp();sa(sp()-v0);}
-    goto _4;
+    goto _2;
 }
