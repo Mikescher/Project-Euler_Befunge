@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
-char* _g = "$$>\"d\" 00p00g1-20p010p>10g3*:20g1+g\"0\"-55+*\\1+20g1+g\"0\"-+10g20g1+p10g1+:10p20g-1-#v_20g:1-20p010p#v_v{ } \"(59{ }  4^{ }  [<{ }  "
+char* _g = "  >\"d\" 00p00g1-20p010p>10g3*:20g1+g\"0\"-55+*\\1+20g1+g\"0\"-+10g20g1+p10g1+:10p20g-1-#v_20g:1-20p010p#v_v{ } \"(59{ }  4^{ }  [<{ }  "
            "/< v{ } \"(73 41{ }  1v{ }  m<{ } \"(52 40 09{ }  k> $v{ } \"626 53 06 34{ }  +>00g2-:10p  20p > 10g20g1+g  10g20g2+g  :  10g1+20g2"
            "+g -:0`>#^_-> + 10g20g1+ p   10g:1-10p#v_20g:1-:20p10p#v_  01g.@{ } !b10 51 87 86 81{ }  8^{ }  j{<{ }  /}  \"{ } ![61 95 66 57 2"
            "5 68{ } \"|90 81 80 38 92 67 73{ } \"y30 28 51 76 81 18 75 44{ } \"v84 14 95 87 62 81 17 78 58{ } \"s21 46 71 58 02 79 62 39 31 09{ "
@@ -145,23 +145,18 @@ int main(void)
     gw(0LL,0LL,100LL);
     gw(2LL,0LL,gr(0LL,0LL)-1LL);
     gw(1LL,0LL,0LL);
-    gw(gr(1LL,0LL),gr(2LL,0LL)+1LL,((gr(gr(1LL,0LL)*3LL,gr(2LL,0LL)+1LL)-48LL)*10LL)+(gr((gr(1LL,0LL)*3LL)+1LL,gr(2LL,0LL)+1LL)-48LL));
-    sp();
-    sp();
 _1:
+    gw(gr(1LL,0LL),gr(2LL,0LL)+1LL,((gr(gr(1LL,0LL)*3LL,gr(2LL,0LL)+1LL)-48LL)*10LL)+(gr((gr(1LL,0LL)*3LL)+1LL,gr(2LL,0LL)+1LL)-48LL));
     sa(gr(1LL,0LL)+1LL);
     gw(1LL,0LL,gr(1LL,0LL)+1LL);
     sa(sp()-gr(2LL,0LL));
     sa(sp()-1LL);
-    if(sp()!=0)goto _11;else goto _2;
-_2:
+    if(sp()!=0)goto _1;else goto _3;
+_3:
     sa(gr(2LL,0LL));
     gw(2LL,0LL,gr(2LL,0LL)-1LL);
     gw(1LL,0LL,0LL);
-    if(sp()!=0)goto _3;else goto _4;
-_3:
-    gw(gr(1LL,0LL),gr(2LL,0LL)+1LL,((gr(gr(1LL,0LL)*3LL,gr(2LL,0LL)+1LL)-48LL)*10LL)+(gr((gr(1LL,0LL)*3LL)+1LL,gr(2LL,0LL)+1LL)-48LL));
-    goto _1;
+    if(sp()!=0)goto _1;else goto _4;
 _4:
     sa(gr(0LL,0LL)-2LL);
     gw(1LL,0LL,gr(0LL,0LL)-2LL);
@@ -191,7 +186,4 @@ _9:
 _10:
     {int64 v0=sp();sa(sp()-v0);}
     goto _7;
-_11:
-    gw(gr(1LL,0LL),gr(2LL,0LL)+1LL,((gr(gr(1LL,0LL)*3LL,gr(2LL,0LL)+1LL)-48LL)*10LL)+(gr((gr(1LL,0LL)*3LL)+1LL,gr(2LL,0LL)+1LL)-48LL));
-    goto _1;
 }

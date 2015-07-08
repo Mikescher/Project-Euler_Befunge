@@ -1,11 +1,11 @@
 /* compiled with BefunCompile v1.0.6 (c) 2015 */
 public static class Program 
 {
-private static readonly string _g = "AR+LCAAAAAAABAC9VMtqw0AM/JUhySnGRVp5X6GYfkhJevPVp3x/R17ogxjakrjCOCvh7OxoRns4jNGOEJlFJu0Df1XmUWWy4ymw1E072fUxdsdX7T4LHb9Ysln9feKf"+
-                                    "mPba768XLk4fWzG/4jZyXCnivFb8ZTzf5Gu4NSINN9W1Lx93Eg/NGDJKuHvzEYe/nFYLLKJkqHzdhGKHvom2iN2EbYvQUT7P2xr9Sd7G/fnSj99Ep8RN3iY3zTK3XHR6"+
-                                    "egkCGZwvWadVre8Se03uxrdCFMHcYGKwW623iVIgATkjG4SUDSn/B26t3l62OvAACZqQBfV+m/0Ug/oTEmJCMQyCIg5ttj1uQQ4ORGsZF9lZV3agbogb6ShCD97tEDEY"+
-                                    "qiIG1Iyo0M1sxpaqOlnq29zFmyRzqKl78XXcxmZklxeCtqCQICtkHQuiIGTvNoV4ePjgJPcz2ZXqbeccmSzEE1L1q4xmM30wriNSzbJQ4wjXZY6K41bzJvhJljstPNTh"+
-                                    "73sJfUqABwAA";
+private static readonly string _g = "AR+LCAAAAAAABAC9VMtqw0AM/JUh7SnGRVp5X6GYfkhJevPVp3x/R17ogxjaErvCOCvh7OxoRguM0Y4QmUUm7QN/VeZRZbLjKbDUTQc59DF2x1ftPgsdv1iyWf194p+Y"+
+                                    "9to/XC9cnD62Yn7FbeS4UsR5rfjLeL7J13BrRBpuqmtfbncSD80YMkq4e/MRj385rRZYRMlQ+boJxQ59E20RuwnbFqGjfJ63NfqTvI0P50s/fhOdEjd5m9w0y9xy0enp"+
+                                    "JQhkcL5knVa1vkvsNbkb3wpRBHODicFutd4nSoEE5IxsEFI2pPwfuLV6e9nqwAMkaEIW1Ptt9lMM6k9IiAnFMAiKOLTZ/rgFOTgQrWVcZGdd2YG6I26kowg9eLdDxGCo"+
+                                    "ihhQM6JCd7MZW6rqZKlvcxdvksyhpu7F13Efm5FdXgjagkKCrJB1LIiCkL3bFGLz8MFJ7meyK9XbzjkyWYgnpOpXGc1mujGuI1LNslDjCNdljorjVvMm+EmWOy1s6vB3"+
+                                    "lpN0goAHAAA=";
 private static readonly long[]  g = System.Array.ConvertAll(zd(System.Convert.FromBase64String(_g)),b=>(long)b);
 private static byte[]zd(byte[]o){byte[]d=System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Skip(o, 1));for(int i=0;i<o[0];i++)d=zs(d);return d;}
 private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
@@ -24,23 +24,18 @@ static void Main(string[] args)
         gw(0L,0L,15L);
         gw(2L,0L,gr(0L,0L)-1L);
         gw(1L,0L,0L);
-        gw(gr(1L,0L),gr(2L,0L)+1L,((gr(gr(1L,0L)*3L,gr(2L,0L)+1L)-48L)*10L)+(gr((gr(1L,0L)*3L)+1L,gr(2L,0L)+1L)-48L));
-        sp();
-        sp();
     _1:
+        gw(gr(1L,0L),gr(2L,0L)+1L,((gr(gr(1L,0L)*3L,gr(2L,0L)+1L)-48L)*10L)+(gr((gr(1L,0L)*3L)+1L,gr(2L,0L)+1L)-48L));
         sa(gr(1L,0L)+1L);
         gw(1L,0L,gr(1L,0L)+1L);
         sa(sp()-gr(2L,0L));
         sa(sp()-1L);
-        if(sp()!=0)goto _11;else goto _2;
-    _2:
+        if(sp()!=0)goto _1;else goto _3;
+    _3:
         sa(gr(2L,0L));
         gw(2L,0L,gr(2L,0L)-1L);
         gw(1L,0L,0L);
-        if(sp()!=0)goto _3;else goto _4;
-    _3:
-        gw(gr(1L,0L),gr(2L,0L)+1L,((gr(gr(1L,0L)*3L,gr(2L,0L)+1L)-48L)*10L)+(gr((gr(1L,0L)*3L)+1L,gr(2L,0L)+1L)-48L));
-        goto _1;
+        if(sp()!=0)goto _1;else goto _4;
     _4:
         sa(gr(0L,0L)-2L);
         gw(1L,0L,gr(0L,0L)-2L);
@@ -70,7 +65,4 @@ static void Main(string[] args)
     _10:
         {long v0=sp();sa(sp()-v0);}
         goto _7;
-    _11:
-        gw(gr(1L,0L),gr(2L,0L)+1L,((gr(gr(1L,0L)*3L,gr(2L,0L)+1L)-48L)*10L)+(gr((gr(1L,0L)*3L)+1L,gr(2L,0L)+1L)-48L));
-        goto _1;
 }}

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # compiled with BefunCompile v1.0.6 (c) 2015
 import gzip, base64
-_g = ("AR+LCAAAAAAABAC9VMtqw0AM/JUhySnGRVp5X6GYfkhJevPVp3x/R17ogxjakrjCOCvh7OxoRns4jNGOEJlFJu0Df1XmUWWy4ymw1E072fUxdsdX7T4LHb9Ysln9feKf"
-  + "mPba768XLk4fWzG/4jZyXCnivFb8ZTzf5Gu4NSINN9W1Lx93Eg/NGDJKuHvzEYe/nFYLLKJkqHzdhGKHvom2iN2EbYvQUT7P2xr9Sd7G/fnSj99Ep8RN3iY3zTK3XHR6"
-  + "egkCGZwvWadVre8Se03uxrdCFMHcYGKwW623iVIgATkjG4SUDSn/B26t3l62OvAACZqQBfV+m/0Ug/oTEmJCMQyCIg5ttj1uQQ4ORGsZF9lZV3agbogb6ShCD97tEDEY"
-  + "qiIG1Iyo0M1sxpaqOlnq29zFmyRzqKl78XXcxmZklxeCtqCQICtkHQuiIGTvNoV4ePjgJPcz2ZXqbeccmSzEE1L1q4xmM30wriNSzbJQ4wjXZY6K41bzJvhJljstPNTh"
-  + "73sJfUqABwAA")
+_g = ("AR+LCAAAAAAABAC9VMtqw0AM/JUh7SnGRVp5X6GYfkhJevPVp3x/R17ogxjaErvCOCvh7OxoRguM0Y4QmUUm7QN/VeZRZbLjKbDUTQc59DF2x1ftPgsdv1iyWf194p+Y"
+  + "9to/XC9cnD62Yn7FbeS4UsR5rfjLeL7J13BrRBpuqmtfbncSD80YMkq4e/MRj385rRZYRMlQ+boJxQ59E20RuwnbFqGjfJ63NfqTvI0P50s/fhOdEjd5m9w0y9xy0enp"
+  + "JQhkcL5knVa1vkvsNbkb3wpRBHODicFutd4nSoEE5IxsEFI2pPwfuLV6e9nqwAMkaEIW1Ptt9lMM6k9IiAnFMAiKOLTZ/rgFOTgQrWVcZGdd2YG6I26kowg9eLdDxGCo"
+  + "ihhQM6JCd7MZW6rqZKlvcxdvksyhpu7F13Efm5FdXgjagkKCrJB1LIiCkL3bFGLz8MFJ7meyK9XbzjkyWYgnpOpXGc1mujGuI1LNslDjCNdljorjVvMm+EmWOy1s6vB3"
+  + "lpN0goAHAAA=")
 g = base64.b64decode(_g)[1:]
 for i in range(base64.b64decode(_g)[0]):
     g = gzip.decompress(g)
@@ -41,24 +41,21 @@ def _0():
     gw(0,0,15)
     gw(2,0,gr(0,0)-1)
     gw(1,0,0)
-    gw(gr(1,0),gr(2,0)+1,((gr(gr(1,0)*3,gr(2,0)+1)-48)*10)+(gr((gr(1,0)*3)+1,gr(2,0)+1)-48))
-    sp()
-    sp()
     return 1
 def _1():
+    gw(gr(1,0),gr(2,0)+1,((gr(gr(1,0)*3,gr(2,0)+1)-48)*10)+(gr((gr(1,0)*3)+1,gr(2,0)+1)-48))
     sa(gr(1,0)+1)
     gw(1,0,gr(1,0)+1)
     sa(sp()-gr(2,0));
     sa(sp()-1);
-    return (11)if(sp()!=0)else(2)
+    return 2
 def _2():
+    return (1)if(sp()!=0)else(3)
+def _3():
     sa(gr(2,0))
     gw(2,0,gr(2,0)-1)
     gw(1,0,0)
-    return (3)if(sp()!=0)else(4)
-def _3():
-    gw(gr(1,0),gr(2,0)+1,((gr(gr(1,0)*3,gr(2,0)+1)-48)*10)+(gr((gr(1,0)*3)+1,gr(2,0)+1)-48))
-    return 1
+    return (1)if(sp()!=0)else(4)
 def _4():
     sa(gr(0,0)-2)
     gw(1,0,gr(0,0)-2)
@@ -86,15 +83,12 @@ def _8():
     return (5)if(sp()!=0)else(9)
 def _9():
     print(gr(0,1),end="",flush=True)
-    return 12
+    return 11
 def _10():
     v0=sp()
     sa(sp()-v0)
     return 7
-def _11():
-    gw(gr(1,0),gr(2,0)+1,((gr(gr(1,0)*3,gr(2,0)+1)-48)*10)+(gr((gr(1,0)*3)+1,gr(2,0)+1)-48))
-    return 1
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11]
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10]
 c=0
-while c<12:
+while c<11:
     c=m[c]()
