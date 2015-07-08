@@ -1,0 +1,70 @@
+v XXXX   #######################################################################
+  XX
+                          v1\1p12::+1   \+g2<
+0                 v9p03p02<         \g12:+1<^2\p22_v
+1          >v     v              <  v-\"P"<       :$
+>        :v1v>0p>9>:"0"\0p1+:"O"-|>:0g"0"-||!`g12<-$
+          :p\3v p050p04"O"<p0\"1"<^+>#1 $#< :21g-|\.
+          211p> 40g0g"0"-2 0g*50g+:55+%"0"v>$55+0v+@
+          >^20|-8p04:-1g04 p05/+5 #5p0g04+<>5#$5#<^
+            >^>30g1-:30p #^_9     ^
+
+
+
+
+
+
+
+
+1+::21p1\120p30p
+
+[2, 0]           (Pow)  i
+[3, 0]           (Pow)  n
+[4, 0]           (Pow)  pos
+[5, 0]           (Pow)  carry
+
+[9, 0] - [80, 0] (Pow) arr
+
+[2, 1]           (GetNDigitPowerNumberCount)  n
+[2, 2]           tmp
+
+
+// Pow   (stack, stack) -> (array)
+         (i    , n)     -> [2, 9] - [2,80]
+
+        v              < 
+21p20p>9>:"0"\0p1+:"O"-|
+     vp320p22"O"<p0\"1"<
+     >22g0g"0"-2 0g*23g+:55+%"0"v
+     |-8p22:-1g2 2p32/+55p0g22+ <
+     >21g1-:21p#^_@
+
+
+
+// Len(arr)
+
+   v-\"P"<
+9>:0g"0"-|
+ ^+>#1 $#<   @
+
+
+
+// GetNDigitPowerNumberCount    (stack)->(stack)
+
+        v9p03p02          \g12:+1<        
+ >v     v              <  v-\"P"<         
+v1v>0p>9>:"0"\0p1+:"O"-|>:0g"0"-||!`g12<>-
+:p\3v p050p04"O"<p0\"1"<^+>#1 $#< :21g-|\ 
+211p> 40g0g"0"-2 0g*50g+:55+%"0"v>$55+0v+ 
+>^20|-8p04:-1g04 p05/+5 #5p0g04+<>5#$5#<^ 
+  >^>30g1-:30p #^_9     ^                 
+
+
+---------------------------------------
+
+After all the previous programs, this one is surprisingly ... dense (the main code-block is 54x8).
+
+The algorithm is quickly explained for each length n we calculate the numbers `1^n`, `2^n` ... until `9^n` and see which have a length of `n`.
+(From `10^n` upwards the condition is impossible, because `10^n` has `(n+1)` digits).
+
+The main problem is that the numbers exceed Int64. So we need to implement long multiplication ... again. (see problem 16, 20, 29, 56 and 57)
