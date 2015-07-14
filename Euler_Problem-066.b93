@@ -1,0 +1,94 @@
+vYYY     ################                                                               // <-- N{-2}                          [0]
+ XBXX    ################                                                               // <-- N{-1}                          [1]
+ ZZZ     ################                                                               // <-- N{0}                           [2]
+ N
+ OOO     ################                                                               // <-- D{-2}                          [4]
+         ################                                                               // <-- D{-1}                          [5]
+         ################                                                               // <-- D{0}                           [6]
+         ################                           v 9::p4+9\g5+9::p1+9\g2+9: <        // <-- temp2 (N0 * N0)                [7]
+         ################                           >+6g\9+5p:1-\!v0  <                 // <-- max                            [8]
+         ################                               v        $_::9+1g\9+0p:^        // <-- temp (D0 * D0 * D + 1)         [9]
+                                 v  _v#-*"}"8p13:+1g13$<              #     <   
+>"@ ":*:**21p331p013p88 +>:8+0\8v    >11g.@   >+8p:1-\!|  >-22g/22p35*^
+v         p02:p010g13<$<_^#!:-1p<             ^9\g2+9::<# ^*:g21g13p21-g21*g 22<
+vp01g03_v#-g01:_v#- <^           <v_v#!:-1p0\0+8:p1\0 <^*53p11g13$_         ^  g
+>:30p:20 g\/+2/: 30g^          >88 +>:8+0\5p:8+0\4p:8+^    >     `^      >$$ $v2
+        >       >$30g:41p:*31g-|  >$164*1p164*4p012p122pv  0 >$1+:9-8-     !| 03
+^p02:p010g13p13+1g13           <v       ># 3# 5# *#    #<v ^_^#:-g8+9\g2+9::< <$
+v*53p23/g22+g21g14              <       $                                   >  ^
+>:::9+0g\9+1g32g*+13g+:v v 53<          |!\-1:g42$<      >::9+7g\9+9g-      |
+|\-1:p2+9\%g12 p31/g12 < # >$     014p35 *>:9+0\ v|!-9g43-1p7g43%g12p41/g12 :+g<
+>$35*:::9+4g\9+5g32g*+13g+v  $        >*>2 4p35*  >::24g+# 6-34p9+2g24g9+2gv>1v7
+>:::9+4g\9+5g32g*+13g+v   <|!\-1:g42$<    |\-1:p7<       ^               #  < -g
+|\-1:p6+9\%g12p31/g12:<>     # :9+0\v| !-9 g43-1p9g43%g12p41/g12:+g9g43<v1*<|\<4
+>$114p35*              ^ >*>2 4p35*#9> ::2 4g+6-34p9+6g24g9+6g31g**14g+^> 4g +3^
+                       ^    _^#\-1:p< ^53$<                              ^ $<  
+
+
+
+[1,0] (isqrt) pxk
+[2,0] (isqrt) n
+[3,0] (isqrt) xk
+
+[1,1] (main) max_index
+[2,1] (main) base (const)   =   67108864
+[3,1] (main) D
+[4,1] (main) isqrt(D)
+
+[1,2] (cfrac) cf_add
+[2,2] (cfrac) cf_div
+[3,2] (cfrac) cf_frac_m
+
+[1,3] (calc) carry
+
+[1,4] (mul) carry
+[2,4] (mul) digit pos
+[3,4] (mul) target pos
+
+[9+,0] {DIGIT-ARR} N(-2)
+[9+,1] {DIGIT-ARR} N(-1)
+[9+,2] {DIGIT-ARR} N(0)
+[9+,4] {DIGIT-ARR} D(-2)
+[9+,5] {DIGIT-ARR} D(-1)
+[9+,6] {DIGIT-ARR} D(0)
+[9+,7] {DIGIT-ARR} temp2 := N(0)^2
+[9+,8] {DIGIT-ARR} curr max N
+[9+,9] {DIGIT-ARR} temp1 := D(0)^2 * D + 1
+
+
+2147483648  -->  "@":::::+****
+1073741824  -->  "@"::::****
+67108864    -->  "@ ":*:**
+1000        -->  "}"8*
+
+
+Okay I admit this one took me five days to complete (with two days pause in between, because of I kinda got frustrated).
+
+I needed eight numbers that were too big for int64 so I encoded them in base-67108864 (`2^26`).
+The reason for this specific number (and I had to fail first to see the problem with bigger bases) is that the biggest calculation I do is `D_0 * D_0 * D * 1`.
+Which is maximally `2^26 * 2^26 * 2^10` which fits *barely* in an signed 64-bit integer.
+
+Also I needed to first write code to multiply two numbers, both in base-67108864 and both bigger than `2^63`. Let me tell you that was no fun and long-addition is far easier to implement than long-multiplication.
+Especially after first I did everything wrong and then had to redo it :/
+
+The first running version of this program was full of debug statements (even more than normally) and had a size of 200x60. (You can look at it, it's the `Problem-066 (annotated)` file).
+But after that I managed to shrink it quite a bit :D I even *(barely)* managed to fit it in the 80x25 restriction.
+I have the feeling I've gotten pretty good at compacting my programs...
+
+But back to the interesting stuff, how did I solve this one:
+
+I can' really explain everything in detail here, so I give you a few useful links:
+
+ - [https://en.wikipedia.org/wiki/Diophantine_equation](https://en.wikipedia.org/wiki/Diophantine_equation)
+ - [https://en.wikipedia.org/wiki/Pell's_equation](https://en.wikipedia.org/wiki/Pell%27s_equation)
+ - [https://en.wikipedia.org/wiki/Generalized_continued_fraction](https://en.wikipedia.org/wiki/Generalized_continued_fraction)
+ - [http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/cfINTRO.html#section9.4](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/cfINTRO.html#section9.4)
+
+If you want to have the `(x|y)` solution for a number D:
+
+ - First you calculate the continuous fraction of `sqrt(D)`
+ - For the continuous fraction you calculate the convergents `hi / ki` (read the link about Pell's equation)
+ - Now you just test if `hi` and `ki` are solutions, if not go on to the next convergent pair
+
+In the end the algorithm is really not that complex (around 30 lines in C#) but all the numbers get so big - and you need to multiply and add the already big numbers together so you get even bigger immediate values.
+So on a last note I could say ... I wished the numbers in befunge were unlimited.
