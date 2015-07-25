@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -54,20 +54,21 @@ def _3():
     sa(sr())
     return 4
 def _4():
-    sa((tm(sr(),2))+x0)
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    global t0
+    t0=(tm(sr(),2))+x0
     sa(td(sp(),2))
     sa(sr())
     return (25)if(sp()!=0)else(5)
 def _5():
+    global t0
+    global t1
+    global t1
+    global t1
     sp()
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (24)if(sp()!=0)else(6)
+    sa(sp()-t0);
+    t1=sp()
+    t1=(0)if(t1!=0)else(1)
+    return (24)if((t1)!=0)else(6)
 def _6():
     sp()
     return 7
@@ -76,10 +77,12 @@ def _7():
     sa(sr())
     return (8)if(sp()!=0)else(9)
 def _8():
+    global t0
     global x0
+    global t0
     sa(sr())
-    sa(sr()*10)
-    x0=sp()
+    t0=sr()*10
+    x0=t0
     sa((tm(sr(),10))+x0)
     v0=sp()
     v1=sp()
@@ -121,56 +124,35 @@ def _12():
     sa(sr())
     return 13
 def _13():
-    sa((tm(sr(),2))+x0)
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    global t0
+    t0=(tm(sr(),2))+x0
     sa(td(sp(),2))
     sa(sr())
     return (23)if(sp()!=0)else(14)
 def _14():
+    global t0
+    global t1
+    global t1
+    global t1
     sp()
-    v0=sp()
-    sa(sp()-v0)
-    sa((0)if(sp()!=0)else(1))
-    return (22)if(sp()!=0)else(15)
+    sa(sp()-t0);
+    t1=sp()
+    t1=(0)if(t1!=0)else(1)
+    return (22)if((t1)!=0)else(15)
 def _15():
     sp()
     return 16
 def _16():
     sa(sp()-1);
     sa(sr())
-    return (21)if(sp()!=0)else(17)
+    return (17)if(sp()!=0)else(18)
 def _17():
-    sa(61)
-    print(chr(32),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
-    return 18
-def _18():
-    sa(sp()+sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sr())
-    return (20)if(sp()!=0)else(19)
-def _19():
-    sa(sp()+sp());
-    print(sp(),end="",flush=True)
-    return 26
-def _20():
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()+sp());
-    return 18
-def _21():
+    global t0
     global x0
+    global t0
     sa(sr())
-    sa((td(sr(),10))*10)
-    x0=sp()
+    t0=(td(sr(),10))*10
+    x0=t0
     sa((tm(sr(),10))+x0)
     v0=sp()
     v1=sp()
@@ -179,41 +161,63 @@ def _21():
     sa(td(sp(),10))
     sa(sr())
     return 11
+def _18():
+    print(" =",end="",flush=True)
+    return 19
+def _19():
+    global t0
+    sa(sp()+sp());
+    t0=sp()
+    sa(sr())
+    return (20)if(sp()!=0)else(21)
+def _20():
+    global t0
+    sa(sp()+t0);
+    return 19
+def _21():
+    global t0
+    global t1
+    global t1
+    sa(t0)
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()+sp());
+    t1=sp()
+    print(t1,end="",flush=True)
+    return 26
 def _22():
+    print(chr(10),end="",flush=True)
     sa(sr())
     print(sp(),end="",flush=True)
-    print(chr(10),end="",flush=True)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     return 16
 def _23():
+    global t0
     global x0
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()*2);
-    x0=sp()
+    global t0
+    t0=t0*2
+    x0=t0
     return 13
 def _24():
+    print(chr(10),end="",flush=True)
     sa(sr())
     print(sp(),end="",flush=True)
-    print(chr(10),end="",flush=True)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     return 7
 def _25():
+    global t0
     global x0
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()*2);
-    x0=sp()
+    global t0
+    t0=t0*2
+    x0=t0
     return 4
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25]
 c=0

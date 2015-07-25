@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhre3D+ZddhBguBBfOPeJkPnZXcfWbtISE38nU71hEtcKnYVKa7iKXh3fvM7LlU+TsVPqyvclFY+/VojOV9sslb/Z/XTqt3ffTi9/zR+/"
   + "efv9vHX5m48W/Pv37Fdx2FVJsPkbrrMwjIJRMAqGPKjYaAQkE0p8/xnWh55/vpGndu6+848zXzxX/LI89MVnnf6Fr06vus+38faG4mz5sIdJU+R5Gd7ckBPbpp6ff23y"
@@ -52,11 +52,13 @@ def _1():
     sa((1)if((gr(3,0)+gr(3,0))<gr(0,0))else(0))
     return 2
 def _2():
-    return (22)if(sp()!=0)else(3)
+    return (21)if(sp()!=0)else(3)
 def _3():
     sp()
     return 4
 def _4():
+    global t0
+    global t0
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
     sa(tm(sr(),gr(1,0)))
@@ -67,11 +69,12 @@ def _4():
     sa(td(sp(),gr(1,0)))
     sa(sp()+3);
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-32);
+    t0=gr(sp(),v0)
+    t0=t0-32
     return 5
 def _5():
-    return (6)if(sp()!=0)else(4)
+    global t0
+    return (6)if((t0)!=0)else(4)
 def _6():
     return (1)if(gr(0,0)>gr(3,0))else(7)
 def _7():
@@ -80,26 +83,47 @@ def _7():
     return 8
 def _8():
     sa(gr(3,0))
-    return (21)if(gr(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3)!=88)else(9)
+    return (9)if(gr(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3)!=88)else(12)
 def _9():
+    sp()
+    return 10
+def _10():
+    global t0
+    global t0
+    global t0
+    global t0
+    t0=gr(3,0)+1
+    gw(3,0,gr(3,0)+1)
+    t0=t0-gr(0,0)
+    t0=(0)if(t0!=0)else(1)
+    return (11)if((t0)!=0)else(8)
+def _11():
+    global t0
+    global t0
+    t0=gr(9,0)
+    print(" =",end="",flush=True)
+    print(t0,end="",flush=True)
+    return 22
+def _12():
+    global t0
     gw(5,0,1)
     sa(sr())
-    sa(1)
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    t0=1
     sa(td(sp(),10))
     sa(sr())
     sa((0)if(sp()!=0)else(1))
-    return (10)if(sp()!=0)else(17)
-def _10():
+    return (13)if(sp()!=0)else(17)
+def _13():
+    global t0
     sp()
-    gw(6,0,sp())
+    gw(6,0,t0)
     sa(sr())
     gw(7,0,sp())
-    return 11
-def _11():
+    return 14
+def _14():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(tm(sr(),gr(1,0)))
     v0=sp()
@@ -109,69 +133,46 @@ def _11():
     sa(td(sp(),gr(1,0)))
     sa(sp()+3);
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-32);
-    return (12)if(sp()!=0)else(14)
-def _12():
-    sa(td(sr(),10))
+    t0=gr(sp(),v0)
+    t0=t0-32
+    return (15)if((t0)!=0)else(9)
+def _15():
+    global t0
+    global t0
+    global t0
+    global t0
+    t0=td(sr(),10)
+    sa(tm(sp(),10))
+    sa(sp()*gr(6,0));
+    sa(t0)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(tm(sp(),10))
-    sa(sp()*gr(6,0));
     sa(sp()+sp());
-    sa(gr(5,0)-1)
+    t0=gr(5,0)-1
     gw(5,0,gr(5,0)-1)
-    return (11)if(sp()!=0)else(13)
-def _13():
-    sa(10)
-    print(gr(7,0),end="",flush=True)
-    gw(9,0,gr(9,0)+1)
-    print(chr(sp()),end="",flush=True)
-    return 14
-def _14():
-    sp()
-    return 15
-def _15():
-    sa(gr(3,0)+1)
-    gw(3,0,gr(3,0)+1)
-    sa(sp()-gr(0,0));
-    sa((0)if(sp()!=0)else(1))
-    return (16)if(sp()!=0)else(8)
+    return (14)if((t0)!=0)else(16)
 def _16():
-    sa(gr(9,0))
-    sa(61)
-    print(chr(32),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
-    print(sp(),end="",flush=True)
-    return 23
+    print(gr(7,0),end="",flush=True)
+    print(chr(10),end="",flush=True)
+    gw(9,0,gr(9,0)+1)
+    return 9
 def _17():
     return (18)if(tm(sr(),2)==0)else(19)
 def _18():
     sp()
-    sp()
-    return 14
+    return 9
 def _19():
     return (18)if(tm(sr(),5)==0)else(20)
 def _20():
+    global t0
     gw(5,0,gr(5,0)+1)
     sa(td(sp(),10))
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()*10);
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    t0=t0*10
     sa(sr())
-    return (17)if(sp()!=0)else(10)
+    return (17)if(sp()!=0)else(13)
 def _21():
-    sp()
-    return 15
-def _22():
     sa(sr())
     sa(32)
     v0=sp()
@@ -191,7 +192,7 @@ def _22():
     sa(sp()+gr(3,0));
     sa((1)if(sr()<gr(0,0))else(0))
     return 2
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22]
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21]
 c=0
-while c<23:
+while c<22:
     c=m[c]()

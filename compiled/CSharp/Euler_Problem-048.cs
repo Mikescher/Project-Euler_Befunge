@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -9,11 +9,12 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
+        long t0;
         long x0=10000000000;
         long x1=32;
         long x2=32;
-        sa(0L);
-        sa(1000L);
+        sa(0);
+        sa(1000);
     _1:
         x2=sr();
         sa(sr());
@@ -28,15 +29,15 @@ static void Main(string[] args)
         sp();
         sa(sp()+x1);
         sa(tm(sp(),x0));
-        sa(x2-1L);
-        if(x2!=1L)goto _1;else goto _4;
+        sa(x2-1);
+        if(x2!=1)goto _1;else goto _4;
     _4:
         sp();
         System.Console.Out.Write((long)(sp()));
         return;
     _5:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(tm(sr()*x1,x0));
-        x1=sp();
+        t0=tm(sr()*x1,x0);
+        x1=t0;
         goto _2;
 }}

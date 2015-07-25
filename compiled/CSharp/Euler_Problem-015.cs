@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADtkM0KwjAQhF+l4i1LZLZV/EGCTxJ722tOOfXh3WCNSBtQ8LhzyWSHfJkkd38V1mQ0oxnNaEYzWpsWvmXlVhDaCSDsGSLFFC/0dCkHBhIzUtCWsj/3"+
@@ -18,29 +18,29 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        gw(0L,0L,1L);
-        gw(1L,0L,1L);
+        gw(0,0,1);
+        gw(1,0,1);
     _1:
-        if((gr(0L,0L)*(22L-gr(1L,0L)))!=0)goto _3;else goto _2;
+        if((gr(0,0)*(22-gr(1,0)))!=0)goto _3;else goto _2;
     _2:
-        gw(0L,0L,gr(0L,0L)+gr(1L,0L));
-        gw(1L,0L,1L);
+        gw(0,0,gr(0,0)+gr(1,0));
+        gw(1,0,1);
         goto _1;
     _3:
-        if(gr(0L,0L)>21L)goto _4;else goto _6;
+        if(gr(0,0)>21)goto _4;else goto _6;
     _4:
-        gw(0L,0L,gr(0L,0L)-1L);
-        gw(1L,0L,gr(1L,0L)+1L);
-        if((gr(1L,0L)+gr(0L,0L))<=42L)goto _1;else goto _5;
+        gw(0,0,gr(0,0)-1);
+        gw(1,0,gr(1,0)+1);
+        if((gr(1,0)+gr(0,0))<=42)goto _1;else goto _5;
     _5:
-        System.Console.Out.Write((long)(gr(21L,21L)));
+        System.Console.Out.Write(gr(21,21));
         return;
     _6:
-        if(((gr(0L,0L)-1L)*(gr(1L,0L)-1L))!=0)goto _8;else goto _7;
+        if(((gr(0,0)-1)*(gr(1,0)-1))!=0)goto _8;else goto _7;
     _7:
-        gw(gr(0L,0L),gr(1L,0L),1L);
+        gw(gr(0,0),gr(1,0),1);
         goto _4;
     _8:
-        gw(gr(0L,0L),gr(1L,0L),gr(gr(0L,0L)-1L,gr(1L,0L))+gr(gr(0L,0L),gr(1L,0L)-1L));
+        gw(gr(0,0),gr(1,0),gr(gr(0,0)-1,gr(1,0))+gr(gr(0,0),gr(1,0)-1));
         goto _4;
 }}

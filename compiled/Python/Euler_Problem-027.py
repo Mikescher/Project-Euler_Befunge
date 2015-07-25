@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhrc3HLsvO4gwPNg/ybdMn3Pr5JTbtzaw6N+zrdLIDTzdsEZC7O1J+fchYbp5u7vWeJTv57eacOaM9tJ+c/2badaPC7+9evb499nb/jdP"
   + "n78+e3bOlt11xXt/Trjqy8bQH8rIQBPwwSP1A/+Xn7trospKJW7tOXl6HaezJb/z5bZEo5k2+qc/GfEsXNv+duLbyHutZStuK3NXzPpnIb2O726MbncpTy7P58OfbUJr"
@@ -51,11 +51,13 @@ def _1():
     sa((1)if((gr(3,0)+gr(3,0))<gr(9,0))else(0))
     return 2
 def _2():
-    return (22)if(sp()!=0)else(3)
+    return (21)if(sp()!=0)else(3)
 def _3():
     sp()
     return 4
 def _4():
+    global t0
+    global t0
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
     sa(tm(sr(),gr(1,0)))
@@ -66,11 +68,12 @@ def _4():
     sa(td(sp(),gr(1,0)))
     sa(sp()+3);
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-32);
+    t0=gr(sp(),v0)
+    t0=t0-32
     return 5
 def _5():
-    return (6)if(sp()!=0)else(4)
+    global t0
+    return (6)if((t0)!=0)else(4)
 def _6():
     return (1)if(gr(9,0)>gr(3,0))else(7)
 def _7():
@@ -85,8 +88,11 @@ def _8():
     sa((1)if(((gr(5,0)*gr(7,0))+gr(6,0))>1)else(0))
     return 9
 def _9():
-    return (10)if(sp()!=0)else(21)
+    return (10)if(sp()!=0)else(20)
 def _10():
+    global t0
+    global t0
+    global t0
     sa(tm(sr(),gr(1,0)))
     v0=sp()
     v1=sp()
@@ -95,25 +101,30 @@ def _10():
     sa(td(sp(),gr(1,0)))
     sa(sp()+3);
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-32);
-    return (20)if(sp()!=0)else(11)
+    t0=gr(sp(),v0)
+    t0=t0-32
+    return (19)if((t0)!=0)else(11)
 def _11():
-    sa(gr(7,0))
-    return (19)if(gr(7,0)>gr(3,1))else(12)
+    global t0
+    t0=gr(7,0)
+    return (18)if(gr(7,0)>gr(3,1))else(12)
 def _12():
-    sp()
-    return 13
-def _13():
-    sa(gr(5,0)+2)
+    global t0
+    global t0
+    global t0
+    global t0
+    t0=gr(5,0)+2
     gw(5,0,gr(5,0)+2)
-    sa((1)if(sp()>gr(4,0))else(0))
-    sa((0)if(sp()!=0)else(1))
-    return (8)if(sp()!=0)else(14)
-def _14():
+    t0=(1)if(t0>gr(4,0))else(0)
+    t0=(0)if(t0!=0)else(1)
+    return (8)if((t0)!=0)else(13)
+def _13():
     gw(5,0,1-gr(4,0))
-    return 15
-def _15():
+    return 14
+def _14():
+    global t0
+    global t0
+    global t0
     sa(gr(6,0)+1)
     gw(6,0,gr(6,0)+1)
     sa(tm(sr(),gr(1,0)))
@@ -124,23 +135,25 @@ def _15():
     sa(td(sp(),gr(1,0)))
     sa(sp()+3);
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-32);
-    sa((0)if(sp()!=0)else(1))
-    return 16
+    t0=gr(sp(),v0)
+    t0=t0-32
+    t0=(0)if(t0!=0)else(1)
+    return 15
+def _15():
+    global t0
+    return (14)if((t0)!=0)else(16)
 def _16():
-    return (15)if(sp()!=0)else(17)
+    return (8)if(gr(6,0)<=gr(4,0))else(17)
 def _17():
-    return (8)if(gr(6,0)<=gr(4,0))else(18)
-def _18():
     print(gr(1,1)*gr(2,1),end="",flush=True)
-    return 23
-def _19():
-    gw(3,1,sp())
+    return 22
+def _18():
+    global t0
+    gw(3,1,t0)
     gw(1,1,gr(5,0))
     gw(2,1,gr(6,0))
-    return 13
-def _20():
+    return 12
+def _19():
     sa(gr(7,0)+1)
     gw(7,0,gr(7,0)+1)
     sa(sr())
@@ -148,10 +161,10 @@ def _20():
     sa(sp()+(gr(5,0)*gr(7,0))+gr(6,0));
     sa((1)if(sr()>1)else(0))
     return 9
-def _21():
+def _20():
     sp()
     return 11
-def _22():
+def _21():
     sa(sr())
     sa(32)
     v0=sp()
@@ -171,7 +184,7 @@ def _22():
     sa(sp()+gr(3,0));
     sa((1)if(sr()<gr(9,0))else(0))
     return 2
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22]
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21]
 c=0
-while c<23:
+while c<22:
     c=m[c]()

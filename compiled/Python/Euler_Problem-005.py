@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -30,15 +30,18 @@ def _0():
     return 1
 def _1():
     global x1
+    global t0
     global x0
+    global t1
     global x2
+    global t2
+    global t2
     x1=x1*x2
-    sa(x0)
-    sa(x2+1)
+    t0=x0
+    t1=x2+1
     x2=x2+1
-    v0=sp()
-    sa((1)if(sp()>v0)else(0))
-    return (3)if(sp()!=0)else(2)
+    t2=(1)if(t0>t1)else(0)
+    return (3)if((t2)!=0)else(2)
 def _2():
     global x1
     print(x1,end="",flush=True)
@@ -48,13 +51,15 @@ def _3():
     x3=1
     return 4
 def _4():
+    global t0
     global x3
     global x3
-    global x0
-    sa(x3)
+    global t0
+    global t0
+    t0=x3
     x3=x3+1
-    sa((1)if(sp()>x0)else(0))
-    return (1)if(sp()!=0)else(5)
+    t0=(1)if(t0>x0)else(0)
+    return (1)if((t0)!=0)else(5)
 def _5():
     return (4)if(tm(x1,x3)!=0)else(6)
 def _6():
@@ -64,14 +69,17 @@ def _6():
     x5=1
     return 7
 def _7():
+    global t0
     global x2
+    global t1
     global x5
-    sa(x2)
-    sa(x5+1)
+    global t2
+    global t2
+    t0=x2
+    t1=x5+1
     x5=x5+1
-    v0=sp()
-    sa((1)if(sp()>v0)else(0))
-    return (9)if(sp()!=0)else(8)
+    t2=(1)if(t0>t1)else(0)
+    return (9)if((t2)!=0)else(8)
 def _8():
     global x1
     x1=td(x1,x3)

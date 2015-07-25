@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABACNVMuO6yAM/RUmJJsibsHNqwh55g/6A1E60l2wzYpV7r9fmzTNoxl1rKhKiX045hyT/c0MDGIXUaCBYJVz/BGKDxnvVfq9WBjQpm/0Bs1J86oBGCKK"
   + "KDcxo6Eco9SnNvuXBTCeVvLVXv1+cy/QSjMKcbvdRHputCqX/C9JkPM/yQVT2VH4/t5LbzGKY26/C4TUMXV50R89ULW1xhgrP1MsaPgbtH3HXlhjj9AYr49QiiGAVU2n"
@@ -42,36 +42,52 @@ def _0():
     gw(0,2,99)
     return 1
 def _1():
-    return (2)if(gr(0,2)!=1000)else(48)
+    return (2)if(gr(0,2)!=1000)else(47)
 def _2():
-    sa(gr(0,2)+1)
-    sa(gr(0,2)+1)
+    global t0
+    global t1
+    global t1
+    global t1
+    global t1
+    t0=gr(0,2)+1
+    t1=gr(0,2)+1
     gw(0,2,gr(0,2)+1)
-    sa(tm(sp(),2))
-    sa((0)if(sp()!=0)else(1))
-    return (47)if(sp()!=0)else(3)
+    t1=tm(t1,2)
+    t1=(0)if(t1!=0)else(1)
+    return (1)if((t1)!=0)else(3)
 def _3():
-    sa(tm(sp(),5))
-    sa((0)if(sp()!=0)else(1))
-    return (1)if(sp()!=0)else(4)
+    global t0
+    global t0
+    global t0
+    t0=tm(t0,5)
+    t0=(0)if(t0!=0)else(1)
+    return (1)if((t0)!=0)else(4)
 def _4():
     gw(1,2,3)
     return 5
 def _5():
-    sa(gr(1,2)+1)
+    global t0
+    global t0
+    global t0
+    global t0
+    t0=gr(1,2)+1
     gw(1,2,gr(1,2)+1)
-    sa(sp()-14);
-    sa((0)if(sp()!=0)else(1))
-    return (1)if(sp()!=0)else(6)
+    t0=t0-14
+    t0=(0)if(t0!=0)else(1)
+    return (1)if((t0)!=0)else(6)
 def _6():
     gw(2,2,0)
     return (8)if(((gr(0,gr(1,2))-48)+gr(2,2))!=0)else(7)
 def _7():
-    sa(gr(2,2)+1)
+    global t0
+    global t0
+    global t0
+    global t0
+    t0=gr(2,2)+1
     gw(2,2,gr(2,2)+1)
-    sa(sp()-3);
-    sa((0)if(sp()!=0)else(1))
-    return (5)if(sp()!=0)else(8)
+    t0=t0-3
+    t0=(0)if(t0!=0)else(1)
+    return (5)if((t0)!=0)else(8)
 def _8():
     gw(4,2,gr(0,2))
     sa(5)
@@ -236,7 +252,7 @@ def _32():
     return (7)if(gr(8,2)!=8)else(33)
 def _33():
     print(gr(7,2),end="",flush=True)
-    return 49
+    return 48
 def _34():
     return (35)if(tm(sr(),3)!=0)else(30)
 def _35():
@@ -322,11 +338,8 @@ def _46():
     gw(v1,v0,sp())
     return 11
 def _47():
-    sp()
-    return 1
-def _48():
-    return 49
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25,_26,_27,_28,_29,_30,_31,_32,_33,_34,_35,_36,_37,_38,_39,_40,_41,_42,_43,_44,_45,_46,_47,_48]
+    return 48
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25,_26,_27,_28,_29,_30,_31,_32,_33,_34,_35,_36,_37,_38,_39,_40,_41,_42,_43,_44,_45,_46,_47]
 c=0
-while c<49:
+while c<48:
     c=m[c]()

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABACNksFqwzAMhl9FzZpLTYYktxmIYPYYOwSTm646+eSHn9zQkZaQTmAhWd8fS3bKz93gnZV/cue3xGrpC4DYAJPgTCbSURfKgaAOyiSBDGeYdvrzZRzp"
   + "vFM76CKykh4d2wjuKxTj65QaTcG3yrYupEtdM2w+52io7G6iB5cfPLYjraQrK2pszqNsf5wPEcjFa7qZxjuI+DxdGWVwdrwEuN0mNB79jjbI9+eaJPZ+OuyGMLLWvTFf"
@@ -80,7 +80,7 @@ def _5():
     gw(3,2,gr(3,2)+1)
     return 4
 def _6():
-    return (18)if(tm(gr(3,2),2)!=0)else(7)
+    return (17)if(tm(gr(3,2),2)!=0)else(7)
 def _7():
     gw(4,2,0)
     return 8
@@ -101,7 +101,7 @@ def _9():
     sa(gr(sp(),v0))
     sa(sp()-48);
     sa(sp()+sp());
-    return (17)if((gr(6,2))!=0)else(10)
+    return (16)if((gr(6,2))!=0)else(10)
 def _10():
     gw(0,2,3)
     sa(sr())
@@ -122,29 +122,25 @@ def _12():
     sp()
     return 4
 def _13():
-    return (16)if(sr()<=(gr(0,2)-2)*(gr(0,2)-2))else(14)
+    return (15)if(sr()<=(gr(0,2)-2)*(gr(0,2)-2))else(14)
 def _14():
     sa(sr())
     sa(gr(0,2))
     gw(0,2,gr(0,2)+1)
     v0=sp()
     sa(tm(sp(),v0))
-    return (13)if(sp()!=0)else(15)
+    return (13)if(sp()!=0)else(11)
 def _15():
-    gw(3,2,gr(3,2)+1)
-    sp()
-    return 12
-def _16():
     sp()
     print(sp(),end="",flush=True)
-    return 19
-def _17():
+    return 18
+def _16():
     sa(sp()*10);
     return 9
-def _18():
+def _17():
     gw(4,2,gr(gr(3,2),1))
     return 8
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18]
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17]
 c=0
-while c<19:
+while c<18:
     c=m[c]()

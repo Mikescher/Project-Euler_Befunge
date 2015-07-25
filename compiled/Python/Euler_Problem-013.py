@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADFmMtuZUkRRX/FbcPIWJWvyEepsJgw5wtcElCyhBphtcAjPp610l0+SVE8Zljtct9zT2bGY8eOHfl648+HDze/++kvf/ryh7/e/PZvP3756ebBz7//"
   + "8cufb3K9+Y8/deQ0yhxR60olpzLWHGusNUtJs47gaeuRU64xWiqR3pe2Xkdf/I7RVkppjVx6m7m0ufoaKY2ZIrU8Up6lp6jzfelotbQ1e14rShstp1j8KbXWtCLXFGxT"
@@ -70,15 +70,19 @@ def _0():
     gw(2,0,100)
     return 1
 def _1():
+    global t0
+    global t0
     gw(gr(1,0),gr(2,0),48)
-    sa(gr(1,0)-1)
+    t0=gr(1,0)-1
     gw(1,0,gr(1,0)-1)
-    return (15)if(sp()!=0)else(2)
+    return (15)if((t0)!=0)else(2)
 def _2():
+    global t0
+    global t0
     gw(1,0,5)
-    sa(gr(2,0)-1)
+    t0=gr(2,0)-1
     gw(2,0,gr(2,0)-1)
-    return (15)if(sp()!=0)else(3)
+    return (15)if((t0)!=0)else(3)
 def _3():
     gw(1,0,55)
     gw(2,0,1)
@@ -94,36 +98,46 @@ def _5():
 def _6():
     return (5)if(gr(gr(1,0),gr(2,0))!=32)else(7)
 def _7():
-    sa(gr(0,0))
+    global t0
+    global t0
+    global t0
+    t0=gr(0,0)
     gw(gr(1,0),gr(2,0),(tm(gr(0,0),10))+48)
     gw(2,0,1)
     gw(1,0,gr(1,0)-1)
-    sa(td(sp(),10))
-    gw(0,0,sp())
+    t0=td(t0,10)
+    gw(0,0,t0)
     return 4
 def _8():
     gw(1,0,0)
     gw(2,0,101)
     return 9
 def _9():
+    global t0
+    global t0
+    global t0
     sa(gr(1,0)+1)
     gw(1,0,gr(1,0)+1)
     sa(gr(2,0))
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-48);
-    sa((0)if(sp()!=0)else(1))
+    t0=gr(sp(),v0)
+    t0=t0-48
+    t0=(0)if(t0!=0)else(1)
     return 10
 def _10():
-    return (9)if(sp()!=0)else(11)
+    global t0
+    return (9)if((t0)!=0)else(11)
 def _11():
     gw(0,0,10)
     return 12
 def _12():
-    sa(gr(0,0))
+    global t0
+    global t0
+    global t0
+    t0=gr(0,0)
     gw(0,0,gr(0,0)-1)
-    sa((0)if(sp()!=0)else(1))
-    return (13)if(sp()!=0)else(14)
+    t0=(0)if(t0!=0)else(1)
+    return (13)if((t0)!=0)else(14)
 def _13():
     return 16
 def _14():

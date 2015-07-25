@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -33,72 +33,71 @@ void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
 int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
+    int64 t0,t1,t2,t3,t4;
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    gw(0LL,0LL,675LL);
+    gw(0,0,675);
 _1:
-    gw((tm(gr(0LL,0LL),26LL))+63LL,(td(gr(0LL,0LL),26LL))+1LL,0LL);
-    sa(gr(0LL,0LL));
-    gw(0LL,0LL,gr(0LL,0LL)-1LL);
-    if(sp()!=0)goto _1;else goto _3;
+    gw((tm(gr(0,0),26))+63,(td(gr(0,0),26))+1,0);
+    t0=gr(0,0);
+    gw(0,0,gr(0,0)-1);
+    if((t0)!=0)goto _1;else goto _3;
 _3:
-    gw(1LL,0LL,0LL);
-    gw(9LL,0LL,0LL);
-    gw(9LL,1LL,-1LL);
-    gw(10LL,0LL,1LL);
-    gw(10LL,1LL,-1LL);
-    gw(11LL,0LL,1LL);
-    gw(11LL,1LL,0LL);
-    gw(0LL,0LL,399LL);
+    gw(1,0,0);
+    gw(9,0,0);
+    gw(9,1,-1);
+    gw(10,0,1);
+    gw(10,1,-1);
+    gw(11,0,1);
+    gw(11,1,0);
+    gw(0,0,399);
 _4:
-    gw((tm(gr(0LL,0LL),20LL))+66LL,(td(gr(0LL,0LL),20LL))+4LL,((gr(((tm(gr(0LL,0LL),20LL))*3LL)+1LL,(td(gr(0LL,0LL),20LL))+4LL)-48LL)*10LL)+(gr(((tm(gr(0LL,0LL),20LL))*3LL)+2LL,(td(gr(0LL,0LL),20LL))+4LL)-48LL));
-    sa(gr(0LL,0LL));
-    gw(0LL,0LL,gr(0LL,0LL)-1LL);
-    if(sp()!=0)goto _4;else goto _6;
+    gw((tm(gr(0,0),20))+66,(td(gr(0,0),20))+4,((gr(((tm(gr(0,0),20))*3)+1,(td(gr(0,0),20))+4)-48)*10)+(gr(((tm(gr(0,0),20))*3)+2,(td(gr(0,0),20))+4)-48));
+    t0=gr(0,0);
+    gw(0,0,gr(0,0)-1);
+    if((t0)!=0)goto _4;else goto _6;
 _6:
-    gw(0LL,0LL,399LL);
+    gw(0,0,399);
 _7:
-    gw(2LL,0LL,2LL);
+    gw(2,0,2);
 _8:
-    sa(gr(2LL,0LL)+9LL);
-    gw(3LL,0LL,gr(gr(2LL,0LL)+9LL,0LL));
-    sa(1LL);
-    {int64 v0=sp();sa(gr(sp(),v0));}
-    gw(4LL,0LL,sp());
-    sa(gr(0LL,0LL));
-    gw(5LL,0LL,tm(gr(0LL,0LL),20LL));
-    sa(td(sp(),20L));
-    gw(6LL,0LL,sp());
-    sa(gr(gr(5LL,0LL)+66LL,gr(6LL,0LL)+4LL));
-    gw(5LL,0LL,gr(5LL,0LL)+gr(3LL,0LL));
-    gw(6LL,0LL,gr(6LL,0LL)+gr(4LL,0LL));
-    sa(gr(gr(5LL,0LL)+66LL,gr(6LL,0LL)+4LL));
-    gw(5LL,0LL,gr(5LL,0LL)+gr(3LL,0LL));
-    gw(6LL,0LL,gr(6LL,0LL)+gr(4LL,0LL));
-    sa(gr(gr(5LL,0LL)+66LL,gr(6LL,0LL)+4LL));
-    gw(5LL,0LL,gr(5LL,0LL)+gr(3LL,0LL));
-    gw(6LL,0LL,gr(6LL,0LL)+gr(4LL,0LL));
-    sa(gr(gr(5LL,0LL)+66LL,gr(6LL,0LL)+4LL));
-    gw(5LL,0LL,gr(5LL,0LL)+gr(3LL,0LL));
-    gw(6LL,0LL,gr(6LL,0LL)+gr(4LL,0LL));
-    sa(sp()*sp());
-    sa(sp()*sp());
-    sa(sp()*sp());
-    if(sr()>gr(1L,0L))goto _13;else goto _9;
+    sa(gr(2,0)+9);
+    gw(3,0,gr(gr(2,0)+9,0));
+    sa(1);
+    {int64 v0=sp();t0=gr(sp(),v0);}
+    gw(4,0,t0);
+    t0=gr(0,0);
+    gw(5,0,tm(gr(0,0),20));
+    t0=td(t0,20);
+    gw(6,0,t0);
+    t0=gr(gr(5,0)+66,gr(6,0)+4);
+    gw(5,0,gr(5,0)+gr(3,0));
+    gw(6,0,gr(6,0)+gr(4,0));
+    t1=gr(gr(5,0)+66,gr(6,0)+4);
+    gw(5,0,gr(5,0)+gr(3,0));
+    gw(6,0,gr(6,0)+gr(4,0));
+    t2=gr(gr(5,0)+66,gr(6,0)+4);
+    gw(5,0,gr(5,0)+gr(3,0));
+    gw(6,0,gr(6,0)+gr(4,0));
+    t3=gr(gr(5,0)+66,gr(6,0)+4);
+    gw(5,0,gr(5,0)+gr(3,0));
+    gw(6,0,gr(6,0)+gr(4,0));
+    t4=t2*t3;
+    t2=t1*t4;
+    t1=t0*t2;
+    if(t1>gr(1,0))goto _12;else goto _9;
 _9:
-    sp();
+    t0=gr(2,0);
+    gw(2,0,gr(2,0)-1);
+    if((t0)!=0)goto _8;else goto _10;
 _10:
-    sa(gr(2LL,0LL));
-    gw(2LL,0LL,gr(2LL,0LL)-1LL);
-    if(sp()!=0)goto _8;else goto _11;
+    t0=gr(0,0);
+    gw(0,0,gr(0,0)-1);
+    if((t0)!=0)goto _7;else goto _11;
 _11:
-    sa(gr(0LL,0LL));
-    gw(0LL,0LL,gr(0LL,0LL)-1LL);
-    if(sp()!=0)goto _7;else goto _12;
-_12:
-    printf("%lld", (int64)(gr(1LL,0LL)));
+    printf("%lld", gr(1,0));
     return 0;
-_13:
-    gw(1LL,0LL,sp());
-    goto _10;
+_12:
+    gw(1,0,t1);
+    goto _9;
 }

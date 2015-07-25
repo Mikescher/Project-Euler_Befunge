@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABAClUUFqxDAQ+4pJ9zQmRRpvdjfBmD6khB4Kc52TT3l8nW4CbSGFbnWwPTPIkuX6tCP8HY+x/o2CHYQrPMHP8AF+gV/hN/gID6F771RCIH1UOhI9oNaH"+
@@ -19,57 +19,56 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
-        gw(1L,0L,0L);
-        gw(2L,0L,0L);
-        gw(3L,0L,0L);
-        gw(4L,0L,0L);
-        gw(5L,0L,0L);
-        gw(6L,0L,0L);
-        gw(7L,0L,0L);
-        gw(8L,0L,0L);
-        gw(9L,0L,0L);
-        gw(1L,1L,200L);
-        gw(2L,1L,9L);
-        gw(3L,1L,0L);
-        gw(gr(2L,1L),0L,gr(gr(2L,1L),0L)+1L);
+        long t0;
+        gw(1,0,0);
+        gw(2,0,0);
+        gw(3,0,0);
+        gw(4,0,0);
+        gw(5,0,0);
+        gw(6,0,0);
+        gw(7,0,0);
+        gw(8,0,0);
+        gw(9,0,0);
+        gw(1,1,200);
+        gw(2,1,9);
+        gw(3,1,0);
+        gw(gr(2,1),0,gr(gr(2,1),0)+1);
     _1:
-        if(gr(2L,1L)!=9L)goto _11;else goto _2;
+        if(gr(2,1)!=9)goto _11;else goto _2;
     _2:
-        sa((gr(1L,0L)*500L)+(gr(2L,0L)*200L)+(100L*gr(3L,0L))+(gr(4L,0L)*50L)+(gr(5L,0L)*20L)+(gr(6L,0L)*10L)+(gr(7L,0L)*5L)+(gr(8L,0L)*2L)+gr(9L,0L));
-        if(((gr(1L,0L)*500L)+(gr(2L,0L)*200L)+(100L*gr(3L,0L))+(gr(4L,0L)*50L)+(gr(5L,0L)*20L)+(gr(6L,0L)*10L)+(gr(7L,0L)*5L)+(gr(8L,0L)*2L)+gr(9L,0L))<gr(1L,1L))goto _10;else goto _3;
+        t0=(gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0);
+        if(((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0))<gr(1,1))goto _10;else goto _3;
     _3:
-        sa(sp()-gr(1L,1L));
-        if(sp()!=0)goto _4;else goto _9;
+        t0=t0-gr(1,1);
+        if((t0)!=0)goto _4;else goto _9;
     _4:
-        sa(gr(2L,1L));
-        if((gr(gr(2L,1L),0L))!=0)goto _6;else goto _5;
+        t0=gr(2,1);
+        if((gr(gr(2,1),0))!=0)goto _6;else goto _5;
     _5:
-        sa(sp()-1L);
-        gw(2L,1L,sp());
+        t0=t0-1;
+        gw(2,1,t0);
         goto _4;
     _6:
-        if(sr()!=1L)goto _8;else goto _7;
+        if(t0!=1)goto _8;else goto _7;
     _7:
-        sp();
-        System.Console.Out.Write((long)(gr(3L,1L)));
+        System.Console.Out.Write(gr(3,1));
         return;
     _8:
-        sa(sp()-1L);
-        gw(2L,1L,sp());
-        gw(gr(2L,1L),0L,gr(gr(2L,1L),0L)+1L);
+        t0=t0-1;
+        gw(2,1,t0);
+        gw(gr(2,1),0,gr(gr(2,1),0)+1);
         goto _1;
     _9:
-        gw(3L,1L,gr(3L,1L)+1L);
+        gw(3,1,gr(3,1)+1);
         goto _4;
     _10:
-        gw(gr(2L,1L),0L,gr(gr(2L,1L),0L)+1L);
-        sp();
+        gw(gr(2,1),0,gr(gr(2,1),0)+1);
         goto _1;
     _11:
-        sa(0L);
-        sa(gr(2L,1L)+1L);
-        gw(2L,1L,gr(2L,1L)+1L);
-        sa(0L);
+        sa(0);
+        sa(gr(2,1)+1);
+        gw(2,1,gr(2,1)+1);
+        sa(0);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _1;
 }}

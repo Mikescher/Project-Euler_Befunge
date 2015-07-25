@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -10,24 +10,25 @@ void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
 int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
+    int64 t0,t1;
     int64 x0=32;
     int64 x1=32;
     s=(int64*)calloc(q,sizeof(int64));
-    sa(0LL);
-    sa(10000LL);
-    sa(10000LL);
-    sa(0LL);
-    sa(10000LL);
+    sa(0);
+    sa(10000);
+    sa(10000);
+    sa(0);
+    sa(10000);
 _1:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()*10LL);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(tm(sr(),10LL));
-    x1=sp();
+    t0=tm(sr(),10);
+    x1=t0;
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()+x1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10L));
+    sa(td(sp(),10));
     sa(sr());
     sa((sp()!=0)?0:1);
 _2:
@@ -35,22 +36,22 @@ _2:
 _3:
     sp();
     sa(sp()+sp());
-    sa(24LL);
+    sa(24);
 _4:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
     sa(sr());
-    sa(0LL);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    t0=0;
 _5:
     sa(sr());
     sa((sp()!=0)?0:1);
     if(sp()!=0)goto _6;else goto _13;
 _6:
     sp();
-    x0=sr();
-    {int64 v0=sp();sa(sp()-v0);}
-    if(sp()!=0)goto _7;else goto _12;
+    x0=t0;
+    sa(sp()-t0);
+    t1=sp();
+    if((t1)!=0)goto _7;else goto _12;
 _7:
     sa(sr());
     sp();
@@ -78,7 +79,7 @@ _10:
 _11:
     sa(sr());
     sa(sr());
-    sa(0LL);
+    sa(0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
     sa((sp()!=0)?0:1);
@@ -88,14 +89,10 @@ _12:
     sp();
     goto _9;
 _13:
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sp()*10LL);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(tm(sr(),10LL));
-    x1=sp();
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(sp()+x1);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10L));
+    t0=t0*10;
+    t1=tm(sr(),10);
+    x1=t1;
+    t0=t0+x1;
+    sa(td(sp(),10));
     goto _5;
 }

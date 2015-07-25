@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -17,41 +17,42 @@ void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
 int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
+    int64 t0,t1;
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    sa(99LL);
+    sa(99);
 _1:
     sa(sr());
-    gw(0LL,3LL,sp());
-    gw(1LL,3LL,0LL);
-    gw(2LL,3LL,199LL);
+    gw(0,3,sp());
+    gw(1,3,0);
+    gw(2,3,199);
 _2:
-    sa(((gr((tm(gr(2LL,3LL),100LL))+1LL,td(gr(2LL,3LL),100LL))-48LL)*gr(0LL,3LL))+gr(1LL,3LL));
-    gw((tm(gr(2LL,3LL),100LL))+1LL,td(gr(2LL,3LL),100LL),(tm(((gr((tm(gr(2LL,3LL),100LL))+1LL,td(gr(2LL,3LL),100LL))-48LL)*gr(0LL,3LL))+gr(1LL,3LL),10LL))+48LL);
-    sa(td(sp(),10L));
-    gw(1LL,3LL,sp());
-    sa(gr(2LL,3LL)-1LL);
-    gw(2LL,3LL,gr(2LL,3LL)-1LL);
-    sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _4;else goto _2;
+    t0=((gr((tm(gr(2,3),100))+1,td(gr(2,3),100))-48)*gr(0,3))+gr(1,3);
+    gw((tm(gr(2,3),100))+1,td(gr(2,3),100),(tm(((gr((tm(gr(2,3),100))+1,td(gr(2,3),100))-48)*gr(0,3))+gr(1,3),10))+48);
+    t0=td(t0,10);
+    gw(1,3,t0);
+    t0=gr(2,3)-1;
+    gw(2,3,gr(2,3)-1);
+    t0=(t0!=0)?0:1;
+    if((t0)!=0)goto _4;else goto _2;
 _4:
     sa(sp()-1LL);
     sa(sr());
     sa((sp()!=0)?0:1);
     if(sp()!=0)goto _5;else goto _1;
 _5:
-    gw(3LL,3LL,199LL);
+    gw(3,3,199);
     sp();
-    sa(gr((tm(gr(3LL,3LL),100LL))+1LL,td(gr(3LL,3LL),100LL))-48LL);
+    t0=gr((tm(gr(3,3),100))+1,td(gr(3,3),100))-48;
 _6:
-    sa(gr(3LL,3LL));
-    gw(3LL,3LL,gr(3LL,3LL)-1LL);
-    sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _7;else goto _8;
+    t1=gr(3,3);
+    gw(3,3,gr(3,3)-1);
+    t1=(t1!=0)?0:1;
+    if((t1)!=0)goto _7;else goto _8;
 _7:
-    printf("%lld", (int64)(sp()));
+    printf("%lld", t0);
     return 0;
 _8:
-    sa(sp()+(gr((tm(gr(3LL,3LL),100LL))+1LL,td(gr(3LL,3LL),100LL))-48LL));
+    t0=t0+(gr((tm(gr(3,3),100))+1,td(gr(3,3),100))-48);
     goto _6;
 }

@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -21,92 +21,87 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    gw(1LL,2LL,7LL);
-    gw(0LL,1LL,0LL);
-    gw(0LL,0LL,49LL);
+    gw(1,2,7);
+    gw(0,1,0);
+    gw(0,0,49);
     sp();
-    sa(1LL);
-    sa(1LL-gr(1LL,2LL));
+    sa(1);
+    sa(1-gr(1,2));
 _1:
     if(sp()!=0)goto _2;else goto _3;
 _2:
     sa(sr());
-    sa(0LL);
+    sa(0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(1LL);
+    sa(1);
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
-    sa(sr()+49LL);
+    sa(sr()+49);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(0LL);
+    sa(0);
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sp()+1LL);
-    sa(sr()-gr(1LL,2LL));
+    sa(sr()-gr(1,2));
     goto _1;
 _3:
-    gw(3LL,2LL,1LL);
+    gw(3,2,1);
     sp();
 _4:
-    if(gr(3L,2L)>gr(gr(3L,2L),1L))goto _6;else goto _5;
+    if(gr(3,2)>gr(gr(3,2),1))goto _6;else goto _5;
 _5:
-    gw(gr(3LL,2LL),1LL,0LL);
-    gw(3LL,2LL,gr(3LL,2LL)+1LL);
+    gw(gr(3,2),1,0);
+    gw(3,2,gr(3,2)+1);
     goto _4;
 _6:
-    if(tm(gr(3LL,2LL),2LL)!=0)goto _18;else goto _7;
+    if(tm(gr(3,2),2)!=0)goto _17;else goto _7;
 _7:
-    gw(4LL,2LL,0LL);
+    gw(4,2,0);
 _8:
-    sa(gr(gr(4LL,2LL),0LL));
-    gw(gr(4LL,2LL),0LL,gr(gr(3LL,2LL),0LL));
-    gw(gr(3LL,2LL),0LL,sp());
-    gw(gr(3LL,2LL),1LL,gr(gr(3LL,2LL),1LL)+1LL);
-    gw(3LL,2LL,0LL);
-    gw(6LL,2LL,gr(1LL,2LL));
-    sa(0LL);
+    sa(gr(gr(4,2),0));
+    gw(gr(4,2),0,gr(gr(3,2),0));
+    gw(gr(3,2),0,sp());
+    gw(gr(3,2),1,gr(gr(3,2),1)+1);
+    gw(3,2,0);
+    gw(6,2,gr(1,2));
+    sa(0);
 _9:
-    sa(gr(6LL,2LL)-1LL);
-    gw(6LL,2LL,gr(6LL,2LL)-1LL);
-    sa(0LL);
+    sa(gr(6,2)-1);
+    gw(6,2,gr(6,2)-1);
+    sa(0);
     {int64 v0=sp();sa(gr(sp(),v0));}
     sa(sp()-48LL);
     sa(sp()+sp());
-    if((gr(6LL,2LL))!=0)goto _17;else goto _10;
+    if((gr(6,2))!=0)goto _16;else goto _10;
 _10:
-    gw(0LL,2LL,3LL);
+    gw(0,2,3);
     sa(sr());
     sa(sr());
-    sa(sr()<=2L?1:0);
+    sa(sr()<=2?1:0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(tm(sp(),2L));
+    sa(tm(sp(),2));
     sa(sp()+sp());
     if(sp()!=0)goto _13;else goto _11;
 _11:
-    gw(3LL,2LL,gr(3LL,2LL)+1LL);
+    gw(3,2,gr(3,2)+1);
     sp();
-_12:
     sp();
     goto _4;
 _13:
-    if(sr()<=(gr(0L,2L)-2L)*(gr(0L,2L)-2L))goto _16;else goto _14;
+    if(sr()<=(gr(0,2)-2)*(gr(0,2)-2))goto _15;else goto _14;
 _14:
     sa(sr());
-    sa(gr(0LL,2LL));
-    gw(0LL,2LL,gr(0LL,2LL)+1LL);
+    sa(gr(0,2));
+    gw(0,2,gr(0,2)+1);
     {int64 v0=sp();sa(tm(sp(),v0));}
-    if(sp()!=0)goto _13;else goto _15;
+    if(sp()!=0)goto _13;else goto _11;
 _15:
-    gw(3LL,2LL,gr(3LL,2LL)+1LL);
-    sp();
-    goto _12;
-_16:
     sp();
     printf("%lld", (int64)(sp()));
     return 0;
-_17:
+_16:
     sa(sp()*10LL);
     goto _9;
-_18:
-    gw(4LL,2LL,gr(gr(3LL,2LL),1LL));
+_17:
+    gw(4,2,gr(gr(3,2),1));
     goto _8;
 }

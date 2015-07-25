@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -9,63 +9,69 @@ private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[] args)
 {
+        long t0,t1;
         long x0=1000;
         long x1=2;
         long x2=34;
         long x3=53;
     _1:
-        x2=1L;
+        x2=1;
     _2:
         sa((x2*x2)+(x1*x1));
         x3=(x2*x2)+(x1*x1);
-        sa(0L);
-        sa(0L-x3);
+        sa(0);
+        sa(0-x3);
     _3:
-        if(sp()!=0)goto _10;else goto _4;
+        if(sp()!=0)goto _4;else goto _10;
     _4:
-        x3=sr();
-        sa(sp()+x2+x1);
-        sa(sp()-x0);
-        if(sp()!=0)goto _5;else goto _9;
+        sa(sp()+1L);
+        if(sr()!=x0)goto _9;else goto _5;
     _5:
         sp();
+        sp();
     _6:
-        sa(x2+1L);
-        x2=x2+1L;
-        sa(sp()-x1);
-        if(sp()!=0)goto _2;else goto _7;
+        t0=x2+1;
+        x2=x2+1;
+        t0=t0-x1;
+        if((t0)!=0)goto _2;else goto _7;
     _7:
-        sa(x1+1L);
-        x1=x1+1L;
-        sa(sp()-x0);
-        if(sp()!=0)goto _1;else goto _8;
+        t0=x1+1;
+        x1=x1+1;
+        t0=t0-x0;
+        if((t0)!=0)goto _1;else goto _8;
     _8:
         return;
     _9:
-        sa(x2);
-        System.Console.Out.Write((long)(x2));
-        System.Console.Out.Write(' ');
-        sa(x1);
-        System.Console.Out.Write((long)(x1));
-        System.Console.Out.Write(' ');
-        sa(x3);
-        System.Console.Out.Write((long)(x3));
-        System.Console.Out.Write('=');
-        sa(sp()*sp());
-        sa(sp()*sp());
-        System.Console.Out.Write((long)(sp()));
-        return;
-    _10:
-        sa(sp()+1L);
-        if(sr()!=x0)goto _12;else goto _11;
-    _11:
-        sp();
-        sp();
-        goto _6;
-    _12:
         sa(sr());
         sa(sr());
         sa(sp()*sp());
         sa(sp()-x3);
         goto _3;
+    _10:
+        x3=sr();
+        sa(sp()+x2+x1);
+        sa(sp()-x0);
+        if(sp()!=0)goto _11;else goto _12;
+    _11:
+        sp();
+        goto _6;
+    _12:
+        sa(x2);
+        System.Console.Out.Write(' ');
+        sa(sr());
+        System.Console.Out.Write((long)(sp()));
+        sa(x1);
+        System.Console.Out.Write(' ');
+        sa(sr());
+        System.Console.Out.Write((long)(sp()));
+        sa(x3);
+        System.Console.Out.Write('=');
+        sa(sr());
+        System.Console.Out.Write((long)(sp()));
+        sa(sp()*sp());
+        t0=sp();
+        sa(sp()*t0);
+        t1=sp();
+        System.Console.Out.Write(t1);
+        return;
 }}

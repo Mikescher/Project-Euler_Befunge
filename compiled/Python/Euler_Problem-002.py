@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -26,23 +26,29 @@ x2=2
 def _0():
     return 1
 def _1():
+    global t0
+    global x0
+    global t1
+    global x1
     global x0
     global x1
-    global x0
     global x1
-    global x1
-    sa(x0)
-    sa(x1)
+    t0=x0
+    t1=x1
     x0=x1
-    sa(sp()+sp());
+    sa(t0+t1)
     x1=sr()
     return (5)if(sr()>10240000)else(2)
 def _2():
+    global t0
+    global t0
+    global t1
+    global t1
     sa(sr())
-    sa((td(sr(),2))*2)
-    v0=sp()
-    sa(sp()-v0)
-    return (3)if(sp()!=0)else(4)
+    t0=(td(sr(),2))*2
+    sa(sp()-t0);
+    t1=sp()
+    return (3)if((t1)!=0)else(4)
 def _3():
     sp()
     return 1

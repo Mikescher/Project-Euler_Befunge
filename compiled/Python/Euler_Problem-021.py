@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADt2slqwzAQgOFXcb1cIi8jxzpEBNEHCUkPBV110skPnwmmgdCWlDaB0PzfRaPRgpDxnJQLPJIKAAAAAAAAAAAAAAAAAIB/4OqDuZA/gvPcfIq2d3qg"
   + "9+RC+V5OK28lObdaiSSRGGzn/ajhbhz8HDSMu6baH/xaklkv49qt8/XtcQOz/zKdjB2i2ChjszT8IreX6/qin6zIxT0H++3a/X2O9NSC1ifbnYrTRlLQymQlNkszWBMn"
@@ -52,15 +52,21 @@ def _1():
     sa(sr())
     return (2)if(sp()!=0)else(16)
 def _2():
+    global t0
+    global t0
+    global t1
+    global t1
     sa(sr())
-    sa(gr(2,0))
+    t0=gr(2,0)
+    sa(t0)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     v0=sp()
     sa(tm(sp(),v0))
-    return (15)if(sp()!=0)else(3)
+    t1=sp()
+    return (15)if((t1)!=0)else(3)
 def _3():
     sa(sr())
     gw(3,0,sp())
@@ -102,15 +108,13 @@ def _11():
 def _12():
     return (9)if(gr(2,0)<=gr(4,0))else(13)
 def _13():
-    print(gr(2,0),end="",flush=True)
-    sa(32)
-    sa(45)
-    print(chr(32),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
-    print(gr(4,0),end="",flush=True)
-    gw(9,0,gr(9,0)+gr(2,0)+gr(4,0))
+    sa(gr(2,0))
+    print(" - ",end="",flush=True)
+    print(sp(),end="",flush=True)
+    sa(gr(4,0))
     print(chr(10),end="",flush=True)
+    gw(9,0,gr(9,0)+gr(2,0)+gr(4,0))
+    print(sp(),end="",flush=True)
     return 9
 def _14():
     sa(sp()-1);

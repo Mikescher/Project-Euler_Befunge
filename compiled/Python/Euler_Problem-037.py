@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhre3DuZddhBguBBfKPt9ksnZXWpdSVNFxd/JVG+YxLVCZ6HSGq6aV8c36/Gqdjg4tK54ZHvy2jrjbPXlJ9csP79v1tlN4eby92L3/pyx"
   + "909Jbelk3/afr1+v/h659QTY+Ia5bgyjYBSMgiEPDtRrMzPM2zNj/9n5Z48/3sVz16b3+NfIF8cUS9JDX3zSWe98dWrodf6NtRFnVm/eEHmrNdXC/o45O4PZr7+Hyp68"
@@ -57,6 +57,8 @@ def _3():
     sp()
     return 4
 def _4():
+    global t0
+    global t0
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
     sa(tm(sr(),gr(1,0)))
@@ -67,11 +69,12 @@ def _4():
     sa(td(sp(),gr(1,0)))
     sa(sp()+3);
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-32);
+    t0=gr(sp(),v0)
+    t0=t0-32
     return 5
 def _5():
-    return (6)if(sp()!=0)else(4)
+    global t0
+    return (6)if((t0)!=0)else(4)
 def _6():
     return (1)if(gr(0,0)>gr(3,0))else(7)
 def _7():
@@ -91,6 +94,9 @@ def _8():
 def _9():
     return (10)if(sp()!=0)else(26)
 def _10():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(tm(sr(),gr(1,0)))
     v0=sp()
@@ -100,13 +106,45 @@ def _10():
     sa(td(sp(),gr(1,0)))
     sa(sp()+3);
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-88);
-    return (26)if(sp()!=0)else(11)
+    t0=gr(sp(),v0)
+    t0=t0-88
+    return (26)if((t0)!=0)else(11)
 def _11():
     sa(sr())
-    return (25)if(sr()<10)else(12)
+    return (12)if(sr()<10)else(19)
 def _12():
+    sp()
+    sa((0)if(sp()!=0)else(1))
+    sa(sr())
+    return 13
+def _13():
+    sp()
+    sp()
+    return 14
+def _14():
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    return 15
+def _15():
+    return (18)if(sr()!=1)else(16)
+def _16():
+    sp()
+    sa(sr())
+    sa((0)if(sp()!=0)else(1))
+    return (17)if(sp()!=0)else(8)
+def _17():
+    print(" =",end="",flush=True)
+    print(gr(9,0),end="",flush=True)
+    sp()
+    return 28
+def _18():
+    sa(sp()-1);
+    sa(sr()+gr(7,0)*10)
+    sa((1)if(sr()<gr(0,0))else(0))
+    return 9
+def _19():
     sa(td(sr(),10))
     sa(1)
     v0=sp()
@@ -115,8 +153,10 @@ def _12():
     sa(v1)
     sa(sr())
     sa((0)if(sp()!=0)else(1))
-    return (15)if(sp()!=0)else(13)
-def _13():
+    return 20
+def _20():
+    return (22)if(sp()!=0)else(21)
+def _21():
     sa(td(sp(),10))
     v0=sp()
     v1=sp()
@@ -129,17 +169,18 @@ def _13():
     sa(v1)
     sa(sr())
     sa((0)if(sp()!=0)else(1))
-    return 14
-def _14():
-    return (15)if(sp()!=0)else(13)
-def _15():
+    return 20
+def _22():
     sp()
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    return 16
-def _16():
+    return 23
+def _23():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(tm(sr(),gr(1,0)))
     v0=sp()
@@ -149,10 +190,10 @@ def _16():
     sa(td(sp(),gr(1,0)))
     sa(sp()+3);
     v0=sp()
-    sa(gr(sp(),v0))
-    sa(sp()-88);
-    return (24)if(sp()!=0)else(17)
-def _17():
+    t0=gr(sp(),v0)
+    t0=t0-88
+    return (13)if((t0)!=0)else(24)
+def _24():
     v0=sp()
     v1=sp()
     sa(v0)
@@ -167,54 +208,20 @@ def _17():
     sa(v0)
     sa(v1)
     sa(sr())
-    return (16)if(sp()!=0)else(18)
-def _18():
+    return (23)if(sp()!=0)else(25)
+def _25():
     sp()
     sp()
+    print(chr(10),end="",flush=True)
     sa(sr())
     sa(sr())
     print(sp(),end="",flush=True)
-    print(chr(10),end="",flush=True)
     sa(sp()+gr(9,0));
     gw(9,0,sp())
-    return 19
-def _19():
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    return 20
-def _20():
-    return (23)if(sr()!=1)else(21)
-def _21():
-    sp()
-    sa(sr())
-    sa((0)if(sp()!=0)else(1))
-    return (22)if(sp()!=0)else(8)
-def _22():
-    sp()
-    sa(61)
-    print(chr(32),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
-    print(gr(9,0),end="",flush=True)
-    return 28
-def _23():
-    sa(sp()-1);
-    sa(sr()+gr(7,0)*10)
-    sa((1)if(sr()<gr(0,0))else(0))
-    return 9
-def _24():
-    sp()
-    sp()
-    return 19
-def _25():
-    sp()
-    sa((0)if(sp()!=0)else(1))
-    sa(sr())
-    return 24
+    return 14
 def _26():
     sp()
-    return 20
+    return 15
 def _27():
     sa(sr())
     sa(32)

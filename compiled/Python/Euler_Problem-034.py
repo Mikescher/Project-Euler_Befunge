@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABACVjr0OgzAMhF8lUsriiGID4ecURX2QCMasnjLx8A2dWqoO9XLW2b7PxfxRUcCsQhDWntCzDoSBdSSMrJ5Q3paLivBNeQWtygtoUZ5Bs/IEmpR9+Mov"
   + "e7G/6Wgl1EwT4sp5pghwivDeNZxTlQ627NHZkGDD7trjPHKvv4f2fnuYA53zPmVuqsB88CNE8nZ2Wxapo3jFb1fjCcDxR0M7AQAA")
@@ -76,21 +76,20 @@ def _3():
     sa(sr())
     return (9)if(sp()!=0)else(4)
 def _4():
+    global t0
+    global t0
+    global t1
+    global t1
     sa(sp()+sp());
-    v0=sp()
-    sa(sp()-v0)
-    return (5)if(sp()!=0)else(8)
+    t0=sp()
+    sa(sp()-t0);
+    t1=sp()
+    return (5)if((t1)!=0)else(8)
 def _5():
     sa(sp()-1);
     sa(sr())
-    return (7)if(sp()!=0)else(6)
+    return (6)if(sp()!=0)else(7)
 def _6():
-    sa(sr())
-    sp()
-    print(gr(1,1)-3,end="",flush=True)
-    sp()
-    return 11
-def _7():
     sa(sr())
     sa(sr())
     sa(0)
@@ -109,9 +108,17 @@ def _7():
     sa(td(sp(),10))
     sa(sr())
     return 1
+def _7():
+    print(gr(1,1)-3,end="",flush=True)
+    sa(sr())
+    sp()
+    sp()
+    return 11
 def _8():
-    sa(sr()+gr(1,1))
-    gw(1,1,sp())
+    global t0
+    global t0
+    t0=sr()+gr(1,1)
+    gw(1,1,t0)
     return 5
 def _9():
     v0=sp()

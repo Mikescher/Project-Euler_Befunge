@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -42,14 +42,47 @@ def _1():
 def _2():
     return (13)if(sp()!=0)else(3)
 def _3():
+    global t0
+    global t0
     sp()
     v0=sp()
     sa(sp()-v0)
-    return (12)if(sp()!=0)else(4)
+    t0=sp()
+    return (12)if((t0)!=0)else(4)
 def _4():
     sa(sp()*59049);
     return 5
 def _5():
+    global t0
+    global t0
+    global t1
+    global t0
+    global t0
+    global t2
+    global t0
+    global t0
+    global t3
+    global t0
+    global t0
+    global t4
+    global t0
+    global t0
+    global t5
+    global t0
+    global t0
+    global t6
+    global t0
+    global t0
+    global t7
+    global t0
+    global t6
+    global t0
+    global t4
+    global t0
+    global t2
+    global t2
+    global t0
+    global t0
     sa(sr())
     sa(sr())
     sa(tm(sr(),10))
@@ -58,11 +91,9 @@ def _5():
     sa(sp()*sp());
     sa(sr())
     sa(sp()*sp());
-    sa(sp()*sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    t0=sp()
+    sa(sp()*t0);
+    t1=sp()
     sa(td(sp(),10))
     sa(tm(sr(),10))
     sa(sr())
@@ -70,11 +101,9 @@ def _5():
     sa(sp()*sp());
     sa(sr())
     sa(sp()*sp());
-    sa(sp()*sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    t0=sp()
+    sa(sp()*t0);
+    t2=sp()
     sa(td(sp(),10))
     sa(tm(sr(),10))
     sa(sr())
@@ -82,11 +111,9 @@ def _5():
     sa(sp()*sp());
     sa(sr())
     sa(sp()*sp());
-    sa(sp()*sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    t0=sp()
+    sa(sp()*t0);
+    t3=sp()
     sa(td(sp(),10))
     sa(tm(sr(),10))
     sa(sr())
@@ -94,11 +121,9 @@ def _5():
     sa(sp()*sp());
     sa(sr())
     sa(sp()*sp());
-    sa(sp()*sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    t0=sp()
+    sa(sp()*t0);
+    t4=sp()
     sa(td(sp(),10))
     sa(tm(sr(),10))
     sa(sr())
@@ -106,11 +131,9 @@ def _5():
     sa(sp()*sp());
     sa(sr())
     sa(sp()*sp());
-    sa(sp()*sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    t0=sp()
+    sa(sp()*t0);
+    t5=sp()
     sa(td(sp(),10))
     sa(tm(sr(),10))
     sa(sr())
@@ -118,11 +141,9 @@ def _5():
     sa(sp()*sp());
     sa(sr())
     sa(sp()*sp());
-    sa(sp()*sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
+    t0=sp()
+    sa(sp()*t0);
+    t6=sp()
     sa(td(sp(),10))
     sa(tm(sp(),10))
     sa(sr())
@@ -130,20 +151,18 @@ def _5():
     sa(sp()*sp());
     sa(sr())
     sa(sp()*sp());
-    sa(sp()*sp());
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()+sp());
-    sa(sp()+sp());
-    sa(sp()+sp());
-    sa(sp()+sp());
-    sa(sp()+sp());
-    sa(sp()+sp());
-    v0=sp()
-    sa(sp()-v0)
-    return (6)if(sp()!=0)else(11)
+    t0=sp()
+    sa(sp()*t0);
+    t7=sp()
+    t0=t7+t6
+    t6=t5+t0
+    t0=t4+t6
+    t4=t3+t0
+    t0=t2+t4
+    t2=t1+t0
+    sa(sp()-t2);
+    t0=sp()
+    return (6)if((t0)!=0)else(11)
 def _6():
     sa(sp()-1);
     sa(sr())

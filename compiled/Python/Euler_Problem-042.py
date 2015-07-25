@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABAAVmHk4lN8bxpM0lhhly/ZSQowtu7xCKlpkRJbC2IpkJ96xjSEpYbJlKbtK38SQLBnbVGMpZlrIOkyDUbZZLNl/fu+/573Oda5z38/z3J8j95h33/+/"
   + "A/taC11xso0ZD3Z7H9W1SIgTgFF82lGBY/OBEQZ6/nWfcWd0HmSMG4//7XVcZ908vyppdEH3qcifw8IK2P2mhuPWdU4rgzdzv4Rh4pq31kV20eLKmDN6ZAqhE+0ImBc1"
@@ -127,10 +127,12 @@ def _0():
     gw(6,0,2)
     return 1
 def _1():
-    sa(gr(5,0)+1)
+    global t0
+    global t1
+    t0=gr(5,0)+1
     gw(5,0,gr(5,0)+1)
-    sa(sr()+1)
-    sa(sp()*sp());
+    t1=t0+1
+    sa(t0*t1)
     sa(td(sp(),2))
     sa(48)
     v0=sp()
@@ -150,38 +152,51 @@ def _1():
 def _2():
     return (1)if((td((gr(5,0)+1)*(gr(5,0)+2),2))<gr(3,0))else(3)
 def _3():
+    global t2
     gw(7,0,0)
-    sa(0)
+    t2=0
     return 4
 def _4():
-    sa(gr(gr(7,0),gr(6,0)))
+    global t0
+    t0=gr(gr(7,0),gr(6,0))
     return (5)if(gr(gr(7,0),gr(6,0))-32==0)else(10)
 def _5():
-    sp()
-    gw(27,gr(6,0),sp())
-    sa(gr(6,0))
+    global t2
+    global t0
+    global t0
+    global t0
+    gw(27,gr(6,0),t2)
+    t0=gr(6,0)
     gw(6,0,gr(6,0)+1)
-    sa(sp()-gr(0,0));
-    return (3)if(sp()!=0)else(6)
+    t0=t0-gr(0,0)
+    return (3)if((t0)!=0)else(6)
 def _6():
+    global t0
     gw(6,0,2)
-    sa((0)if(gr((tm(gr(27,gr(6,0)),gr(1,0)))+32,td(gr(27,gr(6,0)),gr(1,0)))-48!=0)else(1))
+    t0=(0)if(gr((tm(gr(27,gr(6,0)),gr(1,0)))+32,td(gr(27,gr(6,0)),gr(1,0)))-48!=0)else(1)
     return 7
 def _7():
-    sa(gr(6,0))
+    global t1
+    global t1
+    global t1
+    t1=gr(6,0)
     gw(6,0,gr(6,0)+1)
-    sa(sp()-gr(0,0));
-    return (9)if(sp()!=0)else(8)
+    t1=t1-gr(0,0)
+    return (9)if((t1)!=0)else(8)
 def _8():
-    print(sp(),end="",flush=True)
+    global t0
+    print(t0,end="",flush=True)
     return 11
 def _9():
-    sa(sp()+((0)if(gr((tm(gr(27,gr(6,0)),gr(1,0)))+32,td(gr(27,gr(6,0)),gr(1,0)))-48!=0)else(1)));
+    global t0
+    t0=t0+((0)if(gr((tm(gr(27,gr(6,0)),gr(1,0)))+32,td(gr(27,gr(6,0)),gr(1,0)))-48!=0)else(1))
     return 7
 def _10():
+    global t0
+    global t2
     gw(7,0,gr(7,0)+1)
-    sa(sp()-64);
-    sa(sp()+sp());
+    t0=t0-64
+    t2=t2+t0
     return 4
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10]
 c=0

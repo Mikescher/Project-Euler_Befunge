@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADVVsFuwyAM/RUK7ALKhrNGbVBk7UOi9NBVuXLilI8fISRNm5S1nbq074CMjeQn7Ae25CXAeyxNJAoWx9L0Xg3WpKXSxdI0IkBKKBICiW6WpvI77NIE"
   + "JnClFXR/oL7ELT2jgADvK24NnNQf7XENHm7/GLVlDS4Fgqo1SFAmNdF7wpwe9lTgVhm9VXWWyaH+qN3uTTeooV41CCUY5/jQq4ZgqWNREY36HG0KHDeZY1A7Z5ZlWyFE"
@@ -90,14 +90,17 @@ def _7():
 def _8():
     sa(tm(sr(),10))
     sa(sr())
-    return (9)if(sp()!=0)else(88)
+    return (9)if(sp()!=0)else(75)
 def _9():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(1)
     v0=sp()
-    sa(gr(sp(),v0))
-    sa((0)if(sp()!=0)else(1))
-    return (10)if(sp()!=0)else(87)
+    t0=gr(sp(),v0)
+    t0=(0)if(t0!=0)else(1)
+    return (10)if((t0)!=0)else(75)
 def _10():
     sa(1)
     v0=sp()
@@ -123,14 +126,17 @@ def _11():
 def _12():
     sa(tm(sr(),10))
     sa(sr())
-    return (13)if(sp()!=0)else(86)
+    return (13)if(sp()!=0)else(75)
 def _13():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(1)
     v0=sp()
-    sa(gr(sp(),v0))
-    sa((0)if(sp()!=0)else(1))
-    return (14)if(sp()!=0)else(84)
+    t0=gr(sp(),v0)
+    t0=(0)if(t0!=0)else(1)
+    return (14)if((t0)!=0)else(75)
 def _14():
     sa(1)
     v0=sp()
@@ -153,14 +159,17 @@ def _15():
 def _16():
     sa(tm(sr(),10))
     sa(sr())
-    return (17)if(sp()!=0)else(83)
+    return (17)if(sp()!=0)else(73)
 def _17():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(1)
     v0=sp()
-    sa(gr(sp(),v0))
-    sa((0)if(sp()!=0)else(1))
-    return (18)if(sp()!=0)else(81)
+    t0=gr(sp(),v0)
+    t0=(0)if(t0!=0)else(1)
+    return (18)if((t0)!=0)else(73)
 def _18():
     sa(1)
     v0=sp()
@@ -194,9 +203,12 @@ def _20():
 def _21():
     return (20)if(sp()!=0)else(22)
 def _22():
+    global t0
+    global t0
     sp()
     sa(sp()+sp());
-    sa(sp()+sp());
+    t0=sp()
+    sa(sp()+t0);
     sa(sp()+sp());
     sa(sp()+sp());
     sa(sp()+sp());
@@ -205,28 +217,25 @@ def _22():
     sa(sp()+sp());
     sa(sp()-9);
     sa((0)if(sp()!=0)else(1))
-    return (80)if(sp()!=0)else(23)
+    return (72)if(sp()!=0)else(23)
 def _23():
-    sp()
-    return 24
+    global t0
+    t0=gr(8,0)-1
+    return (71)if(gr(8,0)!=1001)else(24)
 def _24():
-    sa(gr(8,0)-1)
-    return (79)if(gr(8,0)!=1001)else(25)
-def _25():
-    sp()
     sa(sp()-1);
-    return (78)if(sr()!=1)else(26)
-def _26():
+    return (70)if(sr()!=1)else(25)
+def _25():
     sp()
     gw(8,0,999)
     sa(99)
     sa(99)
-    return 27
-def _27():
+    return 26
+def _26():
     sa(gr(8,0))
     sa(9)
-    return 28
-def _28():
+    return 27
+def _27():
     sa(sr())
     sa(0)
     v0=sp()
@@ -239,25 +248,28 @@ def _28():
     gw(v1,v0,sp())
     sa(sp()-1);
     sa(sr())
-    return 29
+    return 28
+def _28():
+    return (27)if(sp()!=0)else(29)
 def _29():
-    return (28)if(sp()!=0)else(30)
+    sp()
+    sa(sr())
+    return 30
 def _30():
-    sp()
+    sa(tm(sr(),10))
     sa(sr())
-    return 31
+    return (31)if(sp()!=0)else(69)
 def _31():
-    sa(tm(sr(),10))
-    sa(sr())
-    return (32)if(sp()!=0)else(77)
-def _32():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(1)
     v0=sp()
-    sa(gr(sp(),v0))
-    sa((0)if(sp()!=0)else(1))
-    return (33)if(sp()!=0)else(76)
-def _33():
+    t0=gr(sp(),v0)
+    t0=(0)if(t0!=0)else(1)
+    return (32)if((t0)!=0)else(69)
+def _32():
     sa(1)
     v0=sp()
     v1=sp()
@@ -270,27 +282,30 @@ def _33():
     sa(td(sp(),10))
     sa(sr())
     sa((0)if(sp()!=0)else(1))
-    return (34)if(sp()!=0)else(31)
-def _34():
+    return (33)if(sp()!=0)else(30)
+def _33():
     sp()
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa(sr())
-    return 35
-def _35():
+    return 34
+def _34():
     sa(tm(sr(),10))
     sa(sr())
-    return (36)if(sp()!=0)else(75)
-def _36():
+    return (35)if(sp()!=0)else(69)
+def _35():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(1)
     v0=sp()
-    sa(gr(sp(),v0))
-    sa((0)if(sp()!=0)else(1))
-    return (37)if(sp()!=0)else(73)
-def _37():
+    t0=gr(sp(),v0)
+    t0=(0)if(t0!=0)else(1)
+    return (36)if((t0)!=0)else(69)
+def _36():
     sa(1)
     v0=sp()
     v1=sp()
@@ -303,24 +318,27 @@ def _37():
     sa(td(sp(),10))
     sa(sr())
     sa((0)if(sp()!=0)else(1))
-    return (38)if(sp()!=0)else(35)
-def _38():
+    return (37)if(sp()!=0)else(34)
+def _37():
     sp()
     sa(sp()*sp());
     sa(sr())
-    return 39
-def _39():
+    return 38
+def _38():
     sa(tm(sr(),10))
     sa(sr())
-    return (40)if(sp()!=0)else(72)
-def _40():
+    return (39)if(sp()!=0)else(67)
+def _39():
+    global t0
+    global t0
+    global t0
     sa(sr())
     sa(1)
     v0=sp()
-    sa(gr(sp(),v0))
-    sa((0)if(sp()!=0)else(1))
-    return (41)if(sp()!=0)else(70)
-def _41():
+    t0=gr(sp(),v0)
+    t0=(0)if(t0!=0)else(1)
+    return (40)if((t0)!=0)else(67)
+def _40():
     sa(1)
     v0=sp()
     v1=sp()
@@ -333,12 +351,12 @@ def _41():
     sa(td(sp(),10))
     sa(sr())
     sa((0)if(sp()!=0)else(1))
-    return (42)if(sp()!=0)else(39)
-def _42():
+    return (41)if(sp()!=0)else(38)
+def _41():
     sp()
     sa(9)
-    return 43
-def _43():
+    return 42
+def _42():
     sa(sr())
     sa(1)
     v0=sp()
@@ -349,13 +367,16 @@ def _43():
     sa(v1)
     sa(sp()-1);
     sa(sr())
-    return 44
+    return 43
+def _43():
+    return (42)if(sp()!=0)else(44)
 def _44():
-    return (43)if(sp()!=0)else(45)
-def _45():
+    global t0
+    global t0
     sp()
     sa(sp()+sp());
-    sa(sp()+sp());
+    t0=sp()
+    sa(sp()+t0);
     sa(sp()+sp());
     sa(sp()+sp());
     sa(sp()+sp());
@@ -364,182 +385,156 @@ def _45():
     sa(sp()+sp());
     sa(sp()-9);
     sa((0)if(sp()!=0)else(1))
-    return (69)if(sp()!=0)else(46)
+    return (66)if(sp()!=0)else(45)
+def _45():
+    sa(gr(8,0)-1)
+    return (48)if(gr(8,0)!=101)else(46)
 def _46():
     sp()
-    return 47
-def _47():
-    sa(gr(8,0)-1)
-    return (50)if(gr(8,0)!=101)else(48)
-def _48():
-    sp()
     sa(sp()-1);
-    return (49)if(sr()!=10)else(51)
-def _49():
+    return (47)if(sr()!=10)else(49)
+def _47():
     sa(999)
-    return 50
-def _50():
+    return 48
+def _48():
     gw(8,0,sp())
     sa(sr())
-    return 27
-def _51():
+    return 26
+def _49():
     gw(8,0,32)
     gw(7,0,gr(8,0)-1)
     sp()
-    return 52
+    return 50
+def _50():
+    global t0
+    t0=gr(gr(8,0),2)
+    return (52)if((gr(gr(8,0),2))==0)else(51)
+def _51():
+    global t0
+    global t0
+    t0=t0-gr(gr(7,0),2)
+    return (52)if((t0)!=0)else(65)
 def _52():
-    sa(gr(gr(8,0),2))
-    return (68)if((gr(gr(8,0),2))==0)else(53)
+    global t0
+    t0=gr(7,0)
+    return (64)if(gr(7,0)!=1)else(53)
 def _53():
-    sa(sp()-gr(gr(7,0),2));
-    return (54)if(sp()!=0)else(67)
+    global t0
+    t0=gr(8,0)
+    return (63)if(gr(8,0)!=2)else(54)
 def _54():
-    sa(gr(7,0))
-    return (66)if(gr(7,0)!=1)else(55)
-def _55():
-    sp()
-    sa(gr(8,0))
-    return (65)if(gr(8,0)!=2)else(56)
-def _56():
-    sp()
     sa(0)
     sa(31)
-    return 57
-def _57():
+    return 55
+def _55():
     sa(sr())
     sa(2)
     v0=sp()
     sa(gr(sp(),v0))
     sa(sr())
-    return (58)if(sp()!=0)else(64)
-def _58():
+    return (56)if(sp()!=0)else(62)
+def _56():
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa(sp()-1);
     sa(sr())
+    return 57
+def _57():
+    return (55)if(sp()!=0)else(58)
+def _58():
+    sp()
     return 59
 def _59():
-    return (57)if(sp()!=0)else(60)
-def _60():
-    sp()
-    return 61
-def _61():
     sa(sp()+sp());
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa(sr())
-    return (63)if(sp()!=0)else(62)
-def _62():
+    return (61)if(sp()!=0)else(60)
+def _60():
     sa(sp()+sp());
     print(sp(),end="",flush=True)
-    return 89
-def _63():
+    return 76
+def _61():
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    return 61
-def _64():
+    return 59
+def _62():
     sp()
     sa(sp()-1);
     sa(sr())
-    return 59
-def _65():
-    sa(sp()-1);
-    gw(8,0,sp())
+    return 57
+def _63():
+    global t0
+    global t0
+    t0=t0-1
+    gw(8,0,t0)
     gw(7,0,gr(8,0)-1)
+    return 50
+def _64():
+    global t0
+    global t0
+    t0=t0-1
+    gw(7,0,t0)
+    return 50
+def _65():
+    gw(gr(7,0),2,0)
     return 52
 def _66():
-    sa(sp()-1);
-    gw(7,0,sp())
-    return 52
-def _67():
-    gw(gr(7,0),2,0)
-    return 54
-def _68():
-    sp()
-    return 54
-def _69():
     sa(gr(1,0))
     gw(1,0,gr(1,0)+1)
     sa(2)
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
-    return 47
+    return 45
+def _67():
+    sp()
+    return 68
+def _68():
+    global t0
+    sp()
+    sp()
+    t0=0
+    return 45
+def _69():
+    sp()
+    return 67
 def _70():
-    sp()
-    return 71
+    gw(8,0,9999)
+    sa(sr())
+    return 4
 def _71():
-    sp()
-    sp()
-    sa(0)
-    return 46
+    global t0
+    gw(8,0,t0)
+    sa(sr())
+    return 4
 def _72():
-    sp()
-    return 71
+    sa(gr(1,0))
+    gw(1,0,gr(1,0)+1)
+    sa(2)
+    v0=sp()
+    v1=sp()
+    gw(v1,v0,sp())
+    return 23
 def _73():
     sp()
     return 74
 def _74():
+    global t0
     sp()
-    return 71
+    sp()
+    t0=0
+    return 23
 def _75():
     sp()
-    return 74
-def _76():
-    sp()
-    return 74
-def _77():
-    sp()
-    return 74
-def _78():
-    gw(8,0,9999)
-    sa(sr())
-    return 4
-def _79():
-    gw(8,0,sp())
-    sa(sr())
-    return 4
-def _80():
-    sa(gr(1,0))
-    gw(1,0,gr(1,0)+1)
-    sa(2)
-    v0=sp()
-    v1=sp()
-    gw(v1,v0,sp())
-    return 24
-def _81():
-    sp()
-    return 82
-def _82():
-    sp()
-    sp()
-    sa(0)
-    return 23
-def _83():
-    sp()
-    return 82
-def _84():
-    sp()
-    return 85
-def _85():
-    sp()
-    return 82
-def _86():
-    sp()
-    return 85
-def _87():
-    sp()
-    return 85
-def _88():
-    sp()
-    return 85
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25,_26,_27,_28,_29,_30,_31,_32,_33,_34,_35,_36,_37,_38,_39,_40,_41,_42,_43,_44,_45,_46,_47,_48,_49,_50,_51,_52,_53,_54,_55,_56,_57,_58,_59,_60,_61,_62,_63,_64,_65,_66,_67,_68,_69,_70,_71,_72,_73,_74,_75,_76,_77,_78,_79,_80,_81,_82,_83,_84,_85,_86,_87,_88]
+    return 73
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25,_26,_27,_28,_29,_30,_31,_32,_33,_34,_35,_36,_37,_38,_39,_40,_41,_42,_43,_44,_45,_46,_47,_48,_49,_50,_51,_52,_53,_54,_55,_56,_57,_58,_59,_60,_61,_62,_63,_64,_65,_66,_67,_68,_69,_70,_71,_72,_73,_74,_75]
 c=0
-while c<89:
+while c<76:
     c=m[c]()

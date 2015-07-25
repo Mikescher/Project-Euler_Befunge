@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADtU8uO2zAM/BVGdi7Sak3KseM1VKMfYjgB2kJXnXxq/71DO8kmu8kCRXvrEpBEvUbDITWXJVFRFOT/0hYQ2D/Ho/8Ljz7xPvH+EG+1+TAXm9cpZnTf"
   + "oqxj4lCW8e1uUZyQhWaizCGxLMjFekP9Po/uZWu7DgsU+cE7agOutWjCGbPQddZS4DwETuLhCKdBfM9jsFjCduWmicrImWsniWvKzoJCqPS1eM2P6YLCNdogrofZ0YdK"
@@ -69,21 +69,30 @@ def _7():
     sp()
     return 8
 def _8():
+    global t0
+    global t0
+    global t1
+    global t1
+    global t1
+    global t1
     sa(sp()+1);
     sa(sr())
     sa(sr())
     sa(sr())
     sa(sr())
     sa(sp()*sp());
+    t0=sp()
+    sa(t0)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     v0=sp()
     sa(sp()-v0)
-    sa(td(sp(),2))
-    sa(sp()*(gr(2,0)+1));
-    sa(sp()+sp());
+    t1=sp()
+    t1=td(t1,2)
+    t1=t1*(gr(2,0)+1)
+    sa(sp()+t1);
     sa((1)if(sr()<1000)else(0))
     return 6
 def _9():
@@ -200,24 +209,22 @@ def _27():
     sa(0)
     return 28
 def _28():
+    global t0
+    global t0
     sa(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)))
-    print(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)),end="",flush=True)
-    sa(sp()+sp());
     print(chr(10),end="",flush=True)
-    sa(gr(2,1)+1)
+    sa(sr())
+    print(sp(),end="",flush=True)
+    sa(sp()+sp());
+    t0=gr(2,1)+1
     gw(2,1,gr(2,1)+1)
-    sa(sp()-gr(1,0));
+    t0=t0-gr(1,0)
     return 29
 def _29():
-    return (28)if(sp()!=0)else(30)
+    global t0
+    return (28)if((t0)!=0)else(30)
 def _30():
-    sa(32)
-    sa(61)
-    sa(32)
-    print(chr(32),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
-    print(chr(sp()),end="",flush=True)
+    print("  = ",end="",flush=True)
     print(sp(),end="",flush=True)
     return 34
 def _31():

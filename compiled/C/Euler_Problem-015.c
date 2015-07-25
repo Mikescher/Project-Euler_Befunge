@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.6 (c) 2015 */
+/* compiled with BefunCompile v1.0.7 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -19,29 +19,29 @@ int main(void)
 {
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    gw(0LL,0LL,1LL);
-    gw(1LL,0LL,1LL);
+    gw(0,0,1);
+    gw(1,0,1);
 _1:
-    if((gr(0LL,0LL)*(22LL-gr(1LL,0LL)))!=0)goto _3;else goto _2;
+    if((gr(0,0)*(22-gr(1,0)))!=0)goto _3;else goto _2;
 _2:
-    gw(0LL,0LL,gr(0LL,0LL)+gr(1LL,0LL));
-    gw(1LL,0LL,1LL);
+    gw(0,0,gr(0,0)+gr(1,0));
+    gw(1,0,1);
     goto _1;
 _3:
-    if(gr(0L,0L)>21L)goto _4;else goto _6;
+    if(gr(0,0)>21)goto _4;else goto _6;
 _4:
-    gw(0LL,0LL,gr(0LL,0LL)-1LL);
-    gw(1LL,0LL,gr(1LL,0LL)+1LL);
-    if((gr(1L,0L)+gr(0L,0L))<=42L)goto _1;else goto _5;
+    gw(0,0,gr(0,0)-1);
+    gw(1,0,gr(1,0)+1);
+    if((gr(1,0)+gr(0,0))<=42)goto _1;else goto _5;
 _5:
-    printf("%lld", (int64)(gr(21LL,21LL)));
+    printf("%lld", gr(21,21));
     return 0;
 _6:
-    if(((gr(0LL,0LL)-1LL)*(gr(1LL,0LL)-1LL))!=0)goto _8;else goto _7;
+    if(((gr(0,0)-1)*(gr(1,0)-1))!=0)goto _8;else goto _7;
 _7:
-    gw(gr(0LL,0LL),gr(1LL,0LL),1LL);
+    gw(gr(0,0),gr(1,0),1);
     goto _4;
 _8:
-    gw(gr(0LL,0LL),gr(1LL,0LL),gr(gr(0LL,0LL)-1LL,gr(1LL,0LL))+gr(gr(0LL,0LL),gr(1LL,0LL)-1LL));
+    gw(gr(0,0),gr(1,0),gr(gr(0,0)-1,gr(1,0))+gr(gr(0,0),gr(1,0)-1));
     goto _4;
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABAClUUFqxDAQ+4pJ9zQmRRpvdjfBmD6khB4Kc52TT3l8nW4CbSGFbnWwPTPIkuX6tCP8HY+x/o2CHYQrPMHP8AF+gV/hN/gID6F771RCIH1UOhI9oNaH"
   + "VU/5W1kdTp0ijYo2KqaDSLzCBok3mEocYXHXK0qDMa6br8XYb5OlsHGaWRFttM9DbGuqZSLt9W3x4yTmMF+iyHkwDFE67QznKIZcN7cztWc+vOD+lG2+e81Lb2S4d5df"
@@ -53,27 +53,34 @@ def _0():
 def _1():
     return (11)if(gr(2,1)!=9)else(2)
 def _2():
-    sa((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0))
+    global t0
+    t0=(gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0)
     return (10)if(((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0))<gr(1,1))else(3)
 def _3():
-    sa(sp()-gr(1,1));
-    return (4)if(sp()!=0)else(9)
+    global t0
+    global t0
+    t0=t0-gr(1,1)
+    return (4)if((t0)!=0)else(9)
 def _4():
-    sa(gr(2,1))
+    global t0
+    t0=gr(2,1)
     return (6)if((gr(gr(2,1),0))!=0)else(5)
 def _5():
-    sa(sp()-1);
-    gw(2,1,sp())
+    global t0
+    global t0
+    t0=t0-1
+    gw(2,1,t0)
     return 4
 def _6():
-    return (8)if(sr()!=1)else(7)
+    return (8)if(t0!=1)else(7)
 def _7():
-    sp()
     print(gr(3,1),end="",flush=True)
     return 12
 def _8():
-    sa(sp()-1);
-    gw(2,1,sp())
+    global t0
+    global t0
+    t0=t0-1
+    gw(2,1,t0)
     gw(gr(2,1),0,gr(gr(2,1),0)+1)
     return 1
 def _9():
@@ -81,7 +88,6 @@ def _9():
     return 4
 def _10():
     gw(gr(2,1),0,gr(gr(2,1),0)+1)
-    sp()
     return 1
 def _11():
     sa(0)

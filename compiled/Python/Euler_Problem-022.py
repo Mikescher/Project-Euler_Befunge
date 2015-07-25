@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABAC8vVnP9cZ17/lVqh1fRXCf1xmcRAh0ziK5NllkDfutKnK/fBAk6YsD9UU3IKD75CofvmvVfuRMNuAO4t9GYsuSrGWSNazhP/zg/u3vn9wf8vvhD/47"
   + "/+0vSrn/9T/mF//9v3v9xZ9+9933f/blpy9ffvrhy6/7v7sfvv/y5ccff/E/fvGr77/845/8/T/88ssPv/7y41/9xZ/+6Xf9r/+hgZ/Sip+9/L5H+Pv3H/z9v/y5f/in"
@@ -319,12 +319,15 @@ def _4():
     sa(sp()+1);
     return (21)if(sr()!=12)else(5)
 def _5():
+    global t0
+    global t0
+    global t0
     gw(0,gr(0,0),gr(1,0))
     sp()
-    sa(gr(0,0)-1)
+    t0=gr(0,0)-1
     gw(0,0,gr(0,0)-1)
-    sa((0)if(sp()!=0)else(1))
-    return (6)if(sp()!=0)else(1)
+    t0=(0)if(t0!=0)else(1)
+    return (6)if((t0)!=0)else(1)
 def _6():
     gw(3,0,gr(2,0))
     return 7
@@ -334,15 +337,21 @@ def _7():
 def _8():
     return (17)if(gr(0,gr(4,0)+1)>gr(0,gr(4,0)+2))else(9)
 def _9():
-    sa(gr(4,0)+1)
+    global t0
+    global t0
+    global t0
+    t0=gr(4,0)+1
     gw(4,0,gr(4,0)+1)
-    sa((1)if(sp()<(gr(3,0)-1))else(0))
-    return (8)if(sp()!=0)else(10)
+    t0=(1)if(t0<(gr(3,0)-1))else(0)
+    return (8)if((t0)!=0)else(10)
 def _10():
-    sa(gr(3,0))
+    global t0
+    global t0
+    global t0
+    t0=gr(3,0)
     gw(3,0,gr(3,0)-1)
-    sa(sp()-2);
-    return (7)if(sp()!=0)else(11)
+    t0=t0-2
+    return (7)if((t0)!=0)else(11)
 def _11():
     gw(9,0,0)
     gw(5,0,gr(2,0))
@@ -377,27 +386,29 @@ def _16():
     sa(sr()-32)
     return 13
 def _17():
-    sa(gr(4,0))
+    global t0
+    global t0
+    t0=gr(4,0)
     gw(6,0,gr(4,0)+1)
-    gw(7,0,sp())
+    gw(7,0,t0)
     gw(8,0,12)
     sa(gr(12,gr(6,0)+1))
     gw(gr(8,0),gr(6,0)+1,gr(12,gr(7,0)+1))
     return 18
 def _18():
+    global t0
+    global t0
     gw(gr(8,0),gr(7,0)+1,sp())
-    sa(gr(8,0))
+    t0=gr(8,0)
     sa(gr(8,0)-1)
     gw(8,0,gr(8,0)-1)
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    return (20)if(sp()!=0)else(19)
+    return (20)if((t0)!=0)else(19)
 def _19():
     sp()
     return 9
 def _20():
+    global t0
+    global t0
     sa(sr())
     sa(gr(6,0)+1)
     v0=sp()
@@ -408,8 +419,8 @@ def _20():
     sa(v1)
     sa(gr(7,0)+1)
     v0=sp()
-    sa(gr(sp(),v0))
-    gw(gr(8,0),gr(6,0)+1,sp())
+    t0=gr(sp(),v0)
+    gw(gr(8,0),gr(6,0)+1,t0)
     return 18
 def _21():
     sa(sr())

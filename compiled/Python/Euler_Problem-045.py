@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.6 (c) 2015
+# compiled with BefunCompile v1.0.7 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -46,30 +46,39 @@ def _5():
     return (7)if(sp()!=0)else(6)
 def _6():
     global x2
+    global t0
+    global t0
     global x1
     x2=0
     sa(sp()+1);
     sa(sr())
-    sa((sr()*2)-1)
-    sa(sp()*sp());
+    t0=(sr()*2)-1
+    sa(sp()*t0);
     sa(sp()*24);
     sa(sp()+1);
     x1=sr()
     return 1
 def _7():
-    sa((sr()*2)-1)
-    sa(sp()*sp());
-    print(sp(),end="",flush=True)
+    global t0
+    global t0
+    global t1
+    global t1
+    t0=(sr()*2)-1
+    sa(sp()*t0);
+    t1=sp()
+    print(t1,end="",flush=True)
     return 13
 def _8():
     global x2
+    global t0
+    global t0
     global x1
     x2=0
     sp()
     sa(sp()+1);
     sa(sr())
-    sa((sr()*2)-1)
-    sa(sp()*sp());
+    t0=(sr()*2)-1
+    sa(sp()*t0);
     sa(sp()*24);
     sa(sp()+1);
     x1=sr()
@@ -83,21 +92,22 @@ def _10():
     sa(sr())
     return (9)if(sp()!=0)else(4)
 def _11():
+    global t0
+    global t1
     global x1
+    global t2
     global x1
+    global t2
+    global t0
     global x2
+    global t0
     global x2
-    sa(sr()+x2)
-    sa(x1)
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    v0=sp()
-    sa(sp()-v0)
-    x1=sp()
-    sa((sr()*2)+x2)
-    x2=sp()
+    t0=sr()+x2
+    t1=x1
+    t2=t1-t0
+    x1=t2
+    t0=(sr()*2)+x2
+    x2=t0
     x2=td(x2,2)
     sa(td(sp(),4))
     return 3
