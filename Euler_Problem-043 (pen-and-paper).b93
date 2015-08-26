@@ -4,15 +4,19 @@ We can rule out a lot of combinations by simply looking at our rules. I divided 
 
 **Step 1:**
 
- - d_1 != d_2 != d_3 != d_4 != d_5 != d_6 != d_7 != d_8 != d_9
+ - d_1 != d_2 != d_3 != d_4 != d_5 != d_6 != d_7 != d_8 != d_9    *(palindromic)*
  - d_1 is not `0`
- - d_234 is divisible by 2 => d_4 is even
- - d_456 is divisible by 5 => d_6 is `0` or `5`
- - d_345 is divisible by 3 => `d_3 + d_4 + d_5 = 0`
+ - d_234 is divisible by 2  => d_4 is even
+ - d_345 is divisible by 3  => `(d_3 + d_4 + d_5) % 3 = 0`
+ - d_456 is divisible by 5  => d_6 is `0` or `5`
+ - d_567 is divisible by 7
+ - d_678 is divisible by 11
+ - d_789 is divisible by 13
+ - d_89A is divisible by 17
 
 **Step 2:**
 
-if d_6 is `0` then d_678 starts with a `0`, and because d678 is divisible by 3: `d_7 == d_8`. This conflicts with our palindrome rule.
+if d_6 is `0` then d_678 starts with a `0`, and because d_678 is divisible by 11: `d_7 == d_8`. This conflicts with our palindrome rule.
 
 Therefore d_6 = `5`.
 
