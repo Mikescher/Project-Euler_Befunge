@@ -1,0 +1,55 @@
+﻿v
+ ++++++++++ 319 680 180 690 129 620 762 689 762 318
+ ++++++++++ 368 710 720 710 629 168 160 689 716 731
+ ++++++++++ 736 729 316 729 729 710 769 290 719 680
+ ++++++++++ 318 389 162 289 162 718 729 319 790 680
+ ++++++++++ 890 362 319 760 316 729 380 319 728 716
+ ++++++++++
+ ++++++++++ ##########
+ ++++++++++
+ ++++++++++ XXXXXXXXXX
+ ++++++++++
+
+>55+>:1\:v>:55+/1+30p:55+%4*66++20p020g0+30gg"0"-:50p66v
+    |:-1p< v1g070p+1g07+1g062p+1g07+1g052p+1g06+1g052< +
+    >$ 77*^>+50g1+p070g1+60g1vv<          <          p +
+          |\-1:p+1g05+1g060p+<1|!\-1:   <p 9++66 p0< 7 7
+        v+># $# 0# 9# 0# p# 9#<>:66++7g#^_ :90g:1+9^ + p
+        >:90g-!#v_:::66++9g1+\65++9g1+g*!#^_::v      + 0
+        ^p9++66\ g02:-1p9++66\g9++56p02g9++66:<      6 2
+                >$0>:66++9g. v   >020g2+30gg"0"-:70p6^ 0
+                @$_^#!-g09:+1<   ^p7++66p06:-"0"gg03+1g<
+
+
+[2 0] input-X      |      tmp
+[3 0] input-Y      |      
+                   |      
+[5 0] input-1      |      
+[6 0] input-2      |      
+[7 0] input-3      |      
+                   |      
+[9 0] arr-pos      |      arr-len
+
+
+---------------------------------------
+
+This is one of the problems i really enjoyed solving.
+
+We make the assumption that our final pass code has no duplicate digits (If we hadn't found a solution we would need to change that part).
+This is a pretty good assumption because no attempt has a duplicate digit in it.
+
+> *Side note:* This leaves us with a 8-digit code, because only 8 digits are used (`4` and `5` are missing).
+
+First we generate a 10x10 grid where we remember the absolute ordering of the numbers from our attempts (eg `3` is before `8` or `9` is after `2`).
+If we inspect this data we can see that every field (for numbers in our pass code) is set, the fifty login attempts generate more than enough data for this.
+
+> *Side note:* In fact there are only 33 **unique** login attempts
+
+Then we can simply sort an array of the valid digits with this ordering. And - frankly - I find this is a really neat way of doing this.
+
+Because we sort only eight numbers, sorting-performance is not a big factor.
+So I searched for the simplest (easiest to implement) sorting algorithm I could find.
+This was surprisingly not Bubble-sort, but [Gnome Sort](https://en.wikipedia.org/wiki/Gnome_sort) (accordingly to the author "the simplest sort algorithm").
+Which was pretty easy to implement in Befunge (and for 8 values is the runtime of O(n^2) not *that* bad).
+
+A last thing: For a problem where I used an two-dimensional cache **and** that has input data I was surprised to fit everything in the Befunge-93 80x25 size restrictions.
