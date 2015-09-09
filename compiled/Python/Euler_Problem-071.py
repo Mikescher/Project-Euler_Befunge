@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -38,28 +38,20 @@ def _1():
     global t0
     global t1
     global x6
-    global t1
-    global t1
-    global t1
     x5=t0
     t1=td(t0*3,7)
     x6=t1
     t1=t1*7
     t1=t1-(x5*3)
-    return (2)if(t1>0)else(8)
+    return (2)if(t1>0)else(7)
 def _2():
-    global t1
-    global t1
-    t1=t1
-    return 3
-def _3():
     global x7
     global t1
     global x8
     x7=t1
     x8=x5*7
-    return (4)if((x4*x8)>(x3*x7))else(5)
-def _4():
+    return (3)if((x4*x8)>(x3*x7))else(4)
+def _3():
     global x4
     global x7
     global x3
@@ -72,26 +64,26 @@ def _4():
     x3=x8
     x0=x6
     x2=x5
-    return 5
+    return 4
+def _4():
+    return (5)if(t0!=x1)else(6)
 def _5():
-    return (6)if(t0!=x1)else(7)
-def _6():
     global t0
     t0=t0+1
-    return (5)if(tm(t0*3,7)==0)else(1)
-def _7():
+    return (4)if(tm(t0*3,7)==0)else(1)
+def _6():
     global x0
     global x2
     print(x0,end="",flush=True)
     print(" /",end="",flush=True)
     print(chr(10),end="",flush=True)
     print(x2,end="",flush=True)
-    return 9
-def _8():
+    return 8
+def _7():
     global t1
     t1=t1*-1
-    return 3
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8]
+    return 2
+m=[_0,_1,_2,_3,_4,_5,_6,_7]
 c=0
-while c<9:
+while c<8:
     c=m[c]()

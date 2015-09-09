@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -62,8 +62,6 @@ def _4():
 def _5():
     global t0
     global t1
-    global t1
-    global t1
     sp()
     sa(sp()-t0);
     t1=sp()
@@ -79,7 +77,6 @@ def _7():
 def _8():
     global t0
     global x0
-    global t0
     sa(sr())
     t0=sr()*10
     x0=t0
@@ -132,8 +129,6 @@ def _13():
 def _14():
     global t0
     global t1
-    global t1
-    global t1
     sp()
     sa(sp()-t0);
     t1=sp()
@@ -149,7 +144,6 @@ def _16():
 def _17():
     global t0
     global x0
-    global t0
     sa(sr())
     t0=(td(sr(),10))*10
     x0=t0
@@ -177,7 +171,6 @@ def _20():
 def _21():
     global t0
     global t1
-    global t1
     sa(t0)
     v0=sp()
     v1=sp()
@@ -188,9 +181,9 @@ def _21():
     print(t1,end="",flush=True)
     return 26
 def _22():
-    print(chr(10),end="",flush=True)
     sa(sr())
     print(sp(),end="",flush=True)
+    print(chr(10),end="",flush=True)
     v0=sp()
     v1=sp()
     sa(v0)
@@ -199,14 +192,13 @@ def _22():
 def _23():
     global t0
     global x0
-    global t0
     t0=t0*2
     x0=t0
     return 13
 def _24():
-    print(chr(10),end="",flush=True)
     sa(sr())
     print(sp(),end="",flush=True)
+    print(chr(10),end="",flush=True)
     v0=sp()
     v1=sp()
     sa(v0)
@@ -215,7 +207,6 @@ def _24():
 def _25():
     global t0
     global x0
-    global t0
     t0=t0*2
     x0=t0
     return 4

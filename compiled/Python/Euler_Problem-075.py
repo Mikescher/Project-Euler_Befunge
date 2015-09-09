@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhre3/LNvG0iwP1i/yPTlUbXVqdvzlJoi+a3Lj8v6RJl1JZacmaK7/Otuf07ZXEnrN/zZZ+cdV4iexrfrz59Tftsevr0tcO7wz0oLK678"
   + "PLvaHVX/Lff8K6otFRbb/W/369X9D7+oMAiXlZWJlbEzGIQaM4yCUTAKRsEoGPzgnzcjw4w9ejJ35HS6A8KTT0zfPp3dVXBWrHr2qoXeofNfZVm8eZ31+0g2a93585ut"
@@ -83,12 +83,7 @@ def _5():
     return 6
 def _6():
     global t0
-    global t0
     global t1
-    global t1
-    global t0
-    global t0
-    global t0
     sa(sr())
     t0=sr()*2
     sa(sp()*t0);
@@ -108,8 +103,6 @@ def _7():
     global t1
     global t2
     global t3
-    global t1
-    global t1
     t0=(gr(9,0)*gr(9,0))-(gr(8,0)*gr(8,0))
     gw(2,1,(gr(9,0)*gr(9,0))-(gr(8,0)*gr(8,0)))
     t1=gr(8,0)*gr(9,0)*2
@@ -128,8 +121,7 @@ def _9():
     return (17)if(sp()!=0)else(10)
 def _10():
     global t0
-    global t0
-    t0=sr()*(((gr(2,1)*7)+gr(3,1))*5)+gr(4,1)
+    t0=sr()*((((gr(2,1)*7)+gr(3,1))*5)+gr(4,1))
     gw(8,1,t0)
     sa(sr()*gr(6,1))
     sa(tm(sr(),gr(2,0)))
@@ -200,7 +192,6 @@ def _17():
     gw(9,0,gr(9,0)+1)
     return 6
 def _18():
-    global t0
     global t0
     t0=gr(2,1)
     gw(2,1,gr(3,1))

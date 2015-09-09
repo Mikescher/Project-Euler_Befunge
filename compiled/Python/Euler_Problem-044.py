@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -40,7 +40,6 @@ def _2():
 def _3():
     global x1
     global t0
-    global t0
     global x5
     sp()
     sp()
@@ -55,13 +54,9 @@ def _3():
 def _4():
     global x2
     global t0
-    global t0
-    global t1
     global t1
     global x3
-    global t1
     global x6
-    global t1
     global x4
     global x0
     x2=sr()
@@ -92,9 +87,6 @@ def _7():
     return (16)if(sp()!=0)else(8)
 def _8():
     global t0
-    global t0
-    global t0
-    global t0
     t0=tm(t0,6)
     t0=t0-5
     t0=(0)if(t0!=0)else(1)
@@ -103,7 +95,6 @@ def _9():
     global t0
     global x6
     global x4
-    global t0
     global x0
     sa(((x3+x5)*24)+1)
     t0=((x3+x5)*24)+1
@@ -127,8 +118,6 @@ def _13():
     t0=x6
     return (16)if(sp()!=0)else(14)
 def _14():
-    global t0
-    global t0
     global t0
     t0=tm(t0,6)
     t0=t0-5
@@ -156,11 +145,6 @@ def _19():
     global t1
     global x4
     global t2
-    global x4
-    global t2
-    global t0
-    global x6
-    global t0
     global x6
     t0=sr()+x6
     t1=x4
@@ -188,11 +172,6 @@ def _23():
     global t1
     global x4
     global t2
-    global x4
-    global t2
-    global t0
-    global x6
-    global t0
     global x6
     t0=sr()+x6
     t1=x4

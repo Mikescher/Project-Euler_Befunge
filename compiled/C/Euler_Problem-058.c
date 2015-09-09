@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -28,10 +28,10 @@ _1:
     if(sr()-2==0)goto _2;else goto _11;
 _2:
     sp();
-    x2=x2+1;
+    x2++;
 _4:
     t0=x1+1;
-    x1=x1+1;
+    x1++;
     t0=t0<(x2*10)?1:0;
     if((t0)!=0)goto _5;else goto _10;
 _5:
@@ -46,7 +46,7 @@ _8:
     sp();
     goto _4;
 _9:
-    x0=x0+2;
+    x0+=2;
     sa(sr());
     sa(sr()<2?1:0);
     goto _7;
@@ -67,7 +67,7 @@ _15:
 _16:
     sa(sr());
     t0=x4+1;
-    x4=x4+1;
+    x4++;
     x3=sr();
     sa(sp()-1LL);
     t1=0;
@@ -75,7 +75,7 @@ _17:
     if(tm(sr(),2)==0)goto _18;else goto _19;
 _18:
     sa(td(sp(),2));
-    t1=t1+1;
+    t1++;
     goto _17;
 _19:
     x5=t1;
@@ -101,10 +101,10 @@ _23:
     sa(sp()*sp());
     sa(tm(sp(),x7));
     t0=td(x9,2);
-    x9=td(x9,2);
+    x9/=2;
     t1=x6;
     t2=td(t1,t0);
-    t2=tm(t2,2);
+    t2%=2;
     t2=(t2!=0)?0:1;
     if((t2)!=0)goto _24;else goto _25;
 _24:
@@ -128,8 +128,8 @@ _28:
     sa(sr());
     sa(sp()*sp());
     t0=sp();
-    t0=tm(t0,x3);
-    t0=t0-1;
+    t0%=x3;
+    t0--;
     t0=(t0!=0)?0:1;
     t1=(sr()-1!=0)?1:0;
     sa(sp()-x3);
@@ -141,7 +141,7 @@ _28:
     sa(sp()+sp());
     t2=sp();
     t1=t0+t2;
-    t1=t1-3;
+    t1-=3;
     if((t1)!=0)goto _31;else goto _29;
 _29:
     sp();
@@ -172,7 +172,7 @@ _33:
     sa(sp()-3LL);
     if(sp()!=0)goto _16;else goto _2;
 _34:
-    x9=x9*2;
+    x9*=2;
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()+1LL);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}

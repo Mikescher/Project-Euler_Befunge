@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABAClUUFqxDAQ+4pJ9zQmRRpvdjfBmD6khB4Kc52TT3l8nW4CbSGFbnWwPTPIkuX6tCP8HY+x/o2CHYQrPMHP8AF+gV/hN/gID6F771RCIH1UOhI9oNaH"+
@@ -39,13 +39,13 @@ static void Main(string[] args)
         t0=(gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0);
         if(((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0))<gr(1,1))goto _10;else goto _3;
     _3:
-        t0=t0-gr(1,1);
+        t0-=gr(1,1);
         if((t0)!=0)goto _4;else goto _9;
     _4:
         t0=gr(2,1);
         if((gr(gr(2,1),0))!=0)goto _6;else goto _5;
     _5:
-        t0=t0-1;
+        t0--;
         gw(2,1,t0);
         goto _4;
     _6:
@@ -54,7 +54,7 @@ static void Main(string[] args)
         System.Console.Out.Write(gr(3,1));
         return;
     _8:
-        t0=t0-1;
+        t0--;
         gw(2,1,t0);
         gw(gr(2,1),0,gr(gr(2,1),0)+1);
         goto _1;

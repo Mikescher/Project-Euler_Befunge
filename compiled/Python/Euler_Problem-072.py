@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABADNWHlYU9cSp0XBCARfXNgE5KsRi5GgoEjYFFo/JDQoWokICbuAKJsxxBgigkYLKBUSlrDIEwQUJEHQAGEXEMJWglIgbNKAEAkQhLCE5EHfP/a1Aq/a"
   + "vnf/mDtz5nfm3Dsz58zcqxmxQWr5Wic1loz2244N/LZ8414c2kovUcVncKvWJirJRPtuyKaCKhmZUOewTRHf2HaNp+yqA4oyux+lnHX6fvFxkFT3vQNOGJ4G8NuwGf5w"
@@ -99,7 +99,6 @@ def _5():
     return 6
 def _6():
     global t0
-    global t0
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
     sa(tm(sr(),gr(1,0)))
@@ -177,8 +176,6 @@ def _22():
     global t0
     global t1
     global t2
-    global t2
-    global t2
     gw(gr(2,2)+9,1,32)
     t0=0
     t1=gr(2,2)-1
@@ -191,9 +188,7 @@ def _23():
     return 31
 def _24():
     global t0
-    global t0
     global t1
-    global t2
     global t2
     t0=gr(tm(gr(gr(2,2)+9,1),gr(1,0)),(td(gr(gr(2,2)+9,1),gr(1,0)))+3)
     gw(4,2,td(gr(4,2),gr(tm(gr(gr(2,2)+9,1),gr(1,0)),(td(gr(gr(2,2)+9,1),gr(1,0)))+3)))
@@ -205,9 +200,6 @@ def _24():
     return 21
 def _25():
     global t0
-    global t0
-    global t0
-    global t0
     t0=gr(tm(gr(gr(2,2)+9,1),gr(1,0)),(td(gr(gr(2,2)+9,1),gr(1,0)))+3)
     gw(4,2,gr(tm(gr(gr(2,2)+9,1),gr(1,0)),(td(gr(gr(2,2)+9,1),gr(1,0)))+3)*gr(4,2))
     t0=t0-1
@@ -217,9 +209,6 @@ def _25():
 def _26():
     global t0
     global t1
-    global t1
-    global t0
-    global t0
     sa(gr(2,2))
     gw(2,2,gr(2,2)+1)
     sa(sp()+9);

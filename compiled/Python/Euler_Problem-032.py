@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADVVsFuwyAM/RUK7ALKhrNGbVBk7UOi9NBVuXLilI8fISRNm5S1nbq074CMjeQn7Ae25CXAeyxNJAoWx9L0Xg3WpKXSxdI0IkBKKBICiW6WpvI77NIE"
   + "JnClFXR/oL7ELT2jgADvK24NnNQf7XENHm7/GLVlDS4Fgqo1SFAmNdF7wpwe9lTgVhm9VXWWyaH+qN3uTTeooV41CCUY5/jQq4ZgqWNREY36HG0KHDeZY1A7Z5ZlWyFE"
@@ -93,8 +93,6 @@ def _8():
     return (9)if(sp()!=0)else(75)
 def _9():
     global t0
-    global t0
-    global t0
     sa(sr())
     sa(1)
     v0=sp()
@@ -129,8 +127,6 @@ def _12():
     return (13)if(sp()!=0)else(75)
 def _13():
     global t0
-    global t0
-    global t0
     sa(sr())
     sa(1)
     v0=sp()
@@ -161,8 +157,6 @@ def _16():
     sa(sr())
     return (17)if(sp()!=0)else(73)
 def _17():
-    global t0
-    global t0
     global t0
     sa(sr())
     sa(1)
@@ -203,7 +197,6 @@ def _20():
 def _21():
     return (20)if(sp()!=0)else(22)
 def _22():
-    global t0
     global t0
     sp()
     sa(sp()+sp());
@@ -261,8 +254,6 @@ def _30():
     return (31)if(sp()!=0)else(69)
 def _31():
     global t0
-    global t0
-    global t0
     sa(sr())
     sa(1)
     v0=sp()
@@ -297,8 +288,6 @@ def _34():
     return (35)if(sp()!=0)else(69)
 def _35():
     global t0
-    global t0
-    global t0
     sa(sr())
     sa(1)
     v0=sp()
@@ -329,8 +318,6 @@ def _38():
     sa(sr())
     return (39)if(sp()!=0)else(67)
 def _39():
-    global t0
-    global t0
     global t0
     sa(sr())
     sa(1)
@@ -372,7 +359,6 @@ def _43():
     return (42)if(sp()!=0)else(44)
 def _44():
     global t0
-    global t0
     sp()
     sa(sp()+sp());
     t0=sp()
@@ -410,7 +396,6 @@ def _50():
     t0=gr(gr(8,0),2)
     return (52)if((gr(gr(8,0),2))==0)else(51)
 def _51():
-    global t0
     global t0
     t0=t0-gr(gr(7,0),2)
     return (52)if((t0)!=0)else(65)
@@ -471,13 +456,11 @@ def _62():
     return 57
 def _63():
     global t0
-    global t0
     t0=t0-1
     gw(8,0,t0)
     gw(7,0,gr(8,0)-1)
     return 50
 def _64():
-    global t0
     global t0
     t0=t0-1
     gw(7,0,t0)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -49,8 +49,6 @@ def _5():
 def _6():
     global t0
     global x2
-    global t0
-    global t0
     t0=x2+1
     x2=x2+1
     t0=t0-x1
@@ -58,8 +56,6 @@ def _6():
 def _7():
     global t0
     global x1
-    global t0
-    global t0
     t0=x1+1
     x1=x1+1
     t0=t0-x0
@@ -84,29 +80,24 @@ def _11():
     sp()
     return 6
 def _12():
+    global t0
     global x2
+    global t1
     global x1
+    global t2
     global x3
-    global t0
-    global t0
-    global t1
-    global t1
-    sa(x2)
+    global t3
+    t0=x2
+    print(x2,end="",flush=True)
     print(chr(32),end="",flush=True)
-    sa(sr())
-    print(sp(),end="",flush=True)
-    sa(x1)
+    t1=x1
+    print(x1,end="",flush=True)
     print(chr(32),end="",flush=True)
-    sa(sr())
-    print(sp(),end="",flush=True)
-    sa(x3)
+    t2=x3
+    print(x3,end="",flush=True)
     print(chr(61),end="",flush=True)
-    sa(sr())
-    print(sp(),end="",flush=True)
-    sa(sp()*sp());
-    t0=sp()
-    sa(sp()*t0);
-    t1=sp()
+    t3=t1*t2
+    t1=t0*t3
     print(t1,end="",flush=True)
     return 13
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12]

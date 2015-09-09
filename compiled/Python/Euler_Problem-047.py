@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhrc3HLNvG4gwPNj/aOnLpce6Y6x9BQ++2fS7z7rFLEe77aJh8LZ5nx6rt+v5ZlxeumHSpRr5Iye+FSct+a5ivf3mqYwptbt+/vz76vX6"
   + "N4/fv149e82L7/tj4v+eeOXJtiHdnWGogwObUw+EnX1we8G5TZMj2vLm3FL/aFKirliyPPQF202FtlXaq9+V3X66kC/WY6FvcOu2M8lZy9Zn9adnGq/6VPahMkDmbtyy"
@@ -58,7 +58,6 @@ def _3():
     return 4
 def _4():
     global t0
-    global t0
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
     sa(tm(sr(),gr(1,0)))
@@ -82,7 +81,6 @@ def _7():
     gw(3,0,0)
     return 8
 def _8():
-    global t0
     global t0
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
@@ -127,9 +125,6 @@ def _12():
     return (13)if(sp()!=0)else(32)
 def _13():
     global t0
-    global t0
-    global t1
-    global t1
     global t1
     sa(sr())
     sa(gr(4,0)+1)
@@ -152,7 +147,6 @@ def _14():
     return (30)if(gr(5,0)!=4)else(15)
 def _15():
     global t0
-    global t0
     gw(8,0,0)
     sa(sr())
     sa(sr())
@@ -164,8 +158,6 @@ def _15():
 def _16():
     return (22)if(sr()!=gr(7,0))else(17)
 def _17():
-    global t0
-    global t0
     global t0
     t0=gr(8,0)+1
     gw(8,0,gr(8,0)+1)
@@ -198,9 +190,6 @@ def _23():
     return (24)if(tm(sr(),gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3))!=0)else(29)
 def _24():
     global t0
-    global t0
-    global t1
-    global t1
     global t1
     sa(sr())
     sa(gr(4,0)+1)
@@ -231,7 +220,6 @@ def _28():
     return 27
 def _29():
     global t0
-    global t0
     t0=gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3)
     gw(5,0,gr(5,0)+1)
     sa(td(sp(),t0))
@@ -244,7 +232,6 @@ def _31():
     sa(tm(sr(),gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3)))
     return 12
 def _32():
-    global t0
     global t0
     t0=gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3)
     gw(5,0,gr(5,0)+1)

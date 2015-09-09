@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 def td(a,b):
     return bool(random.getrandbits(1))
 def td(a,b):
@@ -38,7 +38,6 @@ def _1():
 def _2():
     global t0
     global x2
-    global t0
     t0=t0-1
     x2=t0
     return (1)if(tm(x3*(x3-(2*x2)),(x3-x2)*2)!=0)else(3)
@@ -63,7 +62,6 @@ def _6():
 def _7():
     global t0
     global x3
-    global t0
     global x5
     global x2
     t0=t0+2

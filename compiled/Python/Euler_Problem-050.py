@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhre3z+ZddhBhuxBumLer07Pa99/ahI2J5ye5Tg1zMBViSgydIMp/3kJXVHMLb1CLw5zNM458O6Oy+3X+sXsi2/38u8PD59+L3/c3Zs+f"
   + "Tw8/rZL4ejzfLqZOZ1kgA0P9WmWGUTAKRsGQBw/2hzIw/N+zrSbcb9nhxGB387P3289uftEmeHdzYUlqoJnhu1eF23fmV/gs6r6zNff4xFerTsZ/Dnn5Q8d8eenUU9ef"
@@ -59,7 +59,6 @@ def _3():
     return 4
 def _4():
     global t0
-    global t0
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
     sa(tm(sr(),gr(1,0)))
@@ -83,7 +82,6 @@ def _7():
     gw(3,0,0)
     return 8
 def _8():
-    global t0
     global t0
     sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
@@ -136,7 +134,6 @@ def _11():
     gw(9,0,1)
     return 12
 def _12():
-    global t0
     global t0
     sa(gr(7,0)+1)
     gw(7,0,gr(7,0)+1)
@@ -198,8 +195,6 @@ def _26():
     sp()
     return 19
 def _27():
-    global t0
-    global t0
     global t0
     gw(8,0,sp())
     t0=gr(9,0)

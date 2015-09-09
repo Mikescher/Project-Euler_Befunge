@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -27,7 +27,7 @@ _1:
     x0=1;
     x1=1;
 _2:
-    if(sr()<=x0*9*x1)goto _3;else goto _9;
+    if(sr()<=(x0*9*x1))goto _3;else goto _9;
 _3:
     sa(sp()-1LL);
     t0=(td(sr(),x0))+x1;
@@ -45,8 +45,8 @@ _5:
     if(sp()!=0)goto _8;else goto _6;
 _6:
     sp();
-    t0=tm(t0,10);
-    t0=t0*x2;
+    t0%=10;
+    t0*=x2;
     x2=t0;
     sa(sr());
     if(sp()!=0)goto _1;else goto _7;
@@ -55,14 +55,14 @@ _7:
     sp();
     return 0;
 _8:
-    t0=td(t0,10);
+    t0/=10;
     sa(sp()-1LL);
     sa(sr());
     goto _5;
 _9:
     t0=x0*9*x1;
-    x0=x0+1;
-    x1=x1*10;
+    x0++;
+    x1*=10;
     sa(sp()-t0);
     goto _2;
 }

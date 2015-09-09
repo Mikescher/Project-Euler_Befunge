@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -10,7 +10,7 @@ void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
 int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
-    int64 t0,t1;
+    int64 t0,t1,t2,t3;
     int64 x0=1000;
     int64 x1=2;
     int64 x2=34;
@@ -33,13 +33,13 @@ _5:
     sp();
 _6:
     t0=x2+1;
-    x2=x2+1;
-    t0=t0-x1;
+    x2++;
+    t0-=x1;
     if((t0)!=0)goto _2;else goto _7;
 _7:
     t0=x1+1;
-    x1=x1+1;
-    t0=t0-x0;
+    x1++;
+    t0-=x0;
     if((t0)!=0)goto _1;else goto _8;
 _8:
     return 0;
@@ -58,22 +58,17 @@ _11:
     sp();
     goto _6;
 _12:
-    sa(x2);
+    t0=x2;
+    printf("%lld", x2);
     printf(" ");
-    sa(sr());
-    printf("%lld", (int64)(sp()));
-    sa(x1);
+    t1=x1;
+    printf("%lld", x1);
     printf(" ");
-    sa(sr());
-    printf("%lld", (int64)(sp()));
-    sa(x3);
+    t2=x3;
+    printf("%lld", x3);
     printf("=");
-    sa(sr());
-    printf("%lld", (int64)(sp()));
-    sa(sp()*sp());
-    t0=sp();
-    sa(sp()*t0);
-    t1=sp();
+    t3=t1*t2;
+    t1=t0*t3;
     printf("%lld", t1);
     return 0;
 }

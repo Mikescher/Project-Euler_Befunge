@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABADtnEtP40gQgP9KTyCXWFm6ut1+CUX7Q0bMrLQr72UlXzYnNL9969W2EwMDwwpMESvEJnDI56qud/t4dXXl8PBvcLirdz6c/Hwi2E8kWeb9LLCfS7Kf"
   + "B1aPC+wF9gJ7gb3AXmDfGPZNjgvsGx4H17QF+MH5QG+Rr+Jw+iUPwfdxB77vN36zT6nYBT/99fhhYJ/3LY+bPzdfi2aLp673sdgjdN97KGAX+9sPA1u3LrUOAsrT4XVM"
@@ -81,7 +81,6 @@ def _5():
     return 6
 def _6():
     global t0
-    global t0
     global t3
     t0=gr(5,1)
     gw(1,1,gr(6,1))
@@ -94,16 +93,12 @@ def _7():
 def _8():
     global t3
     global t0
-    global t0
-    global t0
     gw(gr(5,1)+109,gr(6,1),t3)
     t0=gr(6,1)+1
     gw(6,1,gr(6,1)+1)
     t0=t0-128
     return (6)if((t0)!=0)else(9)
 def _9():
-    global t0
-    global t0
     global t0
     t0=gr(5,1)+1
     gw(5,1,gr(5,1)+1)
@@ -114,7 +109,6 @@ def _10():
     return 11
 def _11():
     global t0
-    global t0
     t0=gr(1,3)
     gw(1,3,gr(1,3)-1)
     return (16)if((t0)!=0)else(12)
@@ -123,8 +117,6 @@ def _12():
     gw(2,5,0)
     return 13
 def _13():
-    global t0
-    global t0
     global t0
     t0=gr(gr((tm(gr(1,5),100))+8,td(gr(1,5),100))+109,gr((tm(gr(1,5),3))+4,3))
     gw(2,5,gr(gr((tm(gr(1,5),100))+8,td(gr(1,5),100))+109,gr((tm(gr(1,5),3))+4,3))+gr(2,5))
@@ -136,18 +128,12 @@ def _14():
     return 35
 def _15():
     global t0
-    global t0
     t0=t0-1
     gw(1,5,t0)
     return 13
 def _16():
     global t0
-    global t0
     global t1
-    global t1
-    global t0
-    global t0
-    global t0
     t0=gr(1,3)
     gw(1,2,(tm(gr(1,3),26))+97)
     t0=td(t0,26)
@@ -173,8 +159,6 @@ def _19():
     return (18)if(sr()>126)else(20)
 def _20():
     global t0
-    global t0
-    global t0
     t0=gr(1,4)
     gw(1,4,gr(1,4)+1)
     t0=t0-9
@@ -183,8 +167,6 @@ def _21():
     sa(sp()-32);
     return (32)if(sp()!=0)else(22)
 def _22():
-    global t0
-    global t0
     global t0
     t0=(tm(sr(),3))+1
     gw(2,4,t0)
@@ -206,7 +188,6 @@ def _23():
     return (31)if(t0>126)else(24)
 def _24():
     global t0
-    global t0
     t0=t0-101
     return (25)if((t0)!=0)else(30)
 def _25():
@@ -220,8 +201,6 @@ def _27():
 def _28():
     global t0
     global t1
-    global t1
-    global t0
     gw(2,3,gr(3,4))
     t0=gr(3,2)
     t1=gr(2,2)
@@ -240,7 +219,6 @@ def _31():
     sp()
     return 11
 def _32():
-    global t0
     global t0
     sa(sp()-1);
     t0=(tm(sr(),3))+1

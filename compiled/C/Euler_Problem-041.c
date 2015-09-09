@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -87,7 +87,7 @@ _11:
     sp();
     goto _4;
 _13:
-    if(sr()<=(gr(0,2)-2)*(gr(0,2)-2))goto _15;else goto _14;
+    if(sr()<=((gr(0,2)-2)*(gr(0,2)-2)))goto _15;else goto _14;
 _14:
     sa(sr());
     sa(gr(0,2));

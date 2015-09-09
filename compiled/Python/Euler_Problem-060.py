@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABADsevk/1O/Xv31fIvvShOxCKbtBKoai7LInKbsoxNiZInuoZB8JhQgTNZZJym5kJ1sxgywZ4SV8r6nu+/P+3o/7+w98H+9+6ep5rrNc55zrnHO9JlgC"
   + "AwX5Dw3F8lj/7WMqnM8uW0FC/FUrL8Q9DpIainmyr6VapOrQRRx8qe+Ptn7MSLPW3XWw23SwMdd+sMNMQTF9THt/oTscsoFrh+2bUVBEmIWmwQ/EkGBVFHohb+qAC+zh"
@@ -478,7 +478,6 @@ def _3():
     return 4
 def _4():
     global t0
-    global t0
     sa(gr(3,2)+1)
     gw(3,2,gr(3,2)+1)
     sa((tm(sr(),gr(1,2)))+gr(6,2))
@@ -543,8 +542,6 @@ def _14():
     return (15)if((gr(1,4))!=0)else(98)
 def _15():
     global t0
-    global t0
-    global t0
     t0=gr(gr(1,4)+1,5)+1
     gw(gr(1,4)+1,5,gr(gr(1,4)+1,5)+1)
     t0=t0-gr(2,2)
@@ -559,7 +556,6 @@ def _18():
     sa(gr(1,4)-1)
     return (19)if(gr(1,4)!=1)else(21)
 def _19():
-    global t0
     global t0
     sa(sr()+1)
     sa(5)
@@ -598,7 +594,6 @@ def _26():
     gw(3,4,gr(2,4)+gr(7,gr(gr(1,4)+1,5)+1))
     return 16
 def _27():
-    global t0
     global t0
     sa(sr())
     sa(sr())
@@ -758,9 +753,6 @@ def _57():
     global t0
     global t1
     global t2
-    global t2
-    global t2
-    global t2
     v0=sp()
     v1=sp()
     sa(v0)
@@ -795,15 +787,8 @@ def _61():
     return (62)if(sp()!=0)else(66)
 def _62():
     global t0
-    global t0
-    global t0
-    global t0
-    global t1
     global t1
     global t2
-    global t1
-    global t1
-    global t1
     v0=sp()
     v1=sp()
     sa(v0)
@@ -947,9 +932,6 @@ def _83():
     global t0
     global t1
     global t2
-    global t2
-    global t2
-    global t2
     v0=sp()
     v1=sp()
     sa(v0)
@@ -984,15 +966,8 @@ def _87():
     return (88)if(sp()!=0)else(92)
 def _88():
     global t0
-    global t0
-    global t0
-    global t0
-    global t1
     global t1
     global t2
-    global t1
-    global t1
-    global t1
     v0=sp()
     v1=sp()
     sa(v0)
@@ -1087,7 +1062,6 @@ def _98():
 def _99():
     global t0
     global t1
-    global t2
     global t2
     sa(sr())
     gw(gr(1,3)+8,0,sp())

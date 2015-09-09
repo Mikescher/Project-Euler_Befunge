@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -22,7 +22,7 @@ void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
 int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
-    int64 t0,t1;
+    int64 t0,t1,t2;
     d();
     s=(int64*)calloc(q,sizeof(int64));
     gw(1,0,6);
@@ -62,8 +62,8 @@ _8:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     {int64 v0=sp();sa(sp()-v0);}
     t1=sp();
-    t1=td(t1,2);
-    t1=t1*(gr(2,0)+1);
+    t1/=2;
+    t1*=gr(2,0)+1;
     sa(sp()+t1);
     sa(sr()<1000?1:0);
     goto _6;
@@ -152,20 +152,19 @@ _26:
     if((tm(gr(1,4),100))!=(td(gr((tm(gr(5,0),64))+9,(td(gr(5,0),64))+(gr(6,0)*2)),100)))goto _22;else goto _27;
 _27:
     gw(2,1,0);
-    sa(0);
+    t2=0;
 _28:
-    sa(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)));
+    t0=gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2));
+    printf("%lld", gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)));
     printf("\n");
-    sa(sr());
-    printf("%lld", (int64)(sp()));
-    sa(sp()+sp());
+    t2+=t0;
     t0=gr(2,1)+1;
     gw(2,1,gr(2,1)+1);
-    t0=t0-gr(1,0);
+    t0-=gr(1,0);
     if((t0)!=0)goto _28;else goto _30;
 _30:
     printf("  = ");
-    printf("%lld", (int64)(sp()));
+    printf("%lld", t2);
     return 0;
 _31:
     gw(6,0,-1);

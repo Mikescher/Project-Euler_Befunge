@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("AR+LCAAAAAAABAClks1yhCAMx18FcG8MFvxYjeMwfYO97qGj3rhy4rQPvwkq2g720GYGiJL880s0MPZktIpk7Moo8JEsF2HFIAKe4VKDsZGNIR4Y5o0EJbRwWoLX9aCM"
   + "07V4iDXOgsaX2ttaO5DaGTWsnscUNXR4+7W8YjFMm6eCpyIKRRyKO93F52K82aEIc6ddu/wCZ19BmZEk51DwBWXhlm0iqkUXJUHxXBCbWFRbJ/MUFCmNxxlhG0ZiM56a"
@@ -134,20 +134,6 @@ def _17():
     global t11
     global t12
     global t13
-    global t13
-    global t12
-    global t11
-    global t10
-    global t9
-    global t8
-    global t7
-    global t6
-    global t5
-    global t4
-    global t3
-    global t2
-    global t1
-    global t0
     t0=gr(10,0)-47
     t1=gr(17,0)-47
     t2=gr(18,0)-47

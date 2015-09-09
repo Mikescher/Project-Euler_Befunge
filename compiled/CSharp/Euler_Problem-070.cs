@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADtmFFr3DAMgP+KcO5g2KSxlaTJRHD3svc99sHkjh6HYXTMlNZP1/8+eTvYul5LSmm3B33ESizJsizbL8m2AKU1DXy5+f51v7uFz3fX+xuoS//qev8N"+
@@ -50,7 +50,7 @@ static void Main(string[] args)
         sa(td(sp(),gr(1,0)));
         sa(sp()+3L);
         {long v0=sp();t0=gr(sp(),v0);}
-        t0=t0-32;
+        t0-=32;
         if((t0)!=0)goto _6;else goto _4;
     _6:
         if(gr(4,0)>gr(3,0))goto _1;else goto _7;
@@ -65,7 +65,7 @@ static void Main(string[] args)
         sa(td(sp(),gr(1,0)));
         sa(sp()+3L);
         {long v0=sp();t0=gr(sp(),v0);}
-        t0=t0-88;
+        t0-=88;
         if((t0)!=0)goto _9;else goto _12;
     _9:
         sa(sp()+1L);
@@ -89,7 +89,7 @@ static void Main(string[] args)
         sa(td(sp(),gr(1,0)));
         sa(sp()+3L);
         {long v0=sp();t0=gr(sp(),v0);}
-        t0=t0-88;
+        t0-=88;
         if((t0)!=0)goto _16;else goto _14;
     _14:
         t0=gr(4,2)*gr(5,2);
@@ -100,7 +100,7 @@ static void Main(string[] args)
         t0=gr(7,2)*gr(2,2);
         t1=(gr(4,2)-1)*(gr(5,2)-1);
         gw(8,2,(gr(4,2)-1)*(gr(5,2)-1));
-        t1=t1*gr(1,2);
+        t1*=gr(1,2);
         t2=t0>t1?1:0;
         if((t2)!=0)goto _16;else goto _18;
     _16:

@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -175,8 +175,8 @@ _17:
     sa(td(sp(),79));
     sa(sp()+gr(8,1)+20);
     {int64 v0=sp();t1=gr(sp(),v0);}
-    t1=t1*2;
-    t1=t1+gr(1,0);
+    t1*=2;
+    t1+=gr(1,0);
     sa(t0+t1);
     sa(tm(sr(),10));
     sa(sr());
@@ -200,8 +200,8 @@ _19:
     sa(td(sp(),79));
     sa(sp()+gr(8,0)+2);
     {int64 v0=sp();t1=gr(sp(),v0);}
-    t1=t1*2;
-    t1=t1+gr(1,0);
+    t1*=2;
+    t1+=gr(1,0);
     sa(t0+t1);
     sa(tm(sr(),10));
     sa(sr());

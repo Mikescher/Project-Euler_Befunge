@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 public static class Program 
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -24,32 +24,30 @@ static void Main(string[] args)
         x5=t0;
         t1=td(t0*3,7);
         x6=t1;
-        t1=t1*7;
-        t1=t1-(x5*3);
-        if(t1>0)goto _2;else goto _8;
+        t1*=7;
+        t1-=x5*3;
+        if(t1>0)goto _2;else goto _7;
     _2:
-        t1=t1;
-    _3:
         x7=t1;
         x8=x5*7;
-        if((x4*x8)>(x3*x7))goto _4;else goto _5;
-    _4:
+        if((x4*x8)>(x3*x7))goto _3;else goto _4;
+    _3:
         x4=x7;
         x3=x8;
         x0=x6;
         x2=x5;
+    _4:
+        if(t0!=x1)goto _5;else goto _6;
     _5:
-        if(t0!=x1)goto _6;else goto _7;
+        t0++;
+        if(tm(t0*3,7)==0)goto _4;else goto _1;
     _6:
-        t0=t0+1;
-        if(tm(t0*3,7)==0)goto _5;else goto _1;
-    _7:
         System.Console.Out.Write(x0);
         System.Console.Out.Write(" /");
         System.Console.Out.Write('\n');
         System.Console.Out.Write(x2);
         return;
-    _8:
-        t1=t1*-1;
-        goto _3;
+    _7:
+        t1*=-1;
+        goto _2;
 }}

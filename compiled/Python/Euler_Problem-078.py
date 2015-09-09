@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# compiled with BefunCompile v1.0.7 (c) 2015
+# compiled with BefunCompile v1.0.8 (c) 2015
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACd1P0/0wkAwHFXND2wnkR3oVRUaiVp+bItaeRhW4XkaauT50TzjUzHTknydGdJeRhmLBRqZmxGjy7Jw4zQCmtTW+ZhsywT7nWv1/0B97rPj+8/4GOa"
   + "rqv1T9paEx87L/3ivUZn1Hvz2S6n5MDM8JBt2k7DT4V71zDsIlnKKhnT+0quJyom6YSJctgqnlziYO9IxQXaPnImjrQkmVKLiyHZPo2ddaELg2zXHoS51GQDmL2S85f2"
@@ -85,15 +85,6 @@ def _5():
     return 1
 def _6():
     global t0
-    global t0
-    global t0
-    global t0
-    global t1
-    global t2
-    global t2
-    global t0
-    global t0
-    global t1
     global t1
     global t2
     t0=gr(4,0)

@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADdVMGO4yAM/RW3yV5AbDGQNkEIjfYDttfOKEr3xpUTp+6/r03SadrRaKRqTmspNQXbvPfspLy+vgJb82DwpJ1+nU7fWe/t7e1b8f1+NvETOx6P1X8X"+
@@ -65,7 +65,7 @@ static void Main(string[] args)
         sa(sr());
         sa(sp()*sp());
         t0=sp();
-        t0=t0-gr(3,1);
+        t0-=gr(3,1);
         if((t0)!=0)goto _7;else goto _53;
     _7:
         gw(24,5,0);
@@ -143,7 +143,7 @@ static void Main(string[] args)
         sa(sp()+9L);
         sa(5);
         {long v0=sp();t1=gr(sp(),v0);}
-        t1=t1*gr(3,2);
+        t1*=gr(3,2);
         sa(t0+t1);
         sa(sp()+gr(1,3));
         t0=td(sr(),gr(2,1));
@@ -234,7 +234,7 @@ static void Main(string[] args)
         sp();
         t0=gr(3,1)+1;
         gw(3,1,gr(3,1)+1);
-        t0=t0-1000;
+        t0-=1000;
         if((t0)!=0)goto _4;else goto _37;
     _37:
         System.Console.Out.Write(gr(1,1));
@@ -370,7 +370,7 @@ static void Main(string[] args)
         sa(sp()+9L);
         sa(1);
         {long v0=sp();t1=gr(sp(),v0);}
-        t1=t1*gr(3,2);
+        t1*=gr(3,2);
         sa(t0+t1);
         sa(sp()+gr(1,3));
         t0=td(sr(),gr(2,1));

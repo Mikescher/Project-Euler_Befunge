@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADlmM1uIzcQhF+lIWcvGjjmP4eCoAR5DsPOba466bQPv1+1tJtdIM5KCJhLiLFEzlBgTXV1NemLfd8u9kg7PjT7oXbalV16OezjcwhnO1kIYTuY37RP"+
@@ -60,7 +60,7 @@ static void Main(string[] args)
         gw(4,0,t0);
         t0=gr(0,0);
         gw(5,0,tm(gr(0,0),20));
-        t0=td(t0,20);
+        t0/=20;
         gw(6,0,t0);
         t0=gr(gr(5,0)+66,gr(6,0)+4);
         gw(5,0,gr(5,0)+gr(3,0));

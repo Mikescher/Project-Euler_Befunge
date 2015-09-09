@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -34,7 +34,7 @@ _4:
     sa(sp()+t0);
     goto _2;
 _5:
-    x0=x0-2;
+    x0-=2;
     sa(sr()-x0);
     sa(sr()-x0);
     sa(sr()-x0);

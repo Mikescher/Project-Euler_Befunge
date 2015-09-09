@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.7 (c) 2015 */
+/* compiled with BefunCompile v1.0.8 (c) 2015 */
 public static class Program 
 {
 private static readonly string _g = "AR+LCAAAAAAABADtk01ug0AMha9CIWxs0dgj/mYUod6gF0CQ3SzrFascvm4SlAAJUdMsKoSl+dHT6I3ne9AF/7yi19bq90e/Nd9l+635LttvzXfZfmu+y/Zb812234ur"+
@@ -172,8 +172,8 @@ static void Main(string[] args)
         sa(td(sp(),79));
         sa(sp()+gr(8,1)+20);
         {long v0=sp();t1=gr(sp(),v0);}
-        t1=t1*2;
-        t1=t1+gr(1,0);
+        t1*=2;
+        t1+=gr(1,0);
         sa(t0+t1);
         sa(tm(sr(),10));
         sa(sr());
@@ -197,8 +197,8 @@ static void Main(string[] args)
         sa(td(sp(),79));
         sa(sp()+gr(8,0)+2);
         {long v0=sp();t1=gr(sp(),v0);}
-        t1=t1*2;
-        t1=t1+gr(1,0);
+        t1*=2;
+        t1+=gr(1,0);
         sa(t0+t1);
         sa(tm(sr(),10));
         sa(sr());
