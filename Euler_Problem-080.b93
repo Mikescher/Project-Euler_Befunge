@@ -1,0 +1,60 @@
+v X X XX X
+         ############################################################
+
+ @       ############################################################
+ .
+ g       ############################################################
+ 0
+ ^9$># #<         v             v               <   v    <
+    $ v_^#-"d"\+1:<       <>$"<">1-::9+5g\9+1p:#^_$0>:::9+3g55+%55+*v
+>090p2>:20p"d">::*20g-#v_$^|!:-1p5+8\-g07g06p04          #         <\
+    #  v"<":$_^#   !:-1<   >::9+1g40g-60p:9+3g20g45***70p0>70g60g`!|5
+    ^ <>1-:0\9+1p:0\v      ^         ";"p04* :g02p5"D"0p<#+        65
+       |:p5+9\0:p3+9< >9+1g-!#v_::9+5g\9+1g`!#v_$20g1-20^ 1        0+
+       >$"D"1p"d"020p>20g:*40p "<">1-::9+3g20g 45***40gv  ^p06+"d"g<+
+      ^ _>         #v^#-"<":+1<   |:p5+9\%"d"p 04/"d":+<v3+9\+/+55g3<
+                   v_v^\g5+9::<0 $<                v:+1p<#
+         ^p02+1g02$>#<#       ^#              <    > ";"-|
+        ^       !:-1p020p09+g09g02p3"D"+g02*+55%+55g3"D"$<
+
+[2, 0]    x
+[4, 0]    carry
+[6, 0]    sub-a
+[7, 0]    sub-b
+[9, 0]    sum
+
+";"     =>     059
+"<"     =>     060
+"D"     =>     068
+"d"     =>     100
+
+
+---------------------------------------
+
+A short look to [Wikipedia](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Digit-by-digit_calculation) finds us a neat algorithm to calculate the square-root digit-by-digit.
+
+I have optimized it a little bit with the target to use not so many variables:
+
+~~~
+IEnumerable<int> DRoot(int r)
+{
+	BigInteger c = r;
+	BigInteger p = 0;
+	int x = 0;
+
+	for (ii = 0; ii < 100; ii++)
+	{	
+		for (x = 0;(x+1)*(20*p + (x+1)) <= c;x++);
+		c = 100*c  - 2000*p*x - 100*x*x;
+		p = p*10 + x;
+	}
+	
+	return p;
+}
+~~~
+
+The algorithm is pretty simple, but *god* do I hate long addition/multiplication in Befunge.
+
+We need 120 base-10 digits for the numbers `p`and `c`.
+In our program we use base-100 notation. This way we can fit the numbers in a single befunge-93 row 
+**and** can simply multiply by 100 with a single left shift operation.
