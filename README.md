@@ -10,7 +10,7 @@
 - [x] Problems `041` - `050`  ([blog](http://www.mikescher.de/blog/1/Project_Euler_with_Befunge))
 - [x] Problems `051` - `060`  ([blog](http://www.mikescher.de/blog/1/Project_Euler_with_Befunge))
 - [x] Problems `061` - `070`  ([blog](http://www.mikescher.de/blog/1/Project_Euler_with_Befunge))
-- [ ] Problems `071` - `080`
+- [x] Problems `071` - `080`  ([blog](http://www.mikescher.de/blog/1/Project_Euler_with_Befunge))
 - [ ] Problems `081` - `090`
 - [ ] Problems `091` - `100`
 
