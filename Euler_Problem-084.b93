@@ -1,0 +1,68 @@
+v   XX
+  ========================================    v      <     v<
+  ???????????????????????????????????????? v<<   v<<<|-"!":<|-+98:< 
+>040p"}}@"**58*v             v   _v# -1<  v<10   v 10> v    <    <|<
+   v           <                  0    |:+<2?^#*4<2?^#$<         ^< 
+   >1-:2+0\1pv                            ^3<    ^3<               -
+   |:        <     >>>v >>>v v<         >>>v   >>>v    >>>v        2
+v $<               12 v 12 v #^p04<+55$<01 v   01 v    01 v >v     :
+>40g::2+1g1+\2+1p>#^?3>#^?3>++58*%:40p>#^?2>4*#^?2>+4*#^?2>+|>:56*-|
+|                   >4^v<>4^ #v<       v<>3^    >3^     >3^          
+>$58vv             <v $<|-*94:<|-+*294:<|-7:  <    v p04+55$<      <
+#v *<  >>>v   >>>v ^    <      <        <
+:    $ 01 v   01 v  #>v   >v    >v   >v   >v   >v  #>v   >v   >v   > v
+-    >#^?2>4*#^?2>+ :|>1-:|>1 -:|>1-:|>1-:|>1-:|>1-:|>1-:|>1-:|>1-:| #       
+1>1-::2v>3^    >3^   >55+v>56 +v>64*v>"'"v>5v  >0v  v    <    v    >40g3-   v
+ |:p2+ <>::1+2g2+1g\ 2+2g 2+1 g \`                         v>v       #  >62*v
+ >$v    ^_v#:<-1p2\g 05+2 :-1 p 2+2\ g2+1 :: p 05 g    2+2:_^#>40g492*+-|
+   >0>:58* \`|  >$22 g.32 g.4 2 g.@                 >40g6%1+2/2*5*5+v$  >74*v
+     ^+1  <  >#<^#       >#    >#   >#   ># >#   >#         #<      >       v
+^<                  <        <                     <                 <  $p04<
+
+
+
+[4, 0] Field
+
+[5, 0] tmp
+
+
+#### single dice ####
+
+  >>>v
+  12 v
+>#^?3>
+   >4^
+
+#### two dice ####
+
+  >>>v >>>v
+  12 v 12 v
+>#^?3>#^?3>+
+   >4^  >4^
+
+#### dice 0..16 ####
+
+  >>>v   >>>v
+  01 v   01 v
+>#^?2>4*#^?2>+
+   >3^    >3^
+
+#### dice 0..64 ####
+
+  >>>v   >>>v    >>>v
+  01 v   01 v    01 v
+>#^?2>4*#^?2>+4*#^?2>+
+   >3^    >3^     >3^
+
+
+---------------------------------------
+
+This is not really a mathematical problem (or at least not with my solution).
+
+All I did was implement the rules in my befunge program and run a randomized game for `1 000 000` turns.
+This is called an [Monte Carlo algorithm](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm) and if we have enough runs it becomes pretty improbable to get a wrong result.
+
+Perhaps there are some fancy mathematical solutions out there, but this works too.
+
+A note to the befunge code: It got pretty messy because of all the decisions we have to implement for the different monopoly rules,
+but all we needed as storage was an 40-element array. So it wasn't that hard to fit it all in the 80x25 space.
