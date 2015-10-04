@@ -7,6 +7,7 @@
 
 
 !processed/
+!linq/*.linq
 !compiled/*
 !compiled/C/*.c
 !compiled/CSharp/*.cs
