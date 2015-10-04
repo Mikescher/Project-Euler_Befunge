@@ -33,4 +33,4 @@ vp00-1*:*45    p1++1550p0++1551p1+55-10p0+551p19-10p090   p010<+++++++++++++++++
 
 ---------------------------------------
 
-The idea here was to first move the numbers into a *real* 2020 grid where every field represents a single number, the rest was not that hard.
+The idea here was to first move the numbers into a *real* 20x20 grid where every field represents a single number, the rest was not that hard.
