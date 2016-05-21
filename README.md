@@ -11,7 +11,7 @@
 - [x] Problems `051` - `060`  ([blog](http://www.mikescher.de/blog/1/Project_Euler_with_Befunge))
 - [x] Problems `061` - `070`  ([blog](http://www.mikescher.de/blog/1/Project_Euler_with_Befunge))
 - [x] Problems `071` - `080`  ([blog](http://www.mikescher.de/blog/1/Project_Euler_with_Befunge))
-- [ ] Problems `081` - `090`
+- [x] Problems `081` - `090`  ([blog](http://www.mikescher.de/blog/1/Project_Euler_with_Befunge))
 - [ ] Problems `091` - `100`
 
 
@@ -20,6 +20,7 @@ Notes
 
  - For some of the longer programs (err ... like ... all of them) use [BefunExec](https://github.com/Mikescher/BefunGen) or a similar fast interpreter. *(Your interpreter should support int64 numbers for some programs)*
  - I restricted myself to the Befunge-93 instruction set, but some programs don't fit in the 80x25 size restriction - so I think they are technically Befunge-98 programs
+ - I have written a (more or less) short piece of text about every problem and my solution, you can read them on my website or look at the raw markdown on the bottom of each file.
 
 
 Clean files
