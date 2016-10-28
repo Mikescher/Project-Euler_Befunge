@@ -1,0 +1,26 @@
+vX       0000028433
+>"zqG"**8*9+v       <>p\v>$9           v
+v+55p010-1  <      >|^0<$|!:p0+9\+*86%+ 55p01/+<
+>1-::9+0g68*-2*10g+:55v1>>1-::9+0g68*-1 0g+:55 ^
+|:p0+9\+*86%+55p01/  +<1> #+\#9-#90#:g#<,#-:#1_v
+>$                 ^>5+^                     @$<
+
+#$watch[1,0]:int = carry
+
+// [9 .. 19] digits
+
+// 7830457   =   "zqG"**8*9+
+
+
+STEPS: 3.594.180.514
+Time: 477.987 ms
+Size: 48x6  (effective Befunge-93)
+
+
+---------------------------------------
+
+This is an alternative solution for Problem-097 where we keep our internal numbers small enough that an 32bit interpreter can run this program.
+The "trick" is that we represent our number as a list of ten digits and then manually multiply it with two (7830457-times). *(see: long-multiplication)*
+Because we only have ten digits (and ignore the carry of the highest digit) we get the modulo operation free-house.
+
+Even with this limitation this is a really easy problem, but now the execution takes an order of magnitude longer.

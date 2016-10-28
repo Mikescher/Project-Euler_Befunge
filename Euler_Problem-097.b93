@@ -1,0 +1,17 @@
+"z~k"+*7+98v@
+v +***"Gqz"<.
+>1- \2*"(2"v%
+|: \%*:** :<*
+>$1+"(2":**:^
+
+
+---------------------------------------
+
+Well this was a really easy one.
+We simply multiply the number `28433` 7830457-times with two.
+After each multiplication we modulo the result with 2^10 to prevent an overflow and in the end we add one.
+This is really simple (the program operates completely on the stack) and works perfectly as long as our interpreter uses at least 64bit numbers.
+(But this is a condition for a lot of programs I have written here)
+
+But just for fun I have written an alternative version that uses only 32bit numbers.
+You can find it under `Euler_Problem-097 (32bit).b93`
