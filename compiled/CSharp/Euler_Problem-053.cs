@@ -1,5 +1,5 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
-public static class Program 
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABACtUE0PwiAM/St0nRcIWhgHtxDiL2EeTLhy4qT/3fqBmy7zYHxJQ9PXPl5bBCIKBv4A8QV/0gump2x6k8ny21EuyxZHqVcdJbuBxPm+5qoUSLCxiTrV"+
                                     "J3JHKX1gbmhOjQYso1EDK9qdo3yr86yVQZ9XdwrD9FVuLpdDE+OMRd8K9JbS9vDp7+XJyhkTQ3sXNPrJwnK7h0R1J3RcaZkwFoQa/o2pZseIkMkN2vBVfJ4uRHxmpQyA"+
@@ -17,7 +17,7 @@ private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
-static void Main(string[] args)
+static void Main(string[]args)
 {
         long t0;
         gw(9,0,1);
@@ -26,6 +26,7 @@ static void Main(string[] args)
         gw(3,0,1);
     _1:
         sa(gr(3,0));
+
         if(gr(3,0)-100==0)goto _2;else goto _3;
     _2:
         System.Console.Out.Write(gr(2,0));
@@ -33,9 +34,11 @@ static void Main(string[] args)
         return;
     _3:
         sa(sp()+1L);
+
         sa(sr());
         gw(3,0,sp());
         sa(td(sp(),2));
+
         gw(4,0,sp());
         sa(gr(3,0)-(gr(4,0)*2));
     _4:
@@ -45,18 +48,23 @@ static void Main(string[] args)
         gw(gr(4,0)+9,tm(gr(3,0),2),gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1)*2);
     _6:
         sa((sp()>1000000)?1:0);
+
         t0=((gr(gr(4,0)+9,(tm(gr(3,0),2)!=0)?0:1))!=0)?0:1;
+
         if((((gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1))!=0)?1:0)!=0)goto _7;else goto _13;
     _7:
         t0=(t0!=0)?0:1;
+
         if((t0)!=0)goto _8;else goto _13;
     _8:
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _9;else goto _11;
     _9:
         t0=gr(4,0)-1;
         gw(4,0,gr(4,0)-1);
         t0=(t0!=0)?0:1;
+
         if((t0)!=0)goto _1;else goto _10;
     _10:
         sa(sp()-(gr(3,0)-(gr(4,0)*2)));
@@ -76,4 +84,5 @@ static void Main(string[] args)
         sa(gr(gr(4,0)+9,(tm(gr(3,0),2)!=0)?0:1)+gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1));
         gw(gr(4,0)+9,tm(gr(3,0),2),gr(gr(4,0)+9,(tm(gr(3,0),2)!=0)?0:1)+gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1));
         goto _6;
-}}
+}
+}

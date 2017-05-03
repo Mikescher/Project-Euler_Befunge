@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -21,10 +21,12 @@ int main(void)
 _1:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()*10LL);
+
     x0=sp();
     sa((tm(sr(),10))+x0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),10));
+
     sa(sr());
 _2:
     if(sp()!=0)goto _1;else goto _3;
@@ -36,19 +38,25 @@ _3:
 _4:
     t0=(tm(sr(),2))+x0;
     sa(td(sp(),2));
+
     sa(sr());
+
     if(sp()!=0)goto _25;else goto _5;
 _5:
     sp();
     sa(sp()-t0);
+
     t1=sp();
     t1=(t1!=0)?0:1;
+
     if((t1)!=0)goto _24;else goto _6;
 _6:
     sp();
 _7:
     sa(sp()-1LL);
+
     sa(sr());
+
     if(sp()!=0)goto _8;else goto _9;
 _8:
     sa(sr());
@@ -57,6 +65,7 @@ _8:
     sa((tm(sr(),10))+x0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),10));
+
     sa(sr());
     goto _2;
 _9:
@@ -67,10 +76,12 @@ _9:
 _10:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()*10LL);
+
     x0=sp();
     sa((tm(sr(),10))+x0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),10));
+
     sa(sr());
 _11:
     if(sp()!=0)goto _10;else goto _12;
@@ -82,19 +93,25 @@ _12:
 _13:
     t0=(tm(sr(),2))+x0;
     sa(td(sp(),2));
+
     sa(sr());
+
     if(sp()!=0)goto _23;else goto _14;
 _14:
     sp();
     sa(sp()-t0);
+
     t1=sp();
     t1=(t1!=0)?0:1;
+
     if((t1)!=0)goto _22;else goto _15;
 _15:
     sp();
 _16:
     sa(sp()-1LL);
+
     sa(sr());
+
     if(sp()!=0)goto _17;else goto _18;
 _17:
     sa(sr());
@@ -103,14 +120,17 @@ _17:
     sa((tm(sr(),10))+x0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),10));
+
     sa(sr());
     goto _11;
 _18:
     printf(" =");
 _19:
     sa(sp()+sp());
+
     t0=sp();
     sa(sr());
+
     if(sp()!=0)goto _20;else goto _21;
 _20:
     sa(sp()+t0);
@@ -119,6 +139,7 @@ _21:
     sa(t0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()+sp());
+
     t1=sp();
     printf("%lld", t1);
     return 0;

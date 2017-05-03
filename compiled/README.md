@@ -8,11 +8,12 @@ These files are not always up to date - if you want to be sure better compile th
 
 Here is the command used to create these files:
 ~~~
-"PATH\TO\BefunCompile.exe" ^
+"PATH\TO\BefunCompile.exe" generate ^
     --file="processed\*.b93" ^
-    --languages=all ^
+    --languages="c;cs;py3;py2;java" ^
     --out="compiled\{l}\{f}.{le}" ^
     --format ^
+    --gzip ^
     --ss ^
     --sg ^
     --override ^

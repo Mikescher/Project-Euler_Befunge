@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -38,12 +38,15 @@ _1:
     if(gr(2,1)!=9)goto _11;else goto _2;
 _2:
     t0=(gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0);
+
     if(((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0))<gr(1,1))goto _10;else goto _3;
 _3:
     t0-=gr(1,1);
+
     if((t0)!=0)goto _4;else goto _9;
 _4:
     t0=gr(2,1);
+
     if((gr(gr(2,1),0))!=0)goto _6;else goto _5;
 _5:
     t0--;

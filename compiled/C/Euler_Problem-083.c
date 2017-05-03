@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -297,23 +297,27 @@ _1:
     sa(((tm(sr(),80))*5)+103);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),80));
+
     {int64 v0=sp();t0=gr(sp(),v0);}
     t0-=48;
     sa(sr());
     sa(((tm(sr(),80))*5)+102);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),80));
+
     {int64 v0=sp();t1=gr(sp(),v0);}
     t1-=48;
     sa(sr());
     sa(((tm(sr(),80))*5)+101);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),80));
+
     {int64 v0=sp();t2=gr(sp(),v0);}
     t2-=48;
     sa(((tm(sr(),80))*5)+100);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),80));
+
     {int64 v0=sp();t3=gr(sp(),v0);}
     t3-=48;
     t3*=10;
@@ -326,16 +330,21 @@ _1:
     sa((tm(sr(),80))+9);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),80));
+
     sa(sp()+2LL);
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(252047376);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa((tm(sr(),80))+9);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),80));
+
     sa(sp()+100LL);
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
+
     if(sp()!=0)goto _21;else goto _2;
 _2:
     gw(2,0,1);
@@ -352,15 +361,20 @@ _5:
     if(gr(gr(4,0)+100,gr(5,0)+100)!=88)goto _6;else goto _13;
 _6:
     sa(sp()+1LL);
+
+
     if(sr()!=80)goto _12;else goto _7;
 _7:
     sp();
     sa(sp()+1LL);
+
+
     if(sr()!=80)goto _11;else goto _8;
 _8:
     sp();
     t0=gr(7,0);
     gw(7,0,0);
+
     if((t0)!=0)goto _9;else goto _10;
 _9:
     gw(4,0,0);
@@ -387,6 +401,7 @@ _13:
     gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+8,gr(5,0)+2));
     t3=t1>t2?1:0;
     t1=t0*t3;
+
     if((t1)!=0)goto _20;else goto _14;
 _14:
     t0=gr(5,0)>0?1:0;
@@ -395,6 +410,7 @@ _14:
     gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+1));
     t3=t1>t2?1:0;
     t1=t0*t3;
+
     if((t1)!=0)goto _19;else goto _15;
 _15:
     t0=gr(4,0)-80;
@@ -403,6 +419,7 @@ _15:
     gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+10,gr(5,0)+2));
     t3=t1>t2?1:0;
     t1=t0*t3;
+
     if((t1)!=0)goto _18;else goto _16;
 _16:
     t0=gr(5,0)-80;
@@ -411,6 +428,7 @@ _16:
     gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+3));
     t3=t1>t2?1:0;
     t1=t0*t3;
+
     if((t1)!=0)goto _17;else goto _6;
 _17:
     gw(gr(4,0)+9,gr(5,0)+101,gr(7,0));

@@ -1,5 +1,5 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
-public static class Program 
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABADtVc1uIyEMfhVPmEqrQbM1zE8yCKFK+wDdYw4R0xtXTpz68GuYIZm/tg+wsdoEbGNsfx9OgOt4vb6/A8sCGwl9qbc6MMAcMATGgV2AKfoLTJsAEq6P"+
                                     "UIz2vL0JLyV3UhaOdkrDaFk9qBfedZXyIjkIchDkQDv1mgxqDCAcDOt4e++Y2xgWAfc3zgE1yB4agD+LMvy2MGb7EthUMKU/ec09Ycs+iFp9lh9QGZToL0bhbeDoFQtj"+
@@ -23,7 +23,7 @@ private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
-static void Main(string[] args)
+static void Main(string[]args)
 {
         long t0;
         gw(3,3,29);
@@ -32,10 +32,12 @@ static void Main(string[] args)
         sa(8);
     _1:
         sa(sp()-1L);
+
         sa(sr());
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+9L);
+
         sa(0);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sr());
@@ -52,15 +54,18 @@ static void Main(string[] args)
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(1);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sr());
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(2);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sr());
+
         if(sp()!=0)goto _92;else goto _5;
     _5:
         sp();
@@ -70,12 +75,15 @@ static void Main(string[] args)
         sa(sr()+8);
         sa(0);
         {long v0=sp();t0=gr(sp(),v0);}
+
         if((t0)!=0)goto _89;else goto _7;
     _7:
         sa(sr());
         sa(sr());
         sa(sp()*sp());
+
         sa(td(sp(),10));
+
         sa(sr()+4);
         sa(2);
         {long v0=sp();t0=gr(sp(),v0);}
@@ -85,11 +93,15 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(2);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sr());
         sa(sp()*sp());
+
         sa(tm(sp(),10));
+
+
         if(sr()!=9)goto _88;else goto _8;
     _8:
         gw(2,1,(((gr(10,1))!=0)?0:1)+gr(2,1));
@@ -97,10 +109,13 @@ static void Main(string[] args)
         sp();
     _9:
         sa(sp()-1L);
+
         sa(sr());
+
         if(sp()!=0)goto _6;else goto _10;
     _10:
         sp();
+
         if((gr(2,1)>6?1:0)+(gr(2,2)>6?1L:0L)==0)goto _17;else goto _11;
     _11:
         gw(17,0,((gr(17,0))!=0)?0:1);
@@ -111,6 +126,7 @@ static void Main(string[] args)
         if(sp()!=0)goto _16;else goto _13;
     _13:
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _14;else goto _15;
     _14:
         System.Console.Out.Write(gr(2,0));
@@ -118,6 +134,7 @@ static void Main(string[] args)
         return;
     _15:
         sa(sp()-1L);
+
         sa(sr());
         sa(sr());
         sa(sr());
@@ -127,9 +144,11 @@ static void Main(string[] args)
         sa((sp()!=0)?0:1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+9L);
+
         sa(0);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sp()+9L);
+
         sa(0);
         {long v0=sp();sa(gr(sp(),v0));}
         goto _12;
@@ -152,6 +171,7 @@ static void Main(string[] args)
     _22:
         sa(sr()-1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+
         if(sp()!=0)goto _23;else goto _24;
     _23:
         sa(sr()+4);
@@ -162,16 +182,21 @@ static void Main(string[] args)
         sp();
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _44;else goto _26;
     _26:
         sa(sp()-1L);
+
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _31;else goto _27;
     _27:
         sa(sp()-1L);
+
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _28;else goto _30;
     _28:
         gw(17,0,((gr(17,0))!=0)?0:1);
@@ -188,6 +213,7 @@ static void Main(string[] args)
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(1);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sr()-1);
@@ -205,8 +231,10 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(1);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
+
         if(5!=gr(2,1))goto _38;else goto _37;
     _37:
         sa(1);
@@ -219,6 +247,7 @@ static void Main(string[] args)
     _40:
         sa(sr()-1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+
         if(sp()!=0)goto _41;else goto _31;
     _41:
         sa(sr()+4);
@@ -230,6 +259,7 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(1);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(0);
@@ -244,6 +274,7 @@ static void Main(string[] args)
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(1);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _40;
@@ -252,8 +283,10 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(2);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
+
         if(5!=gr(2,2))goto _46;else goto _85;
     _46:
         sa(9);
@@ -263,6 +296,7 @@ static void Main(string[] args)
     _48:
         sa(sr()-1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+
         if(sp()!=0)goto _51;else goto _49;
     _49:
         sp();
@@ -270,10 +304,12 @@ static void Main(string[] args)
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(2);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sr()-1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+
         if(sp()!=0)goto _23;else goto _24;
     _51:
         sa(sr()+4);
@@ -285,6 +321,7 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(2);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         gw(4,0,(((gr(10,1))!=0)?0:1)+gr(13,1));
@@ -323,12 +360,15 @@ static void Main(string[] args)
         sp();
         sa(gr(7,0));
         sa(gr(6,0));
+
         if(gr(6,0)>gr(7,0))goto _61;else goto _62;
     _61:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     _62:
         sa(sp()*1024L);
+
         sa(sp()+sp());
+
         t0=sp();
         gw(3,0,t0);
         sa(1279);
@@ -338,7 +378,9 @@ static void Main(string[] args)
         if(sp()!=0)goto _64;else goto _84;
     _64:
         sa(sp()-35L);
+
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _65;else goto _83;
     _65:
         sa(gr(3,0));
@@ -346,28 +388,38 @@ static void Main(string[] args)
         sa(tm(sr(),80));
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),80));
+
         sa(sp()+gr(3,3));
+
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         gw(2,0,gr(2,0)+1);
     _66:
         sa(sp()+1L);
+
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _82;else goto _67;
     _67:
         sa(sp()-1L);
+
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _80;else goto _68;
     _68:
         sa(sp()-1L);
+
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _79;else goto _69;
     _69:
         sa(sp()-1L);
+
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _70;else goto _30;
     _70:
         gw(10,1,1);
@@ -390,16 +442,21 @@ static void Main(string[] args)
     _74:
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _77;else goto _75;
     _75:
         sa(sp()-1L);
+
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _49;else goto _76;
     _76:
         sa(sp()-1L);
+
         sa(sr());
         sa((sp()!=0)?0:1);
+
         if(sp()!=0)goto _24;else goto _30;
     _77:
         sp();
@@ -407,6 +464,7 @@ static void Main(string[] args)
         sa(0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(2);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _48;
@@ -425,6 +483,7 @@ static void Main(string[] args)
         goto _73;
     _80:
         sp();
+
         if((gr(4,0)+gr(5,0))!=0)goto _71;else goto _81;
     _81:
         gw(10,1,0);
@@ -443,11 +502,14 @@ static void Main(string[] args)
         goto _74;
     _83:
         sa(sp()-1L);
+
         sa(sr());
         sa(tm(sr(),80));
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),80));
+
         sa(sp()+gr(3,3));
+
         {long v0=sp();sa(gr(sp(),v0));}
         sa(sr()-gr(3,0));
         goto _63;
@@ -485,6 +547,7 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(1);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _9;
@@ -492,7 +555,9 @@ static void Main(string[] args)
         sa(sr());
         sa(sr());
         sa(sp()*sp());
+
         sa(td(sp(),10));
+
         sa(sr()+4);
         sa(1);
         {long v0=sp();t0=gr(sp(),v0);}
@@ -502,11 +567,15 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(1);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sr());
         sa(sp()*sp());
+
         sa(tm(sp(),10));
+
+
         if(sr()!=9)goto _91;else goto _90;
     _90:
         gw(2,2,(((gr(10,2))!=0)?0:1)+gr(2,2));
@@ -523,10 +592,12 @@ static void Main(string[] args)
         sa(1);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()+4L);
+
         sa(2);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _9;
     _92:
         sa(sp()-1L);
         goto _4;
-}}
+}
+}

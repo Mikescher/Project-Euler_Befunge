@@ -1,14 +1,18 @@
 *
 !Euler_Problem-???.b93
 !Euler_Problem-??? (*).b93
+
 !.*
 !*/
-!README.md
 
+!README.md
+!_MAKE.bat
 
 !processed/
 !linq/*.linq
 !compiled/*
 !compiled/C/*.c
 !compiled/CSharp/*.cs
-!compiled/Python/*.py
+!compiled/Python2/*.py
+!compiled/Python3/*.py
+!compiled/Java/*.java

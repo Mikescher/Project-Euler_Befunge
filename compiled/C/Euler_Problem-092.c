@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -34,10 +34,12 @@ _1:
     sa((tm(sr(),71))+9);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),71));
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
     sa((sp()!=0)?0:1);
-    if(sp()!=0)goto _2;else goto _21;
+
+    if(sp()!=0)goto _2;else goto _20;
 _2:
     gw(10,0,1);
     gw(27,1,89);
@@ -52,9 +54,11 @@ _4:
     sa((tm(sr(),71))+9);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),71));
+
     {int64 v0=sp();sa(gr(sp(),v0));}
     sa(sr());
     sa((sp()!=0)?0:1);
+
     if(sp()!=0)goto _5;else goto _11;
 _5:
     sp();
@@ -69,6 +73,7 @@ _6:
     sa(tm(sr(),10));
     sa(sr());
     sa(sp()*sp());
+
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
 _7:
@@ -82,33 +87,37 @@ _9:
 _10:
     gw(5,0,sp());
     sa(sp()+sp());
+
     sa((tm(td(gr(5,0),10),10))*(tm(td(gr(5,0),10),10)));
     sa(td(gr(5,0),10));
     sa(td(gr(5,0),10));
     goto _7;
 _11:
-    if(sr()-89==0)goto _12;else goto _19;
+    if(sr()-89==0)goto _12;else goto _18;
 _12:
     gw(3,0,gr(3,0)+1);
 _13:
     gw(5,0,sp());
     sp();
     sa(gr(2,0));
-    if((gr(2,0))!=0)goto _17;else goto _14;
+
+    if((gr(2,0))!=0)goto _16;else goto _14;
 _14:
     sp();
     sa(sp()-1LL);
+
     sa(sr());
     sa(sr());
+
+    if(sp()!=0)goto _9;else goto _15;
 _15:
-    if(sp()!=0)goto _9;else goto _16;
-_16:
     printf("%lld", gr(3,0));
     sp();
     sp();
     return 0;
-_17:
+_16:
     sa(sp()-1LL);
+
     sa(sr());
     gw(2,0,sp());
     sa(7);
@@ -119,15 +128,16 @@ _17:
     sa((tm(sr(),71))+9);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),71));
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(gr(2,0));
-    if((gr(2,0))!=0)goto _17;else goto _14;
+    if((gr(2,0))!=0)goto _16;else goto _14;
+_18:
+    if(sr()!=1)goto _19;else goto _13;
 _19:
-    if(sr()!=1)goto _20;else goto _13;
+    sp();
+    goto _6;
 _20:
-    sa(sp()*0LL);
-    if(sp()!=0)goto _15;else goto _6;
-_21:
     sa(sp()-1LL);
     goto _1;
 }

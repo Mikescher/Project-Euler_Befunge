@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -31,7 +31,7 @@ _1:
     t0*=2;
     t2=t1-t0;
     x3=t2;
-    if((td((2+(x2*2))-x0-(2*x3)-x1,4))<=1000000000000L)goto _1;else goto _3;
+    if((td((2+(x2*2))-x0-(2*x3)-x1,4))<=1000000000000LL)goto _1;else goto _3;
 _3:
     printf("%lld", td((4+(x1*2)+(x3*2)+(x0*2))-(x2*2),8));
     return 0;

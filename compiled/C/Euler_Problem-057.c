@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -39,7 +39,9 @@ _1:
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+2LL);
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
     sa(0);
@@ -47,7 +49,9 @@ _1:
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+8LL);
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
     sa(0);
@@ -55,7 +59,9 @@ _1:
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+14LL);
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
     sa(0);
@@ -63,7 +69,9 @@ _1:
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+20LL);
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
     sa(0);
@@ -71,7 +79,9 @@ _1:
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+26LL);
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
     sa(0);
@@ -79,7 +89,9 @@ _1:
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+32LL);
+
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sp()-1LL);
     if((sr()+1)!=0)goto _1;else goto _3;
@@ -109,12 +121,15 @@ _5:
     if(sp()!=0)goto _6;else goto _7;
 _6:
     t0=395-gr(2,0);
+
     if((395-gr(2,0))>gr(1,1))goto _20;else goto _7;
 _7:
     gw((tm(gr(2,0),79))+1,(td(gr(2,0),79))+gr(9,0)+2,sp());
     sa(td(sp(),10));
+
     gw(1,0,sp());
     sa(sr());
+
     if(sp()!=0)goto _19;else goto _8;
 _8:
     gw(7,0,tm(gr(7,0)+6,18));
@@ -131,22 +146,28 @@ _9:
     if(sp()!=0)goto _10;else goto _11;
 _10:
     t0=395-gr(2,0);
+
     if((395-gr(2,0))>gr(2,1))goto _18;else goto _11;
 _11:
     gw((tm(gr(2,0),79))+1,(td(gr(2,0),79))+gr(9,1)+20,sp());
     sa(td(sp(),10));
+
     gw(1,0,sp());
     sa(sr());
+
     if(sp()!=0)goto _17;else goto _12;
 _12:
     gw(7,1,tm(gr(7,1)+6,18));
     gw(8,1,tm(gr(8,1)+6,18));
     gw(9,1,tm(gr(9,1)+6,18));
     sp();
+
     if(gr(1,1)<=gr(2,1))goto _13;else goto _16;
 _13:
     sa(sp()-1LL);
+
     sa(sr());
+
     if(sp()!=0)goto _14;else goto _15;
 _14:
     gw(1,0,0);
@@ -161,6 +182,7 @@ _16:
     goto _13;
 _17:
     sa(sp()-1LL);
+
     sa(sr());
     sa(sr());
     sa(sr());
@@ -168,12 +190,16 @@ _17:
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+gr(7,1)+20);
+
     {int64 v0=sp();t0=gr(sp(),v0);}
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+gr(8,1)+20);
+
     {int64 v0=sp();t1=gr(sp(),v0);}
     t1*=2;
     t1+=gr(1,0);
@@ -186,6 +212,7 @@ _18:
     goto _11;
 _19:
     sa(sp()-1LL);
+
     sa(sr());
     sa(sr());
     sa(sr());
@@ -193,12 +220,16 @@ _19:
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+gr(7,0)+2);
+
     {int64 v0=sp();t0=gr(sp(),v0);}
     sa((tm(sr(),79))+1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),79));
+
     sa(sp()+gr(8,0)+2);
+
     {int64 v0=sp();t1=gr(sp(),v0);}
     t1*=2;
     t1+=gr(1,0);

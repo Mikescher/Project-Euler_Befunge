@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -36,6 +36,7 @@ _2:
     sa(gr(7,1)+3);
     {int64 v0=sp();t0=gr(sp(),v0);}
     t0=(t0!=0)?0:1;
+
     if((t0)!=0)goto _6;else goto _3;
 _3:
     gw(5,1,gr(5,1)+1);
@@ -52,10 +53,12 @@ _5:
     goto _4;
 _6:
     sa(sp()+1LL);
+
     sa(sr()>=gr(6,1)?1:0);
     goto _1;
 _7:
     sp();
+
     if(sr()!=gr(1,1))goto _9;else goto _8;
 _8:
     printf("%lld", gr(5,1));
@@ -63,6 +66,7 @@ _8:
     return 0;
 _9:
     sa(sp()+1LL);
+
     t0=td(sr()+1,2);
     gw(6,1,t0);
     sa(sr());

@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -57,6 +57,7 @@ _5:
 _7:
     t0=gr(3,0)-1;
     gw(3,0,gr(3,0)-1);
+
     if((t0)!=0)goto _4;else goto _8;
 _8:
     sa(9);
@@ -68,11 +69,14 @@ _10:
     sa(t0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     {int64 v0=sp();sa(sp()-v0);}
+
     t1=sp();
+
     if(t1!=gr(2,1))goto _11;else goto _16;
 _11:
     t1=t1>gr(2,1)?1:0;
     t1=(t1!=0)?0:1;
+
     if((t1)!=0)goto _14;else goto _12;
 _12:
     sp();
@@ -84,6 +88,7 @@ _13:
     return 0;
 _14:
     sa(sp()+1LL);
+
     sa(sr());
     sa(gr(2,1));
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
@@ -98,14 +103,18 @@ _16:
     sa(t0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     {int64 v0=sp();sa(sp()-v0);}
+
     sa(sr());
+
     if(sp()!=0)goto _17;else goto _13;
 _17:
     gw(2,2,sp());
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()+gr(2,2));
+
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()+1LL);
+
     sa(sr());
     sa(sr());
     gw(2,1,sp());
@@ -115,6 +124,7 @@ _17:
     goto _15;
 _18:
     sa(sp()+1LL);
+
     sa(sr());
     sa(0);
     {int64 v0=sp();sa(gr(sp(),v0));}

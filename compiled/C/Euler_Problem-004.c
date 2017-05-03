@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -30,9 +30,11 @@ _1:
     gw(1,0,gr(1,0)+1);
     t0-=gr(0,4);
     sa(gr(0,0));
+
     if((t0)!=0)goto _3;else goto _2;
 _2:
     sa(sp()+1LL);
+
     sa(sr());
     gw(0,0,sp());
     gw(1,0,1);
@@ -40,16 +42,19 @@ _2:
     sp();
     sa(1);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+
     if(sr()!=gr(0,4))goto _3;else goto _12;
 _3:
     gw(0,1,1);
     sa(sp()*sp());
+
     sa(sr());
 _4:
     t0=tm(sr(),10);
     gw(gr(0,1),1,t0);
     gw(0,1,gr(0,1)+1);
     sa(td(sp(),10));
+
     sa(sr());
     if(sp()!=0)goto _4;else goto _6;
 _6:
@@ -61,6 +66,7 @@ _8:
     t0=gr(0,2)+1;
     gw(0,2,gr(0,2)+1);
     t0-=gr(0,1);
+
     if((t0)!=0)goto _7;else goto _9;
 _9:
     if(sr()<gr(0,3))goto _10;else goto _11;

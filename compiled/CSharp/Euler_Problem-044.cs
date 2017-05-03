@@ -1,5 +1,5 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
-public static class Program 
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+public static class Program
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
@@ -7,7 +7,7 @@ private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
-static void Main(string[] args)
+static void Main(string[]args)
 {
         long t0,t1,t2;
         long x0=1073741824;
@@ -28,24 +28,31 @@ static void Main(string[] args)
         sp();
         sp();
         sa(sp()+1L);
+
         sa(sr());
         x1=sr();
         t0=(sr()*3)-1;
         sa(sp()*t0);
+
         sa(td(sp(),2));
+
         x5=sr();
         goto _1;
     _4:
         x2=sr();
         t0=(sr()*3)-1;
         sa(sp()*t0);
+
         t1=sp();
         t1/=2;
         x3=t1;
         x6=0;
         sa(sp()-t1);
+
         sa(sp()*24L);
+
         sa(sp()+1L);
+
         x4=sr();
         sa(x0);
         sa(x0>x4?1:0);
@@ -53,16 +60,20 @@ static void Main(string[] args)
         if(sp()!=0)goto _24;else goto _6;
     _6:
         sa(sr());
+
         if(sp()!=0)goto _21;else goto _7;
     _7:
         sp();
         sa(sp()-(x6*x6));
+
         t0=x6;
+
         if(sp()!=0)goto _16;else goto _8;
     _8:
         t0%=6;
         t0-=5;
         t0=(t0!=0)?0:1;
+
         if((t0)!=0)goto _9;else goto _16;
     _9:
         sa(((x3+x5)*24)+1);
@@ -80,11 +91,14 @@ static void Main(string[] args)
     _13:
         sp();
         sa(sp()-(x6*x6));
+
         t0=x6;
+
         if(sp()!=0)goto _16;else goto _14;
     _14:
         t0%=6;
         t0-=5;
+
         if((t0)!=0)goto _16;else goto _15;
     _15:
         System.Console.Out.Write(x5-x3);
@@ -100,6 +114,7 @@ static void Main(string[] args)
     _18:
         x6/=2;
         sa(td(sp(),4));
+
         sa(sr());
         goto _12;
     _19:
@@ -114,6 +129,7 @@ static void Main(string[] args)
         goto _11;
     _20:
         sa(td(sp(),4));
+
         sa(sr()>x4?1:0);
         goto _10;
     _21:
@@ -121,7 +137,9 @@ static void Main(string[] args)
     _22:
         x6/=2;
         sa(td(sp(),4));
+
         sa(sr());
+
         if(sp()!=0)goto _21;else goto _7;
     _23:
         t0=sr()+x6;
@@ -135,6 +153,8 @@ static void Main(string[] args)
         goto _6;
     _24:
         sa(td(sp(),4));
+
         sa(sr()>x4?1:0);
         goto _5;
-}}
+}
+}

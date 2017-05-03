@@ -1,5 +1,5 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
-public static class Program 
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABADlmM1uIzcQhF+lIWcvGjjmP4eCoAR5DsPOba466bQPv1+1tJtdIM5KCJhLiLFEzlBgTXV1NemLfd8u9kg7PjT7oXbalV16OezjcwhnO1kIYTuY37RP"+
                                     "u992y+tt8BIXO5vp8XWuPb29X5YP2zzId7T/G6ywWkiWko1uebVYiZOVoM9Ov1jgs1tfrSaLySr3u42oH34WrKe/af8eVhm6xhCU2G2NFkHQrQVbu+5wf6xWsjXmrAJa"+
@@ -25,7 +25,7 @@ private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
-static void Main(string[] args)
+static void Main(string[]args)
 {
         long t0,t1,t2,t3,t4;
         gw(0,0,675);
@@ -77,14 +77,17 @@ static void Main(string[] args)
         t4=t2*t3;
         t2=t1*t4;
         t1=t0*t2;
+
         if(t1>gr(1,0))goto _12;else goto _9;
     _9:
         t0=gr(2,0);
         gw(2,0,gr(2,0)-1);
+
         if((t0)!=0)goto _8;else goto _10;
     _10:
         t0=gr(0,0);
         gw(0,0,gr(0,0)-1);
+
         if((t0)!=0)goto _7;else goto _11;
     _11:
         System.Console.Out.Write(gr(1,0));
@@ -92,4 +95,5 @@ static void Main(string[] args)
     _12:
         gw(1,0,t1);
         goto _9;
-}}
+}
+}

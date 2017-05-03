@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -31,6 +31,7 @@ _4:
     if(((x2>x5?1:0)*(x0>x6?1LL:0LL))!=0)goto _5;else goto _12;
 _5:
     sa(x0-x6);
+
     if((x0-x6)<0)goto _11;else goto _6;
 _6:
     sa(sp()-0LL);

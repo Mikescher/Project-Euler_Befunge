@@ -1,5 +1,5 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
-public static class Program 
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+public static class Program
 {
 private static readonly string _g = "Ah+LCAAAAAAABADtd1NzJQywbWxzYtt2JrZt286Obdt2JhPbNibWRDt2djKxznd/wH05z6ern7pWdVV3re5aiyQODuz/BRTYdcF2ooO+WqFxRW9wnpEdx3wUjh0I5gVc"+
                                     "bwNj4729oVNMsOfwnfwX+FSzyPCmo9t8XN8vLU3L+Xw2KcKvl0OS77vH7y9889mG9puv3Lb5hubLV7vff1+UHY0t50Bcb7zGfVfvbUq/jP1+v7RfP3rOJxat6fe/CYPo"+
@@ -184,7 +184,7 @@ private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
-static void Main(string[] args)
+static void Main(string[]args)
 {
         long t0,t1,t2,t3,t4,t5;
         gw(88,81,(gr(498,79)-48)+(((gr(497,79)-48)+(((gr(496,79)-48)+((gr(495,79)-48)*10))*10))*10));
@@ -198,23 +198,27 @@ static void Main(string[] args)
         sa(((tm(sr(),80))*5)+103);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),80));
+
         {long v0=sp();t0=gr(sp(),v0);}
         t0-=48;
         sa(sr());
         sa(((tm(sr(),80))*5)+102);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),80));
+
         {long v0=sp();t1=gr(sp(),v0);}
         t1-=48;
         sa(sr());
         sa(((tm(sr(),80))*5)+101);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),80));
+
         {long v0=sp();t2=gr(sp(),v0);}
         t2-=48;
         sa(((tm(sr(),80))*5)+100);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),80));
+
         {long v0=sp();t3=gr(sp(),v0);}
         t3-=48;
         t3*=10;
@@ -227,16 +231,21 @@ static void Main(string[] args)
         sa((tm(sr(),80))+9);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),80));
+
         sa(sp()+2L);
+
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(252047376);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa((tm(sr(),80))+9);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),80));
+
         sa(sp()+100L);
+
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         sa(sr());
+
         if(sp()!=0)goto _17;else goto _2;
     _2:
         gw(2,0,0);
@@ -249,14 +258,19 @@ static void Main(string[] args)
         t5=gr(gr(2,0)+9,gr(3,0)+2);
         t0=gr(gr(2,0)+9,gr(3,0)+99);
         t1=gr(gr(2,0)+8,gr(3,0)+100);
+
         if(gr(2,0)+gr(3,0)==0)goto _5;else goto _10;
     _5:
         gw(gr(2,0)+9,gr(3,0)+100,t5);
         sa(sp()+1L);
+
+
         if(sr()!=80)goto _9;else goto _6;
     _6:
         sp();
         sa(sp()+1L);
+
+
         if(sr()!=80)goto _7;else goto _8;
     _7:
         sa(sr());
@@ -280,6 +294,7 @@ static void Main(string[] args)
         if((gr(3,0))==0)goto _16;else goto _13;
     _13:
         t2=t0>t1?1:0;
+
         if((t2)!=0)goto _15;else goto _14;
     _14:
         t5+=gr(gr(2,0)+9,gr(3,0)+99);
@@ -293,4 +308,5 @@ static void Main(string[] args)
     _17:
         sa(sp()-1L);
         goto _1;
-}}
+}
+}

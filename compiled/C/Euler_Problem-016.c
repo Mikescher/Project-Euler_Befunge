@@ -1,4 +1,4 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -33,6 +33,7 @@ int main(void)
     gw(4,6,1000);
 _1:
     t0=gr(4,6);
+
     if((gr(4,6))==0)goto _2;else goto _6;
 _2:
     gw(6,6,gr(0,6)-1);

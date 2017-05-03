@@ -1,5 +1,5 @@
-/* compiled with BefunCompile v1.0.8 (c) 2015 */
-public static class Program 
+/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABACVjr0OgzAMhF8lUsriiGID4ecURX2QCMasnjLx8A2dWqoO9XLW2b7PxfxRUcCsQhDWntCzDoSBdSSMrJ5Q3paLivBNeQWtygtoUZ5Bs/IEmpR9+Mov"+
                                     "e7G/6Wgl1EwT4sp5pghwivDeNZxTlQ627NHZkGDD7trjPHKvv4f2fnuYA53zPmVuqsB88CNE8nZ2Wxapo3jFb1fjCcDxR0M7AQAA";
@@ -16,7 +16,7 @@ private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
-static void Main(string[] args)
+static void Main(string[]args)
 {
         long t0,t1;
         gw(0,0,1);
@@ -44,22 +44,31 @@ static void Main(string[] args)
         {long v0=sp();sa(gr(sp(),v0));}
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),10));
+
         sa(sr());
+
         if(sp()!=0)goto _10;else goto _3;
     _3:
         sa(sp()+sp());
+
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sr());
+
         if(sp()!=0)goto _9;else goto _4;
     _4:
         sa(sp()+sp());
+
         t0=sp();
         sa(sp()-t0);
+
         t1=sp();
+
         if((t1)!=0)goto _5;else goto _8;
     _5:
         sa(sp()-1L);
+
         sa(sr());
+
         if(sp()!=0)goto _6;else goto _7;
     _6:
         sa(sr());
@@ -71,6 +80,7 @@ static void Main(string[] args)
         {long v0=sp();sa(gr(sp(),v0));}
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),10));
+
         sa(sr());
         goto _1;
     _7:
@@ -92,6 +102,8 @@ static void Main(string[] args)
         {long v0=sp();sa(gr(sp(),v0));}
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),10));
+
         sa(sr());
         goto _1;
-}}
+}
+}
