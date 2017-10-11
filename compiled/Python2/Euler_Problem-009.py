@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -96,21 +96,21 @@ def _12():
     global x3
     global t3
     t0=x2
-    sys.stdout.write(str(x2))
+    sys.stdout.write(str(x2)+" ")
     sys.stdout.flush()
 
     sys.stdout.write(chr(32))
     sys.stdout.flush()
 
     t1=x1
-    sys.stdout.write(str(x1))
+    sys.stdout.write(str(x1)+" ")
     sys.stdout.flush()
 
     sys.stdout.write(chr(32))
     sys.stdout.flush()
 
     t2=x3
-    sys.stdout.write(str(x3))
+    sys.stdout.write(str(x3)+" ")
     sys.stdout.flush()
 
     sys.stdout.write(chr(61))
@@ -118,7 +118,7 @@ def _12():
 
     t3=t1*t2
     t1=t0*t3
-    sys.stdout.write(str(t1))
+    sys.stdout.write(str(t1)+" ")
     sys.stdout.flush()
     return 13
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12]

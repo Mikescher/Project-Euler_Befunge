@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABADtmVc4nG/378eM3vuI3oIUDBmjRY/eJaL3SHRGLzEE0UWCJKJEjQhiCBGd0aJGDZMYwahRRtTBGLZf+R+8Z/vk3de1r73vk/u71vo833U/1zpcfCmU"+
                                  "gL8OKWAbM59ivxbUuxvlKvhD3K3C+tanWiVKJkibLzKHRuD1K34xKraiw5eZHW1CNz5pT5yFjsp7qnhur50g+L1LoDstR8qeBalxSwXfELsJdV87FFoWK5Hfzg8lL/bn"+
@@ -90,7 +90,6 @@ int res=0;byte buf[]=new byte[1024];while(res>=0){res=s.read(buf,0,1024);if(res>
 }catch(java.io.IOException e){return null;}}
 private long gr(long x,long y){return(x>=0&&y>=0&&x<1224&&y<833)?g[(int)(y*1224+x)]:0;}
 private void gw(long x,long y,long v){if(x>=0&&y>=0&&x<1224&&y<833)g[(int)(y*1224+x)]=v;}
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -238,8 +237,8 @@ private int _18(){
 
     if(sr()!=gr(3,1))return 20;else return 19;
 }
-private int _19()throws java.io.IOException{
-    System.out.print(String.valueOf(gr(4,2)));
+private int _19(){
+    System.out.print(String.valueOf(gr(4,2))+" ");
     sp();
     return 27;
 }
@@ -299,7 +298,7 @@ private int _26(){
     return 1;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<27){
     switch(c){
@@ -333,5 +332,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

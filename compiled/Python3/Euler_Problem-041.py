@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABACNksFqwzAMhl9FzZpLTYYktxmIYPYYOwSTm646+eSHn9zQkZaQTmAhWd8fS3bKz93gnZV/cue3xGrpC4DYAJPgTCbSURfKgaAOyiSBDGeYdvrzZRzp"
   + "vFM76CKykh4d2wjuKxTj65QaTcG3yrYupEtdM2w+52io7G6iB5cfPLYjraQrK2pszqNsf5wPEcjFa7qZxjuI+DxdGWVwdrwEuN0mNB79jjbI9+eaJPZ+OuyGMLLWvTFf"
@@ -140,7 +140,7 @@ def _14():
     return (13)if(sp()!=0)else(11)
 def _15():
     sp();
-    print(sp(),end="",flush=True)
+    print(sp(),end=" ",flush=True)
     return 18
 def _16():
     sa(sp()*10);

@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABACT7+ZgAAEWhre3D+ZddhBguBBfOPeJkPnZXcfWbtISE38nU71hEtcKnYVKa7iKXh3fvM7LlU+TsVPqyvclFY+/VojOV9sslb/Z/XTqt3ffTi9/zR+/"+
                                  "efv9vHX5m48W/Pv37Fdx2FVJsPkbrrMwjIJRMAqGPKjYaAQkE0p8/xnWh55/vpGndu6+848zXzxX/LI89MVnnf6Fr06vus+38faG4mz5sIdJU+R5Gd7ckBPbpp6ff23y"+
@@ -17,7 +17,6 @@ int res=0;byte buf[]=new byte[1024];while(res>=0){res=s.read(buf,0,1024);if(res>
 }catch(java.io.IOException e){return null;}}
 private long gr(long x,long y){return(x>=0&&y>=0&&x<2000&&y<516)?g[(int)(y*2000+x)]:0;}
 private void gw(long x,long y,long v){if(x>=0&&y>=0&&x<2000&&y<516)g[(int)(y*2000+x)]=v;}
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -74,27 +73,9 @@ private int _7(){
 private int _8(){
     sa(gr(3,0));
 
-    if(gr(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3)!=88)return 9;else return 12;
+    if(gr(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3)!=88)return 14;else return 9;
 }
 private int _9(){
-    sp();
-    return 10;
-}
-private int _10(){
-    t0=gr(3,0)+1;
-    gw(3,0,gr(3,0)+1);
-    t0-=gr(0,0);
-    t0=(t0!=0)?0:1;
-
-    if((t0)!=0)return 11;else return 8;
-}
-private int _11()throws java.io.IOException{
-    t0=gr(9,0);
-    System.out.print(" =");
-    System.out.print(String.valueOf(t0));
-    return 22;
-}
-private int _12(){
     gw(5,0,1);
     sa(sr());
     t0=1;
@@ -103,16 +84,16 @@ private int _12(){
     sa(sr());
     sa((sp()!=0)?0:1);
 
-    if(sp()!=0)return 13;else return 17;
+    if(sp()!=0)return 10;else return 17;
 }
-private int _13(){
+private int _10(){
     sp();
     gw(6,0,t0);
     sa(sr());
     gw(7,0,sp());
-    return 14;
+    return 11;
 }
-private int _14(){
+private int _11(){
     sa(sr());
     sa(tm(sr(),gr(1,0)));
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
@@ -123,9 +104,9 @@ private int _14(){
     {long v0=sp();t0=gr(sp(),v0);}
     t0-=32;
 
-    if((t0)!=0)return 15;else return 9;
+    if((t0)!=0)return 12;else return 14;
 }
-private int _15(){
+private int _12(){
     t0=td(sr(),10);
     sa(tm(sp(),10));
 
@@ -138,20 +119,38 @@ private int _15(){
     t0=gr(5,0)-1;
     gw(5,0,gr(5,0)-1);
 
-    if((t0)!=0)return 14;else return 16;
+    if((t0)!=0)return 11;else return 13;
 }
-private int _16()throws java.io.IOException{
-    System.out.print(String.valueOf(gr(7,0)));
+private int _13(){
+    System.out.print(String.valueOf(gr(7,0))+" ");
     System.out.print('\n');
     gw(9,0,gr(9,0)+1);
-    return 9;
+    return 14;
+}
+private int _14(){
+    sp();
+    return 15;
+}
+private int _15(){
+    t0=gr(3,0)+1;
+    gw(3,0,gr(3,0)+1);
+    t0-=gr(0,0);
+    t0=(t0!=0)?0:1;
+
+    if((t0)!=0)return 16;else return 8;
+}
+private int _16(){
+    t0=gr(9,0);
+    System.out.print(" =");
+    System.out.print(String.valueOf(t0)+" ");
+    return 22;
 }
 private int _17(){
     if(tm(sr(),2)==0)return 18;else return 19;
 }
 private int _18(){
     sp();
-    return 9;
+    return 14;
 }
 private int _19(){
     if(tm(sr(),5)==0)return 18;else return 20;
@@ -163,7 +162,7 @@ private int _20(){
     t0*=10;
     sa(sr());
 
-    if(sp()!=0)return 17;else return 13;
+    if(sp()!=0)return 17;else return 10;
 }
 private int _21(){
     sa(sr());
@@ -182,7 +181,7 @@ private int _21(){
     return 2;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<22){
     switch(c){
@@ -211,5 +210,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

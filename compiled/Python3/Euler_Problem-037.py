@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhre3DuZddhBguBBfKPt9ksnZXWpdSVNFxd/JVG+YxLVCZ6HSGq6aV8c36/Gqdjg4tK54ZHvy2jrjbPXlJ9csP79v1tlN4eby92L3/pyx"
   + "909Jbelk3/afr1+v/h659QTY+Ia5bgyjYBSMgiEPDtRrMzPM2zNj/9n5Z48/3sVz16b3+NfIF8cUS9JDX3zSWe98dWrodf6NtRFnVm/eEHmrNdXC/o45O4PZr7+Hyp68"
@@ -139,7 +139,7 @@ def _16():
     return (17)if(sp()!=0)else(8)
 def _17():
     print(" =",end="",flush=True)
-    print(gr(9,0),end="",flush=True)
+    print(gr(9,0),end=" ",flush=True)
     sp();
     return 28
 def _18():
@@ -223,7 +223,7 @@ def _25():
     sp();
     sa(sr());
     sa(sr());
-    print(sp(),end="",flush=True)
+    print(sp(),end=" ",flush=True)
     print(chr(10),end="",flush=True)
     sa(sp()+gr(9,0));
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 from random import randint
 import gzip, base64
 _g = ("AR+LCAAAAAAABACtVMFy4yAM/RXVuLMzMN4FDGnCUKWf0YOH9uarT5zcf18JO8ROsrs9rA5PSAEhPT+SAeD9Hf6XvX7TeG9ejsSCOd4XO3/T6HAsJWKcu+apCeTU6Rg2"
@@ -144,9 +144,9 @@ def _23():
 
     return (22)if(sr()<40)else(24)
 def _24():
-    print(gr(2,2),end="",flush=True)
-    print(gr(3,2),end="",flush=True)
-    print(gr(4,2),end="",flush=True)
+    print(gr(2,2),end=" ",flush=True)
+    print(gr(3,2),end=" ",flush=True)
+    print(gr(4,2),end=" ",flush=True)
     sp();
     return 98
 def _25():
@@ -427,19 +427,19 @@ def _91():
     sa(sp()+2);
     return 8
 def _92():
-    sa(sp()+1);
-    return 8
-def _93():
     sa(sp()+4);
     return 8
+def _93():
+    sa(sp()+1);
+    return 8
 def _94():
-    sa(1)
+    sa(3)
     return 6
 def _95():
     sa(4)
     return 6
 def _96():
-    sa(3)
+    sa(1)
     return 6
 def _97():
     sa(sp()-1);

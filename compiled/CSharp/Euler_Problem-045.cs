@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -19,22 +19,22 @@ static void Main(string[]args)
         sa(x0);
         sa(x0>x1?1:0);
     _2:
-        if(sp()!=0)goto _12;else goto _3;
+        if(sp()!=0)goto _13;else goto _3;
     _3:
         sa(sr());
-
-        if(sp()!=0)goto _9;else goto _4;
     _4:
+        if(sp()!=0)goto _10;else goto _5;
+    _5:
         sp();
         sa(sp()-(x2*x2));
 
 
-        if((tm(x2,6))-5==0)goto _5;else goto _8;
-    _5:
+        if((tm(x2,6))-5==0)goto _6;else goto _9;
+    _6:
         sa((sp()!=0)?0:1);
 
-        if(sp()!=0)goto _7;else goto _6;
-    _6:
+        if(sp()!=0)goto _8;else goto _7;
+    _7:
         x2=0;
         sa(sp()+1L);
 
@@ -48,14 +48,14 @@ static void Main(string[]args)
 
         x1=sr();
         goto _1;
-    _7:
+    _8:
         t0=(sr()*2)-1;
         sa(sp()*t0);
 
         t1=sp();
-        System.Console.Out.Write(t1);
+        System.Console.Out.Write(t1+" ");
         return;
-    _8:
+    _9:
         x2=0;
         sp();
         sa(sp()+1L);
@@ -70,16 +70,15 @@ static void Main(string[]args)
 
         x1=sr();
         goto _1;
-    _9:
-        if((sr()+x2)<=x1)goto _11;else goto _10;
     _10:
+        if((sr()+x2)<=x1)goto _12;else goto _11;
+    _11:
         x2/=2;
         sa(td(sp(),4));
 
         sa(sr());
-
-        if(sp()!=0)goto _9;else goto _4;
-    _11:
+        goto _4;
+    _12:
         t0=sr()+x2;
         t1=x1;
         t2=t1-t0;
@@ -89,7 +88,7 @@ static void Main(string[]args)
         x2/=2;
         sa(td(sp(),4));
         goto _3;
-    _12:
+    _13:
         sa(td(sp(),4));
 
         sa(sr()>x1?1:0);

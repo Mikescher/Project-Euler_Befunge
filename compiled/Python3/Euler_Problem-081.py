@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
 _g = ("Ah+LCAAAAAAABADtd1NzJQywbWxzYtt2JrZt286Obdt2JhPbNibWRDt2djKxznd/wH05z6ern7pWdVV3re5aiyQODuz/BRTYdcF2ooO+WqFxRW9wnpEdx3wUjh0I5gVc"
   + "bwNj4729oVNMsOfwnfwX+FSzyPCmo9t8XN8vLU3L+Xw2KcKvl0OS77vH7y9889mG9puv3Lb5hubLV7vff1+UHY0t50Bcb7zGfVfvbUq/jP1+v7RfP3rOJxat6fe/CYPo"
@@ -337,7 +337,7 @@ def _7():
     gw(3,0,0)
     return 3
 def _8():
-    print(gr(88,179),end="",flush=True)
+    print(gr(88,179),end=" ",flush=True)
     sp();
     return 18
 def _9():

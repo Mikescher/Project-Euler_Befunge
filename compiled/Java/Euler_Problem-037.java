@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABACT7+ZgAAEWhre3DuZddhBguBBfKPt9ksnZXWpdSVNFxd/JVG+YxLVCZ6HSGq6aV8c36/Gqdjg4tK54ZHvy2jrjbPXlJ9csP79v1tlN4eby92L3/pyx"+
                                  "909Jbelk3/afr1+v/h659QTY+Ia5bgyjYBSMgiEPDtRrMzPM2zNj/9n5Z48/3sVz16b3+NfIF8cUS9JDX3zSWe98dWrodf6NtRFnVm/eEHmrNdXC/o45O4PZr7+Hyp68"+
@@ -17,7 +17,6 @@ int res=0;byte buf[]=new byte[1024];while(res>=0){res=s.read(buf,0,1024);if(res>
 }catch(java.io.IOException e){return null;}}
 private long gr(long x,long y){return(x>=0&&y>=0&&x<2000&&y<514)?g[(int)(y*2000+x)]:0;}
 private void gw(long x,long y,long v){if(x>=0&&y>=0&&x<2000&&y<514)g[(int)(y*2000+x)]=v;}
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -128,9 +127,9 @@ private int _16(){
 
     if(sp()!=0)return 17;else return 8;
 }
-private int _17()throws java.io.IOException{
+private int _17(){
     System.out.print(" =");
-    System.out.print(String.valueOf(gr(9,0)));
+    System.out.print(String.valueOf(gr(9,0))+" ");
     sp();
     return 28;
 }
@@ -193,12 +192,12 @@ private int _24(){
 
     if(sp()!=0)return 23;else return 25;
 }
-private int _25()throws java.io.IOException{
+private int _25(){
     sp();
     sp();
     sa(sr());
     sa(sr());
-    System.out.print(String.valueOf((long)(sp())));
+    System.out.print(String.valueOf((long)(sp()))+" ");
     System.out.print('\n');
     sa(sp()+gr(9,0));
 
@@ -226,7 +225,7 @@ private int _27(){
     return 2;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<28){
     switch(c){
@@ -261,5 +260,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

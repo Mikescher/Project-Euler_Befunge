@@ -1,6 +1,5 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -35,12 +34,12 @@ private int _1(){
 private int _2(){
     if((td((2+(x2*2))-x0-(2*x3)-x1,4))<=1000000000000L)return 1;else return 3;
 }
-private int _3()throws java.io.IOException{
-    System.out.print(String.valueOf(td((4+(x1*2)+(x3*2)+(x0*2))-(x2*2),8)));
+private int _3(){
+    System.out.print(String.valueOf(td((4+(x1*2)+(x3*2)+(x0*2))-(x2*2),8))+" ");
     return 4;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<4){
     switch(c){
@@ -51,5 +50,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

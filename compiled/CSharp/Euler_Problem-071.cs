@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -45,10 +45,10 @@ static void Main(string[]args)
 
         if(tm(t0*3,7)==0)goto _4;else goto _1;
     _6:
-        System.Console.Out.Write(x0);
+        System.Console.Out.Write(x0+" ");
         System.Console.Out.Write(" /");
         System.Console.Out.Write('\n');
-        System.Console.Out.Write(x2);
+        System.Console.Out.Write(x2+" ");
         return;
     _7:
         t1*=-1;

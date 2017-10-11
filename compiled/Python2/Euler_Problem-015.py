@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABADtkM0KwjAQhF+l4i1LZLZV/EGCTxJ722tOOfXh3WCNSBtQ8LhzyWSHfJkkd38V1mQ0oxnNaEYzWpsWvmXlVhDaCSDsGSLFFC/0dCkHBhIzUtCWsj/3"
@@ -52,7 +52,7 @@ def _4():
 
     return (1)if((gr(1,0)+gr(0,0))<=42)else(5)
 def _5():
-    sys.stdout.write(str(gr(21,21)))
+    sys.stdout.write(str(gr(21,21))+" ")
     sys.stdout.flush()
     return 9
 def _6():

@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -52,7 +52,7 @@ def _1():
 def _2():
     return (1)if((td((2+(x2*2))-x0-(2*x3)-x1,4))<=1000000000000)else(3)
 def _3():
-    sys.stdout.write(str(td((4+(x1*2)+(x3*2)+(x0*2))-(x2*2),8)))
+    sys.stdout.write(str(td((4+(x1*2)+(x3*2)+(x0*2))-(x2*2),8))+" ")
     sys.stdout.flush()
     return 4
 m=[_0,_1,_2,_3]

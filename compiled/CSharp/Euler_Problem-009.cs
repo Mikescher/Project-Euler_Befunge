@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -65,17 +65,17 @@ static void Main(string[]args)
         goto _6;
     _12:
         t0=x2;
-        System.Console.Out.Write(x2);
+        System.Console.Out.Write(x2+" ");
         System.Console.Out.Write(' ');
         t1=x1;
-        System.Console.Out.Write(x1);
+        System.Console.Out.Write(x1+" ");
         System.Console.Out.Write(' ');
         t2=x3;
-        System.Console.Out.Write(x3);
+        System.Console.Out.Write(x3+" ");
         System.Console.Out.Write('=');
         t3=t1*t2;
         t1=t0*t3;
-        System.Console.Out.Write(t1);
+        System.Console.Out.Write(t1+" ");
         return;
 }
 }

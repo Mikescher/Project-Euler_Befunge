@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -53,7 +53,7 @@ _6:
     if(sr()-1==0)goto _7;else goto _8;
 _7:
     sp();
-    printf("%lld", (int64)(sp()));
+    printf("%lld ", (int64)(sp()));
     return 0;
 _8:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABADtU8uO2zAM/BVGdi7Sak3KseM1VKMfYjgB2kJXnXxq/71DO8kmu8kCRXvrEpBEvUbDITWXJVFRFOT/0hYQ2D/Ho/8Ljz7xPvH+EG+1+TAXm9cpZnTf"
@@ -220,7 +220,7 @@ def _28():
     global t0
     global t2
     t0=gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2))
-    sys.stdout.write(str(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2))))
+    sys.stdout.write(str(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)))+" ")
     sys.stdout.flush()
 
     sys.stdout.write(chr(10))
@@ -239,7 +239,7 @@ def _30():
     sys.stdout.write("  = ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t2))
+    sys.stdout.write(str(t2)+" ")
     sys.stdout.flush()
     return 34
 def _31():

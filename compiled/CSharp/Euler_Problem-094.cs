@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -17,7 +17,7 @@ static void Main(string[]args)
     _1:
         if(x2>(x0*2))goto _3;else goto _2;
     _2:
-        System.Console.Out.Write(x1);
+        System.Console.Out.Write(x1+" ");
         return;
     _3:
         x1=((x0>2?1:0)*(((tm(2*x0,3))-1!=0)?0:1)*((tm((x0-2)*x3,3)!=0)?0L:1L)*((x0*2)-2))+x1;

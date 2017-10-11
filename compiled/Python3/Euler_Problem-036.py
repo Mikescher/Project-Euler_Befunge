@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 def td(a,b):
     return ((0)if(b==0)else(a//b))
 def tm(a,b):
@@ -198,11 +198,11 @@ def _21():
     sa(sp()+sp());
 
     t1=sp()
-    print(t1,end="",flush=True)
+    print(t1,end=" ",flush=True)
     return 26
 def _22():
     sa(sr());
-    print(sp(),end="",flush=True)
+    print(sp(),end=" ",flush=True)
     print(chr(10),end="",flush=True)
     v0=sp()
     v1=sp()
@@ -217,7 +217,7 @@ def _23():
     return 13
 def _24():
     sa(sr());
-    print(sp(),end="",flush=True)
+    print(sp(),end=" ",flush=True)
     print(chr(10),end="",flush=True)
     v0=sp()
     v1=sp()

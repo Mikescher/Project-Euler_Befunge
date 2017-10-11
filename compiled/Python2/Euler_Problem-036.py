@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -200,12 +200,12 @@ def _21():
     sa(sp()+sp());
 
     t1=sp()
-    sys.stdout.write(str(t1))
+    sys.stdout.write(str(t1)+" ")
     sys.stdout.flush()
     return 26
 def _22():
     sa(sr());
-    sys.stdout.write(str(sp()))
+    sys.stdout.write(str(sp())+" ")
     sys.stdout.flush()
 
     sys.stdout.write(chr(10))
@@ -224,7 +224,7 @@ def _23():
     return 13
 def _24():
     sa(sr());
-    sys.stdout.write(str(sp()))
+    sys.stdout.write(str(sp())+" ")
     sys.stdout.flush()
 
     sys.stdout.write(chr(10))

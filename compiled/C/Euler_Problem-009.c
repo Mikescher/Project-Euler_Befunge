@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -67,16 +67,16 @@ _11:
     goto _6;
 _12:
     t0=x2;
-    printf("%lld", x2);
+    printf("%lld ", x2);
     printf(" ");
     t1=x1;
-    printf("%lld", x1);
+    printf("%lld ", x1);
     printf(" ");
     t2=x3;
-    printf("%lld", x3);
+    printf("%lld ", x3);
     printf("=");
     t3=t1*t2;
     t1=t0*t3;
-    printf("%lld", t1);
+    printf("%lld ", t1);
     return 0;
 }

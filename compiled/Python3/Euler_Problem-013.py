@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABADFmMtuZUkRRX/FbcPIWJWvyEepsJgw5wtcElCyhBphtcAjPp610l0+SVE8Zljtct9zT2bGY8eOHfl648+HDze/++kvf/ryh7/e/PZvP3756ebBz7//"
   + "8cufb3K9+Y8/deQ0yhxR60olpzLWHGusNUtJs47gaeuRU64xWiqR3pe2Xkdf/I7RVkppjVx6m7m0ufoaKY2ZIrU8Up6lp6jzfelotbQ1e14rShstp1j8KbXWtCLXFGxT"

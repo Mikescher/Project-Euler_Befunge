@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 def td(a,b):
     return ((0)if(b==0)else(a//b))
 def tm(a,b):
@@ -95,17 +95,17 @@ def _12():
     global x3
     global t3
     t0=x2
-    print(x2,end="",flush=True)
+    print(x2,end=" ",flush=True)
     print(chr(32),end="",flush=True)
     t1=x1
-    print(x1,end="",flush=True)
+    print(x1,end=" ",flush=True)
     print(chr(32),end="",flush=True)
     t2=x3
-    print(x3,end="",flush=True)
+    print(x3,end=" ",flush=True)
     print(chr(61),end="",flush=True)
     t3=t1*t2
     t1=t0*t3
-    print(t1,end="",flush=True)
+    print(t1,end=" ",flush=True)
     return 13
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12]
 c=0

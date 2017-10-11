@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -31,7 +31,7 @@ static void Main(string[]args)
         x3=t2;
         if((td((2+(x2*2))-x0-(2*x3)-x1,4))<=1000000000000L)goto _1;else goto _3;
     _3:
-        System.Console.Out.Write(td((4+(x1*2)+(x3*2)+(x0*2))-(x2*2),8));
+        System.Console.Out.Write(td((4+(x1*2)+(x3*2)+(x0*2))-(x2*2),8)+" ");
         return;
 }
 }

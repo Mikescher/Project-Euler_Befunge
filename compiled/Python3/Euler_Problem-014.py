@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 def td(a,b):
     return ((0)if(b==0)else(a//b))
 def tm(a,b):
@@ -52,10 +52,10 @@ def _5():
     global x1
     global t0
     global x0
-    print(x1,end="",flush=True)
+    print(x1,end=" ",flush=True)
     t0=x0
     print(" :",end="",flush=True)
-    print(t0,end="",flush=True)
+    print(t0,end=" ",flush=True)
     return 12
 def _6():
     sa(sp()+1);

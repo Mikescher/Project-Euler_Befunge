@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 def td(a,b):
     return ((0)if(b==0)else(a//b))
 def tm(a,b):
@@ -80,7 +80,7 @@ def _6():
     return (1)if(sp()!=0)else(7)
 def _7():
     global x2
-    print(x2,end="",flush=True)
+    print(x2,end=" ",flush=True)
     sp();
     return 10
 def _8():

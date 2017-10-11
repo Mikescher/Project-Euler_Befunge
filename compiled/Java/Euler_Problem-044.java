@@ -1,6 +1,5 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -64,83 +63,85 @@ private int _4(){
     return 5;
 }
 private int _5(){
-    if(sp()!=0)return 24;else return 6;
+    if(sp()!=0)return 25;else return 6;
 }
 private int _6(){
     sa(sr());
-
-    if(sp()!=0)return 21;else return 7;
+    return 7;
 }
 private int _7(){
+    if(sp()!=0)return 22;else return 8;
+}
+private int _8(){
     sp();
     sa(sp()-(x6*x6));
 
     t0=x6;
 
-    if(sp()!=0)return 16;else return 8;
+    if(sp()!=0)return 17;else return 9;
 }
-private int _8(){
+private int _9(){
     t0%=6;
     t0-=5;
     t0=(t0!=0)?0:1;
 
-    if((t0)!=0)return 9;else return 16;
+    if((t0)!=0)return 10;else return 17;
 }
-private int _9(){
+private int _10(){
     sa(((x3+x5)*24)+1);
     t0=((x3+x5)*24)+1;
     x6=0;
     x4=t0;
     sa(x0);
     sa(x0>x4?1:0);
-    return 10;
-}
-private int _10(){
-    if(sp()!=0)return 20;else return 11;
+    return 11;
 }
 private int _11(){
-    sa(sr());
-    return 12;
+    if(sp()!=0)return 21;else return 12;
 }
 private int _12(){
-    if(sp()!=0)return 17;else return 13;
+    sa(sr());
+    return 13;
 }
 private int _13(){
+    if(sp()!=0)return 18;else return 14;
+}
+private int _14(){
     sp();
     sa(sp()-(x6*x6));
 
     t0=x6;
 
-    if(sp()!=0)return 16;else return 14;
+    if(sp()!=0)return 17;else return 15;
 }
-private int _14(){
+private int _15(){
     t0%=6;
     t0-=5;
 
-    if((t0)!=0)return 16;else return 15;
-}
-private int _15()throws java.io.IOException{
-    System.out.print(String.valueOf(x5-x3));
-    sp();
-    return 25;
+    if((t0)!=0)return 17;else return 16;
 }
 private int _16(){
+    System.out.print(String.valueOf(x5-x3)+" ");
+    sp();
+    return 26;
+}
+private int _17(){
     sa(x5);
     sa(x2-1);
     sa(x2-1);
     return 2;
 }
-private int _17(){
-    if((sr()+x6)<=x4)return 19;else return 18;
-}
 private int _18(){
+    if((sr()+x6)<=x4)return 20;else return 19;
+}
+private int _19(){
     x6/=2;
     sa(td(sp(),4));
 
     sa(sr());
-    return 12;
+    return 13;
 }
-private int _19(){
+private int _20(){
     t0=sr()+x6;
     t1=x4;
     t2=t1-t0;
@@ -149,26 +150,25 @@ private int _19(){
     x6=t0;
     x6/=2;
     sa(td(sp(),4));
-    return 11;
+    return 12;
 }
-private int _20(){
+private int _21(){
     sa(td(sp(),4));
 
     sa(sr()>x4?1:0);
-    return 10;
-}
-private int _21(){
-    if((sr()+x6)<=x4)return 23;else return 22;
+    return 11;
 }
 private int _22(){
+    if((sr()+x6)<=x4)return 24;else return 23;
+}
+private int _23(){
     x6/=2;
     sa(td(sp(),4));
 
     sa(sr());
-
-    if(sp()!=0)return 21;else return 7;
+    return 7;
 }
-private int _23(){
+private int _24(){
     t0=sr()+x6;
     t1=x4;
     t2=t1-t0;
@@ -179,16 +179,16 @@ private int _23(){
     sa(td(sp(),4));
     return 6;
 }
-private int _24(){
+private int _25(){
     sa(td(sp(),4));
 
     sa(sr()>x4?1:0);
     return 5;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
-    while(c<25){
+    while(c<26){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -215,8 +215,9 @@ public void main()throws java.io.IOException{
     case 22:c=_22();break;
     case 23:c=_23();break;
     case 24:c=_24();break;
+    case 25:c=_25();break;
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

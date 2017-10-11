@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABACtk7FygzAMQH/FQLpEcU8WEDBHff2MDrkkm1dPnvj4ynYAtyVtL60GnZAt6UkW/m0W8bD4f8jxH2I0kkNFTpsBT8r5P2WbTlINYnyEQ5FtWziIaidK"
   + "8VIeDuJZvP4y2DtCLjpdtSUMjgcIxo0os8NlHkbcH41BJIu2xFIqJ7xZvgZ9nfh4IHLcnJyEIbLKxqDKX0S6qMtrUZ0vS7qq+lTLKDivtSapHRGowRKNoXWpuG2HrICL"
@@ -114,7 +114,7 @@ def _13():
     global t0
     sp();
     t0=gr(3,2)
-    print(gr(3,2),end="",flush=True)
+    print(gr(3,2),end=" ",flush=True)
     print(chr(10),end="",flush=True)
     t0=t0+gr(1,2)
     gw(1,2,t0)
@@ -163,7 +163,7 @@ def _25():
     t0=gr(1,2)
     print(chr(10),end="",flush=True)
     print("= ",end="",flush=True)
-    print(t0,end="",flush=True)
+    print(t0,end=" ",flush=True)
     return 26
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25]
 c=0

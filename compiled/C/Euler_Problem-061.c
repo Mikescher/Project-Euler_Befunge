@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -166,7 +166,7 @@ _27:
     t2=0;
 _28:
     t0=gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2));
-    printf("%lld", gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)));
+    printf("%lld ", gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)));
     printf("\n");
     t2+=t0;
     t0=gr(2,1)+1;
@@ -175,7 +175,7 @@ _28:
     if((t0)!=0)goto _28;else goto _30;
 _30:
     printf("  = ");
-    printf("%lld", t2);
+    printf("%lld ", t2);
     return 0;
 _31:
     gw(6,0,-1);

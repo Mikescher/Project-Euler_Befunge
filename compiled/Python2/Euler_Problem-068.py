@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABAClks1yhCAMx18FcG8MFvxYjeMwfYO97qGj3rhy4rQPvwkq2g720GYGiJL880s0MPZktIpk7Moo8JEsF2HFIAKe4VKDsZGNIR4Y5o0EJbRwWoLX9aCM"
@@ -173,49 +173,49 @@ def _17():
     t11=gr(12,0)-47
     t12=gr(11,0)-47
     t13=gr(10,0)-47
-    sys.stdout.write(str(gr(9,0)-47))
+    sys.stdout.write(str(gr(9,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t13))
+    sys.stdout.write(str(t13)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t12))
+    sys.stdout.write(str(t12)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t11))
+    sys.stdout.write(str(t11)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t10))
+    sys.stdout.write(str(t10)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t9))
+    sys.stdout.write(str(t9)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t8))
+    sys.stdout.write(str(t8)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t7))
+    sys.stdout.write(str(t7)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t6))
+    sys.stdout.write(str(t6)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t5))
+    sys.stdout.write(str(t5)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t4))
+    sys.stdout.write(str(t4)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t3))
+    sys.stdout.write(str(t3)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t2))
+    sys.stdout.write(str(t2)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t1))
+    sys.stdout.write(str(t1)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t0))
+    sys.stdout.write(str(t0)+" ")
     sys.stdout.flush()
     return 26
 def _18():

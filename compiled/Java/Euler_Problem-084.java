@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABACtVMFy4yAM/RXVuLMzMN4FDGnCUKWf0YOH9uarT5zcf18JO8ROsrs9rA5PSAEhPT+SAeD9Hf6XvX7TeG9ejsSCOd4XO3/T6HAsJWKcu+apCeTU6Rg2"+
                                  "JVE7PTVfX2+NlP4o8+4ejj6ygM5ErmJ0yRmNS4ulTJzj7ZGLPeicK8AcVLTnJKQrrr3uS/sjaLpglR7MtO/rxlIfN25j3TaYw74vRMwLbCgucXXVs9nNjO3tTcYyMQwi"+
@@ -17,7 +17,6 @@ int res=0;byte buf[]=new byte[1024];while(res>=0){res=s.read(buf,0,1024);if(res>
 }catch(java.io.IOException e){return null;}}
 private long gr(long x,long y){return(x>=0&&y>=0&&x<77&&y<20)?g[(int)(y*77+x)]:0;}
 private void gw(long x,long y,long v){if(x>=0&&y>=0&&x<77&&y<20)g[(int)(y*77+x)]=v;}
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private boolean rd(){return Math.random()<0.5;}
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -146,10 +145,10 @@ private int _23(){
 
     if(sr()<40)return 22;else return 24;
 }
-private int _24()throws java.io.IOException{
-    System.out.print(String.valueOf(gr(2,2)));
-    System.out.print(String.valueOf(gr(3,2)));
-    System.out.print(String.valueOf(gr(4,2)));
+private int _24(){
+    System.out.print(String.valueOf(gr(2,2))+" ");
+    System.out.print(String.valueOf(gr(3,2))+" ");
+    System.out.print(String.valueOf(gr(4,2))+" ");
     sp();
     return 98;
 }
@@ -478,15 +477,15 @@ private int _91(){
     return 8;
 }
 private int _92(){
-    sa(sp()+1L);
-    return 8;
-}
-private int _93(){
     sa(sp()+4L);
     return 8;
 }
+private int _93(){
+    sa(sp()+1L);
+    return 8;
+}
 private int _94(){
-    sa(1);
+    sa(3);
     return 6;
 }
 private int _95(){
@@ -494,7 +493,7 @@ private int _95(){
     return 6;
 }
 private int _96(){
-    sa(3);
+    sa(1);
     return 6;
 }
 private int _97(){
@@ -502,7 +501,7 @@ private int _97(){
     return 1;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<98){
     switch(c){
@@ -607,5 +606,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

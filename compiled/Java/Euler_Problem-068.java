@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABAClks1yhCAMx18FcG8MFvxYjeMwfYO97qGj3rhy4rQPvwkq2g720GYGiJL880s0MPZktIpk7Moo8JEsF2HFIAKe4VKDsZGNIR4Y5o0EJbRwWoLX9aCM"+
                                  "07V4iDXOgsaX2ttaO5DaGTWsnscUNXR4+7W8YjFMm6eCpyIKRRyKO93F52K82aEIc6ddu/wCZ19BmZEk51DwBWXhlm0iqkUXJUHxXBCbWFRbJ/MUFCmNxxlhG0ZiM56a"+
@@ -15,7 +15,6 @@ int res=0;byte buf[]=new byte[1024];while(res>=0){res=s.read(buf,0,1024);if(res>
 }catch(java.io.IOException e){return null;}}
 private long gr(long x,long y){return(x>=0&&y>=0&&x<39&&y<25)?g[(int)(y*39+x)]:0;}
 private void gw(long x,long y,long v){if(x>=0&&y>=0&&x<39&&y<25)g[(int)(y*39+x)]=v;}
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -143,7 +142,7 @@ private int _16(){
     {long v0=sp();long v1=sp();gw(v1,v0,sp());}
     return 1;
 }
-private int _17()throws java.io.IOException{
+private int _17(){
     t0=gr(10,0)-47;
     t1=gr(17,0)-47;
     t2=gr(18,0)-47;
@@ -158,21 +157,21 @@ private int _17()throws java.io.IOException{
     t11=gr(12,0)-47;
     t12=gr(11,0)-47;
     t13=gr(10,0)-47;
-    System.out.print(String.valueOf(gr(9,0)-47));
-    System.out.print(String.valueOf(t13));
-    System.out.print(String.valueOf(t12));
-    System.out.print(String.valueOf(t11));
-    System.out.print(String.valueOf(t10));
-    System.out.print(String.valueOf(t9));
-    System.out.print(String.valueOf(t8));
-    System.out.print(String.valueOf(t7));
-    System.out.print(String.valueOf(t6));
-    System.out.print(String.valueOf(t5));
-    System.out.print(String.valueOf(t4));
-    System.out.print(String.valueOf(t3));
-    System.out.print(String.valueOf(t2));
-    System.out.print(String.valueOf(t1));
-    System.out.print(String.valueOf(t0));
+    System.out.print(String.valueOf(gr(9,0)-47)+" ");
+    System.out.print(String.valueOf(t13)+" ");
+    System.out.print(String.valueOf(t12)+" ");
+    System.out.print(String.valueOf(t11)+" ");
+    System.out.print(String.valueOf(t10)+" ");
+    System.out.print(String.valueOf(t9)+" ");
+    System.out.print(String.valueOf(t8)+" ");
+    System.out.print(String.valueOf(t7)+" ");
+    System.out.print(String.valueOf(t6)+" ");
+    System.out.print(String.valueOf(t5)+" ");
+    System.out.print(String.valueOf(t4)+" ");
+    System.out.print(String.valueOf(t3)+" ");
+    System.out.print(String.valueOf(t2)+" ");
+    System.out.print(String.valueOf(t1)+" ");
+    System.out.print(String.valueOf(t0)+" ");
     return 26;
 }
 private int _18(){
@@ -209,7 +208,7 @@ private int _25(){
     return 14;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<26){
     switch(c){
@@ -242,5 +241,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

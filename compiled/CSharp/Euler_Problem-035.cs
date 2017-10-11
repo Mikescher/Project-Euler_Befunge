@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "Ah+LCAAAAAAABACT7+ZgAAEWhre3D+ZddhBguBBfOPeJkPnZXcfWbtISE38nU71hEtcKnYVKa7iKXh3fvM7LlU+TsVPqyvclFY+/VojOV9sslb/Z/XTqt3ffTi9/zR+/"+
@@ -57,21 +57,8 @@ static void Main(string[]args)
     _8:
         sa(gr(3,0));
 
-        if(gr(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3)!=88)goto _9;else goto _12;
+        if(gr(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3)!=88)goto _14;else goto _9;
     _9:
-        sp();
-        t0=gr(3,0)+1;
-        gw(3,0,gr(3,0)+1);
-        t0-=gr(0,0);
-        t0=(t0!=0)?0:1;
-
-        if((t0)!=0)goto _11;else goto _8;
-    _11:
-        t0=gr(9,0);
-        System.Console.Out.Write(" =");
-        System.Console.Out.Write(t0);
-        return;
-    _12:
         gw(5,0,1);
         sa(sr());
         t0=1;
@@ -80,13 +67,13 @@ static void Main(string[]args)
         sa(sr());
         sa((sp()!=0)?0:1);
 
-        if(sp()!=0)goto _13;else goto _17;
-    _13:
+        if(sp()!=0)goto _10;else goto _17;
+    _10:
         sp();
         gw(6,0,t0);
         sa(sr());
         gw(7,0,sp());
-    _14:
+    _11:
         sa(sr());
         sa(tm(sr(),gr(1,0)));
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
@@ -97,8 +84,8 @@ static void Main(string[]args)
         {long v0=sp();t0=gr(sp(),v0);}
         t0-=32;
 
-        if((t0)!=0)goto _15;else goto _9;
-    _15:
+        if((t0)!=0)goto _12;else goto _14;
+    _12:
         t0=td(sr(),10);
         sa(tm(sp(),10));
 
@@ -111,17 +98,29 @@ static void Main(string[]args)
         t0=gr(5,0)-1;
         gw(5,0,gr(5,0)-1);
 
-        if((t0)!=0)goto _14;else goto _16;
-    _16:
-        System.Console.Out.Write(gr(7,0));
+        if((t0)!=0)goto _11;else goto _13;
+    _13:
+        System.Console.Out.Write(gr(7,0)+" ");
         System.Console.Out.Write('\n');
         gw(9,0,gr(9,0)+1);
-        goto _9;
+    _14:
+        sp();
+        t0=gr(3,0)+1;
+        gw(3,0,gr(3,0)+1);
+        t0-=gr(0,0);
+        t0=(t0!=0)?0:1;
+
+        if((t0)!=0)goto _16;else goto _8;
+    _16:
+        t0=gr(9,0);
+        System.Console.Out.Write(" =");
+        System.Console.Out.Write(t0+" ");
+        return;
     _17:
         if(tm(sr(),2)==0)goto _18;else goto _19;
     _18:
         sp();
-        goto _9;
+        goto _14;
     _19:
         if(tm(sr(),5)==0)goto _18;else goto _20;
     _20:
@@ -131,7 +130,7 @@ static void Main(string[]args)
         t0*=10;
         sa(sr());
 
-        if(sp()!=0)goto _17;else goto _13;
+        if(sp()!=0)goto _17;else goto _10;
     _21:
         sa(sr());
         sa(32);

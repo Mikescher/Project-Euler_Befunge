@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABACtnVtvHMcRhf9KgbZeuGC8u6ICcUEwTrqTmMl27mE2ASHnIcC+8olPyn/PTFdVz9A2DTPnG8CgBEulmp7urtupU8+//FWpv/7Nb7+5/93vj+0Pf/zT"+
@@ -95,7 +95,7 @@ static void Main(string[]args)
         sa(0);
         sa(gr(0,gr(1,2))-32);
     _5:
-        if(sp()!=0)goto _12;else goto _6;
+        if(sp()!=0)goto _13;else goto _6;
     _6:
         sa(sr());
         gw(3,2,sp());
@@ -112,9 +112,9 @@ static void Main(string[]args)
         gw(4,2,sp());
         gw(2,2,sp());
         sa(sr());
-
-        if(sp()!=0)goto _7;else goto _9;
     _7:
+        if(sp()!=0)goto _8;else goto _11;
+    _8:
         sa(sp()-1L);
 
         sa(sr());
@@ -126,16 +126,20 @@ static void Main(string[]args)
         {long v0=sp();sa(gr(sp(),v0));}
         sa(sr());
 
-        if(sr()<gr(4,2))goto _11;else goto _8;
-    _8:
+        if(sr()<gr(4,2))goto _9;else goto _10;
+    _9:
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+        sa(sp()*-1L);
+
+        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    _10:
         gw(4,2,sp());
         sa(sp()+gr(2,2));
 
         gw(2,2,sp());
         sa(sr());
-
-        if(sp()!=0)goto _7;else goto _9;
-    _9:
+        goto _7;
+    _11:
         gw(9,2,(gr(3,2)-((td(gr(2,2),1000))+gr((td(tm(gr(2,2),1000),100))+1,1)+gr((tm(gr(2,2),10))+1,1)+gr((td(tm(gr(2,2),100),10))+1,1)))+gr(9,2));
         sp();
         sa(sp()+1L);
@@ -143,18 +147,12 @@ static void Main(string[]args)
         sa(sr());
         gw(1,2,sp());
 
-        if(sr()!=1009)goto _4;else goto _10;
-    _10:
-        System.Console.Out.Write(gr(9,2));
+        if(sr()!=1009)goto _4;else goto _12;
+    _12:
+        System.Console.Out.Write(gr(9,2)+" ");
         sp();
         return;
-    _11:
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(sp()*-1L);
-
-        {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        goto _8;
-    _12:
+    _13:
         sa(sp()+1L);
 
         sa(sr());

@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABADNWslu40gS/ZVUS7qQ0Cj3ZBIEMUBfZ4A++mDQfeM1Tzz54ye2pKjFLrvs6prsLklcRMXji3ix0It6elLqSe0vS725cb+UrA+d9Ghp7bTVUWujdbaa"
@@ -101,7 +101,7 @@ def _3():
     return (5)if((sr()+1)!=0)else(4)
 def _4():
     sp();
-    sys.stdout.write(str(sp()))
+    sys.stdout.write(str(sp())+" ")
     sys.stdout.flush()
     return 93
 def _5():

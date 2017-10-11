@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
 _g = ("Ah+LCAAAAAAABADNWHlYU9cSp0XBCARfXNgE5KsRi5GgoEjYFFo/JDQoWokICbuAKJsxxBgigkYLKBUSlrDIEwQUJEHQAGEXEMJWglIgbNKAEAkQhLCE5EHfP/a1Aq/a"
   + "vnf/mDtz5nfm3Dsz58zcqxmxQWr5Wic1loz2244N/LZ8414c2kovUcVncKvWJirJRPtuyKaCKhmZUOewTRHf2HaNp+yqA4oyux+lnHX6fvFxkFT3vQNOGJ4G8NuwGf5w"
@@ -192,7 +192,7 @@ def _22():
 
     return (24)if((t2)!=0)else(23)
 def _23():
-    print(gr(1,2),end="",flush=True)
+    print(gr(1,2),end=" ",flush=True)
     return 31
 def _24():
     global t0

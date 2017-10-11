@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -110,9 +110,9 @@ _23:
 
     if(sr()<40)goto _22;else goto _24;
 _24:
-    printf("%lld", gr(2,2));
-    printf("%lld", gr(3,2));
-    printf("%lld", gr(4,2));
+    printf("%lld ", gr(2,2));
+    printf("%lld ", gr(3,2));
+    printf("%lld ", gr(4,2));
     sp();
     return 0;
 _25:
@@ -365,19 +365,19 @@ _91:
     sa(sp()+2LL);
     goto _8;
 _92:
-    sa(sp()+1LL);
-    goto _8;
-_93:
     sa(sp()+4LL);
     goto _8;
+_93:
+    sa(sp()+1LL);
+    goto _8;
 _94:
-    sa(1);
+    sa(3);
     goto _6;
 _95:
     sa(4);
     goto _6;
 _96:
-    sa(3);
+    sa(1);
     goto _6;
 _97:
     sa(sp()-1LL);

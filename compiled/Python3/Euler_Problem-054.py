@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABADlncuu3sixpV9lS1UHDUio0xLvFApCE+QgQY6I5LBQ9mxPzkAjjQrn2Q//+Fb8kssFtwe1bKA74ItcspSbZGZkXFas9fnDPHx5+99vp3cf33/ovswf"
   + "hi8f2uHLy8eP93+8vHx9+X/Ifvhb+3f/OFb78d+16r9h4R9/vP/14+M//8Wr/n9j0/py1ZdjfZnLS1dfxu2lqS/99tLWl2W1rdqvL8v2WOZeY15fxvWlLy/T9nJtL0e1"
@@ -353,7 +353,7 @@ def _30():
     global t0
     t0=((1)if(gr(0,7)>gr(1,7))else(0))+gr(9,6)
     gw(9,6,((1)if(gr(0,7)>gr(1,7))else(0))+gr(9,6))
-    print(t0,end="",flush=True)
+    print(t0,end=" ",flush=True)
     return 43
 def _31():
     gw(16,2,0)

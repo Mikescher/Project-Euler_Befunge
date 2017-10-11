@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("Ah+LCAAAAAAABADt2lVUG43WN/AKLS0UaIBC8eIOLRQLWghQ3N2KuweXUIpLcCgOwb24Q4uTIMU1uAR3t5fzPeeT6+99L8+++//W3rNn1syaNRdDEf7qyb8K7ckechBK"
@@ -252,7 +252,7 @@ def _13():
     gw(6,0,t0)
     return 10
 def _14():
-    sys.stdout.write(str(gr(5,0)))
+    sys.stdout.write(str(gr(5,0))+" ")
     sys.stdout.flush()
 
     sp();

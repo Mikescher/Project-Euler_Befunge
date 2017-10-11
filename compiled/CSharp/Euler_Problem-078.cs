@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "Ah+LCAAAAAAABACd1P0/0wkAwHFXND2wnkR3oVRUaiVp+bItaeRhW4XkaauT50TzjUzHTknydGdJeRhmLBRqZmxGjy7Jw4zQCmtTW+ZhsywT7nWv1/0B97rPj+8/4GOa"+
@@ -54,7 +54,7 @@ static void Main(string[]args)
 
         if(tm(gr(5,0),gr(2,0))!=0)goto _5;else goto _4;
     _4:
-        System.Console.Out.Write((long)(sp()));
+        System.Console.Out.Write("{0} ", (long)(sp()));
         return;
     _5:
         gw((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1,t0);

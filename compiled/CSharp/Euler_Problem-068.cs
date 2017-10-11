@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABAClks1yhCAMx18FcG8MFvxYjeMwfYO97qGj3rhy4rQPvwkq2g720GYGiJL880s0MPZktIpk7Moo8JEsF2HFIAKe4VKDsZGNIR4Y5o0EJbRwWoLX9aCM"+
@@ -136,21 +136,21 @@ static void Main(string[]args)
         t11=gr(12,0)-47;
         t12=gr(11,0)-47;
         t13=gr(10,0)-47;
-        System.Console.Out.Write(gr(9,0)-47);
-        System.Console.Out.Write(t13);
-        System.Console.Out.Write(t12);
-        System.Console.Out.Write(t11);
-        System.Console.Out.Write(t10);
-        System.Console.Out.Write(t9);
-        System.Console.Out.Write(t8);
-        System.Console.Out.Write(t7);
-        System.Console.Out.Write(t6);
-        System.Console.Out.Write(t5);
-        System.Console.Out.Write(t4);
-        System.Console.Out.Write(t3);
-        System.Console.Out.Write(t2);
-        System.Console.Out.Write(t1);
-        System.Console.Out.Write(t0);
+        System.Console.Out.Write(gr(9,0)-47+" ");
+        System.Console.Out.Write(t13+" ");
+        System.Console.Out.Write(t12+" ");
+        System.Console.Out.Write(t11+" ");
+        System.Console.Out.Write(t10+" ");
+        System.Console.Out.Write(t9+" ");
+        System.Console.Out.Write(t8+" ");
+        System.Console.Out.Write(t7+" ");
+        System.Console.Out.Write(t6+" ");
+        System.Console.Out.Write(t5+" ");
+        System.Console.Out.Write(t4+" ");
+        System.Console.Out.Write(t3+" ");
+        System.Console.Out.Write(t2+" ");
+        System.Console.Out.Write(t1+" ");
+        System.Console.Out.Write(t0+" ");
         return;
     _18:
         sp();

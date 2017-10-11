@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -62,7 +62,7 @@ def _5():
     return (4)if((t0)!=0)else(6)
 def _6():
     global x3
-    sys.stdout.write(str(x3))
+    sys.stdout.write(str(x3)+" ")
     sys.stdout.flush()
     return 7
 m=[_0,_1,_2,_3,_4,_5,_6]

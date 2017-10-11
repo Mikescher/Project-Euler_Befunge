@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABADtU8uO2zAM/BVGdi7Sak3KseM1VKMfYjgB2kJXnXxq/71DO8kmu8kCRXvrEpBEvUbDITWXJVFRFOT/0hYQ2D/Ho/8Ljz7xPvH+EG+1+TAXm9cpZnTf"+
@@ -163,7 +163,7 @@ static void Main(string[]args)
         t2=0;
     _28:
         t0=gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2));
-        System.Console.Out.Write(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)));
+        System.Console.Out.Write(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2))+" ");
         System.Console.Out.Write('\n');
         t2+=t0;
         t0=gr(2,1)+1;
@@ -172,7 +172,7 @@ static void Main(string[]args)
         if((t0)!=0)goto _28;else goto _30;
     _30:
         System.Console.Out.Write("  = ");
-        System.Console.Out.Write(t2);
+        System.Console.Out.Write(t2+" ");
         return;
     _31:
         gw(6,0,-1);

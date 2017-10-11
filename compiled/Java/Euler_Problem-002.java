@@ -1,6 +1,5 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -42,13 +41,13 @@ private int _4(){
     x2=sp();
     return 1;
 }
-private int _5()throws java.io.IOException{
-    System.out.print(String.valueOf(x2));
+private int _5(){
+    System.out.print(String.valueOf(x2)+" ");
     sp();
     return 6;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<6){
     switch(c){
@@ -61,5 +60,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

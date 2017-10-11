@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADNWslu40gS/ZVUS7qQ0Cj3ZBIEMUBfZ4A++mDQfeM1Tzz54ye2pKjFLrvs6prsLklcRMXji3ix0It6elLqSe0vS725cb+UrA+d9Ghp7bTVUWujdbaa"+
                                  "l7HBw4FotA0Zti2epbMOWsN+PJtXRxsdHtR4HE/N2tNlkvoTr//nDZj1h6827tf+7sN7Jz1aGY0Gi02wHtGRwb4anhkyWp1W6zv6P8EBOM/jEQsXCHA/HH5RLqLVX7hu"+
@@ -86,7 +86,7 @@ private int _3(){
 }
 private int _4(){
     sp();
-    System.out.print(String.valueOf((long)(sp())));
+    System.out.print(String.valueOf((long)(sp()))+" ");
     return 93;
 }
 private int _5(){

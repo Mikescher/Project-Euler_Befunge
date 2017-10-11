@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADtU8uO2zAM/BVGdi7Sak3KseM1VKMfYjgB2kJXnXxq/71DO8kmu8kCRXvrEpBEvUbDITWXJVFRFOT/0hYQ2D/Ho/8Ljz7xPvH+EG+1+TAXm9cpZnTf"+
                                  "oqxj4lCW8e1uUZyQhWaizCGxLMjFekP9Po/uZWu7DgsU+cE7agOutWjCGbPQddZS4DwETuLhCKdBfM9jsFjCduWmicrImWsniWvKzoJCqPS1eM2P6YLCNdogrofZ0YdK"+
@@ -16,7 +16,6 @@ int res=0;byte buf[]=new byte[1024];while(res>=0){res=s.read(buf,0,1024);if(res>
 }catch(java.io.IOException e){return null;}}
 private long gr(long x,long y){return(x>=0&&y>=0&&x<80&&y<25)?g[(int)(y*80+x)]:0;}
 private void gw(long x,long y,long v){if(x>=0&&y>=0&&x<80&&y<25)g[(int)(y*80+x)]=v;}
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -200,9 +199,9 @@ private int _27(){
     t2=0;
     return 28;
 }
-private int _28()throws java.io.IOException{
+private int _28(){
     t0=gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2));
-    System.out.print(String.valueOf(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2))));
+    System.out.print(String.valueOf(gr((tm(gr(5,gr(2,1)),64))+9,(td(gr(5,gr(2,1)),64))+(gr(6,gr(2,1))*2)))+" ");
     System.out.print('\n');
     t2+=t0;
     t0=gr(2,1)+1;
@@ -213,9 +212,9 @@ private int _28()throws java.io.IOException{
 private int _29(){
     if((t0)!=0)return 28;else return 30;
 }
-private int _30()throws java.io.IOException{
+private int _30(){
     System.out.print("  = ");
-    System.out.print(String.valueOf(t2));
+    System.out.print(String.valueOf(t2)+" ");
     return 34;
 }
 private int _31(){
@@ -245,7 +244,7 @@ private int _33(){
     return 2;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<34){
     switch(c){
@@ -286,5 +285,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

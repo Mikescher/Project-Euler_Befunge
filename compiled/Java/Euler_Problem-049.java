@@ -1,6 +1,5 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -109,19 +108,19 @@ private int _13(){
     sa(sp()+3330L);
     return 4;
 }
-private int _14()throws java.io.IOException{
+private int _14(){
     sp();
     sa(sr());
-    System.out.print(String.valueOf((long)(sp())));
+    System.out.print(String.valueOf((long)(sp()))+" ");
     System.out.print(' ');
     sa(sp()+3330L);
 
     sa(sr());
-    System.out.print(String.valueOf((long)(sp())));
+    System.out.print(String.valueOf((long)(sp()))+" ");
     System.out.print(' ');
     sa(sp()+3330L);
 
-    System.out.print(String.valueOf((long)(sp())));
+    System.out.print(String.valueOf((long)(sp()))+" ");
     return 16;
 }
 private int _15(){
@@ -157,7 +156,7 @@ private int _15(){
     return 1;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
     while(c<16){
     switch(c){
@@ -180,5 +179,5 @@ public void main()throws java.io.IOException{
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

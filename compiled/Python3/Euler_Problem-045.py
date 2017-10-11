@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 def td(a,b):
     return ((0)if(b==0)else(a//b))
 def tm(a,b):
@@ -32,22 +32,23 @@ def _1():
     sa((1)if(x0>x1)else(0))
     return 2
 def _2():
-    return (12)if(sp()!=0)else(3)
+    return (13)if(sp()!=0)else(3)
 def _3():
     sa(sr());
-
-    return (9)if(sp()!=0)else(4)
+    return 4
 def _4():
+    return (10)if(sp()!=0)else(5)
+def _5():
     sp();
     sa(sp()-(x2*x2));
 
 
-    return (5)if((tm(x2,6))-5==0)else(8)
-def _5():
+    return (6)if((tm(x2,6))-5==0)else(9)
+def _6():
     sa((0)if(sp()!=0)else(1))
 
-    return (7)if(sp()!=0)else(6)
-def _6():
+    return (8)if(sp()!=0)else(7)
+def _7():
     global x2
     global t0
     global x1
@@ -64,16 +65,16 @@ def _6():
 
     x1=sr()
     return 1
-def _7():
+def _8():
     global t0
     global t1
     t0=(sr()*2)-1
     sa(sp()*t0);
 
     t1=sp()
-    print(t1,end="",flush=True)
-    return 13
-def _8():
+    print(t1,end=" ",flush=True)
+    return 14
+def _9():
     global x2
     global t0
     global x1
@@ -91,17 +92,16 @@ def _8():
 
     x1=sr()
     return 1
-def _9():
-    return (11)if((sr()+x2)<=x1)else(10)
 def _10():
+    return (12)if((sr()+x2)<=x1)else(11)
+def _11():
     global x2
     x2=td(x2,2)
     sa(td(sp(),4))
 
     sa(sr());
-
-    return (9)if(sp()!=0)else(4)
-def _11():
+    return 4
+def _12():
     global t0
     global t1
     global x1
@@ -116,12 +116,12 @@ def _11():
     x2=td(x2,2)
     sa(td(sp(),4))
     return 3
-def _12():
+def _13():
     sa(td(sp(),4))
 
     sa((1)if(sr()>x1)else(0))
     return 2
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12]
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13]
 c=0
-while c<13:
+while c<14:
     c=m[c]()

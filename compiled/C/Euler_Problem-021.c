@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -80,14 +80,14 @@ _10:
     gw(5,0,gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+1));
     goto _8;
 _11:
-    printf("%lld", gr(9,0));
+    printf("%lld ", gr(9,0));
     return 0;
 _12:
     if(gr(2,0)<=gr(4,0))goto _9;else goto _13;
 _13:
-    printf("%lld", gr(2,0));
+    printf("%lld ", gr(2,0));
     printf(" - ");
-    printf("%lld", gr(4,0));
+    printf("%lld ", gr(4,0));
     printf("\n");
     gw(9,0,gr(9,0)+gr(2,0)+gr(4,0));
     goto _9;

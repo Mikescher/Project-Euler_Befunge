@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("Ah+LCAAAAAAABACT7+ZgAAEWhre3D+ZddhBguBBfOPeJkPnZXcfWbtISE38nU71hEtcKnYVKa7iKXh3fvM7LlU+TsVPqyvclFY+/VojOV9sslb/Z/XTqt3ffTi9/zR+/"
@@ -85,28 +85,8 @@ def _7():
 def _8():
     sa(gr(3,0))
 
-    return (9)if(gr(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3)!=88)else(12)
+    return (14)if(gr(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+3)!=88)else(9)
 def _9():
-    sp();
-    return 10
-def _10():
-    global t0
-    t0=gr(3,0)+1
-    gw(3,0,gr(3,0)+1)
-    t0=t0-gr(0,0)
-    t0=(0)if(t0!=0)else(1)
-
-    return (11)if((t0)!=0)else(8)
-def _11():
-    global t0
-    t0=gr(9,0)
-    sys.stdout.write(" =")
-    sys.stdout.flush()
-
-    sys.stdout.write(str(t0))
-    sys.stdout.flush()
-    return 22
-def _12():
     global t0
     gw(5,0,1)
     sa(sr());
@@ -116,15 +96,15 @@ def _12():
     sa(sr());
     sa((0)if(sp()!=0)else(1))
 
-    return (13)if(sp()!=0)else(17)
-def _13():
+    return (10)if(sp()!=0)else(17)
+def _10():
     global t0
     sp();
     gw(6,0,t0)
     sa(sr());
     gw(7,0,sp())
-    return 14
-def _14():
+    return 11
+def _11():
     global t0
     sa(sr());
     sa(tm(sr(),gr(1,0)))
@@ -140,8 +120,8 @@ def _14():
     t0=gr(sp(),v0)
     t0=t0-32
 
-    return (15)if((t0)!=0)else(9)
-def _15():
+    return (12)if((t0)!=0)else(14)
+def _12():
     global t0
     t0=td(sr(),10)
     sa(tm(sp(),10))
@@ -158,21 +138,41 @@ def _15():
     t0=gr(5,0)-1
     gw(5,0,gr(5,0)-1)
 
-    return (14)if((t0)!=0)else(16)
-def _16():
-    sys.stdout.write(str(gr(7,0)))
+    return (11)if((t0)!=0)else(13)
+def _13():
+    sys.stdout.write(str(gr(7,0))+" ")
     sys.stdout.flush()
 
     sys.stdout.write(chr(10))
     sys.stdout.flush()
 
     gw(9,0,gr(9,0)+1)
-    return 9
+    return 14
+def _14():
+    sp();
+    return 15
+def _15():
+    global t0
+    t0=gr(3,0)+1
+    gw(3,0,gr(3,0)+1)
+    t0=t0-gr(0,0)
+    t0=(0)if(t0!=0)else(1)
+
+    return (16)if((t0)!=0)else(8)
+def _16():
+    global t0
+    t0=gr(9,0)
+    sys.stdout.write(" =")
+    sys.stdout.flush()
+
+    sys.stdout.write(str(t0)+" ")
+    sys.stdout.flush()
+    return 22
 def _17():
     return (18)if(tm(sr(),2)==0)else(19)
 def _18():
     sp();
-    return 9
+    return 14
 def _19():
     return (18)if(tm(sr(),5)==0)else(20)
 def _20():
@@ -183,7 +183,7 @@ def _20():
     t0=t0*10
     sa(sr());
 
-    return (17)if(sp()!=0)else(13)
+    return (17)if(sp()!=0)else(10)
 def _21():
     sa(sr());
     sa(32)

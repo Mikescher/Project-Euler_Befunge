@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "Ah+LCAAAAAAABACT7+ZgAAEWhre3HLMPOQi0PdxvZLqX92LstCUbPD5c2mz7TcAk47DTRokjz76XnzlZNVGhq/377rObftueqa2e6B+pd9Ro9snjif/v5vV/+rc7m3/S"+
@@ -101,7 +101,7 @@ static void Main(string[]args)
 
         sa(sr()+1);
         {long v0=sp();t0=gr(sp(),v0);}
-        System.Console.Out.Write(t0);
+        System.Console.Out.Write(t0+" ");
         return;
 }
 }

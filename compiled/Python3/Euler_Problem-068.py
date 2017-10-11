@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABAClks1yhCAMx18FcG8MFvxYjeMwfYO97qGj3rhy4rQPvwkq2g720GYGiJL880s0MPZktIpk7Moo8JEsF2HFIAKe4VKDsZGNIR4Y5o0EJbRwWoLX9aCM"
   + "07V4iDXOgsaX2ttaO5DaGTWsnscUNXR4+7W8YjFMm6eCpyIKRRyKO93F52K82aEIc6ddu/wCZ19BmZEk51DwBWXhlm0iqkUXJUHxXBCbWFRbJ/MUFCmNxxlhG0ZiM56a"
@@ -172,21 +172,21 @@ def _17():
     t11=gr(12,0)-47
     t12=gr(11,0)-47
     t13=gr(10,0)-47
-    print(gr(9,0)-47,end="",flush=True)
-    print(t13,end="",flush=True)
-    print(t12,end="",flush=True)
-    print(t11,end="",flush=True)
-    print(t10,end="",flush=True)
-    print(t9,end="",flush=True)
-    print(t8,end="",flush=True)
-    print(t7,end="",flush=True)
-    print(t6,end="",flush=True)
-    print(t5,end="",flush=True)
-    print(t4,end="",flush=True)
-    print(t3,end="",flush=True)
-    print(t2,end="",flush=True)
-    print(t1,end="",flush=True)
-    print(t0,end="",flush=True)
+    print(gr(9,0)-47,end=" ",flush=True)
+    print(t13,end=" ",flush=True)
+    print(t12,end=" ",flush=True)
+    print(t11,end=" ",flush=True)
+    print(t10,end=" ",flush=True)
+    print(t9,end=" ",flush=True)
+    print(t8,end=" ",flush=True)
+    print(t7,end=" ",flush=True)
+    print(t6,end=" ",flush=True)
+    print(t5,end=" ",flush=True)
+    print(t4,end=" ",flush=True)
+    print(t3,end=" ",flush=True)
+    print(t2,end=" ",flush=True)
+    print(t1,end=" ",flush=True)
+    print(t0,end=" ",flush=True)
     return 26
 def _18():
     sp();

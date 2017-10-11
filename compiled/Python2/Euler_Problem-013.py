@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABADFmMtuZUkRRX/FbcPIWJWvyEepsJgw5wtcElCyhBphtcAjPp610l0+SVE8Zljtct9zT2bGY8eOHfl648+HDze/++kvf/ryh7/e/PZvP3756ebBz7//"

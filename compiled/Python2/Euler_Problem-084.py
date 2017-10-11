@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 from random import randint
 import sys
 import zlib, base64
@@ -145,13 +145,13 @@ def _23():
 
     return (22)if(sr()<40)else(24)
 def _24():
-    sys.stdout.write(str(gr(2,2)))
+    sys.stdout.write(str(gr(2,2))+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(gr(3,2)))
+    sys.stdout.write(str(gr(3,2))+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(gr(4,2)))
+    sys.stdout.write(str(gr(4,2))+" ")
     sys.stdout.flush()
 
     sp();
@@ -434,19 +434,19 @@ def _91():
     sa(sp()+2);
     return 8
 def _92():
-    sa(sp()+1);
-    return 8
-def _93():
     sa(sp()+4);
     return 8
+def _93():
+    sa(sp()+1);
+    return 8
 def _94():
-    sa(1)
+    sa(3)
     return 6
 def _95():
     sa(4)
     return 6
 def _96():
-    sa(3)
+    sa(1)
     return 6
 def _97():
     sa(sp()-1);

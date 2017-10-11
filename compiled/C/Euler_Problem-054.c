@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -434,7 +434,7 @@ _29:
 _30:
     t0=(gr(0,7)>gr(1,7)?1:0)+gr(9,6);
     gw(9,6,(gr(0,7)>gr(1,7)?1:0)+gr(9,6));
-    printf("%lld", t0);
+    printf("%lld ", t0);
     return 0;
 _31:
     gw(16,2,0);

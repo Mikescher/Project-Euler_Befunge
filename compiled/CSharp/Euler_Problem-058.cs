@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -52,7 +52,7 @@ static void Main(string[]args)
         sa(sr()<2?1:0);
         goto _7;
     _10:
-        System.Console.Out.Write(((td(x1-2,4))*2)+3);
+        System.Console.Out.Write(((td(x1-2,4))*2)+3+" ");
         sp();
         return;
     _11:

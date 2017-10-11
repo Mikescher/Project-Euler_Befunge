@@ -1,6 +1,5 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
-private java.io.BufferedReader ib=new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
 private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
@@ -22,26 +21,28 @@ private int _1(){
     return 2;
 }
 private int _2(){
-    if(sp()!=0)return 12;else return 3;
+    if(sp()!=0)return 13;else return 3;
 }
 private int _3(){
     sa(sr());
-
-    if(sp()!=0)return 9;else return 4;
+    return 4;
 }
 private int _4(){
+    if(sp()!=0)return 10;else return 5;
+}
+private int _5(){
     sp();
     sa(sp()-(x2*x2));
 
 
-    if((tm(x2,6))-5==0)return 5;else return 8;
-}
-private int _5(){
-    sa((sp()!=0)?0:1);
-
-    if(sp()!=0)return 7;else return 6;
+    if((tm(x2,6))-5==0)return 6;else return 9;
 }
 private int _6(){
+    sa((sp()!=0)?0:1);
+
+    if(sp()!=0)return 8;else return 7;
+}
+private int _7(){
     x2=0;
     sa(sp()+1L);
 
@@ -56,15 +57,15 @@ private int _6(){
     x1=sr();
     return 1;
 }
-private int _7()throws java.io.IOException{
+private int _8(){
     t0=(sr()*2)-1;
     sa(sp()*t0);
 
     t1=sp();
-    System.out.print(String.valueOf(t1));
-    return 13;
+    System.out.print(String.valueOf(t1)+" ");
+    return 14;
 }
-private int _8(){
+private int _9(){
     x2=0;
     sp();
     sa(sp()+1L);
@@ -80,18 +81,17 @@ private int _8(){
     x1=sr();
     return 1;
 }
-private int _9(){
-    if((sr()+x2)<=x1)return 11;else return 10;
-}
 private int _10(){
+    if((sr()+x2)<=x1)return 12;else return 11;
+}
+private int _11(){
     x2/=2;
     sa(td(sp(),4));
 
     sa(sr());
-
-    if(sp()!=0)return 9;else return 4;
+    return 4;
 }
-private int _11(){
+private int _12(){
     t0=sr()+x2;
     t1=x1;
     t2=t1-t0;
@@ -102,16 +102,16 @@ private int _11(){
     sa(td(sp(),4));
     return 3;
 }
-private int _12(){
+private int _13(){
     sa(td(sp(),4));
 
     sa(sr()>x1?1:0);
     return 2;
 }
 
-public void main()throws java.io.IOException{
+public void main(){
     int c=0;
-    while(c<13){
+    while(c<14){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -126,8 +126,9 @@ public void main()throws java.io.IOException{
     case 10:c=_10();break;
     case 11:c=_11();break;
     case 12:c=_12();break;
+    case 13:c=_13();break;
 }
 }
 }
-public static void main(String[]a){try{new Program().main();}catch(java.io.IOException e){}}
+public static void main(String[]a){new Program().main();}
 }

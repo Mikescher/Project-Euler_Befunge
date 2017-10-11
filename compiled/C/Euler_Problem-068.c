@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -140,21 +140,21 @@ _17:
     t11=gr(12,0)-47;
     t12=gr(11,0)-47;
     t13=gr(10,0)-47;
-    printf("%lld", gr(9,0)-47);
-    printf("%lld", t13);
-    printf("%lld", t12);
-    printf("%lld", t11);
-    printf("%lld", t10);
-    printf("%lld", t9);
-    printf("%lld", t8);
-    printf("%lld", t7);
-    printf("%lld", t6);
-    printf("%lld", t5);
-    printf("%lld", t4);
-    printf("%lld", t3);
-    printf("%lld", t2);
-    printf("%lld", t1);
-    printf("%lld", t0);
+    printf("%lld ", gr(9,0)-47);
+    printf("%lld ", t13);
+    printf("%lld ", t12);
+    printf("%lld ", t11);
+    printf("%lld ", t10);
+    printf("%lld ", t9);
+    printf("%lld ", t8);
+    printf("%lld ", t7);
+    printf("%lld ", t6);
+    printf("%lld ", t5);
+    printf("%lld ", t4);
+    printf("%lld ", t3);
+    printf("%lld ", t2);
+    printf("%lld ", t1);
+    printf("%lld ", t0);
     return 0;
 _18:
     sp();

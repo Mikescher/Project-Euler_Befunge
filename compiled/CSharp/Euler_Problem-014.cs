@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
@@ -31,10 +31,10 @@ static void Main(string[]args)
     _4:
         if(sr()<=1000000)goto _6;else goto _5;
     _5:
-        System.Console.Out.Write(x1);
+        System.Console.Out.Write(x1+" ");
         t0=x0;
         System.Console.Out.Write(" :");
-        System.Console.Out.Write(t0);
+        System.Console.Out.Write(t0+" ");
         return;
     _6:
         sa(sp()+1L);

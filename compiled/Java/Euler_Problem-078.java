@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.1.0 (c) 2015 */
+/* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABACd1P0/0wkAwHFXND2wnkR3oVRUaiVp+bItaeRhW4XkaauT50TzjUzHTknydGdJeRhmLBRqZmxGjy7Jw4zQCmtTW+ZhsywT7nWv1/0B97rPj+8/4GOa"+
                                  "rqv1T9paEx87L/3ivUZn1Hvz2S6n5MDM8JBt2k7DT4V71zDsIlnKKhnT+0quJyom6YSJctgqnlziYO9IxQXaPnImjrQkmVKLiyHZPo2ddaELg2zXHoS51GQDmL2S85f2"+
@@ -62,7 +62,7 @@ private int _3(){
     if(tm(gr(5,0),gr(2,0))!=0)return 5;else return 4;
 }
 private int _4(){
-    System.out.print(String.valueOf((long)(sp())));
+    System.out.print(String.valueOf((long)(sp()))+" ");
     return 7;
 }
 private int _5(){

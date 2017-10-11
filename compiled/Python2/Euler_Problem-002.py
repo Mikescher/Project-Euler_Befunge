@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -58,7 +58,7 @@ def _4():
     return 1
 def _5():
     global x2
-    sys.stdout.write(str(x2))
+    sys.stdout.write(str(x2)+" ")
     sys.stdout.flush()
 
     sp();

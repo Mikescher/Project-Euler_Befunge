@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.1.0 (c) 2015
+# transpiled with BefunCompile v1.2.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABADt2k1Lw0AQBuC/st20l4S4k020zVAWL5716CGkRS0LoriI7qk/3lk/oNraFooo8j6wgelMs5uZ5taYJSotY9TF48Pt4vpJnT3fLR5VmeKru8W9ak7U"
@@ -52,7 +52,7 @@ def _1():
     sa((1)if((gr(3,0)+gr(3,0))<gr(4,0))else(0))
     return 2
 def _2():
-    return (24)if(sp()!=0)else(3)
+    return (25)if(sp()!=0)else(3)
 def _3():
     sp();
     return 4
@@ -126,7 +126,7 @@ def _10():
     sa((0)if(3-gr(5,0)!=0)else(1))
     return 11
 def _11():
-    return (23)if(sp()!=0)else(12)
+    return (24)if(sp()!=0)else(12)
 def _12():
     global t0
     sa(sr());
@@ -144,7 +144,7 @@ def _12():
     t0=t0-32
     t0=(0)if(t0!=0)else(1)
 
-    return (17)if((t0)!=0)else(13)
+    return (18)if((t0)!=0)else(13)
 def _13():
     global t0
     sa(sr());
@@ -166,35 +166,35 @@ def _13():
     sa((1)if(gr(8,0)>gr(7,0))else(0))
     return 14
 def _14():
-    return (22)if(sp()!=0)else(15)
+    return (23)if(sp()!=0)else(15)
 def _15():
     sa(sr());
-
-    return (19)if(sp()!=0)else(16)
+    return 16
 def _16():
+    return (20)if(sp()!=0)else(17)
+def _17():
     sp();
     sa(sp()-(gr(9,0)*gr(9,0)));
 
 
-    return (17)if(sp()!=0)else(18)
-def _17():
+    return (18)if(sp()!=0)else(19)
+def _18():
     sa(sp()+1);
 
     sa((0)if(sr()-gr(5,0)!=0)else(1))
     return 11
-def _18():
+def _19():
     sp();
     return 8
-def _19():
-    return (21)if((sr()+gr(9,0))<=gr(7,0))else(20)
 def _20():
+    return (22)if((sr()+gr(9,0))<=gr(7,0))else(21)
+def _21():
     gw(9,0,td(gr(9,0),2))
     sa(td(sp(),4))
 
     sa(sr());
-
-    return (19)if(sp()!=0)else(16)
-def _21():
+    return 16
+def _22():
     global t0
     global t1
     global t2
@@ -207,16 +207,16 @@ def _21():
     gw(9,0,td(gr(9,0),2))
     sa(td(sp(),4))
     return 15
-def _22():
+def _23():
     sa(td(sp(),4))
 
     sa((1)if(sr()>gr(7,0))else(0))
     return 14
-def _23():
-    sys.stdout.write(str(sp()))
-    sys.stdout.flush()
-    return 25
 def _24():
+    sys.stdout.write(str(sp())+" ")
+    sys.stdout.flush()
+    return 26
+def _25():
     sa(sr());
     sa(32)
     v0=sp()
@@ -239,7 +239,7 @@ def _24():
 
     sa((1)if(sr()<gr(4,0))else(0))
     return 2
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24]
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25]
 c=0
-while c<25:
+while c<26:
     c=m[c]()
