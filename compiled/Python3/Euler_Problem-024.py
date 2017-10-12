@@ -2,9 +2,9 @@
 
 # transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
-_g = ("AR+LCAAAAAAABACdUDGOAyEM/AqBrVgRMbtc7oKQdQ+xNlesREuFUvD4mCVpI+WmsEdG4xlcPZY1fF2+f67qY5De911bi/q5VtWC5VoAl/4hfgWoNKxHTU/SN9LgxHBc"
-  + "j2lBmJEREi3IEXOj1plninDRbLeJLB89NhGuKApBirAckC2Q/07t6Ty9CTVhk9acvmuVfeTESOI7cnX89nTvUI93wsw9CsZwk4M5+cDSj2Y7CxlrBs7Fs3ix016LHxmn"
-  + "DJSZlBHDbYgfFCr43OgBAAA=")
+_g = ("AR+LCAAAAAAABACdUDGOAyEM/AoHW7FBYna5XIKQdQ9B3BUr0VJZKXj8mZAUKXMuzGA8nsHsse3h8/x1uaq3g/RxHNpa8PtcxQ3btQEu/YP8NMA0pWdODzAm0sSU4TLf"
+  + "qw1hRUVItKFGrJ36QD5ThIum/DDZPM4ldiHuaApBkqAaUC1Qfz/6Q3l59bFAFZFs54tluRSpdadvWlUfc8pIojt9jfge7p5hijfJsDenVZk05/L9nbDmYQWzscjCnHxg"
+  + "G0uzA4WKvQIqlSxa2WmvRY+MUwbKLDJOWJP8B/NXo/XoAQAA")
 g = base64.b64decode(_g)[1:]
 for i in range(base64.b64decode(_g)[0]):
     g = gzip.decompress(g)
@@ -86,7 +86,8 @@ def _8():
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
-    print(t0,end=" ",flush=True)
+    t0=t0+48
+    print(chr(t0),end="",flush=True)
     gw(1,1,gr(1,1)-(gr(3,1)*(gr(4,1)-1)))
     gw(2,1,gr(2,1)-1)
     return 1
@@ -123,40 +124,41 @@ def _12():
     return (22)if(sp()!=0)else(13)
 def _13():
     sp();
+    sa(sp()*1);
     return 14
 def _14():
-    sa(sp()*sp());
-
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa(sr());
-    return 15
+
+    return (21)if(sp()!=0)else(15)
 def _15():
-    return (14)if(sp()!=0)else(16)
-def _16():
     sp();
     sa(sr());
 
-    return (17)if(sp()!=0)else(21)
-def _17():
+    return (16)if(sp()!=0)else(20)
+def _16():
     gw(3,1,sp())
     gw(4,1,1)
-    return 18
+    return 17
+def _17():
+    return (19)if((gr(3,1)*gr(4,1))<=gr(1,1))else(18)
 def _18():
-    return (20)if((gr(3,1)*gr(4,1))<=gr(1,1))else(19)
-def _19():
     sa(gr(4,1))
     return 5
-def _20():
+def _19():
     gw(4,1,gr(4,1)+1)
-    return 18
-def _21():
+    return 17
+def _20():
     gw(3,1,1)
     gw(4,1,1)
     sp();
-    return 18
+    return 17
+def _21():
+    sa(sp()*sp());
+    return 14
 def _22():
     sa(sr()-1)
     sa(sr());

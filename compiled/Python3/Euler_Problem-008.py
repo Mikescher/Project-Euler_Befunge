@@ -2,15 +2,15 @@
 
 # transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
-_g = ("AR+LCAAAAAAABADtl81uG0cQhF+FYOyLGDv9O90txEIeJFBy45UnPX++kS0gAYw49vKYAYYL7nC3pqurasDzy1nklvHwqFzSHh4eTW4PLrfOS8hNkrmYxWy5nRgvp2Pj"
-  + "SVOuvPNpyRW06/vf+fhlLteznD88cFMvjyzzow/B/Onlj8eW659c3z3l6yqb8s8rp2Fjp6eSq1w/8tlvj5w/nX/mqY+//RP7+T/u8Vfmu+975Guv+KHx1J853/xQ7+XR"
-  + "Tl9IOr2xxMpc5LZOb2R9qfr5Rzb79Y2+3X2m9xe9Sv37zw+M797z3Xfw//j7KNdVWitd3WVZjI5Zqs6qCFtZUWGe6XslxuM45qxpTxNXq4qU5bbMJ6tdW5TV4NJrorpT"
-  + "O/w4ZmcvzSXVo2oUEpORk6LlNdnuOmmdbtItCQHHMdUyhGqgULPTvJeTsXxZ4zYyFA6oQbRLwHF9+53fGmv1rBVNZRFpe9JhitTOFeLCdhQGtIz9uOoduF1mNo00zL2B"
-  + "aPV0X1ZraVhbywpGs69NQsUcx3Tx7JGyWTCJNulthFQhJBj2VslN+rjULAH7OGYhFgsr2Ov2gcmpET53C8d0tnantoJaxqvugIkBrRxrCgVBKo5QM8GRwS5kKrfK0Fni"
-  + "FrR0D6+kZQcsIpRVeGGJOuxSMiaK4B7CjVC2ZkoyzB10m76mWmG0OtArxsGhqfAKxcteLaOzF/lm0XYck4KoINQroVmok7QbMVSLaLa0emEhjfRUEYLwDpima3nBJmol"
-  + "c/CNCIIhB8J3FqLZoMOVjWYX3T6OqWuLtjRqhr6FDabEpstjJTGPX8l23UHBQtDkO2DWq93JeV4cuSASgS6kuggE8kkNDxEPRPKCgrhDP/EmHjTjQNuqNVSqe2wvSlK3"
-  + "FgRPKCSTCSF9HJOs4bgS7yTOKRSYIPoGl75mbW/OSQ1yEGkNwXEcs+FVCDyURADs1pG7lQGSCDrCnpwCMLzPO852uUM/ZeuRPIhN7sQ+xkDEFbatSSf5P4GQk8AlFjBP"
-  + "HscspRBbQ6XddFX2YUJ9TRoJCras5OA0Ifg4S3HPccy/AFjBplkkDQAA")
+_g = ("AR+LCAAAAAAABADtl81uG0cQhF+FYJyLaCf9O90tJEIeJHBy45UnPb+/kS0ECAwo1vKYAYYr7nC3pquraqDz81nklvHwqFzSHh4eTW4PLrfOS8hNkrmYxWy5nRjPp2Pj"
+  + "SVOuvPNpyRW0689/8vHrXK5nOX964KZeHlnmR5+C+dPzX48t17+5fnjKl1U25V9XTsPGTk8lV7n2erh85K9+fez8+/kjT/7yxz/Yn//jHn9jfvixR773ineNp/7K+eaH"
+  + "ei+PdvpG0umVJVbmIrcXrk6brG8Vf37PZr+/0de7n+n9Ra9Sbz/yzvHDe74r+v/j36NcV2mtdHWXZTE6Zqk6qyJsZUWFeabvlRiP45izpj1NXK0qUpbbMp+sdm1RVoNL"
+  + "r4nqTu3w45idvTSXVI+qUUhMRk6Kltdku+ukdbpJtyQEHMdUyxCqgULNTvNeTsbyZY3byFA4oAbRLgHH9fY73xpr9awVTWURaXvSYYrUzhXiwnYUBrSM/bjqHbhdZjaN"
+  + "NMy9gWj1dF9Wa2lYW8sKRrOvTULFHMd08eyRslkwiTbpbYRUISQY9lbJTfq41CwB+zhmIRYLK9jr9oHJqRE+dwvHdLZ2p7aCWsar7oCJAa0cawoFQSqOUDPBkcEuZCq3"
+  + "ytBZ4ha0dA+vpGUHLCKUVXhhiTrsUjImiuAewo1QtmZKMswddJu+plphtDrQK8bBoanwCsXLXiyjsxf5ZtF2HJOCqCDUK6FZqJO0GzFUi2i2tHphIY30VBGC8A6Ypmt5"
+  + "wSZqJXPwjQiCIQfCdxai2aDDlY1mF90+jqlri7Y0aoa+hQ2mxKbLYyUxj1/Jdt1BwULQ5Dtg1ovdyXleHLkgEoEupLoIBPJJDQ8RD0TygoK4Qz/xJh4040DbqjVUqnts"
+  + "L0pStxYETygkkwkhfRyTrOG4Eu8kzikUmCD6Bpe+ZG1vzkkNchBpDcFxHLPhVQg8lEQA7NaRu5UBkgg6wp6cAjC8zzvOdrlDP2XrkTyITe7EPsZAxBW2rUkn+X8CISeB"
+  + "SyxgnjyOWUohtoZKu+mq7MOE+po0EhRsWcnBaULwcZbinuOYXwA+olORJA0AAA==")
 g = base64.b64decode(_g)[1:]
 for i in range(base64.b64decode(_g)[0]):
     g = gzip.decompress(g)
@@ -81,7 +81,7 @@ def _6():
     gw(7,0,9)
     return 7
 def _7():
-    print(gr(gr(7,0),0),end=" ",flush=True)
+    print(chr(gr(gr(7,0),0)+48),end="",flush=True)
 
     return (9)if(gr(7,0)-8!=gr(4,0))else(8)
 def _8():

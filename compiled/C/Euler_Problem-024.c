@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
-char* _g = "v0123456789{ }  R>\"ddd\"**1v{ }  Svp129p11-<{ }  Z>v>{v     }  \"<  v    <   >  v   >\\1-\\vv    p14+1g14<>21g:1+|>|>21g0\\>:1-:#^_$>"
-           "*\\:#^_$:|  >31p 141p >31g41g*11g`!|{ }  '${ }  :>$1^   |-\"x\" g0:\\<\\1<g14  <{ }  '@ >{ }  >v>    >1+\\:|  1      ^p12-1g12p11-*-1g"
-           "14g13g11.p0\\\"x\"\\-\"0\"g0:>#- #1 #$ #<  ^      ";
+char* _g = "v0123456789{ }  R>\"ddd\"**1v{ }  Svp129p11-<{ }  Z>v>{v     }  \"<  v    <   >  v   >\\1-\\vv    p14+1g14<>21g:1+|>|>21g0\\>:1-:#^_v>"
+           "*\\:#^_$:|  >31p 141p >31g41g*11g`!|{ }  '${ }  ->$1 ^ > p68*v>$1^   |-\"x\" g0:\\<\\1<g14  <{ }  '@ >{ }  *#^0#<#v0#,+ #<$     v>   "
+           " >1+\\:|  1      ^p12-1g12p11-*-1g14g13g11 <^\\\"x\"\\-\"0\"g0:>#- #1 #$ #<  ^      ";
 int t=0;int z=0;
 int64 g[488];
-int d(){int s,w,i,j,h;h=z;for(;t<300;t++)if(_g[t]==';')g[z++]=_g[++t];else if(_g[t]=='}')return z-h;else if(_g[t]=='{'){t++;s=z;w=d();for(i=1;i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872;i++)for(j=0;j<w;g[z++]=g[s+j++]);t+=3;}else g[z++]=_g[t];return z-h;}
+int d(){int s,w,i,j,h;h=z;for(;t<333;t++)if(_g[t]==';')g[z++]=_g[++t];else if(_g[t]=='}')return z-h;else if(_g[t]=='{'){t++;s=z;w=d();for(i=1;i<_g[t+1]*9025+_g[t+2]*95+_g[t+3]-291872;i++)for(j=0;j<w;g[z++]=g[s+j++]);t+=3;}else g[z++]=_g[t];return z-h;}
 int64 gr(int64 x,int64 y){if(x>=0&&y>=0&&x<61&&y<8){return g[y*61+x];}else{return 0;}}
 void gw(int64 x,int64 y,int64 v){if(x>=0&&y>=0&&x<61&&y<8){g[y*61+x]=v;}}
 int64 td(int64 a,int64 b){ return (b==0)?0:(a/b); }
@@ -57,7 +57,8 @@ _8:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(0);
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
-    printf("%lld ", t0);
+    t0+=48;
+    printf("%c", (char)(t0));
     gw(1,1,gr(1,1)-(gr(3,1)*(gr(4,1)-1)));
     gw(2,1,gr(2,1)-1);
     goto _1;
@@ -83,33 +84,36 @@ _12:
     if(sp()!=0)goto _22;else goto _13;
 _13:
     sp();
+    sa(sp()*1LL);
 _14:
-    sa(sp()*sp());
-
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
-    if(sp()!=0)goto _14;else goto _16;
-_16:
+
+    if(sp()!=0)goto _21;else goto _15;
+_15:
     sp();
     sa(sr());
 
-    if(sp()!=0)goto _17;else goto _21;
-_17:
+    if(sp()!=0)goto _16;else goto _20;
+_16:
     gw(3,1,sp());
     gw(4,1,1);
+_17:
+    if((gr(3,1)*gr(4,1))<=gr(1,1))goto _19;else goto _18;
 _18:
-    if((gr(3,1)*gr(4,1))<=gr(1,1))goto _20;else goto _19;
-_19:
     sa(gr(4,1));
     goto _5;
-_20:
+_19:
     gw(4,1,gr(4,1)+1);
-    goto _18;
-_21:
+    goto _17;
+_20:
     gw(3,1,1);
     gw(4,1,1);
     sp();
-    goto _18;
+    goto _17;
+_21:
+    sa(sp()*sp());
+    goto _14;
 _22:
     sa(sr()-1);
     sa(sr());

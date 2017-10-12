@@ -2,11 +2,11 @@
 
 # transpiled with BefunCompile v1.2.0 (c) 2017
 import gzip, base64
-_g = ("AR+LCAAAAAAABAC1UcFuwyAM/RV36S5F2WxYTEAR2mfsUKVHrpw49eNnQ5tW6y6rNEfB5snPzzYVnjSzGTgKwDMCyc9BvJW7RfBsBQ/NO5ofeTyDJ8nTXPEsPBKMGDuP"
-  + "GLyjB553gkuuo+7br3U4gA1aq/fz2OcMblYNC/bivWC9ltQI+CtvFty1GXQW3HTdjB2zc+v1J+/ZfQ6b/Y33rN7XZv+o96SlaTIp0jHWFCV8J+OwaPT6cWA2xmJBixkF"
-  + "zvkFX8Y4YWGuyj3HkcoClTJ6LEadHmxv8dRj7vECbai0B+8PazITZjJFyOJYjlqXW2d3YYG7ZZyPI8VWdWqlRXmh805RZRUIxjBDwQW8fBerJg2wHwAHCO0sGiwp6pA+"
-  + "D+sJYsAcyYRV1Mq2H0XH3VBPMbbcIL0eeepBPuyEGWPtyQbwyltLa+MIGa2uqd+yuIllo7nd42VGBvvwLntMF7030PJJn8HenkE2zutN72qf+9M67MaMIRpaWiNepQpy"
-  + "HIWYMzpZ2/IN4Pew4JgEAAA=")
+_g = ("AR+LCAAAAAAABAC1Uctu4zAM/BWmzl6iGiWlmnrAEPYz9hA4R1110ikfX1JKnaLppQGWhkVqwOGQVIMnzewGjiJwQCD5OYq3crcInq3gsXtH4ZHHATxJnuaKZ+GRYMQ4"
+  + "eMTgHT3wvBNcch0N33+twxFs1Fqjn8c+A7igGhbszXvBRi2pEfFHXhDc9Rl0Ftx1XcCB2dB7/c57dp/Tbr/jPav3b7f/qPek5WUxOdE5tZwkfCPjsGr05/3EbIzFihYL"
+  + "ClzKC77MacHK3JR7TTPVFRoV9FiNOj3Y3uNlxDziFfpQ+Qjen7ZsFixkqpDFsRytrffOvoQVvizjep4p9apLLy3KK10PiiqrQjSGGSqu4OW7WTN5guMEOEHsZ9VgzUmH"
+  + "9GXaLpAilkQmbqJW9/0oOh+mdkmp50bp9czLCMrpIMyU2kg2gJ+8rfY2zlDQ6prGrYhbWDZa+j3dZmSwD+9yxHzT43AyDbI+g70/g2yct7vep/09XrbpMBeMydCrLHGr"
+  + "XqUqcpqFWAo6Wdv6AUItDRCYBAAA")
 g = base64.b64decode(_g)[1:]
 for i in range(base64.b64decode(_g)[0]):
     g = gzip.decompress(g)
@@ -202,7 +202,7 @@ def _12():
     gw(v1,v0,sp())
     return 10
 def _13():
-    print(gr(12,9),end=" ",flush=True)
+    print(chr(gr(12,9)+48),end="",flush=True)
     sp();
     sa(1)
     sa((0)if(1-gr(9,0)!=0)else(1))
@@ -218,7 +218,8 @@ def _16():
     sa(9)
     v0=sp()
     t0=gr(sp(),v0)
-    print(t0,end=" ",flush=True)
+    t0=t0+48
+    print(chr(t0),end="",flush=True)
     sa(sp()+1);
 
     sa((0)if(sr()-gr(9,0)!=0)else(1))

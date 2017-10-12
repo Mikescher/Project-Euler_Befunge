@@ -1,9 +1,9 @@
 /* transpiled with BefunCompile v1.2.0 (c) 2017 */
 public static class Program
 {
-private static readonly string _g = "AR+LCAAAAAAABACdUDGOAyEM/AqBrVgRMbtc7oKQdQ+xNlesREuFUvD4mCVpI+WmsEdG4xlcPZY1fF2+f67qY5De911bi/q5VtWC5VoAl/4hfgWoNKxHTU/SN9LgxHBc"+
-                                    "j2lBmJEREi3IEXOj1plninDRbLeJLB89NhGuKApBirAckC2Q/07t6Ty9CTVhk9acvmuVfeTESOI7cnX89nTvUI93wsw9CsZwk4M5+cDSj2Y7CxlrBs7Fs3ix016LHxmn"+
-                                    "DJSZlBHDbYgfFCr43OgBAAA=";
+private static readonly string _g = "AR+LCAAAAAAABACdUDGOAyEM/AoHW7FBYna5XIKQdQ9B3BUr0VJZKXj8mZAUKXMuzGA8nsHsse3h8/x1uaq3g/RxHNpa8PtcxQ3btQEu/YP8NMA0pWdODzAm0sSU4TLf"+
+                                    "qw1hRUVItKFGrJ36QD5ThIum/DDZPM4ldiHuaApBkqAaUC1Qfz/6Q3l59bFAFZFs54tluRSpdadvWlUfc8pIojt9jfge7p5hijfJsDenVZk05/L9nbDmYQWzscjCnHxg"+
+                                    "G0uzA4WKvQIqlSxa2WmvRY+MUwbKLDJOWJP8B/NXo/XoAQAA";
 private static readonly long[]  g = System.Array.ConvertAll(zd(System.Convert.FromBase64String(_g)),b=>(long)b);
 private static byte[]zd(byte[]o){byte[]d=System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Skip(o, 1));for(int i=0;i<o[0];i++)d=zs(d);return d;}
 private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
@@ -56,7 +56,8 @@ static void Main(string[]args)
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(0);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-        System.Console.Out.Write(t0+" ");
+        t0+=48;
+        System.Console.Out.Write((char)(t0));
         gw(1,1,gr(1,1)-(gr(3,1)*(gr(4,1)-1)));
         gw(2,1,gr(2,1)-1);
         goto _1;
@@ -82,33 +83,36 @@ static void Main(string[]args)
         if(sp()!=0)goto _22;else goto _13;
     _13:
         sp();
+        sa(sp()*1L);
     _14:
-        sa(sp()*sp());
-
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sr());
-        if(sp()!=0)goto _14;else goto _16;
-    _16:
+
+        if(sp()!=0)goto _21;else goto _15;
+    _15:
         sp();
         sa(sr());
 
-        if(sp()!=0)goto _17;else goto _21;
-    _17:
+        if(sp()!=0)goto _16;else goto _20;
+    _16:
         gw(3,1,sp());
         gw(4,1,1);
+    _17:
+        if((gr(3,1)*gr(4,1))<=gr(1,1))goto _19;else goto _18;
     _18:
-        if((gr(3,1)*gr(4,1))<=gr(1,1))goto _20;else goto _19;
-    _19:
         sa(gr(4,1));
         goto _5;
-    _20:
+    _19:
         gw(4,1,gr(4,1)+1);
-        goto _18;
-    _21:
+        goto _17;
+    _20:
         gw(3,1,1);
         gw(4,1,1);
         sp();
-        goto _18;
+        goto _17;
+    _21:
+        sa(sp()*sp());
+        goto _14;
     _22:
         sa(sr()-1);
         sa(sr());

@@ -1,10 +1,10 @@
 /* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
-private final static String _g = "AR+LCAAAAAAABAC1UcFuwyAM/RV36S5F2WxYTEAR2mfsUKVHrpw49eNnQ5tW6y6rNEfB5snPzzYVnjSzGTgKwDMCyc9BvJW7RfBsBQ/NO5ofeTyDJ8nTXPEsPBKMGDuP"+
-                                 "GLyjB553gkuuo+7br3U4gA1aq/fz2OcMblYNC/bivWC9ltQI+CtvFty1GXQW3HTdjB2zc+v1J+/ZfQ6b/Y33rN7XZv+o96SlaTIp0jHWFCV8J+OwaPT6cWA2xmJBixkF"+
-                                 "zvkFX8Y4YWGuyj3HkcoClTJ6LEadHmxv8dRj7vECbai0B+8PazITZjJFyOJYjlqXW2d3YYG7ZZyPI8VWdWqlRXmh805RZRUIxjBDwQW8fBerJg2wHwAHCO0sGiwp6pA+"+
-                                 "D+sJYsAcyYRV1Mq2H0XH3VBPMbbcIL0eeepBPuyEGWPtyQbwyltLa+MIGa2uqd+yuIllo7nd42VGBvvwLntMF7030PJJn8HenkE2zutN72qf+9M67MaMIRpaWiNepQpy"+
-                                 "HIWYMzpZ2/IN4Pew4JgEAAA=";
+private final static String _g = "AR+LCAAAAAAABAC1Uctu4zAM/BWmzl6iGiWlmnrAEPYz9hA4R1110ikfX1JKnaLppQGWhkVqwOGQVIMnzewGjiJwQCD5OYq3crcInq3gsXtH4ZHHATxJnuaKZ+GRYMQ4"+
+                                 "eMTgHT3wvBNcch0N33+twxFs1Fqjn8c+A7igGhbszXvBRi2pEfFHXhDc9Rl0Ftx1XcCB2dB7/c57dp/Tbr/jPav3b7f/qPek5WUxOdE5tZwkfCPjsGr05/3EbIzFihYL"+
+                                 "ClzKC77MacHK3JR7TTPVFRoV9FiNOj3Y3uNlxDziFfpQ+Qjen7ZsFixkqpDFsRytrffOvoQVvizjep4p9apLLy3KK10PiiqrQjSGGSqu4OW7WTN5guMEOEHsZ9VgzUmH"+
+                                 "9GXaLpAilkQmbqJW9/0oOh+mdkmp50bp9czLCMrpIMyU2kg2gJ+8rfY2zlDQ6prGrYhbWDZa+j3dZmSwD+9yxHzT43AyDbI+g70/g2yct7vep/09XrbpMBeMydCrLHGr"+
+                                 "XqUqcpqFWAo6Wdv6AUItDRCYBAAA";
 private final long[] g=zc(zd(java.util.Base64.getDecoder().decode(_g)));
 private long[]zc(byte[]b){long[]r=new long[1176];for(int i=0;i<1176;i++)r[i]=b[i];return r;}
 private byte[]zd(byte[]o){byte[]d=java.util.Arrays.copyOfRange(o,1,o.length);for(int i=0;i<o[0];i++)d=zs(d);return d;}
@@ -163,7 +163,7 @@ private int _12(){
     return 10;
 }
 private int _13(){
-    System.out.print(String.valueOf(gr(12,9))+" ");
+    System.out.print(String.valueOf((char)(gr(12,9)+48)));
     sp();
     sa(1);
     sa((1-gr(9,0)!=0)?0:1);
@@ -180,7 +180,8 @@ private int _16(){
     sa(sr()+12);
     sa(9);
     {long v0=sp();t0=gr(sp(),v0);}
-    System.out.print(String.valueOf(t0)+" ");
+    t0+=48;
+    System.out.print(String.valueOf((char)(t0)));
     sa(sp()+1L);
 
     sa((sr()-gr(9,0)!=0)?0:1);

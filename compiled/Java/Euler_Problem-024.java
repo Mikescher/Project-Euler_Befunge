@@ -1,8 +1,8 @@
 /* transpiled with BefunCompile v1.2.0 (c) 2017 */
 class Program{
-private final static String _g = "AR+LCAAAAAAABACdUDGOAyEM/AqBrVgRMbtc7oKQdQ+xNlesREuFUvD4mCVpI+WmsEdG4xlcPZY1fF2+f67qY5De911bi/q5VtWC5VoAl/4hfgWoNKxHTU/SN9LgxHBc"+
-                                 "j2lBmJEREi3IEXOj1plninDRbLeJLB89NhGuKApBirAckC2Q/07t6Ty9CTVhk9acvmuVfeTESOI7cnX89nTvUI93wsw9CsZwk4M5+cDSj2Y7CxlrBs7Fs3ix016LHxmn"+
-                                 "DJSZlBHDbYgfFCr43OgBAAA=";
+private final static String _g = "AR+LCAAAAAAABACdUDGOAyEM/AoHW7FBYna5XIKQdQ9B3BUr0VJZKXj8mZAUKXMuzGA8nsHsse3h8/x1uaq3g/RxHNpa8PtcxQ3btQEu/YP8NMA0pWdODzAm0sSU4TLf"+
+                                 "qw1hRUVItKFGrJ36QD5ThIum/DDZPM4ldiHuaApBkqAaUC1Qfz/6Q3l59bFAFZFs54tluRSpdadvWlUfc8pIojt9jfge7p5hijfJsDenVZk05/L9nbDmYQWzscjCnHxg"+
+                                 "G0uzA4WKvQIqlSxa2WmvRY+MUwbKLDJOWJP8B/NXo/XoAQAA";
 private final long[] g=zc(zd(java.util.Base64.getDecoder().decode(_g)));
 private long[]zc(byte[]b){long[]r=new long[488];for(int i=0;i<488;i++)r[i]=b[i];return r;}
 private byte[]zd(byte[]o){byte[]d=java.util.Arrays.copyOfRange(o,1,o.length);for(int i=0;i<o[0];i++)d=zs(d);return d;}
@@ -69,7 +69,8 @@ private int _8(){
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(0);
     {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-    System.out.print(String.valueOf(t0)+" ");
+    t0+=48;
+    System.out.print(String.valueOf((char)(t0)));
     gw(1,1,gr(1,1)-(gr(3,1)*(gr(4,1)-1)));
     gw(2,1,gr(2,1)-1);
     return 1;
@@ -101,45 +102,46 @@ private int _12(){
 }
 private int _13(){
     sp();
+    sa(sp()*1L);
     return 14;
 }
 private int _14(){
-    sa(sp()*sp());
-
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sr());
-    return 15;
+
+    if(sp()!=0)return 21;else return 15;
 }
 private int _15(){
-    if(sp()!=0)return 14;else return 16;
-}
-private int _16(){
     sp();
     sa(sr());
 
-    if(sp()!=0)return 17;else return 21;
+    if(sp()!=0)return 16;else return 20;
 }
-private int _17(){
+private int _16(){
     gw(3,1,sp());
     gw(4,1,1);
-    return 18;
+    return 17;
+}
+private int _17(){
+    if((gr(3,1)*gr(4,1))<=gr(1,1))return 19;else return 18;
 }
 private int _18(){
-    if((gr(3,1)*gr(4,1))<=gr(1,1))return 20;else return 19;
-}
-private int _19(){
     sa(gr(4,1));
     return 5;
 }
-private int _20(){
+private int _19(){
     gw(4,1,gr(4,1)+1);
-    return 18;
+    return 17;
 }
-private int _21(){
+private int _20(){
     gw(3,1,1);
     gw(4,1,1);
     sp();
-    return 18;
+    return 17;
+}
+private int _21(){
+    sa(sp()*sp());
+    return 14;
 }
 private int _22(){
     sa(sr()-1);
