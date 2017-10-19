@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABAC8vVnP9cZ17/lVqh1fRXCf1xmcRAh0ziK5NllkDfutKnK/fBAk6YsD9UU3IKD75CofvmvVfuRMNuAO4t9GYsuSrGWSNazhP/zg/u3vn9wf8vvhD/47"+
                                  "/+0vSrn/9T/mF//9v3v9xZ9+9933f/blpy9ffvrhy6/7v7sfvv/y5ccff/E/fvGr77/845/8/T/88ssPv/7y41/9xZ/+6Xf9r/+hgZ/Sip+9/L5H+Pv3H/z9v/y5f/in"+
@@ -313,12 +313,11 @@ private int _4(){
 }
 private int _5(){
     gw(0,gr(0,0),gr(1,0));
-    sp();
     t0=gr(0,0)-1;
     gw(0,0,gr(0,0)-1);
-    t0=(t0!=0)?0:1;
+    sp();
 
-    if((t0)!=0)return 6;else return 1;
+    if((t0)!=0)return 1;else return 6;
 }
 private int _6(){
     gw(3,0,gr(2,0));
@@ -339,9 +338,8 @@ private int _9(){
     if((t0)!=0)return 8;else return 10;
 }
 private int _10(){
-    t0=gr(3,0);
+    t0=gr(3,0)-2;
     gw(3,0,gr(3,0)-1);
-    t0-=2;
 
     if((t0)!=0)return 7;else return 11;
 }

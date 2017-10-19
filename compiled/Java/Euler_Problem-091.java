@@ -1,12 +1,8 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
-private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
-private long sp(){return(s.size()==0)?0:s.pop();}
-private void sa(long v){s.push(v);}
-private long sr(){return(s.size()==0)?0:s.peek();}
-long t0;
+long t0,t1;
 long x0=50;
 long x1=0;
 long x2=50;
@@ -21,18 +17,19 @@ private int _1(){
     return 2;
 }
 private int _2(){
-    if(((x3*(x4-x3))>(x2*x2)?1:0)+(x4>x0?1L:0L)==0)return 7;else return 3;
+    if((((x3*(x4-x3))>(x2*x2)?1:0)+(x4>x0?1L:0L))!=0)return 3;else return 7;
 }
 private int _3(){
     t0=x3-1;
+    t1=6;
     x3--;
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)return 4;else return 6;
+    if((t0)!=0)return 6;else return 4;
 }
 private int _4(){
     t0=x2-1;
-    x2--;
+    t1=x2-1;
+    x2=t1;
 
     if((t0)!=0)return 1;else return 5;
 }

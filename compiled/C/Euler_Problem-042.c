@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -195,27 +195,26 @@ int main(void)
     gw(5,0,0);
     gw(6,0,2);
 _1:
-    t0=gr(5,0)+1;
-    gw(5,0,gr(5,0)+1);
-    t1=t0+1;
-    sa(t0*t1);
-    sa(td(sp(),2));
-
     sa(48);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa((tm(sr(),gr(1,0)))+32);
+    sa(((gr(5,0)+1)*(gr(5,0)+2))/2);
+    sa(((gr(5,0)+1)*(gr(5,0)+2))/2);
+    gw(5,0,gr(5,0)+1);
+    sa(tm(sp(),gr(1,0)));
+
+    sa(sp()+32LL);
+
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
-    if((td((gr(5,0)+1)*(gr(5,0)+2),2))<gr(3,0))goto _1;else goto _3;
+    if((((gr(5,0)+1)*(gr(5,0)+2))/2)<gr(3,0))goto _1;else goto _3;
 _3:
     gw(7,0,0);
     t2=0;
 _4:
     t0=gr(gr(7,0),gr(6,0));
 
-    if(gr(gr(7,0),gr(6,0))-32==0)goto _5;else goto _10;
+    if(gr(gr(7,0),gr(6,0))!=32)goto _10;else goto _5;
 _5:
     gw(27,gr(6,0),t2);
     t0=gr(6,0);

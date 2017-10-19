@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -46,8 +46,10 @@ _3:
     sp();
 _4:
     sa(gr(3,0)+1);
+    sa(gr(3,0)+1);
     gw(3,0,gr(3,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -61,10 +63,12 @@ _6:
 _7:
     gw(3,0,0);
     sa(gr(1,1));
+    sa(gr(1,1));
+    sa(gr(1,1));
     gw(4,2,gr(1,1));
 _8:
-    sa(sr());
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -78,10 +82,12 @@ _9:
     sa(sp()+1LL);
 
 
-    if(sr()!=gr(2,1))goto _10;else goto _11;
+    if((sr()-gr(2,1))!=0)goto _10;else goto _11;
 _10:
     sa(sr());
     gw(4,2,sp());
+    sa(sr());
+    sa(sr());
     goto _8;
 _11:
     printf("%lld ", gr(1,2));
@@ -121,13 +127,13 @@ _16:
     sa(sp()+1LL);
 
 
-    if(sr()!=gr(2,1))goto _13;else goto _17;
+    if((sr()-gr(2,1))!=0)goto _13;else goto _17;
 _17:
     sp();
     goto _9;
 _18:
     sa(0);
-    sa(tm(gr(7,2),10));
+    sa(gr(7,2)%10);
     sa(gr(7,2));
     sa(gr(7,2));
 _19:
@@ -143,9 +149,9 @@ _21:
 _22:
     sp();
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10LL);
 
-    sa(tm(sr(),10));
+    sa(sr()%10);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
     goto _19;
@@ -171,7 +177,7 @@ _27:
     sa(sp()+sp());
 
     sa(0);
-    sa(tm(gr(8,2),10));
+    sa(gr(8,2)%10);
     sa(gr(8,2));
     sa(gr(8,2));
 _28:
@@ -187,9 +193,9 @@ _30:
 _31:
     sp();
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10LL);
 
-    sa(tm(sr(),10));
+    sa(sr()%10);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sr());
     goto _28;

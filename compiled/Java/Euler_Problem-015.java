@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADtkM0KwjAQhF+l4i1LZLZV/EGCTxJ722tOOfXh3WCNSBtQ8LhzyWSHfJkkd38V1mQ0oxnNaEYzWpsWvmXlVhDaCSDsGSLFFC/0dCkHBhIzUtCWsj/3"+
                                  "jnTu3VQODWU7buO9EliTd5UEJhZwAryuuNYoalTGpOlHsOjGc5NlFKubNl03Uu8OJypPALe/56W1G287ubjj0C7zgx7G7Dw7OggAAA==";
@@ -15,10 +15,6 @@ private long gr(long x,long y){return(x>=0&&y>=0&&x<78&&y<27)?g[(int)(y*78+x)]:0
 private void gw(long x,long y,long v){if(x>=0&&y>=0&&x<78&&y<27)g[(int)(y*78+x)]=v;}
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
-private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
-private long sp(){return(s.size()==0)?0:s.pop();}
-private void sa(long v){s.push(v);}
-private long sr(){return(s.size()==0)?0:s.peek();}
 private int _0(){
     gw(0,0,1);
     gw(1,0,1);
@@ -39,7 +35,7 @@ private int _4(){
     gw(0,0,gr(0,0)-1);
     gw(1,0,gr(1,0)+1);
 
-    if((gr(1,0)+gr(0,0))<=42)return 1;else return 5;
+    if((gr(1,0)+gr(0,0))>42)return 5;else return 1;
 }
 private int _5(){
     System.out.print(String.valueOf(gr(21,21))+" ");

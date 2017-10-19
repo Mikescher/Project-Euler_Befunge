@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import gzip, base64
 _g = ("Ah+LCAAAAAAABADt3N1Lk3EYxvHf6IEk6jGJRtLLBlYkJLPC5cjcZhi9sbIZi9FwEQ6D5kFWY5os1pspEkEr6syoDgIbUimijIWkEiwRlCcnix10VNtBg2m6YjX/hzGQ"
   + "7+foPrq5ji9ubk1PkciRROJLn2xybjFN25b0c5L58bUGl2+f60CNsdvmbLOMJHf82tPdojSfGlNHal9VpUYy5ZGGgErctCn1M0+HjP93xCf2CwAAAAAAsOpUz91eo8oN"
@@ -45,57 +45,46 @@ def _0():
     gw(7,1,1)
     sa(1)
     sa(1)
-    sa((1)if(1>=gr(6,1))else(0))
+    sa((1)if(1<gr(6,1))else(0))
     return 1
 def _1():
-    return (7)if(sp()!=0)else(2)
+    return (5)if(sp()!=0)else(2)
 def _2():
-    global t0
-    sa(tm(sr(),gr(2,1)))
-    sa(gr(7,1)+3)
-    v0=sp()
-    t0=gr(sp(),v0)
-    t0=(0)if(t0!=0)else(1)
+    sp();
 
-    return (6)if((t0)!=0)else(3)
+    return (4)if((sr()-gr(1,1))!=0)else(3)
 def _3():
+    print(gr(5,1),end=" ",flush=True)
+    sp();
+    return 10
+def _4():
+    sa(sp()+1)
+
+    gw(6,1,(sr()+1)/2)
+    sa(sr());
+    gw(7,1,sp())
+    sa((sr()/3)+1)
+    sa((1)if(sr()<gr(6,1))else(0))
+    return 1
+def _5():
+    return (6)if((gr(tm(sr(),gr(2,1)),gr(7,1)+3))!=0)else(9)
+def _6():
     gw(5,1,gr(5,1)+1)
     sa(sr());
     gw(8,1,sp())
     gw(9,1,gr(7,1))
-    return 4
-def _4():
-    return (6)if((((1)if(gr(8,1)>gr(1,1))else(0))+((1)if(gr(9,1)>gr(1,1))else(0)))!=0)else(5)
-def _5():
-    global t0
-    gw(tm(gr(8,1),gr(2,1)),gr(9,1)+3,0)
-    t0=sr()+gr(8,1)
-    gw(8,1,t0)
-    gw(9,1,gr(7,1)+gr(9,1))
-    return 4
-def _6():
-    sa(sp()+1);
-
-    sa((1)if(sr()>=gr(6,1))else(0))
-    return 1
+    return 7
 def _7():
-    sp();
-
-    return (9)if(sr()!=gr(1,1))else(8)
+    return (9)if((((1)if(gr(8,1)>gr(1,1))else(0))+((1)if(gr(9,1)>gr(1,1))else(0)))!=0)else(8)
 def _8():
-    print(gr(5,1),end=" ",flush=True)
-    sp();
-    return 10
+    gw(tm(gr(8,1),gr(2,1)),gr(9,1)+3,0)
+    gw(8,1,sr()+gr(8,1))
+    gw(9,1,gr(7,1)+gr(9,1))
+    return 7
 def _9():
-    global t0
-    sa(sp()+1);
+    sa(sp()+1)
 
-    t0=td(sr()+1,2)
-    gw(6,1,t0)
-    sa(sr());
-    gw(7,1,sp())
-    sa((td(sr(),3))+1)
-    sa((1)if(sr()>=gr(6,1))else(0))
+    sa((1)if(sr()<gr(6,1))else(0))
     return 1
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9]
 c=0

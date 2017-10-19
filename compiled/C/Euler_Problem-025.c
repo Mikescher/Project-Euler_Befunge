@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -12,15 +12,10 @@ int64 gr(int64 x,int64 y){if(x>=0&&y>=0&&x<123&&y<28){return g[y*123+x];}else{re
 void gw(int64 x,int64 y,int64 v){if(x>=0&&y>=0&&x<123&&y<28){g[y*123+x]=v;}}
 int64 td(int64 a,int64 b){ return (b==0)?0:(a/b); }
 int64 tm(int64 a,int64 b){ return (b==0)?0:(a%b); }
-int64*s;int q=16384;int y=0;
-int64 sp(){if(!y)return 0;return s[--y];}
-void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
-int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
     int64 t0,t1;
     d();
-    s=(int64*)calloc(q,sizeof(int64));
     gw(0,0,1050);
     gw(1,0,50);
     gw(3,0,2);
@@ -30,10 +25,8 @@ _1:
 _2:
     gw(4,0,gr(4,0)-1);
     t0=gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48;
-    t1=(gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0);
-    gw(5,0,td((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0),10));
-    t1%=10;
-    t1+=48;
+    t1=(((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0))%10)+48;
+    gw(5,0,((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0))/10);
     gw((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1,t1);
     t0+=48;
     gw((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1,t0);
@@ -47,7 +40,7 @@ _6:
     gw(7,0,gr(7,0)+1);
     goto _5;
 _7:
-    if(gr(0,0)-gr(7,0)!=1000)goto _1;else goto _8;
+    if((gr(0,0)-gr(7,0))!=1000)goto _1;else goto _8;
 _8:
     printf("%lld ", gr(3,0));
     return 0;

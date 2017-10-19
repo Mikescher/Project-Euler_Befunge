@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -11,14 +11,9 @@ int64 gr(int64 x,int64 y){if(x>=0&&y>=0&&x<78&&y<27){return g[y*78+x];}else{retu
 void gw(int64 x,int64 y,int64 v){if(x>=0&&y>=0&&x<78&&y<27){g[y*78+x]=v;}}
 int64 td(int64 a,int64 b){ return (b==0)?0:(a/b); }
 int64 tm(int64 a,int64 b){ return (b==0)?0:(a%b); }
-int64*s;int q=16384;int y=0;
-int64 sp(){if(!y)return 0;return s[--y];}
-void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
-int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
     d();
-    s=(int64*)calloc(q,sizeof(int64));
     gw(0,0,1);
     gw(1,0,1);
 _1:
@@ -33,7 +28,7 @@ _4:
     gw(0,0,gr(0,0)-1);
     gw(1,0,gr(1,0)+1);
 
-    if((gr(1,0)+gr(0,0))<=42)goto _1;else goto _5;
+    if((gr(1,0)+gr(0,0))>42)goto _5;else goto _1;
 _5:
     printf("%lld ", gr(21,21));
     return 0;

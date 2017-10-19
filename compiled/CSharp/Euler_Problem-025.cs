@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABADtkc8KgzAMxl9FCl4Mzq9qVxCRPYmnQa49efLhF5ljRdmYjv055Lsk/dL0l7ZD8jths/a0KFrRila0ohWtaEUr+iNou6flz9Q5d/RZlgHBlMYiJGWF"+
@@ -11,10 +11,6 @@ private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
                                  using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
 private static long gr(long x,long y){return(x>=0&&y>=0&&x<123&&y<28)?g[y*123+x]:0;}
 private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<123&&y<28)g[y*123+x]=v;}
-private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
-private static long sp(){ return (s.Count==0)?0:s.Pop(); }
-private static void sa(long v){ s.Push(v); }
-private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
@@ -29,10 +25,8 @@ static void Main(string[]args)
     _2:
         gw(4,0,gr(4,0)-1);
         t0=gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48;
-        t1=(gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0);
-        gw(5,0,td((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0),10));
-        t1%=10;
-        t1+=48;
+        t1=(((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0))%10)+48;
+        gw(5,0,((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0))/10);
         gw((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1,t1);
         t0+=48;
         gw((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1,t0);
@@ -46,7 +40,7 @@ static void Main(string[]args)
         gw(7,0,gr(7,0)+1);
         goto _5;
     _7:
-        if(gr(0,0)-gr(7,0)!=1000)goto _1;else goto _8;
+        if((gr(0,0)-gr(7,0))!=1000)goto _1;else goto _8;
     _8:
         System.Console.Out.Write(gr(3,0)+" ");
         return;

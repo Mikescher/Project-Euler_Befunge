@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -21,15 +21,10 @@ int64 gr(int64 x,int64 y){if(x>=0&&y>=0&&x<116&&y<29){return g[y*116+x];}else{re
 void gw(int64 x,int64 y,int64 v){if(x>=0&&y>=0&&x<116&&y<29){g[y*116+x]=v;}}
 int64 td(int64 a,int64 b){ return (b==0)?0:(a/b); }
 int64 tm(int64 a,int64 b){ return (b==0)?0:(a%b); }
-int64*s;int q=16384;int y=0;
-int64 sp(){if(!y)return 0;return s[--y];}
-void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
-int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
     int64 t0,t1;
     d();
-    s=(int64*)calloc(q,sizeof(int64));
     gw(0,0,118);
     gw(1,0,20);
     gw(2,0,50);
@@ -39,6 +34,7 @@ int main(void)
     gw(6,0,0);
     gw(7,0,0);
     gw(8,0,0);
+    t0=0;
 _1:
     gw(6,0,gr(5,0));
     t0=gr(tm(gr(6,0),gr(2,0)),(td(gr(6,0),gr(2,0)))+9)-48;
@@ -65,7 +61,7 @@ _6:
 _7:
     printf("%c", (char)(gr(gr(7,0),0)+48));
 
-    if(gr(7,0)-8!=gr(4,0))goto _9;else goto _8;
+    if((gr(7,0)-8-gr(4,0))!=0)goto _9;else goto _8;
 _8:
     printf("=");
     printf("%lld ", gr(8,0));

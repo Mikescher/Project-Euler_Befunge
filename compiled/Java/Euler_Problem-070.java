@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADtmFFr3DAMgP+KcO5g2KSxlaTJRHD3svc99sHkjh6HYXTMlNZP1/8+eTvYul5LSmm3B33ESizJsizbL8m2AKU1DXy5+f51v7uFz3fX+xuoS//qev8N"+
                                  "Bgvvy263e+cZl3BxcXz+JypBEARBEARBEARBEARBEIQ341//AT2N73t9rsnZ1A+a0Cbd2YStTQo/KO1cUvf8RpcsYnIOuY8ISmvduuSyt+z6M1D2kaUNuXyH2sEEjzVL"+
@@ -53,8 +53,10 @@ private int _3(){
 }
 private int _4(){
     sa(gr(3,0)+1);
+    sa(gr(3,0)+1);
     gw(3,0,gr(3,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -73,12 +75,14 @@ private int _6(){
 private int _7(){
     gw(3,0,0);
     sa(gr(1,1));
+    sa(gr(1,1));
+    sa(gr(1,1));
     gw(4,2,gr(1,1));
     return 8;
 }
 private int _8(){
-    sa(sr());
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -93,11 +97,13 @@ private int _9(){
     sa(sp()+1L);
 
 
-    if(sr()!=gr(2,1))return 10;else return 11;
+    if((sr()-gr(2,1))!=0)return 10;else return 11;
 }
 private int _10(){
     sa(sr());
     gw(4,2,sp());
+    sa(sr());
+    sa(sr());
     return 8;
 }
 private int _11(){
@@ -144,7 +150,7 @@ private int _16(){
     sa(sp()+1L);
 
 
-    if(sr()!=gr(2,1))return 13;else return 17;
+    if((sr()-gr(2,1))!=0)return 13;else return 17;
 }
 private int _17(){
     sp();
@@ -152,7 +158,7 @@ private int _17(){
 }
 private int _18(){
     sa(0);
-    sa(tm(gr(7,2),10));
+    sa(gr(7,2)%10);
     sa(gr(7,2));
     sa(gr(7,2));
     return 19;
@@ -174,9 +180,9 @@ private int _21(){
 private int _22(){
     sp();
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10L);
 
-    sa(tm(sr(),10));
+    sa(sr()%10);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sr());
     return 19;
@@ -208,7 +214,7 @@ private int _27(){
     sa(sp()+sp());
 
     sa(0);
-    sa(tm(gr(8,2),10));
+    sa(gr(8,2)%10);
     sa(gr(8,2));
     sa(gr(8,2));
     return 28;
@@ -230,9 +236,9 @@ private int _30(){
 private int _31(){
     sp();
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10L);
 
-    sa(tm(sr(),10));
+    sa(sr()%10);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sr());
     return 28;

@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "Ah+LCAAAAAAABACT7+ZgAAEWhrfXHLOvOEg0PNxvdObW6ba3dTfvKrRsqvj47uLhTbqvjAK0ZLveZdbvEd4b4bo6IKr1uSKPj5HnDOeKYp/JT4327ty9127P/ylx9fss"+
@@ -12,15 +12,15 @@ private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
                                  using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
 private static long gr(long x,long y){return(x>=0&&y>=0&&x<1000&&y<156)?g[y*1000+x]:0;}
 private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<1000&&y<156)g[y*1000+x]=v;}
+private static long td(long a,long b){ return (b==0)?0:(a/b); }
+private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static long td(long a,long b){ return (b==0)?0:(a/b); }
-private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
 {
-        long t0,t1,t2;
+        long t0;
         gw(1,0,1000);
         gw(2,0,150);
         gw(0,0,150000);
@@ -38,8 +38,10 @@ static void Main(string[]args)
         sp();
     _4:
         sa(gr(3,0)+1);
+        sa(gr(3,0)+1);
         gw(3,0,gr(3,0)+1);
-        sa(tm(sr(),gr(1,0)));
+        sa(tm(sp(),gr(1,0)));
+
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),gr(1,0)));
 
@@ -55,8 +57,10 @@ static void Main(string[]args)
         gw(4,0,0);
     _8:
         sa(gr(3,0)+1);
+        sa(gr(3,0)+1);
         gw(3,0,gr(3,0)+1);
-        sa(tm(sr(),gr(1,0)));
+        sa(tm(sp(),gr(1,0)));
+
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(td(sp(),gr(1,0)));
 
@@ -66,13 +70,11 @@ static void Main(string[]args)
         t0-=88;
         if((t0)!=0)goto _8;else goto _10;
     _10:
-        t0=gr(5,0);
-        t1=gr(4,0)+1;
+        t0=gr(5,0)-(gr(4,0)+1);
         gw(4,0,gr(4,0)+1);
         gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+1,48);
-        t2=t0-t1;
 
-        if((t2)!=0)goto _8;else goto _11;
+        if((t0)!=0)goto _8;else goto _11;
     _11:
         System.Console.Out.Write(gr(3,0)+" ");
         return;

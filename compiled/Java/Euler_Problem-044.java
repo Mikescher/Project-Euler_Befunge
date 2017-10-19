@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -7,21 +7,22 @@ private long sp(){return(s.size()==0)?0:s.pop();}
 private void sa(long v){s.push(v);}
 private long sr(){return(s.size()==0)?0:s.peek();}
 long t0,t1,t2;
-long x0=1073741824;
-long x1=2;
+long x0=2;
+long x1=1073741824;
 long x2=37;
 long x3=37;
 long x4=37;
 long x5=5;
 long x6=37;
 private int _0(){
+    t0=0;
     sa(2);
     sa(5);
     return 1;
 }
 private int _1(){
-    sa(x1-1);
-    sa(x1-1);
+    sa(x0-1);
+    sa(x0-1);
     return 2;
 }
 private int _2(){
@@ -33,11 +34,11 @@ private int _3(){
     sa(sp()+1L);
 
     sa(sr());
-    x1=sr();
+    x0=sr();
     t0=(sr()*3)-1;
     sa(sp()*t0);
 
-    sa(td(sp(),2));
+    sa(sp()/2L);
 
     x5=sr();
     return 1;
@@ -58,8 +59,8 @@ private int _4(){
     sa(sp()+1L);
 
     x4=sr();
-    sa(x0);
-    sa(x0>x4?1:0);
+    sa(x1);
+    sa(x1>x4?1:0);
     return 5;
 }
 private int _5(){
@@ -83,17 +84,16 @@ private int _8(){
 private int _9(){
     t0%=6;
     t0-=5;
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)return 10;else return 17;
+    if((t0)!=0)return 17;else return 10;
 }
 private int _10(){
     sa(((x3+x5)*24)+1);
     t0=((x3+x5)*24)+1;
     x6=0;
     x4=t0;
-    sa(x0);
-    sa(x0>x4?1:0);
+    sa(x1);
+    sa(x1>x4?1:0);
     return 11;
 }
 private int _11(){
@@ -132,11 +132,11 @@ private int _17(){
     return 2;
 }
 private int _18(){
-    if((sr()+x6)<=x4)return 20;else return 19;
+    if((sr()+x6)>x4)return 19;else return 20;
 }
 private int _19(){
     x6/=2;
-    sa(td(sp(),4));
+    sa(sp()/4L);
 
     sa(sr());
     return 13;
@@ -149,21 +149,21 @@ private int _20(){
     t0=(sr()*2)+x6;
     x6=t0;
     x6/=2;
-    sa(td(sp(),4));
+    sa(sp()/4L);
     return 12;
 }
 private int _21(){
-    sa(td(sp(),4));
+    sa(sp()/4L);
 
     sa(sr()>x4?1:0);
     return 11;
 }
 private int _22(){
-    if((sr()+x6)<=x4)return 24;else return 23;
+    if((sr()+x6)>x4)return 23;else return 24;
 }
 private int _23(){
     x6/=2;
-    sa(td(sp(),4));
+    sa(sp()/4L);
 
     sa(sr());
     return 7;
@@ -176,11 +176,11 @@ private int _24(){
     t0=(sr()*2)+x6;
     x6=t0;
     x6/=2;
-    sa(td(sp(),4));
+    sa(sp()/4L);
     return 6;
 }
 private int _25(){
-    sa(td(sp(),4));
+    sa(sp()/4L);
 
     sa(sr()>x4?1:0);
     return 5;

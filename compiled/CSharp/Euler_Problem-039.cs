@@ -1,10 +1,6 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
-private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
-private static long sp(){ return (s.Count==0)?0:s.Pop(); }
-private static void sa(long v){ s.Push(v); }
-private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
@@ -16,7 +12,8 @@ static void Main(string[]args)
         long x3=6;
         long x4=1000;
         long x5=0;
-        x2=td(x3,3);
+        x2=x3/3;
+        t0=0;
     _1:
         t0=x2;
 
@@ -25,7 +22,7 @@ static void Main(string[]args)
         t0--;
         x2=t0;
 
-        if(tm(x3*(x3-(2*x2)),(x3-x2)*2)!=0)goto _1;else goto _3;
+        if((tm(x3*(x3-(2*x2)),(x3-x2)*2))!=0)goto _1;else goto _3;
     _3:
         x5++;
         goto _1;
@@ -36,7 +33,7 @@ static void Main(string[]args)
     _5:
         t0=x3;
 
-        if(x3!=x4)goto _7;else goto _6;
+        if((x3-x4)!=0)goto _7;else goto _6;
     _6:
         System.Console.Out.Write(x1+" ");
         return;
@@ -44,7 +41,8 @@ static void Main(string[]args)
         t0+=2;
         x3=t0;
         x5=0;
-        x2=td(x3,3);
+        x2=x3/3;
+        t0=3;
         goto _1;
     _8:
         x0=t0;

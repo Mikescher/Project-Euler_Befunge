@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("Ah+LCAAAAAAABACd1P0/0wkAwHFXND2wnkR3oVRUaiVp+bItaeRhW4XkaauT50TzjUzHTknydGdJeRhmLBRqZmxGjy7Jw4zQCmtTW+ZhsywT7nWv1/0B97rPj+8/4GOa"
@@ -54,11 +54,11 @@ def _0():
     gw(1,0,250)
     gw(1,1,1)
     gw(4,0,1)
-    gw(5,0,0)
-    gw(6,0,0)
     sa(1)
     return 1
 def _1():
+    gw(5,0,0)
+    gw(6,0,0)
     sa(0)
     sa(1)
     sa((1)if(1>gr(4,0))else(0))
@@ -67,11 +67,11 @@ def _2():
     return (3)if(sp()!=0)else(6)
 def _3():
     global t0
-    sp();
-    sp();
     t0=tm(gr(5,0),gr(2,0))
+    sp();
+    sp();
 
-    return (5)if(tm(gr(5,0),gr(2,0))!=0)else(4)
+    return (5)if((tm(gr(5,0),gr(2,0)))!=0)else(4)
 def _4():
     sys.stdout.write(str(sp())+" ")
     sys.stdout.flush()
@@ -79,12 +79,10 @@ def _4():
 def _5():
     global t0
     gw((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1,t0)
-    sa(sp()+1);
+    sa(sp()+1)
 
     sa(sr());
     gw(4,0,sp())
-    gw(5,0,0)
-    gw(6,0,0)
     return 1
 def _6():
     global t0
@@ -106,31 +104,31 @@ def _6():
     sa(v1)
     sa(td(sp(),gr(1,0)))
 
-    sa(sp()+1);
+    sa(sp()+1)
 
     v0=sp()
     t0=gr(sp(),v0)
-    t0=t0*(((tm(td(gr(6,0),2),2))*2)-1)
+    t0=t0*((((gr(6,0)/2)%2)*2)-1)
     t1=gr(5,0)
     t2=t1-t0
     gw(5,0,t2)
-    sa(sp()+1);
+    sa(sp()+1)
 
     sa(sr());
     gw(6,0,sp())
     sa(sr());
-    sa((td(sr(),2))+1)
+    sa((sr()/2)+1)
     sa(sr());
     sa(sp()*sp());
 
     t0=sp()
     t0=t0*3
-    t1=(td(sr(),2))+1
-    sa(tm(sp(),2))
+    t1=(sr()/2)+1
+    sa(sp()%2);
 
-    sa(sp()*2);
+    sa(sp()*2)
 
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(t1)
     v0=sp()
@@ -140,9 +138,7 @@ def _6():
     sa(sp()*sp());
 
     t2=sp()
-    sa(t0+t2)
-    sa(td(sp(),2))
-
+    sa((t0+t2)/2)
     sa((1)if(sr()>gr(4,0))else(0))
     return 2
 m=[_0,_1,_2,_3,_4,_5,_6]

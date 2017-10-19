@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -25,24 +25,12 @@ def _0():
     sa(1)
     sa(1)
     sa(0)
-    sa(5904)
+    sa(59049)
+    sa(59049)
     return 1
 def _1():
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sp()+1);
-
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(sr());
-    return 2
+    return (12)if(sp()!=0)else(2)
 def _2():
-    return (13)if(sp()!=0)else(3)
-def _3():
     global t0
     sp();
     v0=sp()
@@ -50,11 +38,11 @@ def _3():
 
     t0=sp()
 
-    return (12)if((t0)!=0)else(4)
+    return (11)if((t0)!=0)else(3)
+def _3():
+    sa(sp()*59049)
+    return 4
 def _4():
-    sa(sp()*59049);
-    return 5
-def _5():
     global t0
     global t1
     global t2
@@ -65,7 +53,7 @@ def _5():
     global t7
     sa(sr());
     sa(sr());
-    sa(tm(sr(),10))
+    sa(sr()%10)
     sa(sr());
     sa(sr());
     sa(sp()*sp());
@@ -74,12 +62,12 @@ def _5():
     sa(sp()*sp());
 
     t0=sp()
-    sa(sp()*t0);
+    sa(sp()*t0)
 
     t1=sp()
-    sa(td(sp(),10))
+    sa(sp()/10);
 
-    sa(tm(sr(),10))
+    sa(sr()%10)
     sa(sr());
     sa(sr());
     sa(sp()*sp());
@@ -88,12 +76,12 @@ def _5():
     sa(sp()*sp());
 
     t0=sp()
-    sa(sp()*t0);
+    sa(sp()*t0)
 
     t2=sp()
-    sa(td(sp(),10))
+    sa(sp()/10);
 
-    sa(tm(sr(),10))
+    sa(sr()%10)
     sa(sr());
     sa(sr());
     sa(sp()*sp());
@@ -102,12 +90,12 @@ def _5():
     sa(sp()*sp());
 
     t0=sp()
-    sa(sp()*t0);
+    sa(sp()*t0)
 
     t3=sp()
-    sa(td(sp(),10))
+    sa(sp()/10);
 
-    sa(tm(sr(),10))
+    sa(sr()%10)
     sa(sr());
     sa(sr());
     sa(sp()*sp());
@@ -116,12 +104,12 @@ def _5():
     sa(sp()*sp());
 
     t0=sp()
-    sa(sp()*t0);
+    sa(sp()*t0)
 
     t4=sp()
-    sa(td(sp(),10))
+    sa(sp()/10);
 
-    sa(tm(sr(),10))
+    sa(sr()%10)
     sa(sr());
     sa(sr());
     sa(sp()*sp());
@@ -130,12 +118,12 @@ def _5():
     sa(sp()*sp());
 
     t0=sp()
-    sa(sp()*t0);
+    sa(sp()*t0)
 
     t5=sp()
-    sa(td(sp(),10))
+    sa(sp()/10);
 
-    sa(tm(sr(),10))
+    sa(sr()%10)
     sa(sr());
     sa(sr());
     sa(sp()*sp());
@@ -144,12 +132,12 @@ def _5():
     sa(sp()*sp());
 
     t0=sp()
-    sa(sp()*t0);
+    sa(sp()*t0)
 
     t6=sp()
-    sa(td(sp(),10))
+    sa(sp()/10);
 
-    sa(tm(sp(),10))
+    sa(sp()%10);
 
     sa(sr());
     sa(sr());
@@ -159,32 +147,34 @@ def _5():
     sa(sp()*sp());
 
     t0=sp()
-    sa(sp()*t0);
+    sa(sp()*t0)
 
     t7=sp()
+    t0=10
     t0=t7+t6
     t6=t5+t0
     t0=t4+t6
     t4=t3+t0
     t0=t2+t4
     t2=t1+t0
-    sa(sp()-t2);
+    sa(sp()-t2)
 
     t0=sp()
 
-    return (6)if((t0)!=0)else(11)
+    return (5)if((t0)!=0)else(10)
+def _5():
+    sa(sp()-1)
+
+    sa(sr());
+
+    return (4)if(sp()!=0)else(6)
 def _6():
-    sa(sp()-1);
-
-    sa(sr());
-    sa((0)if(sp()!=0)else(1))
-
-    return (7)if(sp()!=0)else(5)
+    global t0
+    t0=9
+    sp();
+    sp();
+    return 7
 def _7():
-    sp();
-    sp();
-    return 8
-def _8():
     sa(sp()+sp());
 
     v0=sp()
@@ -193,24 +183,24 @@ def _8():
     sa(v1)
     sa(sr());
 
-    return (9)if(sp()!=0)else(10)
-def _9():
+    return (8)if(sp()!=0)else(9)
+def _8():
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa(sp()+sp());
-    return 8
-def _10():
+    return 7
+def _9():
     sp();
     sys.stdout.write(str(sp())+" ")
     sys.stdout.flush()
-    return 14
-def _11():
+    return 13
+def _10():
     sa(sr());
-    return 6
-def _12():
-    sa(sp()+1);
+    return 5
+def _11():
+    sa(sp()+1)
 
     sa(sr());
     sa(sr()*59049)
@@ -220,11 +210,23 @@ def _12():
     sa(v0)
     sa(v1)
     sa(sr());
-    return 2
-def _13():
-    sa(td(sp(),10))
     return 1
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13]
+def _12():
+    sa(sp()/10);
+
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()+1)
+
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sr());
+    return 1
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12]
 c=0
-while c<14:
+while c<13:
     c=m[c]()

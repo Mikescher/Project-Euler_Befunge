@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -15,43 +15,41 @@ private int _0(){
     return 1;
 }
 private int _1(){
-    if((((tm(x0,10))+2)*((tm(td(x0,10),10))+2)*((tm(td(td(x0,10),10),10))+2)*((td(td(td(x0,10),10),10))+2))!=(((tm(x0+3330,10))+2)*((tm(td(x0+3330,10),10))+2)*((tm(td(td(x0+3330,10),10),10))+2)*((td(td(td(x0+3330,10),10),10))+2)))return 15;else return 2;
+    if(((((x0%10)+2)*(((x0/10)%10)+2)*((((x0/10)/10)%10)+2)*((((x0/10)/10)/10)+2))-((((x0+3330)%10)+2)*((((x0+3330)/10)%10)+2)*(((((x0+3330)/10)/10)%10)+2)*(((((x0+3330)/10)/10)/10)+2)))!=0)return 14;else return 2;
 }
 private int _2(){
     {long v0=sp();sa(sp()-v0);}
 
     t0=sp();
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)return 3;else return 15;
+    if((t0)!=0)return 14;else return 3;
 }
 private int _3(){
     sa(sr());
-    return 4;
+
+    if(sr()>9999)return 13;else return 4;
 }
 private int _4(){
-    if(sr()>9999)return 14;else return 5;
-}
-private int _5(){
     sa(sr());
 
-    if(tm(sr(),2)==0)return 6;else return 7;
+    if((sr()%2)!=0)return 6;else return 5;
 }
-private int _6(){
+private int _5(){
+    t0=0;
     sp();
     sp();
     sa(sp()+1L);
 
     sa(sr());
     sa(sr());
-    t0=(tm(sr(),10))+2;
-    sa(td(sp(),10));
+    t0=(sr()%10)+2;
+    sa(sp()/10L);
 
-    t1=(tm(sr(),10))+2;
-    sa(td(sp(),10));
+    t1=(sr()%10)+2;
+    sa(sp()/10L);
 
-    t2=(tm(sr(),10))+2;
-    sa(td(sp(),10));
+    t2=(sr()%10)+2;
+    sa(sp()/10L);
 
     sa(sp()+2L);
 
@@ -69,75 +67,77 @@ private int _6(){
     sa(sr());
     return 1;
 }
-private int _7(){
-    if(tm(sr(),3)==0)return 6;else return 8;
+private int _6(){
+    if((sr()%3)!=0)return 7;else return 5;
 }
-private int _8(){
+private int _7(){
     x0=sp();
     sa(7);
-    sa((tm(x0,7)!=0)?0:1);
-    return 9;
+    sa(x0%7);
+    return 8;
+}
+private int _8(){
+    if(sp()!=0)return 9;else return 5;
 }
 private int _9(){
-    if(sp()!=0)return 6;else return 10;
+    if(sr()>(x0/2))return 12;else return 10;
 }
 private int _10(){
-    if(sr()>(td(x0,2)))return 13;else return 11;
-}
-private int _11(){
     t0=sr()-2;
     t1=x0;
     t2=tm(t1,t0);
 
-    if((t2)!=0)return 12;else return 6;
+    if((t2)!=0)return 11;else return 5;
 }
-private int _12(){
+private int _11(){
+    t0=x0;
     sa(sp()+6L);
 
     sa(sr());
-    t0=x0;
     sa(t0);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     {long v0=sp();sa(tm(sp(),v0));}
+    return 8;
+}
+private int _12(){
+    sp();
+    sa(sp()+3330L);
 
-    sa((sp()!=0)?0:1);
-    return 9;
+    t0=sr()>9999?1:0;
+    t1=0;
+
+    if((t0)!=0)return 13;else return 4;
 }
 private int _13(){
     sp();
+    sa(sr());
+    System.out.print(String.valueOf((long)(sp()))+" ");
+    System.out.print(' ');
     sa(sp()+3330L);
-    return 4;
+
+    sa(sr());
+    System.out.print(String.valueOf((long)(sp()))+" ");
+    System.out.print(' ');
+    sa(sp()+3330L);
+
+    System.out.print(String.valueOf((long)(sp()))+" ");
+    return 15;
 }
 private int _14(){
-    sp();
-    sa(sr());
-    System.out.print(String.valueOf((long)(sp()))+" ");
-    System.out.print(' ');
-    sa(sp()+3330L);
-
-    sa(sr());
-    System.out.print(String.valueOf((long)(sp()))+" ");
-    System.out.print(' ');
-    sa(sp()+3330L);
-
-    System.out.print(String.valueOf((long)(sp()))+" ");
-    return 16;
-}
-private int _15(){
     sp();
     sp();
     sa(sp()+1L);
 
     sa(sr());
     sa(sr());
-    t0=(tm(sr(),10))+2;
-    sa(td(sp(),10));
+    t0=(sr()%10)+2;
+    sa(sp()/10L);
 
-    t1=(tm(sr(),10))+2;
-    sa(td(sp(),10));
+    t1=(sr()%10)+2;
+    sa(sp()/10L);
 
-    t2=(tm(sr(),10))+2;
-    sa(td(sp(),10));
+    t2=(sr()%10)+2;
+    sa(sp()/10L);
 
     sa(sp()+2L);
 
@@ -158,7 +158,7 @@ private int _15(){
 
 public void main(){
     int c=0;
-    while(c<16){
+    while(c<15){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -175,7 +175,6 @@ public void main(){
     case 12:c=_12();break;
     case 13:c=_13();break;
     case 14:c=_14();break;
-    case 15:c=_15();break;
 }
 }
 }

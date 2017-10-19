@@ -1,18 +1,19 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
+private static long td(long a,long b){ return (b==0)?0:(a/b); }
+private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static long td(long a,long b){ return (b==0)?0:(a/b); }
-private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
 {
         long t0,t1;
         long x0=32;
         long x1=32;
         long x2=1;
+        t0=1;
         sa(0);
         sa(1);
         sa(10);
@@ -21,12 +22,19 @@ static void Main(string[]args)
         sa(10000);
         sa(100000);
         sa(1000000);
+        sa(1000000);
     _1:
+        if(sp()!=0)goto _3;else goto _2;
+    _2:
+        System.Console.Out.Write(x2+" ");
+        sp();
+        return;
+    _3:
         x0=1;
         x1=1;
-    _2:
-        if(sr()<=(x0*9*x1))goto _3;else goto _9;
-    _3:
+    _4:
+        if(sr()>(x0*9*x1))goto _10;else goto _5;
+    _5:
         sa(sp()-1L);
 
         t0=(td(sr(),x0))+x1;
@@ -41,34 +49,29 @@ static void Main(string[]args)
 
         sa(sr());
 
-        if(sp()!=0)goto _8;else goto _4;
-    _4:
-        sa(sr());
-    _5:
-        if(sp()!=0)goto _8;else goto _6;
+        if(sp()!=0)goto _9;else goto _6;
     _6:
-        sp();
+        sa(sr());
+    _7:
+        if(sp()!=0)goto _9;else goto _8;
+    _8:
         t0%=10;
         t0*=x2;
         x2=t0;
-        sa(sr());
-
-        if(sp()!=0)goto _1;else goto _7;
-    _7:
-        System.Console.Out.Write(x2+" ");
         sp();
-        return;
-    _8:
+        sa(sr());
+        goto _1;
+    _9:
         t0/=10;
         sa(sp()-1L);
 
         sa(sr());
-        goto _5;
-    _9:
-        t0=x0*9*x1;
+        goto _7;
+    _10:
+        sa(sp()-(x0*9*x1));
+
         x0++;
         x1*=10;
-        sa(sp()-t0);
-        goto _2;
+        goto _4;
 }
 }

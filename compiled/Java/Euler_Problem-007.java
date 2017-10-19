@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABACT7+ZgAAEWhrfXHLOvOEg0PNxvdObW6ba3dTfvKrRsqvj47uLhTbqvjAK0ZLveZdbvEd4b4bo6IKr1uSKPj5HnDOeKYp/JT4327ty9127P/ylx9fss"+
                                  "7yw9alJfXvxjRpzaA3tzZoZBBh54LjleUpNx8OjifXw/jG//UeR3Npf/veL1nlOfC0VL5QLDX6+wfGr469Z25VMGZZ/3SS/698E0P3jLUk2zwO2vNWrNt2VWx1je3pp4"+
@@ -21,7 +21,7 @@ private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
 private long sp(){return(s.size()==0)?0:s.pop();}
 private void sa(long v){s.push(v);}
 private long sr(){return(s.size()==0)?0:s.peek();}
-long t0,t1,t2;
+long t0;
 private int _0(){
     gw(1,0,1000);
     gw(2,0,150);
@@ -47,8 +47,10 @@ private int _3(){
 }
 private int _4(){
     sa(gr(3,0)+1);
+    sa(gr(3,0)+1);
     gw(3,0,gr(3,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -71,8 +73,10 @@ private int _7(){
 }
 private int _8(){
     sa(gr(3,0)+1);
+    sa(gr(3,0)+1);
     gw(3,0,gr(3,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -86,13 +90,11 @@ private int _9(){
     if((t0)!=0)return 8;else return 10;
 }
 private int _10(){
-    t0=gr(5,0);
-    t1=gr(4,0)+1;
+    t0=gr(5,0)-(gr(4,0)+1);
     gw(4,0,gr(4,0)+1);
     gw(tm(gr(3,0),gr(1,0)),(td(gr(3,0),gr(1,0)))+1,48);
-    t2=t0-t1;
 
-    if((t2)!=0)return 8;else return 11;
+    if((t0)!=0)return 8;else return 11;
 }
 private int _11(){
     System.out.print(String.valueOf(gr(3,0))+" ");

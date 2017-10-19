@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -28,16 +28,16 @@ x4=32
 def _0():
     return 1
 def _1():
-    return (2)if(x3<=x2)else(8)
+    global x3
+    global x2
+    return (8)if(x3>x2)else(2)
 def _2():
     global t0
     global x2
-    t0=x2-1
+    t0=x2-10
     x2=x2-1
-    t0=t0-9
-    t0=(0)if(t0!=0)else(1)
 
-    return (3)if((t0)!=0)else(7)
+    return (7)if((t0)!=0)else(3)
 def _3():
     global x0
     global x1
@@ -78,44 +78,64 @@ def _7():
     x3=99
     return 1
 def _8():
-    return (20)if(td(x2,10)!=0)else(9)
+    global x2
+    return (20)if((x2/10)!=0)else(9)
 def _9():
-    return (18)if(td(x2,10)!=0)else(10)
+    global x2
+    return (18)if((x2/10)!=0)else(10)
 def _10():
-    return (16)if(tm(x2,10)!=0)else(11)
+    global x2
+    return (16)if((x2%10)!=0)else(11)
 def _11():
-    return (13)if(tm(x2,10)!=0)else(12)
+    global x2
+    return (13)if((x2%10)!=0)else(12)
 def _12():
     global t0
     global x3
-    t0=x3-1
+    t0=x3-10
     x3=x3-1
-    t0=t0-9
-    t0=(0)if(t0!=0)else(1)
 
-    return (2)if((t0)!=0)else(1)
+    return (1)if((t0)!=0)else(2)
 def _13():
-    return (12)if((tm(x2,10))!=(tm(x3,10)))else(14)
+    global x2
+    global x3
+    return (12)if(((x2%10)-(x3%10))!=0)else(14)
 def _14():
-    return (12)if((x2*(tm(x3,10)))!=(x3*(tm(x2,10))))else(15)
+    global x2
+    global x3
+    return (12)if(((x2*(x3%10))-(x3*(x2%10)))!=0)else(15)
 def _15():
     global x0
+    global x2
     global x1
+    global x3
     x0=x0*x2
     x1=x1*x3
     return 12
 def _16():
-    return (11)if((tm(x2,10))!=(td(x3,10)))else(17)
+    global x2
+    global x3
+    return (11)if(((x2%10)-(x3/10))!=0)else(17)
 def _17():
-    return (11)if((x2*(tm(x3,10)))!=(x3*(td(x2,10))))else(15)
+    global x2
+    global x3
+    return (11)if(((x2*(x3%10))-(x3*(x2/10)))!=0)else(15)
 def _18():
-    return (10)if((td(x2,10))!=(tm(x3,10)))else(19)
+    global x2
+    global x3
+    return (10)if(((x2/10)-(x3%10))!=0)else(19)
 def _19():
-    return (10)if((x2*(td(x3,10)))!=(x3*(tm(x2,10))))else(15)
+    global x2
+    global x3
+    return (10)if(((x2*(x3/10))-(x3*(x2%10)))!=0)else(15)
 def _20():
-    return (9)if((td(x2,10))!=(td(x3,10)))else(21)
+    global x2
+    global x3
+    return (9)if(((x2/10)-(x3/10))!=0)else(21)
 def _21():
-    return (9)if((x2*(td(x3,10)))!=(x3*(td(x2,10))))else(15)
+    global x2
+    global x3
+    return (9)if(((x2*(x3/10))-(x3*(x2/10)))!=0)else(15)
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21]
 c=0
 while c<22:

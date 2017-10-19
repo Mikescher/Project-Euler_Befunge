@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABACVjr0OgzAMhF8lUsriiGID4ecURX2QCMasnjLx8A2dWqoO9XLW2b7PxfxRUcCsQhDWntCzDoSBdSSMrJ5Q3paLivBNeQWtygtoUZ5Bs/IEmpR9+Mov"+
                                  "e7G/6Wgl1EwT4sp5pghwivDeNZxTlQ627NHZkGDD7trjPHKvv4f2fnuYA53zPmVuqsB88CNE8nZ2Wxapo3jFb1fjCcDxR0M7AQAA";
@@ -32,23 +32,22 @@ private int _0(){
     gw(8,0,40320);
     gw(9,0,362880);
     gw(1,1,0);
+    t0=362880;
     sa(gr(9,0)*7);
     sa(gr(9,0)*7);
     sa(0);
-    sa(gr(tm(gr(9,0)*7,10),0));
-    sa(td(gr(9,0)*7,10));
-    sa(td(gr(9,0)*7,10));
+    sa(gr((gr(9,0)*7)%10,0));
+    sa((gr(9,0)*7)/10);
+    sa((gr(9,0)*7)/10);
     return 1;
 }
 private int _1(){
     if(sp()!=0)return 2;else return 3;
 }
 private int _2(){
-    sa(tm(sr(),10));
-    sa(0);
-    {long v0=sp();sa(gr(sp(),v0));}
+    sa(gr(sr()%10,0));
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10L);
 
     sa(sr());
 
@@ -84,11 +83,9 @@ private int _6(){
     sa(sr());
     sa(0);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(tm(sr(),10));
-    sa(0);
-    {long v0=sp();sa(gr(sp(),v0));}
+    sa(gr(sr()%10,0));
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10L);
 
     sa(sr());
     return 1;
@@ -101,8 +98,7 @@ private int _7(){
     return 11;
 }
 private int _8(){
-    t0=sr()+gr(1,1);
-    gw(1,1,t0);
+    gw(1,1,sr()+gr(1,1));
     return 5;
 }
 private int _9(){
@@ -110,11 +106,9 @@ private int _9(){
     return 3;
 }
 private int _10(){
-    sa(tm(sr(),10));
-    sa(0);
-    {long v0=sp();sa(gr(sp(),v0));}
+    sa(gr(sr()%10,0));
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10L);
 
     sa(sr());
     return 1;

@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -18,26 +18,28 @@ int main(void)
     sa(999);
     sa(9+x0);
     sa(99);
+    sa(99);
 _1:
+    if(sp()!=0)goto _2;else goto _3;
+_2:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()*10LL);
 
     x0=sp();
-    sa((tm(sr(),10))+x0);
+    sa((sr()%10)+x0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10LL);
 
     sa(sr());
-_2:
-    if(sp()!=0)goto _1;else goto _3;
+    goto _1;
 _3:
     x0=0;
     sp();
     sa(sr());
     sa(sr());
 _4:
-    t0=(tm(sr(),2))+x0;
-    sa(td(sp(),2));
+    t0=(sr()%2)+x0;
+    sa(sp()/2LL);
 
     sa(sr());
 
@@ -47,9 +49,8 @@ _5:
     sa(sp()-t0);
 
     t1=sp();
-    t1=(t1!=0)?0:1;
 
-    if((t1)!=0)goto _24;else goto _6;
+    if((t1)!=0)goto _6;else goto _24;
 _6:
     sp();
 _7:
@@ -62,37 +63,39 @@ _8:
     sa(sr());
     t0=sr()*10;
     x0=t0;
-    sa((tm(sr(),10))+x0);
+    sa((sr()%10)+x0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10LL);
 
     sa(sr());
-    goto _2;
+    goto _1;
 _9:
     x0=990;
     sa(999);
     sa(9+x0);
     sa(99);
+    sa(99);
 _10:
+    if(sp()!=0)goto _11;else goto _12;
+_11:
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(sp()*10LL);
 
     x0=sp();
-    sa((tm(sr(),10))+x0);
+    sa((sr()%10)+x0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10LL);
 
     sa(sr());
-_11:
-    if(sp()!=0)goto _10;else goto _12;
+    goto _10;
 _12:
     x0=0;
     sp();
     sa(sr());
     sa(sr());
 _13:
-    t0=(tm(sr(),2))+x0;
-    sa(td(sp(),2));
+    t0=(sr()%2)+x0;
+    sa(sp()/2LL);
 
     sa(sr());
 
@@ -102,9 +105,8 @@ _14:
     sa(sp()-t0);
 
     t1=sp();
-    t1=(t1!=0)?0:1;
 
-    if((t1)!=0)goto _22;else goto _15;
+    if((t1)!=0)goto _15;else goto _22;
 _15:
     sp();
 _16:
@@ -115,14 +117,14 @@ _16:
     if(sp()!=0)goto _17;else goto _18;
 _17:
     sa(sr());
-    t0=(td(sr(),10))*10;
+    t0=(sr()/10)*10;
     x0=t0;
-    sa((tm(sr(),10))+x0);
+    sa((sr()%10)+x0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10LL);
 
     sa(sr());
-    goto _11;
+    goto _10;
 _18:
     printf(" =");
 _19:

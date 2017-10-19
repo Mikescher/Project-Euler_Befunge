@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -26,16 +26,16 @@ private int _2(){
     t0=sp();
     sa(sr());
 
-    if(sp()!=0)return 4;else return 3;
+    if(sp()!=0)return 3;else return 4;
 }
 private int _3(){
-    sp();
-    System.out.print(String.valueOf(t0)+" ");
-    return 6;
-}
-private int _4(){
     sa(sp()+t0);
     return 2;
+}
+private int _4(){
+    System.out.print(String.valueOf(t0)+" ");
+    sp();
+    return 6;
 }
 private int _5(){
     x0-=2;

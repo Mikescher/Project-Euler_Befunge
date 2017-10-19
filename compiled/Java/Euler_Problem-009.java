@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -6,7 +6,7 @@ private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
 private long sp(){return(s.size()==0)?0:s.pop();}
 private void sa(long v){s.push(v);}
 private long sr(){return(s.size()==0)?0:s.peek();}
-long t0,t1,t2,t3;
+long t0;
 long x0=1000;
 long x1=2;
 long x2=34;
@@ -32,7 +32,7 @@ private int _4(){
     sa(sp()+1L);
 
 
-    if(sr()!=x0)return 9;else return 5;
+    if((sr()-x0)!=0)return 9;else return 5;
 }
 private int _5(){
     sp();
@@ -78,18 +78,13 @@ private int _11(){
     return 6;
 }
 private int _12(){
-    t0=x2;
     System.out.print(String.valueOf(x2)+" ");
     System.out.print(' ');
-    t1=x1;
     System.out.print(String.valueOf(x1)+" ");
     System.out.print(' ');
-    t2=x3;
     System.out.print(String.valueOf(x3)+" ");
     System.out.print('=');
-    t3=t1*t2;
-    t1=t0*t3;
-    System.out.print(String.valueOf(t1)+" ");
+    System.out.print(String.valueOf(x2*x1*x3)+" ");
     return 13;
 }
 

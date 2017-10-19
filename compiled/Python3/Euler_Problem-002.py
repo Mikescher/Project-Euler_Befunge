@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 def td(a,b):
     return ((0)if(b==0)else(a//b))
 def tm(a,b):
@@ -23,44 +23,42 @@ x0=1
 x1=2
 x2=2
 def _0():
+    sa(0)
     return 1
 def _1():
-    global t0
     global x0
-    global t1
     global x1
-    t0=x0
-    t1=x1
+    global t0
+    sp();
+    sa(x0+x1)
+    t0=x0+x1
     x0=x1
-    sa(t0+t1)
-    x1=sr()
+    x1=t0
 
-    return (5)if(sr()>10240000)else(2)
+    return (4)if(sr()>10240000)else(2)
 def _2():
     global t0
     global t1
     sa(sr());
-    t0=(td(sr(),2))*2
-    sa(sp()-t0);
+    t0=(sr()/2)*2
+    sa(sp()-t0)
 
     t1=sp()
 
-    return (3)if((t1)!=0)else(4)
+    return (1)if((t1)!=0)else(3)
 def _3():
-    sp();
+    global x2
+    sa(sp()+x2)
+
+    x2=sp()
+    sa(0)
     return 1
 def _4():
     global x2
-    sa(sp()+x2);
-
-    x2=sp()
-    return 1
-def _5():
-    global x2
     print(x2,end=" ",flush=True)
     sp();
-    return 6
-m=[_0,_1,_2,_3,_4,_5]
+    return 5
+m=[_0,_1,_2,_3,_4]
 c=0
-while c<6:
+while c<5:
     c=m[c]()

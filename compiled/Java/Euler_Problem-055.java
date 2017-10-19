@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -15,58 +15,92 @@ private int _0(){
     sa(10000);
     sa(0);
     sa(10000);
+    sa(0);
     return 1;
 }
 private int _1(){
+    if(sp()!=0)return 3;else return 2;
+}
+private int _2(){
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sp()*10L);
 
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    t0=tm(sr(),10);
+    t0=sr()%10;
     x1=t0;
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sp()+x1);
 
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),10));
+    sa(sp()/10L);
 
     sa(sr());
     sa((sp()!=0)?0:1);
-    return 2;
-}
-private int _2(){
-    if(sp()!=0)return 3;else return 1;
+    return 1;
 }
 private int _3(){
     sp();
     sa(sp()+sp());
 
     sa(24);
+    sa(0);
     return 4;
 }
 private int _4(){
+    if(sp()!=0)return 5;else return 9;
+}
+private int _5(){
+    sp();
+    sp();
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()+1L);
+
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    return 6;
+}
+private int _6(){
+    sa(sp()-1L);
+
+    sa(sr());
+
+    if(sp()!=0)return 8;else return 7;
+}
+private int _7(){
+    sp();
+    System.out.print(String.valueOf((long)(sp()))+" ");
+    return 15;
+}
+private int _8(){
+    sa(sr());
+    sa(sr());
+    sa(0);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sr());
+    sa((sp()!=0)?0:1);
+    return 1;
+}
+private int _9(){
+    t0=0;
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sr());
     sa(sr());
-    t0=0;
-    return 5;
+    return 10;
 }
-private int _5(){
+private int _10(){
     sa(sr());
-    sa((sp()!=0)?0:1);
 
-    if(sp()!=0)return 6;else return 13;
+    if(sp()!=0)return 14;else return 11;
 }
-private int _6(){
-    sp();
+private int _11(){
     x0=t0;
+    sp();
     sa(sp()-t0);
 
     t1=sp();
 
-    if((t1)!=0)return 7;else return 12;
+    if((t1)!=0)return 12;else return 13;
 }
-private int _7(){
+private int _12(){
     sa(sr());
     sp();
     sa(sp()+x0);
@@ -76,57 +110,25 @@ private int _7(){
 
     sa(sr());
     sa((sp()!=0)?0:1);
-
-    if(sp()!=0)return 8;else return 4;
-}
-private int _8(){
-    sp();
-    sp();
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(sp()+1L);
-
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    return 9;
-}
-private int _9(){
-    sa(sp()-1L);
-
-    sa(sr());
-    sa((sp()!=0)?0:1);
-
-    if(sp()!=0)return 10;else return 11;
-}
-private int _10(){
-    sp();
-    System.out.print(String.valueOf((long)(sp()))+" ");
-    return 14;
-}
-private int _11(){
-    sa(sr());
-    sa(sr());
-    sa(0);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(sr());
-    sa((sp()!=0)?0:1);
-    return 2;
-}
-private int _12(){
-    sp();
-    sp();
-    return 9;
+    return 4;
 }
 private int _13(){
+    sp();
+    sp();
+    return 6;
+}
+private int _14(){
     t0*=10;
-    t1=tm(sr(),10);
+    t1=sr()%10;
     x1=t1;
     t0+=x1;
-    sa(td(sp(),10));
-    return 5;
+    sa(sp()/10L);
+    return 10;
 }
 
 public void main(){
     int c=0;
-    while(c<14){
+    while(c<15){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -142,6 +144,7 @@ public void main(){
     case 11:c=_11();break;
     case 12:c=_12();break;
     case 13:c=_13();break;
+    case 14:c=_14();break;
 }
 }
 }

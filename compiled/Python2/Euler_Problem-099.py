@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABACdXcGSHbmN/JU30pykN2uCIAFCoejwZ+xBIc+trzrpNPPvm4nqcTjs6FhXti8bXlP1ikUCCSCR+Plr/z3++79ttXw+99xnxON///fxGOPnP/+/v379"
@@ -135,17 +135,16 @@ def _1():
     sa(0)
     sa(50)
     sa(gr(50,gr(1,1)))
-    sa((1)if((gr(50,gr(1,1))-32)<=0)else(0))
+    sa((1)if((gr(50,gr(1,1))-32)>0)else(0))
     return 2
 def _2():
-    return (3)if(sp()!=0)else(23)
+    return (24)if(sp()!=0)else(3)
 def _3():
     sp();
     sp();
     sa(sr());
-    sa((0)if(sp()!=0)else(1))
 
-    return (22)if(sp()!=0)else(4)
+    return (4)if(sp()!=0)else(23)
 def _4():
     gw(2,0,sp())
     gw(1,0,sp())
@@ -154,7 +153,7 @@ def _4():
     sa((1)if(2>gr(1,0))else(0))
     return 5
 def _5():
-    return (6)if(sp()!=0)else(21)
+    return (6)if(sp()!=0)else(22)
 def _6():
     sp();
     sa(sr());
@@ -168,7 +167,7 @@ def _7():
     sa(v1)
     sa(sr());
 
-    return (20)if(sp()!=0)else(8)
+    return (21)if(sp()!=0)else(8)
 def _8():
     sp();
     gw(3,0,sp())
@@ -178,13 +177,16 @@ def _8():
 def _9():
     sa(0)
 
-    return (10)if(gr(3,0)<=1000000)else(13)
+    return (13)if(gr(3,0)>1000000)else(10)
 def _10():
     sp();
     sa(gr(4,0)+(gr(2,0)*gr(6,0)))
+    sa(gr(4,0)+(gr(2,0)*gr(6,0)))
     gw(1,1,gr(1,1)+1)
+    sa((1)if(sp()>gr(6,1))else(0))
 
-    return (12)if(sr()>gr(6,1))else(11)
+
+    return (12)if(sp()!=0)else(11)
 def _11():
     sp();
     return 1
@@ -193,65 +195,68 @@ def _12():
     gw(5,1,gr(1,1))
     return 1
 def _13():
-    return (15)if(2000000<=gr(3,0))else(14)
+    return (14)if(2000000>gr(3,0))else(15)
 def _14():
-    gw(3,0,td(gr(3,0)*gr(3,0),1000000))
-    sa(sp()+1);
+    gw(3,0,(gr(3,0)*gr(3,0))/1000000)
+    sa(sp()+1)
     return 13
 def _15():
-    sa(sp()+gr(5,0));
+    sa(sp()+gr(5,0))
 
     gw(5,0,sp())
-    gw(3,0,td(gr(3,0),2))
+    gw(3,0,gr(3,0)/2)
     sa(gr(2,0))
     sa(gr(5,0))
-    sa((0)if((gr(5,0))!=0)else(1))
+    sa(gr(5,0))
     return 16
 def _16():
-    return (17)if(sp()!=0)else(19)
+    return (20)if(sp()!=0)else(17)
 def _17():
     sp();
     sa(sr());
 
-    return (18)if(sp()!=0)else(10)
+    return (19)if(sp()!=0)else(18)
 def _18():
-    sa(sp()+gr(4,0));
+    sa(0)
+    sp();
+    return 10
+def _19():
+    sa(sp()+gr(4,0))
 
     gw(4,0,sp())
     return 9
-def _19():
-    sa(sp()-1);
+def _20():
+    sa(sp()-1)
 
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(td(sp(),2))
+    sa(sp()/2);
 
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa(sr());
-    sa((0)if(sp()!=0)else(1))
     return 16
-def _20():
-    sa(sp()-1);
-
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),2))
-    return 7
 def _21():
-    sa(sp()*2);
+    sa(sp()-1)
 
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sp()+1);
+    sa(sp()/2);
+    return 7
+def _22():
+    sa(sp()*2)
+
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()+1)
 
     v0=sp()
     v1=sp()
@@ -259,31 +264,31 @@ def _21():
     sa(v1)
     sa((1)if((sr()*2)>gr(1,0))else(0))
     return 5
-def _22():
+def _23():
     sys.stdout.write(str(gr(5,1))+" ")
     sys.stdout.flush()
 
     sp();
-    return 26
-def _23():
-    return (25)if(sr()!=44)else(24)
+    return 27
 def _24():
+    return (26)if(sr()!=44)else(25)
+def _25():
     sp();
     sa(0)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sp()+1);
+    sa(sp()+1)
 
     sa(sr());
     sa(gr(1,1))
     v0=sp()
     sa(gr(sp(),v0))
-    sa((1)if((sr()-32)<=0)else(0))
+    sa((1)if((sr()-32)>0)else(0))
     return 2
-def _25():
-    sa(sp()-48);
+def _26():
+    sa(sp()-48)
 
     v0=sp()
     v1=sp()
@@ -294,15 +299,15 @@ def _25():
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sp()*10);
+    sa(sp()*10)
 
     sa(sp()+sp());
 
     sa(gr(2,1)+1)
     sa(gr(gr(2,1)+1,gr(1,1)))
-    sa((1)if((gr(gr(2,1)+1,gr(1,1))-32)<=0)else(0))
+    sa((1)if((gr(gr(2,1)+1,gr(1,1))-32)>0)else(0))
     return 2
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25]
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25,_26]
 c=0
-while c<26:
+while c<27:
     c=m[c]()

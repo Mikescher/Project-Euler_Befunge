@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -164,9 +164,9 @@ _4:
     gw(1,0,gr(0,0)-2);
     gw(2,0,t0);
 _5:
+    t0=gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2);
     sa(gr(gr(1,0),gr(2,0)+1));
     sa(gr(gr(1,0),gr(2,0)+2));
-    t0=gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2);
 
     if((gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2))>0)goto _6;else goto _9;
 _6:

@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABAAAFEDrvx+LCAAAAAAABADtncuuLcdxpl9l41ie8IDtvF8Ig/Ab2EMPBLcBSeaUI40EP3vH92VtWoTcQDeXaskSKgfk2bdcVRmZcfnjj8jff9w/Wmv9"+
                                  "o4w9P3rO/SPNvD5KSTv+k8tHGr19tNrWR01zf4xV8sccI74sc3ysNeOneaePOlfMMnv52G3Wj7ny/Ni5zo/U9viYtcZfxDQfM8evtNr7R+vxr7nj9+Yq86O0kT5K7Sk+"+
@@ -194,37 +194,143 @@ long t0,t1,t2,t3,t4;
 private int _0(){
     gw(88,81,(gr(498,79)-48)+(((gr(497,79)-48)+(((gr(496,79)-48)+((gr(495,79)-48)*10))*10))*10));
     gw(88,179,252047376);
-    sa(6398);
+    sa(6399);
+    sa(6399);
     return 1;
 }
 private int _1(){
+    if(sp()!=0)return 20;else return 2;
+}
+private int _2(){
+    gw(2,0,1);
+    gw(9,100,gr(9,2));
+    gw(100,100,88);
+    sp();
+    return 3;
+}
+private int _3(){
+    gw(4,0,0);
+    sa(0);
+    return 4;
+}
+private int _4(){
+    gw(5,0,0);
+    sa(0);
+    return 5;
+}
+private int _5(){
+    if(gr(gr(4,0)+100,gr(5,0)+100)!=88)return 6;else return 12;
+}
+private int _6(){
+    sa(sp()+1L);
+
+
+    if(sr()!=80)return 11;else return 7;
+}
+private int _7(){
+    sp();
+    sa(sp()+1L);
+
+
+    if(sr()!=80)return 10;else return 8;
+}
+private int _8(){
+    t0=gr(7,0);
+    gw(7,0,0);
+    sp();
+
+    if((t0)!=0)return 3;else return 9;
+}
+private int _9(){
+    System.out.print(String.valueOf(gr(88,179))+" ");
+    return 21;
+}
+private int _10(){
+    sa(sr());
+    gw(4,0,sp());
+    return 4;
+}
+private int _11(){
+    sa(sr());
+    gw(5,0,sp());
+    return 5;
+}
+private int _12(){
+    gw(2,0,8);
+    gw(gr(4,0)+100,gr(5,0)+100,79);
+    t0=(gr(4,0)>0?1:0)*(gr(gr(4,0)+8,gr(5,0)+100)>(gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+8,gr(5,0)+2))?1L:0L);
+    gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+8,gr(5,0)+2));
+
+    if((t0)!=0)return 19;else return 13;
+}
+private int _13(){
+    t0=(gr(5,0)>0?1:0)*(gr(gr(4,0)+9,gr(5,0)+99)>(gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+1))?1L:0L);
+    gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+1));
+
+    if((t0)!=0)return 18;else return 14;
+}
+private int _14(){
+    t0=(gr(4,0)-80)*(gr(gr(4,0)+10,gr(5,0)+100)>(gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+10,gr(5,0)+2))?1:0);
+    gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+10,gr(5,0)+2));
+
+    if((t0)!=0)return 17;else return 15;
+}
+private int _15(){
+    t0=(gr(5,0)-80)*(gr(gr(4,0)+9,gr(5,0)+101)>(gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+3))?1:0);
+    gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+3));
+
+    if((t0)!=0)return 16;else return 6;
+}
+private int _16(){
+    gw(gr(4,0)+9,gr(5,0)+101,gr(7,0));
+    gw(gr(4,0)+100,gr(5,0)+101,88);
+    return 6;
+}
+private int _17(){
+    gw(gr(4,0)+10,gr(5,0)+100,gr(7,0));
+    gw(gr(4,0)+101,gr(5,0)+100,88);
+    return 15;
+}
+private int _18(){
+    gw(gr(4,0)+9,gr(5,0)+99,gr(7,0));
+    gw(gr(4,0)+100,gr(5,0)+99,88);
+    return 14;
+}
+private int _19(){
+    gw(gr(4,0)+8,gr(5,0)+100,gr(7,0));
+    gw(gr(4,0)+99,gr(5,0)+100,88);
+    return 13;
+}
+private int _20(){
+    sa(sp()-1L);
+
     sa(sr());
     sa(sr());
     sa(sr());
     sa(sr());
-    sa(((tm(sr(),80))*5)+103);
+    sa(((sr()%80)*5)+103);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
+    sa(sp()/80L);
 
     {long v0=sp();t0=gr(sp(),v0);}
     t0-=48;
     sa(sr());
-    sa(((tm(sr(),80))*5)+102);
+    sa(((sr()%80)*5)+102);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
+    sa(sp()/80L);
 
     {long v0=sp();t1=gr(sp(),v0);}
     t1-=48;
     sa(sr());
-    sa(((tm(sr(),80))*5)+101);
+    sa(((sr()%80)*5)+101);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
+    sa(sp()/80L);
 
     {long v0=sp();t2=gr(sp(),v0);}
     t2-=48;
-    sa(((tm(sr(),80))*5)+100);
+    sa(((sr()%80)*5)+100);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
+    sa(sp()/80L);
 
     {long v0=sp();t3=gr(sp(),v0);}
     t3-=48;
@@ -235,156 +341,29 @@ private int _1(){
     t2*=10;
     sa(t0+t2);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa((tm(sr(),80))+9);
+    sa((sr()%80)+9);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
+    sa(sp()/80L);
 
     sa(sp()+2L);
 
     {long v0=sp();long v1=sp();gw(v1,v0,sp());}
     sa(252047376);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa((tm(sr(),80))+9);
+    sa((sr()%80)+9);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
+    sa(sp()/80L);
 
     sa(sp()+100L);
 
     {long v0=sp();long v1=sp();gw(v1,v0,sp());}
     sa(sr());
-
-    if(sp()!=0)return 21;else return 2;
-}
-private int _2(){
-    gw(2,0,1);
-    gw(9,100,gr(9,2));
-    gw(100,100,88);
-    gw(4,0,0);
-    gw(5,0,0);
-    sp();
-    return 3;
-}
-private int _3(){
-    sa(0);
-    return 4;
-}
-private int _4(){
-    sa(0);
-    return 5;
-}
-private int _5(){
-    if(gr(gr(4,0)+100,gr(5,0)+100)!=88)return 6;else return 13;
-}
-private int _6(){
-    sa(sp()+1L);
-
-
-    if(sr()!=80)return 12;else return 7;
-}
-private int _7(){
-    sp();
-    sa(sp()+1L);
-
-
-    if(sr()!=80)return 11;else return 8;
-}
-private int _8(){
-    sp();
-    t0=gr(7,0);
-    gw(7,0,0);
-
-    if((t0)!=0)return 9;else return 10;
-}
-private int _9(){
-    gw(4,0,0);
-    gw(5,0,0);
-    return 3;
-}
-private int _10(){
-    System.out.print(String.valueOf(gr(88,179))+" ");
-    return 22;
-}
-private int _11(){
-    sa(sr());
-    gw(4,0,sp());
-    gw(5,0,0);
-    return 4;
-}
-private int _12(){
-    sa(sr());
-    gw(5,0,sp());
-    return 5;
-}
-private int _13(){
-    gw(2,0,8);
-    gw(gr(4,0)+100,gr(5,0)+100,79);
-    t0=gr(4,0)>0?1:0;
-    t1=gr(gr(4,0)+8,gr(5,0)+100);
-    t2=gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+8,gr(5,0)+2);
-    gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+8,gr(5,0)+2));
-    t3=t1>t2?1:0;
-    t1=t0*t3;
-
-    if((t1)!=0)return 20;else return 14;
-}
-private int _14(){
-    t0=gr(5,0)>0?1:0;
-    t1=gr(gr(4,0)+9,gr(5,0)+99);
-    t2=gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+1);
-    gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+1));
-    t3=t1>t2?1:0;
-    t1=t0*t3;
-
-    if((t1)!=0)return 19;else return 15;
-}
-private int _15(){
-    t0=gr(4,0)-80;
-    t1=gr(gr(4,0)+10,gr(5,0)+100);
-    t2=gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+10,gr(5,0)+2);
-    gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+10,gr(5,0)+2));
-    t3=t1>t2?1:0;
-    t1=t0*t3;
-
-    if((t1)!=0)return 18;else return 16;
-}
-private int _16(){
-    t0=gr(5,0)-80;
-    t1=gr(gr(4,0)+9,gr(5,0)+101);
-    t2=gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+3);
-    gw(7,0,gr(gr(4,0)+9,gr(5,0)+100)+gr(gr(4,0)+9,gr(5,0)+3));
-    t3=t1>t2?1:0;
-    t1=t0*t3;
-
-    if((t1)!=0)return 17;else return 6;
-}
-private int _17(){
-    gw(gr(4,0)+9,gr(5,0)+101,gr(7,0));
-    gw(gr(4,0)+100,gr(5,0)+101,88);
-    return 6;
-}
-private int _18(){
-    gw(gr(4,0)+10,gr(5,0)+100,gr(7,0));
-    gw(gr(4,0)+101,gr(5,0)+100,88);
-    return 16;
-}
-private int _19(){
-    gw(gr(4,0)+9,gr(5,0)+99,gr(7,0));
-    gw(gr(4,0)+100,gr(5,0)+99,88);
-    return 15;
-}
-private int _20(){
-    gw(gr(4,0)+8,gr(5,0)+100,gr(7,0));
-    gw(gr(4,0)+99,gr(5,0)+100,88);
-    return 14;
-}
-private int _21(){
-    sa(sp()-1L);
     return 1;
 }
 
 public void main(){
     int c=0;
-    while(c<22){
+    while(c<21){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -407,7 +386,6 @@ public void main(){
     case 18:c=_18();break;
     case 19:c=_19();break;
     case 20:c=_20();break;
-    case 21:c=_21();break;
 }
 }
 }

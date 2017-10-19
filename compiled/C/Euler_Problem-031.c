@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -33,46 +33,47 @@ int main(void)
     gw(1,1,200);
     gw(2,1,9);
     gw(3,1,0);
-    gw(gr(2,1),0,gr(gr(2,1),0)+1);
+    sa(0);
 _1:
-    if(gr(2,1)!=9)goto _11;else goto _2;
+    sp();
 _2:
-    t0=(gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0);
-
-    if(((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0))<gr(1,1))goto _10;else goto _3;
+    gw(gr(2,1),0,gr(gr(2,1),0)+1);
 _3:
-    t0-=gr(1,1);
-
-    if((t0)!=0)goto _4;else goto _9;
+    if(gr(2,1)!=9)goto _12;else goto _4;
 _4:
+    sa((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0));
+
+    if(((gr(1,0)*500)+(gr(2,0)*200)+(100*gr(3,0))+(gr(4,0)*50)+(gr(5,0)*20)+(gr(6,0)*10)+(gr(7,0)*5)+(gr(8,0)*2)+gr(9,0))<gr(1,1))goto _1;else goto _5;
+_5:
+    sa(sp()-gr(1,1));
+
+
+    if(sp()!=0)goto _6;else goto _11;
+_6:
     t0=gr(2,1);
 
-    if((gr(gr(2,1),0))!=0)goto _6;else goto _5;
-_5:
+    if((gr(gr(2,1),0))!=0)goto _8;else goto _7;
+_7:
     t0--;
     gw(2,1,t0);
-    goto _4;
-_6:
-    if(t0!=1)goto _8;else goto _7;
-_7:
+    goto _6;
+_8:
+    if(t0!=1)goto _10;else goto _9;
+_9:
     printf("%lld ", gr(3,1));
     return 0;
-_8:
+_10:
     t0--;
     gw(2,1,t0);
-    gw(gr(2,1),0,gr(gr(2,1),0)+1);
-    goto _1;
-_9:
-    gw(3,1,gr(3,1)+1);
-    goto _4;
-_10:
-    gw(gr(2,1),0,gr(gr(2,1),0)+1);
-    goto _1;
+    goto _2;
 _11:
+    gw(3,1,gr(3,1)+1);
+    goto _6;
+_12:
     sa(0);
     sa(gr(2,1)+1);
     gw(2,1,gr(2,1)+1);
     sa(0);
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
-    goto _1;
+    goto _3;
 }

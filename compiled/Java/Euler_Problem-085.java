@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -22,7 +22,7 @@ private int _1(){
 }
 private int _2(){
     System.out.print(String.valueOf(x3)+" ");
-    return 13;
+    return 12;
 }
 private int _3(){
     x5=1;
@@ -30,22 +30,24 @@ private int _3(){
     return 4;
 }
 private int _4(){
-    if(((x2>x5?1:0)*(x0>x6?1L:0L))!=0)return 5;else return 12;
+    if(((x2>x5?1:0)*(x0>x6?1L:0L))!=0)return 5;else return 11;
 }
 private int _5(){
     sa(x0-x6);
 
-    if((x0-x6)<0)return 11;else return 6;
+    if((x0-x6)<0)return 10;else return 6;
 }
 private int _6(){
     sa(sp()-0L);
     return 7;
 }
 private int _7(){
-    if(sr()>x1)return 8;else return 10;
+    if(sr()>x1)return 9;else return 8;
 }
 private int _8(){
-    sp();
+    x1=sp();
+    x3=x5*x2;
+    sa(0);
     return 9;
 }
 private int _9(){
@@ -54,21 +56,17 @@ private int _9(){
     t0*=x4;
     t0+=x6;
     x6=t0;
+    sp();
     return 4;
 }
 private int _10(){
-    x1=sp();
-    x3=x5*x2;
-    return 9;
-}
-private int _11(){
     t0=0;
     sa(t0);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     {long v0=sp();sa(sp()-v0);}
     return 7;
 }
-private int _12(){
+private int _11(){
     t0=x2+1;
     x2++;
     t0+=x4;
@@ -78,7 +76,7 @@ private int _12(){
 
 public void main(){
     int c=0;
-    while(c<13){
+    while(c<12){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -92,7 +90,6 @@ public void main(){
     case 9:c=_9();break;
     case 10:c=_10();break;
     case 11:c=_11();break;
-    case 12:c=_12();break;
 }
 }
 }

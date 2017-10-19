@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -11,6 +11,7 @@ long x0=32;
 long x1=32;
 long x2=1;
 private int _0(){
+    t0=1;
     sa(0);
     sa(1);
     sa(10);
@@ -19,17 +20,26 @@ private int _0(){
     sa(10000);
     sa(100000);
     sa(1000000);
+    sa(1000000);
     return 1;
 }
 private int _1(){
-    x0=1;
-    x1=1;
-    return 2;
+    if(sp()!=0)return 3;else return 2;
 }
 private int _2(){
-    if(sr()<=(x0*9*x1))return 3;else return 9;
+    System.out.print(String.valueOf(x2)+" ");
+    sp();
+    return 11;
 }
 private int _3(){
+    x0=1;
+    x1=1;
+    return 4;
+}
+private int _4(){
+    if(sr()>(x0*9*x1))return 10;else return 5;
+}
+private int _5(){
     sa(sp()-1L);
 
     t0=(td(sr(),x0))+x1;
@@ -44,47 +54,41 @@ private int _3(){
 
     sa(sr());
 
-    if(sp()!=0)return 8;else return 4;
-}
-private int _4(){
-    sa(sr());
-    return 5;
-}
-private int _5(){
-    if(sp()!=0)return 8;else return 6;
+    if(sp()!=0)return 9;else return 6;
 }
 private int _6(){
-    sp();
+    sa(sr());
+    return 7;
+}
+private int _7(){
+    if(sp()!=0)return 9;else return 8;
+}
+private int _8(){
     t0%=10;
     t0*=x2;
     x2=t0;
-    sa(sr());
-
-    if(sp()!=0)return 1;else return 7;
-}
-private int _7(){
-    System.out.print(String.valueOf(x2)+" ");
     sp();
-    return 10;
+    sa(sr());
+    return 1;
 }
-private int _8(){
+private int _9(){
     t0/=10;
     sa(sp()-1L);
 
     sa(sr());
-    return 5;
+    return 7;
 }
-private int _9(){
-    t0=x0*9*x1;
+private int _10(){
+    sa(sp()-(x0*9*x1));
+
     x0++;
     x1*=10;
-    sa(sp()-t0);
-    return 2;
+    return 4;
 }
 
 public void main(){
     int c=0;
-    while(c<10){
+    while(c<11){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -96,6 +100,7 @@ public void main(){
     case 7:c=_7();break;
     case 8:c=_8();break;
     case 9:c=_9();break;
+    case 10:c=_10();break;
 }
 }
 }

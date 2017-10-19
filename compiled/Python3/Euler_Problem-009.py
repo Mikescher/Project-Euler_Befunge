@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 def td(a,b):
     return ((0)if(b==0)else(a//b))
 def tm(a,b):
@@ -30,6 +30,8 @@ def _1():
     x2=1
     return 2
 def _2():
+    global x2
+    global x1
     global x3
     sa((x2*x2)+(x1*x1))
     x3=(x2*x2)+(x1*x1)
@@ -39,10 +41,11 @@ def _2():
 def _3():
     return (4)if(sp()!=0)else(10)
 def _4():
-    sa(sp()+1);
+    global x0
+    sa(sp()+1)
 
 
-    return (9)if(sr()!=x0)else(5)
+    return (9)if((sr()-x0)!=0)else(5)
 def _5():
     sp();
     sp();
@@ -50,6 +53,7 @@ def _5():
 def _6():
     global t0
     global x2
+    global x1
     t0=x2+1
     x2=x2+1
     t0=t0-x1
@@ -58,6 +62,7 @@ def _6():
 def _7():
     global t0
     global x1
+    global x0
     t0=x1+1
     x1=x1+1
     t0=t0-x0
@@ -71,15 +76,17 @@ def _9():
     sa(sr());
     sa(sp()*sp());
 
-    sa(sp()-x3);
+    sa(sp()-x3)
     return 3
 def _10():
     global x3
+    global x2
+    global x1
     global x0
     x3=sr()
-    sa(sp()+x2+x1);
+    sa(sp()+x2+x1)
 
-    sa(sp()-x0);
+    sa(sp()-x0)
 
 
     return (11)if(sp()!=0)else(12)
@@ -87,25 +94,16 @@ def _11():
     sp();
     return 6
 def _12():
-    global t0
     global x2
-    global t1
     global x1
-    global t2
     global x3
-    global t3
-    t0=x2
     print(x2,end=" ",flush=True)
     print(chr(32),end="",flush=True)
-    t1=x1
     print(x1,end=" ",flush=True)
     print(chr(32),end="",flush=True)
-    t2=x3
     print(x3,end=" ",flush=True)
     print(chr(61),end="",flush=True)
-    t3=t1*t2
-    t1=t0*t3
-    print(t1,end=" ",flush=True)
+    print(x2*x1*x3,end=" ",flush=True)
     return 13
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12]
 c=0

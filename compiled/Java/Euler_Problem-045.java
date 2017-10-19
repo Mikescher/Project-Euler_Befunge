@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -35,37 +35,9 @@ private int _5(){
     sa(sp()-(x2*x2));
 
 
-    if((tm(x2,6))-5==0)return 6;else return 9;
+    if((x2%6)!=5)return 6;else return 7;
 }
 private int _6(){
-    sa((sp()!=0)?0:1);
-
-    if(sp()!=0)return 8;else return 7;
-}
-private int _7(){
-    x2=0;
-    sa(sp()+1L);
-
-    sa(sr());
-    t0=(sr()*2)-1;
-    sa(sp()*t0);
-
-    sa(sp()*24L);
-
-    sa(sp()+1L);
-
-    x1=sr();
-    return 1;
-}
-private int _8(){
-    t0=(sr()*2)-1;
-    sa(sp()*t0);
-
-    t1=sp();
-    System.out.print(String.valueOf(t1)+" ");
-    return 14;
-}
-private int _9(){
     x2=0;
     sp();
     sa(sp()+1L);
@@ -81,12 +53,38 @@ private int _9(){
     x1=sr();
     return 1;
 }
+private int _7(){
+    if(sp()!=0)return 8;else return 9;
+}
+private int _8(){
+    x2=0;
+    sa(sp()+1L);
+
+    sa(sr());
+    t0=(sr()*2)-1;
+    sa(sp()*t0);
+
+    sa(sp()*24L);
+
+    sa(sp()+1L);
+
+    x1=sr();
+    return 1;
+}
+private int _9(){
+    t0=(sr()*2)-1;
+    sa(sp()*t0);
+
+    t1=sp();
+    System.out.print(String.valueOf(t1)+" ");
+    return 14;
+}
 private int _10(){
-    if((sr()+x2)<=x1)return 12;else return 11;
+    if((sr()+x2)>x1)return 11;else return 12;
 }
 private int _11(){
     x2/=2;
-    sa(td(sp(),4));
+    sa(sp()/4L);
 
     sa(sr());
     return 4;
@@ -99,11 +97,11 @@ private int _12(){
     t0=(sr()*2)+x2;
     x2=t0;
     x2/=2;
-    sa(td(sp(),4));
+    sa(sp()/4L);
     return 3;
 }
 private int _13(){
-    sa(td(sp(),4));
+    sa(sp()/4L);
 
     sa(sr()>x1?1:0);
     return 2;

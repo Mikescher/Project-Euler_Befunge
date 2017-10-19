@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABAC9VMtqw0AM/JUh7SnGRVp5X6GYfkhJevPVp3x/R17ogxjaErvCOCvh7OxoRguM0Y4QmUUm7QN/VeZRZbLjKbDUTQc59DF2x1ftPgsdv1iyWf194p+Y"
   + "9to/XC9cnD62Yn7FbeS4UsR5rfjLeL7J13BrRBpuqmtfbncSD80YMkq4e/MRj385rRZYRMlQ+boJxQ59E20RuwnbFqGjfJ63NfqTvI0P50s/fhOdEjd5m9w0y9xy0enp"
@@ -67,9 +67,9 @@ def _4():
     return 5
 def _5():
     global t0
+    t0=gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2)
     sa(gr(gr(1,0),gr(2,0)+1))
     sa(gr(gr(1,0),gr(2,0)+2))
-    t0=gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2)
 
     return (6)if((gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2))>0)else(9)
 def _6():
@@ -96,7 +96,7 @@ def _8():
     return 10
 def _9():
     global t0
-    sa(sp()-t0);
+    sa(sp()-t0)
     return 6
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9]
 c=0

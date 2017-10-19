@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -18,26 +18,16 @@ void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
 int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
-    int64 t0;
     d();
     s=(int64*)calloc(q,sizeof(int64));
-    gw(63,2,0);
     sa(99);
     sa(99);
     sa(99);
 _1:
-    sa(197);
+    gw(63,2,0);
+    sa(198);
+    sa(198);
 _2:
-    sa(sr());
-    sa(0);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa((tm(sr(),70))+5);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),70));
-
-    {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
-    sa(sr());
-
     if(sp()!=0)goto _18;else goto _3;
 _3:
     gw(64,2,1);
@@ -48,17 +38,17 @@ _4:
     gw(3,0,0);
     sa(199);
     sa(199);
-    sa((gr(64,2)*gr(1,0))+gr(2,0));
-    gw(2,0,td((gr(64,2)*gr(1,0))+gr(2,0),10));
+    sa(((gr(64,2)*gr(1,0))+gr(2,0))%10);
+    sa(((gr(64,2)*gr(1,0))+gr(2,0))%10);
+    gw(2,0,((gr(64,2)*gr(1,0))+gr(2,0))/10);
 _5:
-    sa(tm(sp(),10));
+    sa(sp()+gr(3,0));
 
-    t0=sr()+gr(3,0);
-    gw(3,0,t0);
+    gw(3,0,sp());
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa((tm(sr(),70))+5);
+    sa((sr()%70)+5);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),70));
+    sa(sp()/70LL);
 
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     sa(sr());
@@ -87,7 +77,7 @@ _11:
     sp();
     return 0;
 _12:
-    if(tm(sr(),10)!=0)goto _14;else goto _13;
+    if((sr()%10)!=0)goto _14;else goto _13;
 _13:
     sa(sp()-1LL);
 
@@ -96,7 +86,6 @@ _13:
 _14:
     if(sr()>45)goto _15;else goto _9;
 _15:
-    gw(63,2,0);
     sa(sr());
     sa(99);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
@@ -109,19 +98,31 @@ _17:
 
     sa(sr());
     sa(sr());
-    sa((tm(sr(),70))+5);
+    sa((sr()%70)+5);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),70));
+    sa(sp()/70LL);
 
     {int64 v0=sp();sa(gr(sp(),v0));}
     sa(sp()*gr(1,0));
 
     sa(sp()+gr(2,0));
 
-    t0=td(sr(),10);
-    gw(2,0,t0);
+    gw(2,0,sr()/10);
+    sa(sp()%10LL);
+
+    sa(sr());
     goto _5;
 _18:
     sa(sp()-1LL);
+
+    sa(sr());
+    sa(0);
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa((sr()%70)+5);
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
+    sa(sp()/70LL);
+
+    {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
+    sa(sr());
     goto _2;
 }

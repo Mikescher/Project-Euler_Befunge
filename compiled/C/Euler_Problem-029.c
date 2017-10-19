@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -27,11 +27,10 @@ int main(void)
     gw(10,0,9802);
     gw(2,0,201);
     sa(gr(2,0));
+    sa(0);
+    sa(gr(2,0));
     gw(8,0,52);
 _1:
-    sa(sr());
-    sa(0);
-    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(gr(8,0));
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     t0=gr(8,0)-1;
@@ -45,6 +44,9 @@ _2:
     if(sp()!=0)goto _3;else goto _4;
 _3:
     gw(8,0,52);
+    sa(sr());
+    sa(0);
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     goto _1;
 _4:
     gw(8,0,100);
@@ -53,21 +55,20 @@ _4:
     sa(gr(8,0));
     sa(100);
 _5:
-    sa(gr(2,0));
+    sa(gr(2,0)-1);
+    sa(gr(2,0)-1);
     gw(gr(2,0),1,0);
 _6:
-    sa(sp()-1LL);
-
-    sa(sr());
-    sa((sp()!=0)?0:1);
-
-    if(sp()!=0)goto _8;else goto _7;
+    if(sp()!=0)goto _7;else goto _8;
 _7:
     sa(sr());
     sa(0);
     {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     sa(1);
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
+    sa(sp()-1LL);
+
+    sa(sr());
     goto _6;
 _8:
     gw(gr(2,0),1,1);
@@ -78,7 +79,7 @@ _9:
     gw(6,0,gr(2,0));
 _10:
     t0=(gr(gr(6,0),1)*gr(4,0))+gr(5,0);
-    gw(gr(6,0),1,tm((gr(gr(6,0),1)*gr(4,0))+gr(5,0),10));
+    gw(gr(6,0),1,((gr(gr(6,0),1)*gr(4,0))+gr(5,0))%10);
     t1=gr(6,0)-1;
 
     if(gr(6,0)!=1)goto _30;else goto _11;
@@ -104,20 +105,19 @@ _14:
     gw(9,0,52);
 _15:
     gw(3,0,sp());
-    sa(sr());
     t0=gr(gr(3,0),gr(9,0));
+    sa(sr());
 
     if((gr(gr(3,0),gr(9,0)))!=0)goto _16;else goto _28;
 _16:
     sa(sp()-t0);
 
     t1=sp();
-    t1=(t1!=0)?0:1;
 
-    if((t1)!=0)goto _22;else goto _17;
+    if((t1)!=0)goto _17;else goto _22;
 _17:
-    sa(gr(3,0));
     t0=gr(9,0)-1;
+    sa(gr(3,0));
 
     if(gr(9,0)!=2)goto _21;else goto _18;
 _18:
@@ -179,5 +179,8 @@ _30:
     goto _10;
 _31:
     gw(8,0,t0);
+    sa(sr());
+    sa(0);
+    {int64 v0=sp();int64 v1=sp();sa(v0);sa(v1);}
     goto _1;
 }

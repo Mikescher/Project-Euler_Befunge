@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -15,31 +15,30 @@ int main(void)
     int64 x1=2;
     int64 x2=2;
     s=(int64*)calloc(q,sizeof(int64));
+    sa(0);
 _1:
-    t0=x0;
-    t1=x1;
+    sp();
+    sa(x0+x1);
+    t0=x0+x1;
     x0=x1;
-    sa(t0+t1);
-    x1=sr();
+    x1=t0;
 
-    if(sr()>10240000)goto _5;else goto _2;
+    if(sr()>10240000)goto _4;else goto _2;
 _2:
     sa(sr());
-    t0=(td(sr(),2))*2;
+    t0=(sr()/2)*2;
     sa(sp()-t0);
 
     t1=sp();
 
-    if((t1)!=0)goto _3;else goto _4;
+    if((t1)!=0)goto _1;else goto _3;
 _3:
-    sp();
-    goto _1;
-_4:
     sa(sp()+x2);
 
     x2=sp();
+    sa(0);
     goto _1;
-_5:
+_4:
     printf("%lld ", x2);
     sp();
     return 0;

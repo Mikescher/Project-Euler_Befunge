@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADtUbsOgzAM/JXwWhpRnAEGy4r6IVFBaqWsTJn4+NpFPAW0Hdh6g2X5nPPFjp+xgRYAWmvAI4DXnJsck1CnwJSNH7EwaDReHJaoM8ehqHTbcI/qEWx6"+
                                  "vfXpXc3QgqGN8sRq48EoGirwjnajd41wTHcROup4QG6QJ1Ca1iGJ0Ouq0Fi6jIPUFZK44D9qkgbOMRdLJJkHcmKdFtK22TDIqzh0NL1YtIV87Wg2y/I1hnxYXzLimyXN"+
@@ -20,116 +20,105 @@ private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
 private long sp(){return(s.size()==0)?0:s.pop();}
 private void sa(long v){s.push(v);}
 private long sr(){return(s.size()==0)?0:s.peek();}
-long t0,t1,t2;
+long t0,t1;
 private int _0(){
     gw(1,0,100);
     gw(0,0,0);
     return 1;
 }
 private int _1(){
-    sa(gr(1,0));
+    t0=gr(1,0)-1;
+    t1=gr(1,0)-1;
     gw(0,0,gr(1,0)+gr(0,0));
-    sa(sp()-1L);
 
-    sa(sr());
-
-    if(sp()!=0)return 2;else return 3;
+    if((t1)!=0)return 17;else return 2;
 }
 private int _2(){
-    gw(1,0,sp());
-    return 1;
+    gw(1,0,0);
+    return 3;
 }
 private int _3(){
-    gw(1,0,0);
-    sp();
-    return 4;
+    t0=99>gr(1,0)?1:0;
+    gw(gr(1,0)%10,(gr(1,0)/10)+6,(gr(1,0)+1)*(gr(1,0)+1));
+
+    if((t0)!=0)return 16;else return 4;
 }
 private int _4(){
-    t0=99;
-    t1=gr(1,0);
-    gw(tm(gr(1,0),10),(td(gr(1,0),10))+6,(gr(1,0)+1)*(gr(1,0)+1));
-    t2=t0>t1?1:0;
-
-    if((t2)!=0)return 18;else return 5;
-}
-private int _5(){
     sa(gr(0,0));
     gw(1,0,gr(0,0));
-    return 6;
+    return 5;
 }
-private int _6(){
+private int _5(){
     t0=gr(1,0)-1;
     gw(1,0,gr(1,0)-1);
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)return 7;else return 17;
+    if((t0)!=0)return 15;else return 6;
+}
+private int _6(){
+    gw(1,0,99);
+    sa(sp()+sp());
+    return 7;
 }
 private int _7(){
-    gw(1,0,99);
-    return 8;
+    sa(sr());
+    sa(gr(gr(1,0)%10,(gr(1,0)/10)+6));
+
+    if((gr(gr(1,0)%10,(gr(1,0)/10)+6))!=0)return 8;else return 14;
 }
 private int _8(){
-    sa(sp()+sp());
-    return 9;
-}
-private int _9(){
-    sa(sr());
-    sa(gr(tm(gr(1,0),10),(td(gr(1,0),10))+6));
-
-    if((gr(tm(gr(1,0),10),(td(gr(1,0),10))+6))==0)return 16;else return 10;
-}
-private int _10(){
     {long v0=sp();sa((sp()>v0)?1:0);}
 
 
-    if(sp()!=0)return 15;else return 11;
+    if(sp()!=0)return 13;else return 9;
 }
-private int _11(){
+private int _9(){
     sa(gr(1,0));
     gw(1,0,gr(1,0)-1);
 
-    if(sp()!=0)return 9;else return 12;
+    if(sp()!=0)return 7;else return 10;
 }
-private int _12(){
+private int _10(){
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sr());
-    sa((sp()!=0)?0:1);
 
-    if(sp()!=0)return 13;else return 14;
+    if(sp()!=0)return 11;else return 12;
 }
-private int _13(){
-    sp();
-    System.out.print(String.valueOf((long)(sp()))+" ");
-    return 19;
-}
-private int _14(){
-    gw(1,0,99);
+private int _11(){
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    return 8;
-}
-private int _15(){
-    sa(gr(tm(gr(1,0),10),(td(gr(1,0),10))+6));
-    gw(tm(gr(1,0),10),(td(gr(1,0),10))+6,0);
-    {long v0=sp();sa(sp()-v0);}
-    return 11;
-}
-private int _16(){
-    sp();
-    sp();
-    return 11;
-}
-private int _17(){
-    sa(gr(0,0));
     return 6;
 }
-private int _18(){
+private int _12(){
+    sp();
+    System.out.print(String.valueOf((long)(sp()))+" ");
+    return 18;
+}
+private int _13(){
+    sa(sp()-gr(gr(1,0)%10,(gr(1,0)/10)+6));
+
+    gw(gr(1,0)%10,(gr(1,0)/10)+6,0);
+    return 9;
+}
+private int _14(){
+    sp();
+    sp();
+    return 9;
+}
+private int _15(){
+    sa(gr(0,0));
+    return 5;
+}
+private int _16(){
     gw(1,0,gr(1,0)+1);
-    return 4;
+    return 3;
+}
+private int _17(){
+    gw(1,0,t0);
+    return 1;
 }
 
 public void main(){
     int c=0;
-    while(c<19){
+    while(c<18){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -149,7 +138,6 @@ public void main(){
     case 15:c=_15();break;
     case 16:c=_16();break;
     case 17:c=_17();break;
-    case 18:c=_18();break;
 }
 }
 }

@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABAC9jz0KAjEQha+SnZhmh5hMhogECbZeYrcR0qZK6dkddxVEEGOzrxjmD977mt9AbQMPynCFTDYNus3Jc/XEFW4XwMA1By5yNoRr4wp4sJ7LSFwwxYjm"+
                                  "cFRNdWla6k5/rOdJD5VDslQ4VCaHMVYnZjIimWcznvpMVuUFgAUm84uA3whQKRkTWXnpjf9N5/2D4NfXX/HVHUV2dgFeAgAA";
@@ -22,61 +22,61 @@ private long sr(){return(s.size()==0)?0:s.peek();}
 long t0,t1;
 private int _0(){
     sa(99);
+    sa(0);
     return 1;
 }
 private int _1(){
+    if(sp()!=0)return 6;else return 2;
+}
+private int _2(){
     sa(sr());
     gw(0,3,sp());
     gw(1,3,0);
     gw(2,3,199);
-    return 2;
-}
-private int _2(){
-    t0=((gr((tm(gr(2,3),100))+1,td(gr(2,3),100))-48)*gr(0,3))+gr(1,3);
-    gw((tm(gr(2,3),100))+1,td(gr(2,3),100),(tm(((gr((tm(gr(2,3),100))+1,td(gr(2,3),100))-48)*gr(0,3))+gr(1,3),10))+48);
-    t0/=10;
-    gw(1,3,t0);
-    t0=gr(2,3)-1;
-    gw(2,3,gr(2,3)-1);
-    t0=(t0!=0)?0:1;
     return 3;
 }
 private int _3(){
-    if((t0)!=0)return 4;else return 2;
+    t0=(((gr((gr(2,3)%100)+1,gr(2,3)/100)-48)*gr(0,3))+gr(1,3))/10;
+    gw((gr(2,3)%100)+1,gr(2,3)/100,((((gr((gr(2,3)%100)+1,gr(2,3)/100)-48)*gr(0,3))+gr(1,3))%10)+48);
+    gw(1,3,t0);
+    t0=gr(2,3)-1;
+    gw(2,3,gr(2,3)-1);
+    return 4;
 }
 private int _4(){
+    if((t0)!=0)return 3;else return 5;
+}
+private int _5(){
     sa(sp()-1L);
 
     sa(sr());
     sa((sp()!=0)?0:1);
-
-    if(sp()!=0)return 5;else return 1;
-}
-private int _5(){
-    gw(3,3,199);
-    sp();
-    t0=gr((tm(gr(3,3),100))+1,td(gr(3,3),100))-48;
-    return 6;
+    return 1;
 }
 private int _6(){
-    t1=gr(3,3);
-    gw(3,3,gr(3,3)-1);
-    t1=(t1!=0)?0:1;
-
-    if((t1)!=0)return 7;else return 8;
+    gw(3,3,199);
+    t0=gr((gr(3,3)%100)+1,gr(3,3)/100)-48;
+    sp();
+    return 7;
 }
 private int _7(){
-    System.out.print(String.valueOf(t0)+" ");
-    return 9;
+    t1=gr(3,3);
+    gw(3,3,gr(3,3)-1);
+
+    if((t1)!=0)return 9;else return 8;
 }
 private int _8(){
-    t0+=gr((tm(gr(3,3),100))+1,td(gr(3,3),100))-48;
-    return 6;
+    System.out.print(String.valueOf(t0)+" ");
+    return 10;
+}
+private int _9(){
+    t0+=gr((gr(3,3)%100)+1,gr(3,3)/100)-48;
+    return 7;
 }
 
 public void main(){
     int c=0;
-    while(c<9){
+    while(c<10){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -87,6 +87,7 @@ public void main(){
     case 6:c=_6();break;
     case 7:c=_7();break;
     case 8:c=_8();break;
+    case 9:c=_9();break;
 }
 }
 }

@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -16,15 +16,13 @@ private int _0(){
     return 1;
 }
 private int _1(){
-    if(x3<=x2)return 2;else return 8;
+    if(x3>x2)return 8;else return 2;
 }
 private int _2(){
-    t0=x2-1;
+    t0=x2-10;
     x2--;
-    t0-=9;
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)return 3;else return 7;
+    if((t0)!=0)return 7;else return 3;
 }
 private int _3(){
     sp();
@@ -58,30 +56,28 @@ private int _7(){
     return 1;
 }
 private int _8(){
-    if(td(x2,10)!=0)return 20;else return 9;
+    if((x2/10)!=0)return 20;else return 9;
 }
 private int _9(){
-    if(td(x2,10)!=0)return 18;else return 10;
+    if((x2/10)!=0)return 18;else return 10;
 }
 private int _10(){
-    if(tm(x2,10)!=0)return 16;else return 11;
+    if((x2%10)!=0)return 16;else return 11;
 }
 private int _11(){
-    if(tm(x2,10)!=0)return 13;else return 12;
+    if((x2%10)!=0)return 13;else return 12;
 }
 private int _12(){
-    t0=x3-1;
+    t0=x3-10;
     x3--;
-    t0-=9;
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)return 2;else return 1;
+    if((t0)!=0)return 1;else return 2;
 }
 private int _13(){
-    if((tm(x2,10))!=(tm(x3,10)))return 12;else return 14;
+    if(((x2%10)-(x3%10))!=0)return 12;else return 14;
 }
 private int _14(){
-    if((x2*(tm(x3,10)))!=(x3*(tm(x2,10))))return 12;else return 15;
+    if(((x2*(x3%10))-(x3*(x2%10)))!=0)return 12;else return 15;
 }
 private int _15(){
     x0*=x2;
@@ -89,22 +85,22 @@ private int _15(){
     return 12;
 }
 private int _16(){
-    if((tm(x2,10))!=(td(x3,10)))return 11;else return 17;
+    if(((x2%10)-(x3/10))!=0)return 11;else return 17;
 }
 private int _17(){
-    if((x2*(tm(x3,10)))!=(x3*(td(x2,10))))return 11;else return 15;
+    if(((x2*(x3%10))-(x3*(x2/10)))!=0)return 11;else return 15;
 }
 private int _18(){
-    if((td(x2,10))!=(tm(x3,10)))return 10;else return 19;
+    if(((x2/10)-(x3%10))!=0)return 10;else return 19;
 }
 private int _19(){
-    if((x2*(td(x3,10)))!=(x3*(tm(x2,10))))return 10;else return 15;
+    if(((x2*(x3/10))-(x3*(x2%10)))!=0)return 10;else return 15;
 }
 private int _20(){
-    if((td(x2,10))!=(td(x3,10)))return 9;else return 21;
+    if(((x2/10)-(x3/10))!=0)return 9;else return 21;
 }
 private int _21(){
-    if((x2*(td(x3,10)))!=(x3*(td(x2,10))))return 9;else return 15;
+    if(((x2*(x3/10))-(x3*(x2/10)))!=0)return 9;else return 15;
 }
 
 public void main(){

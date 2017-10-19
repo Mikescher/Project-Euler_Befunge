@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import gzip, base64
 _g = ("Ah+LCAAAAAAABADtmVc4nG/378eM3vuI3oIUDBmjRY/eJaL3SHRGLzEE0UWCJKJEjQhiCBGd0aJGDZMYwahRRtTBGLZf+R+8Z/vk3de1r73vk/u71vo833U/1zpcfCmU"
   + "gL8OKWAbM59ivxbUuxvlKvhD3K3C+tanWiVKJkibLzKHRuD1K34xKraiw5eZHW1CNz5pT5yFjsp7qnhur50g+L1LoDstR8qeBalxSwXfELsJdV87FFoWK5Hfzg8lL/bn"
@@ -116,32 +116,29 @@ def _0():
     gw(3,1,1000000)
     gw(4,2,0)
     sa(gr(3,1)-1)
+    sa(gr(3,1)-1)
     gw(tm(gr(3,1)-1,gr(1,1)),(td(gr(3,1)-1,gr(1,1)))+4,0)
     return 1
 def _1():
-    sa(sr());
-
-    return (26)if(sp()!=0)else(2)
+    return (27)if(sp()!=0)else(2)
 def _2():
     gw(7,0,0)
     sp();
     sa(1)
+    sa(1)
     return 3
 def _3():
-    sa(sr());
-    sa(gr(7,0))
+    sa(gr(7,0)+9)
     gw(7,0,gr(7,0)+1)
-    sa(sp()+9);
-
     sa(0)
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
-    sa(sp()*gr(7,0));
-    return 4
+    sa(sp()*gr(7,0))
+
+
+    return (26)if(gr(7,0)!=10)else(4)
 def _4():
-    return (3)if(gr(7,0)!=10)else(5)
-def _5():
     gw(0,4,0)
     gw(tm(169,gr(1,1)),(td(169,gr(1,1)))+4,3)
     gw(tm(363601,gr(1,1)),(td(363601,gr(1,1)))+4,3)
@@ -151,20 +148,20 @@ def _5():
     gw(tm(872,gr(1,1)),(td(872,gr(1,1)))+4,2)
     gw(tm(45362,gr(1,1)),(td(45362,gr(1,1)))+4,2)
     gw(1,2,1)
+    sp();
+    sa(1)
+    return 5
+def _5():
     gw(2,2,0)
     gw(9,2,0)
     gw(3,2,0)
-    sp();
-    sa(1)
     return 6
 def _6():
-    return (7)if(gr(gr(3,2)+9,2)!=gr(1,2))else(13)
+    return (7)if((gr(gr(3,2)+9,2)-gr(1,2))!=0)else(13)
 def _7():
     sa(gr(1,2))
-    sa(gr(2,2)+1)
+    sa(gr(2,2)+10)
     gw(2,2,gr(2,2)+1)
-    sa(sp()+9);
-
     sa(2)
     v0=sp()
     v1=sp()
@@ -192,9 +189,8 @@ def _10():
     gw(1,2,sp())
     sa((1)if(sp()>gr(3,1))else(0))
 
-    sa((0)if(sp()!=0)else(1))
 
-    return (11)if(sp()!=0)else(6)
+    return (6)if(sp()!=0)else(11)
 def _11():
     global t0
     t0=gr(tm(gr(1,2),gr(1,1)),(td(gr(1,2),gr(1,1)))+4)
@@ -215,9 +211,9 @@ def _15():
     return (17)if(sp()!=0)else(16)
 def _16():
     global t0
-    sa(sr());
-    sa(sr());
     t0=gr(2,2)+1
+    sa(sr());
+    sa(sr());
     sa(t0)
     v0=sp()
     v1=sp()
@@ -230,7 +226,7 @@ def _16():
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sp()+9);
+    sa(sp()+9)
 
     sa(2)
     v0=sp()
@@ -242,39 +238,32 @@ def _16():
     sa(v1)
     sa(td(sp(),gr(1,1)))
 
-    sa(sp()+4);
+    sa(sp()+4)
 
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
     return 17
 def _17():
-    return (21)if(sr()!=gr(3,2))else(18)
+    return (21)if((sr()-gr(3,2))!=0)else(18)
 def _18():
     sp();
 
-    return (20)if(sr()!=gr(3,1))else(19)
+    return (20)if((sr()-gr(3,1))!=0)else(19)
 def _19():
     print(gr(4,2),end=" ",flush=True)
     sp();
-    return 27
+    return 28
 def _20():
-    sa(sp()+1);
+    sa(sp()+1)
 
     sa(sr());
     gw(1,2,sp())
-    gw(2,2,0)
-    gw(9,2,0)
-    gw(3,2,0)
-    return 6
+    return 5
 def _21():
-    sa(sp()+1);
+    sa(sp()+1)
 
-    sa(sr()+9)
-    sa(2)
-    v0=sp()
-    sa(gr(sp(),v0))
-    sa((1)if(sp()>gr(3,1))else(0))
+    sa((1)if(gr(sr()+9,2)>gr(3,1))else(0))
     return 15
 def _22():
     gw(4,2,gr(4,2)+1)
@@ -283,22 +272,22 @@ def _23():
     sa(sp()+sp());
     return 9
 def _24():
-    sa((tm(sr(),10))+9)
-    sa(0)
-    v0=sp()
-    sa(gr(sp(),v0))
+    sa(gr((sr()%10)+9,0))
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(td(sp(),10))
+    sa(sp()/10);
 
     sa(sr());
     return 25
 def _25():
     return (24)if(sp()!=0)else(8)
 def _26():
-    sa(sp()-1);
+    sa(sr());
+    return 3
+def _27():
+    sa(sp()-1)
 
     sa(sr());
     sa(0)
@@ -313,13 +302,14 @@ def _26():
     sa(v1)
     sa(td(sp(),gr(1,1)))
 
-    sa(sp()+4);
+    sa(sp()+4)
 
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
+    sa(sr());
     return 1
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25,_26]
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16,_17,_18,_19,_20,_21,_22,_23,_24,_25,_26,_27]
 c=0
-while c<27:
+while c<28:
     c=m[c]()

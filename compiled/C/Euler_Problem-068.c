@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -22,28 +22,23 @@ void sa(int64 v){if(q-y<8)s=(int64*)realloc(s,(q*=2)*sizeof(int64));s[y++]=v;}
 int64 sr(){if(!y)return 0;return s[y-1];}
 int main(void)
 {
-    int64 t0,t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13;
+    int64 t0,t1;
     d();
     s=(int64*)calloc(q,sizeof(int64));
     gw(9,0,58);
     gw(3,0,0);
 _1:
-    sa(gr(gr(3,0)+9,0)-1);
+    t0=gr(gr(3,0)+9,0)-49;
+    t1=gr(gr(3,0)+9,0)-49;
     gw(gr(3,0)+9,0,gr(gr(3,0)+9,0)-1);
-    sa(sp()-48LL);
+    gw(7,0,t1);
+    t0=t0<0?1:0;
 
-    sa(sr());
-    gw(7,0,sp());
-    sa((sp()<0)?1:0);
-
-
-    if(sp()!=0)goto _2;else goto _3;
+    if((t0)!=0)goto _2;else goto _3;
 _2:
     sa(79);
-    sa(gr(3,0)-1);
+    sa(gr(3,0)+8);
     gw(3,0,gr(3,0)-1);
-    sa(sp()+9LL);
-
     sa(0);
     {int64 v0=sp();sa(gr(sp(),v0));}
     sa(sp()-48LL);
@@ -54,7 +49,7 @@ _2:
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     goto _1;
 _3:
-    if(gr(gr(7,0)+9,1)-79==0)goto _4;else goto _1;
+    if(gr(gr(7,0)+9,1)!=79)goto _1;else goto _4;
 _4:
     sa(gr(3,0));
 
@@ -114,47 +109,31 @@ _14:
 _15:
     sp();
 
-    if(9<=gr(3,0))goto _17;else goto _16;
+    if(9>gr(3,0))goto _16;else goto _17;
 _16:
     gw(gr(7,0)+9,1,88);
     sa(58);
-    sa(gr(3,0)+1);
+    sa(gr(3,0)+10);
     gw(3,0,gr(3,0)+1);
-    sa(sp()+9LL);
-
     sa(0);
     {int64 v0=sp();int64 v1=sp();gw(v1,v0,sp());}
     goto _1;
 _17:
-    t0=gr(10,0)-47;
-    t1=gr(17,0)-47;
-    t2=gr(18,0)-47;
-    t3=gr(17,0)-47;
-    t4=gr(15,0)-47;
-    t5=gr(16,0)-47;
-    t6=gr(15,0)-47;
-    t7=gr(13,0)-47;
-    t8=gr(14,0)-47;
-    t9=gr(13,0)-47;
-    t10=gr(11,0)-47;
-    t11=gr(12,0)-47;
-    t12=gr(11,0)-47;
-    t13=gr(10,0)-47;
     printf("%lld ", gr(9,0)-47);
-    printf("%lld ", t13);
-    printf("%lld ", t12);
-    printf("%lld ", t11);
-    printf("%lld ", t10);
-    printf("%lld ", t9);
-    printf("%lld ", t8);
-    printf("%lld ", t7);
-    printf("%lld ", t6);
-    printf("%lld ", t5);
-    printf("%lld ", t4);
-    printf("%lld ", t3);
-    printf("%lld ", t2);
-    printf("%lld ", t1);
-    printf("%lld ", t0);
+    printf("%lld ", gr(10,0)-47);
+    printf("%lld ", gr(11,0)-47);
+    printf("%lld ", gr(12,0)-47);
+    printf("%lld ", gr(11,0)-47);
+    printf("%lld ", gr(13,0)-47);
+    printf("%lld ", gr(14,0)-47);
+    printf("%lld ", gr(13,0)-47);
+    printf("%lld ", gr(15,0)-47);
+    printf("%lld ", gr(16,0)-47);
+    printf("%lld ", gr(15,0)-47);
+    printf("%lld ", gr(17,0)-47);
+    printf("%lld ", gr(18,0)-47);
+    printf("%lld ", gr(17,0)-47);
+    printf("%lld ", gr(10,0)-47);
     return 0;
 _18:
     sp();

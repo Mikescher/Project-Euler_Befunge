@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABADFmMtuZUkRRX/FbcPIWJWvyEepsJgw5wtcElCyhBphtcAjPp610l0+SVE8Zljtct9zT2bGY8eOHfl648+HDze/++kvf/ryh7/e/PZvP3756ebBz7//"
@@ -75,73 +75,75 @@ def _1():
     t0=gr(1,0)-1
     gw(1,0,gr(1,0)-1)
 
-    return (15)if((t0)!=0)else(2)
+    return (4)if((t0)!=0)else(2)
 def _2():
     global t0
     gw(1,0,5)
     t0=gr(2,0)-1
     gw(2,0,gr(2,0)-1)
 
-    return (15)if((t0)!=0)else(3)
+    return (4)if((t0)!=0)else(3)
 def _3():
+    sa(1)
+    return 4
+def _4():
+    return (5)if(sp()!=0)else(1)
+def _5():
     gw(1,0,55)
     gw(2,0,1)
     gw(3,0,0)
     gw(0,0,0)
-    return 4
-def _4():
-    return (8)if(gr(gr(1,0),gr(2,0))-32==0)else(5)
-def _5():
-    gw(0,0,(gr(gr(1,0),gr(2,0))-48)+gr(0,0))
-    gw(2,0,gr(2,0)+1)
+    sa(0)
+    sp();
     return 6
 def _6():
-    return (5)if(gr(gr(1,0),gr(2,0))!=32)else(7)
+    return (14)if(gr(gr(1,0),gr(2,0))!=32)else(7)
 def _7():
-    global t0
-    t0=gr(0,0)
-    gw(gr(1,0),gr(2,0),(tm(gr(0,0),10))+48)
-    gw(2,0,1)
-    gw(1,0,gr(1,0)-1)
-    t0=td(t0,10)
-    gw(0,0,t0)
-    return 4
-def _8():
     gw(1,0,0)
     gw(2,0,101)
-    return 9
-def _9():
-    global t0
+    sa(0)
+    sp();
+    return 8
+def _8():
     sa(gr(1,0)+1)
     gw(1,0,gr(1,0)+1)
     sa(gr(2,0))
     v0=sp()
-    t0=gr(sp(),v0)
-    t0=t0-48
-    t0=(0)if(t0!=0)else(1)
-    return 10
+    sa(gr(sp(),v0))
+    sa(sp()-48)
+    return 9
+def _9():
+    return (10)if(sp()!=0)else(8)
 def _10():
-    global t0
-    return (9)if((t0)!=0)else(11)
-def _11():
     gw(0,0,10)
-    return 12
-def _12():
-    global t0
-    t0=gr(0,0)
+    return 11
+def _11():
+    sa(gr(0,0))
     gw(0,0,gr(0,0)-1)
-    t0=(0)if(t0!=0)else(1)
 
-    return (13)if((t0)!=0)else(14)
+    return (13)if(sp()!=0)else(12)
+def _12():
+    return 17
 def _13():
-    return 16
-def _14():
     sys.stdout.write(chr(gr((9-gr(0,0))+gr(1,0),gr(2,0))))
     sys.stdout.flush()
-    return 12
+    return 11
+def _14():
+    gw(0,0,(gr(gr(1,0),gr(2,0))-48)+gr(0,0))
+    gw(2,0,gr(2,0)+1)
+    return 15
 def _15():
-    return (3)if(sp()!=0)else(1)
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15]
+    return (14)if(gr(gr(1,0),gr(2,0))!=32)else(16)
+def _16():
+    sa(gr(0,0)/10)
+    gw(gr(1,0),gr(2,0),(gr(0,0)%10)+48)
+    gw(2,0,1)
+    gw(1,0,gr(1,0)-1)
+    gw(0,0,sp())
+    sa(5)
+    sp();
+    return 6
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15,_16]
 c=0
-while c<16:
+while c<17:
     c=m[c]()

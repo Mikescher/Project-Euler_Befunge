@@ -1,12 +1,12 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
+private static long td(long a,long b){ return (b==0)?0:(a/b); }
+private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static long td(long a,long b){ return (b==0)?0:(a/b); }
-private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
 {
         long t0,t1;
@@ -16,26 +16,28 @@ static void Main(string[]args)
         sa(999);
         sa(9+x0);
         sa(99);
+        sa(99);
     _1:
+        if(sp()!=0)goto _2;else goto _3;
+    _2:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()*10L);
 
         x0=sp();
-        sa((tm(sr(),10))+x0);
+        sa((sr()%10)+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(td(sp(),10));
+        sa(sp()/10L);
 
         sa(sr());
-    _2:
-        if(sp()!=0)goto _1;else goto _3;
+        goto _1;
     _3:
         x0=0;
         sp();
         sa(sr());
         sa(sr());
     _4:
-        t0=(tm(sr(),2))+x0;
-        sa(td(sp(),2));
+        t0=(sr()%2)+x0;
+        sa(sp()/2L);
 
         sa(sr());
 
@@ -45,9 +47,8 @@ static void Main(string[]args)
         sa(sp()-t0);
 
         t1=sp();
-        t1=(t1!=0)?0:1;
 
-        if((t1)!=0)goto _24;else goto _6;
+        if((t1)!=0)goto _6;else goto _24;
     _6:
         sp();
     _7:
@@ -60,37 +61,39 @@ static void Main(string[]args)
         sa(sr());
         t0=sr()*10;
         x0=t0;
-        sa((tm(sr(),10))+x0);
+        sa((sr()%10)+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(td(sp(),10));
+        sa(sp()/10L);
 
         sa(sr());
-        goto _2;
+        goto _1;
     _9:
         x0=990;
         sa(999);
         sa(9+x0);
         sa(99);
+        sa(99);
     _10:
+        if(sp()!=0)goto _11;else goto _12;
+    _11:
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
         sa(sp()*10L);
 
         x0=sp();
-        sa((tm(sr(),10))+x0);
+        sa((sr()%10)+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(td(sp(),10));
+        sa(sp()/10L);
 
         sa(sr());
-    _11:
-        if(sp()!=0)goto _10;else goto _12;
+        goto _10;
     _12:
         x0=0;
         sp();
         sa(sr());
         sa(sr());
     _13:
-        t0=(tm(sr(),2))+x0;
-        sa(td(sp(),2));
+        t0=(sr()%2)+x0;
+        sa(sp()/2L);
 
         sa(sr());
 
@@ -100,9 +103,8 @@ static void Main(string[]args)
         sa(sp()-t0);
 
         t1=sp();
-        t1=(t1!=0)?0:1;
 
-        if((t1)!=0)goto _22;else goto _15;
+        if((t1)!=0)goto _15;else goto _22;
     _15:
         sp();
     _16:
@@ -113,14 +115,14 @@ static void Main(string[]args)
         if(sp()!=0)goto _17;else goto _18;
     _17:
         sa(sr());
-        t0=(td(sr(),10))*10;
+        t0=(sr()/10)*10;
         x0=t0;
-        sa((tm(sr(),10))+x0);
+        sa((sr()%10)+x0);
         {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-        sa(td(sp(),10));
+        sa(sp()/10L);
 
         sa(sr());
-        goto _11;
+        goto _10;
     _18:
         System.Console.Out.Write(" =");
     _19:

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import gzip, base64
 _g = ("Ah+LCAAAAAAABADNe3dYU126PSoKiIJ0kCYgIBiqhWIAld4EkdB7ld5LqNKlKE1AikGkKEE6hN6lRoiCFOk9BKSFXvM7wZm5353vzjx35t77PD//YGevvd71rnefs/fJ"
   + "9slhjSYmwP8jJFidUC126HbhWmxyfYTgujlSmxurGHQDvDkuTU6cb6p/q/l5m0zb0KfA+pU3hwZTseXDPbFdBqnxqAvS7iTW619fMscLFDCW4E4G0ptwR2o4ZOBREw4V"
@@ -167,29 +167,10 @@ def sr():
     return s[-1]
 def _0():
     gw(1999,1000,35)
-    sa(1999998)
+    sa(1999999)
+    sa(1999999)
     return 1
 def _1():
-    sa(sr());
-    sa(35)
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(tm(sr(),2000))
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa(td(sp(),2000))
-
-    sa(sp()+1);
-
-    v0=sp()
-    v1=sp()
-    gw(v1,v0,sp())
-    sa(sr());
-
     return (15)if(sp()!=0)else(2)
 def _2():
     gw(1,0,2000)
@@ -213,15 +194,17 @@ def _5():
 def _6():
     global t0
     sa(gr(3,0)+1)
+    sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
-    sa(tm(sr(),gr(1,0)))
+    sa(tm(sp(),gr(1,0)))
+
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa(td(sp(),gr(1,0)))
 
-    sa(sp()+1);
+    sa(sp()+1)
 
     v0=sp()
     t0=gr(sp(),v0)
@@ -239,15 +222,17 @@ def _9():
 def _10():
     global t0
     sa(gr(3,0)+1)
+    sa(gr(3,0)+1)
     gw(3,0,gr(3,0)+1)
-    sa(tm(sr(),gr(1,0)))
+    sa(tm(sp(),gr(1,0)))
+
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
     sa(td(sp(),gr(1,0)))
 
-    sa(sp()+1);
+    sa(sp()+1)
 
     v0=sp()
     t0=gr(sp(),v0)
@@ -258,7 +243,7 @@ def _11():
     gw(4,0,gr(3,0)+gr(4,0))
     return 12
 def _12():
-    return (10)if(gr(0,0)!=gr(3,0))else(13)
+    return (10)if((gr(0,0)-gr(3,0))!=0)else(13)
 def _13():
     print(gr(4,0),end=" ",flush=True)
     return 16
@@ -276,17 +261,37 @@ def _14():
     sa(v1)
     sa(td(sp(),gr(1,0)))
 
-    sa(sp()+1);
+    sa(sp()+1)
 
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
-    sa(sp()+gr(3,0));
+    sa(sp()+gr(3,0))
 
     sa((1)if(sr()<gr(0,0))else(0))
     return 4
 def _15():
-    sa(sp()-1);
+    sa(sp()-1)
+
+    sa(sr());
+    sa(35)
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sr()%2000)
+    v0=sp()
+    v1=sp()
+    sa(v0)
+    sa(v1)
+    sa(sp()/2000);
+
+    sa(sp()+1)
+
+    v0=sp()
+    v1=sp()
+    gw(v1,v0,sp())
+    sa(sr());
     return 1
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13,_14,_15]
 c=0

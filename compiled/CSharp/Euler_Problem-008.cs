@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABADtl81uG0cQhF+FYJyLaCf9O90tJEIeJHBy45UnPb+/kS0ECAwo1vKYAYYr7nC3pquraqDz81nklvHwqFzSHh4eTW4PLrfOS8hNkrmYxWy5nRjPp2Pj"+
@@ -17,10 +17,6 @@ private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
                                  using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
 private static long gr(long x,long y){return(x>=0&&y>=0&&x<116&&y<29)?g[y*116+x]:0;}
 private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<116&&y<29)g[y*116+x]=v;}
-private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
-private static long sp(){ return (s.Count==0)?0:s.Pop(); }
-private static void sa(long v){ s.Push(v); }
-private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
@@ -35,6 +31,7 @@ static void Main(string[]args)
         gw(6,0,0);
         gw(7,0,0);
         gw(8,0,0);
+        t0=0;
     _1:
         gw(6,0,gr(5,0));
         t0=gr(tm(gr(6,0),gr(2,0)),(td(gr(6,0),gr(2,0)))+9)-48;
@@ -61,7 +58,7 @@ static void Main(string[]args)
     _7:
         System.Console.Out.Write((char)(gr(gr(7,0),0)+48));
 
-        if(gr(7,0)-8!=gr(4,0))goto _9;else goto _8;
+        if((gr(7,0)-8-gr(4,0))!=0)goto _9;else goto _8;
     _8:
         System.Console.Out.Write('=');
         System.Console.Out.Write(gr(8,0)+" ");

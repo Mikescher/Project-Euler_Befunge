@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -18,14 +18,12 @@ int main(void)
     int64 x4=32;
     s=(int64*)calloc(q,sizeof(int64));
 _1:
-    if(x3<=x2)goto _2;else goto _8;
+    if(x3>x2)goto _8;else goto _2;
 _2:
-    t0=x2-1;
+    t0=x2-10;
     x2--;
-    t0-=9;
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)goto _3;else goto _7;
+    if((t0)!=0)goto _7;else goto _3;
 _3:
     sp();
     sa(x0);
@@ -51,38 +49,36 @@ _7:
     x3=99;
     goto _1;
 _8:
-    if(td(x2,10)!=0)goto _20;else goto _9;
+    if((x2/10)!=0)goto _20;else goto _9;
 _9:
-    if(td(x2,10)!=0)goto _18;else goto _10;
+    if((x2/10)!=0)goto _18;else goto _10;
 _10:
-    if(tm(x2,10)!=0)goto _16;else goto _11;
+    if((x2%10)!=0)goto _16;else goto _11;
 _11:
-    if(tm(x2,10)!=0)goto _13;else goto _12;
+    if((x2%10)!=0)goto _13;else goto _12;
 _12:
-    t0=x3-1;
+    t0=x3-10;
     x3--;
-    t0-=9;
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)goto _2;else goto _1;
+    if((t0)!=0)goto _1;else goto _2;
 _13:
-    if((tm(x2,10))!=(tm(x3,10)))goto _12;else goto _14;
+    if(((x2%10)-(x3%10))!=0)goto _12;else goto _14;
 _14:
-    if((x2*(tm(x3,10)))!=(x3*(tm(x2,10))))goto _12;else goto _15;
+    if(((x2*(x3%10))-(x3*(x2%10)))!=0)goto _12;else goto _15;
 _15:
     x0*=x2;
     x1*=x3;
     goto _12;
 _16:
-    if((tm(x2,10))!=(td(x3,10)))goto _11;else goto _17;
+    if(((x2%10)-(x3/10))!=0)goto _11;else goto _17;
 _17:
-    if((x2*(tm(x3,10)))!=(x3*(td(x2,10))))goto _11;else goto _15;
+    if(((x2*(x3%10))-(x3*(x2/10)))!=0)goto _11;else goto _15;
 _18:
-    if((td(x2,10))!=(tm(x3,10)))goto _10;else goto _19;
+    if(((x2/10)-(x3%10))!=0)goto _10;else goto _19;
 _19:
-    if((x2*(td(x3,10)))!=(x3*(tm(x2,10))))goto _10;else goto _15;
+    if(((x2*(x3/10))-(x3*(x2%10)))!=0)goto _10;else goto _15;
 _20:
-    if((td(x2,10))!=(td(x3,10)))goto _9;else goto _21;
+    if(((x2/10)-(x3/10))!=0)goto _9;else goto _21;
 _21:
-    if((x2*(td(x3,10)))!=(x3*(td(x2,10))))goto _9;else goto _15;
+    if(((x2*(x3/10))-(x3*(x2/10)))!=0)goto _9;else goto _15;
 }

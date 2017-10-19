@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -25,10 +25,11 @@ int main(void)
     gw(9,1,1);
     gw(2,0,0);
     gw(3,0,1);
+    t0=0;
 _1:
     sa(gr(3,0));
 
-    if(gr(3,0)-100==0)goto _2;else goto _3;
+    if(gr(3,0)!=100)goto _3;else goto _2;
 _2:
     printf("%lld ", gr(2,0));
     sp();
@@ -38,51 +39,39 @@ _3:
 
     sa(sr());
     gw(3,0,sp());
-    sa(td(sp(),2));
+    sa(sp()/2LL);
 
     gw(4,0,sp());
     sa(gr(3,0)-(gr(4,0)*2));
 _4:
-    if(sp()!=0)goto _15;else goto _5;
+    if(sp()!=0)goto _13;else goto _5;
 _5:
-    sa(gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1)*2);
-    gw(gr(4,0)+9,tm(gr(3,0),2),gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1)*2);
+    sa((gr(gr(4,0)+8,(gr(3,0)%2!=0)?0:1)*2)>1000000?1:0);
+    gw(gr(4,0)+9,gr(3,0)%2,gr(gr(4,0)+8,(gr(3,0)%2!=0)?0:1)*2);
 _6:
-    sa((sp()>1000000)?1:0);
+    t0=((gr(gr(4,0)+9,(gr(3,0)%2!=0)?0:1))!=0)?0:1;
 
-    t0=((gr(gr(4,0)+9,(tm(gr(3,0),2)!=0)?0:1))!=0)?0:1;
-
-    if((((gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1))!=0)?1:0)!=0)goto _7;else goto _13;
+    if((gr(gr(4,0)+8,(gr(3,0)%2!=0)?0:1))!=0)goto _11;else goto _7;
 _7:
-    t0=(t0!=0)?0:1;
-
-    if((t0)!=0)goto _8;else goto _13;
+    sp();
 _8:
-    sa((sp()!=0)?0:1);
-
-    if(sp()!=0)goto _9;else goto _11;
+    gw(2,0,gr(2,0)+((gr(3,0)-(gr(4,0)*2)!=0)?1:0)+1LL);
+    gw(gr(4,0)+9,gr(3,0)%2,0);
+    sp();
 _9:
     t0=gr(4,0)-1;
     gw(4,0,gr(4,0)-1);
-    t0=(t0!=0)?0:1;
 
-    if((t0)!=0)goto _1;else goto _10;
+    if((t0)!=0)goto _10;else goto _1;
 _10:
     sa(sp()-(gr(3,0)-(gr(4,0)*2)));
     goto _4;
 _11:
-    gw(2,0,gr(2,0)+((gr(3,0)-(gr(4,0)*2)!=0)?1:0)+1LL);
-    gw(gr(4,0)+9,tm(gr(3,0),2),0);
+    if((t0)!=0)goto _7;else goto _12;
 _12:
-    sp();
-    goto _9;
+    if(sp()!=0)goto _8;else goto _9;
 _13:
-    gw(2,0,gr(2,0)+((gr(3,0)-(gr(4,0)*2)!=0)?1:0)+1LL);
-    gw(gr(4,0)+9,tm(gr(3,0),2),0);
-    sp();
-    goto _12;
-_15:
-    sa(gr(gr(4,0)+9,(tm(gr(3,0),2)!=0)?0:1)+gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1));
-    gw(gr(4,0)+9,tm(gr(3,0),2),gr(gr(4,0)+9,(tm(gr(3,0),2)!=0)?0:1)+gr(gr(4,0)+8,(tm(gr(3,0),2)!=0)?0:1));
+    sa((gr(gr(4,0)+9,(gr(3,0)%2!=0)?0:1)+gr(gr(4,0)+8,(gr(3,0)%2!=0)?0:1))>1000000?1:0);
+    gw(gr(4,0)+9,gr(3,0)%2,gr(gr(4,0)+9,(gr(3,0)%2!=0)?0:1)+gr(gr(4,0)+8,(gr(3,0)%2!=0)?0:1));
     goto _6;
 }

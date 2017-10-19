@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -30,30 +30,34 @@ x6=63
 x7=63
 x8=63
 def _0():
-    global t0
-    t0=1
+    sa(1)
+    sa(0)
     return 1
 def _1():
+    return (5)if(sp()!=0)else(2)
+def _2():
     global x5
     global t0
-    global t1
     global x6
-    x5=t0
-    t1=td(t0*3,7)
-    x6=t1
-    t1=t1*7
-    t1=t1-(x5*3)
+    x5=sr()
+    t0=(sr()*3)/7
+    x6=t0
+    t0=t0*7
+    t0=t0-(x5*3)
 
-    return (2)if(t1>0)else(7)
-def _2():
+    return (3)if(t0>0)else(8)
+def _3():
     global x7
-    global t1
+    global t0
     global x8
-    x7=t1
+    global x5
+    global x4
+    global x3
+    x7=t0
     x8=x5*7
 
-    return (3)if((x4*x8)>(x3*x7))else(4)
-def _3():
+    return (4)if((x4*x8)>(x3*x7))else(5)
+def _4():
     global x4
     global x7
     global x3
@@ -66,14 +70,10 @@ def _3():
     x3=x8
     x0=x6
     x2=x5
-    return 4
-def _4():
-    return (5)if(t0!=x1)else(6)
+    return 5
 def _5():
-    global t0
-    t0=t0+1
-
-    return (4)if(tm(t0*3,7)==0)else(1)
+    global x1
+    return (7)if((sr()-x1)!=0)else(6)
 def _6():
     global x0
     global x2
@@ -88,12 +88,19 @@ def _6():
 
     sys.stdout.write(str(x2)+" ")
     sys.stdout.flush()
-    return 8
+
+    sp();
+    return 9
 def _7():
-    global t1
-    t1=t1*-1
-    return 2
-m=[_0,_1,_2,_3,_4,_5,_6,_7]
+    sa(sp()+1)
+
+    sa((0)if((sr()*3)%7!=0)else(1))
+    return 1
+def _8():
+    global t0
+    t0=t0*-1
+    return 3
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8]
 c=0
-while c<8:
+while c<9:
     c=m[c]()

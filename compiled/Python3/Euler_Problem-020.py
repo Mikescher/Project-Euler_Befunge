@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABAC9jz0KAjEQha+SnZhmh5hMhogECbZeYrcR0qZK6dkddxVEEGOzrxjmD977mt9AbQMPynCFTDYNus3Jc/XEFW4XwMA1By5yNoRr4wp4sJ7LSFwwxYjm"
   + "cFRNdWla6k5/rOdJD5VDslQ4VCaHMVYnZjIimWcznvpMVuUFgAUm84uA3whQKRkTWXnpjf9N5/2D4NfXX/HVHUV2dgFeAgAA")
@@ -35,55 +35,54 @@ def sr():
     return s[-1]
 def _0():
     sa(99)
+    sa(0)
     return 1
 def _1():
+    return (6)if(sp()!=0)else(2)
+def _2():
     sa(sr());
     gw(0,3,sp())
     gw(1,3,0)
     gw(2,3,199)
-    return 2
-def _2():
-    global t0
-    t0=((gr((tm(gr(2,3),100))+1,td(gr(2,3),100))-48)*gr(0,3))+gr(1,3)
-    gw((tm(gr(2,3),100))+1,td(gr(2,3),100),(tm(((gr((tm(gr(2,3),100))+1,td(gr(2,3),100))-48)*gr(0,3))+gr(1,3),10))+48)
-    t0=td(t0,10)
-    gw(1,3,t0)
-    t0=gr(2,3)-1
-    gw(2,3,gr(2,3)-1)
-    t0=(0)if(t0!=0)else(1)
     return 3
 def _3():
     global t0
-    return (4)if((t0)!=0)else(2)
+    t0=(((gr((gr(2,3)%100)+1,gr(2,3)/100)-48)*gr(0,3))+gr(1,3))/10
+    gw((gr(2,3)%100)+1,gr(2,3)/100,((((gr((gr(2,3)%100)+1,gr(2,3)/100)-48)*gr(0,3))+gr(1,3))%10)+48)
+    gw(1,3,t0)
+    t0=gr(2,3)-1
+    gw(2,3,gr(2,3)-1)
+    return 4
 def _4():
-    sa(sp()-1);
+    global t0
+    return (3)if((t0)!=0)else(5)
+def _5():
+    sa(sp()-1)
 
     sa(sr());
     sa((0)if(sp()!=0)else(1))
-
-    return (5)if(sp()!=0)else(1)
-def _5():
+    return 1
+def _6():
     global t0
     gw(3,3,199)
+    t0=gr((gr(3,3)%100)+1,gr(3,3)/100)-48
     sp();
-    t0=gr((tm(gr(3,3),100))+1,td(gr(3,3),100))-48
-    return 6
-def _6():
+    return 7
+def _7():
     global t1
     t1=gr(3,3)
     gw(3,3,gr(3,3)-1)
-    t1=(0)if(t1!=0)else(1)
 
-    return (7)if((t1)!=0)else(8)
-def _7():
-    global t0
-    print(t0,end=" ",flush=True)
-    return 9
+    return (9)if((t1)!=0)else(8)
 def _8():
     global t0
-    t0=t0+(gr((tm(gr(3,3),100))+1,td(gr(3,3),100))-48)
-    return 6
-m=[_0,_1,_2,_3,_4,_5,_6,_7,_8]
+    print(t0,end=" ",flush=True)
+    return 10
+def _9():
+    global t0
+    t0=t0+(gr((gr(3,3)%100)+1,gr(3,3)/100)-48)
+    return 7
+m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9]
 c=0
-while c<9:
+while c<10:
     c=m[c]()

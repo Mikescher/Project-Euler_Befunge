@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADlmM1uIzcQhF+lIWcvGjjmP4eCoAR5DsPOba466bQPv1+1tJtdIM5KCJhLiLFEzlBgTXV1NemLfd8u9kg7PjT7oXbalV16OezjcwhnO1kIYTuY37RP"+
                                  "u992y+tt8BIXO5vp8XWuPb29X5YP2zzId7T/G6ywWkiWko1uebVYiZOVoM9Ov1jgs1tfrSaLySr3u42oH34WrKe/af8eVhm6xhCU2G2NFkHQrQVbu+5wf6xWsjXmrAJa"+
@@ -28,13 +28,13 @@ private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
 private long sp(){return(s.size()==0)?0:s.pop();}
 private void sa(long v){s.push(v);}
 private long sr(){return(s.size()==0)?0:s.peek();}
-long t0,t1,t2,t3,t4;
+long t0,t1,t2,t3;
 private int _0(){
     gw(0,0,675);
     return 1;
 }
 private int _1(){
-    gw((tm(gr(0,0),26))+63,(td(gr(0,0),26))+1,0);
+    gw((gr(0,0)%26)+63,(gr(0,0)/26)+1,0);
     t0=gr(0,0);
     gw(0,0,gr(0,0)-1);
     return 2;
@@ -54,7 +54,7 @@ private int _3(){
     return 4;
 }
 private int _4(){
-    gw((tm(gr(0,0),20))+66,(td(gr(0,0),20))+4,((gr(((tm(gr(0,0),20))*3)+1,(td(gr(0,0),20))+4)-48)*10)+(gr(((tm(gr(0,0),20))*3)+2,(td(gr(0,0),20))+4)-48));
+    gw((gr(0,0)%20)+66,(gr(0,0)/20)+4,((gr(((gr(0,0)%20)*3)+1,(gr(0,0)/20)+4)-48)*10)+(gr(((gr(0,0)%20)*3)+2,(gr(0,0)/20)+4)-48));
     t0=gr(0,0);
     gw(0,0,gr(0,0)-1);
     return 5;
@@ -76,9 +76,8 @@ private int _8(){
     sa(1);
     {long v0=sp();t0=gr(sp(),v0);}
     gw(4,0,t0);
-    t0=gr(0,0);
-    gw(5,0,tm(gr(0,0),20));
-    t0/=20;
+    t0=gr(0,0)/20;
+    gw(5,0,gr(0,0)%20);
     gw(6,0,t0);
     t0=gr(gr(5,0)+66,gr(6,0)+4);
     gw(5,0,gr(5,0)+gr(3,0));
@@ -89,12 +88,11 @@ private int _8(){
     t2=gr(gr(5,0)+66,gr(6,0)+4);
     gw(5,0,gr(5,0)+gr(3,0));
     gw(6,0,gr(6,0)+gr(4,0));
-    t3=gr(gr(5,0)+66,gr(6,0)+4);
+    t2*=gr(gr(5,0)+66,gr(6,0)+4);
     gw(5,0,gr(5,0)+gr(3,0));
     gw(6,0,gr(6,0)+gr(4,0));
-    t4=t2*t3;
-    t2=t1*t4;
-    t1=t0*t2;
+    t3=t1*t2;
+    t1=t0*t3;
 
     if(t1>gr(1,0))return 12;else return 9;
 }

@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADtkc8KgzAMxl9FCl4Mzq9qVxCRPYmnQa49efLhF5ljRdmYjv055Lsk/dL0l7ZD8jths/a0KFrRila0ohWtaEUr+iNou6flz9Q5d/RZlgHBlMYiJGWF"+
                                  "0A3fQG+yp//hGgFOxqvBNpfFFMGpqQ1d08ISG5i8mSt24TswUTIkQ7s4fGU80MioA9mCYSUjm86JHB7ZMlBUSMk5mbuQ0LR9O+aZZOZscoZnQAzZxLduf+/2bYCXK1ck"+
@@ -16,10 +16,6 @@ private long gr(long x,long y){return(x>=0&&y>=0&&x<123&&y<28)?g[(int)(y*123+x)]
 private void gw(long x,long y,long v){if(x>=0&&y>=0&&x<123&&y<28)g[(int)(y*123+x)]=v;}
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
-private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
-private long sp(){return(s.size()==0)?0:s.pop();}
-private void sa(long v){s.push(v);}
-private long sr(){return(s.size()==0)?0:s.peek();}
 long t0,t1;
 private int _0(){
     gw(0,0,1050);
@@ -35,10 +31,8 @@ private int _1(){
 private int _2(){
     gw(4,0,gr(4,0)-1);
     t0=gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48;
-    t1=(gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0);
-    gw(5,0,td((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0),10));
-    t1%=10;
-    t1+=48;
+    t1=(((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0))%10)+48;
+    gw(5,0,((gr((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1)-48)+(gr((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1)-48)+gr(5,0))/10);
     gw((tm(gr(4,0),gr(1,0)))+52,(td(gr(4,0),gr(1,0)))+1,t1);
     t0+=48;
     gw((tm(gr(4,0),gr(1,0)))+1,(td(gr(4,0),gr(1,0)))+1,t0);
@@ -60,7 +54,7 @@ private int _6(){
     return 5;
 }
 private int _7(){
-    if(gr(0,0)-gr(7,0)!=1000)return 1;else return 8;
+    if((gr(0,0)-gr(7,0))!=1000)return 1;else return 8;
 }
 private int _8(){
     System.out.print(String.valueOf(gr(3,0))+" ");

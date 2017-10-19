@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABACtnVtvHMcRhf9KgbZeuGC8u6ICcUEwTrqTmMl27mE2ASHnIcC+8olPyn/PTFdVz9A2DTPnG8CgBEulmp7urtupU8+//FWpv/7Nb7+5/93vj+0Pf/zT"+
@@ -55,12 +55,12 @@ private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
                                  using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
 private static long gr(long x,long y){return(x>=0&&y>=0&&x<73&&y<1009)?g[y*73+x]:0;}
 private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<73&&y<1009)g[y*73+x]=v;}
+private static long td(long a,long b){ return (b==0)?0:(a/b); }
+private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static long td(long a,long b){ return (b==0)?0:(a/b); }
-private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
 {
         gw(9,2,0);
@@ -73,7 +73,10 @@ static void Main(string[]args)
         gw(13,0,1000);
         gw(10,1,gr(10,1)-48);
         sa(9);
+        sa(9);
     _1:
+        if(sp()!=0)goto _2;else goto _3;
+    _2:
         sa(sr());
         sa(sr());
         sa(1);
@@ -86,7 +89,7 @@ static void Main(string[]args)
         sa(sp()-1L);
 
         sa(sr());
-        if(sp()!=0)goto _1;else goto _3;
+        goto _1;
     _3:
         gw(1,2,9);
         sp();
@@ -140,7 +143,7 @@ static void Main(string[]args)
         sa(sr());
         goto _7;
     _11:
-        gw(9,2,(gr(3,2)-((td(gr(2,2),1000))+gr((td(tm(gr(2,2),1000),100))+1,1)+gr((tm(gr(2,2),10))+1,1)+gr((td(tm(gr(2,2),100),10))+1,1)))+gr(9,2));
+        gw(9,2,(gr(3,2)-((gr(2,2)/1000)+gr(((gr(2,2)%1000)/100)+1,1)+gr((gr(2,2)%10)+1,1)+gr(((gr(2,2)%100)/10)+1,1)))+gr(9,2));
         sp();
         sa(sp()+1L);
 

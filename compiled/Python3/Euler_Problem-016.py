@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABADtj70OwjAMhF/FBLo0CnVKc6CoqlhZmJhhzOqpE7w7ThH/CCFYuSGRfbY+X8/fq//vfipPP6gjwyZmMQt74Vp4JtwIB6GeqKpotV5tXu6qLWjKhTkY"
   + "AZeCOkLgo2kNUdurCecT8LjX3uAZyTtA7ga4I2gfqTh9VdIjnc3N/YmbNRm/C9Y+t6YZ2CDF0Xi7I+8axV74PNdn4A7uGXLWMnOR01i9pbAhRJswL2unpR4IT+oVaRh5"
@@ -20,20 +20,6 @@ def td(a,b):
     return ((0)if(b==0)else(a//b))
 def tm(a,b):
     return ((0)if(b==0)else(a%b))
-s=[]
-def sp():
-    global s
-    if (len(s) == 0):
-        return 0
-    return s.pop()
-def sa(v):
-    global s
-    s.append(v)
-def sr():
-    global s
-    if (len(s) == 0):
-        return 0
-    return s[-1]
 def _0():
     gw(0,0,48)
     gw(0,1,48)
@@ -50,7 +36,7 @@ def _1():
     global t0
     t0=gr(4,6)
 
-    return (2)if((gr(4,6))==0)else(6)
+    return (6)if((gr(4,6))!=0)else(2)
 def _2():
     global t0
     gw(6,6,gr(0,6)-1)
@@ -75,12 +61,11 @@ def _6():
     gw(7,6,0)
     return 7
 def _7():
-    return (1)if((gr(6,6))==0)else(8)
+    return (8)if((gr(6,6))!=0)else(1)
 def _8():
     global t0
-    t0=((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6)
-    gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),(tm(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6),10))+48)
-    t0=td(t0,10)
+    t0=(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6))/10
+    gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),((((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6))%10)+48)
     gw(7,6,t0)
     gw(6,6,gr(6,6)-1)
     return 7

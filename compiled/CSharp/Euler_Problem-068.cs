@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABAClks1yhCAMx18FcG8MFvxYjeMwfYO97qGj3rhy4rQPvwkq2g720GYGiJL880s0MPZktIpk7Moo8JEsF2HFIAKe4VKDsZGNIR4Y5o0EJbRwWoLX9aCM"+
@@ -12,34 +12,29 @@ private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
                                  using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
 private static long gr(long x,long y){return(x>=0&&y>=0&&x<39&&y<25)?g[y*39+x]:0;}
 private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<39&&y<25)g[y*39+x]=v;}
+private static long td(long a,long b){ return (b==0)?0:(a/b); }
+private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static long td(long a,long b){ return (b==0)?0:(a/b); }
-private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
 {
-        long t0,t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13;
+        long t0,t1;
         gw(9,0,58);
         gw(3,0,0);
     _1:
-        sa(gr(gr(3,0)+9,0)-1);
+        t0=gr(gr(3,0)+9,0)-49;
+        t1=gr(gr(3,0)+9,0)-49;
         gw(gr(3,0)+9,0,gr(gr(3,0)+9,0)-1);
-        sa(sp()-48L);
+        gw(7,0,t1);
+        t0=t0<0?1:0;
 
-        sa(sr());
-        gw(7,0,sp());
-        sa((sp()<0)?1:0);
-
-
-        if(sp()!=0)goto _2;else goto _3;
+        if((t0)!=0)goto _2;else goto _3;
     _2:
         sa(79);
-        sa(gr(3,0)-1);
+        sa(gr(3,0)+8);
         gw(3,0,gr(3,0)-1);
-        sa(sp()+9L);
-
         sa(0);
         {long v0=sp();sa(gr(sp(),v0));}
         sa(sp()-48L);
@@ -50,7 +45,7 @@ static void Main(string[]args)
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _1;
     _3:
-        if(gr(gr(7,0)+9,1)-79==0)goto _4;else goto _1;
+        if(gr(gr(7,0)+9,1)!=79)goto _1;else goto _4;
     _4:
         sa(gr(3,0));
 
@@ -110,47 +105,31 @@ static void Main(string[]args)
     _15:
         sp();
 
-        if(9<=gr(3,0))goto _17;else goto _16;
+        if(9>gr(3,0))goto _16;else goto _17;
     _16:
         gw(gr(7,0)+9,1,88);
         sa(58);
-        sa(gr(3,0)+1);
+        sa(gr(3,0)+10);
         gw(3,0,gr(3,0)+1);
-        sa(sp()+9L);
-
         sa(0);
         {long v0=sp();long v1=sp();gw(v1,v0,sp());}
         goto _1;
     _17:
-        t0=gr(10,0)-47;
-        t1=gr(17,0)-47;
-        t2=gr(18,0)-47;
-        t3=gr(17,0)-47;
-        t4=gr(15,0)-47;
-        t5=gr(16,0)-47;
-        t6=gr(15,0)-47;
-        t7=gr(13,0)-47;
-        t8=gr(14,0)-47;
-        t9=gr(13,0)-47;
-        t10=gr(11,0)-47;
-        t11=gr(12,0)-47;
-        t12=gr(11,0)-47;
-        t13=gr(10,0)-47;
         System.Console.Out.Write(gr(9,0)-47+" ");
-        System.Console.Out.Write(t13+" ");
-        System.Console.Out.Write(t12+" ");
-        System.Console.Out.Write(t11+" ");
-        System.Console.Out.Write(t10+" ");
-        System.Console.Out.Write(t9+" ");
-        System.Console.Out.Write(t8+" ");
-        System.Console.Out.Write(t7+" ");
-        System.Console.Out.Write(t6+" ");
-        System.Console.Out.Write(t5+" ");
-        System.Console.Out.Write(t4+" ");
-        System.Console.Out.Write(t3+" ");
-        System.Console.Out.Write(t2+" ");
-        System.Console.Out.Write(t1+" ");
-        System.Console.Out.Write(t0+" ");
+        System.Console.Out.Write(gr(10,0)-47+" ");
+        System.Console.Out.Write(gr(11,0)-47+" ");
+        System.Console.Out.Write(gr(12,0)-47+" ");
+        System.Console.Out.Write(gr(11,0)-47+" ");
+        System.Console.Out.Write(gr(13,0)-47+" ");
+        System.Console.Out.Write(gr(14,0)-47+" ");
+        System.Console.Out.Write(gr(13,0)-47+" ");
+        System.Console.Out.Write(gr(15,0)-47+" ");
+        System.Console.Out.Write(gr(16,0)-47+" ");
+        System.Console.Out.Write(gr(15,0)-47+" ");
+        System.Console.Out.Write(gr(17,0)-47+" ");
+        System.Console.Out.Write(gr(18,0)-47+" ");
+        System.Console.Out.Write(gr(17,0)-47+" ");
+        System.Console.Out.Write(gr(10,0)-47+" ");
         return;
     _18:
         sp();

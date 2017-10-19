@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -22,6 +22,7 @@ def sr():
     return s[-1]
 x0=1000
 def _0():
+    global x0
     sa(1002001)
     sa(1002001-x0)
     sa(1002001-x0-x0)
@@ -38,17 +39,18 @@ def _2():
     t0=sp()
     sa(sr());
 
-    return (4)if(sp()!=0)else(3)
+    return (3)if(sp()!=0)else(4)
 def _3():
     global t0
-    sp();
-    sys.stdout.write(str(t0)+" ")
-    sys.stdout.flush()
-    return 6
+    sa(sp()+t0)
+    return 2
 def _4():
     global t0
-    sa(sp()+t0);
-    return 2
+    sys.stdout.write(str(t0)+" ")
+    sys.stdout.flush()
+
+    sp();
+    return 6
 def _5():
     global x0
     x0=x0-2

@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABAC8vVnP9cZ17/lVqh1fRXCf1xmcRAh0ziK5NllkDfutKnK/fBAk6YsD9UU3IKD75CofvmvVfuRMNuAO4t9GYsuSrGWSNazhP/zg/u3vn9wf8vvhD/47"
@@ -316,19 +316,18 @@ def _3():
     sp();
     return 4
 def _4():
-    sa(sp()+1);
+    sa(sp()+1)
 
 
     return (21)if(sr()!=12)else(5)
 def _5():
     global t0
     gw(0,gr(0,0),gr(1,0))
-    sp();
     t0=gr(0,0)-1
     gw(0,0,gr(0,0)-1)
-    t0=(0)if(t0!=0)else(1)
+    sp();
 
-    return (6)if((t0)!=0)else(1)
+    return (1)if((t0)!=0)else(6)
 def _6():
     gw(3,0,gr(2,0))
     return 7
@@ -346,9 +345,8 @@ def _9():
     return (8)if((t0)!=0)else(10)
 def _10():
     global t0
-    t0=gr(3,0)
+    t0=gr(3,0)-2
     gw(3,0,gr(3,0)-1)
-    t0=t0-2
 
     return (7)if((t0)!=0)else(11)
 def _11():
@@ -375,14 +373,14 @@ def _15():
     sys.stdout.flush()
     return 23
 def _16():
-    sa(sp()-64);
+    sa(sp()-64)
 
-    sa(sp()*gr(5,0));
+    sa(sp()*gr(5,0))
 
-    sa(sp()+gr(9,0));
+    sa(sp()+gr(9,0))
 
     gw(9,0,sp())
-    sa(sp()+1);
+    sa(sp()+1)
 
     sa(sr());
     sa(gr(5,0))
@@ -430,12 +428,12 @@ def _21():
     sa(gr(0,0))
     v0=sp()
     sa(gr(sp(),v0))
-    sa(sp()-64);
+    sa(sp()-64)
 
     sa((1)if(sr()>0)else(0))
     return 2
 def _22():
-    sa(sp()+(gr(1,0)*28));
+    sa(sp()+(gr(1,0)*28))
 
     gw(1,0,sp())
     return 4

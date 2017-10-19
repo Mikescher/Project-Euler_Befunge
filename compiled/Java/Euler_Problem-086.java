@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -18,40 +18,47 @@ private int _0(){
     sa(1);
     sa(2);
     sa(4+(x2*x2));
-    sa((tm(4+(x2*x2),64))>57?1:0);
+    sa(((4+(x2*x2))%64)>57?1:0);
     return 1;
 }
 private int _1(){
-    if(sp()!=0)return 3;else return 2;
+    if(sp()!=0)return 31;else return 2;
 }
 private int _2(){
-    t0=tm(sr(),16);
+    sa(sr()%16);
 
-    if(t0>9)return 3;else return 9;
+    if(sr()>9)return 3;else return 15;
 }
 private int _3(){
     sp();
     return 4;
 }
 private int _4(){
-    sa(sr());
-    sa((sp()!=0)?0:1);
-
-    if(sp()!=0)return 5;else return 8;
+    sp();
+    sa(0);
+    return 5;
 }
 private int _5(){
-    sp();
+    if(sp()!=0)return 11;else return 6;
+}
+private int _6(){
+    sa(sr());
+
+    if(sp()!=0)return 10;else return 7;
+}
+private int _7(){
     t0=x3+x1;
     x1=x3+x1;
     t0=t0>x0?1:0;
+    sp();
 
-    if((t0)!=0)return 6;else return 7;
+    if((t0)!=0)return 8;else return 9;
 }
-private int _6(){
+private int _8(){
     System.out.print(String.valueOf((long)(sp()))+" ");
-    return 28;
+    return 32;
 }
-private int _7(){
+private int _9(){
     sa(sp()+1L);
 
     sa(sr());
@@ -69,10 +76,10 @@ private int _7(){
 
     sa(sp()+(x2*x2));
 
-    sa((tm(sr(),64))>57?1:0);
+    sa((sr()%64)>57?1:0);
     return 1;
 }
-private int _8(){
+private int _10(){
     sa(sp()-1L);
 
     sa(sr());
@@ -81,56 +88,78 @@ private int _8(){
 
     sa(sp()+(x2*x2));
 
-    sa((tm(sr(),64))>57?1:0);
+    sa((sr()%64)>57?1:0);
     return 1;
 }
-private int _9(){
-    if(t0!=2)return 10;else return 3;
-}
-private int _10(){
-    if(t0!=3)return 11;else return 3;
-}
 private int _11(){
-    if(t0!=5)return 12;else return 3;
+    if(sr()>x2)return 14;else return 12;
 }
 private int _12(){
-    if(t0!=6)return 13;else return 3;
+    sa((sr()/2)+x3);
+    return 13;
 }
 private int _13(){
-    if(t0!=7)return 14;else return 3;
+    x3=sp();
+    t0=1;
+    return 6;
 }
 private int _14(){
-    t0-=8;
-    t0=(t0!=0)?0:1;
-
-    if((t0)!=0)return 3;else return 15;
+    t0=(sr()+1)/2;
+    t1=x2;
+    sa((t1-t0)+1+x3);
+    return 13;
 }
 private int _15(){
-    t0=tm(sr(),10);
-
-    if(t0-7==0)return 3;else return 16;
+    if(sr()!=2)return 16;else return 3;
 }
 private int _16(){
-    if(t0-3==0)return 3;else return 17;
+    if(sr()!=3)return 17;else return 3;
 }
 private int _17(){
-    t0-=2;
-    t0=(t0!=0)?0:1;
-
-    if((t0)!=0)return 3;else return 18;
+    if(sr()!=5)return 18;else return 3;
 }
 private int _18(){
-    if((tm(sr(),3))!=2)return 19;else return 3;
+    if(sr()!=6)return 19;else return 3;
 }
 private int _19(){
-    x4=0;
-    x5=sr();
-    return 20;
+    if(sr()!=7)return 20;else return 3;
 }
 private int _20(){
+    sa(sp()-8L);
+
+
+    if(sp()!=0)return 21;else return 31;
+}
+private int _21(){
+    sa(sr()%10);
+
+    if(sr()!=7)return 22;else return 3;
+}
+private int _22(){
+    if(sr()!=3)return 23;else return 3;
+}
+private int _23(){
+    sa(sp()-2L);
+
+
+    if(sp()!=0)return 25;else return 24;
+}
+private int _24(){
+    sa(0);
+    return 3;
+}
+private int _25(){
+    if((sr()%3)!=2)return 26;else return 4;
+}
+private int _26(){
+    x4=0;
+    x5=sr();
+    return 27;
+}
+private int _27(){
     x6=sr();
-    sa(sr());
     t0=x5;
+    sa(sr());
     sa(t0);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     {long v0=sp();sa(td(sp(),v0));}
@@ -138,47 +167,31 @@ private int _20(){
     t1=sp();
     sa(sp()+t1);
 
-    sa(td(sp(),2));
+    sa(sp()/2L);
 
 
-    if(sr()!=x6)return 26;else return 21;
+    if((sr()-x6)!=0)return 29;else return 28;
 }
-private int _21(){
+private int _28(){
     sp();
-
-    if((x6*x6)-x5==0)return 22;else return 4;
+    sa(((x6*x6)-x5!=0)?0:1);
+    return 5;
 }
-private int _22(){
-    if(sr()>x2)return 25;else return 23;
+private int _29(){
+    if((sr()-x4)!=0)return 30;else return 28;
 }
-private int _23(){
-    sa((td(sr(),2))+x3);
-    return 24;
-}
-private int _24(){
-    x3=sp();
-    return 4;
-}
-private int _25(){
-    t0=td(sr()+1,2);
-    t1=x2;
-    sa(t1-t0);
-    sa(sp()+1L);
-
-    sa(sp()+x3);
-    return 24;
-}
-private int _26(){
-    if(sr()!=x4)return 27;else return 21;
-}
-private int _27(){
+private int _30(){
     x4=x6;
-    return 20;
+    return 27;
+}
+private int _31(){
+    t0=2;
+    return 4;
 }
 
 public void main(){
     int c=0;
-    while(c<28){
+    while(c<32){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -208,6 +221,10 @@ public void main(){
     case 25:c=_25();break;
     case 26:c=_26();break;
     case 27:c=_27();break;
+    case 28:c=_28();break;
+    case 29:c=_29();break;
+    case 30:c=_30();break;
+    case 31:c=_31();break;
 }
 }
 }

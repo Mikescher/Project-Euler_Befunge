@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABACT7+ZgAAEWhrc3HLNvG4gwPNj/aOnLpce6Y6x9BQ++2fS7z7rFLEe77aJh8LZ5nx6rt+v5ZlxeumHSpRr5Iye+FSct+a5ivf3mqYwptbt+/vz76vX6"+
                                  "N4/fv149e82L7/tj4v+eeOXJtiHdnWGogwObUw+EnX1we8G5TZMj2vLm3FL/aFKirliyPPQF202FtlXaq9+V3X66kC/WY6FvcOu2M8lZy9Zn9adnGq/6VPahMkDmbtyy"+
@@ -40,7 +40,7 @@ private int _1(){
     return 2;
 }
 private int _2(){
-    if(sp()!=0)return 33;else return 3;
+    if(sp()!=0)return 32;else return 3;
 }
 private int _3(){
     sp();
@@ -48,8 +48,10 @@ private int _3(){
 }
 private int _4(){
     sa(gr(3,0)+1);
+    sa(gr(3,0)+1);
     gw(3,0,gr(3,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -72,8 +74,10 @@ private int _7(){
 }
 private int _8(){
     sa(gr(3,0)+1);
+    sa(gr(3,0)+1);
     gw(3,0,gr(3,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -89,8 +93,10 @@ private int _9(){
 private int _10(){
     sa(gr(3,0));
     sa(gr(4,0));
+    sa(gr(4,0));
     gw(4,0,gr(4,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -110,13 +116,15 @@ private int _11(){
     return 12;
 }
 private int _12(){
-    if(sp()!=0)return 13;else return 32;
+    if(sp()!=0)return 13;else return 31;
 }
 private int _13(){
     sa(sr());
     sa(gr(4,0)+1);
+    sa(gr(4,0)+1);
     gw(4,0,gr(4,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -126,32 +134,29 @@ private int _13(){
     sa((sp()<t0)?1:0);
 
     t1=sp();
-    t1=(t1!=0)?0:1;
 
-    if((t1)!=0)return 31;else return 14;
+    if((t1)!=0)return 14;else return 30;
 }
 private int _14(){
     sp();
 
-    if(gr(5,0)!=4)return 30;else return 15;
+    if(gr(5,0)!=4)return 20;else return 15;
 }
 private int _15(){
     gw(8,0,0);
     sa(sr());
     sa(sr());
-    t0=sr()+4;
-    gw(6,0,t0);
+    gw(6,0,sr()+4);
     gw(7,0,sp());
     sa(sp()-3L);
     return 16;
 }
 private int _16(){
-    if(sr()!=gr(7,0))return 22;else return 17;
+    if((sr()-gr(7,0))!=0)return 22;else return 17;
 }
 private int _17(){
-    t0=gr(8,0)+1;
+    t0=gr(8,0)-3;
     gw(8,0,gr(8,0)+1);
-    t0-=4;
 
     if((t0)!=0)return 18;else return 21;
 }
@@ -159,15 +164,15 @@ private int _18(){
     sa(sp()+1L);
 
 
-    if(sr()!=gr(6,0))return 16;else return 19;
+    if((sr()-gr(6,0))!=0)return 16;else return 19;
 }
 private int _19(){
-    gw(4,0,0);
-    gw(5,0,0);
     sp();
     return 20;
 }
 private int _20(){
+    gw(4,0,0);
+    gw(5,0,0);
     sa(sp()+4L);
 
     sa(sr());
@@ -179,7 +184,7 @@ private int _21(){
 
     System.out.print(String.valueOf((long)(sp()))+" ");
     sp();
-    return 34;
+    return 33;
 }
 private int _22(){
     gw(4,0,0);
@@ -188,13 +193,15 @@ private int _22(){
     return 23;
 }
 private int _23(){
-    if(tm(sr(),gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3))!=0)return 24;else return 29;
+    if((tm(sr(),gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3)))!=0)return 24;else return 29;
 }
 private int _24(){
     sa(sr());
     sa(gr(4,0)+1);
+    sa(gr(4,0)+1);
     gw(4,0,gr(4,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -204,9 +211,8 @@ private int _24(){
     sa((sp()<t0)?1:0);
 
     t1=sp();
-    t1=(t1!=0)?0:1;
 
-    if((t1)!=0)return 23;else return 25;
+    if((t1)!=0)return 25;else return 23;
 }
 private int _25(){
     sp();
@@ -226,27 +232,22 @@ private int _28(){
     return 27;
 }
 private int _29(){
-    t0=gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3);
+    sa(td(sp(),gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3)));
+
     gw(5,0,gr(5,0)+1);
-    sa(td(sp(),t0));
     return 24;
 }
 private int _30(){
-    gw(4,0,0);
-    gw(5,0,0);
-    return 20;
-}
-private int _31(){
     sa(tm(sr(),gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3)));
     return 12;
 }
-private int _32(){
-    t0=gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3);
+private int _31(){
+    sa(td(sp(),gr(tm(gr(4,0),gr(1,0)),(td(gr(4,0),gr(1,0)))+3)));
+
     gw(5,0,gr(5,0)+1);
-    sa(td(sp(),t0));
     return 13;
 }
-private int _33(){
+private int _32(){
     sa(sr());
     sa(32);
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
@@ -265,7 +266,7 @@ private int _33(){
 
 public void main(){
     int c=0;
-    while(c<34){
+    while(c<33){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -300,7 +301,6 @@ public void main(){
     case 30:c=_30();break;
     case 31:c=_31();break;
     case 32:c=_32();break;
-    case 33:c=_33();break;
 }
 }
 }

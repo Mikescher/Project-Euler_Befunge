@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -6,28 +6,34 @@ private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
 private long sp(){return(s.size()==0)?0:s.pop();}
 private void sa(long v){s.push(v);}
 private long sr(){return(s.size()==0)?0:s.peek();}
-long t0;
 private int _0(){
-    t0=56866;
-    sa(7830455);
+    sa(56866);
+    sa(7830456);
+    sa(7830456);
     return 1;
 }
 private int _1(){
-    t0*=2;
-    t0%=10000000000L;
-    sa(sr());
-
     if(sp()!=0)return 3;else return 2;
 }
 private int _2(){
     sp();
-    t0++;
-    t0%=10000000000L;
-    System.out.print(String.valueOf(t0)+" ");
+    sa(sp()+1L);
+
+    sa(sp()%10000000000L);
+
+    System.out.print(String.valueOf((long)(sp()))+" ");
     return 4;
 }
 private int _3(){
     sa(sp()-1L);
+
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()*2L);
+
+    sa(sp()%10000000000L);
+
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sr());
     return 1;
 }
 

@@ -1,29 +1,23 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
-private final static java.util.Stack<Long> s=new java.util.Stack<Long>();
-private long sp(){return(s.size()==0)?0:s.pop();}
-private void sa(long v){s.push(v);}
-private long sr(){return(s.size()==0)?0:s.peek();}
-long t0,t1,t2;
+long t0;
 long x0=20;
 long x1=1;
 long x2=1;
 long x3=48;
-long x4=48;
-long x5=112;
+long x4=112;
+long x5=48;
 private int _0(){
     return 1;
 }
 private int _1(){
     x1*=x2;
-    t0=x0;
-    t1=x2+1;
+    t0=x0>(x2+1)?1:0;
     x2++;
-    t2=t0>t1?1:0;
 
-    if((t2)!=0)return 3;else return 2;
+    if((t0)!=0)return 3;else return 2;
 }
 private int _2(){
     System.out.print(String.valueOf(x1)+" ");
@@ -41,27 +35,25 @@ private int _4(){
     if((t0)!=0)return 1;else return 5;
 }
 private int _5(){
-    if(tm(x1,x3)!=0)return 4;else return 6;
+    if((tm(x1,x3))!=0)return 4;else return 6;
 }
 private int _6(){
-    x4=td(x1,x3);
-    x5=1;
+    x5=td(x1,x3);
+    x4=1;
     return 7;
 }
 private int _7(){
-    t0=x2;
-    t1=x5+1;
-    x5++;
-    t2=t0>t1?1:0;
+    t0=x2>(x4+1)?1:0;
+    x4++;
 
-    if((t2)!=0)return 9;else return 8;
+    if((t0)!=0)return 9;else return 8;
 }
 private int _8(){
     x1/=x3;
     return 5;
 }
 private int _9(){
-    if(tm(x4,x5)==0)return 7;else return 4;
+    if((tm(x5,x4))!=0)return 4;else return 7;
 }
 
 public void main(){

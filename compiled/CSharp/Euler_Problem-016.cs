@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
 private static readonly string _g = "AR+LCAAAAAAABADtj70OwjAMhF/FBLo0CnVKc6CoqlhZmJhhzOqpE7w7ThH/CCFYuSGRfbY+X8/fq//vfipPP6gjwyZmMQt74Vp4JtwIB6GeqKpotV5tXu6qLWjKhTkY"+
@@ -11,10 +11,6 @@ private static byte[]zs(byte[]o){using(var c=new System.IO.MemoryStream(o))
                                  using(var r=new System.IO.MemoryStream()){z.CopyTo(r);return r.ToArray();}}
 private static long gr(long x,long y){return(x>=0&&y>=0&&x<60&&y<14)?g[y*60+x]:0;}
 private static void gw(long x,long y,long v){if(x>=0&&y>=0&&x<60&&y<14)g[y*60+x]=v;}
-private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
-private static long sp(){ return (s.Count==0)?0:s.Pop(); }
-private static void sa(long v){ s.Push(v); }
-private static long sr(){ return (s.Count==0)?0:s.Peek(); }
 private static long td(long a,long b){ return (b==0)?0:(a/b); }
 private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
@@ -33,7 +29,7 @@ static void Main(string[]args)
     _1:
         t0=gr(4,6);
 
-        if((gr(4,6))==0)goto _2;else goto _6;
+        if((gr(4,6))!=0)goto _6;else goto _2;
     _2:
         gw(6,6,gr(0,6)-1);
         t0=gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48;
@@ -52,11 +48,10 @@ static void Main(string[]args)
         gw(6,6,gr(0,6)-1);
         gw(7,6,0);
     _7:
-        if((gr(6,6))==0)goto _1;else goto _8;
+        if((gr(6,6))!=0)goto _8;else goto _1;
     _8:
-        t0=((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6);
-        gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),(tm(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6),10))+48);
-        t0/=10;
+        t0=(((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6))/10;
+        gw(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)),((((gr(tm(gr(6,6),gr(1,6)),td(gr(6,6),gr(1,6)))-48)*2)+gr(7,6))%10)+48);
         gw(7,6,t0);
         gw(6,6,gr(6,6)-1);
         goto _7;

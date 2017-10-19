@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private long td(long a,long b){return(b==0)?0:(a/b);}
 private long tm(long a,long b){return(b==0)?0:(a%b);}
@@ -9,40 +9,38 @@ private long sr(){return(s.size()==0)?0:s.peek();}
 long t0,t1;
 private int _0(){
     sa(1);
-    sa(2);
-    sa(2);
+    sa(1);
+    sa(1);
     return 1;
 }
 private int _1(){
-    sa(sr());
-    t0=(td(sr(),5))*5;
-    sa(sp()-t0);
-
-    t1=sp();
-    t1=(t1!=0)?0:1;
-
-    if((t1)!=0)return 2;else return 3;
-}
-private int _2(){
-    sa(sr());
-    return 3;
-}
-private int _3(){
-    if(sr()-1000==0)return 5;else return 4;
-}
-private int _4(){
     sp();
     sa(sp()+1L);
 
     sa(sr());
     sa(sr());
-    t0=(td(sr(),3))*3;
+    t0=(sr()/3)*3;
     sa(sp()-t0);
 
     t1=sp();
-    t1=(t1!=0)?0:1;
 
-    if((t1)!=0)return 2;else return 1;
+    if((t1)!=0)return 2;else return 3;
+}
+private int _2(){
+    sa(sr());
+    t0=(sr()/5)*5;
+    sa(sp()-t0);
+
+    t1=sp();
+
+    if((t1)!=0)return 4;else return 3;
+}
+private int _3(){
+    sa(sr());
+    return 4;
+}
+private int _4(){
+    if(sr()!=1000)return 1;else return 5;
 }
 private int _5(){
     sp();
@@ -55,7 +53,7 @@ private int _6(){
 
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
 
-    if(sr()-1==0)return 7;else return 8;
+    if(sr()!=1)return 8;else return 7;
 }
 private int _7(){
     sp();

@@ -1,12 +1,12 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 public static class Program
 {
+private static long td(long a,long b){ return (b==0)?0:(a/b); }
+private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 private static System.Collections.Generic.Stack<long> s=new System.Collections.Generic.Stack<long>();
 private static long sp(){ return (s.Count==0)?0:s.Pop(); }
 private static void sa(long v){ s.Push(v); }
 private static long sr(){ return (s.Count==0)?0:s.Peek(); }
-private static long td(long a,long b){ return (b==0)?0:(a/b); }
-private static long tm(long a,long b){ return (b==0)?0:(a%b); }
 static void Main(string[]args)
 {
         long t0;
@@ -25,14 +25,14 @@ static void Main(string[]args)
         t0=sp();
         sa(sr());
 
-        if(sp()!=0)goto _4;else goto _3;
+        if(sp()!=0)goto _3;else goto _4;
     _3:
-        sp();
-        System.Console.Out.Write(t0+" ");
-        return;
-    _4:
         sa(sp()+t0);
         goto _2;
+    _4:
+        System.Console.Out.Write(t0+" ");
+        sp();
+        return;
     _5:
         x0-=2;
         sa(sr()-x0);

@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADtVLsOgzAM/JU0gaWIchYEQVRF/ZAKOlTymikT/fe6MICqqFs7VJyU2HL8uMvgqL4Ps2PHjr/HD1aJ8vqugaAfuju2COjk9AhvCyeqmGATCqoYYDT5"+
                                  "Yhj2nJrRgr2rEbwjuXCV5Jzwqqmip0ZGWok3CmxtcazlVWIWTIXEmzkxX0xFBR+mtJIOfLos/hRAzpXEICG55RRFIqMWkWM0N0bvSk7IUCkdwziYgHbu2ypvVLb5lGH1"+
@@ -39,53 +39,54 @@ private int _2(){
     return 11;
 }
 private int _3(){
+    t0=gr(6,0);
+    sa(0);
     sa(gr(6,0));
     gw(3,0,gr(6,0));
-    sa(sr());
-    gw(1,0,sp());
+    gw(1,0,t0);
     return 4;
 }
 private int _4(){
-    sa(0);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(tm(sp(),gr(0,0)));
 
     sa((td(gr(1,0),gr(0,0)))+1);
     {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-    sa(gr(1,0)-1);
     t0=gr(1,0)-1;
+    sa(gr(1,0)-1);
     gw(1,0,gr(1,0)-1);
-    return 5;
+
+    if((t0)!=0)return 10;else return 5;
 }
 private int _5(){
-    if((t0)!=0)return 4;else return 6;
-}
-private int _6(){
     gw(4,0,1);
     gw(5,0,0);
+    sp();
+    return 6;
+}
+private int _6(){
     gw(4,0,tm(gr(4,0)*10,gr(3,0)));
     gw(5,0,gr(5,0)+1);
-    sp();
-    return 7;
+
+    if((gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+1))!=0)return 7;else return 9;
 }
 private int _7(){
-    if((gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+1))==0)return 10;else return 8;
-}
-private int _8(){
     t0=gr(5,0)-gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+1);
 
-    if((gr(5,0)-gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+1))>gr(9,0))return 9;else return 1;
+    if((gr(5,0)-gr(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+1))>gr(9,0))return 8;else return 1;
 }
-private int _9(){
+private int _8(){
     gw(9,0,t0);
     gw(8,0,gr(3,0));
     return 1;
 }
-private int _10(){
+private int _9(){
     gw(tm(gr(4,0),gr(0,0)),(td(gr(4,0),gr(0,0)))+1,gr(5,0));
-    gw(4,0,tm(gr(4,0)*10,gr(3,0)));
-    gw(5,0,gr(5,0)+1);
-    return 7;
+    return 6;
+}
+private int _10(){
+    sa(0);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    return 4;
 }
 
 public void main(){

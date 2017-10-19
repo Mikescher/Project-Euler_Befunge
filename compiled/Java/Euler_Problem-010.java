@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABADNe3dYU126PSoKiIJ0kCYgIBiqhWIAld4EkdB7ld5LqNKlKE1AikGkKEE6hN6lRoiCFOk9BKSFXvM7wZm5353vzjx35t77PD//YGevvd71rnefs/fJ"+
                                  "9slhjSYmwP8jJFidUC126HbhWmxyfYTgujlSmxurGHQDvDkuTU6cb6p/q/l5m0zb0KfA+pU3hwZTseXDPbFdBqnxqAvS7iTW619fMscLFDCW4E4G0ptwR2o4ZOBREw4V"+
@@ -154,22 +154,11 @@ private long sr(){return(s.size()==0)?0:s.peek();}
 long t0;
 private int _0(){
     gw(1999,1000,35);
-    sa(1999998);
+    sa(1999999);
+    sa(1999999);
     return 1;
 }
 private int _1(){
-    sa(sr());
-    sa(35);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(tm(sr(),2000));
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),2000));
-
-    sa(sp()+1L);
-
-    {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-    sa(sr());
-
     if(sp()!=0)return 15;else return 2;
 }
 private int _2(){
@@ -197,8 +186,10 @@ private int _5(){
 }
 private int _6(){
     sa(gr(3,0)+1);
+    sa(gr(3,0)+1);
     gw(3,0,gr(3,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -221,8 +212,10 @@ private int _9(){
 }
 private int _10(){
     sa(gr(3,0)+1);
+    sa(gr(3,0)+1);
     gw(3,0,gr(3,0)+1);
-    sa(tm(sr(),gr(1,0)));
+    sa(tm(sp(),gr(1,0)));
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -238,7 +231,7 @@ private int _11(){
     return 12;
 }
 private int _12(){
-    if(gr(0,0)!=gr(3,0))return 10;else return 13;
+    if((gr(0,0)-gr(3,0))!=0)return 10;else return 13;
 }
 private int _13(){
     System.out.print(String.valueOf(gr(4,0))+" ");
@@ -262,6 +255,18 @@ private int _14(){
 }
 private int _15(){
     sa(sp()-1L);
+
+    sa(sr());
+    sa(35);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sr()%2000);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()/2000L);
+
+    sa(sp()+1L);
+
+    {long v0=sp();long v1=sp();gw(v1,v0,sp());}
+    sa(sr());
     return 1;
 }
 

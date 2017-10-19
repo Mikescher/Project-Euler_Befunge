@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABACdUDGOAyEM/AoHW7FBYna5XIKQdQ9B3BUr0VJZKXj8mZAUKXMuzGA8nsHsse3h8/x1uaq3g/RxHNpa8PtcxQ3btQEu/YP8NMA0pWdODzAm0sSU4TLf"+
                                  "qw1hRUVItKFGrJ36QD5ThIum/DDZPM4ldiHuaApBkqAaUC1Qfz/6Q3l59bFAFZFs54tluRSpdadvWlUfc8pIojt9jfge7p5hijfJsDenVZk05/L9nbDmYQWzscjCnHxg"+
@@ -29,35 +29,73 @@ private int _0(){
 private int _1(){
     t0=gr(2,1);
 
-    if((gr(2,1)+1)!=0)return 3;else return 2;
+    if(gr(2,1)!=-1)return 3;else return 2;
 }
 private int _2(){
-    return 23;
+    return 24;
 }
 private int _3(){
-    if((t0)!=0)return 11;else return 4;
+    if((t0)!=0)return 4;else return 23;
 }
 private int _4(){
-    sa(1);
+    sa(0);
+    sa(gr(2,1));
+    sa(gr(2,1)-1);
+    sa(gr(2,1)-1);
     return 5;
 }
 private int _5(){
-    sa(1);
-    sa(gr(1,0)-120);
-    return 6;
+    if(sp()!=0)return 22;else return 6;
 }
 private int _6(){
-    if(sp()!=0)return 10;else return 7;
+    sp();
+    sa(sp()*1L);
+    return 7;
 }
 private int _7(){
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sr());
+
+    if(sp()!=0)return 21;else return 8;
+}
+private int _8(){
+    sp();
+    sa(sr());
+
+    if(sp()!=0)return 9;else return 20;
+}
+private int _9(){
+    gw(3,1,sp());
+    return 10;
+}
+private int _10(){
+    gw(4,1,1);
+    return 11;
+}
+private int _11(){
+    if((gr(3,1)*gr(4,1))>gr(1,1))return 12;else return 19;
+}
+private int _12(){
+    sa(gr(4,1));
+    return 13;
+}
+private int _13(){
+    sa(1);
+    sa(gr(1,0)-120);
+    return 14;
+}
+private int _14(){
+    if(sp()!=0)return 18;else return 15;
+}
+private int _15(){
     sa(sp()+1L);
 
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sr());
 
-    if(sp()!=0)return 9;else return 8;
+    if(sp()!=0)return 17;else return 16;
 }
-private int _8(){
+private int _16(){
     sp();
     sa(sp()-1L);
 
@@ -69,89 +107,54 @@ private int _8(){
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(0);
     {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-    t0+=48;
-    System.out.print(String.valueOf((char)(t0)));
     gw(1,1,gr(1,1)-(gr(3,1)*(gr(4,1)-1)));
     gw(2,1,gr(2,1)-1);
+    t0+=48;
+    System.out.print(String.valueOf((char)(t0)));
     return 1;
 }
-private int _9(){
+private int _17(){
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sr());
     sa(0);
     {long v0=sp();sa(gr(sp(),v0));}
     sa(sp()-120L);
-    return 6;
+    return 14;
 }
-private int _10(){
+private int _18(){
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(sp()-1L);
 
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    return 7;
-}
-private int _11(){
-    sa(0);
-    sa(gr(2,1));
-    sa(gr(2,1)-1);
-    sa(gr(2,1)-1);
-    return 12;
-}
-private int _12(){
-    if(sp()!=0)return 22;else return 13;
-}
-private int _13(){
-    sp();
-    sa(sp()*1L);
-    return 14;
-}
-private int _14(){
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(sr());
-
-    if(sp()!=0)return 21;else return 15;
-}
-private int _15(){
-    sp();
-    sa(sr());
-
-    if(sp()!=0)return 16;else return 20;
-}
-private int _16(){
-    gw(3,1,sp());
-    gw(4,1,1);
-    return 17;
-}
-private int _17(){
-    if((gr(3,1)*gr(4,1))<=gr(1,1))return 19;else return 18;
-}
-private int _18(){
-    sa(gr(4,1));
-    return 5;
+    return 15;
 }
 private int _19(){
     gw(4,1,gr(4,1)+1);
-    return 17;
+    return 11;
 }
 private int _20(){
     gw(3,1,1);
-    gw(4,1,1);
     sp();
-    return 17;
+    return 10;
 }
 private int _21(){
     sa(sp()*sp());
-    return 14;
+    return 7;
 }
 private int _22(){
     sa(sr()-1);
     sa(sr());
-    return 12;
+    return 5;
+}
+private int _23(){
+    t0=0;
+    sa(1);
+    return 13;
 }
 
 public void main(){
     int c=0;
-    while(c<23){
+    while(c<24){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -176,6 +179,7 @@ public void main(){
     case 20:c=_20();break;
     case 21:c=_21();break;
     case 22:c=_22();break;
+    case 23:c=_23();break;
 }
 }
 }

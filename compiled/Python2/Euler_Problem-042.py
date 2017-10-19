@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("Ah+LCAAAAAAABAAVmHk4lN8bxpM0lhhly/ZSQowtu7xCKlpkRJbC2IpkJ96xjSEpYbJlKbtK38SQLBnbVGMpZlrIOkyDUbZZLNl/fu+/573Oda5z38/z3J8j95h33/+/"
@@ -127,20 +127,14 @@ def _0():
     gw(6,0,2)
     return 1
 def _1():
-    global t0
-    global t1
-    t0=gr(5,0)+1
-    gw(5,0,gr(5,0)+1)
-    t1=t0+1
-    sa(t0*t1)
-    sa(td(sp(),2))
-
     sa(48)
-    v0=sp()
-    v1=sp()
-    sa(v0)
-    sa(v1)
-    sa((tm(sr(),gr(1,0)))+32)
+    sa(((gr(5,0)+1)*(gr(5,0)+2))/2)
+    sa(((gr(5,0)+1)*(gr(5,0)+2))/2)
+    gw(5,0,gr(5,0)+1)
+    sa(tm(sp(),gr(1,0)))
+
+    sa(sp()+32)
+
     v0=sp()
     v1=sp()
     sa(v0)
@@ -152,7 +146,7 @@ def _1():
     gw(v1,v0,sp())
     return 2
 def _2():
-    return (1)if((td((gr(5,0)+1)*(gr(5,0)+2),2))<gr(3,0))else(3)
+    return (1)if((((gr(5,0)+1)*(gr(5,0)+2))/2)<gr(3,0))else(3)
 def _3():
     global t2
     gw(7,0,0)
@@ -162,7 +156,7 @@ def _4():
     global t0
     t0=gr(gr(7,0),gr(6,0))
 
-    return (5)if(gr(gr(7,0),gr(6,0))-32==0)else(10)
+    return (10)if(gr(gr(7,0),gr(6,0))!=32)else(5)
 def _5():
     global t2
     global t0

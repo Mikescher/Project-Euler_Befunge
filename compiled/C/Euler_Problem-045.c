@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 #include <stdio.h>
 #include <stdlib.h>
 #define int64 long long
@@ -31,33 +31,8 @@ _5:
     sa(sp()-(x2*x2));
 
 
-    if((tm(x2,6))-5==0)goto _6;else goto _9;
+    if((x2%6)!=5)goto _6;else goto _7;
 _6:
-    sa((sp()!=0)?0:1);
-
-    if(sp()!=0)goto _8;else goto _7;
-_7:
-    x2=0;
-    sa(sp()+1LL);
-
-    sa(sr());
-    t0=(sr()*2)-1;
-    sa(sp()*t0);
-
-    sa(sp()*24LL);
-
-    sa(sp()+1LL);
-
-    x1=sr();
-    goto _1;
-_8:
-    t0=(sr()*2)-1;
-    sa(sp()*t0);
-
-    t1=sp();
-    printf("%lld ", t1);
-    return 0;
-_9:
     x2=0;
     sp();
     sa(sp()+1LL);
@@ -72,11 +47,34 @@ _9:
 
     x1=sr();
     goto _1;
+_7:
+    if(sp()!=0)goto _8;else goto _9;
+_8:
+    x2=0;
+    sa(sp()+1LL);
+
+    sa(sr());
+    t0=(sr()*2)-1;
+    sa(sp()*t0);
+
+    sa(sp()*24LL);
+
+    sa(sp()+1LL);
+
+    x1=sr();
+    goto _1;
+_9:
+    t0=(sr()*2)-1;
+    sa(sp()*t0);
+
+    t1=sp();
+    printf("%lld ", t1);
+    return 0;
 _10:
-    if((sr()+x2)<=x1)goto _12;else goto _11;
+    if((sr()+x2)>x1)goto _11;else goto _12;
 _11:
     x2/=2;
-    sa(td(sp(),4));
+    sa(sp()/4LL);
 
     sa(sr());
     goto _4;
@@ -88,10 +86,10 @@ _12:
     t0=(sr()*2)+x2;
     x2=t0;
     x2/=2;
-    sa(td(sp(),4));
+    sa(sp()/4LL);
     goto _3;
 _13:
-    sa(td(sp(),4));
+    sa(sp()/4LL);
 
     sa(sr()>x1?1:0);
     goto _2;

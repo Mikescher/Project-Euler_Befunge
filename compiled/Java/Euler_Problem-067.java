@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABADtnduOZMeNRX8lIc+TBRkRjAsjhEFjPmRgz8MAetWTv3/ItXnasiSPLatbfdOB0KrKysrO5OFlc3Mz+vV689X/fvVq7fvWvuvfWPy/t+/f9Pbd+OO3"+
                                  "Fg99/d1X7atv1vr6j//dv/7bA1/HM/ju+55/fhu/FN9+07/5w1//El98+/al4vu/vj6La92fe/TPv+IV//Mn338mpvLxmv0nj77bD/dj432i17LXbK/2s771b15vXv/x"+
@@ -121,9 +121,9 @@ private int _4(){
     return 5;
 }
 private int _5(){
+    t0=gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2);
     sa(gr(gr(1,0),gr(2,0)+1));
     sa(gr(gr(1,0),gr(2,0)+2));
-    t0=gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2);
 
     if((gr(gr(1,0),gr(2,0)+2)-gr(gr(1,0)+1,gr(2,0)+2))>0)return 6;else return 9;
 }

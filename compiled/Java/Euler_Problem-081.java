@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABADtd1NzJQywbWxzYtt2JrZt286Obdt2JhPbNibWRDt2djKxznd/wH05z6ern7pWdVV3re5aiyQODuz/BRTYdcF2ooO+WqFxRW9wnpEdx3wUjh0I5gVc"+
                                  "bwNj4729oVNMsOfwnfwX+FSzyPCmo9t8XN8vLU3L+Xw2KcKvl0OS77vH7y9889mG9puv3Lb5hubLV7vff1+UHY0t50Bcb7zGfVfvbUq/jP1+v7RfP3rOJxat6fe/CYPo"+
@@ -191,84 +191,30 @@ long t0,t1,t2,t3,t4,t5;
 private int _0(){
     gw(88,81,(gr(498,79)-48)+(((gr(497,79)-48)+(((gr(496,79)-48)+((gr(495,79)-48)*10))*10))*10));
     gw(88,179,252047376);
-    sa(6398);
+    sa(6399);
+    sa(6399);
     return 1;
 }
 private int _1(){
-    sa(sr());
-    sa(sr());
-    sa(sr());
-    sa(sr());
-    sa(((tm(sr(),80))*5)+103);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
-
-    {long v0=sp();t0=gr(sp(),v0);}
-    t0-=48;
-    sa(sr());
-    sa(((tm(sr(),80))*5)+102);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
-
-    {long v0=sp();t1=gr(sp(),v0);}
-    t1-=48;
-    sa(sr());
-    sa(((tm(sr(),80))*5)+101);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
-
-    {long v0=sp();t2=gr(sp(),v0);}
-    t2-=48;
-    sa(((tm(sr(),80))*5)+100);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
-
-    {long v0=sp();t3=gr(sp(),v0);}
-    t3-=48;
-    t3*=10;
-    t4=t2+t3;
-    t4*=10;
-    t2=t1+t4;
-    t2*=10;
-    sa(t0+t2);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa((tm(sr(),80))+9);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
-
-    sa(sp()+2L);
-
-    {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-    sa(252047376);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa((tm(sr(),80))+9);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa(td(sp(),80));
-
-    sa(sp()+100L);
-
-    {long v0=sp();long v1=sp();gw(v1,v0,sp());}
-    sa(sr());
-
     if(sp()!=0)return 17;else return 2;
 }
 private int _2(){
     gw(2,0,0);
-    gw(3,0,0);
     sp();
     sa(0);
     return 3;
 }
 private int _3(){
+    gw(3,0,0);
     sa(0);
     return 4;
 }
 private int _4(){
-    t5=gr(gr(2,0)+9,gr(3,0)+2);
     t0=gr(gr(2,0)+9,gr(3,0)+99);
+    t5=gr(gr(2,0)+9,gr(3,0)+2);
     t1=gr(gr(2,0)+8,gr(3,0)+100);
 
-    if(gr(2,0)+gr(3,0)==0)return 5;else return 10;
+    if((gr(2,0)+gr(3,0))!=0)return 10;else return 5;
 }
 private int _5(){
     gw(gr(2,0)+9,gr(3,0)+100,t5);
@@ -287,7 +233,6 @@ private int _6(){
 private int _7(){
     sa(sr());
     gw(2,0,sp());
-    gw(3,0,0);
     return 3;
 }
 private int _8(){
@@ -301,14 +246,14 @@ private int _9(){
     return 4;
 }
 private int _10(){
-    if((gr(2,0))==0)return 11;else return 12;
+    if((gr(2,0))!=0)return 12;else return 11;
 }
 private int _11(){
     t5+=t0;
     return 5;
 }
 private int _12(){
-    if((gr(3,0))==0)return 16;else return 13;
+    if((gr(3,0))!=0)return 13;else return 16;
 }
 private int _13(){
     t2=t0>t1?1:0;
@@ -329,6 +274,61 @@ private int _16(){
 }
 private int _17(){
     sa(sp()-1L);
+
+    sa(sr());
+    sa(sr());
+    sa(sr());
+    sa(sr());
+    sa(((sr()%80)*5)+103);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()/80L);
+
+    {long v0=sp();t0=gr(sp(),v0);}
+    t0-=48;
+    sa(sr());
+    sa(((sr()%80)*5)+102);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()/80L);
+
+    {long v0=sp();t1=gr(sp(),v0);}
+    t1-=48;
+    sa(sr());
+    sa(((sr()%80)*5)+101);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()/80L);
+
+    {long v0=sp();t2=gr(sp(),v0);}
+    t2-=48;
+    sa(((sr()%80)*5)+100);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()/80L);
+
+    {long v0=sp();t3=gr(sp(),v0);}
+    t3-=48;
+    t3*=10;
+    t4=t2+t3;
+    t4*=10;
+    t2=t1+t4;
+    t2*=10;
+    sa(t0+t2);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa((sr()%80)+9);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()/80L);
+
+    sa(sp()+2L);
+
+    {long v0=sp();long v1=sp();gw(v1,v0,sp());}
+    sa(252047376);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa((sr()%80)+9);
+    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
+    sa(sp()/80L);
+
+    sa(sp()+100L);
+
+    {long v0=sp();long v1=sp();gw(v1,v0,sp());}
+    sa(sr());
     return 1;
 }
 

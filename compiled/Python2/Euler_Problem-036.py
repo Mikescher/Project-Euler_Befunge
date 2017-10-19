@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 def td(a,b):
     return ((0)if(b==0)else(a//b))
@@ -22,32 +22,34 @@ def sr():
     return s[-1]
 x0=9990
 def _0():
+    global x0
     sa(0)
     sa(0)
     sa(999)
     sa(9+x0)
     sa(99)
+    sa(99)
     return 1
 def _1():
+    return (2)if(sp()!=0)else(3)
+def _2():
     global x0
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sp()*10);
+    sa(sp()*10)
 
     x0=sp()
-    sa((tm(sr(),10))+x0)
+    sa((sr()%10)+x0)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(td(sp(),10))
+    sa(sp()/10);
 
     sa(sr());
-    return 2
-def _2():
-    return (1)if(sp()!=0)else(3)
+    return 1
 def _3():
     global x0
     x0=0
@@ -57,8 +59,9 @@ def _3():
     return 4
 def _4():
     global t0
-    t0=(tm(sr(),2))+x0
-    sa(td(sp(),2))
+    global x0
+    t0=(sr()%2)+x0
+    sa(sp()/2);
 
     sa(sr());
 
@@ -67,17 +70,16 @@ def _5():
     global t0
     global t1
     sp();
-    sa(sp()-t0);
+    sa(sp()-t0)
 
     t1=sp()
-    t1=(0)if(t1!=0)else(1)
 
-    return (24)if((t1)!=0)else(6)
+    return (6)if((t1)!=0)else(24)
 def _6():
     sp();
     return 7
 def _7():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
@@ -88,42 +90,43 @@ def _8():
     sa(sr());
     t0=sr()*10
     x0=t0
-    sa((tm(sr(),10))+x0)
+    sa((sr()%10)+x0)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(td(sp(),10))
+    sa(sp()/10);
 
     sa(sr());
-    return 2
+    return 1
 def _9():
     global x0
     x0=990
     sa(999)
     sa(9+x0)
     sa(99)
+    sa(99)
     return 10
 def _10():
+    return (11)if(sp()!=0)else(12)
+def _11():
     global x0
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sp()*10);
+    sa(sp()*10)
 
     x0=sp()
-    sa((tm(sr(),10))+x0)
+    sa((sr()%10)+x0)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(td(sp(),10))
+    sa(sp()/10);
 
     sa(sr());
-    return 11
-def _11():
-    return (10)if(sp()!=0)else(12)
+    return 10
 def _12():
     global x0
     x0=0
@@ -133,8 +136,9 @@ def _12():
     return 13
 def _13():
     global t0
-    t0=(tm(sr(),2))+x0
-    sa(td(sp(),2))
+    global x0
+    t0=(sr()%2)+x0
+    sa(sp()/2);
 
     sa(sr());
 
@@ -143,17 +147,16 @@ def _14():
     global t0
     global t1
     sp();
-    sa(sp()-t0);
+    sa(sp()-t0)
 
     t1=sp()
-    t1=(0)if(t1!=0)else(1)
 
-    return (22)if((t1)!=0)else(15)
+    return (15)if((t1)!=0)else(22)
 def _15():
     sp();
     return 16
 def _16():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
@@ -162,17 +165,17 @@ def _17():
     global t0
     global x0
     sa(sr());
-    t0=(td(sr(),10))*10
+    t0=(sr()/10)*10
     x0=t0
-    sa((tm(sr(),10))+x0)
+    sa((sr()%10)+x0)
     v0=sp()
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(td(sp(),10))
+    sa(sp()/10);
 
     sa(sr());
-    return 11
+    return 10
 def _18():
     sys.stdout.write(" =")
     sys.stdout.flush()
@@ -187,7 +190,7 @@ def _19():
     return (20)if(sp()!=0)else(21)
 def _20():
     global t0
-    sa(sp()+t0);
+    sa(sp()+t0)
     return 19
 def _21():
     global t0

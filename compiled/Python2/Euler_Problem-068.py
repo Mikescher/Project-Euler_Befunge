@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import sys
 import zlib, base64
 _g = ("AR+LCAAAAAAABAClks1yhCAMx18FcG8MFvxYjeMwfYO97qGj3rhy4rQPvwkq2g720GYGiJL880s0MPZktIpk7Moo8JEsF2HFIAKe4VKDsZGNIR4Y5o0EJbRwWoLX9aCM"
@@ -41,28 +41,25 @@ def _0():
     gw(3,0,0)
     return 1
 def _1():
-    sa(gr(gr(3,0)+9,0)-1)
+    global t0
+    global t1
+    t0=gr(gr(3,0)+9,0)-49
+    t1=gr(gr(3,0)+9,0)-49
     gw(gr(3,0)+9,0,gr(gr(3,0)+9,0)-1)
-    sa(sp()-48);
+    gw(7,0,t1)
+    t0=(1)if(t0<0)else(0)
 
-    sa(sr());
-    gw(7,0,sp())
-    sa((1)if(sp()<0)else(0))
-
-
-    return (2)if(sp()!=0)else(3)
+    return (2)if((t0)!=0)else(3)
 def _2():
     sa(79)
-    sa(gr(3,0)-1)
+    sa(gr(3,0)+8)
     gw(3,0,gr(3,0)-1)
-    sa(sp()+9);
-
     sa(0)
     v0=sp()
     sa(gr(sp(),v0))
-    sa(sp()-48);
+    sa(sp()-48)
 
-    sa(sp()+9);
+    sa(sp()+9)
 
     sa(1)
     v0=sp()
@@ -70,55 +67,55 @@ def _2():
     gw(v1,v0,sp())
     return 1
 def _3():
-    return (4)if(gr(gr(7,0)+9,1)-79==0)else(1)
+    return (1)if(gr(gr(7,0)+9,1)!=79)else(4)
 def _4():
     sa(gr(3,0))
 
     return (5)if((gr(3,0))!=0)else(25)
 def _5():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
     return (6)if(sp()!=0)else(24)
 def _6():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
     return (7)if(sp()!=0)else(23)
 def _7():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
     return (8)if(sp()!=0)else(20)
 def _8():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
     return (9)if(sp()!=0)else(22)
 def _9():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
     return (10)if(sp()!=0)else(20)
 def _10():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
     return (11)if(sp()!=0)else(21)
 def _11():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
     return (12)if(sp()!=0)else(20)
 def _12():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
 
@@ -131,91 +128,61 @@ def _14():
 def _15():
     sp();
 
-    return (17)if(9<=gr(3,0))else(16)
+    return (16)if(9>gr(3,0))else(17)
 def _16():
     gw(gr(7,0)+9,1,88)
     sa(58)
-    sa(gr(3,0)+1)
+    sa(gr(3,0)+10)
     gw(3,0,gr(3,0)+1)
-    sa(sp()+9);
-
     sa(0)
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
     return 1
 def _17():
-    global t0
-    global t1
-    global t2
-    global t3
-    global t4
-    global t5
-    global t6
-    global t7
-    global t8
-    global t9
-    global t10
-    global t11
-    global t12
-    global t13
-    t0=gr(10,0)-47
-    t1=gr(17,0)-47
-    t2=gr(18,0)-47
-    t3=gr(17,0)-47
-    t4=gr(15,0)-47
-    t5=gr(16,0)-47
-    t6=gr(15,0)-47
-    t7=gr(13,0)-47
-    t8=gr(14,0)-47
-    t9=gr(13,0)-47
-    t10=gr(11,0)-47
-    t11=gr(12,0)-47
-    t12=gr(11,0)-47
-    t13=gr(10,0)-47
     sys.stdout.write(str(gr(9,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t13)+" ")
+    sys.stdout.write(str(gr(10,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t12)+" ")
+    sys.stdout.write(str(gr(11,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t11)+" ")
+    sys.stdout.write(str(gr(12,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t10)+" ")
+    sys.stdout.write(str(gr(11,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t9)+" ")
+    sys.stdout.write(str(gr(13,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t8)+" ")
+    sys.stdout.write(str(gr(14,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t7)+" ")
+    sys.stdout.write(str(gr(13,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t6)+" ")
+    sys.stdout.write(str(gr(15,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t5)+" ")
+    sys.stdout.write(str(gr(16,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t4)+" ")
+    sys.stdout.write(str(gr(15,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t3)+" ")
+    sys.stdout.write(str(gr(17,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t2)+" ")
+    sys.stdout.write(str(gr(18,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t1)+" ")
+    sys.stdout.write(str(gr(17,0)-47)+" ")
     sys.stdout.flush()
 
-    sys.stdout.write(str(t0)+" ")
+    sys.stdout.write(str(gr(10,0)-47)+" ")
     sys.stdout.flush()
     return 26
 def _18():

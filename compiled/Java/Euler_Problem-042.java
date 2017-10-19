@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "Ah+LCAAAAAAABAAVmHk4lN8bxpM0lhhly/ZSQowtu7xCKlpkRJbC2IpkJ96xjSEpYbJlKbtK38SQLBnbVGMpZlrIOkyDUbZZLNl/fu+/573Oda5z38/z3J8j95h33/+/"+
                                  "A/taC11xso0ZD3Z7H9W1SIgTgFF82lGBY/OBEQZ6/nWfcWd0HmSMG4//7XVcZ908vyppdEH3qcifw8IK2P2mhuPWdU4rgzdzv4Rh4pq31kV20eLKmDN6ZAqhE+0ImBc1"+
@@ -114,15 +114,14 @@ private int _0(){
     return 1;
 }
 private int _1(){
-    t0=gr(5,0)+1;
-    gw(5,0,gr(5,0)+1);
-    t1=t0+1;
-    sa(t0*t1);
-    sa(td(sp(),2));
-
     sa(48);
-    {long v0=sp();long v1=sp();sa(v0);sa(v1);}
-    sa((tm(sr(),gr(1,0)))+32);
+    sa(((gr(5,0)+1)*(gr(5,0)+2))/2);
+    sa(((gr(5,0)+1)*(gr(5,0)+2))/2);
+    gw(5,0,gr(5,0)+1);
+    sa(tm(sp(),gr(1,0)));
+
+    sa(sp()+32L);
+
     {long v0=sp();long v1=sp();sa(v0);sa(v1);}
     sa(td(sp(),gr(1,0)));
 
@@ -130,7 +129,7 @@ private int _1(){
     return 2;
 }
 private int _2(){
-    if((td((gr(5,0)+1)*(gr(5,0)+2),2))<gr(3,0))return 1;else return 3;
+    if((((gr(5,0)+1)*(gr(5,0)+2))/2)<gr(3,0))return 1;else return 3;
 }
 private int _3(){
     gw(7,0,0);
@@ -140,7 +139,7 @@ private int _3(){
 private int _4(){
     t0=gr(gr(7,0),gr(6,0));
 
-    if(gr(gr(7,0),gr(6,0))-32==0)return 5;else return 10;
+    if(gr(gr(7,0),gr(6,0))!=32)return 10;else return 5;
 }
 private int _5(){
     gw(27,gr(6,0),t2);

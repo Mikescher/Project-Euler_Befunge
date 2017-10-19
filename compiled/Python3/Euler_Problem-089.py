@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# transpiled with BefunCompile v1.2.0 (c) 2017
+# transpiled with BefunCompile v1.3.0 (c) 2017
 import gzip, base64
 _g = ("AR+LCAAAAAAABACtnVtvHMcRhf9KgbZeuGC8u6ICcUEwTrqTmMl27mE2ASHnIcC+8olPyn/PTFdVz9A2DTPnG8CgBEulmp7urtupU8+//FWpv/7Nb7+5/93vj+0Pf/zT"
   + "n//y17/9/eEfp3/+y970PG93+/f76b/r/dv+4veeX0xP/ynKudve7J92N9unD9c3+8vN9PPD5vn/EfT8tH1/8Z+Lp+3lz/cX+/nnx/e3dnc47M4X24urx58s9O7ivxfX"
@@ -89,14 +89,17 @@ def _0():
     gw(13,0,1000)
     gw(10,1,gr(10,1)-48)
     sa(9)
+    sa(9)
     return 1
 def _1():
+    return (2)if(sp()!=0)else(3)
+def _2():
     sa(sr());
     sa(sr());
     sa(1)
     v0=sp()
     sa(gr(sp(),v0))
-    sa(sp()-48);
+    sa(sp()-48)
 
     v0=sp()
     v1=sp()
@@ -106,12 +109,10 @@ def _1():
     v0=sp()
     v1=sp()
     gw(v1,v0,sp())
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
-    return 2
-def _2():
-    return (1)if(sp()!=0)else(3)
+    return 1
 def _3():
     gw(1,2,9)
     sp();
@@ -126,13 +127,13 @@ def _5():
 def _6():
     sa(sr());
     gw(3,2,sp())
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
     sa(gr(1,2))
     v0=sp()
     sa(gr(sp(),v0))
-    sa(sp()-64);
+    sa(sp()-64)
 
     sa(0)
     v0=sp()
@@ -145,13 +146,13 @@ def _6():
 def _7():
     return (8)if(sp()!=0)else(11)
 def _8():
-    sa(sp()-1);
+    sa(sp()-1)
 
     sa(sr());
     sa(gr(1,2))
     v0=sp()
     sa(gr(sp(),v0))
-    sa(sp()-64);
+    sa(sp()-64)
 
     sa(0)
     v0=sp()
@@ -164,7 +165,7 @@ def _9():
     v1=sp()
     sa(v0)
     sa(v1)
-    sa(sp()*-1);
+    sa(sp()*-1)
 
     v0=sp()
     v1=sp()
@@ -173,15 +174,15 @@ def _9():
     return 10
 def _10():
     gw(4,2,sp())
-    sa(sp()+gr(2,2));
+    sa(sp()+gr(2,2))
 
     gw(2,2,sp())
     sa(sr());
     return 7
 def _11():
-    gw(9,2,(gr(3,2)-((td(gr(2,2),1000))+gr((td(tm(gr(2,2),1000),100))+1,1)+gr((tm(gr(2,2),10))+1,1)+gr((td(tm(gr(2,2),100),10))+1,1)))+gr(9,2))
+    gw(9,2,(gr(3,2)-((gr(2,2)/1000)+gr(((gr(2,2)%1000)/100)+1,1)+gr((gr(2,2)%10)+1,1)+gr(((gr(2,2)%100)/10)+1,1)))+gr(9,2))
     sp();
-    sa(sp()+1);
+    sa(sp()+1)
 
     sa(sr());
     gw(1,2,sp())
@@ -192,13 +193,13 @@ def _12():
     sp();
     return 14
 def _13():
-    sa(sp()+1);
+    sa(sp()+1)
 
     sa(sr());
     sa(gr(1,2))
     v0=sp()
     sa(gr(sp(),v0))
-    sa(sp()-32);
+    sa(sp()-32)
     return 5
 m=[_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12,_13]
 c=0

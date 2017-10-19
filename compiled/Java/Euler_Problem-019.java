@@ -1,4 +1,4 @@
-/* transpiled with BefunCompile v1.2.0 (c) 2017 */
+/* transpiled with BefunCompile v1.3.0 (c) 2017 */
 class Program{
 private final static String _g = "AR+LCAAAAAAABACtkcFqxCAQhl8lNU0pimXmNyREgvRBQnopzNWTpzx8xyULuwS2bNoRRceZz3/GEihAx2VpzlsJ/C+c4Q+5t5ZgU4wkhozvR+sWyjGWU6gtes68ODv2"+
                                  "XnHCzfw8pDSvJ7KOlkDIzDqBbPBmLLuATBPyU9UVkGMBZUxOML04ryfuRnXNqd2DqG1K3e/K01FNSSpE2KmgAOm7u9vtGsVNSoAsUmO93w6cX2pWtPk2nebRWsW0V64+"+
@@ -25,9 +25,13 @@ private int _0(){
     gw(12,0,gr(12,0)-20);
     gw(12,1,gr(12,1)-20);
     sa(11);
+    sa(11);
     return 1;
 }
 private int _1(){
+    if(sp()!=0)return 2;else return 3;
+}
+private int _2(){
     sa(sr());
     sa(sr());
     sa(0);
@@ -53,10 +57,7 @@ private int _1(){
     sa(sp()-1L);
 
     sa(sr());
-    return 2;
-}
-private int _2(){
-    if(sp()!=0)return 1;else return 3;
+    return 1;
 }
 private int _3(){
     gw(0,2,2);
@@ -64,14 +65,15 @@ private int _3(){
     gw(2,2,1);
     gw(3,2,1901);
     gw(9,2,0);
-    gw(9,2,(((tm(gr(0,2),7))+(gr(1,2)-1)!=0)?0:1)+gr(9,2));
-    gw(0,2,gr(0,2)+1);
-    gw(1,2,gr(1,2)+1);
     sp();
     return 4;
 }
 private int _4(){
-    if(tm(gr(3,2),4)!=0)return 5;else return 12;
+    gw(9,2,(((gr(0,2)%7)+(gr(1,2)-1)!=0)?0:1)+gr(9,2));
+    gw(0,2,gr(0,2)+1);
+    gw(1,2,gr(1,2)+1);
+
+    if((gr(3,2)%4)!=0)return 5;else return 11;
 }
 private int _5(){
     sa(gr(gr(2,2),0)-(gr(1,2)-1));
@@ -82,9 +84,8 @@ private int _6(){
 }
 private int _7(){
     gw(1,2,1);
-    t0=gr(2,2);
+    t0=gr(2,2)-12;
     gw(2,2,gr(2,2)+1);
-    t0-=12;
 
     if((t0)!=0)return 9;else return 8;
 }
@@ -94,32 +95,26 @@ private int _8(){
     return 9;
 }
 private int _9(){
-    if(gr(3,2)!=2001)return 10;else return 11;
+    if(gr(3,2)!=2001)return 4;else return 10;
 }
 private int _10(){
-    gw(9,2,(((tm(gr(0,2),7))+(gr(1,2)-1)!=0)?0:1)+gr(9,2));
-    gw(0,2,gr(0,2)+1);
-    gw(1,2,gr(1,2)+1);
-    return 4;
+    System.out.print(String.valueOf(gr(9,2))+" ");
+    return 14;
 }
 private int _11(){
-    System.out.print(String.valueOf(gr(9,2))+" ");
-    return 15;
+    if((gr(3,2)%100)!=0)return 12;else return 13;
 }
 private int _12(){
-    if(tm(gr(3,2),100)!=0)return 13;else return 14;
-}
-private int _13(){
     sa(gr(gr(2,2),1)-(gr(1,2)-1));
     return 6;
 }
-private int _14(){
-    if(tm(gr(3,2),400)!=0)return 5;else return 13;
+private int _13(){
+    if((gr(3,2)%400)!=0)return 5;else return 12;
 }
 
 public void main(){
     int c=0;
-    while(c<15){
+    while(c<14){
     switch(c){
     case 0:c=_0();break;
     case 1:c=_1();break;
@@ -135,7 +130,6 @@ public void main(){
     case 11:c=_11();break;
     case 12:c=_12();break;
     case 13:c=_13();break;
-    case 14:c=_14();break;
 }
 }
 }
