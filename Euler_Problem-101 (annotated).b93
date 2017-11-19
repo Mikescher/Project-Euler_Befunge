@@ -1,0 +1,184 @@
+vXXXX    ########### ###########   #
+ $$ $    ########### ###########   #
+ %%%%    ########### ###########   #
+ $ $     ########### ###########   #
+                     ###########   #
+                     ###########   #
+                     ###########   #
+                     ###########   #
+                     ###########   #
+                     ###########   #
+                     ###########   #
+
+> 023p v                                                                     ; Init
+v      <
+
+> 01+ 01- 01+ 01- 01+ 01- 01+ 01- 01+ 01- 01+ v                              ; Fill Func[]
+                       v_v#-7:-1:g01<p01++199 <
+                       >#$ 10p    0p^ 
+v                       $<
+
+>49*5+4*>:0\:35*%37*+\35*/pv                                                 ; zero out eq-field
+        |\-1:              <
+v      $<
+1
+>::20p130p00>:9+0g30g:20g*30p*v                                              ; Calculate seq[]
+            |-+55\+1:\+g01\p01<
+            >$\8+1p1+:v
+|                 -6-6<
+$        
+
+>   1   11p v                                                                ; init k=1
+ v          <
+ 
+                  >\40g*v
+>>140p>0>:::   1\:|:-1\ <                                                    ; Init GuessOp::eq
+                  >$         \11g\`*40g11g`!*\ 37*+40g1-p v
+ 
+        |        -6-5:+1                                  <
+        >$40g8+1g 40g11g`!*  57*  40g1- p  40g:1+40p 5-6-v
+      |                                                  <
+  v   <
+ 
+ 
+ v                <
+  >012p>11g1-12g`!|
+       ^                    p21+1g21<
+                  >12g1+22p>11g22g`!|
+                                    >12g37*+ 12g g 32p     12g37*+ 22g g 42p v                   ; SolveLinEq -> Step_1
+                                     v                                       <
+                                     > 35*>1-::37*+12gg42g*\37*+12gpv                            ; SolveLinEq -> Step_1 -> e[s] = e[s] * f_i
+                                          |:                        <
+                                     v   $<
+                                     > 35*>1-::37*+22gg32g*\37*+22gpv                            ; SolveLinEq -> Step_1 -> e[i] = e[i] * f_s
+                                          |:                        <
+                                     v   $<
+                                     > 35*>1-:::37*+22gg\37*+12gg-\37*+22gpv                     ; SolveLinEq -> Step_1 -> e[i] = e[i] - e[s]
+                                          |:                               <
+                                     v   $<
+                                     
+                                     > 57* 12g g   11g>1-:37*+12gg\:v >11g1+  1-:2v2:       <    ; SolveLinEq -> Step_1 -> Simplify(e[s])
+                                                      ^             _$^           1v\g33%p3<-
+                                                                                  p>:!#v_:3^1
+                                                                                  >|   >$21g^
+                                     v                                          p01<
+                                     > 35*>1-::37*+12gg10g/\37*+12gpv
+                                          |:                        <
+                                     v   $<
+  
+                                     > 57* 22g g   11g>1-:37*+22gg\:v >11g1+  1-:2v2:       <    ; SolveLinEq -> Step_1 -> Simplify(e[i])
+                                                      ^             _$^           1v\g33%p3<-
+                                                                                  p>:!#v_:3^1
+                                                                                  >|   >$21g^
+                                     v                                          p01<
+                                     > 35*>1-::37*+22gg10g/\37*+22gpv
+                                          |:                        <
+                                     v   $<
+                                    
+                                     > 22g1+22pv                                                 ; i++
+                           ^                   <
+ >v
+ v               <
+  >11g2-12p>012g`|
+           ^                p21-1g21<
+                 > 12g1+22p>11g22g`!|
+                                    >22g37*+ 12g g 32p     22g37*+ 22g g 42p v                   ; SolveLinEq -> Step_2
+                                     v                                       <
+ 
+                                     > 35*>1-::37*+12gg42g*\37*+12gpv                            ; SolveLinEq -> Step_2 -> e[s] = e[s] * f_i
+                                          |:                        <
+                                     v   $<
+ 
+                                     > 35*>1-::37*+22gg32g*\37*+22gpv                            ; SolveLinEq -> Step_2 -> e[i] = e[i] * f_s
+                                          |:                        <
+                                     v   $<
+ 
+                                     > 35*>1-:::37*+12gg\37*+22gg-\37*+12gpv                     ; SolveLinEq -> Step_2 -> e[s] = e[s] - e[i]
+                                          |:                               <
+                                     v   $<
+                                     
+                                     > 57* 12g g   11g>1-:37*+12gg\:v >11g1+  1-:2v2:       <    ; SolveLinEq -> Step_2 -> Simplify(e[s])
+                                                      ^             _$^           1v\g33%p3<-
+                                                                                  p>:!#v_:3^1
+                                                                                  >|   >$21g^
+                                     v                                          p01<
+                                     > 35*>1-::37*+12gg10g/\37*+12gpv
+                                          |:                        <
+                                     v   $<
+  
+                                     > 57* 22g g   11g>1-:37*+22gg\:v >11g1+  1-:2v2:       <    ; SolveLinEq -> Step_2 -> Simplify(e[i])
+                                                      ^             _$^           1v\g33%p3<-
+                                                                                  p>:!#v_:3^1
+                                                                                  >|   >$21g^
+                                     v                                          p01<
+                                     > 35*>1-::37*+22gg10g/\37*+22gpv
+                                          |:                        <
+                                     v   $<
+                                    
+                                     > 22g1+22pv                                                 ; i++
+                           ^                   <
+ 
+ > 11g   >1-::37*+\g0\`!#v_:12p35*>1-::37*+12gg01-*\37*+12gpv                                      ; SolveLinEq -> Step_3
+         |:              <        |:                        <
+ v      $<               ^       $<
+ 
+ >56+>1-::57*\g\9+2pv                                                                              ; Set func_guess
+     |:             <
+ v  $<
+ 
+ 
+ 1
+ >::20p130p00>:9+2g30g:20g*30p*v                                                                   ; Calculate seq_guess[]
+             |-+55\+1:\+g01\p01<
+             >$\8+3p1+:v
+ |                 -6-6<
+ $
+^                                                        <
+ >031p>31g9+1g31g9+3g-!#v_31g9+3g:.55+,23g+23p  11g1+11p ^                                         ; Find BOP
+      |-6-5   p13:+1g13 <
+
+      > 84*:796*+\,,,23g.@                                                                         ; guess=real ; terminate program
+
+
+
+
+
+
+
+
+
+Array[9+ | 0]    => func[11]
+Array[9+ | 1]    => seq[11]
+Array[9+ | 2]    => func_guess[11]
+Array[9+ | 3]    => seq_guess[11]
+
+Array[21+| 0..9] => GuessOP::eq[11][11]    ( [35 | 0..9] is result )
+
+
+
+#$watch[1,0]:int = "glob::tmp"                // short lived
+#$watch[2,0]:int = "F10D::n"
+#$watch[3,0]:int = "F10D::n_exp"
+#$watch[4,0]:int = "FillEq::row"              // (1-based)
+
+#$watch[1,1]:int = "Main::k"                  // len(GuessOp::seq) // len(Solve::eq)
+#$watch[2,1]:int = "gcd::tmp2"
+#$watch[2,3]:int = "Main:fitsum"
+
+#$watch[1,2]:int = "SolveLin::s"
+#$watch[2,2]:int = "SolveLin::i"
+#$watch[3,2]:int = "SolveLin::f_s"
+#$watch[4,2]:int = "SolveLin::f_i"
+
+#$watch[3,1]:int = "Main::n"
+#$watch[3,3]:int = "gcd::tmp1"
+
+
+
+
+
+dec:21      |     37*
+dec:35      |     57*
+
+
+
