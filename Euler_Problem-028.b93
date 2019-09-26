@@ -1,5 +1,5 @@
-"d"55+*1+::1-01p*>:01g-:01g-:01g-:01g-:1-#v_>+\:#<_$.@
-X                ^p10-2g10                <
+0"d"55+*1+::1-01p*>:01g-:01g-:01g-:01g-:1-#v_>\# :#+_+.@
+X                 ^p10-2g10                <
 
 
 // SUM
@@ -31,7 +31,7 @@ You can probably see the pattern here. The rest of the algorithm is simply loop 
 I have this little code to calculate the sum of stack values until a zero is encountered:
 
 ```befunge
->+\:#<_$
+>\# :#+_+.
 ```
 
 Perhaps it's useful for someone else.
